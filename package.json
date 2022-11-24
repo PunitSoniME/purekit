@@ -1,7 +1,7 @@
 {
   "name": "alt-lodash",
   "version": "0.1.0",
-  "description": "Custom React Helper Hooks",
+  "description": "This library can be used as alternate of lodash",
   "author": "Punit Soni <punit.soni33@gmail.com> (https://punit-soni.web.app)",
   "license": "MIT",
   "scripts": {
@@ -23,7 +23,7 @@
   "main": "dist/index.js",
   "module": "dist/alt-lodash.esm.js",
   "engines": {
-    "node": ">=10"
+    "node": ">=14"
   },
   "keywords": [
     "lodash alternative",
