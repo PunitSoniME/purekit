@@ -8,12 +8,12 @@ import compact from './compact';
 import concat from './concat';
 
 export {
-    difference,
-    differenceBy,
-    filter,
-    findOne,
-    first,
-    chunk,
-    compact,
-    concat
+  difference,
+  differenceBy,
+  filter,
+  findOne,
+  first,
+  chunk,
+  compact,
+  concat,
 };

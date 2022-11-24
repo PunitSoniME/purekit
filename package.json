@@ -1,15 +1,9 @@
 {
+  "name": "alt-lodash",
   "version": "0.1.0",
+  "description": "Custom React Helper Hooks",
+  "author": "Punit Soni <punit.soni33@gmail.com> (https://punit-soni.web.app)",
   "license": "MIT",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
-  "files": [
-    "dist",
-    "src"
-  ],
-  "engines": {
-    "node": ">=10"
-  },
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
@@ -19,6 +13,31 @@
     "size": "size-limit",
     "analyze": "size-limit --why"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PunitSoniME/alt-lodash.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PunitSoniME/alt-lodash/issues"
+  },
+  "main": "dist/index.js",
+  "module": "dist/alt-lodash.esm.js",
+  "engines": {
+    "node": ">=10"
+  },
+  "keywords": [
+    "lodash alternative",
+    "alt lodash",
+    "array",
+    "helpers",
+    "methods",
+    "javascript methods"
+  ],
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
   "peerDependencies": {},
   "husky": {
     "hooks": {
@@ -31,9 +50,6 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "alt-lodash",
-  "author": "Punit Soni",
-  "module": "dist/alt-lodash.esm.js",
   "size-limit": [
     {
       "path": "dist/alt-lodash.cjs.production.min.js",
