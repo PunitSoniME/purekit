@@ -23,7 +23,7 @@
   "main": "dist/index.js",
   "module": "dist/alt-lodash.esm.js",
   "engines": {
-    "node": ">=14"
+    "node": ">=10"
   },
   "keywords": [
     "lodash alternative",

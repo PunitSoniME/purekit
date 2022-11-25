@@ -1,4 +1,4 @@
-import { add } from '../src/maths';
+import { add } from '../../src/maths';
 
 let numberMockData: number[] = [];
 

@@ -7,6 +7,9 @@ import {
   chunk,
   compact,
   concat,
+
+  drop,
+  dropRight
 } from './array';
 
 import { add } from './maths';
@@ -20,5 +23,8 @@ export {
   chunk,
   compact,
   concat,
-  add,
+  drop,
+  dropRight,
 };
+
+export { add };

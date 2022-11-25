@@ -6,6 +6,8 @@ import first from './first';
 import chunk from './chunk';
 import compact from './compact';
 import concat from './concat';
+import drop from './drop';
+import dropRight from './dropRight';
 
 export {
   difference,
@@ -16,4 +18,7 @@ export {
   chunk,
   compact,
   concat,
+
+  drop,
+  dropRight
 };
