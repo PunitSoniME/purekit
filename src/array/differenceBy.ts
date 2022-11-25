@@ -4,15 +4,15 @@ const differenceBy = (array1: any[], array2: any[], dependent: any): any[] => {
   switch (typeof dependent) {
     case 'string':
       return [...array1].filter(
-        (x) => !array2.some((y) => x[dependent] === y[dependent])
+        x => !array2.some(y => x[dependent] === y[dependent])
       );
 
     case 'function':
-      const dependentArray2 = [...array2].map((m) => dependent(m));
+      const dependentArray2 = [...array2].map(m => dependent(m));
 
-      return [...array1].filter((x) => {
+      return [...array1].filter(x => {
         const dependentX = dependent(x);
-        return !dependentArray2.some((y) => dependentX === y);
+        return !dependentArray2.some(y => dependentX === y);
       });
   }
 
