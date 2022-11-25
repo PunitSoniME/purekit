@@ -9,6 +9,7 @@ import {
   concat,
   drop,
   dropRight,
+  fill
 } from './array';
 
 import { add } from './maths';
@@ -24,6 +25,7 @@ export {
   concat,
   drop,
   dropRight,
+  fill
 };
 
 export { add };

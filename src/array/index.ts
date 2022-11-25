@@ -8,6 +8,7 @@ import compact from './compact';
 import concat from './concat';
 import drop from './drop';
 import dropRight from './dropRight';
+import fill from './fill';
 
 export {
   difference,
@@ -20,4 +21,5 @@ export {
   concat,
   drop,
   dropRight,
+  fill
 };
