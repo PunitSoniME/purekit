@@ -18,7 +18,6 @@ export {
   chunk,
   compact,
   concat,
-
   drop,
-  dropRight
+  dropRight,
 };

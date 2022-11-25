@@ -35,5 +35,4 @@ describe('Array', () => {
       expect(filteredData).toEqual([{ id: id, name: `Punit ${id}` }]);
     });
   });
-
 });

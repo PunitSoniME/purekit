@@ -1,9 +1,7 @@
 import { dropRight } from '../../src/array';
 
 describe('Array', () => {
-
   describe('dropRight', () => {
-
     const data = [1, 2, 3];
 
     it('[Array Of Number] It should remove the first element from right and return rest of the array', () => {
@@ -22,5 +20,4 @@ describe('Array', () => {
       expect(dropRight(data, 0)).toEqual([1, 2, 3]);
     });
   });
-
 });

@@ -7,5 +7,4 @@ describe('Array', () => {
       expect(compact(array)).toEqual([1, 'abc', 'XYZ']);
     });
   });
-
 });

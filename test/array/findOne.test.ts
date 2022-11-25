@@ -35,5 +35,4 @@ describe('Array', () => {
       expect(record).toEqual({ id: id, name: `Punit ${id}` });
     });
   });
-
 });
