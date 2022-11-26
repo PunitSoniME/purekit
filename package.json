@@ -64,7 +64,9 @@
   "devDependencies": {
     "@rollup/plugin-replace": "^4.0.0",
     "@size-limit/preset-small-lib": "^8.1.0",
+    "@types/lodash": "^4.14.190",
     "husky": "^8.0.2",
+    "lodash": "^4.17.21",
     "size-limit": "^8.1.0",
     "tsdx": "^0.14.1",
     "tslib": "^2.4.1",

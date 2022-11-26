@@ -1,9 +1,9 @@
-const dropRight = (array: any[], length = 1) => {
-  const lengthToCheck = array.length - length;
-
-  return array.filter((_, index) => {
-    return index < lengthToCheck;
-  });
+const dropRight = (array: any[], length?: number) => {
+  return length === undefined
+    ? array.slice(0, -1)
+    : length === 0
+    ? array
+    : array.slice(0, length * -1);
 };
 
 export default dropRight;

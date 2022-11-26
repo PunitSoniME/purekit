@@ -1,3 +1,4 @@
+import { dropRight as _dropRight } from 'lodash';
 import { dropRight } from '../../src/array';
 
 describe('Array', () => {
@@ -5,19 +6,19 @@ describe('Array', () => {
     const data = [1, 2, 3];
 
     it('[Array Of Number] It should remove the first element from right and return rest of the array', () => {
-      expect(dropRight(data)).toEqual([1, 2]);
+      expect(_dropRight(data)).toEqual(dropRight(data));
     });
 
     it('[Array Of Number] It should remove the two elements from right and return rest of the array', () => {
-      expect(dropRight(data, 2)).toEqual([1]);
+      expect(_dropRight(data, 2)).toEqual(dropRight(data, 2));
     });
 
-    it('[Array Of Number] It should remove the five elementss from right and return rest of the array', () => {
-      expect(dropRight(data, 5)).toEqual([]);
+    it('[Array Of Number] It should remove the five elements from right and return rest of the array', () => {
+      expect(_dropRight(data, 5)).toEqual(dropRight(data, 5));
     });
 
-    it('[Array Of Number] It should remove the zero elementss from right and return rest of the array', () => {
-      expect(dropRight(data, 0)).toEqual([1, 2, 3]);
+    it('[Array Of Number] It should remove the zero elements from right and return rest of the array', () => {
+      expect(_dropRight(data, 0)).toEqual(dropRight(data, 0));
     });
   });
 });
