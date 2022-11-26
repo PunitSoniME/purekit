@@ -1,9 +1,7 @@
 import { fill } from '../../src/array';
 
 describe('Array', () => {
-
   describe('fill', () => {
-
     it('[Array Of Number] It should replace the data with passed value ("a")', () => {
       let array = [1, 2, 3];
       expect(fill(array, 'a')).toEqual(['a', 'a', 'a']);
@@ -17,6 +15,5 @@ describe('Array', () => {
       let data = [4, 6, 8, 10];
       expect(fill(data, '*', 1, 3)).toEqual([4, '*', '*', 10]);
     });
-
   });
 });

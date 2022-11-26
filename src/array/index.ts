@@ -21,5 +21,5 @@ export {
   concat,
   drop,
   dropRight,
-  fill
+  fill,
 };
