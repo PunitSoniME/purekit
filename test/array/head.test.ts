@@ -3,13 +3,13 @@ import { head } from '../../src/array';
 import { numberMockData, objectMockData } from '../mockData';
 
 describe('Array', () => {
-  describe('head', () => {
-    it('[Array Of Number] It should return head element', () => {
-      expect(_head(numberMockData)).toEqual(head(numberMockData));
-    });
+	describe('head', () => {
+		it('[Array Of Number] It should return head element', () => {
+			expect(_head(numberMockData)).toEqual(head(numberMockData));
+		});
 
-    it('[Array Of Object] It should return head element', () => {
-      expect(_head(objectMockData)).toEqual(head(objectMockData));
-    });
-  });
+		it('[Array Of Object] It should return head element', () => {
+			expect(_head(objectMockData)).toEqual(head(objectMockData));
+		});
+	});
 });

@@ -1,6 +1,6 @@
 interface IObjectMock {
-  id: number;
-  name: string;
+	id: number;
+	name: string;
 }
 
 export default IObjectMock;
