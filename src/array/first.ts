@@ -1,5 +1,3 @@
-const first = (array: any[]): any => {
-  return array[0];
-};
-
+import head from './head';
+const first = head;
 export default first;

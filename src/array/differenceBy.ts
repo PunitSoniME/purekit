@@ -1,4 +1,4 @@
-const differenceBy = (array1: any[], array2: any[], dependent: any): any[] => {
+const differenceBy = <T>(array1: any[], array2: any[], dependent: any): T[] => {
   if (Array.isArray(array1) && array1.length === 0) return [];
 
   switch (typeof dependent) {

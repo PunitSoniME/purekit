@@ -1,4 +1,4 @@
-const compact = (array: any[]): any[] => {
+const compact = <T>(array: T[]): T[] => {
   return array.filter(Boolean);
 };
 

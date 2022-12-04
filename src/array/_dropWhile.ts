@@ -1,4 +1,4 @@
-const dropRight = <T>(array: T[], length?: number) => {
+const dropWhile = <T>(array: T[], length?: number) => {
   return length === undefined
     ? array.slice(0, -1)
     : length === 0
@@ -6,4 +6,4 @@ const dropRight = <T>(array: T[], length?: number) => {
     : array.slice(0, length * -1);
 };
 
-export default dropRight;
+export default dropWhile;

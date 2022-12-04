@@ -1,4 +1,4 @@
-const drop = (array: any[], length = 1) => {
+const drop = <T>(array: T[], length = 1) => {
   return array.slice(length);
 };
 

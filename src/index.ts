@@ -2,7 +2,7 @@ import {
   difference,
   differenceBy,
   filter,
-  findOne,
+  find,
   first,
   chunk,
   compact,
@@ -10,22 +10,30 @@ import {
   drop,
   dropRight,
   fill,
+  findIndex,
+  findLastIndex,
+  flatten,
+  flattenDeep,
 } from './array';
 
 import { add } from './maths';
 
 export {
-  difference,
-  differenceBy,
-  filter,
-  findOne,
-  first,
   chunk,
   compact,
   concat,
+  difference,
+  differenceBy,
   drop,
   dropRight,
+  filter,
+  find,
+  first,
   fill,
+  findIndex,
+  findLastIndex,
+  flatten,
+  flattenDeep,
 };
 
 export { add };

@@ -7,19 +7,35 @@ import drop from './drop';
 import dropRight from './dropRight';
 import fill from './fill';
 import filter from './filter';
-import findOne from './findOne';
+import find from './find';
 import first from './first';
+import findIndex from './findIndex';
+import findLastIndex from './findLastIndex';
+import flatten from './flatten';
+import flattenDeep from './flattenDeep';
+import flattenDepth from './flattenDepth';
+import fromPairs from './fromPairs';
+import head from './head';
+import indexOf from './indexOf';
 
 export {
-  difference,
-  differenceBy,
-  filter,
-  findOne,
-  first,
   chunk,
   compact,
   concat,
+  difference,
+  differenceBy,
   drop,
   dropRight,
+  filter,
+  find,
+  first,
   fill,
+  findIndex,
+  findLastIndex,
+  flatten,
+  flattenDeep,
+  flattenDepth,
+  fromPairs,
+  head,
+  indexOf,
 };
