@@ -1,3 +1,3 @@
-const flattenDeep = <T>(array: T[]): any[] => array.flat(Infinity);
+const flattenDeep = <T>(collection: T[]): any[] => collection.flat(Infinity);
 
 export default flattenDeep;

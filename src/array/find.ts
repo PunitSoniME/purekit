@@ -1,4 +1,4 @@
-const find = <T>(array: T[], callback: Function): any =>
-	array.find(d => callback(d));
+const find = <T>(collection: T[], callback: Function): any =>
+	collection.find(d => callback(d));
 
 export default find;

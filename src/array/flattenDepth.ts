@@ -1,3 +1,4 @@
-const flattenDepth = <T>(array: T[], depth: number): any[] => array.flat(depth);
+const flattenDepth = <T>(collection: T[], depth: number): any[] =>
+	collection.flat(depth);
 
 export default flattenDepth;

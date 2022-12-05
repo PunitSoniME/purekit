@@ -1,11 +1,11 @@
 const fill = <T>(
-	array: T[],
+	collection: T[],
 	value: any,
 	start: number = 0,
-	end: number = array.length
+	end: number = collection.length
 ): T[] => {
-	array.fill(value, start, end);
-	return array;
+	collection.fill(value, start, end);
+	return collection;
 };
 
 export default fill;

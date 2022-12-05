@@ -1,16 +1,20 @@
-const differenceBy = <T>(array1: any[], array2: any[], dependent: any): T[] => {
-	if (Array.isArray(array1) && array1.length === 0) return [];
+const differenceBy = <T>(
+	collection1: any[],
+	collection2: any[],
+	dependent: any
+): T[] => {
+	if (Array.isArray(collection1) && collection1.length === 0) return [];
 
 	switch (typeof dependent) {
 		case 'string':
-			return [...array1].filter(
-				x => !array2.some(y => x[dependent] === y[dependent])
+			return [...collection1].filter(
+				x => !collection2.some(y => x[dependent] === y[dependent])
 			);
 
 		case 'function':
-			const dependentArray2 = [...array2].map(m => dependent(m));
+			const dependentArray2 = [...collection2].map(m => dependent(m));
 
-			return [...array1].filter(x => {
+			return [...collection1].filter(x => {
 				const dependentX = dependent(x);
 				return !dependentArray2.some(y => dependentX === y);
 			});

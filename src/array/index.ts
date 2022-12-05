@@ -18,6 +18,9 @@ import fromPairs from './fromPairs';
 import head from './head';
 import indexOf from './indexOf';
 import initial from './initial';
+import intersection from './intersection';
+import join from './join';
+import last from './last';
 
 export {
 	chunk,
@@ -40,4 +43,7 @@ export {
 	head,
 	indexOf,
 	initial,
+	intersection,
+	join,
+	last,
 };

@@ -1,2 +1,2 @@
-const head = <T>(array: T[]): T | undefined => array[0];
+const head = <T>(collection: T[]): T | undefined => collection[0];
 export default head;

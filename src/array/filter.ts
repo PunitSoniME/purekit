@@ -1,5 +1,5 @@
-const filter = <T>(array: T[], callback: Function): T[] => {
-	return array.filter(d => {
+const filter = <T>(collection: T[], callback: Function): T[] => {
+	return collection.filter(d => {
 		return callback(d);
 	});
 };

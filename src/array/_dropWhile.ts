@@ -1,9 +1,7 @@
-const dropWhile = <T>(array: T[], length?: number) => {
-	return length === undefined
-		? array.slice(0, -1)
-		: length === 0
-		? array
-		: array.slice(0, length * -1);
+//	@ts-ignore
+const dropWhile = <T>(collection: T[], length?: number) => {
+	console.warn('dropWhile - Implementation is still pending');
+	return [];
 };
 
 export default dropWhile;
