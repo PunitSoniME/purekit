@@ -1,7 +1,7 @@
 const createPredicate = <T>(
 	predicate:
 		| string
-		//  | [string, any] //  this type is giving lint error of map
+		| number
 		| Record<string, any>
 		| ((item: T) => boolean) = x => !!x
 ): ((item: T) => boolean) | undefined => {

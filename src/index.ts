@@ -1,19 +1,27 @@
 import {
-	difference,
-	differenceBy,
-	filter,
-	find,
-	first,
 	chunk,
 	compact,
 	concat,
+	difference,
+	differenceBy,
 	drop,
 	dropRight,
+	filter,
+	find,
+	first,
 	fill,
 	findIndex,
 	findLastIndex,
 	flatten,
 	flattenDeep,
+	flattenDepth,
+	fromPairs,
+	head,
+	indexOf,
+	initial,
+	intersection,
+	join,
+	last,
 } from './array';
 
 import { add } from './maths';
@@ -34,6 +42,14 @@ export {
 	findLastIndex,
 	flatten,
 	flattenDeep,
+	flattenDepth,
+	fromPairs,
+	head,
+	indexOf,
+	initial,
+	intersection,
+	join,
+	last,
 };
 
 export { add };

@@ -1,5 +1,13 @@
-const difference = <T>(collection1: T[], collection2: T[]): T[] => {
-	return collection1.filter(x => !collection2.includes(x));
+import concat from './concat';
+
+const difference = <T>(
+	collection: T[] | null | undefined,
+	...restCollections: T[]
+): T[] => {
+	if (collection === null || collection === undefined) return [];
+
+	const concatedArray = concat(restCollections);
+	return collection.filter(x => !concatedArray.includes(x));
 };
 
 export default difference;

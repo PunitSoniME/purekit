@@ -1,5 +1,3 @@
-const concat = <T>(params: T[]) => {
-	return params.map(m => (Array.isArray(m) ? m[0] : m));
-};
-
+const concat = <T>(collection: T[], ...restCollection: T[]) =>
+	collection.concat([...restCollection]);
 export default concat;

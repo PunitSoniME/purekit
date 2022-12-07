@@ -8,6 +8,8 @@
     "start": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test",
+    "test:watch": "tsdx test --watch",
+    "test:coverage": "tsdx test --coverage",
     "lint": "tsdx lint",
     "lint-fix": "tsdx lint --fix",
     "prepare": "tsdx build",
@@ -73,5 +75,9 @@
     "tsdx": "^0.14.1",
     "tslib": "^2.4.1",
     "typescript": "^4.9.3"
+  },
+  "resolutions": {
+    "@typescript-eslint/eslint-plugin": "^5.45.1",
+    "@typescript-eslint/parser": "^5.45.1"
   }
 }

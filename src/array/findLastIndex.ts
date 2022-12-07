@@ -4,12 +4,14 @@ const findLastIndex = <T>(
 	collection: T[],
 	predicate:
 		| string
-		//  | [string, any] //  this type is giving lint error of map
+		| number
 		| Record<string, any>
 		| ((item: T) => boolean) = x => !!x,
 	fromIndex = 0
 ): number => {
-	if (!Array.isArray(collection)) return -1;
+	if (typeof predicate === 'number')
+		return (collection as number[]).indexOf(predicate);
+
 	const fn = createPredicate(predicate);
 	for (let i = collection.length - 1; i >= fromIndex; i--) {
 		if ((fn as any)(collection[i], i, collection)) {

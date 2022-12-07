@@ -1,13 +1,12 @@
 const differenceBy = <T>(
-	collection1: any[],
-	collection2: any[],
+	collection1: T[],
+	collection2: T[],
 	dependent: any
 ): T[] => {
-	if (Array.isArray(collection1) && collection1.length === 0) return [];
-
 	switch (typeof dependent) {
 		case 'string':
 			return [...collection1].filter(
+				//	@ts-ignore
 				x => !collection2.some(y => x[dependent] === y[dependent])
 			);
 
