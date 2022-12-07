@@ -9,10 +9,10 @@ const findLastIndex = <T>(
 		| ((item: T) => boolean) = x => !!x,
 	fromIndex = 0
 ): number => {
-	if (typeof predicate === 'number')
-		return (collection as number[]).indexOf(predicate);
-
 	const fn = createPredicate(predicate);
+
+	if (fn === undefined) return collection.lastIndexOf(predicate as T);
+
 	for (let i = collection.length - 1; i >= fromIndex; i--) {
 		if ((fn as any)(collection[i], i, collection)) {
 			return i;

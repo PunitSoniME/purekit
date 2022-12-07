@@ -9,10 +9,10 @@ const findIndex = <T>(
 		| ((item: T) => boolean) = x => !!x,
 	fromIndex = 0
 ): number => {
-	if (typeof predicate === 'number')
-		return (collection as number[]).indexOf(predicate);
-
 	const fn = createPredicate(predicate);
+
+	if (fn === undefined) return collection.indexOf(predicate as T);
+
 	for (let i = fromIndex; i < collection.length; i++) {
 		if ((fn as any)(collection[i], i, collection)) {
 			return i;
