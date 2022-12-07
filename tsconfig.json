@@ -6,8 +6,10 @@
   ],
   "compilerOptions": {
     "module": "esnext",
+    "target": "ESNext",
     "lib": [
       "dom",
+      "ES2019",
       "esnext"
     ],
     "importHelpers": true,
