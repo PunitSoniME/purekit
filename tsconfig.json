@@ -5,8 +5,8 @@
     "types"
   ],
   "compilerOptions": {
-    "module": "ESNext",
-    "target": "ESNext",
+    "module": "ES6",
+    "target": "ES2022",
     "lib": [
       "dom",
       "ES5",
