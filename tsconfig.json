@@ -5,17 +5,13 @@
     "types"
   ],
   "compilerOptions": {
-    "module": "ES6",
-    "target": "ES2022",
+    "module": "esnext",
+    "target": "ESNext",
     "lib": [
       "dom",
-      "ES5",
-      "ES2022",
-      "ES2022.Array",
-      "ESNext",
-      "ESNext.Array"
+      "ES2019",
+      "esnext"
     ],
-    "allowJs": true,
     "importHelpers": true,
     // output .d.ts declaration files for consumers
     "declaration": true,
