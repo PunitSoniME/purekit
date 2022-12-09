@@ -10,6 +10,8 @@
     "lib": [
       "dom",
       "ES5",
+      "ES2022",
+      "ES2022.Array",
       "ESNext",
       "ESNext.Array"
     ],
