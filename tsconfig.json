@@ -5,13 +5,15 @@
     "types"
   ],
   "compilerOptions": {
-    "module": "esnext",
+    "module": "ESNext",
     "target": "ESNext",
     "lib": [
       "dom",
-      "ES2019",
-      "esnext"
+      "ES5",
+      "ESNext",
+      "ESNext.Array"
     ],
+    "allowJs": true,
     "importHelpers": true,
     // output .d.ts declaration files for consumers
     "declaration": true,
