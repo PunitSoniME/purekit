@@ -14,7 +14,7 @@ describe('Array', () => {
 				return d % 2 === 0;
 			});
 
-			expect(_filteredData).toEqual(filteredData);
+			expect(filteredData).toEqual(_filteredData);
 		});
 
 		it('[Array Of Object] It should filter records based on condition', () => {
@@ -28,7 +28,7 @@ describe('Array', () => {
 				return d.id === id;
 			});
 
-			expect(_filteredData).toEqual(filteredData);
+			expect(filteredData).toEqual(_filteredData);
 		});
 	});
 });

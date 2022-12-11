@@ -9,40 +9,40 @@ describe('Array', () => {
 				return o.user === 'pebbles';
 			};
 
-			expect(_findLastIndex(usersMockData, predicate)).toEqual(
-				findLastIndex(usersMockData, predicate)
+			expect(findLastIndex(usersMockData, predicate)).toEqual(
+				_findLastIndex(usersMockData, predicate)
 			);
 		});
 
 		it('[Array Of Object] It should return the last index based on passed object', () => {
 			const predicate = { user: 'barney', active: true };
 
-			expect(_findLastIndex(usersMockData, predicate)).toEqual(
-				findLastIndex(usersMockData, predicate)
+			expect(findLastIndex(usersMockData, predicate)).toEqual(
+				_findLastIndex(usersMockData, predicate)
 			);
 		});
 
 		it('[Array Of Object] It should return the last index based on passed array', () => {
-			expect(_findLastIndex(usersMockData, ['active', false])).toEqual(
-				findLastIndex(usersMockData, ['active', false])
+			expect(findLastIndex(usersMockData, ['active', false])).toEqual(
+				_findLastIndex(usersMockData, ['active', false])
 			);
 		});
 
 		it('[Array Of Object] It should return the last index based on passed string key', () => {
-			expect(_findLastIndex(usersMockData, 'active')).toEqual(
-				findLastIndex(usersMockData, 'active')
+			expect(findLastIndex(usersMockData, 'active')).toEqual(
+				_findLastIndex(usersMockData, 'active')
 			);
 		});
 
 		it('[Array Of Number] It should return the index based on passed array', () => {
-			expect(_findLastIndex(numberMockData, 100)).toEqual(
-				findLastIndex(numberMockData, 100)
+			expect(findLastIndex(numberMockData, 100)).toEqual(
+				_findLastIndex(numberMockData, 100)
 			);
 		});
 
 		it('[Array Of String] It should return the index based on passed array', () => {
-			expect(_findLastIndex(stringMockData, 'z')).toEqual(
-				findLastIndex(stringMockData, 'z')
+			expect(findLastIndex(stringMockData, 'z')).toEqual(
+				_findLastIndex(stringMockData, 'z')
 			);
 		});
 	});

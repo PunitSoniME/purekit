@@ -10,11 +10,11 @@ describe('Array', () => {
 
 	describe('chunk', () => {
 		it('[Array Of Number] It should chunk data into default 1 chunk size', () => {
-			expect(_chunk(numberMockData)).toEqual(chunk(numberMockData));
+			expect(chunk(numberMockData)).toEqual(_chunk(numberMockData));
 		});
 
 		it('[Array Of Number] It should chunk data into given chunk size', () => {
-			expect(_chunk(numberMockData, 3)).toEqual(chunk(numberMockData, 3));
+			expect(chunk(numberMockData, 3)).toEqual(_chunk(numberMockData, 3));
 		});
 	});
 });

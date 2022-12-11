@@ -6,7 +6,7 @@ describe('Array', () => {
 		const collection = [[1], 2, [3], [[4]], 5];
 
 		it('[Array Of Number] It should return the difference', () => {
-			expect(_difference(collection)).toEqual(difference(collection));
+			expect(difference(collection)).toEqual(_difference(collection));
 		});
 
 		it('[NULL] It should return an empty array', () => {

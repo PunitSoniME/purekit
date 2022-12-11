@@ -14,7 +14,7 @@ describe('Array', () => {
 				return d === 3;
 			});
 
-			expect(_record).toEqual(record);
+			expect(record).toEqual(_record);
 		});
 
 		it('[Array Of Object] It should return single record', () => {
@@ -28,7 +28,7 @@ describe('Array', () => {
 				return d.id === id;
 			});
 
-			expect(_record).toEqual(record);
+			expect(record).toEqual(_record);
 		});
 	});
 });

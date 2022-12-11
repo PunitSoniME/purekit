@@ -7,7 +7,7 @@ const joiner = '~';
 describe('Array', () => {
 	describe('join', () => {
 		it('[Array Of Number] It should return the new string with passed joiner', () => {
-			expect(_join(data, joiner)).toEqual(join(data, joiner));
+			expect(join(data, joiner)).toEqual(_join(data, joiner));
 		});
 	});
 });

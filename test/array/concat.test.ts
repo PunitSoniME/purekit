@@ -6,7 +6,7 @@ describe('Array', () => {
 		const collection = [[1], 2, [3], [[4]], 5];
 
 		it('It should concat the data and return an array', () => {
-			expect(_concat(collection)).toEqual(concat(collection));
+			expect(concat(collection)).toEqual(_concat(collection));
 		});
 	});
 });

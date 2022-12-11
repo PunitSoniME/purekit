@@ -21,6 +21,11 @@ import initial from './initial';
 import intersection from './intersection';
 import join from './join';
 import last from './last';
+import lastIndexOf from './lastIndexOf';
+import nth from './nth';
+import pull from './pull';
+import pullAll from './pullAll';
+import pullAt from './pullAt';
 
 export {
 	chunk,
@@ -46,4 +51,9 @@ export {
 	intersection,
 	join,
 	last,
+	lastIndexOf,
+	nth,
+	pull,
+	pullAll,
+	pullAt
 };

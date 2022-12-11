@@ -9,34 +9,34 @@ describe('Array', () => {
 				return o.user === 'barney';
 			};
 
-			expect(_findIndex(usersMockData, predicate)).toEqual(
-				findIndex(usersMockData, predicate)
+			expect(findIndex(usersMockData, predicate)).toEqual(
+				_findIndex(usersMockData, predicate)
 			);
 		});
 
 		it('[Array Of Object] It should return the index based on passed object', () => {
 			const predicate = { user: 'barney' };
 
-			expect(_findIndex(usersMockData, predicate)).toEqual(
-				findIndex(usersMockData, predicate)
+			expect(findIndex(usersMockData, predicate)).toEqual(
+				_findIndex(usersMockData, predicate)
 			);
 		});
 
 		it('[Array Of Object] It should return the index based on passed array', () => {
-			expect(_findIndex(usersMockData, ['active', false])).toEqual(
-				findIndex(usersMockData, ['active', false])
+			expect(findIndex(usersMockData, ['active', false])).toEqual(
+				_findIndex(usersMockData, ['active', false])
 			);
 		});
 
 		it('[Array Of Number] It should return the index based on passed array', () => {
-			expect(_findIndex(numberMockData, 100)).toEqual(
-				findIndex(numberMockData, 100)
+			expect(findIndex(numberMockData, 100)).toEqual(
+				_findIndex(numberMockData, 100)
 			);
 		});
 
 		it('[Array Of String] It should return the index based on passed array', () => {
-			expect(_findIndex(stringMockData, 'z')).toEqual(
-				findIndex(stringMockData, 'z')
+			expect(findIndex(stringMockData, 'z')).toEqual(
+				_findIndex(stringMockData, 'z')
 			);
 		});
 	});

@@ -9,7 +9,7 @@ const data = [
 describe('Array', () => {
 	describe('fromPairs', () => {
 		it('[Array Of Array] It should return the object with pairs', () => {
-			expect(_fromPairs(data)).toEqual(fromPairs(data));
+			expect(fromPairs(data)).toEqual(_fromPairs(data));
 		});
 	});
 });

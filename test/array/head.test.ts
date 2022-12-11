@@ -5,11 +5,11 @@ import { numberMockData, objectMockData } from '../mockData';
 describe('Array', () => {
 	describe('head', () => {
 		it('[Array Of Number] It should return head element', () => {
-			expect(_head(numberMockData)).toEqual(head(numberMockData));
+			expect(head(numberMockData)).toEqual(_head(numberMockData));
 		});
 
 		it('[Array Of Object] It should return head element', () => {
-			expect(_head(objectMockData)).toEqual(head(objectMockData));
+			expect(head(objectMockData)).toEqual(_head(objectMockData));
 		});
 	});
 });
