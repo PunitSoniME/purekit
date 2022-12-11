@@ -1,4 +1,4 @@
-//	@ts-ignore
+//	@ts-nocheck
 const pullAllBy = <T>(
 	collection: T[],
 	elementsToRemove: T[],

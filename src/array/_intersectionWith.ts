@@ -1,4 +1,4 @@
-//	@ts-ignore
+//	@ts-nocheck
 const intersectionWith = <T>(...collections: T[]): T[] => {
 	console.warn('intersectionWith - Implementation is still pending');
 	return [];

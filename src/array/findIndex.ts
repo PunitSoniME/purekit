@@ -1,12 +1,9 @@
 import createPredicate from '../util/createPredicate';
+import predicateType from '../util/predicateType';
 
 const findIndex = <T>(
 	collection: T[],
-	predicate:
-		| string
-		| number
-		| Record<string, any>
-		| ((item: T) => boolean) = x => !!x,
+	predicate: predicateType<T> = x => !!x,
 	fromIndex = 0
 ): number => {
 	const fn = createPredicate(predicate);

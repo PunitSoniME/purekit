@@ -12,7 +12,6 @@ describe('Array', () => {
 
 		it('[Array Of string] It should return the modified array with removed values - multiple record remove with negative value', () => {
 			const pullAtResult = pullAt(['a', 'b', 'c', 'd'], [1, -1]);
-			console.log('pullAtResult', pullAtResult);
 			expect(pullAtResult).toEqual(['b', 'd']);
 		});
 

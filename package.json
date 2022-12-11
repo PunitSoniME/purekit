@@ -10,6 +10,7 @@
     "test": "tsdx test",
     "test:watch": "tsdx test --watch",
     "test:coverage": "tsdx test --coverage",
+    "test:coverage:run": "yarn run test:coverage && serve ./coverage/lcov-report",
     "lint": "tsdx lint",
     "lint-fix": "tsdx lint --fix",
     "prepare": "tsdx build",

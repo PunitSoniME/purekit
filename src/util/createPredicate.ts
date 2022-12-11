@@ -1,9 +1,7 @@
+import predicateType from './predicateType';
+
 const createPredicate = <T>(
-	predicate:
-		| string
-		| number
-		| Record<string, any>
-		| ((item: T) => boolean) = x => !!x
+	predicate: predicateType<T> = x => !!x
 ): ((item: T) => boolean) | undefined => {
 	let fn;
 	if (typeof predicate === 'string') {

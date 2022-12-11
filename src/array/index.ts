@@ -26,6 +26,12 @@ import nth from './nth';
 import pull from './pull';
 import pullAll from './pullAll';
 import pullAt from './pullAt';
+import remove from './remove';
+import reverse from './reverse';
+import slice from './slice';
+import sortedIndex from './sortedIndex';
+import sortedUniq from './sortedUniq';
+import sortedUniqBy from './sortedUniqBy';
 
 export {
 	chunk,
@@ -56,4 +62,10 @@ export {
 	pull,
 	pullAll,
 	pullAt,
+	remove,
+	reverse,
+	slice,
+	sortedIndex,
+	sortedUniq,
+	sortedUniqBy,
 };
