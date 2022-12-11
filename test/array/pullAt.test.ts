@@ -3,7 +3,6 @@ import { pullAt } from '../../src/array';
 
 describe('Array', () => {
 	describe('pullAt', () => {
-
 		it('[Array Of string] It should return the modified array with removed values - multiple record remove', () => {
 			const _pullAtResult = _pullAt(['a', 'b', 'c', 'd'], [1, 3]);
 			const pullAtResult = pullAt(['a', 'b', 'c', 'd'], [1, 3]);

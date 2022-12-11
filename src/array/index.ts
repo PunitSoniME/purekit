@@ -55,5 +55,5 @@ export {
 	nth,
 	pull,
 	pullAll,
-	pullAt
+	pullAt,
 };
