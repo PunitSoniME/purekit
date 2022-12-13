@@ -5,7 +5,7 @@ import { numberMockData, usersMockData, stringMockData } from '../mockData';
 describe('Array', () => {
 	describe('findIndex', () => {
 		it('[Array Of Object] It should return the index based on passed predicate', () => {
-			const predicate = function(o: any) {
+			const predicate = (o: any) => {
 				return o.user === 'barney';
 			};
 

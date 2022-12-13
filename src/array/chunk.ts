@@ -4,7 +4,7 @@
  * @param chunkSize The length of each chunk
  * @returns Returns the new array of chunks.
  */
-const chunk = <T>(collection: T[], chunkSize: number = 1): Array<T>[] => {
+const chunk = <T>(collection: T[], chunkSize: number = 1): T[][] => {
 	return Array(Math.ceil(collection.length / chunkSize))
 		.fill(null)
 		.map((_, index) => index * chunkSize)

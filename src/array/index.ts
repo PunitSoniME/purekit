@@ -32,6 +32,12 @@ import slice from './slice';
 import sortedIndex from './sortedIndex';
 import sortedUniq from './sortedUniq';
 import sortedUniqBy from './sortedUniqBy';
+import tail from './tail';
+import take from './take';
+import takeRight from './takeRight';
+import takeRightWhile from './takeRightWhile';
+import takeWhile from './takeWhile';
+import union from './union';
 
 export {
 	chunk,
@@ -68,4 +74,10 @@ export {
 	sortedIndex,
 	sortedUniq,
 	sortedUniqBy,
+	tail,
+	take,
+	takeRight,
+	takeRightWhile,
+	takeWhile,
+	union,
 };

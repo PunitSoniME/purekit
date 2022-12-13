@@ -1,55 +1,12 @@
-import {
-	chunk,
-	compact,
-	concat,
-	difference,
-	differenceBy,
-	drop,
-	dropRight,
-	filter,
-	find,
-	first,
-	fill,
-	findIndex,
-	findLastIndex,
-	flatten,
-	flattenDeep,
-	flattenDepth,
-	fromPairs,
-	head,
-	indexOf,
-	initial,
-	intersection,
-	join,
-	last,
-} from './array';
+import * as array from './array';
+import * as maths from './maths';
 
-import { add } from './maths';
+const _ = {
+	//	Array Methods
+	...array,
 
-export {
-	chunk,
-	compact,
-	concat,
-	difference,
-	differenceBy,
-	drop,
-	dropRight,
-	filter,
-	find,
-	first,
-	fill,
-	findIndex,
-	findLastIndex,
-	flatten,
-	flattenDeep,
-	flattenDepth,
-	fromPairs,
-	head,
-	indexOf,
-	initial,
-	intersection,
-	join,
-	last,
+	//	Maths Methods
+	...maths,
 };
 
-export { add };
+export default _;

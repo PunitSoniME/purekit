@@ -10,6 +10,10 @@ module.exports = {
                 })
                 : p
         );
+        
+        //  Uncomment below code to ignore sourcemap files
+        //  config.output = { ...config.output, sourcemap: false };
+
         return config; // always return a config.
     },
 };

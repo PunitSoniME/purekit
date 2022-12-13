@@ -3,10 +3,12 @@ import { concat } from '../../src/array';
 
 describe('Array', () => {
 	describe('concat', () => {
-		const collection = [[1], 2, [3], [[4]], 5];
+		const array = [1];
+		var other = concat(array, 2, [3]);
+		var _other = _concat(array, 2, [3]);
 
 		it('It should concat the data and return an array', () => {
-			expect(concat(collection)).toEqual(_concat(collection));
+			expect(other).toEqual(_other);
 		});
 	});
 });
