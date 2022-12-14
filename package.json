@@ -16,7 +16,7 @@
     "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
-    "prerelease": "yarn run build && npm version prerelease && npm publish && git push"
+    "prerelease": "yarn run build && npm version prerelease && git push"
   },
   "repository": {
     "type": "git",
