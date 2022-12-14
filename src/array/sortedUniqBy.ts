@@ -7,7 +7,7 @@ const sortedUniqBy = <T>(
 	const fn = createPredicate(predicate);
 	let mappedValues = new Map();
 
-	collection.forEach((element, index) => {
+	collection.forEach(element => {
 		const updatedElement = (fn as any)(element);
 		if (updatedElement && !mappedValues.has(updatedElement)) {
 			mappedValues.set(updatedElement, element);
