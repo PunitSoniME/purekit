@@ -38,6 +38,11 @@ import takeRight from './takeRight';
 import takeRightWhile from './takeRightWhile';
 import takeWhile from './takeWhile';
 import union from './union';
+import uniq from './uniq';
+import unzip from './unzip';
+import zip from './zip';
+import unzipWith from './unzipWith';
+import without from './without';
 
 export {
 	chunk,
@@ -80,4 +85,9 @@ export {
 	takeRightWhile,
 	takeWhile,
 	union,
+	uniq,
+	unzip,
+	unzipWith,
+	without,
+	zip,
 };

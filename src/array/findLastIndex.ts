@@ -11,7 +11,7 @@ const findLastIndex = <T>(
 	if (fn === undefined) return collection.lastIndexOf(predicate as T);
 
 	for (let i = collection.length - 1; i >= fromIndex; i--) {
-		if ((fn as any)(collection[i], i, collection)) {
+		if ((fn as any)(collection[i])) {
 			return i;
 		}
 	}

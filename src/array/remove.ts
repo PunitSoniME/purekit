@@ -10,7 +10,7 @@ const remove = <T>(
 	let updatedCollection: T[] = [];
 
 	collection.forEach((element, index) => {
-		if ((fn as any)(collection[index], index, collection)) {
+		if ((fn as any)(collection[index])) {
 			removedArray.push(element);
 		} else {
 			updatedCollection.push(element);

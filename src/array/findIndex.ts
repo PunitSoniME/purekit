@@ -11,7 +11,7 @@ const findIndex = <T>(
 	if (fn === undefined) return collection.indexOf(predicate as T);
 
 	for (let i = fromIndex; i < collection.length; i++) {
-		if ((fn as any)(collection[i], i, collection)) {
+		if ((fn as any)(collection[i])) {
 			return i;
 		}
 	}

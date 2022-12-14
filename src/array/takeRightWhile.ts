@@ -11,7 +11,7 @@ const takeRightWhile = <T>(
 	let collectionToReturn: T[] = [];
 
 	for (let i = collection.length - 1; i >= 0; i--) {
-		if ((fn as any)(collection[i], i, collection)) {
+		if ((fn as any)(collection[i])) {
 			collectionToReturn.push(collection[i]);
 		} else {
 			return collectionToReturn.reverse();

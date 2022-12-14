@@ -11,7 +11,7 @@ const takeWhile = <T>(
 	let collectionToReturn: T[] = [];
 
 	for (let i = 0; i < collection.length; i++) {
-		if ((fn as any)(collection[i], i, collection)) {
+		if ((fn as any)(collection[i])) {
 			collectionToReturn.push(collection[i]);
 		} else {
 			return collectionToReturn;

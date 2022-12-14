@@ -1,10 +1,13 @@
+//	@ts-nocheck
 import createPredicate from '../util/createPredicate';
+import predicateType from '../util/predicateType';
 
-const sortedUniqBy = <T>(
+const unionBy = <T>(
 	collection: T[],
-	predicate: (item: T) => number | boolean = x => !!x
+	predicate: predicateType<T> = x => !!x
 ): T[] => {
 	const fn = createPredicate(predicate);
+
 	let mappedValues = new Map();
 
 	collection.forEach((element, index) => {
@@ -14,7 +17,7 @@ const sortedUniqBy = <T>(
 		}
 	});
 
-	collection = Array.from(new Set([...mappedValues.values()]));
-	return collection;
+	return Array.from(new Set([...mappedValues.values()]));
 };
-export default sortedUniqBy;
+
+export default unionBy;
