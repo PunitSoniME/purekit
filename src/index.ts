@@ -48,11 +48,9 @@ import {
 	unzipWith,
 	without,
 	zip,
-} from './array'
+} from './array';
 
-import {
-	add
-} from './maths'
+import { add } from './maths';
 
 const _ = {
 	//	Array Methods
@@ -114,10 +112,6 @@ export {
 	unzipWith,
 	without,
 	zip,
-
-
 	// Maths Methods
 	add,
-
-
 };
