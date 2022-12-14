@@ -15,7 +15,8 @@
     "lint-fix": "tsdx lint --fix",
     "prepare": "tsdx build",
     "size": "size-limit",
-    "analyze": "size-limit --why"
+    "analyze": "size-limit --why",
+    "prerelease": "npm version prerelease && git push"
   },
   "repository": {
     "type": "git",
