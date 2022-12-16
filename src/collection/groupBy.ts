@@ -1,25 +1,20 @@
-//  @ts-nocheck
 import createPredicate from '../util/createPredicate';
 import predicateType from '../util/predicateType';
 
-const groupBy = <T>(
-	collection: T[],
-	predicate: string | predicateType<T>
-): Object => {
+const groupBy = <T>(collection: T[], predicate: predicateType<T>): Object => {
 	const fn = createPredicate(predicate);
 
-	switch (typeof collection[0]) {
-		case 'object':
+	return collection.reduce((group: any, item: T) => {
+		if ((fn as any)(item)) {
+			// item[predicate === undefined ? (fn as any)(item) : predicate];
+			//	@ts-ignore
+			const key = item[predicate] ?? (fn as any)(item);
 
-		// return collection.reduce((group, item, index) => {
-
-		//     group[predicate] = group[predicate] ?? [];
-		//     group[predicate].push(item);
-		//     return group;
-		// }, {});
-	}
-
-	return {};
+			group[key] = group.hasOwnProperty(key) ? group[key] : [];
+			group[key].push(item);
+		}
+		return group;
+	}, {});
 };
 
 export default groupBy;

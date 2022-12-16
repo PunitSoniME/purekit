@@ -48,6 +48,7 @@ import {
 	unzipWith,
 	without,
 	zip,
+	zipObject,
 } from './array';
 
 import { add } from './maths';
@@ -112,6 +113,7 @@ export {
 	unzipWith,
 	without,
 	zip,
+	zipObject,
 	// Maths Methods
 	add,
 };

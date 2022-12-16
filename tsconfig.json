@@ -9,7 +9,7 @@
     "target": "ESNext",
     "lib": [
       "dom",
-      "ES2019",
+      "es2020",
       "esnext"
     ],
     "importHelpers": true,

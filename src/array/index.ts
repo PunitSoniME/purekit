@@ -40,9 +40,10 @@ import takeWhile from './takeWhile';
 import union from './union';
 import uniq from './uniq';
 import unzip from './unzip';
-import zip from './zip';
 import unzipWith from './unzipWith';
 import without from './without';
+import zip from './zip';
+import zipObject from './zipObject';
 
 export {
 	chunk,
@@ -90,4 +91,5 @@ export {
 	unzipWith,
 	without,
 	zip,
+	zipObject,
 };
