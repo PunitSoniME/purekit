@@ -1,4 +1,4 @@
-import pullAll from "./pullAll";
+import pullAll from './pullAll';
 
 const pull = <T>(collection: T[], ...elementsToRemove: T[]): T[] => {
 	return pullAll(collection, elementsToRemove);

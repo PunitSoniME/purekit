@@ -1,9 +1,7 @@
 import get from './get';
 import predicateType from './predicateType';
 
-const createPredicate = <T>(
-	fn: predicateType<T>
-) => {
+const createPredicate = <T>(fn: predicateType<T>) => {
 	if (typeof fn === 'string') {
 		return (item: T) => get(item, fn);
 	} else if (Array.isArray(fn)) {
@@ -16,8 +14,7 @@ const createPredicate = <T>(
 		};
 	} else if (typeof fn === 'function') {
 		return fn;
-	}
-	else if (['number', 'boolean'].some(s => s === typeof fn)) {
+	} else if (['number', 'boolean'].some(s => s === typeof fn)) {
 		return (item: T) => (item as any) === fn;
 	}
 	return fn;
