@@ -10,8 +10,6 @@ import {
 	differenceBy,
 	drop,
 	dropRight,
-	filter,
-	find,
 	first,
 	fill,
 	findIndex,
@@ -53,6 +51,8 @@ import {
 
 import { add } from './maths';
 
+import { groupBy } from './collection';
+
 const _ = {
 	//	Array Methods
 	...array,
@@ -75,8 +75,6 @@ export {
 	differenceBy,
 	drop,
 	dropRight,
-	filter,
-	find,
 	first,
 	fill,
 	findIndex,
@@ -116,4 +114,6 @@ export {
 	zipObject,
 	// Maths Methods
 	add,
+	// Collection Methods
+	groupBy,
 };

@@ -8,6 +8,7 @@
 ![Types Included](https://badgen.net/npm/types/alt-lodash)
 [![gzip size](https://img.badgesize.io/https:/unpkg.com/alt-lodash/dist/alt-lodash.cjs.production.min.js?label=gzip&compression=gzip)](https:/unpkg.com/alt-lodash/dist/alt-lodash.cjs.production.min.js)
 
+
 [npm_url]: https://www.npmjs.org/package/alt-lodash
 
 ## Installation

@@ -1,21 +1,11 @@
-import createPredicate from '../util/createPredicate';
-import predicateType from '../util/predicateType';
+import applyArrayFn from '../util/applyArrayFn';
 
 const findIndex = <T>(
-	collection: T[],
-	predicate: predicateType<T> = x => !!x,
+	collection: T,
+	predicate: any,
 	fromIndex = 0
 ): number => {
-	const fn = createPredicate(predicate);
-
-	if (fn === undefined) return collection.indexOf(predicate as T);
-
-	for (let i = fromIndex; i < collection.length; i++) {
-		if ((fn as any)(collection[i])) {
-			return i;
-		}
-	}
-	return -1;
+	return applyArrayFn({ collection: collection, fnName: 'findIndex', fn: predicate, fromIndex: fromIndex });
 };
 
 export default findIndex;

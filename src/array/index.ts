@@ -6,8 +6,6 @@ import differenceBy from './differenceBy';
 import drop from './drop';
 import dropRight from './dropRight';
 import fill from './fill';
-import filter from './filter';
-import find from './find';
 import first from './first';
 import findIndex from './findIndex';
 import findLastIndex from './findLastIndex';
@@ -53,8 +51,6 @@ export {
 	differenceBy,
 	drop,
 	dropRight,
-	filter,
-	find,
 	first,
 	fill,
 	findIndex,
