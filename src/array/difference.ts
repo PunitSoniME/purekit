@@ -7,7 +7,7 @@ const difference = <T>(
 	if (collection === null || collection === undefined) return [];
 
 	const concatedArray = concat(restCollections);
-	return collection.filter((x) => !concatedArray.includes(x));
+	return collection.filter(x => !concatedArray.includes(x));
 };
 
 export default difference;

@@ -8,7 +8,7 @@ const usersMockData = [
 	{ user: 'pebbles', active: true },
 ];
 
-const objectMockData: IObjectMock[] = numberMockData.map((m) => {
+const objectMockData: IObjectMock[] = numberMockData.map(m => {
 	return { id: m, name: `Punit ${m}` };
 });
 

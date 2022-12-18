@@ -17,14 +17,14 @@ const createPredicate = <T>(
 	} else if (typeof fn === 'object') {
 		return (item: T) => {
 			return Object.keys(fn).every(
-				(v) => !(v in fn) || (item as any)[v] === fn[v]
+				v => !(v in fn) || (item as any)[v] === fn[v]
 			);
 		};
 	} else if (typeof fn === 'function') {
 		return fn;
 	} else if (
 		equalyCompare &&
-		['number', 'boolean'].some((s) => s === typeof fn)
+		['number', 'boolean'].some(s => s === typeof fn)
 	) {
 		return (item: T) => (item as any) === fn;
 	}

@@ -8,7 +8,7 @@ const chunk = <T>(collection: T[], chunkSize: number = 1): T[][] => {
 	return Array(Math.ceil(collection.length / chunkSize))
 		.fill(null)
 		.map((_, index) => index * chunkSize)
-		.map((begin) => collection.slice(begin, begin + chunkSize));
+		.map(begin => collection.slice(begin, begin + chunkSize));
 };
 
 export default chunk;

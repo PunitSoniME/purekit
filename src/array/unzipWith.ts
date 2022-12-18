@@ -10,7 +10,7 @@ const unzipWith = <T>(
 	// const fn = createPredicate(predicate);
 	const unzipped = unzip(collection);
 
-	return unzipped.map((m) => {
+	return unzipped.map(m => {
 		return (fn as any)(...m);
 	});
 };
