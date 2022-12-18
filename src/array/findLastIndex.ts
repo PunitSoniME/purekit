@@ -3,7 +3,7 @@ import predicateType from '../util/predicateType';
 
 const findLastIndex = <T>(
 	collection: T[],
-	predicate: predicateType<T> = x => !!x,
+	predicate: predicateType<T> = (x) => !!x,
 	fromIndex = 0
 ): number => {
 	const fn = createPredicate(predicate);

@@ -7,15 +7,15 @@ const differenceBy = <T>(
 		case 'string':
 			return [...collection1].filter(
 				//	@ts-ignore
-				x => !collection2.some(y => x[dependent] === y[dependent])
+				(x) => !collection2.some((y) => x[dependent] === y[dependent])
 			);
 
 		case 'function':
-			const dependentArray2 = [...collection2].map(m => dependent(m));
+			const dependentArray2 = [...collection2].map((m) => dependent(m));
 
-			return [...collection1].filter(x => {
+			return [...collection1].filter((x) => {
 				const dependentX = dependent(x);
-				return !dependentArray2.some(y => dependentX === y);
+				return !dependentArray2.some((y) => dependentX === y);
 			});
 	}
 

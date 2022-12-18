@@ -4,7 +4,7 @@ import predicateType from '../util/predicateType';
 
 const unionBy = <T>(
 	collection: T[],
-	predicate: predicateType<T> = x => !!x
+	predicate: predicateType<T> = (x) => !!x
 ): T[] => {
 	const fn = createPredicate(predicate);
 

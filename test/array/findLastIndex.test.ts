@@ -5,7 +5,7 @@ import { numberMockData, stringMockData, usersMockData } from '../mockData';
 describe('Array', () => {
 	describe('findLastIndex', () => {
 		it('[Array Of Object] It should return the last index based on passed predicate', () => {
-			const predicate = function(o: any) {
+			const predicate = function (o: any) {
 				return o.user === 'pebbles';
 			};
 

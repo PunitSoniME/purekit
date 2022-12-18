@@ -5,11 +5,11 @@ describe('Collection', () => {
 	describe('forEach', () => {
 		it('[Array Of Number] Iterates over elements of collection and invokes predicate for each element.', () => {
 			expect(
-				forEach([1, 2], function(value: number) {
+				forEach([1, 2], function (value: number) {
 					console.log(value);
 				})
 			).toEqual(
-				_forEach([1, 2], function(value) {
+				_forEach([1, 2], function (value) {
 					console.log(value);
 				})
 			);
@@ -17,11 +17,11 @@ describe('Collection', () => {
 
 		it('[Object] Iterates over elements of collection and invokes predicate for each element.', () => {
 			expect(
-				forEach({ a: 1, b: 2 }, function(_: number, key: string) {
+				forEach({ a: 1, b: 2 }, function (_: number, key: string) {
 					console.log(key);
 				})
 			).toEqual(
-				_forEach({ a: 1, b: 2 }, function(_: number, key: string) {
+				_forEach({ a: 1, b: 2 }, function (_: number, key: string) {
 					console.log(key);
 				})
 			);

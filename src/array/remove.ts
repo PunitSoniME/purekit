@@ -2,7 +2,7 @@ import createPredicate from '../util/createPredicate';
 
 const remove = <T>(
 	collection: T[],
-	predicate: (item: T) => boolean = x => !!x
+	predicate: (item: T) => boolean = (x) => !!x
 ): T[] => {
 	const fn = createPredicate(predicate);
 

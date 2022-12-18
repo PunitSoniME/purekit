@@ -3,7 +3,7 @@ import predicateType from '../util/predicateType';
 
 const takeWhile = <T>(
 	collection: T[],
-	predicate: predicateType<T> = x => !!x
+	predicate: predicateType<T> = (x) => !!x
 ): T[] => {
 	if (collection.length === 0) return collection;
 

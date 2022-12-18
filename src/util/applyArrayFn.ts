@@ -44,10 +44,9 @@ const applyArrayFn = <T>({
 			? reverseCollection({ ...collection })
 			: { ...collection };
 
-		return (Object.entries(collectionInReverse)[
-			fnName
-		] as any)(([key, value]: any[], index: string) =>
-			fn(value, key, collectionInReverse, index)
+		return (Object.entries(collectionInReverse)[fnName] as any)(
+			([key, value]: any[], index: string) =>
+				fn(value, key, collectionInReverse, index)
 		);
 	}
 

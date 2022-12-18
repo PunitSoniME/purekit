@@ -14,10 +14,12 @@ const pullAt = <T>(collection: T[], indexes: number | number[]): T[] => {
 
 	if (Array.isArray(indexes)) {
 		const positiveIndexes = new Set([
-			...indexes.map(index => (index >= 0 ? index : collection.length + index)),
+			...indexes.map((index) =>
+				index >= 0 ? index : collection.length + index
+			),
 		]);
 
-		positiveIndexes.forEach(index => {
+		positiveIndexes.forEach((index) => {
 			pullRecord(index);
 		});
 	} else {
