@@ -8,6 +8,7 @@ interface IApplyArrayFN<T> {
 	makeItReverse?: boolean;
 	fromIndex?: number;
 	toIndex?: number;
+	equalyCompare?: boolean;
 }
 
 const applyArrayFn = <T>({
@@ -17,8 +18,9 @@ const applyArrayFn = <T>({
 	makeItReverse = false,
 	fromIndex = 0,
 	toIndex = -1,
+	equalyCompare = true,
 }: IApplyArrayFN<T>) => {
-	fn = createPredicate(fn);
+	fn = createPredicate(fn, equalyCompare);
 
 	if (Array.isArray(collection)) {
 		const collectionToTest =
@@ -48,6 +50,8 @@ const applyArrayFn = <T>({
 			fn(value, key, collectionInReverse, index)
 		);
 	}
+
+	return (collection as any)[fnName](fn);
 };
 
 export default applyArrayFn;

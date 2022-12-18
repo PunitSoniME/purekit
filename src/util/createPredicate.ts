@@ -1,7 +1,15 @@
 import get from './get';
 import predicateType from './predicateType';
 
-const createPredicate = <T>(fn: predicateType<T>) => {
+const createPredicate = <T>(
+	fn: predicateType<T>,
+	equalyCompare: boolean = true
+) => {
+	//	Specially for .includes
+	if (equalyCompare === false) {
+		return fn;
+	}
+
 	if (typeof fn === 'string') {
 		return (item: T) => get(item, fn);
 	} else if (Array.isArray(fn)) {
@@ -14,7 +22,10 @@ const createPredicate = <T>(fn: predicateType<T>) => {
 		};
 	} else if (typeof fn === 'function') {
 		return fn;
-	} else if (['number', 'boolean'].some(s => s === typeof fn)) {
+	} else if (
+		equalyCompare &&
+		['number', 'boolean'].some(s => s === typeof fn)
+	) {
 		return (item: T) => (item as any) === fn;
 	}
 	return fn;
