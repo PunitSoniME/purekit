@@ -54,7 +54,8 @@
     "tabWidth": 2,
     "trailingComma": "es5",
     "useTabs": true,
-    "arrowParens": "avoid"
+    "arrowParens": "avoid",
+    "endOfLine": "auto"
   },
   "size-limit": [
     {
