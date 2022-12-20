@@ -1,4 +1,6 @@
 import countBy from './countBy';
+import each from './each';
+import eachRight from './eachRight';
 import every from './every';
 import filter from './filter';
 import find from './find';
@@ -13,6 +15,8 @@ import includes from './includes';
 
 export {
 	countBy,
+	each,
+	eachRight,
 	every,
 	filter,
 	find,
