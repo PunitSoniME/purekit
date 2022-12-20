@@ -2,16 +2,16 @@ import applyArrayFn from '../util/applyArrayFn';
 
 const includes = <T>(
 	collection: T,
-	fn: any,
+	iteratee: any,
 	fromIndex: number = 0
 ): Boolean => {
 	if (typeof collection === 'object') {
-		return Object.values(collection as any).includes(fn, fromIndex);
+		return Object.values(collection as any).includes(iteratee, fromIndex);
 	}
 	return applyArrayFn({
 		collection: collection,
 		fnName: 'includes',
-		fn: fn,
+		iteratee: iteratee,
 		fromIndex: fromIndex,
 		equalyCompare: false,
 	});

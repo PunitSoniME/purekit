@@ -4,7 +4,7 @@ import reverseCollection from './reverseCollection';
 interface IApplyArrayFN<T> {
 	collection: T;
 	fnName: any;
-	fn: any;
+	iteratee: any;
 	makeItReverse?: boolean;
 	fromIndex?: number;
 	toIndex?: number;
@@ -14,13 +14,13 @@ interface IApplyArrayFN<T> {
 const applyArrayFn = <T>({
 	collection,
 	fnName,
-	fn,
+	iteratee,
 	makeItReverse = false,
 	fromIndex = 0,
 	toIndex = -1,
 	equalyCompare = true,
 }: IApplyArrayFN<T>) => {
-	fn = createPredicate(fn, equalyCompare);
+	iteratee = createPredicate(iteratee, equalyCompare);
 
 	if (Array.isArray(collection)) {
 		const collectionToTest =
@@ -36,7 +36,7 @@ const applyArrayFn = <T>({
 		const collectionInReverse = makeItReverse
 			? reverseCollection([...collectionToTest])
 			: [...collectionToTest];
-		return (collectionInReverse as any)[fnName](fn);
+		return (collectionInReverse as any)[fnName](iteratee);
 	}
 
 	if (collection && typeof collection === 'object') {
@@ -46,11 +46,11 @@ const applyArrayFn = <T>({
 
 		return (Object.entries(collectionInReverse)[fnName] as any)(
 			([key, value]: any[], index: string) =>
-				fn(value, key, collectionInReverse, index)
+				iteratee(value, key, collectionInReverse, index)
 		);
 	}
 
-	return (collection as any)[fnName](fn);
+	return (collection as any)[fnName](iteratee);
 };
 
 export default applyArrayFn;

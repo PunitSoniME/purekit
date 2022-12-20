@@ -2,33 +2,33 @@ import get from './get';
 import predicateType from './predicateType';
 
 const createPredicate = <T>(
-	fn: predicateType<T>,
+	iteratee: predicateType<T>,
 	equalyCompare: boolean = true
 ) => {
 	//	Specially for .includes
 	if (equalyCompare === false) {
-		return fn;
+		return iteratee;
 	}
 
-	if (typeof fn === 'string') {
-		return (item: T) => get(item, fn);
-	} else if (Array.isArray(fn)) {
-		return (item: T) => (item as any)[fn[0]] === fn[1];
-	} else if (typeof fn === 'object') {
+	if (typeof iteratee === 'string') {
+		return (item: T) => get(item, iteratee);
+	} else if (Array.isArray(iteratee)) {
+		return (item: T) => (item as any)[iteratee[0]] === iteratee[1];
+	} else if (typeof iteratee === 'object') {
 		return (item: T) => {
-			return Object.keys(fn).every(
-				v => !(v in fn) || (item as any)[v] === fn[v]
+			return Object.keys(iteratee).every(
+				v => !(v in iteratee) || (item as any)[v] === iteratee[v]
 			);
 		};
-	} else if (typeof fn === 'function') {
-		return fn;
+	} else if (typeof iteratee === 'function') {
+		return iteratee;
 	} else if (
 		equalyCompare &&
-		['number', 'boolean'].some(s => s === typeof fn)
+		['number', 'boolean'].some(s => s === typeof iteratee)
 	) {
-		return (item: T) => (item as any) === fn;
+		return (item: T) => (item as any) === iteratee;
 	}
-	return fn;
+	return iteratee;
 };
 
 export default createPredicate;

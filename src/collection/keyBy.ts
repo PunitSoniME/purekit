@@ -1,13 +1,13 @@
 import predicateType from '../util/predicateType';
 import prepareObject, { prepareObjectTypes } from '../util/prepareObject';
 
-const countBy = <T>(collection: T[], predicate: predicateType<T>): Object => {
+const keyBy = <T>(collection: T[], predicate: predicateType<T>): Object => {
 	const { result } = prepareObject(
 		collection,
 		predicate,
-		prepareObjectTypes.count
+		prepareObjectTypes.replace
 	);
 	return result;
 };
 
-export default countBy;
+export default keyBy;

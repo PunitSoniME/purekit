@@ -2,13 +2,13 @@ import applyArrayFn from '../util/applyArrayFn';
 
 const findLast = <T>(
 	collection: T,
-	fn: any,
+	iteratee: any,
 	fromIndex: number = Array.isArray(collection) ? collection.length - 1 : 0
 ): Boolean => {
 	return applyArrayFn({
 		collection: collection,
 		fnName: 'findLast',
-		fn: fn,
+		iteratee: iteratee,
 		fromIndex: 0,
 		toIndex: fromIndex,
 	});

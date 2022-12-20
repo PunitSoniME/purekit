@@ -1,10 +1,10 @@
 import applyArrayFn from '../util/applyArrayFn';
 
-const forEachRight = <T>(collection: T, fn: any): T => {
+const forEachRight = <T>(collection: T, iteratee: any): T => {
 	applyArrayFn({
 		collection: collection,
 		fnName: 'forEach',
-		fn: fn,
+		iteratee: iteratee,
 		makeItReverse: true,
 	});
 	return collection;

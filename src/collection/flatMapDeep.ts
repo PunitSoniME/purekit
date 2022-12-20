@@ -1,10 +1,10 @@
 import applyArrayFn from '../util/applyArrayFn';
 
-const flatMapDeep = <T>(collection: T, fn: any): T[] => {
+const flatMapDeep = <T>(collection: T, iteratee: any): T[] => {
 	return applyArrayFn({
 		collection: collection,
 		fnName: 'map',
-		fn: fn,
+		iteratee: iteratee,
 	}).flat(Infinity);
 };
 

@@ -12,6 +12,10 @@ import forEach from './forEach';
 import forEachRight from './forEachRight';
 import groupBy from './groupBy';
 import includes from './includes';
+import keyBy from './keyBy';
+import map from './map';
+import orderBy from './orderBy';
+import partition from './partition';
 
 export {
 	countBy,
@@ -28,4 +32,8 @@ export {
 	forEachRight,
 	groupBy,
 	includes,
+	keyBy,
+	map,
+	orderBy,
+	partition,
 };

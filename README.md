@@ -134,9 +134,9 @@ npm install alt-lodash
 - groupBy ✔️
 - includes ✔️
 - invokeMap ( ❌ - Work in progress - PRs most welcome )
-- keyBy ( ❌ - Work in progress - PRs most welcome )
-- map ( ❌ - Work in progress - PRs most welcome )
-- orderBy ( ❌ - Work in progress - PRs most welcome )
+- keyBy ✔️
+- map ✔️
+- orderBy ✔️
 - partition ( ❌ - Work in progress - PRs most welcome )
 - reduce ( ❌ - Work in progress - PRs most welcome )
 - reduceRight ( ❌ - Work in progress - PRs most welcome )

@@ -1,10 +1,14 @@
 import applyArrayFn from '../util/applyArrayFn';
 
-const flatMapDepth = <T>(collection: T, fn: any, depth: number = 1): T[] => {
+const flatMapDepth = <T>(
+	collection: T,
+	iteratee: any,
+	depth: number = 1
+): T[] => {
 	return applyArrayFn({
 		collection: collection,
 		fnName: 'map',
-		fn: fn,
+		iteratee: iteratee,
 	}).flat(depth);
 };
 

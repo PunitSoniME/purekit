@@ -2,37 +2,81 @@ import createPredicate from '../util/createPredicate';
 import predicateType from '../util/predicateType';
 
 const prepareObjectTypes = {
-	push: 'push',
-	count: 'count',
+	push: 'push', //	return the array with all the matched elements
+	count: 'count', //	return the count if matched item found
+	replace: 'replace', //	return the new object by replacing the previous one if match found
 };
 
 const prepareObject = <T>(
 	collection: T[],
 	predicate: predicateType<T>,
-	operation: string = prepareObjectTypes.push
-): Object => {
+	operation: string = prepareObjectTypes.push,
+	includeConditionFailRecord: boolean = false
+): {
+	result: any;
+	conditionFailedRecords: any;
+} => {
 	const fn = createPredicate(predicate);
+	const conditionFailedRecords: any = {};
 
-	return collection.reduce((group: any, item: T) => {
+	const result = collection.reduce((group: any, item: T) => {
 		const converted = (fn as any)(item);
-		if (converted) {
-			//	@ts-ignore
-			const key = item[predicate] ?? converted;
 
-			switch (operation) {
-				case prepareObjectTypes.push:
+		// if (converted) {
+		//	@ts-ignore
+		const key = item[predicate] ?? converted;
+
+		switch (operation) {
+			case prepareObjectTypes.push:
+				if (converted) {
 					group[key] = group.hasOwnProperty(key) ? group[key] : [];
 					group[key].push(item);
-					break;
+				} else if (includeConditionFailRecord) {
+					conditionFailedRecords[key] = conditionFailedRecords.hasOwnProperty(
+						key
+					)
+						? conditionFailedRecords[key]
+						: [];
+					conditionFailedRecords[key].push(item);
+				}
+				break;
 
-				case prepareObjectTypes.count:
+			case prepareObjectTypes.count:
+				if (converted) {
 					group[key] = group.hasOwnProperty(key) ? group[key] : 0;
 					group[key] = ++group[key];
-					break;
-			}
+				} else if (includeConditionFailRecord) {
+					conditionFailedRecords[key] = conditionFailedRecords.hasOwnProperty(
+						key
+					)
+						? conditionFailedRecords[key]
+						: 0;
+					conditionFailedRecords[key] = ++conditionFailedRecords[key];
+				}
+				break;
+
+			case prepareObjectTypes.replace:
+				if (converted) {
+					group[key] = group.hasOwnProperty(key) ? group[key] : {};
+					group[key] = { ...item };
+				} else if (includeConditionFailRecord) {
+					conditionFailedRecords[key] = conditionFailedRecords.hasOwnProperty(
+						key
+					)
+						? conditionFailedRecords[key]
+						: {};
+					conditionFailedRecords[key] = { ...item };
+				}
+				break;
 		}
+		// }
 		return group;
 	}, {});
+
+	return {
+		result: { ...result },
+		conditionFailedRecords: { ...conditionFailedRecords },
+	};
 };
 
 export default prepareObject;
