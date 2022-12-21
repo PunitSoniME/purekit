@@ -16,6 +16,10 @@ import keyBy from './keyBy';
 import map from './map';
 import orderBy from './orderBy';
 import partition from './partition';
+import reduce from './reduce';
+import reduceRight from './reduceRight';
+import reject from './reject';
+import sample from './sample';
 
 export {
 	countBy,
@@ -36,4 +40,8 @@ export {
 	map,
 	orderBy,
 	partition,
+	reduce,
+	reduceRight,
+	reject,
+	sample,
 };

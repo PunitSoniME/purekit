@@ -10,27 +10,20 @@ const users = [
 describe('Collection', () => {
 	describe('partition', () => {
 		it('partition(users, (o: any) => { return o.active; })', () => {
-			expect(
-				partition(users, (o: any) => {
-					return o.active;
-				})
-			).toEqual(
-				_partition(users, (o: any) => {
-					return o.active;
-				})
-			);
+			const predicate = (o: any) => {
+				return o.active;
+			};
+			expect(partition(users, predicate)).toEqual(_partition(users, predicate));
 		});
 
 		it("partition(users, { 'age': 1, 'active': false })", () => {
-			expect(partition(users, { age: 1, active: false })).toEqual(
-				_partition(users, { age: 1, active: false })
-			);
+			const predicate = { age: 1, active: false };
+			expect(partition(users, predicate)).toEqual(_partition(users, predicate));
 		});
 
 		it("partition(users, ['active', false])", () => {
-			expect(partition(users, ['active', false])).toEqual(
-				_partition(users, ['active', false])
-			);
+			const predicate = ['active', false];
+			expect(partition(users, predicate)).toEqual(_partition(users, predicate));
 		});
 
 		it("partition(users, 'active')", () => {

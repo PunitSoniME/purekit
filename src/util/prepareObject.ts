@@ -7,12 +7,19 @@ const prepareObjectTypes = {
 	replace: 'replace', //	return the new object by replacing the previous one if match found
 };
 
-const prepareObject = <T>(
-	collection: T[],
-	predicate: predicateType<T>,
-	operation: string = prepareObjectTypes.push,
-	includeConditionFailRecord: boolean = false
-): {
+interface IPrepareObjectFN<T> {
+	collection: T[];
+	predicate: predicateType<T>;
+	operation?: string;
+	includeConditionFailRecord?: boolean;
+}
+
+const prepareObject = <T>({
+	collection,
+	predicate,
+	operation = prepareObjectTypes.push,
+	includeConditionFailRecord = false,
+}: IPrepareObjectFN<T>): {
 	result: any;
 	conditionFailedRecords: any;
 } => {

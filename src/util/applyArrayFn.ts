@@ -9,6 +9,7 @@ interface IApplyArrayFN<T> {
 	fromIndex?: number;
 	toIndex?: number;
 	equalyCompare?: boolean;
+	initialValue?: any;
 }
 
 const applyArrayFn = <T>({
@@ -19,6 +20,7 @@ const applyArrayFn = <T>({
 	fromIndex = 0,
 	toIndex = -1,
 	equalyCompare = true,
+	initialValue,
 }: IApplyArrayFN<T>) => {
 	iteratee = createPredicate(iteratee, equalyCompare);
 
@@ -36,6 +38,10 @@ const applyArrayFn = <T>({
 		const collectionInReverse = makeItReverse
 			? reverseCollection([...collectionToTest])
 			: [...collectionToTest];
+
+		if (fnName === 'reduce')
+			return (collectionInReverse as any)[fnName](iteratee, initialValue);
+
 		return (collectionInReverse as any)[fnName](iteratee);
 	}
 
@@ -44,11 +50,22 @@ const applyArrayFn = <T>({
 			? reverseCollection({ ...collection })
 			: { ...collection };
 
+		if (fnName === 'reduce') {
+			return (Object.entries(collectionInReverse)[fnName] as any)(
+				(result: any, [key, value]: any[], index: number) =>
+					iteratee(result, value, key, collectionInReverse, index),
+				initialValue
+			);
+		}
+
 		return (Object.entries(collectionInReverse)[fnName] as any)(
-			([key, value]: any[], index: string) =>
+			([key, value]: any[], index: number) =>
 				iteratee(value, key, collectionInReverse, index)
 		);
 	}
+
+	if (fnName === 'reduce')
+		return (collection as any)[fnName](iteratee, initialValue);
 
 	return (collection as any)[fnName](iteratee);
 };
