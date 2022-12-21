@@ -137,11 +137,11 @@ npm install alt-lodash
 - keyBy ✔️
 - map ✔️
 - orderBy ✔️
-- partition ( ❌ - Work in progress - PRs most welcome )
-- reduce ( ❌ - Work in progress - PRs most welcome )
-- reduceRight ( ❌ - Work in progress - PRs most welcome )
-- reject ( ❌ - Work in progress - PRs most welcome )
-- sample ( ❌ - Work in progress - PRs most welcome )
+- partition ✔️
+- reduce ✔️
+- reduceRight ✔️
+- reject ✔️
+- sample ✔️
 - sampleSize ( ❌ - Work in progress - PRs most welcome )
 - shuffle ( ❌ - Work in progress - PRs most welcome )
 - size ( ❌ - Work in progress - PRs most welcome )
