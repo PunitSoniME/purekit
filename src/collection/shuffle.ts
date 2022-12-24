@@ -1,4 +1,4 @@
-import sampleSize from "./sampleSize";
+import sampleSize from './sampleSize';
 
 const shuffle = <T>(collection: T): T => {
 	if (Array.isArray(collection))
