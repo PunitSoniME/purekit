@@ -1,4 +1,4 @@
-import { sampleSize } from 'lodash';
+import sampleSize from "./sampleSize";
 
 const shuffle = <T>(collection: T): T => {
 	if (Array.isArray(collection))
