@@ -4,7 +4,7 @@ const pullAllWith = <T>(
 	elementsToRemove: T[],
 	predicate: any
 ): T[] => {
-	console.warn('pullAllWith - Implementation is still pending');
+	//	TODO: pullAllWith
 	return [];
 };
 

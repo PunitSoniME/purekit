@@ -1,11 +1,9 @@
-const randomElement = (collection: any[]) => {
-	return collection[Math.floor(Math.random() * collection.length)];
-};
+import getRandomElementFromCollection from '../util/getRandomElement';
 
-const sample = <T>(collection: T): T => {
+const sample = <T>(collection: T): any => {
 	if (typeof collection === 'object')
-		return randomElement(Object.values(collection as object));
+		return Object.values(getRandomElementFromCollection(collection).element)[0];
 
-	return randomElement(collection as T[]);
+	return getRandomElementFromCollection(collection as any[]).element;
 };
 export default sample;

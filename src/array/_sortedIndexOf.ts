@@ -1,6 +1,6 @@
 //	@ts-nocheck
 const sortedIndexOf = <T>(collection: T[], value: T): number => {
-	console.warn('sortedIndexOf - Implementation is still pending');
+	//	TODO: sortedIndexOf
 	return -1;
 };
 

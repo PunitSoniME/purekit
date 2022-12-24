@@ -1,6 +1,6 @@
 //	@ts-nocheck
 const xorWith = () => {
-	console.warn('xorWith - Implementation is still pending');
+	//	TODO: xorWith
 };
 
 export default xorWith;

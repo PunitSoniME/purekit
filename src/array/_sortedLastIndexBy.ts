@@ -4,7 +4,7 @@ const sortedLastIndexBy = <T>(
 	value: T,
 	predicate: any
 ): number => {
-	console.warn('sortedLastIndex - Implementation is still pending');
+	//	TODO: sortedLastIndex
 	return -1;
 };
 

@@ -1,6 +1,6 @@
 //	@ts-nocheck
 const zipWith = () => {
-	console.warn('zipWith - Implementation is still pending');
+	//	TODO: zipWith
 };
 
 export default zipWith;

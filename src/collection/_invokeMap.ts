@@ -1,6 +1,6 @@
 //	@ts-nocheck
 const invokeMap = () => {
-	console.warn('invokeMap - Implementation is still pending');
+	//	TODO: invokeMap
 	return [];
 };
 

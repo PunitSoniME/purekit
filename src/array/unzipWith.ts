@@ -7,7 +7,6 @@ const unzipWith = <T>(
 	predicate: predicateType<T>
 ): any[][] => {
 	const fn = createPredicate(predicate);
-	// const fn = createPredicate(predicate);
 	const unzipped = unzip(collection);
 
 	return unzipped.map(m => {

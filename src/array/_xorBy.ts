@@ -1,6 +1,6 @@
 //	@ts-nocheck
 const xorBy = () => {
-	console.warn('xorBy - Implementation is still pending');
+	//	TODO: xorBy
 };
 
 export default xorBy;

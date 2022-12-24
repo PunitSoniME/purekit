@@ -1,6 +1,6 @@
 //	@ts-nocheck
 const uniqBy = () => {
-	console.warn('uniqBy - Implementation is still pending');
+	//	TODO: uniqBy
 };
 
 export default uniqBy;

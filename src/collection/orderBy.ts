@@ -1,6 +1,6 @@
 //	@ts-nocheck
 const sort = <T>(data: T[], orderBy: any[]) => {
-	orderBy = Array.isArray(orderBy) ? orderBy : [orderBy];
+	// orderBy = Array.isArray(orderBy) ? orderBy : [orderBy];
 
 	return data.sort((a, b) => {
 		for (let i = 0, size = orderBy.length; i < size; i++) {
@@ -10,12 +10,11 @@ const sort = <T>(data: T[], orderBy: any[]) => {
 				valueB = b[key];
 
 			if (!(valueA || valueB)) {
-				console.error(
+				throw Error(
 					"the objects from the data passed does not have the key '" +
 						key +
 						"' passed on sort!"
 				);
-				return [];
 			}
 			if (+valueA === +valueA) {
 				return o.toLowerCase() === 'desc' ? valueB - valueA : valueA - valueB;

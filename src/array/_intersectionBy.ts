@@ -1,6 +1,6 @@
 //	@ts-nocheck
 const intersectionBy = <T>(...collections: T[]): T[] => {
-	console.warn('intersectionBy - Implementation is still pending');
+	//	TODO: intersectionBy
 	return [];
 };
 export default intersectionBy;

@@ -1,6 +1,6 @@
 //	@ts-nocheck
 const zipObjectDeep = () => {
-	console.warn('zipObjectDeep - Implementation is still pending');
+	//	TODO: zipObjectDeep
 };
 
 export default zipObjectDeep;

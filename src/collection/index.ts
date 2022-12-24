@@ -20,6 +20,11 @@ import reduce from './reduce';
 import reduceRight from './reduceRight';
 import reject from './reject';
 import sample from './sample';
+import sampleSize from './sampleSize';
+import shuffle from './shuffle';
+import size from './size';
+import some from './some';
+// import sortBy from './_sortBy';
 
 export {
 	countBy,
@@ -44,4 +49,9 @@ export {
 	reduceRight,
 	reject,
 	sample,
+	sampleSize,
+	shuffle,
+	size,
+	some,
+	// sortBy
 };

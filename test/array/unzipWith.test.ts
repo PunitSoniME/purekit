@@ -1,6 +1,6 @@
 import { unzipWith as _unzipWith, add as _add } from 'lodash';
 import { unzipWith, zip } from '../../src/array';
-import { add } from '../../src/maths';
+import { add } from '../../src/math';
 
 describe('Array', () => {
 	describe('unzipWith', () => {

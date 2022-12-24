@@ -1,5 +1,5 @@
 import * as array from './array';
-import * as maths from './maths';
+import * as math from './math';
 import * as collection from './collection';
 
 import {
@@ -49,22 +49,65 @@ import {
 	zipObject,
 } from './array';
 
-import { add } from './maths';
+import {
+	add,
+	ceil,
+	divide,
+	floor,
+	max,
+	maxBy,
+	mean,
+	meanBy,
+	min,
+	minBy,
+	multiply,
+	round,
+	subtract,
+	sum,
+	sumBy,
+} from './math';
 
-import { groupBy } from './collection';
+import {
+	countBy,
+	each,
+	eachRight,
+	every,
+	filter,
+	find,
+	findLast,
+	flatMap,
+	flatMapDeep,
+	flatMapDepth,
+	forEach,
+	forEachRight,
+	groupBy,
+	includes,
+	keyBy,
+	map,
+	orderBy,
+	partition,
+	reduce,
+	reduceRight,
+	reject,
+	sample,
+	sampleSize,
+	shuffle,
+	size,
+	some,
+} from './collection';
+
+import { castArray } from './lang';
 
 const _ = {
 	//	Array Methods
 	...array,
 
-	//	Maths Methods
-	...maths,
-
 	//	Collection Methods
 	...collection,
-};
 
-export default _;
+	//	Math Methods
+	...math,
+};
 
 export {
 	//	Array Methods
@@ -112,8 +155,51 @@ export {
 	without,
 	zip,
 	zipObject,
-	// Maths Methods
+	// Math Methods
 	add,
+	ceil,
+	divide,
+	floor,
+	max,
+	maxBy,
+	mean,
+	meanBy,
+	min,
+	minBy,
+	multiply,
+	round,
+	subtract,
+	sum,
+	sumBy,
 	// Collection Methods
+	countBy,
+	each,
+	eachRight,
+	every,
+	filter,
+	find,
+	findLast,
+	flatMap,
+	flatMapDeep,
+	flatMapDepth,
+	forEach,
+	forEachRight,
 	groupBy,
+	includes,
+	keyBy,
+	map,
+	orderBy,
+	partition,
+	reduce,
+	reduceRight,
+	reject,
+	sample,
+	sampleSize,
+	shuffle,
+	size,
+	some,
+	//	Lang Methods
+	castArray,
 };
+
+export default _;

@@ -1,16 +1,6 @@
+import IApplyArrayFN from '../model/IApplyArrayFN';
 import createPredicate from './createPredicate';
 import reverseCollection from './reverseCollection';
-
-interface IApplyArrayFN<T> {
-	collection: T;
-	fnName: any;
-	iteratee: any;
-	makeItReverse?: boolean;
-	fromIndex?: number;
-	toIndex?: number;
-	equalyCompare?: boolean;
-	initialValue?: any;
-}
 
 const applyArrayFn = <T>({
 	collection,

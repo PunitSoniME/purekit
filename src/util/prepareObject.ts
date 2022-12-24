@@ -1,18 +1,11 @@
+import IPrepareObjectFN from '../model/IPrepareObjectFN';
 import createPredicate from '../util/createPredicate';
-import predicateType from '../util/predicateType';
 
 const prepareObjectTypes = {
 	push: 'push', //	return the array with all the matched elements
 	count: 'count', //	return the count if matched item found
 	replace: 'replace', //	return the new object by replacing the previous one if match found
 };
-
-interface IPrepareObjectFN<T> {
-	collection: T[];
-	predicate: predicateType<T>;
-	operation?: string;
-	includeConditionFailRecord?: boolean;
-}
 
 const prepareObject = <T>({
 	collection,
@@ -29,7 +22,6 @@ const prepareObject = <T>({
 	const result = collection.reduce((group: any, item: T) => {
 		const converted = (fn as any)(item);
 
-		// if (converted) {
 		//	@ts-ignore
 		const key = item[predicate] ?? converted;
 
@@ -76,7 +68,6 @@ const prepareObject = <T>({
 				}
 				break;
 		}
-		// }
 		return group;
 	}, {});
 
