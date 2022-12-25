@@ -1,6 +1,7 @@
 import * as array from './array';
-import * as math from './math';
 import * as collection from './collection';
+import * as math from './math';
+import * as numberMethods from './number';
 
 import {
 	chunk,
@@ -96,6 +97,8 @@ import {
 	some,
 } from './collection';
 
+import { clamp, inRange, random } from './number';
+
 import { castArray } from './lang';
 
 const _ = {
@@ -107,6 +110,9 @@ const _ = {
 
 	//	Math Methods
 	...math,
+
+	//	Number Methods
+	...numberMethods,
 };
 
 export {
@@ -200,6 +206,10 @@ export {
 	some,
 	//	Lang Methods
 	castArray,
+	//	Number Methods
+	clamp,
+	inRange,
+	random,
 };
 
 export default _;

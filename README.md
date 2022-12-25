@@ -300,15 +300,15 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 
 # Number
 
-- clamp ( ❌ - Work in progress - PRs most welcome )
+- clamp ✔️
 
-- inRange ( ❌ - Work in progress - PRs most welcome )
-- random ( ❌ - Work in progress - PRs most welcome )
+- inRange ✔️
+- random ✔️
 
 -------------------------------
 <br />
 
-# Number
+# Object
 
 - assign ( ❌ - Work in progress - PRs most welcome )
 
@@ -359,5 +359,39 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - values ( ❌ - Work in progress - PRs most welcome )
 - valuesIn ( ❌ - Work in progress - PRs most welcome )
 
+-------------------------------
+<br />
 
+# String
 
+- camelCase ✔️
+
+- capitalize ✔️
+- deburr ( ❌ - Work in progress - PRs most welcome )
+- endsWith ✔️
+- escape ( ❌ - Work in progress - PRs most welcome )
+- escapeRegExp ( ❌ - Work in progress - PRs most welcome )
+- kebabCase ✔️
+- lowerCase ✔️
+- lowerFirst ✔️
+- pad ( ❌ - Work in progress - PRs most welcome )
+- padEnd ✔️
+- padStart ✔️
+- parseInt ( ❌ - Work in progress - PRs most welcome )
+- repeat ( ❌ - Work in progress - PRs most welcome )
+- replace ( ❌ - Work in progress - PRs most welcome )
+- snakeCase ( ❌ - Work in progress - PRs most welcome )
+- split ( ❌ - Work in progress - PRs most welcome )
+- startCase ( ❌ - Work in progress - PRs most welcome )
+- startsWith ( ❌ - Work in progress - PRs most welcome )
+- template ( ❌ - Work in progress - PRs most welcome )
+- toLower ( ❌ - Work in progress - PRs most welcome )
+- toUpper ( ❌ - Work in progress - PRs most welcome )
+- trim ( ❌ - Work in progress - PRs most welcome )
+- trimEnd ( ❌ - Work in progress - PRs most welcome )
+- trimStart ( ❌ - Work in progress - PRs most welcome )
+- truncate ( ❌ - Work in progress - PRs most welcome )
+- unescape ( ❌ - Work in progress - PRs most welcome )
+- upperCase ( ❌ - Work in progress - PRs most welcome )
+- upperFirst ( ❌ - Work in progress - PRs most welcome )
+- words ( ❌ - Work in progress - PRs most welcome )

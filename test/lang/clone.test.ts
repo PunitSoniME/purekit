@@ -5,7 +5,7 @@ const objects = [{ a: 1 }, { b: 2 }];
 
 describe('Lang', () => {
 	describe('clone', () => {
-		it('_.clone(objects)', () => {
+		it('clone(objects)', () => {
 			const shallow = clone(objects);
 			const _shallow = _clone(objects);
 
