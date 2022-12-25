@@ -1,4 +1,4 @@
-const random = (a = 1, b = 0) => {
+const randomFloat = (a = 1, b = 0) => {
 	const lower = Math.min(a, b);
 	const upper = Math.max(a, b);
 	return lower + Math.random() * (upper - lower);
@@ -10,7 +10,7 @@ const randomInt = (a = 1, b = 0) => {
 	return Math.floor(lower + Math.random() * (upper - lower + 1));
 };
 
-const inRange = (
+const random = (
 	lower: number = 0,
 	upper: number | boolean | undefined = 1 as number
 ): number => {
@@ -20,9 +20,9 @@ const inRange = (
 	}
 
 	if ((upper as boolean) === true || parseInt(upper.toString()) !== upper) {
-		return random(upper as number, lower);
+		return randomFloat(upper as number, lower);
 	}
 
 	return randomInt(upper, lower);
 };
-export default inRange;
+export default random;
