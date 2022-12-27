@@ -1,4 +1,4 @@
-import { reject as _reject } from 'lodash';
+import _reject from 'lodash/reject';
 import { reject } from '../../src/collection';
 
 const users = [

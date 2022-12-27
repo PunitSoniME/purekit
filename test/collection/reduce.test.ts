@@ -1,4 +1,4 @@
-import { reduce as _reduce } from 'lodash';
+import _reduce from 'lodash/reduce';
 import { reduce } from '../../src/collection';
 
 describe('Collection', () => {

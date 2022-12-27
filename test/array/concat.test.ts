@@ -1,4 +1,4 @@
-import { concat as _concat } from 'lodash';
+import _concat from 'lodash/concat';
 import { concat } from '../../src/array';
 
 describe('Array', () => {

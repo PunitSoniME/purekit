@@ -1,4 +1,4 @@
-import { difference as _difference } from 'lodash';
+import _difference from 'lodash/difference';
 import { difference } from '../../src/array';
 
 describe('Array', () => {

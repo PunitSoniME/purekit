@@ -1,4 +1,4 @@
-import { minBy as _minBy } from 'lodash';
+import _minBy from 'lodash/minBy';
 import { minBy } from '../../src/math';
 
 const objects = [{ n: 1 }, { n: 2 }];

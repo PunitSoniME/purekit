@@ -1,4 +1,4 @@
-import { takeRightWhile as _takeRightWhile } from 'lodash';
+import _takeRightWhile from 'lodash/takeRightWhile';
 import { takeRightWhile } from '../../src/array';
 import { usersMockData } from '../mockData';
 

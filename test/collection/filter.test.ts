@@ -1,4 +1,4 @@
-import { filter as _filter } from 'lodash';
+import _filter from 'lodash/filter';
 import { filter } from '../../src/collection';
 
 const users = [

@@ -1,4 +1,4 @@
-import { some as _some } from 'lodash';
+import _some from 'lodash/some';
 import { some } from '../../src/collection';
 
 const users = [

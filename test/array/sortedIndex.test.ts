@@ -1,4 +1,4 @@
-import { sortedIndex as _sortedIndex } from 'lodash';
+import _sortedIndex from 'lodash/sortedIndex';
 import { sortedIndex } from '../../src/array';
 
 describe('Array', () => {

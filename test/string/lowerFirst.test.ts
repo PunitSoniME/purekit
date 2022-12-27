@@ -1,4 +1,4 @@
-import { lowerFirst as _lowerFirst } from 'lodash';
+import _lowerFirst from 'lodash/lowerFirst';
 import { lowerFirst } from '../../src/string';
 
 describe('String', () => {

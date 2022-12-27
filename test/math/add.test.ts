@@ -1,4 +1,4 @@
-import { add as _add } from 'lodash';
+import _add from 'lodash/add';
 import { add } from '../../src/math';
 
 describe('Math', () => {

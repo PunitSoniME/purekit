@@ -1,4 +1,4 @@
-import { castArray as _castArray } from 'lodash';
+import _castArray from 'lodash/castArray';
 import { castArray } from '../../src/lang';
 
 describe('Lang', () => {

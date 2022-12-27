@@ -1,4 +1,4 @@
-import { unzip as _unzip } from 'lodash';
+import _unzip from 'lodash/unzip';
 import { unzip, zip } from '../../src/array';
 
 describe('Array', () => {

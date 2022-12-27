@@ -1,4 +1,4 @@
-import { findLastIndex as _findLastIndex } from 'lodash';
+import _findLastIndex from 'lodash/findLastIndex';
 import { findLastIndex } from '../../src/array';
 import { numberMockData, stringMockData, usersMockData } from '../mockData';
 

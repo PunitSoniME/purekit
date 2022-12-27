@@ -1,4 +1,4 @@
-import { tail as _tail } from 'lodash';
+import _tail from 'lodash/tail';
 import { tail } from '../../src/array';
 import { numberMockData } from '../mockData';
 

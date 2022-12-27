@@ -1,4 +1,4 @@
-import { find as _find } from 'lodash';
+import _find from 'lodash/find';
 import { find } from '../../src/collection';
 
 const users = [

@@ -1,4 +1,4 @@
-import { every as _every } from 'lodash';
+import _every from 'lodash/every';
 import { every } from '../../src/collection';
 
 const users = [

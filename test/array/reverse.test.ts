@@ -1,4 +1,4 @@
-import { reverse as _reverse } from 'lodash';
+import _reverse from 'lodash/reverse';
 import { reverse } from '../../src/array';
 import { numberMockData } from '../mockData';
 

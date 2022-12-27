@@ -1,4 +1,4 @@
-import { partition as _partition } from 'lodash';
+import _partition from 'lodash/partition';
 import { partition } from '../../src/collection';
 
 const users = [

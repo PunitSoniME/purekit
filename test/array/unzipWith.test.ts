@@ -1,4 +1,5 @@
-import { unzipWith as _unzipWith, add as _add } from 'lodash';
+import _unzipWith from 'lodash/unzipWith';
+import _add from 'lodash/add';
 import { unzipWith, zip } from '../../src/array';
 import { add } from '../../src/math';
 

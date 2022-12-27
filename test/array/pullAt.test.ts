@@ -1,4 +1,4 @@
-import { pullAt as _pullAt } from 'lodash';
+import _pullAt from 'lodash/pullAt';
 import { pullAt } from '../../src/array';
 
 describe('Array', () => {

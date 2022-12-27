@@ -1,4 +1,4 @@
-import { multiply as _multiply } from 'lodash';
+import _multiply from 'lodash/multiply';
 import { multiply } from '../../src/math';
 
 describe('Math', () => {

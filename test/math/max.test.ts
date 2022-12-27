@@ -1,4 +1,4 @@
-import { max as _max } from 'lodash';
+import _max from 'lodash/max';
 import { max } from '../../src/math';
 
 describe('Math', () => {

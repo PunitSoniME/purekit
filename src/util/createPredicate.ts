@@ -22,6 +22,7 @@ const createPredicate = <T>(
 		};
 	} else if (typeof iteratee === 'function') {
 		return iteratee;
+		//	return (item: any) => iteratee(item);
 	} else if (
 		equalyCompare &&
 		['number', 'boolean'].some(s => s === typeof iteratee)

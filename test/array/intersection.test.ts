@@ -1,4 +1,4 @@
-import { intersection as _intersection } from 'lodash';
+import _intersection from 'lodash/intersection';
 import { intersection } from '../../src/array';
 
 const array1 = [2, 1];

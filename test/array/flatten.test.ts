@@ -1,4 +1,4 @@
-import { flatten as _flatten } from 'lodash';
+import _flatten from 'lodash/flatten';
 import { flatten } from '../../src/array';
 
 const data = [1, [2, [3, [4]], 5]];

@@ -1,4 +1,4 @@
-import { conformsTo as _conformsTo } from 'lodash';
+import _conformsTo from 'lodash/conformsTo';
 import { conformsTo } from '../../src/lang';
 
 const object = { a: 1, b: 2 };

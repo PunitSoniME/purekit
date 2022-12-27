@@ -1,4 +1,4 @@
-import { first as _first } from 'lodash';
+import _first from 'lodash/first';
 import { first } from '../../src/array';
 import { numberMockData, objectMockData } from '../mockData';
 

@@ -1,4 +1,4 @@
-import { clone as _clone } from 'lodash';
+import _clone from 'lodash/clone';
 import { clone } from '../../src/lang';
 
 const objects = [{ a: 1 }, { b: 2 }];

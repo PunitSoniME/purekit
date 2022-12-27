@@ -1,4 +1,4 @@
-import { includes as _includes } from 'lodash';
+import _includes from 'lodash/includes';
 import { includes } from '../../src/collection';
 
 describe('Collection', () => {

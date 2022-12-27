@@ -1,4 +1,4 @@
-import { slice as _slice } from 'lodash';
+import _slice from 'lodash/slice';
 import { slice } from '../../src/array';
 import { numberMockData } from '../mockData';
 

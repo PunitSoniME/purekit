@@ -1,4 +1,4 @@
-import { takeRight as _takeRight } from 'lodash';
+import _takeRight from 'lodash/takeRight';
 import { takeRight } from '../../src/array';
 import { numberMockData } from '../mockData';
 

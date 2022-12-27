@@ -1,3 +1,8 @@
+/**
+ *
+ * @param str
+ * @returns
+ */
 const kebabCase = (str: string = ''): string => {
 	let out = str
 		.replace(/[-._\s]+/g, '-')

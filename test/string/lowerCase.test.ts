@@ -1,4 +1,4 @@
-import { lowerCase as _lowerCase } from 'lodash';
+import _lowerCase from 'lodash/lowerCase';
 import { lowerCase } from '../../src/string';
 
 describe('String', () => {

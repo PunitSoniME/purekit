@@ -1,4 +1,4 @@
-import { head as _head } from 'lodash';
+import _head from 'lodash/head';
 import { head } from '../../src/array';
 import { numberMockData, objectMockData } from '../mockData';
 

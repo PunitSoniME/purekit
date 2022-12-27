@@ -1,4 +1,4 @@
-import { groupBy as _groupBy } from 'lodash';
+import _groupBy from 'lodash/groupBy';
 import { groupBy } from '../../src/collection';
 
 describe('Collection', () => {

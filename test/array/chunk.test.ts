@@ -1,4 +1,4 @@
-import { chunk as _chunk } from 'lodash';
+import _chunk from 'lodash/chunk';
 import { chunk } from '../../src/array';
 
 let numberMockData: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];

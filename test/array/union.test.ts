@@ -1,4 +1,4 @@
-import { union as _union } from 'lodash';
+import _union from 'lodash/union';
 import { union } from '../../src/array';
 
 describe('Array', () => {

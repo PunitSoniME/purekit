@@ -1,4 +1,4 @@
-import { countBy as _countBy } from 'lodash';
+import _countBy from 'lodash/countBy';
 import { countBy } from '../../src/collection';
 
 describe('Collection', () => {

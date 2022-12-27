@@ -1,4 +1,4 @@
-import { endsWith as _endsWith } from 'lodash';
+import _endsWith from 'lodash/endsWith';
 import { endsWith } from '../../src/string';
 
 describe('String', () => {

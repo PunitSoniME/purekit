@@ -1,4 +1,4 @@
-import { sum as _sum } from 'lodash';
+import _sum from 'lodash/sum';
 import { sum } from '../../src/math';
 
 const data = [4, 2, 8, 6];

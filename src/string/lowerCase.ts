@@ -1,3 +1,8 @@
+/**
+ *
+ * @param str
+ * @returns
+ */
 const lowerCase = (str: string = ''): string =>
 	str
 		.replace(/[-._\s]+/g, ' ')

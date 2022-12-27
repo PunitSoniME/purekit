@@ -1,4 +1,4 @@
-import { dropRight as _dropRight } from 'lodash';
+import _dropRight from 'lodash/dropRight';
 import { dropRight } from '../../src/array';
 
 describe('Array', () => {

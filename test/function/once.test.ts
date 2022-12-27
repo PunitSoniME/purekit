@@ -1,4 +1,4 @@
-import { once as _once } from 'lodash';
+import _once from 'lodash/once';
 import { once } from '../../src/function';
 
 describe('Math', () => {

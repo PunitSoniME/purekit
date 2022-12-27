@@ -1,4 +1,4 @@
-import { divide as _divide } from 'lodash';
+import _divide from 'lodash/divide';
 import { divide } from '../../src/math';
 
 describe('Math', () => {

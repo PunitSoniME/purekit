@@ -1,4 +1,4 @@
-import { initial as _initial } from 'lodash';
+import _initial from 'lodash/initial';
 import { initial } from '../../src/array';
 import { numberMockData } from '../mockData';
 

@@ -1,4 +1,4 @@
-import { map as _map } from 'lodash';
+import _map from 'lodash/map';
 import { map } from '../../src/collection';
 
 function square(n: number) {

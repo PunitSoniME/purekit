@@ -1,4 +1,4 @@
-import { cloneDeep as _cloneDeep } from 'lodash';
+import _cloneDeep from 'lodash/cloneDeep';
 import { cloneDeep } from '../../src/lang';
 
 const objects = [{ a: 1 }, { b: 2 }];

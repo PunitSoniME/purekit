@@ -1,4 +1,4 @@
-import { compact as _compact } from 'lodash';
+import _compact from 'lodash/compact';
 import { compact } from '../../src/array';
 
 describe('Array', () => {

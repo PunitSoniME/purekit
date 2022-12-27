@@ -1,4 +1,4 @@
-import { last as _last } from 'lodash';
+import _last from 'lodash/last';
 import { last } from '../../src/array';
 
 const data = [1, 2, 3];

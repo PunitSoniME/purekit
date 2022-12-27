@@ -1,4 +1,4 @@
-import { sumBy as _sumBy } from 'lodash';
+import _sumBy from 'lodash/sumBy';
 import { sumBy } from '../../src/math';
 
 const objects = [{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }];

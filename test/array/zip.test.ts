@@ -1,4 +1,4 @@
-import { zip as _zip } from 'lodash';
+import _zip from 'lodash/zip';
 import { zip } from '../../src/array';
 
 describe('Array', () => {

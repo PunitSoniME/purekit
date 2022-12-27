@@ -1,4 +1,4 @@
-import { lastIndexOf as _lastIndexOf } from 'lodash';
+import _lastIndexOf from 'lodash/lastIndexOf';
 import { lastIndexOf } from '../../src/array';
 
 const data = [1, 2, 1, 2];

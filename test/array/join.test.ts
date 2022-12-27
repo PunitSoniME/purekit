@@ -1,4 +1,4 @@
-import { join as _join } from 'lodash';
+import _join from 'lodash/join';
 import { join } from '../../src/array';
 
 const data = ['a', 'b', 'c'];

@@ -1,4 +1,4 @@
-import { round as _round } from 'lodash';
+import _round from 'lodash/round';
 import { round } from '../../src/math';
 
 describe('Math', () => {

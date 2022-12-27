@@ -1,4 +1,4 @@
-import { findIndex as _findIndex } from 'lodash';
+import _findIndex from 'lodash/findIndex';
 import { findIndex } from '../../src/array';
 import { numberMockData, usersMockData, stringMockData } from '../mockData';
 

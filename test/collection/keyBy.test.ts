@@ -1,4 +1,4 @@
-import { keyBy as _keyBy } from 'lodash';
+import _keyBy from 'lodash/keyBy';
 import { keyBy } from '../../src/collection';
 
 const data = [

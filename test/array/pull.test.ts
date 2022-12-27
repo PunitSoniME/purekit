@@ -1,4 +1,4 @@
-import { pull as _pull } from 'lodash';
+import _pull from 'lodash/pull';
 import { pull } from '../../src/array';
 
 const data = ['a', 'b', 'c', 'a', 'b', 'c'];

@@ -1,4 +1,4 @@
-import { fromPairs as _fromPairs } from 'lodash';
+import _fromPairs from 'lodash/fromPairs';
 import { fromPairs } from '../../src/array';
 
 const data = [

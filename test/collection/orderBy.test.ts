@@ -1,4 +1,4 @@
-import { orderBy as _orderBy } from 'lodash';
+import _orderBy from 'lodash/orderBy';
 import { orderBy } from '../../src/collection';
 
 const users = [

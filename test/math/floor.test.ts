@@ -1,4 +1,4 @@
-import { floor as _floor } from 'lodash';
+import _floor from 'lodash/floor';
 import { floor } from '../../src/math';
 
 describe('Math', () => {

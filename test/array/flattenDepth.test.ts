@@ -1,4 +1,4 @@
-import { flattenDepth as _flattenDepth } from 'lodash';
+import _flattenDepth from 'lodash/flattenDepth';
 import { flattenDepth } from '../../src/array';
 
 const data = [1, [2, [3, [4]], 5]];

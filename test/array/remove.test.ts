@@ -1,4 +1,4 @@
-import { remove as _remove } from 'lodash';
+import _remove from 'lodash/remove';
 import { remove } from '../../src/array';
 
 describe('Array', () => {

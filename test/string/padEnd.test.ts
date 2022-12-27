@@ -1,4 +1,4 @@
-import { padEnd as _padEnd } from 'lodash';
+import _padEnd from 'lodash/padEnd';
 import { padEnd } from '../../src/string';
 
 describe('String', () => {

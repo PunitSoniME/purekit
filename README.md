@@ -1,11 +1,15 @@
 # Alternate of Lodash Library
 
 [![npm version](https://badge.fury.io/js/alt-lodash.svg)][npm_url]
-[![downloads](https://img.shields.io/npm/dt/alt-lodash.svg)][npm_url]
 [![license](https://img.shields.io/npm/l/alt-lodash.svg)][npm_url]
+![Types Included](https://badgen.net/npm/types/alt-lodash)
+
+[![weekly downloads](https://badgen.net/npm/dw/alt-lodash)][npm_url]
+[![weekly downloads](https://badgen.net/npm/dm/alt-lodash)][npm_url]
+[![downloads](https://img.shields.io/npm/dt/alt-lodash.svg)][npm_url]
+![jsDelivr](https://badgen.net/jsdelivr/hits/npm/alt-lodash)
 
 ![Dependency Count](https://badgen.net/bundlephobia/dependency-count/alt-lodash)
-![Types Included](https://badgen.net/npm/types/alt-lodash)
 
 ![minified](https://badgen.net/bundlephobia/min/alt-lodash)
 ![gzip](https://badgen.net/bundlephobia/minzip/alt-lodash)
@@ -377,21 +381,21 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - pad ( ❌ - Work in progress - PRs most welcome )
 - padEnd ✔️
 - padStart ✔️
-- parseInt ( ❌ - Work in progress - PRs most welcome )
-- repeat ( ❌ - Work in progress - PRs most welcome )
-- replace ( ❌ - Work in progress - PRs most welcome )
-- snakeCase ( ❌ - Work in progress - PRs most welcome )
-- split ( ❌ - Work in progress - PRs most welcome )
-- startCase ( ❌ - Work in progress - PRs most welcome )
-- startsWith ( ❌ - Work in progress - PRs most welcome )
+- parseInt ✔️
+- repeat ✔️
+- replace ✔️
+- snakeCase ✔️
+- split ✔️
+- startCase ✔️
+- startsWith ✔️
 - template ( ❌ - Work in progress - PRs most welcome )
-- toLower ( ❌ - Work in progress - PRs most welcome )
-- toUpper ( ❌ - Work in progress - PRs most welcome )
-- trim ( ❌ - Work in progress - PRs most welcome )
-- trimEnd ( ❌ - Work in progress - PRs most welcome )
-- trimStart ( ❌ - Work in progress - PRs most welcome )
+- toLower ✔️
+- toUpper ✔️
+- trim ✔️
+- trimEnd ✔️
+- trimStart ✔️
 - truncate ( ❌ - Work in progress - PRs most welcome )
 - unescape ( ❌ - Work in progress - PRs most welcome )
-- upperCase ( ❌ - Work in progress - PRs most welcome )
-- upperFirst ( ❌ - Work in progress - PRs most welcome )
+- upperCase ✔️
+- upperFirst ✔️
 - words ( ❌ - Work in progress - PRs most welcome )

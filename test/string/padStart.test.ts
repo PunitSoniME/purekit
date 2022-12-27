@@ -1,4 +1,4 @@
-import { padStart as _padStart } from 'lodash';
+import _padStart from 'lodash/padStart';
 import { padStart } from '../../src/string';
 
 describe('String', () => {

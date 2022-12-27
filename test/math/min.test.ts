@@ -1,4 +1,4 @@
-import { min as _min } from 'lodash';
+import _min from 'lodash/min';
 import { min } from '../../src/math';
 
 describe('Math', () => {

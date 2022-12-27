@@ -1,4 +1,4 @@
-import { sortedUniq as _sortedUniq } from 'lodash';
+import _sortedUniq from 'lodash/sortedUniq';
 import { sortedUniq } from '../../src/array';
 
 describe('Array', () => {

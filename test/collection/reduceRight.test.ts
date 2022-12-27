@@ -1,4 +1,4 @@
-import { reduceRight as _reduceRight } from 'lodash';
+import _reduceRight from 'lodash/reduceRight';
 import { reduceRight } from '../../src/collection';
 
 const data = [

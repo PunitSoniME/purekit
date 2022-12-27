@@ -1,4 +1,4 @@
-import { ceil as _ceil } from 'lodash';
+import _ceil from 'lodash/ceil';
 import { ceil } from '../../src/math';
 
 describe('Math', () => {

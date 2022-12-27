@@ -1,4 +1,4 @@
-import { kebabCase as _kebabCase } from 'lodash';
+import _kebabCase from 'lodash/kebabCase';
 import { kebabCase } from '../../src/string';
 
 describe('String', () => {

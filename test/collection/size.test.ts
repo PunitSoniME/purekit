@@ -1,4 +1,4 @@
-import { size as _size } from 'lodash';
+import _size from 'lodash/size';
 import { size } from '../../src/collection';
 
 describe('Collection', () => {

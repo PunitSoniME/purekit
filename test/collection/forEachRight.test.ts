@@ -1,4 +1,4 @@
-import { forEachRight as _forEachRight } from 'lodash';
+import _forEachRight from 'lodash/forEachRight';
 import { forEachRight } from '../../src/collection';
 
 describe('Collection', () => {

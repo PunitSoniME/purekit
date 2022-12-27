@@ -1,4 +1,4 @@
-import { uniq as _uniq } from 'lodash';
+import _uniq from 'lodash/uniq';
 import { uniq } from '../../src/array';
 
 describe('Array', () => {

@@ -1,4 +1,4 @@
-import { inRange as _inRange } from 'lodash';
+import _inRange from 'lodash/inRange';
 import { inRange, random } from '../../src/number';
 
 describe('Number', () => {

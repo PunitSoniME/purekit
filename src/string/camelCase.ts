@@ -1,3 +1,8 @@
+/**
+ *
+ * @param str
+ * @returns
+ */
 const camelCase = (str: string = '') => {
 	return str
 		.replace(new RegExp(/[-_]+/, 'g'), ' ')

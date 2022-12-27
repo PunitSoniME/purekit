@@ -1,4 +1,4 @@
-import { nth as _nth } from 'lodash';
+import _nth from 'lodash/nth';
 import { nth } from '../../src/array';
 import { stringMockData } from '../mockData';
 

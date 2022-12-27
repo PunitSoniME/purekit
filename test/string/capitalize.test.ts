@@ -1,4 +1,4 @@
-import { capitalize as _capitalize } from 'lodash';
+import _capitalize from 'lodash/capitalize';
 import { capitalize } from '../../src/string';
 
 describe('String', () => {

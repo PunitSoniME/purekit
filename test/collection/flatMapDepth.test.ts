@@ -1,4 +1,4 @@
-import { flatMapDepth as _flatMapDepth } from 'lodash';
+import _flatMapDepth from 'lodash/flatMapDepth';
 import { flatMapDepth } from '../../src/collection';
 
 describe('Collection', () => {

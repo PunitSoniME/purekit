@@ -1,4 +1,4 @@
-import { meanBy as _meanBy } from 'lodash';
+import _meanBy from 'lodash/meanBy';
 import { meanBy } from '../../src/math';
 
 const objects = [{ n: 4 }, { n: 2 }, { n: 8 }, { n: 6 }];

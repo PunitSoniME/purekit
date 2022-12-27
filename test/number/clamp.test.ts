@@ -1,4 +1,4 @@
-import { clamp as _clamp } from 'lodash';
+import _clamp from 'lodash/clamp';
 import { clamp } from '../../src/number';
 
 describe('Number', () => {

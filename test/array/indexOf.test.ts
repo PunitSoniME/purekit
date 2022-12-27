@@ -1,4 +1,4 @@
-import { indexOf as _indexOf } from 'lodash';
+import _indexOf from 'lodash/indexOf';
 import { indexOf } from '../../src/array';
 import { numberMockData } from '../mockData';
 

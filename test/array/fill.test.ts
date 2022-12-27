@@ -1,4 +1,4 @@
-import { fill as _fill } from 'lodash';
+import _fill from 'lodash/fill';
 import { fill } from '../../src/array';
 
 describe('Array', () => {

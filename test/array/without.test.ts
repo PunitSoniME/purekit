@@ -1,4 +1,4 @@
-import { without as _without } from 'lodash';
+import _without from 'lodash/without';
 import { without } from '../../src/array';
 
 describe('Array', () => {

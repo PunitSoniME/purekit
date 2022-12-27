@@ -1,4 +1,4 @@
-import { subtract as _subtract } from 'lodash';
+import _subtract from 'lodash/subtract';
 import { subtract } from '../../src/math';
 
 describe('Math', () => {

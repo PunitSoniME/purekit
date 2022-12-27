@@ -1,4 +1,4 @@
-import { maxBy as _maxBy } from 'lodash';
+import _maxBy from 'lodash/maxBy';
 import { maxBy } from '../../src/math';
 
 const objects = [{ n: 1 }, { n: 2 }];

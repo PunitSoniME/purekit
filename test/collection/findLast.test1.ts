@@ -1,4 +1,4 @@
-// import { findLast as _findLast } from 'lodash';
+// import { findLast as _findLast } from 'lodash/';
 // import { findLast } from '../../src/collection';
 
 // var users = [

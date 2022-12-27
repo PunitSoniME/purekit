@@ -1,4 +1,4 @@
-import { mean as _mean } from 'lodash';
+import _mean from 'lodash/mean';
 import { mean } from '../../src/math';
 
 const data = [4, 2, 8, 6];

@@ -1,4 +1,4 @@
-import { camelCase as _camelCase } from 'lodash';
+import _camelCase from 'lodash/camelCase';
 import { camelCase } from '../../src/string';
 
 describe('String', () => {
