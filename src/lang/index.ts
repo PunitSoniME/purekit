@@ -29,5 +29,5 @@ export {
 	isBoolean,
 	isBuffer,
 	isDate,
-	isElement
+	isElement,
 };

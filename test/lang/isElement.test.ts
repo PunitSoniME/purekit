@@ -13,6 +13,5 @@ describe('Lang', () => {
 		it("isElement('<body>')", () => {
 			expect(isElement('<body>')).toEqual(_isElement('<body>'));
 		});
-
 	});
 });

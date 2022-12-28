@@ -10,6 +10,5 @@ describe('Lang', () => {
 		it('isBuffer(new Uint8Array(2))', () => {
 			expect(isBuffer(new Uint8Array(2))).toEqual(_isBuffer(new Uint8Array(2)));
 		});
-
 	});
 });

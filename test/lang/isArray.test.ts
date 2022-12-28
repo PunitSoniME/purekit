@@ -11,7 +11,9 @@ describe('Lang', () => {
 		});
 
 		it('isArray(document.body.children)', () => {
-			expect(isArray(document.body.children)).toEqual(_isArray(document.body.children));
+			expect(isArray(document.body.children)).toEqual(
+				_isArray(document.body.children)
+			);
 		});
 
 		it("isArray('abc')", () => {

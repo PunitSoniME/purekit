@@ -12,8 +12,10 @@ describe('Lang', () => {
 			);
 		});
 
-		it("isArrayLikeObject(document.body.children)", () => {
-			expect(isArrayLikeObject(document.body.children)).toEqual(_isArrayLikeObject(document.body.children));
+		it('isArrayLikeObject(document.body.children)', () => {
+			expect(isArrayLikeObject(document.body.children)).toEqual(
+				_isArrayLikeObject(document.body.children)
+			);
 		});
 
 		it("isArrayLikeObject('abc')", () => {
