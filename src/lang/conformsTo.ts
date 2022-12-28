@@ -1,4 +1,10 @@
 //  @ts-nocheck
+/**
+ *
+ * @param obj
+ * @param source
+ * @returns
+ */
 const conformsTo = (obj: any, source: any): boolean => {
 	const entries = Object.entries(source);
 	for (let i = 0; i < entries.length; i++) {

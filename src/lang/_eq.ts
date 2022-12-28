@@ -1,3 +1,9 @@
+/**
+ *
+ * @param value
+ * @param other
+ * @returns
+ */
 const eq = (value: any, other: any): boolean => {
 	/* Checking if any arguments are null */
 	if (value === null || other === null) return false;
@@ -8,7 +14,7 @@ const eq = (value: any, other: any): boolean => {
 	/* Checking if any argument is none object */
 	if (typeof value !== 'object' || typeof other !== 'object') return false;
 
-	/* Using Object.getOwnPropertyNames() method to return the list of the objects’ properties */
+	/* Using Object.getOwnPropertyNames() method to return the list of the objects' properties */
 	let value_keys = Object.getOwnPropertyNames(value);
 
 	let other_keys = Object.getOwnPropertyNames(other);

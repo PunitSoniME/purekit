@@ -2,10 +2,13 @@
 import createPredicate from '../util/createPredicate';
 import predicateType from '../util/predicateType';
 
-const unionBy = <T>(
-	collection: T[],
-	predicate: predicateType<T> = x => !!x
-): T[] => {
+/**
+ *
+ * @param collection One of the collection to perform union operation on
+ * @param predicate
+ * @returns
+ */
+const unionBy = <T>(collection: T[], ...predicate: predicateType<T>): T[] => {
 	const fn = createPredicate(predicate);
 
 	let mappedValues = new Map();

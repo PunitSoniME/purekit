@@ -1,3 +1,8 @@
+/**
+ *
+ * @param value
+ * @returns
+ */
 const cloneDeep = <T>(value: T): T => {
 	if (Array.isArray(value)) {
 		return value.slice().map(cloneDeep) as any;

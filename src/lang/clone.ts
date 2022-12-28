@@ -1,3 +1,8 @@
+/**
+ *
+ * @param value
+ * @returns
+ */
 const clone = <T>(value: T): T => {
 	if (Array.isArray(value)) {
 		return value.slice() as any;

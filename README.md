@@ -78,8 +78,8 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - differenceWith ( ❌ - Work in progress - PRs most welcome )
 - drop ✔️
 - dropRight ✔️
-- dropRightWhile ( ❌ - Work in progress - PRs most welcome )
-- dropWhile ( ❌ - Work in progress - PRs most welcome )
+- dropRightWhile ✔️
+- dropWhile ✔️
 - fill ✔️
 - findIndex ✔️
 - findLastIndex ✔️
@@ -128,7 +128,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - unzip ✔️
 - unzipWith ✔️
 - without ✔️
-- xor ( ❌ - Work in progress - PRs most welcome )
+- xor ✔️
 - xorBy ( ❌ - Work in progress - PRs most welcome )
 - xorWith ( ❌ - Work in progress - PRs most welcome )
 - zip ✔️
@@ -222,8 +222,8 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - cloneDeep ✔️
 - cloneDeepWith ( ❌ - Work in progress - PRs most welcome )
 - cloneWith ( ❌ - Work in progress - PRs most welcome )
-- conformsTo ( ❌ - Work in progress - PRs most welcome )
-- eq ( ❌ - Work in progress - PRs most welcome )
+- conformsTo ✔️
+- eq ✔️
 - gt ( ❌ - Work in progress - PRs most welcome )
 - gte ( ❌ - Work in progress - PRs most welcome )
 - isArguments ( ❌ - Work in progress - PRs most welcome )

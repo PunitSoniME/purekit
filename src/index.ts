@@ -2,6 +2,7 @@ import * as array from './array';
 import * as collection from './collection';
 import * as math from './math';
 import * as numberMethods from './number';
+import * as stringMethods from './string';
 
 import {
 	chunk,
@@ -101,6 +102,31 @@ import { clamp, inRange, random } from './number';
 
 import { castArray } from './lang';
 
+import {
+	camelCase,
+	capitalize,
+	endsWith,
+	kebabCase,
+	lowerCase,
+	lowerFirst,
+	padEnd,
+	padStart,
+	parseInt,
+	repeat,
+	replace,
+	snakeCase,
+	split,
+	startCase,
+	startsWith,
+	toLower,
+	toUpper,
+	trim,
+	trimEnd,
+	trimStart,
+	upperCase,
+	upperFirst,
+} from './string';
+
 const _ = {
 	//	Array Methods
 	...array,
@@ -113,6 +139,9 @@ const _ = {
 
 	//	Number Methods
 	...numberMethods,
+
+	//	String Methods
+	...stringMethods,
 };
 
 export {
@@ -210,6 +239,29 @@ export {
 	clamp,
 	inRange,
 	random,
+	//	String Methods
+	camelCase,
+	capitalize,
+	endsWith,
+	kebabCase,
+	lowerCase,
+	lowerFirst,
+	padEnd,
+	padStart,
+	parseInt,
+	repeat,
+	replace,
+	snakeCase,
+	split,
+	startCase,
+	startsWith,
+	toLower,
+	toUpper,
+	trim,
+	trimEnd,
+	trimStart,
+	upperCase,
+	upperFirst,
 };
 
 export default _;

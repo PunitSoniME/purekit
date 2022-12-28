@@ -5,6 +5,8 @@ import difference from './difference';
 import differenceBy from './differenceBy';
 import drop from './drop';
 import dropRight from './dropRight';
+import dropRightWhile from './dropRightWhile';
+import dropWhile from './dropWhile';
 import fill from './fill';
 import first from './first';
 import findIndex from './findIndex';
@@ -40,8 +42,10 @@ import uniq from './uniq';
 import unzip from './unzip';
 import unzipWith from './unzipWith';
 import without from './without';
+import xor from './xor';
 import zip from './zip';
 import zipObject from './zipObject';
+// import unionBy from './_unionBy';
 
 export {
 	chunk,
@@ -51,6 +55,8 @@ export {
 	differenceBy,
 	drop,
 	dropRight,
+	dropRightWhile,
+	dropWhile,
 	first,
 	fill,
 	findIndex,
@@ -82,10 +88,12 @@ export {
 	takeRightWhile,
 	takeWhile,
 	union,
+	// unionBy,
 	uniq,
 	unzip,
 	unzipWith,
 	without,
+	xor,
 	zip,
 	zipObject,
 };
