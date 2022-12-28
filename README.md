@@ -223,16 +223,16 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - cloneDeepWith ( ❌ - Work in progress - PRs most welcome )
 - cloneWith ( ❌ - Work in progress - PRs most welcome )
 - conformsTo ✔️
-- eq ✔️
-- gt ( ❌ - Work in progress - PRs most welcome )
-- gte ( ❌ - Work in progress - PRs most welcome )
+- eq ( ❌ - Work in progress - PRs most welcome )
+- gt ✔️
+- gte ✔️
 - isArguments ( ❌ - Work in progress - PRs most welcome )
-- isArray ( ❌ - Work in progress - PRs most welcome )
-- isArrayBuffer ( ❌ - Work in progress - PRs most welcome )
-- isArrayLike ( ❌ - Work in progress - PRs most welcome )
-- isArrayLikeObject ( ❌ - Work in progress - PRs most welcome )
-- isBoolean ( ❌ - Work in progress - PRs most welcome )
-- isBuffer ( ❌ - Work in progress - PRs most welcome )
+- isArray ✔️
+- isArrayBuffer ✔️
+- isArrayLike ✔️
+- isArrayLikeObject ✔️
+- isBoolean ✔️
+- isBuffer ✔️
 - isDate ( ❌ - Work in progress - PRs most welcome )
 - isElement ( ❌ - Work in progress - PRs most welcome )
 - isEmpty ( ❌ - Work in progress - PRs most welcome )
