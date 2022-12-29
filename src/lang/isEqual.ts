@@ -25,7 +25,7 @@ const isEqual = (value: any, other: any): boolean => {
 	/* Iterating through all the properties of the value object with the for of method*/
 	for (let key of value_keys) {
 		/* Making sure that every property in the value object also exists in other object. */
-		if (!Object.hasOwn(other, key)) return false;
+		if (!other.hasOwnProperty(key)) return false;
 		/* Using the compareAnything function recursively (calling itself) and passing the values of each property into it to check if they are equal. */
 		if (isEqual(value[key], other[key]) === false) return false;
 	}
