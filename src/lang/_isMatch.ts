@@ -1,4 +1,4 @@
-import some from "../collection/some";
+import some from '../collection/some';
 
 /**
  * Performs a partial deep comparison between object and source to determine if object contains equivalent property values.

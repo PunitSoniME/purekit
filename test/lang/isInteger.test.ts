@@ -20,7 +20,9 @@ describe('Lang', () => {
 		});
 
 		it('isInteger(Number.MAX_SAFE_INTEGER)', () => {
-			expect(isInteger(Number.MAX_SAFE_INTEGER)).toEqual(_isInteger(Number.MAX_SAFE_INTEGER));
+			expect(isInteger(Number.MAX_SAFE_INTEGER)).toEqual(
+				_isInteger(Number.MAX_SAFE_INTEGER)
+			);
 		});
 	});
 });
