@@ -1,6 +1,6 @@
 /**
  *
- * @param value
+ * @param value The value to check
  * @returns true if passed array is like an Array
  */
 const isArrayLike = (value: any): boolean => {

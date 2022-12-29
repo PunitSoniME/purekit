@@ -4,7 +4,7 @@ const flatMapDepth = <T>(
 	collection: T,
 	iteratee: any,
 	depth: number = 1
-): T[] => {
+): T => {
 	return applyArrayFn({
 		collection: collection,
 		fnName: 'map',

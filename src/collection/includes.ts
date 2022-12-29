@@ -4,7 +4,7 @@ const includes = <T>(
 	collection: T,
 	iteratee: any,
 	fromIndex: number = 0
-): Boolean => {
+): boolean => {
 	if (typeof collection === 'object') {
 		return Object.values(collection as any).includes(iteratee, fromIndex);
 	}

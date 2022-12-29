@@ -4,7 +4,7 @@ const findLast = <T>(
 	collection: T,
 	iteratee: any,
 	fromIndex: number = Array.isArray(collection) ? collection.length - 1 : 0
-): Boolean => {
+): T => {
 	return applyArrayFn({
 		collection: collection,
 		fnName: 'findLast',

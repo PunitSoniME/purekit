@@ -4,7 +4,7 @@ const find = <T>(
 	collection: T,
 	iteratee: any,
 	fromIndex: number = 0
-): Boolean => {
+): Object => {
 	return applyArrayFn({
 		collection: collection,
 		fnName: 'find',

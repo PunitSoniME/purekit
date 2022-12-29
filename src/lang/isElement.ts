@@ -1,6 +1,6 @@
 /**
  *
- * @param value
+ * @param value The value to check
  * @returns true if passed value is a valid dom element
  */
 const isElement = (value: any): boolean => {

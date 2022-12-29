@@ -13,6 +13,15 @@ import isBoolean from './isBoolean';
 import isBuffer from './isBuffer';
 import isDate from './isDate';
 import isElement from './isElement';
+import isEmpty from './isEmpty';
+import isEqual from './isEqual';
+import isError from './isError';
+import isFinite from './isFinite';
+import isFunction from './isFunction';
+import isInteger from './isInteger';
+import isLength from './isLength';
+import isMap from './isMap';
+// import isMatch from './_isMatch';
 
 export {
 	castArray,
@@ -30,4 +39,13 @@ export {
 	isBuffer,
 	isDate,
 	isElement,
+	isEmpty,
+	isEqual,
+	isError,
+	isFinite,
+	isFunction,
+	isInteger,
+	isLength,
+	isMap,
+	// isMatch
 };

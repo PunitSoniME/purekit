@@ -1,6 +1,6 @@
 /**
  *
- * @param value
+ * @param value The value to check
  * @returns true if passed value is a valid date or not
  */
 const isDate = (value: any): boolean => {

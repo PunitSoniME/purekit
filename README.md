@@ -233,22 +233,23 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - isArrayLikeObject ✔️
 - isBoolean ✔️
 - isBuffer ✔️
-- isDate ( ❌ - Work in progress - PRs most welcome )
-- isElement ( ❌ - Work in progress - PRs most welcome )
-- isEmpty ( ❌ - Work in progress - PRs most welcome )
-- isEqual ( ❌ - Work in progress - PRs most welcome )
+- isDate ✔️
+- isElement ✔️
+- isEmpty ✔️
+- isEqual ✔️
 - isEqualWith ( ❌ - Work in progress - PRs most welcome )
-- isError ( ❌ - Work in progress - PRs most welcome )
-- isFinite ( ❌ - Work in progress - PRs most welcome )
-- isFunction ( ❌ - Work in progress - PRs most welcome )
-- isInteger ( ❌ - Work in progress - PRs most welcome )
-- isLength ( ❌ - Work in progress - PRs most welcome )
-- isMap ( ❌ - Work in progress - PRs most welcome )
+- isError ✔️
+- isFinite ✔️
+- isFunction ✔️
+- isInteger ✔️
+- isLength ✔️
+- isMap ✔️
 - isMatch ( ❌ - Work in progress - PRs most welcome )
 - isMatchWith ( ❌ - Work in progress - PRs most welcome )
 - isNaN ( ❌ - Work in progress - PRs most welcome )
 - isNative ( ❌ - Work in progress - PRs most welcome )
 - isNil ( ❌ - Work in progress - PRs most welcome )
+- isNode ✔️ **New**
 - isNull ( ❌ - Work in progress - PRs most welcome )
 - isNumber ( ❌ - Work in progress - PRs most welcome )
 - isObject ( ❌ - Work in progress - PRs most welcome )

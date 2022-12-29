@@ -1,6 +1,6 @@
 import applyArrayFn from '../util/applyArrayFn';
 
-const filter = <T>(collection: T, iteratee: any): Boolean => {
+const filter = <T>(collection: T, iteratee: any): T => {
 	return applyArrayFn({
 		collection: collection,
 		fnName: 'filter',
