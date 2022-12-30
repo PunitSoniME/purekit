@@ -246,26 +246,26 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - isMap ✔️
 - isMatch ( ❌ - Work in progress - PRs most welcome )
 - isMatchWith ( ❌ - Work in progress - PRs most welcome )
-- isNaN ( ❌ - Work in progress - PRs most welcome )
-- isNative ( ❌ - Work in progress - PRs most welcome )
-- isNil ( ❌ - Work in progress - PRs most welcome )
+- isNaN ✔️
+- isNative ✔️
+- isNil ✔️
 - isNode ✔️ **New**
-- isNull ( ❌ - Work in progress - PRs most welcome )
-- isNumber ( ❌ - Work in progress - PRs most welcome )
-- isObject ( ❌ - Work in progress - PRs most welcome )
-- isObjectLike ( ❌ - Work in progress - PRs most welcome )
-- isPlainObject ( ❌ - Work in progress - PRs most welcome )
-- isRegExp ( ❌ - Work in progress - PRs most welcome )
-- isSafeInteger ( ❌ - Work in progress - PRs most welcome )
-- isSet ( ❌ - Work in progress - PRs most welcome )
-- isString ( ❌ - Work in progress - PRs most welcome )
-- isSymbol ( ❌ - Work in progress - PRs most welcome )
-- isTypedArray ( ❌ - Work in progress - PRs most welcome )
-- isUndefined ( ❌ - Work in progress - PRs most welcome )
-- isWeakMap ( ❌ - Work in progress - PRs most welcome )
-- isWeakSet ( ❌ - Work in progress - PRs most welcome )
-- lt ( ❌ - Work in progress - PRs most welcome )
-- lte ( ❌ - Work in progress - PRs most welcome )
+- isNull ✔️
+- isNumber ✔️
+- isObject ✔️
+- isObjectLike ✔️
+- isPlainObject ✔️
+- isRegExp ✔️
+- isSafeInteger ✔️
+- isSet ✔️
+- isString ✔️
+- isSymbol ✔️
+- isTypedArray ✔️
+- isUndefined ✔️
+- isWeakMap ✔️
+- isWeakSet ✔️
+- lt ✔️
+- lte ✔️
 - toArray ( ❌ - Work in progress - PRs most welcome )
 - toFinite ( ❌ - Work in progress - PRs most welcome )
 - toInteger ( ❌ - Work in progress - PRs most welcome )

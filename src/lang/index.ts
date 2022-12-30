@@ -22,6 +22,27 @@ import isInteger from './isInteger';
 import isLength from './isLength';
 import isMap from './isMap';
 // import isMatch from './_isMatch';
+import isNaN from './isNaN';
+import isNative from './isNative';
+import isNil from './isNil';
+import isNull from './isNull';
+import isNumber from './isNumber';
+import isObject from './isObject';
+import isObjectLike from './isObjectLike';
+import isPlainObject from './isPlainObject';
+import isRegExp from './isRegExp';
+import isSafeInteger from './isSafeInteger';
+import isSet from './isSet';
+import isString from './isString';
+import isSymbol from './isSymbol';
+import isTypedArray from './isTypedArray';
+import isUndefined from './isUndefined';
+import isWeakMap from './isWeakMap';
+import isWeakSet from './isWeakSet';
+import lt from './lt';
+import lte from './lte';
+// import toArray from './toArray';
+// import toInteger from './toInteger';
 
 export {
 	castArray,
@@ -47,5 +68,26 @@ export {
 	isInteger,
 	isLength,
 	isMap,
-	// isMatch
+	// isMatch,
+	isNaN,
+	isNative,
+	isNil,
+	isNull,
+	isNumber,
+	isObject,
+	isObjectLike,
+	isPlainObject,
+	isRegExp,
+	isSafeInteger,
+	isSet,
+	isString,
+	isSymbol,
+	isTypedArray,
+	isUndefined,
+	isWeakMap,
+	isWeakSet,
+	lt,
+	lte,
+	// toArray,
+	// toInteger
 };

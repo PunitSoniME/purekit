@@ -3,6 +3,7 @@ import * as collection from './collection';
 import * as math from './math';
 import * as numberMethods from './number';
 import * as stringMethods from './string';
+import * as lang from './lang';
 
 import {
 	chunk,
@@ -100,7 +101,51 @@ import {
 
 import { clamp, inRange, random } from './number';
 
-import { castArray } from './lang';
+import {
+	castArray,
+	clone,
+	cloneDeep,
+	conformsTo,
+	// eq,
+	gt,
+	gte,
+	isArray,
+	isArrayBuffer,
+	isArrayLike,
+	isArrayLikeObject,
+	isBoolean,
+	isBuffer,
+	isDate,
+	isElement,
+	isEmpty,
+	isEqual,
+	isError,
+	isFinite,
+	isFunction,
+	isInteger,
+	isLength,
+	isMap,
+	// isMatch,
+	isNaN,
+	isNative,
+	isNil,
+	isNull,
+	isNumber,
+	isObject,
+	isObjectLike,
+	isPlainObject,
+	isRegExp,
+	isSafeInteger,
+	isSet,
+	isString,
+	isSymbol,
+	isTypedArray,
+	isUndefined,
+	isWeakMap,
+	isWeakSet,
+	lt,
+	lte,
+} from './lang';
 
 import {
 	camelCase,
@@ -142,6 +187,9 @@ const _ = {
 
 	//	String Methods
 	...stringMethods,
+
+	//	Lang Methods
+	...lang,
 };
 
 export {
@@ -233,8 +281,6 @@ export {
 	shuffle,
 	size,
 	some,
-	//	Lang Methods
-	castArray,
 	//	Number Methods
 	clamp,
 	inRange,
@@ -262,6 +308,50 @@ export {
 	trimStart,
 	upperCase,
 	upperFirst,
+	//	Lang Methods
+	castArray,
+	clone,
+	cloneDeep,
+	conformsTo,
+	// eq,
+	gt,
+	gte,
+	isArray,
+	isArrayBuffer,
+	isArrayLike,
+	isArrayLikeObject,
+	isBoolean,
+	isBuffer,
+	isDate,
+	isElement,
+	isEmpty,
+	isEqual,
+	isError,
+	isFinite,
+	isFunction,
+	isInteger,
+	isLength,
+	isMap,
+	// isMatch,
+	isNaN,
+	isNative,
+	isNil,
+	isNull,
+	isNumber,
+	isObject,
+	isObjectLike,
+	isPlainObject,
+	isRegExp,
+	isSafeInteger,
+	isSet,
+	isString,
+	isSymbol,
+	isTypedArray,
+	isUndefined,
+	isWeakMap,
+	isWeakSet,
+	lt,
+	lte,
 };
 
 export default _;

@@ -1,6 +1,7 @@
+//  @ts-nocheck
 import some from '../collection/some';
 
-//	TODO: isMatch
+//	TODO: toFinite
 
 /**
  * Performs a partial deep comparison between object and source to determine if object contains equivalent property values.
@@ -8,6 +9,7 @@ import some from '../collection/some';
  * @param source The object of property values to match.
  * @returns Returns true if object is a match, else false.
  */
-const isMatch = (object: any, source: any): boolean => some(object, source);
+const isMatchWith = (object: any, source: any, customizer: any): boolean =>
+	some(object, source);
 
-export default isMatch;
+export default isMatchWith;
