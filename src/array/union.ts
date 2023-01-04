@@ -1,13 +1,10 @@
 /**
  *
  * @param collection
+ * @param restCollection
  * @returns
  */
-const union = <T>(...collection: T[][]): T[] => {
-	let newSet = new Set<T>();
-	collection.forEach((c: T[]) => {
-		c.forEach(cc => newSet.add(cc));
-	});
-	return [...newSet];
-};
+const union = <T>(collection: T[], ...restCollection: T[][]): T[] => [
+	...new Set(collection.concat(...restCollection)),
+];
 export default union;

@@ -19,6 +19,7 @@ import head from './head';
 import indexOf from './indexOf';
 import initial from './initial';
 import intersection from './intersection';
+import intersectionBy from './intersectionBy';
 import join from './join';
 import last from './last';
 import lastIndexOf from './lastIndexOf';
@@ -30,6 +31,8 @@ import remove from './remove';
 import reverse from './reverse';
 import slice from './slice';
 import sortedIndex from './sortedIndex';
+import sortedIndexOf from './sortedIndexOf';
+import sortedLastIndexOf from './sortedLastIndexOf';
 import sortedUniq from './sortedUniq';
 import sortedUniqBy from './sortedUniqBy';
 import tail from './tail';
@@ -38,14 +41,15 @@ import takeRight from './takeRight';
 import takeRightWhile from './takeRightWhile';
 import takeWhile from './takeWhile';
 import union from './union';
+import unionBy from './unionBy';
 import uniq from './uniq';
+import uniqBy from './uniqBy';
 import unzip from './unzip';
 import unzipWith from './unzipWith';
 import without from './without';
 import xor from './xor';
 import zip from './zip';
 import zipObject from './zipObject';
-// import unionBy from './_unionBy';
 
 export {
 	chunk,
@@ -69,6 +73,7 @@ export {
 	indexOf,
 	initial,
 	intersection,
+	intersectionBy,
 	join,
 	last,
 	lastIndexOf,
@@ -80,6 +85,8 @@ export {
 	reverse,
 	slice,
 	sortedIndex,
+	sortedIndexOf,
+	sortedLastIndexOf,
 	sortedUniq,
 	sortedUniqBy,
 	tail,
@@ -88,8 +95,9 @@ export {
 	takeRightWhile,
 	takeWhile,
 	union,
-	// unionBy,
+	unionBy,
 	uniq,
+	uniqBy,
 	unzip,
 	unzipWith,
 	without,

@@ -1,9 +1,11 @@
 import * as array from './array';
 import * as collection from './collection';
+import * as date from './date';
 import * as math from './math';
 import * as numberMethods from './number';
-import * as stringMethods from './string';
+import * as objectMethods from './object';
 import * as lang from './lang';
+import * as stringMethods from './string';
 
 import {
 	chunk,
@@ -53,24 +55,6 @@ import {
 } from './array';
 
 import {
-	add,
-	ceil,
-	divide,
-	floor,
-	max,
-	maxBy,
-	mean,
-	meanBy,
-	min,
-	minBy,
-	multiply,
-	round,
-	subtract,
-	sum,
-	sumBy,
-} from './math';
-
-import {
 	countBy,
 	each,
 	eachRight,
@@ -99,7 +83,29 @@ import {
 	some,
 } from './collection';
 
+import { now } from './date';
+
+import {
+	add,
+	ceil,
+	divide,
+	floor,
+	max,
+	maxBy,
+	mean,
+	meanBy,
+	min,
+	minBy,
+	multiply,
+	round,
+	subtract,
+	sum,
+	sumBy,
+} from './math';
+
 import { clamp, inRange, random } from './number';
+
+import { toPairs } from './object';
 
 import {
 	castArray,
@@ -179,11 +185,17 @@ const _ = {
 	//	Collection Methods
 	...collection,
 
+	//	Date Methods
+	...date,
+
 	//	Math Methods
 	...math,
 
 	//	Number Methods
 	...numberMethods,
+
+	//	Object Methods
+	...objectMethods,
 
 	//	String Methods
 	...stringMethods,
@@ -238,22 +250,6 @@ export {
 	without,
 	zip,
 	zipObject,
-	// Math Methods
-	add,
-	ceil,
-	divide,
-	floor,
-	max,
-	maxBy,
-	mean,
-	meanBy,
-	min,
-	minBy,
-	multiply,
-	round,
-	subtract,
-	sum,
-	sumBy,
 	// Collection Methods
 	countBy,
 	each,
@@ -281,10 +277,30 @@ export {
 	shuffle,
 	size,
 	some,
+	//	Date Methods
+	now,
+	// Math Methods
+	add,
+	ceil,
+	divide,
+	floor,
+	max,
+	maxBy,
+	mean,
+	meanBy,
+	min,
+	minBy,
+	multiply,
+	round,
+	subtract,
+	sum,
+	sumBy,
 	//	Number Methods
 	clamp,
 	inRange,
 	random,
+	//	Object Methods
+	toPairs,
 	//	String Methods
 	camelCase,
 	capitalize,

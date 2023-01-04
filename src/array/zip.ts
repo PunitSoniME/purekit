@@ -1,5 +1,6 @@
-const zip = (...collection: any[][]): any[][] =>
-	Array(Math.max(...collection.map(a => a.length)))
-		.fill(null)
-		.map((_, i) => collection.map(a => a[i]));
+const zip = (collection: any[], ...otherCollections: any[][]): any[][] =>
+	collection.map((value, idx) => [
+		value,
+		...otherCollections.map(arr => arr[idx]),
+	]);
 export default zip;

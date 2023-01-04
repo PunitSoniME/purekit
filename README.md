@@ -92,7 +92,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - indexOf ✔️
 - initial ✔️
 - intersection ✔️
-- intersectionBy ( ❌ - Work in progress - PRs most welcome )
+- intersectionBy ✔️
 - intersectionWith ( ❌ - Work in progress - PRs most welcome )
 - join ✔️
 - last ✔️
@@ -108,10 +108,10 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - slice ✔️
 - sortedIndex ✔️
 - sortedIndexBy ( ❌ - Work in progress - PRs most welcome )
-- sortedIndexOf ( ❌ - Work in progress - PRs most welcome )
+- sortedIndexOf ✔️
 - sortedLastIndex ( ❌ - Work in progress - PRs most welcome )
 - sortedLastIndexBy ( ❌ - Work in progress - PRs most welcome )
-- sortedLastIndexOf ( ❌ - Work in progress - PRs most welcome )
+- sortedLastIndexOf ✔️
 - sortedUniq ✔️
 - sortedUniqBy ✔️
 - tail ✔️
@@ -120,10 +120,10 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - takeRightWhile ✔️
 - takeWhile ✔️
 - union ✔️
-- unionBy ( ❌ - Work in progress - PRs most welcome )
+- unionBy ✔️
 - unionWith ( ❌ - Work in progress - PRs most welcome )
 - uniq ✔️
-- uniqBy ( ❌ - Work in progress - PRs most welcome )
+- uniqBy ✔️
 - uniqWith ( ❌ - Work in progress - PRs most welcome )
 - unzip ✔️
 - unzipWith ✔️
@@ -178,7 +178,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 # Dates
 
 
-- now ( ❌ - Work in progress - PRs most welcome )
+- now ✔️
 
 
 -------------------------------
@@ -355,7 +355,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - result ( ❌ - Work in progress - PRs most welcome )
 - set ( ❌ - Work in progress - PRs most welcome )
 - setWith ( ❌ - Work in progress - PRs most welcome )
-- toPairs ( ❌ - Work in progress - PRs most welcome )
+- toPairs ✔️
 - toPairsIn ( ❌ - Work in progress - PRs most welcome )
 - transform ( ❌ - Work in progress - PRs most welcome )
 - unset ( ❌ - Work in progress - PRs most welcome )
