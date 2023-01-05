@@ -186,30 +186,30 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 
 # Function
 
-- after ( ❌ - Work in progress - PRs most welcome )
+- after ✔️
 
-- ary ( ❌ - Work in progress - PRs most welcome )
-- before ( ❌ - Work in progress - PRs most welcome )
-- bind ( ❌ - Work in progress - PRs most welcome )
-- bindKey ( ❌ - Work in progress - PRs most welcome )
-- curry ( ❌ - Work in progress - PRs most welcome )
-- curryRight ( ❌ - Work in progress - PRs most welcome )
-- debounce ( ❌ - Work in progress - PRs most welcome )
+- ary ✔️
+- before ✔️
+- bind ✔️
+- bindKey ✔️
+- curry ✔️
+- curryRight ✔️
+- debounce ✔️
 - defer ( ❌ - Work in progress - PRs most welcome )
-- delay ( ❌ - Work in progress - PRs most welcome )
-- flip ( ❌ - Work in progress - PRs most welcome )
+- delay ✔️
+- flip ✔️
 - memoize ( ❌ - Work in progress - PRs most welcome )
-- negate ( ❌ - Work in progress - PRs most welcome )
-- once ( ❌ - Work in progress - PRs most welcome )
-- overArgs ( ❌ - Work in progress - PRs most welcome )
-- partial ( ❌ - Work in progress - PRs most welcome )
-- partialRight ( ❌ - Work in progress - PRs most welcome )
-- rearg ( ❌ - Work in progress - PRs most welcome )
-- rest ( ❌ - Work in progress - PRs most welcome )
-- spread ( ❌ - Work in progress - PRs most welcome )
+- negate ✔️
+- once ✔️
+- overArgs ✔️
+- partial ✔️
+- partialRight ✔️
+- rearg ✔️
+- rest ✔️
+- spread ✔️
 - throttle ( ❌ - Work in progress - PRs most welcome )
-- unary ( ❌ - Work in progress - PRs most welcome )
-- wrap ( ❌ - Work in progress - PRs most welcome )
+- unary ✔️
+- wrap ✔️
 
 -------------------------------
 <br />
@@ -266,14 +266,14 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - isWeakSet ✔️
 - lt ✔️
 - lte ✔️
-- toArray ( ❌ - Work in progress - PRs most welcome )
+- toArray ✔️
 - toFinite ( ❌ - Work in progress - PRs most welcome )
-- toInteger ( ❌ - Work in progress - PRs most welcome )
+- toInteger ✔️
 - toLength ( ❌ - Work in progress - PRs most welcome )
-- toNumber ( ❌ - Work in progress - PRs most welcome )
+- toNumber ✔️
 - toPlainObject ( ❌ - Work in progress - PRs most welcome )
-- toSafeInteger ( ❌ - Work in progress - PRs most welcome )
-- toString ( ❌ - Work in progress - PRs most welcome )
+- toSafeInteger ✔️
+- toString ✔️
 
 -------------------------------
 <br />

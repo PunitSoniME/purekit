@@ -3,5 +3,6 @@
  * @param value The value to check
  * @returns Returns true if value is a set, else false
  */
-const isSet = (value: any): boolean => value instanceof Set;
+const isSet = (value: any): boolean =>
+	value instanceof Set || value.toString() === '[object Set]';
 export default isSet;

@@ -35,7 +35,7 @@
     "url": "https://github.com/PunitSoniME/alt-lodash/issues"
   },
   "main": "dist/index.js",
-  "module": "dist/alt-lodash.esm.js",
+  "module": "dist/index.esm.js",
   "engines": {
     "node": ">=10"
   },
@@ -79,7 +79,7 @@
   "devDependencies": {
     "@size-limit/preset-small-lib": "^8.1.0",
     "@types/lodash": "^4.14.190",
-    "dts-cli": "^1.6.0",
+    "dts-cli": "^1.6.3",
     "husky": "^8.0.2",
     "lodash": "^4.17.21",
     "size-limit": "^8.1.0",

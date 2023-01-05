@@ -1,7 +1,7 @@
 import _once from 'lodash/once';
 import { once } from '../../src/function';
 
-describe('Math', () => {
+describe('Function', () => {
 	describe('once', () => {
 		it('once(numbers)', () => {
 			const fn = () => {

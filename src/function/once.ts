@@ -1,13 +1,19 @@
-const once = <T extends (...args: any[]) => any>(fn: T): T => {
-	let result: ReturnType<T>;
+//	@ts-nocheck
+/**
+ *
+ * @param fn
+ * @returns
+ */
+const once = (fn: function) => {
 	let called = false;
-	return function once_wrapped(this: any, ...args: any[]) {
+	let result: any;
+	return (...args) => {
 		if (!called) {
+			result = fn(...args);
 			called = true;
-			result = fn.apply(this, args);
 		}
 		return result;
-	} as any;
+	};
 };
 
 export default once;
