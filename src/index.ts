@@ -1,11 +1,12 @@
 import * as array from './array';
 import * as collection from './collection';
 import * as date from './date';
+import * as func from './function';
 import * as math from './math';
-import * as numberMethods from './number';
-import * as objectMethods from './object';
+import * as num from './number';
+import * as obj from './object';
 import * as lang from './lang';
-import * as stringMethods from './string';
+import * as str from './string';
 
 import {
 	chunk,
@@ -84,6 +85,29 @@ import {
 } from './collection';
 
 import { now } from './date';
+
+import {
+	after,
+	ary,
+	before,
+	bind,
+	bindKey,
+	curry,
+	curryRight,
+	debounce,
+	delay,
+	flip,
+	negate,
+	once,
+	overArgs,
+	partial,
+	partialRight,
+	rearg,
+	rest,
+	spread,
+	unary,
+	wrap,
+} from './function';
 
 import {
 	add,
@@ -188,17 +212,20 @@ const _ = {
 	//	Date Methods
 	...date,
 
+	//	Function Methods
+	...func,
+
 	//	Math Methods
 	...math,
 
 	//	Number Methods
-	...numberMethods,
+	...num,
 
 	//	Object Methods
-	...objectMethods,
+	...obj,
 
 	//	String Methods
-	...stringMethods,
+	...str,
 
 	//	Lang Methods
 	...lang,
@@ -279,6 +306,27 @@ export {
 	some,
 	//	Date Methods
 	now,
+	//	Function Methods
+	after,
+	ary,
+	before,
+	bind,
+	bindKey,
+	curry,
+	curryRight,
+	debounce,
+	delay,
+	flip,
+	negate,
+	once,
+	overArgs,
+	partial,
+	partialRight,
+	rearg,
+	rest,
+	spread,
+	unary,
+	wrap,
 	// Math Methods
 	add,
 	ceil,
