@@ -315,12 +315,12 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 
 # Object
 
-- assign ( ❌ - Work in progress - PRs most welcome )
+- assign ✔️
 
-- assignIn ( ❌ - Work in progress - PRs most welcome )
+- assignIn ✔️
 - assignInWith ( ❌ - Work in progress - PRs most welcome )
 - assignWith ( ❌ - Work in progress - PRs most welcome )
-- at ( ❌ - Work in progress - PRs most welcome )
+- at ✔️
 - create ( ❌ - Work in progress - PRs most welcome )
 - defaults ( ❌ - Work in progress - PRs most welcome )
 - defaultsDeep ( ❌ - Work in progress - PRs most welcome )

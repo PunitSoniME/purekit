@@ -10,6 +10,12 @@ const randomInt = (a = 1, b = 0) => {
 	return Math.floor(lower + Math.random() * (upper - lower + 1));
 };
 
+/**
+ *
+ * @param lower
+ * @param upper
+ * @returns
+ */
 const random = (
 	lower: number = 0,
 	upper: number | boolean | undefined = 1 as number
