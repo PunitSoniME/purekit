@@ -14,10 +14,9 @@ Bar.prototype.d = 4;
 
 describe('Object', () => {
 	describe('assign', () => {
-		it("assign({ 'a': 0 }, new Foo, new Bar)", () => {
-			//	@ts-ignore
-			expect(assign({ a: 0 }, new Foo(), new Bar())).toEqual(
-				_assign({ a: 0 }, new Foo(), new Bar())
+		it("assign({ 'a': 0 }, new (Foo as any)(), new (Bar as any)())", () => {
+			expect(assign({ a: 0 }, new (Foo as any)(), new (Bar as any)())).toEqual(
+				_assign({ a: 0 }, new (Foo as any)(), new (Bar as any)())
 			);
 		});
 	});

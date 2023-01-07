@@ -12,7 +12,7 @@ Foo.prototype.c = 3;
 
 describe('Object', () => {
 	describe('toPairs', () => {
-		it('toPairs(new Foo())', () => {
+		it('toPairs(new Foo)', () => {
 			//	@ts-ignore
 			expect(toPairs(new Foo())).toEqual(_toPairs(new Foo()));
 		});

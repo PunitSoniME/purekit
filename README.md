@@ -321,12 +321,12 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - assignInWith ( ❌ - Work in progress - PRs most welcome )
 - assignWith ( ❌ - Work in progress - PRs most welcome )
 - at ✔️
-- create ( ❌ - Work in progress - PRs most welcome )
-- defaults ( ❌ - Work in progress - PRs most welcome )
+- create ✔️
+- defaults ✔️
 - defaultsDeep ( ❌ - Work in progress - PRs most welcome )
-- entries -> toPairs ( ❌ - Work in progress - PRs most welcome )
-- entriesIn -> toPairsIn ( ❌ - Work in progress - PRs most welcome )
-- extend -> assignIn ( ❌ - Work in progress - PRs most welcome )
+- entries -> toPairs ✔️
+- entriesIn -> toPairsIn ✔️
+- extend -> assignIn ✔️
 - extendWith -> assignInWith ( ❌ - Work in progress - PRs most welcome )
 - findKey ( ❌ - Work in progress - PRs most welcome )
 - findLastKey ( ❌ - Work in progress - PRs most welcome )
