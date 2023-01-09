@@ -8,7 +8,7 @@ const reverseCollection = <T>(collection: T): T | Map<any, any> | any[] => {
 		const mappedEntries = new Map(Object.entries(collection as any));
 		const reverseMappedEntries = [...mappedEntries.entries()].reverse();
 
-		return new Map([...reverseMappedEntries.entries()].reverse());
+		return new Map([...reverseMappedEntries]);
 	}
 	return collection;
 };

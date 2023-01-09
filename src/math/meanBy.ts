@@ -1,4 +1,4 @@
-import predicateType from '../util/predicateType';
+import predicateType from '../helpers/predicateType';
 import sumBy from './sumBy';
 
 const meanBy = <T>(collection: T[], iteratee: predicateType<T>): number =>

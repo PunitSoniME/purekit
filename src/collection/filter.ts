@@ -1,4 +1,4 @@
-import applyArrayFn from '../util/applyArrayFn';
+import applyArrayFn from '../helpers/applyArrayFn';
 
 const filter = <T>(collection: T, iteratee: any): T => {
 	return applyArrayFn({

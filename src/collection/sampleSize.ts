@@ -1,4 +1,4 @@
-import getRandomElementFromCollection from '../util/getRandomElement';
+import getRandomElementFromCollection from '../helpers/getRandomElement';
 
 const sampleSize = <T>(collection: T, length: number = 1): T => {
 	let count = 0;

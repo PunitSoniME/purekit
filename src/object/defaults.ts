@@ -4,5 +4,5 @@
  * @returns
  */
 const defaults = (...args: any) =>
-	args.reverse().reduce((acc: any, obj: any) => ({ ...acc, ...obj }), {});
+	args.reverse().reduce((acc: any, object: any) => ({ ...acc, ...object }), {});
 export default defaults;

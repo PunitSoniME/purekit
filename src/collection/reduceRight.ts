@@ -1,4 +1,4 @@
-import applyArrayFn from '../util/applyArrayFn';
+import applyArrayFn from '../helpers/applyArrayFn';
 
 const reduceRight = <T>(collection: T, iteratee: any, initialValue: any): T => {
 	return applyArrayFn({

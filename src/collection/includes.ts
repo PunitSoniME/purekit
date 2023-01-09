@@ -1,4 +1,4 @@
-import applyArrayFn from '../util/applyArrayFn';
+import applyArrayFn from '../helpers/applyArrayFn';
 
 const includes = <T>(
 	collection: T,

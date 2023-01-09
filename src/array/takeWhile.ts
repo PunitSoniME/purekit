@@ -1,5 +1,5 @@
-import createPredicate from '../util/createPredicate';
-import predicateType from '../util/predicateType';
+import createPredicate from '../helpers/createPredicate';
+import predicateType from '../helpers/predicateType';
 
 const takeWhile = <T>(collection: T[], predicate: predicateType<T>): T[] => {
 	if (collection.length === 0) return collection;

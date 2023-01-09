@@ -1,4 +1,4 @@
-import createPredicate from '../util/createPredicate';
+import createPredicate from '../helpers/createPredicate';
 
 const sortedUniqBy = <T>(
 	collection: T[],

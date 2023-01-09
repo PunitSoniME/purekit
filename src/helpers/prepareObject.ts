@@ -1,5 +1,5 @@
 import IPrepareObjectFN from '../model/IPrepareObjectFN';
-import createPredicate from '../util/createPredicate';
+import createPredicate from './createPredicate';
 
 const prepareObjectTypes = {
 	push: 'push', //	return the array with all the matched elements

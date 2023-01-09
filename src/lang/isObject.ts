@@ -6,5 +6,5 @@ import isNil from './isNil';
  * @returns Returns true if value is an object, else false.
  */
 const isObject = (value: any): boolean =>
-	!isNil(value) && typeof value === 'object';
+	!isNil(value) && value instanceof Object;
 export default isObject;

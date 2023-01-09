@@ -1,4 +1,4 @@
-import createPredicate from '../util/createPredicate';
+import createPredicate from '../helpers/createPredicate';
 
 /**
  * Creates an array of values by running each element in collection thru iteratee. The iteratee is invoked with three arguments

@@ -1,4 +1,4 @@
-import get from './../util/get';
+import get from './get';
 
 const at = <T>(object: T, paths: any[]): any[] => {
 	let data: any[] = [];

@@ -1,11 +1,11 @@
-import applyArrayFn from '../util/applyArrayFn';
+import applyArrayFn from '../helpers/applyArrayFn';
 
 const forEachRight = <T>(collection: T, iteratee: any): T => {
 	applyArrayFn({
 		collection: collection,
 		fnName: 'forEach',
 		iteratee: iteratee,
-		makeItReverse: true,
+		checkFromEnd: true,
 	});
 	return collection;
 };

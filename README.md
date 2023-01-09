@@ -328,18 +328,18 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - entriesIn -> toPairsIn ✔️
 - extend -> assignIn ✔️
 - extendWith -> assignInWith ( ❌ - Work in progress - PRs most welcome )
-- findKey ( ❌ - Work in progress - PRs most welcome )
-- findLastKey ( ❌ - Work in progress - PRs most welcome )
-- forIn ( ❌ - Work in progress - PRs most welcome )
-- forInRight ( ❌ - Work in progress - PRs most welcome )
-- forOwn ( ❌ - Work in progress - PRs most welcome )
-- forOwnRight ( ❌ - Work in progress - PRs most welcome )
-- functions ( ❌ - Work in progress - PRs most welcome )
-- functionsIn ( ❌ - Work in progress - PRs most welcome )
-- get ( ❌ - Work in progress - PRs most welcome )
-- has ( ❌ - Work in progress - PRs most welcome )
+- findKey ✔️
+- findLastKey ✔️
+- forIn ✔️
+- forInRight ✔️
+- forOwn ✔️
+- forOwnRight ✔️
+- functions ✔️
+- functionsIn ✔️
+- get ✔️
+- has ✔️
 - hasIn ( ❌ - Work in progress - PRs most welcome )
-- invert ( ❌ - Work in progress - PRs most welcome )
+- invert ✔️
 - invertBy ( ❌ - Work in progress - PRs most welcome )
 - invoke ( ❌ - Work in progress - PRs most welcome )
 - keys ( ❌ - Work in progress - PRs most welcome )
@@ -356,7 +356,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - set ( ❌ - Work in progress - PRs most welcome )
 - setWith ( ❌ - Work in progress - PRs most welcome )
 - toPairs ✔️
-- toPairsIn ( ❌ - Work in progress - PRs most welcome )
+- toPairsIn ✔️
 - transform ( ❌ - Work in progress - PRs most welcome )
 - unset ( ❌ - Work in progress - PRs most welcome )
 - update ( ❌ - Work in progress - PRs most welcome )

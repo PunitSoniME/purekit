@@ -7,8 +7,8 @@
  * @returns
  */
 const bindKey =
-	(obj: any, method: any, ...args: any) =>
+	(object: any, method: any, ...args: any) =>
 	(...bound) =>
-		obj[method](...args, ...bound);
+		object[method](...args, ...bound);
 
 export default bindKey;

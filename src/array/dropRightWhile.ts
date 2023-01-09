@@ -1,5 +1,5 @@
-import createPredicate from '../util/createPredicate';
-import predicateType from '../util/predicateType';
+import createPredicate from '../helpers/createPredicate';
+import predicateType from '../helpers/predicateType';
 
 /**
  *

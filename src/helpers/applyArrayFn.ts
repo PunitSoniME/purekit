@@ -6,7 +6,7 @@ const applyArrayFn = <T>({
 	collection,
 	fnName,
 	iteratee,
-	makeItReverse = false,
+	checkFromEnd = false,
 	fromIndex = 0,
 	toIndex = -1,
 	equalyCompare = true,
@@ -25,7 +25,7 @@ const applyArrayFn = <T>({
 				  ]
 				: [...collection];
 
-		const collectionInReverse = makeItReverse
+		const collectionInReverse = checkFromEnd
 			? reverseCollection([...collectionToTest])
 			: [...collectionToTest];
 
@@ -36,7 +36,7 @@ const applyArrayFn = <T>({
 	}
 
 	if (collection && typeof collection === 'object') {
-		const collectionInReverse = makeItReverse
+		const collectionInReverse = checkFromEnd
 			? reverseCollection({ ...collection })
 			: { ...collection };
 

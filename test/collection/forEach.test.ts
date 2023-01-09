@@ -4,27 +4,33 @@ import { forEach } from '../../src/collection';
 describe('Collection', () => {
 	describe('forEach', () => {
 		it('[Array Of Number] Iterates over elements of collection and invokes predicate for each element.', () => {
-			expect(
-				forEach([1, 2], function (value: number) {
-					console.log(value);
-				})
-			).toEqual(
-				_forEach([1, 2], function (value) {
-					console.log(value);
-				})
-			);
+			let data: number[] = [];
+			let _data: number[] = [];
+
+			forEach([1, 2], function (value: number) {
+				data.push(value);
+			});
+
+			_forEach([1, 2], function (value: number) {
+				_data.push(value);
+			});
+
+			expect(data).toEqual(_data);
 		});
 
 		it('[Object] Iterates over elements of collection and invokes predicate for each element.', () => {
-			expect(
-				forEach({ a: 1, b: 2 }, function (_: number, key: string) {
-					console.log(key);
-				})
-			).toEqual(
-				_forEach({ a: 1, b: 2 }, function (_: number, key: string) {
-					console.log(key);
-				})
-			);
+			let data: string[] = [];
+			let _data: string[] = [];
+
+			forEach({ a: 1, b: 2 }, function (_: number, key: string) {
+				data.push(key);
+			});
+
+			_forEach({ a: 1, b: 2 }, function (_: number, key: string) {
+				_data.push(key);
+			});
+
+			expect(data).toEqual(_data);
 		});
 	});
 });

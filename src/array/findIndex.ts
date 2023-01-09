@@ -1,4 +1,4 @@
-import applyArrayFn from '../util/applyArrayFn';
+import applyArrayFn from '../helpers/applyArrayFn';
 
 const findIndex = <T>(collection: T, predicate: any, fromIndex = 0): number => {
 	return applyArrayFn({

@@ -1,4 +1,4 @@
-import prepareObject, { prepareObjectTypes } from '../util/prepareObject';
+import prepareObject, { prepareObjectTypes } from '../helpers/prepareObject';
 
 const reject = <T>(collection: T[], predicate: any): any[] => {
 	const { conditionFailedRecords } = prepareObject({

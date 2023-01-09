@@ -1,4 +1,4 @@
-import getRandomElementFromCollection from '../util/getRandomElement';
+import getRandomElementFromCollection from '../helpers/getRandomElement';
 
 const sample = <T>(collection: T): any => {
 	if (typeof collection === 'object')

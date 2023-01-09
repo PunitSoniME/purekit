@@ -1,4 +1,4 @@
-import get from './get';
+import get from '../object/get';
 import predicateType from './predicateType';
 
 const createPredicate = <T>(

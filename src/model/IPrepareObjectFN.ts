@@ -1,4 +1,4 @@
-import predicateType from '../util/predicateType';
+import predicateType from '../helpers/predicateType';
 
 interface IPrepareObjectFN<T> {
 	collection: T[];

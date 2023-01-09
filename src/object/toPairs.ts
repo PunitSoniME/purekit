@@ -3,5 +3,6 @@
  * @param obj
  * @returns
  */
-const toPairs = (obj: object): Array<[string, any]> => Object.entries(obj);
+const toPairs = (object: object): Array<[string, any]> =>
+	Object.entries(object);
 export default toPairs;

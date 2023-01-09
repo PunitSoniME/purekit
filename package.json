@@ -17,6 +17,7 @@
     "test:number": "dts test ./test/number/*.*",
     "test:object": "dts test ./test/object/*.*",
     "test:string": "dts test ./test/string/*.*",
+    "test:util": "dts test ./test/util/*.*",
     "test:watch": "dts test --watch",
     "test:coverage": "dts test --coverage",
     "test:coverage:run": "yarn run test:coverage && serve ./coverage/lcov-report",

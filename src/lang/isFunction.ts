@@ -4,5 +4,5 @@
  * @returns Returns true if value is a function, else false.
  */
 const isFunction = (value: any): boolean =>
-	value instanceof Function || typeof value === 'function';
+	value instanceof Function && typeof value === 'function';
 export default isFunction;

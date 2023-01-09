@@ -1,4 +1,4 @@
-import createPredicate from '../util/createPredicate';
+import createPredicate from '../helpers/createPredicate';
 
 const remove = <T>(
 	collection: T[],

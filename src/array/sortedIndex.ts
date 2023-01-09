@@ -1,4 +1,4 @@
-import baseSortedIndex from '../util/baseSortedIndex';
+import baseSortedIndex from '../helpers/baseSortedIndex';
 
 const sortedIndex = <T>(collection: T[], value: T): number =>
 	baseSortedIndex(collection, value);

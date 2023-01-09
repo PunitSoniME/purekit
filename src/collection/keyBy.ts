@@ -1,5 +1,5 @@
-import predicateType from '../util/predicateType';
-import prepareObject, { prepareObjectTypes } from '../util/prepareObject';
+import predicateType from '../helpers/predicateType';
+import prepareObject, { prepareObjectTypes } from '../helpers/prepareObject';
 
 const keyBy = <T>(collection: T[], predicate: predicateType<T>): Object => {
 	const { result } = prepareObject({

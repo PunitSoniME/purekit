@@ -2,7 +2,7 @@ interface IApplyArrayFN<T> {
 	collection: T;
 	fnName: any;
 	iteratee: any;
-	makeItReverse?: boolean;
+	checkFromEnd?: boolean;
 	fromIndex?: number;
 	toIndex?: number;
 	equalyCompare?: boolean;
