@@ -21,14 +21,10 @@ describe('Object', () => {
 				dataToCompare.push(key.toString());
 			});
 
-			console.log('dataToCompare', dataToCompare);
-
 			//  @ts-ignore
 			_forInRight(new Foo(), function (_: any, key: string) {
 				_dataToCompare.push(key.toString());
 			});
-
-			console.log('_dataToCompare', _dataToCompare);
 
 			expect(dataToCompare).toEqual(_dataToCompare);
 		});

@@ -1,3 +1,10 @@
+/**
+ *
+ * @param object
+ * @param path
+ * @param defaultValue
+ * @returns
+ */
 const get = (object: any, path: string | any[] | any, defaultValue?: any) => {
 	//	One Way
 	// return path

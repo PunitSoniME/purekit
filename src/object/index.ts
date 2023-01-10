@@ -16,8 +16,21 @@ import functionsIn from './functionsIn';
 import get from './get';
 import has from './has';
 import invert from './invert';
+import keys from './keys';
+import keysIn from './keysIn';
+import mapKeys from './mapKeys';
+import merge from './merge';
+import omit from './omit';
+import omitBy from './omitBy';
+import pick from './pick';
+import pickBy from './pickBy';
+import set from './set';
 import toPairs from './toPairs';
 import toPairsIn from './toPairsIn';
+import unset from './unset';
+import update from './update';
+import values from './values';
+import valuesIn from './valuesIn';
 
 export {
 	assign,
@@ -38,6 +51,19 @@ export {
 	get,
 	has,
 	invert,
+	keys,
+	keysIn,
+	mapKeys,
+	merge,
+	omit,
+	omitBy,
+	pick,
+	pickBy,
+	set,
 	toPairs,
 	toPairsIn,
+	unset,
+	update,
+	values,
+	valuesIn,
 };

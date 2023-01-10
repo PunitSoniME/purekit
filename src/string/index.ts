@@ -1,9 +1,12 @@
 import camelCase from './camelCase';
 import capitalize from './capitalize';
 import endsWith from './endsWith';
+import escape from './escape';
+import escapeRegExp from './escapeRegExp';
 import kebabCase from './kebabCase';
 import lowerCase from './lowerCase';
 import lowerFirst from './lowerFirst';
+import pad from './pad';
 import padEnd from './padEnd';
 import padStart from './padStart';
 import parseInt from './parseInt';
@@ -25,9 +28,12 @@ export {
 	camelCase,
 	capitalize,
 	endsWith,
+	escape,
+	escapeRegExp,
 	kebabCase,
 	lowerCase,
 	lowerFirst,
+	pad,
 	padEnd,
 	padStart,
 	parseInt,

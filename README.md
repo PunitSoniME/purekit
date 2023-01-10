@@ -342,27 +342,27 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - invert ✔️
 - invertBy ( ❌ - Work in progress - PRs most welcome )
 - invoke ( ❌ - Work in progress - PRs most welcome )
-- keys ( ❌ - Work in progress - PRs most welcome )
-- keysIn ( ❌ - Work in progress - PRs most welcome )
-- mapKeys ( ❌ - Work in progress - PRs most welcome )
+- keys ✔️
+- keysIn ✔️
+- mapKeys ✔️
 - mapValues ( ❌ - Work in progress - PRs most welcome )
-- merge ( ❌ - Work in progress - PRs most welcome )
+- merge ✔️
 - mergeWith ( ❌ - Work in progress - PRs most welcome )
-- omit ( ❌ - Work in progress - PRs most welcome )
-- omitBy ( ❌ - Work in progress - PRs most welcome )
-- pick ( ❌ - Work in progress - PRs most welcome )
-- pickBy ( ❌ - Work in progress - PRs most welcome )
+- omit ✔️
+- omitBy ✔️
+- pick ✔️
+- pickBy ✔️
 - result ( ❌ - Work in progress - PRs most welcome )
-- set ( ❌ - Work in progress - PRs most welcome )
+- set ✔️
 - setWith ( ❌ - Work in progress - PRs most welcome )
 - toPairs ✔️
 - toPairsIn ✔️
 - transform ( ❌ - Work in progress - PRs most welcome )
-- unset ( ❌ - Work in progress - PRs most welcome )
-- update ( ❌ - Work in progress - PRs most welcome )
+- unset ✔️
+- update ✔️
 - updateWith ( ❌ - Work in progress - PRs most welcome )
-- values ( ❌ - Work in progress - PRs most welcome )
-- valuesIn ( ❌ - Work in progress - PRs most welcome )
+- values ✔️
+- valuesIn ✔️
 
 -------------------------------
 <br />
@@ -374,12 +374,12 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - capitalize ✔️
 - deburr ( ❌ - Work in progress - PRs most welcome )
 - endsWith ✔️
-- escape ( ❌ - Work in progress - PRs most welcome )
-- escapeRegExp ( ❌ - Work in progress - PRs most welcome )
+- escape ✔️
+- escapeRegExp ✔️
 - kebabCase ✔️
 - lowerCase ✔️
 - lowerFirst ✔️
-- pad ( ❌ - Work in progress - PRs most welcome )
+- pad ✔️
 - padEnd ✔️
 - padStart ✔️
 - parseInt ✔️
@@ -400,3 +400,44 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - upperCase ✔️
 - upperFirst ✔️
 - words ( ❌ - Work in progress - PRs most welcome )
+
+-------------------------------
+<br />
+
+# Util
+
+- attempt ( ❌ - Work in progress - PRs most welcome )
+
+- bindAll ( ❌ - Work in progress - PRs most welcome )
+- cond ( ❌ - Work in progress - PRs most welcome )
+- conforms ( ❌ - Work in progress - PRs most welcome )
+- constant ✔️
+- defaultTo ( ❌ - Work in progress - PRs most welcome )
+- flow ( ❌ - Work in progress - PRs most welcome )
+- flowRight ( ❌ - Work in progress - PRs most welcome )
+- identity ( ❌ - Work in progress - PRs most welcome )
+- iteratee ( ❌ - Work in progress - PRs most welcome )
+- matches ( ❌ - Work in progress - PRs most welcome )
+- matchesProperty ( ❌ - Work in progress - PRs most welcome )
+- method ( ❌ - Work in progress - PRs most welcome )
+- methodOf ( ❌ - Work in progress - PRs most welcome )
+- mixin ( ❌ - Work in progress - PRs most welcome )
+- noConflict ( ❌ - Work in progress - PRs most welcome )
+- noop ( ❌ - Work in progress - PRs most welcome )
+- nthArg ( ❌ - Work in progress - PRs most welcome )
+- over ( ❌ - Work in progress - PRs most welcome )
+- overEvery ( ❌ - Work in progress - PRs most welcome )
+- overSome ( ❌ - Work in progress - PRs most welcome )
+- property ( ❌ - Work in progress - PRs most welcome )
+- propertyOf ( ❌ - Work in progress - PRs most welcome )
+- range ( ❌ - Work in progress - PRs most welcome )
+- rangeRight ( ❌ - Work in progress - PRs most welcome )
+- runInContext ( ❌ - Work in progress - PRs most welcome )
+- stubArray ( ❌ - Work in progress - PRs most welcome )
+- stubFalse ( ❌ - Work in progress - PRs most welcome )
+- stubObject ( ❌ - Work in progress - PRs most welcome )
+- stubString ( ❌ - Work in progress - PRs most welcome )
+- stubTrue ( ❌ - Work in progress - PRs most welcome )
+- times ( ❌ - Work in progress - PRs most welcome )
+- toPath ( ❌ - Work in progress - PRs most welcome )
+- uniqueId ( ❌ - Work in progress - PRs most welcome )
