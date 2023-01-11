@@ -1,3 +1,12 @@
-import add from './add';
-const sum = (numbers: number[]): number => add(...numbers);
+/**
+ *
+ * @param numbers
+ * @returns
+ */
+const sum = (numbers: number[]): number =>
+	numbers.reduce((acc, num) => {
+		acc += num;
+		return acc;
+	}, 0);
+
 export default sum;

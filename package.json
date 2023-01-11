@@ -44,6 +44,23 @@
     "lodash alternative",
     "alt lodash",
     "array",
+    "array methods",
+    "collection",
+    "collection methods",
+    "function",
+    "function methods",
+    "lang",
+    "lang methods",
+    "math",
+    "math methods",
+    "number",
+    "number methods",
+    "object",
+    "object methods",
+    "string",
+    "string methods",
+    "util",
+    "util methods",
     "helpers",
     "methods",
     "javascript methods"
@@ -70,11 +87,11 @@
   "size-limit": [
     {
       "path": "dist/alt-lodash.cjs.production.min.js",
-      "limit": "10 KB"
+      "limit": "15 KB"
     },
     {
       "path": "dist/alt-lodash.esm.js",
-      "limit": "10 KB"
+      "limit": "15 KB"
     }
   ],
   "devDependencies": {

@@ -1,7 +1,5 @@
-import add from './add';
-
 const mean = (collection: number[]): number => {
-	return add(...collection) / collection.length;
+	return collection.reduce((acc, num) => acc + num, 0) / collection.length;
 };
 
 export default mean;
