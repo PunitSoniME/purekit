@@ -75,7 +75,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - concat ✔️
 - difference ✔️
 - differenceBy ✔️
-- differenceWith ( ❌ - Work in progress - PRs most welcome )
+- differenceWith ( 🔜 - Work in progress - PRs most welcome )
 - drop ✔️
 - dropRight ✔️
 - dropRightWhile ✔️
@@ -93,24 +93,24 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - initial ✔️
 - intersection ✔️
 - intersectionBy ✔️
-- intersectionWith ( ❌ - Work in progress - PRs most welcome )
+- intersectionWith ( 🔜 - Work in progress - PRs most welcome )
 - join ✔️
 - last ✔️
 - lastIndexOf ✔️
 - nth ✔️
 - pull ✔️
 - pullAll ✔️
-- pullAllBy ( ❌ - Work in progress - PRs most welcome )
-- pullAllWith ( ❌ - Work in progress - PRs most welcome )
+- pullAllBy ( 🔜 - Work in progress - PRs most welcome )
+- pullAllWith ( 🔜 - Work in progress - PRs most welcome )
 - pullAt ✔️
 - remove ✔️
 - reverse ✔️
 - slice ✔️
 - sortedIndex ✔️
-- sortedIndexBy ( ❌ - Work in progress - PRs most welcome )
+- sortedIndexBy ( 🔜 - Work in progress - PRs most welcome )
 - sortedIndexOf ✔️
-- sortedLastIndex ( ❌ - Work in progress - PRs most welcome )
-- sortedLastIndexBy ( ❌ - Work in progress - PRs most welcome )
+- sortedLastIndex ( 🔜 - Work in progress - PRs most welcome )
+- sortedLastIndexBy ( 🔜 - Work in progress - PRs most welcome )
 - sortedLastIndexOf ✔️
 - sortedUniq ✔️
 - sortedUniqBy ✔️
@@ -121,20 +121,20 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - takeWhile ✔️
 - union ✔️
 - unionBy ✔️
-- unionWith ( ❌ - Work in progress - PRs most welcome )
+- unionWith ( 🔜 - Work in progress - PRs most welcome )
 - uniq ✔️
 - uniqBy ✔️
-- uniqWith ( ❌ - Work in progress - PRs most welcome )
+- uniqWith ( 🔜 - Work in progress - PRs most welcome )
 - unzip ✔️
 - unzipWith ✔️
 - without ✔️
 - xor ✔️
-- xorBy ( ❌ - Work in progress - PRs most welcome )
-- xorWith ( ❌ - Work in progress - PRs most welcome )
+- xorBy ( 🔜 - Work in progress - PRs most welcome )
+- xorWith ( 🔜 - Work in progress - PRs most welcome )
 - zip ✔️
 - zipObject ✔️
-- zipObjectDeep ( ❌ - Work in progress - PRs most welcome )
-- zipWith ( ❌ - Work in progress - PRs most welcome )
+- zipObjectDeep ( 🔜 - Work in progress - PRs most welcome )
+- zipWith ( 🔜 - Work in progress - PRs most welcome )
 
 -------------------------------
 <br />
@@ -157,7 +157,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - forEachRight ✔️
 - groupBy ✔️
 - includes ✔️
-- invokeMap ( ❌ - Work in progress - PRs most welcome )
+- invokeMap ( 🔜 - Work in progress - PRs most welcome )
 - keyBy ✔️
 - map ✔️
 - orderBy ✔️
@@ -170,7 +170,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - shuffle ✔️
 - size ✔️
 - some ✔️
-- sortBy ( ❌ - Work in progress - Code added, however it needs some modifications, PRs most welcome )
+- sortBy ( 🔜 - Work in progress - Code added, however it needs some modifications, PRs most welcome )
 
 -------------------------------
 <br />
@@ -195,10 +195,10 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - curry ✔️
 - curryRight ✔️
 - debounce ✔️
-- defer ( ❌ - Work in progress - PRs most welcome )
+- defer ( 🔜 - Work in progress - PRs most welcome )
 - delay ✔️
 - flip ✔️
-- memoize ( ❌ - Work in progress - PRs most welcome )
+- memoize ( 🔜 - Work in progress - PRs most welcome )
 - negate ✔️
 - once ✔️
 - overArgs ✔️
@@ -207,7 +207,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - rearg ✔️
 - rest ✔️
 - spread ✔️
-- throttle ( ❌ - Work in progress - PRs most welcome )
+- throttle ( 🔜 - Work in progress - PRs most welcome )
 - unary ✔️
 - wrap ✔️
 
@@ -220,13 +220,13 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 
 - clone ✔️
 - cloneDeep ✔️
-- cloneDeepWith ( ❌ - Work in progress - PRs most welcome )
-- cloneWith ( ❌ - Work in progress - PRs most welcome )
+- cloneDeepWith ( 🔜 - Work in progress - PRs most welcome )
+- cloneWith ( 🔜 - Work in progress - PRs most welcome )
 - conformsTo ✔️
-- eq ( ❌ - Work in progress - PRs most welcome )
+- eq ( 🔜 - Work in progress - PRs most welcome )
 - gt ✔️
 - gte ✔️
-- isArguments ( ❌ - Work in progress - PRs most welcome )
+- isArguments ( 🔜 - Work in progress - PRs most welcome )
 - isArray ✔️
 - isArrayBuffer ✔️
 - isArrayLike ✔️
@@ -237,15 +237,15 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - isElement ✔️
 - isEmpty ✔️
 - isEqual ✔️
-- isEqualWith ( ❌ - Work in progress - PRs most welcome )
+- isEqualWith ( 🔜 - Work in progress - PRs most welcome )
 - isError ✔️
 - isFinite ✔️
 - isFunction ✔️
 - isInteger ✔️
 - isLength ✔️
 - isMap ✔️
-- isMatch ( ❌ - Work in progress - PRs most welcome )
-- isMatchWith ( ❌ - Work in progress - PRs most welcome )
+- isMatch ( 🔜 - Work in progress - PRs most welcome )
+- isMatchWith ( 🔜 - Work in progress - PRs most welcome )
 - isNaN ✔️
 - isNative ✔️
 - isNil ✔️
@@ -267,11 +267,11 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - lt ✔️
 - lte ✔️
 - toArray ✔️
-- toFinite ( ❌ - Work in progress - PRs most welcome )
+- toFinite ( 🔜 - Work in progress - PRs most welcome )
 - toInteger ✔️
-- toLength ( ❌ - Work in progress - PRs most welcome )
+- toLength ( 🔜 - Work in progress - PRs most welcome )
 - toNumber ✔️
-- toPlainObject ( ❌ - Work in progress - PRs most welcome )
+- toPlainObject ( 🔜 - Work in progress - PRs most welcome )
 - toSafeInteger ✔️
 - toString ✔️
 
@@ -318,16 +318,16 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - assign ✔️
 
 - assignIn ✔️
-- assignInWith ( ❌ - Work in progress - PRs most welcome )
-- assignWith ( ❌ - Work in progress - PRs most welcome )
+- assignInWith ( 🔜 - Work in progress - PRs most welcome )
+- assignWith ( 🔜 - Work in progress - PRs most welcome )
 - at ✔️
 - create ✔️
 - defaults ✔️
-- defaultsDeep ( ❌ - Work in progress - PRs most welcome )
+- defaultsDeep ( 🔜 - Work in progress - PRs most welcome )
 - entries -> toPairs ✔️
 - entriesIn -> toPairsIn ✔️
 - extend -> assignIn ✔️
-- extendWith -> assignInWith ( ❌ - Work in progress - PRs most welcome )
+- extendWith -> assignInWith ( 🔜 - Work in progress - PRs most welcome )
 - findKey ✔️
 - findLastKey ✔️
 - forIn ✔️
@@ -338,29 +338,29 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - functionsIn ✔️
 - get ✔️
 - has ✔️
-- hasIn ( ❌ - Work in progress - PRs most welcome )
+- hasIn ( 🔜 - Work in progress - PRs most welcome )
 - invert ✔️
-- invertBy ( ❌ - Work in progress - PRs most welcome )
-- invoke ( ❌ - Work in progress - PRs most welcome )
+- invertBy ( 🔜 - Work in progress - PRs most welcome )
+- invoke ( 🔜 - Work in progress - PRs most welcome )
 - keys ✔️
 - keysIn ✔️
 - mapKeys ✔️
-- mapValues ( ❌ - Work in progress - PRs most welcome )
+- mapValues ( 🔜 - Work in progress - PRs most welcome )
 - merge ✔️
-- mergeWith ( ❌ - Work in progress - PRs most welcome )
+- mergeWith ( 🔜 - Work in progress - PRs most welcome )
 - omit ✔️
 - omitBy ✔️
 - pick ✔️
 - pickBy ✔️
-- result ( ❌ - Work in progress - PRs most welcome )
+- result ( 🔜 - Work in progress - PRs most welcome )
 - set ✔️
-- setWith ( ❌ - Work in progress - PRs most welcome )
+- setWith ( 🔜 - Work in progress - PRs most welcome )
 - toPairs ✔️
 - toPairsIn ✔️
-- transform ( ❌ - Work in progress - PRs most welcome )
+- transform ( 🔜 - Work in progress - PRs most welcome )
 - unset ✔️
 - update ✔️
-- updateWith ( ❌ - Work in progress - PRs most welcome )
+- updateWith ( 🔜 - Work in progress - PRs most welcome )
 - values ✔️
 - valuesIn ✔️
 
@@ -372,7 +372,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - camelCase ✔️
 
 - capitalize ✔️
-- deburr ( ❌ - Work in progress - PRs most welcome )
+- deburr ( 🔜 - Work in progress - PRs most welcome )
 - endsWith ✔️
 - escape ✔️
 - escapeRegExp ✔️
@@ -389,55 +389,55 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - split ✔️
 - startCase ✔️
 - startsWith ✔️
-- template ( ❌ - Work in progress - PRs most welcome )
+- template ( 🔜 - Work in progress - PRs most welcome )
 - toLower ✔️
 - toUpper ✔️
 - trim ✔️
 - trimEnd ✔️
 - trimStart ✔️
-- truncate ( ❌ - Work in progress - PRs most welcome )
-- unescape ( ❌ - Work in progress - PRs most welcome )
+- truncate ( 🔜 - Work in progress - PRs most welcome )
+- unescape ( 🔜 - Work in progress - PRs most welcome )
 - upperCase ✔️
 - upperFirst ✔️
-- words ( ❌ - Work in progress - PRs most welcome )
+- words ( 🔜 - Work in progress - PRs most welcome )
 
 -------------------------------
 <br />
 
 # Util
 
-- attempt ( ❌ - Work in progress - PRs most welcome )
+- attempt ✔️
 
-- bindAll ( ❌ - Work in progress - PRs most welcome )
-- cond ( ❌ - Work in progress - PRs most welcome )
-- conforms ( ❌ - Work in progress - PRs most welcome )
+- bindAll ( 🔜 - Work in progress - PRs most welcome )
+- cond ( 🔜 - Work in progress - PRs most welcome )
+- conforms ✔️
 - constant ✔️
-- defaultTo ( ❌ - Work in progress - PRs most welcome )
-- flow ( ❌ - Work in progress - PRs most welcome )
-- flowRight ( ❌ - Work in progress - PRs most welcome )
-- identity ( ❌ - Work in progress - PRs most welcome )
-- iteratee ( ❌ - Work in progress - PRs most welcome )
-- matches ( ❌ - Work in progress - PRs most welcome )
-- matchesProperty ( ❌ - Work in progress - PRs most welcome )
-- method ( ❌ - Work in progress - PRs most welcome )
-- methodOf ( ❌ - Work in progress - PRs most welcome )
-- mixin ( ❌ - Work in progress - PRs most welcome )
-- noConflict ( ❌ - Work in progress - PRs most welcome )
-- noop ( ❌ - Work in progress - PRs most welcome )
-- nthArg ( ❌ - Work in progress - PRs most welcome )
-- over ( ❌ - Work in progress - PRs most welcome )
-- overEvery ( ❌ - Work in progress - PRs most welcome )
-- overSome ( ❌ - Work in progress - PRs most welcome )
-- property ( ❌ - Work in progress - PRs most welcome )
-- propertyOf ( ❌ - Work in progress - PRs most welcome )
-- range ( ❌ - Work in progress - PRs most welcome )
-- rangeRight ( ❌ - Work in progress - PRs most welcome )
-- runInContext ( ❌ - Work in progress - PRs most welcome )
-- stubArray ( ❌ - Work in progress - PRs most welcome )
-- stubFalse ( ❌ - Work in progress - PRs most welcome )
-- stubObject ( ❌ - Work in progress - PRs most welcome )
-- stubString ( ❌ - Work in progress - PRs most welcome )
-- stubTrue ( ❌ - Work in progress - PRs most welcome )
-- times ( ❌ - Work in progress - PRs most welcome )
-- toPath ( ❌ - Work in progress - PRs most welcome )
-- uniqueId ( ❌ - Work in progress - PRs most welcome )
+- defaultTo ✔️
+- flow ✔️
+- flowRight ✔️
+- identity ✔️
+- iteratee ✔️
+- matches ( 🔜 - Work in progress - PRs most welcome )
+- matchesProperty ( 🔜 - Work in progress - PRs most welcome )
+- method ( 🔜 - Work in progress - PRs most welcome )
+- methodOf ( 🔜 - Work in progress - PRs most welcome )
+- mixin ( 🔜 - Work in progress - PRs most welcome )
+- noConflict ( 🔜 - Work in progress - PRs most welcome )
+- noop ✔️
+- nthArg ✔️
+- over ✔️
+- overEvery ✔️
+- overSome ✔️
+- property ✔️
+- propertyOf ( 🔜 - Work in progress - PRs most welcome )
+- range ✔️
+- rangeRight ✔️
+- runInContext ( 🔜 - Work in progress - PRs most welcome )
+- stubArray ✔️
+- stubFalse ✔️
+- stubObject ✔️
+- stubString ✔️
+- stubTrue ✔️
+- times ✔️
+- toPath ✔️
+- uniqueId ✔️
