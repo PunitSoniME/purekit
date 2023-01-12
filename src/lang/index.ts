@@ -2,7 +2,7 @@ import castArray from './castArray';
 import clone from './clone';
 import cloneDeep from './cloneDeep';
 import conformsTo from './conformsTo';
-// import eq from './_eq';
+import eq from './eq';
 import gt from './gt';
 import gte from './gte';
 import isArray from './isArray';
@@ -53,7 +53,7 @@ export {
 	clone,
 	cloneDeep,
 	conformsTo,
-	// eq,
+	eq,
 	gt,
 	gte,
 	isArray,

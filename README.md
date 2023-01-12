@@ -33,6 +33,9 @@ npm install alt-lodash
 
 <br />
 
+> <div style="font-size: 1.5rem; padding-top: 0.7rem; padding-bottom: 0.7rem; font-weight: bold">Supports Node version >= 12</div>
+
+<br />
 
 # Usage
 
@@ -223,7 +226,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - cloneDeepWith ( 🔜 - Work in progress - PRs most welcome )
 - cloneWith ( 🔜 - Work in progress - PRs most welcome )
 - conformsTo ✔️
-- eq ( 🔜 - Work in progress - PRs most welcome )
+- eq ✔️
 - gt ✔️
 - gte ✔️
 - isArguments ( 🔜 - Work in progress - PRs most welcome )
