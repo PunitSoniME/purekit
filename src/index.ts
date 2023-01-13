@@ -91,6 +91,7 @@ import {
 	shuffle,
 	size,
 	some,
+	sortBy
 } from './collection';
 
 import { now } from './date';
@@ -395,6 +396,7 @@ export {
 	shuffle,
 	size,
 	some,
+	sortBy,
 	//	Date Methods
 	now,
 	//	Function Methods
