@@ -24,7 +24,7 @@ import sampleSize from './sampleSize';
 import shuffle from './shuffle';
 import size from './size';
 import some from './some';
-// import sortBy from './_sortBy';
+import sortBy from './sortBy';
 
 export {
 	countBy,
@@ -53,5 +53,5 @@ export {
 	shuffle,
 	size,
 	some,
-	// sortBy
+	sortBy,
 };

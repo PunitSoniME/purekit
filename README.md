@@ -173,7 +173,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - shuffle ✔️
 - size ✔️
 - some ✔️
-- sortBy ( 🔜 - Work in progress - Code added, however it needs some modifications, PRs most welcome )
+- sortBy ✔️
 
 -------------------------------
 <br />
@@ -444,3 +444,24 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - times ✔️
 - toPath ✔️
 - uniqueId ✔️
+
+-------------------------------
+<br />
+
+# Seq
+
+- _ ( 🔜 - Work in progress - PRs most welcome )
+
+- chain ( 🔜 - Work in progress - PRs most welcome )
+- tap ( 🔜 - Work in progress - PRs most welcome )
+- thru ( 🔜 - Work in progress - PRs most welcome )
+- prototype[Symbol.iterator] ( 🔜 - Work in progress - PRs most welcome )
+- prototype.at ( 🔜 - Work in progress - PRs most welcome )
+- prototype.chain ( 🔜 - Work in progress - PRs most welcome )
+- prototype.commit ( 🔜 - Work in progress - PRs most welcome )
+- prototype.next ( 🔜 - Work in progress - PRs most welcome )
+- prototype.plant ( 🔜 - Work in progress - PRs most welcome )
+- prototype.reverse ( 🔜 - Work in progress - PRs most welcome )
+- prototype.toJSON -> value ( 🔜 - Work in progress - PRs most welcome )
+- prototype.value ( 🔜 - Work in progress - PRs most welcome )
+- prototype.valueOf -> value ( 🔜 - Work in progress - PRs most welcome )
