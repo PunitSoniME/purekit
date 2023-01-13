@@ -1,9 +1,9 @@
 /**
  *
- * @param collection
+ * @param array
  * @param value
  * @returns
  */
-const sortedLastIndexOf = <T>(collection: T[], value: T): number =>
-	[...collection].sort().lastIndexOf(value);
+const sortedLastIndexOf = <T>(array: T[], value: T): number =>
+	[...array].sort().lastIndexOf(value);
 export default sortedLastIndexOf;

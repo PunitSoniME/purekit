@@ -1,15 +1,25 @@
 import createPredicate from '../helpers/createPredicate';
 import predicateType from '../helpers/predicateType';
+import identity from '../util/identity';
 
-const takeWhile = <T>(collection: T[], predicate: predicateType<T>): T[] => {
-	if (collection.length === 0) return collection;
+/**
+ *
+ * @param array
+ * @param predicate
+ * @returns
+ */
+const takeWhile = <T>(
+	array: T[],
+	predicate: predicateType<T> = identity
+): T[] => {
+	if (array.length === 0) return array;
 
 	const fn = createPredicate(predicate);
 	let collectionToReturn: T[] = [];
 
-	for (let i = 0; i < collection.length; i++) {
-		if ((fn as any)(collection[i])) {
-			collectionToReturn.push(collection[i]);
+	for (let i = 0; i < array.length; i++) {
+		if ((fn as any)(array[i])) {
+			collectionToReturn.push(array[i]);
 		} else {
 			return collectionToReturn;
 		}

@@ -2,12 +2,12 @@ import concat from './concat';
 
 /**
  *
- * @param collection
- * @param restCollection
+ * @param array
+ * @param restArray
  * @returns
  */
-const xor = <T>(collection: T[], ...restCollection: T[][]): T[] => {
-	const flatArray = concat(collection, ...restCollection);
+const xor = <T>(array: T[], ...restArray: T[][]): T[] => {
+	const flatArray = concat(array, ...restArray);
 	const mappedData = new Map();
 
 	for (const elem of flatArray) {

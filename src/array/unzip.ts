@@ -1,5 +1,11 @@
 import zip from './zip';
+
+/**
+ *
+ * @param param0
+ * @returns
+ */
 //	@ts-ignore
-const unzip = ([...collection]: any[][]): any[][] => zip(...collection);
+const unzip = ([...array]: any[][]): any[][] => zip(...array);
 
 export default unzip;

@@ -1,2 +1,7 @@
-const uniq = <T>(collection: T[]): T[] => Array.from(new Set(collection));
+/**
+ *
+ * @param array
+ * @returns
+ */
+const uniq = <T>(array: T[]): T[] => Array.from(new Set(array));
 export default uniq;

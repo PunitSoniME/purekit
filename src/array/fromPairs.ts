@@ -1,4 +1,8 @@
-const fromPairs = <T>(collection: T[][]): Object =>
-	Object.fromEntries(collection);
+/**
+ *
+ * @param array
+ * @returns
+ */
+const fromPairs = <T>(array: T[][]): Object => Object.fromEntries(array);
 
 export default fromPairs;

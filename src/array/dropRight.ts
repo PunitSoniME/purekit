@@ -1,9 +1,9 @@
-const dropRight = <T>(collection: T[], length?: number) => {
-	return length === undefined
-		? collection.slice(0, -1)
-		: length === 0
-		? collection
-		: collection.slice(0, length * -1);
-};
-
+/**
+ *
+ * @param array
+ * @param n
+ * @returns
+ */
+const dropRight = <T>(array: T[], n: number = 1) =>
+	array.slice(0, -n || array.length);
 export default dropRight;

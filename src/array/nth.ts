@@ -1,6 +1,11 @@
-/* TODO: Covert below code to array's .at method */
-const nth = <T>(collection: T[], index: number): T | undefined =>
-	index >= 0 ? collection[index] : collection[collection.length + index];
-// collection.slice(index, index + 1)[0];
+/**
+ *
+ * @param array
+ * @param index
+ * @returns
+ */
+const nth = <T>(array: T[], index: number = 0): T | undefined =>
+	index >= 0 ? array[index] : array[array.length + index];
+// array.slice(index, index + 1)[0];
 
 export default nth;

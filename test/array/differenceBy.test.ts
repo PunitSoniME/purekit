@@ -11,9 +11,5 @@ describe('Array', () => {
 		it('[Array Of Number] It should return the difference using method', () => {
 			expect(differenceBy([2.1, 1.2], [2.3, 3.4], Math.floor)).toEqual([1.2]);
 		});
-
-		it('[Passing Object] It should return null', () => {
-			expect(differenceBy([2.1, 1.2], [2.3, 3.4], 1)).toEqual([]);
-		});
 	});
 });

@@ -1,20 +1,27 @@
 import createPredicate from '../helpers/createPredicate';
 import predicateType from '../helpers/predicateType';
+import identity from '../util/identity';
 
+/**
+ *
+ * @param array
+ * @param predicate
+ * @returns
+ */
 const takeRightWhile = <T>(
-	collection: T[],
-	predicate: predicateType<T>
+	array: T[],
+	predicate: predicateType<T> = identity
 ): T[] => {
-	if (collection.length === 0) return collection;
+	if (array.length === 0) return array;
 
 	const fn = createPredicate(predicate);
-	let collectionToReturn: T[] = [];
+	let arrayToReturn: T[] = [];
 
-	for (let i = collection.length - 1; i >= 0; i--) {
-		if ((fn as any)(collection[i])) {
-			collectionToReturn.push(collection[i]);
+	for (let i = array.length - 1; i >= 0; i--) {
+		if ((fn as any)(array[i])) {
+			arrayToReturn.push(array[i]);
 		} else {
-			return collectionToReturn.reverse();
+			return arrayToReturn.reverse();
 		}
 	}
 

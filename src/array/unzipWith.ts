@@ -1,13 +1,20 @@
 import createPredicate from '../helpers/createPredicate';
 import predicateType from '../helpers/predicateType';
+import identity from '../util/identity';
 import unzip from './unzip';
 
+/**
+ *
+ * @param array
+ * @param predicate
+ * @returns
+ */
 const unzipWith = <T>(
-	collection: any[][],
-	predicate: predicateType<T>
-): any[][] => {
+	array: any[][],
+	predicate: predicateType<T> = identity
+): any[] => {
 	const fn = createPredicate(predicate);
-	const unzipped = unzip(collection);
+	const unzipped = unzip(array);
 
 	return unzipped.map(m => {
 		return (fn as any)(...m);

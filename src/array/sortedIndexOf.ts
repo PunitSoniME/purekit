@@ -1,9 +1,9 @@
 /**
  *
- * @param collection
+ * @param array
  * @param value
  * @returns
  */
-const sortedIndexOf = <T>(collection: T[], value: T): number =>
-	[...collection].sort().indexOf(value);
+const sortedIndexOf = <T>(array: T[], value: T): number =>
+	[...array].sort().indexOf(value);
 export default sortedIndexOf;

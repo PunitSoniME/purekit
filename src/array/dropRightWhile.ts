@@ -1,25 +1,26 @@
 import createPredicate from '../helpers/createPredicate';
 import predicateType from '../helpers/predicateType';
+import identity from '../util/identity';
 
 /**
  *
- * @param collection
+ * @param array
  * @param predicate
  * @returns
  */
 const dropRightWhile = <T>(
-	collection: T[],
-	predicate: predicateType<T>
+	array: T[],
+	predicate: predicateType<T> = identity
 ): T[] => {
 	const fn = createPredicate(predicate);
 
-	for (let i = collection.length - 1; i >= 0; i--) {
-		if (!(fn as any)(collection[i])) {
-			return collection.slice(0, i + 1);
+	for (let i = array.length - 1; i >= 0; i--) {
+		if (!(fn as any)(array[i])) {
+			return array.slice(0, i + 1);
 		}
 	}
 
-	return collection;
+	return array;
 };
 
 export default dropRightWhile;

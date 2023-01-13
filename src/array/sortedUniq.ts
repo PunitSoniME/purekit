@@ -1,3 +1,7 @@
-const sortedUniq = <T>(collection: T[]): T[] =>
-	Array.from(new Set([...collection]));
+/**
+ *
+ * @param array
+ * @returns
+ */
+const sortedUniq = <T>(array: T[]): T[] => Array.from(new Set([...array]));
 export default sortedUniq;

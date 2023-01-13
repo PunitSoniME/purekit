@@ -1,6 +1,13 @@
+/**
+ *
+ * @param array
+ * @param element
+ * @param fromIndex
+ * @returns
+ */
 const lastIndexOf = <T>(
-	collection: T[],
+	array: T[],
 	element: T,
-	fromIndex: number = collection.length - 1
-): number => collection.lastIndexOf(element, fromIndex);
+	fromIndex: number = array.length - 1
+): number => array.lastIndexOf(element, fromIndex);
 export default lastIndexOf;
