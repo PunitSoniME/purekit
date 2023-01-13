@@ -91,7 +91,7 @@ import {
 	shuffle,
 	size,
 	some,
-	sortBy
+	sortBy,
 } from './collection';
 
 import { now } from './date';

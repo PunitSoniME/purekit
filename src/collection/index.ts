@@ -53,5 +53,5 @@ export {
 	shuffle,
 	size,
 	some,
-	sortBy
+	sortBy,
 };

@@ -1,13 +1,13 @@
-import identity from "../util/identity";
+import identity from '../util/identity';
 
 function sortByAsc(key: Function | string, cb: any) {
 	if (!cb) cb = () => 0;
 	if (typeof key === 'function') {
-		return (a: any, b: any) => (key(a) > key(b)) ? 1 :
-			((key(b) > key(a)) ? -1 : cb(a, b));
+		return (a: any, b: any) =>
+			key(a) > key(b) ? 1 : key(b) > key(a) ? -1 : cb(a, b);
 	}
-	return (a: any, b: any) => (a[key] > b[key]) ? 1 :
-		((b[key] > a[key]) ? -1 : cb(a, b));
+	return (a: any, b: any) =>
+		a[key] > b[key] ? 1 : b[key] > a[key] ? -1 : cb(a, b);
 }
 
 // function sortByDesc(key, cb) {
@@ -30,9 +30,9 @@ const baseSortBy = (keys: any[]) => {
 		// 	throw new Error(`Unsupported order "${order}"`);
 	}
 	return cb;
-}
+};
 
 const sortBy = <T>(collection: T[], iteratees: any[] = [identity]): T[] =>
-	[...collection].sort(baseSortBy(iteratees))
+	[...collection].sort(baseSortBy(iteratees));
 
 export default sortBy;
