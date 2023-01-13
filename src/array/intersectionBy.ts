@@ -1,18 +1,20 @@
+import identity from '../util/identity';
+
 /**
  *
- * @param collection
+ * @param array
  * @param args
  * @returns
  */
-const intersectionBy = <T>(collection: T, ...args: any): T[] => {
-	let iteratee = args.pop();
+const intersectionBy = <T>(array: T[], ...args: any[]): T[] => {
+	let iteratee = args ? args.pop() : [identity];
 
 	if (typeof iteratee === 'string') {
 		const prop = iteratee;
 		iteratee = (item: any) => item[prop];
 	}
 
-	return (collection as T[]).filter(item1 =>
+	return array.filter(item1 =>
 		args.every((arr2: any) =>
 			arr2.find((item2: any) => iteratee(item1) === iteratee(item2))
 		)

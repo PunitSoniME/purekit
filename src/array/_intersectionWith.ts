@@ -1,5 +1,16 @@
 //	@ts-nocheck
-const intersectionWith = <T>(...collections: T[]): T[] => {
+import IIntersectionWith from './interface/IIntersectionWith';
+
+/**
+ *
+ * @param arrays
+ * @param comparator
+ * @returns
+ */
+const intersectionWith: IIntersectionWith = <T>(
+	arrays: T[],
+	comparator: Function
+): T[] => {
 	//	TODO: intersectionWith
 	return [];
 };

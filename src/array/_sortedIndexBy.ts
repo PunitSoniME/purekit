@@ -1,8 +1,17 @@
 //	@ts-nocheck
+import identity from '../util/identity';
+
+/**
+ *
+ * @param array
+ * @param value
+ * @param predicate
+ * @returns
+ */
 const sortedIndexBy = <T>(
-	collection: T[],
+	array: T[],
 	value: T,
-	predicate: any
+	predicate: string | Function = identity
 ): number => {
 	//	TODO: sortedIndexBy
 	return -1;

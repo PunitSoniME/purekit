@@ -1,13 +1,19 @@
 import concat from './concat';
 
+/**
+ *
+ * @param array
+ * @param restCollections
+ * @returns
+ */
 const difference = <T>(
-	collection: T[] | null | undefined,
+	array: T[] | null | undefined,
 	...restCollections: T[]
 ): T[] => {
-	if (collection === null || collection === undefined) return [];
+	if (array === null || array === undefined) return [];
 
 	const concatedArray = concat(restCollections);
-	return collection.filter(x => !concatedArray.includes(x));
+	return array.filter(x => !concatedArray.includes(x));
 };
 
 export default difference;

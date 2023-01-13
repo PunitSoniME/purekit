@@ -1,3 +1,7 @@
-const flatten = <T>(collection: T[]): any[] => collection.flat();
-
+/**
+ *
+ * @param array
+ * @returns
+ */
+const flatten = <T>(array: T[]): any[] => array.flat();
 export default flatten;

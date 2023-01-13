@@ -1,8 +1,21 @@
 import applyArrayFn from '../helpers/applyArrayFn';
+import predicateType from '../helpers/predicateType';
+import identity from '../util/identity';
 
-const findIndex = <T>(collection: T, predicate: any, fromIndex = 0): number => {
+/**
+ *
+ * @param array
+ * @param predicate
+ * @param fromIndex
+ * @returns
+ */
+const findIndex = <T>(
+	array: T,
+	predicate: predicateType<T> = identity,
+	fromIndex: number = 0
+): number => {
 	return applyArrayFn({
-		collection: collection,
+		collection: array,
 		fnName: 'findIndex',
 		iteratee: predicate,
 		fromIndex: fromIndex,

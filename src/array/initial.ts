@@ -1,6 +1,7 @@
-const initial = <T>(collection: T[]): T[] => {
-	const lastIndex = collection.length - 1;
-	return collection.filter((_, index) => index !== lastIndex);
-};
-
+/**
+ *
+ * @param array
+ * @returns
+ */
+const initial = <T>(array: T[]): T[] => array.slice(0, -1);
 export default initial;

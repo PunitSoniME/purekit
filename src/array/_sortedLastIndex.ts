@@ -1,5 +1,12 @@
 //	@ts-nocheck
-const sortedLastIndex = <T>(collection: T[], value: T): number => {
+
+/**
+ *
+ * @param array
+ * @param value
+ * @returns
+ */
+const sortedLastIndex = <T>(array: T[], value: T): number => {
 	//	TODO: sortedLastIndex
 	return -1;
 };

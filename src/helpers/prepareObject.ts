@@ -1,4 +1,4 @@
-import IPrepareObjectFN from '../model/IPrepareObjectFN';
+import IPrepareObjectFN from '../interface/IPrepareObjectFN';
 import createPredicate from './createPredicate';
 
 const prepareObjectTypes = {

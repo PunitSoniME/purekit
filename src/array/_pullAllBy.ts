@@ -1,8 +1,19 @@
 //	@ts-nocheck
+
+import predicateType from '../helpers/predicateType';
+import identity from '../util/identity';
+
+/**
+ *
+ * @param array
+ * @param elementsToRemove
+ * @param predicate
+ * @returns
+ */
 const pullAllBy = <T>(
-	collection: T[],
+	array: T[],
 	elementsToRemove: T[],
-	predicate: any
+	predicate: predicateType<T> = identity
 ): T[] => {
 	//	TODO: pullAllBy
 	return [];

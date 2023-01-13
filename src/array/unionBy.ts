@@ -1,17 +1,19 @@
+import identity from '../util/identity';
+
 /**
  *
- * @param collection One of the collection to perform union operation on
+ * @param array One of the array to perform union operation on
  * @param predicate
  * @returns
  */
-const unionBy = <T>(collection: T[], ...predicate: any): T[] => {
-	let iteratee = predicate.pop();
+const unionBy = <T>(array: T[], ...predicate: any): T[] => {
+	let iteratee = predicate.pop() ?? identity;
 	if (typeof iteratee === 'string') {
 		const prop = iteratee;
 		iteratee = (item: any) => item[prop];
 	}
 
-	return collection
+	return array
 		.concat(...predicate)
 		.filter(
 			(x, i, self) => i === self.findIndex(y => iteratee(x) === iteratee(y))

@@ -1,8 +1,19 @@
 //	@ts-nocheck
+
+import predicateType from '../helpers/predicateType';
+import identity from '../util/identity';
+
+/**
+ *
+ * @param array
+ * @param value
+ * @param predicate
+ * @returns
+ */
 const sortedLastIndexBy = <T>(
-	collection: T[],
+	array: T[],
 	value: T,
-	predicate: any
+	predicate: predicateType<T> = identity
 ): number => {
 	//	TODO: sortedLastIndex
 	return -1;

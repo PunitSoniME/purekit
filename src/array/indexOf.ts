@@ -1,4 +1,11 @@
-const indexOf = <T>(collection: T[], value: T, startIndex = 0): number =>
-	collection.indexOf(value, startIndex);
+/**
+ *
+ * @param array
+ * @param value
+ * @param startIndex
+ * @returns
+ */
+const indexOf = <T>(array: T[], value: T, startIndex: number = 0): number =>
+	array.indexOf(value, startIndex);
 
 export default indexOf;

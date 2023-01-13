@@ -1,4 +1,4 @@
-import IApplyArrayFN from '../model/IApplyArrayFN';
+import IApplyArrayFN from '../interface/IApplyArrayFN';
 import createPredicate from './createPredicate';
 import reverseCollection from './reverseCollection';
 

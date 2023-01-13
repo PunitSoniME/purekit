@@ -1,11 +1,19 @@
+/**
+ *
+ * @param array
+ * @param value
+ * @param start
+ * @param end
+ * @returns
+ */
 const fill = <T>(
-	collection: T[],
+	array: T[],
 	value: any,
 	start: number = 0,
-	end: number = collection.length
+	end: number = array.length
 ): T[] => {
-	collection.fill(value, start, end);
-	return collection;
+	array.fill(value, start, end);
+	return array;
 };
 
 export default fill;

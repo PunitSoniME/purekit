@@ -1,10 +1,10 @@
 /**
  *
- * @param collection
+ * @param array
  * @param restCollection
  * @returns
  */
-const union = <T>(collection: T[], ...restCollection: T[][]): T[] => [
-	...new Set(collection.concat(...restCollection)),
+const union = <T>(array: T[], ...restCollection: T[][]): T[] => [
+	...new Set(array.concat(...restCollection)),
 ];
 export default union;

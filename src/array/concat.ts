@@ -1,23 +1,23 @@
 // interface Concat {
-// 	<T>(collection: T[], ...restCollection: T[]): T[];
-// 	<T>(collection: T[], collection2: T | T[], ...restCollection: T[]): T[];
-// 	<T>(collection: T[], collection2: T | T[], collection3: T | T[], ...restCollection: T[]): T[];
+// 	<T>(array: T[], ...restArray: T[]): T[];
+// 	<T>(array: T[], collection2: T | T[], ...restArray: T[]): T[];
+// 	<T>(array: T[], collection2: T | T[], collection3: T | T[], ...restArray: T[]): T[];
 // }
 
 /**
  *
- * @param collection
- * @param restCollection
+ * @param array
+ * @param restArray
  * @returns
  */
-const concat = <T>(collection: T[], ...restCollection: any[]): T[] => {
-	let newCollection: T[] = [];
-	newCollection = newCollection.concat(collection);
+const concat = <T>(array: T[], ...restArray: any[]): T[] => {
+	let newArray: T[] = [];
+	newArray = newArray.concat(array);
 
-	restCollection.forEach(c => {
-		newCollection = newCollection.concat(c);
+	restArray.forEach(c => {
+		newArray = newArray.concat(c);
 	});
 
-	return [...newCollection];
+	return [...newArray];
 };
 export default concat;

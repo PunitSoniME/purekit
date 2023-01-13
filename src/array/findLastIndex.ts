@@ -1,18 +1,19 @@
 import createPredicate from '../helpers/createPredicate';
 import predicateType from '../helpers/predicateType';
+import identity from '../util/identity';
 
 const findLastIndex = <T>(
-	collection: T[],
-	predicate: predicateType<T>,
+	array: T[],
+	predicate: predicateType<T> = identity,
 	fromIndex = 0,
-	toIndex = collection.length - 1
+	toIndex = array.length - 1
 ): number => {
 	const fn = createPredicate(predicate);
 
-	if (fn === undefined) return collection.lastIndexOf(predicate as T);
+	if (fn === undefined) return array.lastIndexOf(predicate as T);
 
 	for (let i = toIndex; i >= fromIndex; i--) {
-		if ((fn as any)(collection[i])) {
+		if ((fn as any)(array[i])) {
 			return i;
 		}
 	}
