@@ -3,10 +3,16 @@ import { difference } from '../../src/array';
 
 describe('Array', () => {
 	describe('difference', () => {
-		const collection = [[1], 2, [3], [[4]], 5];
+		it('difference([2, 1, 4], [2, 3])', () => {
+			expect(difference([2, 1, 4], [2, 3])).toEqual(
+				_difference([2, 1, 4], [2, 3])
+			);
+		});
 
-		it('[Array Of Number] It should return the difference', () => {
-			expect(difference(collection)).toEqual(_difference(collection));
+		it('difference([2, 1, 4], [2, 3], [3])', () => {
+			expect(difference([2, 1, 4], [2, 3], [3])).toEqual(
+				_difference([2, 1, 4], [2, 3], [3])
+			);
 		});
 
 		it('[NULL] It should return an empty array', () => {
