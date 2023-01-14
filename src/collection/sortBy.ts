@@ -20,6 +20,7 @@ const baseSortBy = (keys: any[]) => {
 	let cb: any = () => 0;
 	keys.reverse();
 	// orders.reverse();
+	//	@ts-ignore
 	for (const [_, key] of keys.entries()) {
 		// const order = orders[i];
 		// if (order == 'asc')

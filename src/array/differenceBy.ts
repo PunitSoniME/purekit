@@ -1,22 +1,21 @@
 import identity from '../util/identity';
+import IDifferenceBy from './interface/IDifferenceBy';
 
 /**
  *
- * @param array1
- * @param array2
+ * @param array
  * @param iteratee
  * @returns
  */
-const differenceBy = <T>(
-	array1: T[],
-	array2: T[],
-	iteratee: any = identity
-): T[] => {
-	if (typeof iteratee === 'string') {
-		const prop = iteratee;
-		iteratee = (item: any) => item[prop];
+const differenceBy: IDifferenceBy = <T>(array: T[], ...iteratee: any): T[] => {
+	let predicate = iteratee.pop() ?? identity;
+
+	if (typeof predicate === 'string') {
+		const prop = predicate;
+		predicate = (item: any) => item[prop];
 	}
-	return array1.filter(c => !array2.map(iteratee).includes(iteratee(c)));
+	const flatArray = iteratee.flat(Infinity).map(predicate);
+	return array.filter(c => !flatArray.includes(predicate(c)));
 };
 
 export default differenceBy;

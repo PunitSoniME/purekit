@@ -1,5 +1,3 @@
-import concat from './concat';
-
 /**
  *
  * @param array
@@ -8,11 +6,11 @@ import concat from './concat';
  */
 const difference = <T>(
 	array: T[] | null | undefined,
-	...restCollections: T[]
+	...restCollections: T[][]
 ): T[] => {
 	if (array === null || array === undefined) return [];
 
-	const concatedArray = concat(restCollections);
+	const concatedArray = restCollections.flat(Infinity);
 	return array.filter(x => !concatedArray.includes(x));
 };
 

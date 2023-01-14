@@ -3,6 +3,7 @@ import compact from './compact';
 import concat from './concat';
 import difference from './difference';
 import differenceBy from './differenceBy';
+import differenceWith from './differenceWith';
 import drop from './drop';
 import dropRight from './dropRight';
 import dropRightWhile from './dropRightWhile';
@@ -57,6 +58,7 @@ export {
 	concat,
 	difference,
 	differenceBy,
+	differenceWith,
 	drop,
 	dropRight,
 	dropRightWhile,
