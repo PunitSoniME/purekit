@@ -9,7 +9,7 @@ interface IIntersection {
 		array3: T[],
 		array4: T[],
 		array5: T[],
-		...restArray: T[][]
+		...args: T[][]
 	): T[];
 }
 export default IIntersection;

@@ -21,6 +21,7 @@ import indexOf from './indexOf';
 import initial from './initial';
 import intersection from './intersection';
 import intersectionBy from './intersectionBy';
+import intersectionWith from './intersectionWith';
 import join from './join';
 import last from './last';
 import lastIndexOf from './lastIndexOf';
@@ -76,6 +77,7 @@ export {
 	initial,
 	intersection,
 	intersectionBy,
+	intersectionWith,
 	join,
 	last,
 	lastIndexOf,

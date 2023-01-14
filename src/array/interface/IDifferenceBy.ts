@@ -16,6 +16,6 @@ export default interface IDifferenceBy {
 		array3: T[],
 		array4: T[],
 		array5: T[],
-		...iteratee: any
+		...args: any
 	): T[];
 }

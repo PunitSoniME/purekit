@@ -78,7 +78,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - concat ✔️
 - difference ✔️
 - differenceBy ✔️
-- differenceWith ( 🔜 - Work in progress - PRs most welcome )
+- differenceWith ✔️
 - drop ✔️
 - dropRight ✔️
 - dropRightWhile ✔️
@@ -96,7 +96,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - initial ✔️
 - intersection ✔️
 - intersectionBy ✔️
-- intersectionWith ( 🔜 - Work in progress - PRs most welcome )
+- intersectionWith ✔️
 - join ✔️
 - last ✔️
 - lastIndexOf ✔️

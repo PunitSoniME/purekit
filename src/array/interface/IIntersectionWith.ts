@@ -23,6 +23,6 @@ export default interface IIntersectionWith {
 		array4: T[],
 		array5: T[],
 		array6: T[],
-		...restArray: any
+		...args: any
 	): T[];
 }
