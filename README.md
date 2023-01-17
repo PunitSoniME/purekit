@@ -103,8 +103,8 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - nth ✔️
 - pull ✔️
 - pullAll ✔️
-- pullAllBy ( 🔜 - Work in progress - PRs most welcome )
-- pullAllWith ( 🔜 - Work in progress - PRs most welcome )
+- pullAllBy ✔️
+- pullAllWith ✔️
 - pullAt ✔️
 - remove ✔️
 - reverse ✔️

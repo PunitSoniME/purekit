@@ -28,6 +28,8 @@ import lastIndexOf from './lastIndexOf';
 import nth from './nth';
 import pull from './pull';
 import pullAll from './pullAll';
+import pullAllBy from './pullAllBy';
+import pullAllWith from './pullAllWith';
 import pullAt from './pullAt';
 import remove from './remove';
 import reverse from './reverse';
@@ -84,6 +86,8 @@ export {
 	nth,
 	pull,
 	pullAll,
+	pullAllBy,
+	pullAllWith,
 	pullAt,
 	remove,
 	reverse,
