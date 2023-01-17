@@ -7,6 +7,7 @@ import * as math from './math';
 import * as num from './number';
 import * as obj from './object';
 import * as str from './string';
+import * as seq from './seq';
 import * as util from './util';
 
 import {
@@ -229,6 +230,8 @@ import {
 	toString,
 } from './lang';
 
+import { chain2 } from './seq';
+
 import {
 	camelCase,
 	capitalize,
@@ -306,6 +309,9 @@ const _ = {
 
 	//	Object Methods
 	...obj,
+
+	//	Seq Methods
+	...seq,
 
 	//	String Methods
 	...str,
@@ -528,6 +534,8 @@ export {
 	update,
 	values,
 	valuesIn,
+	//	Seq Methods
+	chain2,
 	//	String Methods
 	camelCase,
 	capitalize,
