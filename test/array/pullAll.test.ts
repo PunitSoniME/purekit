@@ -1,12 +1,16 @@
 import _pullAll from 'lodash/pullAll';
 import { pullAll } from '../../src/array';
 
-const data = ['a', 'b', 'c', 'a', 'b', 'c'];
+var data = ['a', 'b', 'c', 'a', 'b', 'c'];
+var _data = ['a', 'b', 'c', 'a', 'b', 'c'];
 
 describe('Array', () => {
 	describe('pullAll', () => {
-		it('[Array Of string] It should return the modified array with removed values', () => {
-			expect(pullAll(data, ['a', 'c'])).toEqual(_pullAll(data, ['a', 'c']));
+		it("pullAll(data, ['a', 'c'])", () => {
+			pullAll(data, ['a', 'c']);
+			_pullAll(_data, ['a', 'c']);
+
+			expect(data).toEqual(_data);
 		});
 	});
 });
