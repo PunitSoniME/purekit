@@ -33,7 +33,13 @@ const baseSortBy = (keys: any[]) => {
 	return cb;
 };
 
-const sortBy = <T>(collection: T[], iteratees: any[] = [identity]): T[] =>
-	[...collection].sort(baseSortBy(iteratees));
+const sortBy = <T>(
+	collection: T[],
+	iteratees: string | Function | (string | Function)[] = [identity]
+): T[] => {
+	if (!Array.isArray(iteratees)) iteratees = [iteratees];
+
+	return [...collection].sort(baseSortBy(iteratees));
+};
 
 export default sortBy;

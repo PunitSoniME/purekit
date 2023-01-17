@@ -452,7 +452,49 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 
 - _ ( 🔜 - Work in progress - PRs most welcome )
 
-- chain ( 🔜 - Work in progress - PRs most welcome )
+- ~~chain~~
+- chain2 ✔️ ( Alternate of chain with minimal code )
+
+
+    ```ts
+    chain(value)
+    ```
+
+    ## Arguments
+    
+    ```bash
+    value (*): The value to wrap.
+    ```
+
+    ## Returns
+    
+    ```bash
+    (Object): Returns the new lodash wrapper instance.
+    ```
+
+    ## Example
+    
+    ```typescript
+    import { chain2, map, sortBy, head } from 'alt-lodash';
+
+    const users = [
+        { 'user': 'barney', 'age': 36 },
+        { 'user': 'fred', 'age': 40 },
+        { 'user': 'pebbles', 'age': 1 }
+    ];
+
+    const youngest = chain2(users)
+        .fn(sortBy, 'age')
+        .fn(map, (function (o: any) {
+            return o.user + ' is ' + o.age;
+        }))
+        .fn(head)
+        .value();
+
+    // => 'pebbles is 1'
+    ```
+
+
 - tap ( 🔜 - Work in progress - PRs most welcome )
 - thru ( 🔜 - Work in progress - PRs most welcome )
 - prototype[Symbol.iterator] ( 🔜 - Work in progress - PRs most welcome )

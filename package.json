@@ -16,6 +16,7 @@
     "test:math": "dts test ./test/math/*.*",
     "test:number": "dts test ./test/number/*.*",
     "test:object": "dts test ./test/object/*.*",
+    "test:seq": "dts test ./test/seq/*.*",
     "test:string": "dts test ./test/string/*.*",
     "test:util": "dts test ./test/util/*.*",
     "test:watch": "dts test --watch",
