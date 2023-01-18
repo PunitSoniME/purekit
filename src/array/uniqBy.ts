@@ -15,7 +15,10 @@ const uniqBy = <T>(array: T[], iteratee: predicateType<T> = identity): T[] => {
 
 	return array.filter(
 		(x, i, self) =>
-			i === self.findIndex(y => (iteratee as any)(x) === (iteratee as any)(y))
+			i ===
+			self.findIndex(
+				y => (iteratee as Function)(x) === (iteratee as Function)(y)
+			)
 	);
 };
 

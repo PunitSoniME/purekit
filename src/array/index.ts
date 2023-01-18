@@ -35,7 +35,10 @@ import remove from './remove';
 import reverse from './reverse';
 import slice from './slice';
 import sortedIndex from './sortedIndex';
+import sortedIndexBy from './sortedIndexBy';
 import sortedIndexOf from './sortedIndexOf';
+import sortedLastIndex from './sortedLastIndex';
+import sortedLastIndexBy from './sortedLastIndexBy';
 import sortedLastIndexOf from './sortedLastIndexOf';
 import sortedUniq from './sortedUniq';
 import sortedUniqBy from './sortedUniqBy';
@@ -46,8 +49,10 @@ import takeRightWhile from './takeRightWhile';
 import takeWhile from './takeWhile';
 import union from './union';
 import unionBy from './unionBy';
+import unionWith from './unionWith';
 import uniq from './uniq';
 import uniqBy from './uniqBy';
+import uniqWith from './uniqWith';
 import unzip from './unzip';
 import unzipWith from './unzipWith';
 import without from './without';
@@ -93,7 +98,10 @@ export {
 	reverse,
 	slice,
 	sortedIndex,
+	sortedIndexBy,
 	sortedIndexOf,
+	sortedLastIndex,
+	sortedLastIndexBy,
 	sortedLastIndexOf,
 	sortedUniq,
 	sortedUniqBy,
@@ -104,8 +112,10 @@ export {
 	takeWhile,
 	union,
 	unionBy,
+	unionWith,
 	uniq,
 	uniqBy,
+	uniqWith,
 	unzip,
 	unzipWith,
 	without,
