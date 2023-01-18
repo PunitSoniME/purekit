@@ -110,10 +110,10 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - reverse ✔️
 - slice ✔️
 - sortedIndex ✔️
-- sortedIndexBy ( 🔜 - Work in progress - PRs most welcome )
+- sortedIndexBy ✔️
 - sortedIndexOf ✔️
-- sortedLastIndex ( 🔜 - Work in progress - PRs most welcome )
-- sortedLastIndexBy ( 🔜 - Work in progress - PRs most welcome )
+- sortedLastIndex ✔️
+- sortedLastIndexBy ✔️
 - sortedLastIndexOf ✔️
 - sortedUniq ✔️
 - sortedUniqBy ✔️
@@ -124,10 +124,10 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - takeWhile ✔️
 - union ✔️
 - unionBy ✔️
-- unionWith ( 🔜 - Work in progress - PRs most welcome )
+- unionWith ✔️
 - uniq ✔️
 - uniqBy ✔️
-- uniqWith ( 🔜 - Work in progress - PRs most welcome )
+- uniqWith ✔️
 - unzip ✔️
 - unzipWith ✔️
 - without ✔️
@@ -453,11 +453,11 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - _ ( 🔜 - Work in progress - PRs most welcome )
 
 - ~~chain~~
-- chain2 ✔️ ( Alternate of chain with minimal code )
+- chain2 ✔️ ( Alternate of chain method with minimal code )
 
 
     ```ts
-    chain(value)
+    chain2(value)
     ```
 
     ## Arguments
@@ -469,7 +469,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
     ## Returns
     
     ```bash
-    (Object): Returns the new lodash wrapper instance.
+    (Object): Returns the new wrapper instance.
     ```
 
     ## Example
