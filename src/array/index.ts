@@ -57,6 +57,8 @@ import unzip from './unzip';
 import unzipWith from './unzipWith';
 import without from './without';
 import xor from './xor';
+import xorBy from './xorBy';
+import xorWith from './xorWith';
 import zip from './zip';
 import zipObject from './zipObject';
 
@@ -120,6 +122,8 @@ export {
 	unzipWith,
 	without,
 	xor,
+	xorBy,
+	xorWith,
 	zip,
 	zipObject,
 };

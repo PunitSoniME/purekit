@@ -14,7 +14,6 @@ const sortedUniqBy = <T>(array: T[], iteratee: Function): T[] => {
 		}
 	});
 
-	array = Array.from(new Set([...mappedValues.values()]));
-	return array;
+	return Array.from(new Set([...mappedValues.values()]));
 };
 export default sortedUniqBy;

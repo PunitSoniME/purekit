@@ -132,8 +132,8 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - unzipWith ✔️
 - without ✔️
 - xor ✔️
-- xorBy ( 🔜 - Work in progress - PRs most welcome )
-- xorWith ( 🔜 - Work in progress - PRs most welcome )
+- xorBy ✔️
+- xorWith ✔️
 - zip ✔️
 - zipObject ✔️
 - zipObjectDeep ( 🔜 - Work in progress - PRs most welcome )
