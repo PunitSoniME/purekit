@@ -70,6 +70,8 @@ import {
 	unzipWith,
 	without,
 	xor,
+	xorBy,
+	xorWith,
 	zip,
 	zipObject,
 } from './array';
@@ -391,6 +393,8 @@ export {
 	unzipWith,
 	without,
 	xor,
+	xorBy,
+	xorWith,
 	zip,
 	zipObject,
 	// Collection Methods
