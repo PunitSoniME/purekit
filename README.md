@@ -137,7 +137,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - zip ✔️
 - zipObject ✔️
 - zipObjectDeep ( 🔜 - Work in progress - PRs most welcome )
-- zipWith ( 🔜 - Work in progress - PRs most welcome )
+- zipWith ✔️
 
 -------------------------------
 <br />

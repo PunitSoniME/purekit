@@ -1,9 +1,9 @@
 /**
  *
  * @param array
- * @param otherArrays
+ * @param args
  * @returns
  */
-const zip = (array: any[], ...otherArrays: any[][]): any[][] =>
-	array.map((value, idx) => [value, ...otherArrays.map(arr => arr[idx])]);
+const zip = (array: any[], ...args: any[][]): any[][] =>
+	array.map((value, idx) => [value, ...args.map(arr => arr[idx])]);
 export default zip;

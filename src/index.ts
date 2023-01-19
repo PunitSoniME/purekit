@@ -74,6 +74,7 @@ import {
 	xorWith,
 	zip,
 	zipObject,
+	zipWith,
 } from './array';
 
 import {
@@ -397,6 +398,7 @@ export {
 	xorWith,
 	zip,
 	zipObject,
+	zipWith,
 	// Collection Methods
 	countBy,
 	each,

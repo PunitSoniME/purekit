@@ -61,6 +61,8 @@ import xorBy from './xorBy';
 import xorWith from './xorWith';
 import zip from './zip';
 import zipObject from './zipObject';
+// import zipObjectDeep from './_zipObjectDeep';
+import zipWith from './zipWith';
 
 export {
 	chunk,
@@ -126,4 +128,6 @@ export {
 	xorWith,
 	zip,
 	zipObject,
+	// zipObjectDeep,
+	zipWith,
 };
