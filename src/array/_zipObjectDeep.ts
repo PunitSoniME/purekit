@@ -1,4 +1,4 @@
-//	@ts-nocheck
+import set from '../object/set';
 
 /**
  *
@@ -6,9 +6,13 @@
  * @param values
  * @returns
  */
-const zipObjectDeep = (props: any[] = [], values: any = []): Object => {
-	//	TODO: zipObjectDeep
-	return {};
+const zipObjectDeep = (props: any[] = [], values: any[] = []): Object => {
+	const newObject = props.reduce((acc: any, key, idx: number) => {
+		set(acc, key, values[idx]);
+		return acc;
+	}, {});
+
+	return newObject;
 };
 
 export default zipObjectDeep;
