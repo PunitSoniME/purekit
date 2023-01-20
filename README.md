@@ -240,7 +240,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - isElement ✔️
 - isEmpty ✔️
 - isEqual ✔️
-- isEqualWith ( 🔜 - Work in progress - PRs most welcome )
+- isEqualWith ✔️
 - isError ✔️
 - isFinite ✔️
 - isFunction ✔️
