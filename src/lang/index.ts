@@ -15,6 +15,7 @@ import isDate from './isDate';
 import isElement from './isElement';
 import isEmpty from './isEmpty';
 import isEqual from './isEqual';
+import isEqualWith from './isEqualWith';
 import isError from './isError';
 import isFinite from './isFinite';
 import isFunction from './isFunction';
@@ -66,6 +67,7 @@ export {
 	isElement,
 	isEmpty,
 	isEqual,
+	isEqualWith,
 	isError,
 	isFinite,
 	isFunction,
