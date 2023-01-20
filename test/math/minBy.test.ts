@@ -13,5 +13,15 @@ describe('Math', () => {
 		it("minBy(objects, 'n')", () => {
 			expect(minBy(objects, 'n')).toEqual(_minBy(objects, 'n'));
 		});
+
+		//	This test case fails in lodash
+		it('minBy - custom', () => {
+			interface SomeType {
+				value: number;
+			}
+
+			const array: SomeType[] = [{ value: 2 }, { value: 3 }, { value: 4 }];
+			expect(minBy(array, 'value')).toEqual({ value: 2 });
+		});
 	});
 });

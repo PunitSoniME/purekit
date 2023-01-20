@@ -1,5 +1,7 @@
 # Alternate of Lodash Library
 
+[![CI](https://github.com/PunitSoniME/alt-lodash/actions/workflows/main.yml/badge.svg)](https://github.com/PunitSoniME/alt-lodash/actions/workflows/main.yml)
+
 [![npm version](https://badge.fury.io/js/alt-lodash.svg)][npm_url]
 [![license](https://img.shields.io/npm/l/alt-lodash.svg)][npm_url]
 ![Types Included](https://badgen.net/npm/types/alt-lodash)
