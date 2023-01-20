@@ -22,7 +22,8 @@ import isFunction from './isFunction';
 import isInteger from './isInteger';
 import isLength from './isLength';
 import isMap from './isMap';
-// import isMatch from './_isMatch';
+import isMatch from './isMatch';
+import isMatchWith from './isMatchWith';
 import isNaN from './isNaN';
 import isNative from './isNative';
 import isNil from './isNil';
@@ -47,6 +48,7 @@ import toNumber from './toNumber';
 import toSafeInteger from './toSafeInteger';
 // import toArray from './toArray';
 // import toInteger from './toInteger';
+import toPlainObject from './toPlainObject';
 import toString from './toString';
 
 export {
@@ -74,7 +76,8 @@ export {
 	isInteger,
 	isLength,
 	isMap,
-	// isMatch,
+	isMatch,
+	isMatchWith,
 	isNaN,
 	isNative,
 	isNil,
@@ -96,6 +99,7 @@ export {
 	lte,
 	// toArray,
 	// toInteger,
+	toPlainObject,
 	// toLength,
 	toNumber,
 	toSafeInteger,

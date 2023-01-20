@@ -249,8 +249,8 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - isInteger ✔️
 - isLength ✔️
 - isMap ✔️
-- isMatch ( 🔜 - Work in progress - PRs most welcome )
-- isMatchWith ( 🔜 - Work in progress - PRs most welcome )
+- isMatch ✔️
+- isMatchWith ✔️
 - isNaN ✔️
 - isNative ✔️
 - isNil ✔️
@@ -276,7 +276,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - toInteger ✔️
 - toLength ( 🔜 - Work in progress - PRs most welcome )
 - toNumber ✔️
-- toPlainObject ( 🔜 - Work in progress - PRs most welcome )
+- toPlainObject ✔️
 - toSafeInteger ✔️
 - toString ✔️
 
@@ -323,8 +323,8 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - assign ✔️
 
 - assignIn ✔️
-- assignInWith ( 🔜 - Work in progress - PRs most welcome )
-- assignWith ( 🔜 - Work in progress - PRs most welcome )
+- assignInWith ✔️
+- assignWith ✔️
 - at ✔️
 - create ✔️
 - defaults ✔️
@@ -332,7 +332,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - entries -> toPairs ✔️
 - entriesIn -> toPairsIn ✔️
 - extend -> assignIn ✔️
-- extendWith -> assignInWith ( 🔜 - Work in progress - PRs most welcome )
+- extendWith -> assignInWith ✔️
 - findKey ✔️
 - findLastKey ✔️
 - forIn ✔️
