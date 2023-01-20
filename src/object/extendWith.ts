@@ -1,3 +1,3 @@
-import assignInWith from './_assignInWith';
+import assignInWith from './assignInWith';
 const extendWith = assignInWith;
 export default extendWith;

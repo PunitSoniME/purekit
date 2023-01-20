@@ -1,10 +1,13 @@
 import assign from './assign';
 import assignIn from './assignIn';
+import assignInWith from './assignInWith';
+import assignWith from './assignWith';
 import at from './at';
 import create from './create';
 import defaults from './defaults';
 import entries from './entries';
 import extend from './extend';
+import extendWith from './extendWith';
 import findKey from './findKey';
 import findLastKey from './findLastKey';
 import forIn from './forIn';
@@ -35,11 +38,14 @@ import valuesIn from './valuesIn';
 export {
 	assign,
 	assignIn,
+	assignInWith,
+	assignWith,
 	at,
 	create,
 	defaults,
 	entries,
 	extend,
+	extendWith,
 	findKey,
 	findLastKey,
 	forIn,

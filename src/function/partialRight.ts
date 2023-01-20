@@ -1,4 +1,3 @@
-//	@ts-nocheck
 /**
  *
  * @param func
@@ -7,7 +6,7 @@
  */
 const partialRight =
 	(func: Function, ...cachedArgs: any) =>
-	(...args) =>
+	(...args: any) =>
 		func(...args, ...cachedArgs);
 
 export default partialRight;
