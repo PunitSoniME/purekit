@@ -1,4 +1,3 @@
-import _after from 'lodash/after';
 import { after } from '../../src/function';
 import { times } from '../../src/util';
 
