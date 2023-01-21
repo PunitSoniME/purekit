@@ -6,9 +6,9 @@
  */
 const after = (times: number, fn: Function): any => {
 	let counter = 0;
+	times = times || 0;
 
-	//  @ts-ignore
-	return (...args) => {
+	return (...args: any) => {
 		counter++;
 
 		if (counter >= times) {
