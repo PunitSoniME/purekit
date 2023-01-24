@@ -7,6 +7,7 @@
 [![license](https://img.shields.io/npm/l/alt-lodash.svg)][npm_url]
 ![Types Included](https://badgen.net/npm/types/alt-lodash)
 
+![dependents](https://badgen.net/npm/dependents/alt-lodash)
 [![weekly downloads](https://badgen.net/npm/dw/alt-lodash)][npm_url]
 [![weekly downloads](https://badgen.net/npm/dm/alt-lodash)][npm_url]
 [![downloads](https://img.shields.io/npm/dt/alt-lodash.svg)][npm_url]
