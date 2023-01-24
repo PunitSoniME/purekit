@@ -7,6 +7,7 @@
   "scripts": {
     "start": "dts watch",
     "build": "dts build",
+    "build:multi": "dts build --entry src/index.ts --entry src/array/index.ts --entry src/collection/index.ts --entry src/date/index.ts --entry src/function/index.ts --entry src/lang/index.ts --entry src/math/index.ts --entry src/number/index.ts --entry src/object/index.ts --entry src/seq/index.ts --entry src/string/index.ts --entry src/util/index.ts",
     "test": "dts test",
     "test:array": "dts test ./test/array/*.*",
     "test:collection": "dts test ./test/collection/*.*",
