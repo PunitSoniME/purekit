@@ -246,7 +246,7 @@ import {
 	toString,
 } from './lang';
 
-import { chain2 } from './seq';
+import { chain2, tap2 } from './seq';
 
 import {
 	camelCase,
@@ -294,6 +294,7 @@ import {
 	property,
 	range,
 	rangeRight,
+	sleep,
 	stubArray,
 	stubFalse,
 	stubObject,
@@ -302,6 +303,7 @@ import {
 	times,
 	toPath,
 	uniqueId,
+	uniqueId2,
 } from './util';
 
 const _ = {
@@ -568,6 +570,7 @@ export {
 	valuesIn,
 	//	Seq Methods
 	chain2,
+	tap2,
 	//	String Methods
 	camelCase,
 	capitalize,
@@ -612,6 +615,7 @@ export {
 	property,
 	range,
 	rangeRight,
+	sleep,
 	stubArray,
 	stubFalse,
 	stubObject,
@@ -620,6 +624,7 @@ export {
 	times,
 	toPath,
 	uniqueId,
+	uniqueId2,
 };
 
 export default _;

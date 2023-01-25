@@ -15,6 +15,7 @@ import overSome from './overSome';
 import property from './property';
 import range from './range';
 import rangeRight from './rangeRight';
+import sleep from './sleep';
 import stubArray from './stubArray';
 import stubFalse from './stubFalse';
 import stubObject from './stubObject';
@@ -23,6 +24,7 @@ import stubTrue from './stubTrue';
 import times from './times';
 import toPath from './toPath';
 import uniqueId from './uniqueId';
+import uniqueId2 from './uniqueId2';
 
 export {
 	attempt,
@@ -42,6 +44,7 @@ export {
 	property,
 	range,
 	rangeRight,
+	sleep,
 	stubArray,
 	stubFalse,
 	stubObject,
@@ -50,4 +53,5 @@ export {
 	times,
 	toPath,
 	uniqueId,
+	uniqueId2,
 };
