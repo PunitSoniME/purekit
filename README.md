@@ -37,7 +37,7 @@ npm install alt-lodash
 
 <br />
 
-> <div style="font-size: 1.5rem; padding-top: 0.7rem; padding-bottom: 0.7rem; font-weight: bold">Supports Node version >= 12</div>
+> <div style="font-size: 1.5rem; padding-top: 0.7rem; padding-bottom: 0.7rem; font-weight: bold">Tested in Node version >= 14</div>
 
 <br />
 
@@ -440,6 +440,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - range ✔️
 - rangeRight ✔️
 - runInContext ( 🔜 - Work in progress - PRs most welcome )
+- sleep ✔️ **New**
 - stubArray ✔️
 - stubFalse ✔️
 - stubObject ✔️
@@ -448,6 +449,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - times ✔️
 - toPath ✔️
 - uniqueId ✔️
+- uniqueId2 ✔️ **New**
 
 -------------------------------
 <br />
@@ -499,7 +501,45 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
     ```
 
 
-- tap ( 🔜 - Work in progress - PRs most welcome )
+- ~~tap~~
+- tap2 ✔️ ( Alternate of tap method with minimal code )
+
+
+    ```ts
+    tap2(value, interceptor)
+    ```
+
+    ## Arguments
+    
+    ```bash
+    value (*): The value to provide to interceptor.
+    interceptor (Function): The function to invoke.
+    ```
+
+    ## Returns
+    
+    ```bash
+    (*): Returns value.
+    ```
+
+    ## Example
+    
+    ```typescript
+    import { tap2, concat } from 'alt-lodash';
+
+    const data = [1, 2, 3];
+
+    const tappedData = tap2(data, (array: number[]) => {
+        // Mutate input array.
+        array.push(100);
+    })
+        .fn(concat, [4])
+        .fn(concat, [5])
+        .value();
+
+    // => [1, 2, 3, 100, 4, 5]
+    ```
+
 - thru ( 🔜 - Work in progress - PRs most welcome )
 - prototype[Symbol.iterator] ( 🔜 - Work in progress - PRs most welcome )
 - prototype.at ( 🔜 - Work in progress - PRs most welcome )

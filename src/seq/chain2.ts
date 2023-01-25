@@ -18,6 +18,8 @@
  *  }))
  *  .fn(head)
  *  .value();
+ *
+ * => 'pebbles is 1'
  */
 const chain2 = (value: any) => {
 	return {
