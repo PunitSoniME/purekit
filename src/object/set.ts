@@ -4,8 +4,9 @@
  * @param path
  * @param value
  */
-const set = <T>(object: T, path: any, value: any): T => {
-	const pathArray = Array.isArray(path) ? path : path.match(/([^[.\]])+/g);
+const set = <T>(object: T, path: any[] | string, value: any): T => {
+	const pathArray =
+		(Array.isArray(path) ? path : path.match(/([^[.\]])+/g)) ?? [];
 
 	pathArray.reduce((acc: any, key: string, i: number) => {
 		if (acc[key] === undefined) acc[key] = {};

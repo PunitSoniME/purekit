@@ -31,6 +31,7 @@ import omitBy from './omitBy';
 import pick from './pick';
 import pickBy from './pickBy';
 import set from './set';
+import setWith from './_setWith';
 import toPairs from './toPairs';
 import toPairsIn from './toPairsIn';
 import unset from './unset';
@@ -72,6 +73,7 @@ export {
 	pick,
 	pickBy,
 	set,
+	setWith,
 	toPairs,
 	toPairsIn,
 	unset,
