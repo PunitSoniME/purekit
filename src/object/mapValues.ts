@@ -8,7 +8,10 @@ import identity from '../util/identity';
  * @param iteratee
  * @returns
  */
-const mapValues = <T>(object: any, iteratee: predicateType<T> = identity): Object => {
+const mapValues = <T>(
+	object: any,
+	iteratee: predicateType<T> = identity
+): Object => {
 	const fn = createPredicate(iteratee);
 
 	return Object.entries(object).reduce(
