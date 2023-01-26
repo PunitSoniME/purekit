@@ -352,7 +352,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - keys ✔️
 - keysIn ✔️
 - mapKeys ✔️
-- mapValues ( 🔜 - Work in progress - PRs most welcome ) [Issue - #47](https://github.com/PunitSoniME/alt-lodash/issues/47)
+- mapValues ✔️
 - merge ✔️
 - mergeWith ( 🔜 - Work in progress - PRs most welcome ) [Issue - #48](https://github.com/PunitSoniME/alt-lodash/issues/48)
 - omit ✔️
