@@ -20,6 +20,7 @@ import get from './get';
 import has from './has';
 import hasIn from './hasIn';
 import invert from './invert';
+import invertBy from './invertBy';
 import keys from './keys';
 import keysIn from './keysIn';
 import mapKeys from './mapKeys';
@@ -59,6 +60,7 @@ export {
 	has,
 	hasIn,
 	invert,
+	invertBy,
 	keys,
 	keysIn,
 	mapKeys,
