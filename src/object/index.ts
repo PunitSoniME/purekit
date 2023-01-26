@@ -18,6 +18,7 @@ import functions from './functions';
 import functionsIn from './functionsIn';
 import get from './get';
 import has from './has';
+import hasIn from './hasIn';
 import invert from './invert';
 import keys from './keys';
 import keysIn from './keysIn';
@@ -56,6 +57,7 @@ export {
 	functionsIn,
 	get,
 	has,
+	hasIn,
 	invert,
 	keys,
 	keysIn,

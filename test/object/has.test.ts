@@ -1,7 +1,11 @@
 import _has from 'lodash/has';
-import { has } from '../../src/object';
+import _create from 'lodash/create';
+import { has, create } from '../../src/object';
 
-const object = { a: { bar: 2 } };
+const object = { a: { b: 2 } };
+
+const other = create({ a: create({ b: 2 }) });
+const _other = _create({ a: _create({ b: 2 }) });
 
 describe('Object', () => {
 	describe('has', () => {
@@ -9,20 +13,24 @@ describe('Object', () => {
 			expect(has(object, 'a')).toEqual(_has(object, 'a'));
 		});
 
-		it("has(object, 'a.bar')", () => {
-			expect(has(object, 'a.bar')).toEqual(_has(object, 'a.bar'));
+		it("has(object, 'a.b')", () => {
+			expect(has(object, 'a.b')).toEqual(_has(object, 'a.b'));
 		});
 
-		it("has(object, ['a', 'bar'])", () => {
-			expect(has(object, ['a', 'bar'])).toEqual(_has(object, ['a', 'bar']));
+		it("has(object, ['a', 'b'])", () => {
+			expect(has(object, ['a', 'b'])).toEqual(_has(object, ['a', 'b']));
 		});
 
 		it("has(object, ['a', 'c'])", () => {
 			expect(has(object, ['a', 'c'])).toEqual(_has(object, ['a', 'c']));
 		});
 
-		it("has(object, 'bar')", () => {
-			expect(has(object, 'bar')).toEqual(_has(object, 'bar'));
+		it("has(object, 'b')", () => {
+			expect(has(object, 'b')).toEqual(_has(object, 'b'));
+		});
+
+		it("has(other, 'a')", () => {
+			expect(has(other, 'a')).toEqual(_has(_other, 'a'));
 		});
 	});
 });
