@@ -345,7 +345,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - functionsIn ✔️
 - get ✔️
 - has ✔️
-- hasIn ( 🔜 - Work in progress - PRs most welcome )
+- hasIn ✔️
 - invert ✔️
 - invertBy ( 🔜 - Work in progress - PRs most welcome )
 - invoke ( 🔜 - Work in progress - PRs most welcome )
