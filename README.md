@@ -361,7 +361,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - pickBy ✔️
 - result ( 🔜 - Work in progress - PRs most welcome ) [Issue - #49](https://github.com/PunitSoniME/alt-lodash/issues/49)
 - set ✔️
-- setWith ( 🔜 - Work in progress - PRs most welcome ) [Issue - #50](https://github.com/PunitSoniME/alt-lodash/issues/50)
+- setWith ✔️
 - toPairs ✔️
 - toPairsIn ✔️
 - transform ( 🔜 - Work in progress - PRs most welcome ) [Issue - #51](https://github.com/PunitSoniME/alt-lodash/issues/51)
