@@ -191,6 +191,7 @@ import {
 	toPairsIn,
 	unset,
 	update,
+	updateWith,
 	values,
 	valuesIn,
 } from './object';
@@ -574,6 +575,7 @@ export {
 	toPairsIn,
 	unset,
 	update,
+	updateWith,
 	values,
 	valuesIn,
 	//	Seq Methods
