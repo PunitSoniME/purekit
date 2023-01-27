@@ -10,17 +10,20 @@ import flatMapDeep from './flatMapDeep';
 import flatMapDepth from './flatMapDepth';
 import forEach from './forEach';
 import forEachRight from './forEachRight';
+import freeze from './freeze';
 import groupBy from './groupBy';
 import includes from './includes';
 import keyBy from './keyBy';
 import map from './map';
 import orderBy from './orderBy';
 import partition from './partition';
+import preventExtensions from './preventExtensions';
 import reduce from './reduce';
 import reduceRight from './reduceRight';
 import reject from './reject';
 import sample from './sample';
 import sampleSize from './sampleSize';
+import seal from './seal';
 import shuffle from './shuffle';
 import size from './size';
 import some from './some';
@@ -39,17 +42,20 @@ export {
 	flatMapDepth,
 	forEach,
 	forEachRight,
+	freeze,
 	groupBy,
 	includes,
 	keyBy,
 	map,
 	orderBy,
 	partition,
+	preventExtensions,
 	reduce,
 	reduceRight,
 	reject,
 	sample,
 	sampleSize,
+	seal,
 	shuffle,
 	size,
 	some,
