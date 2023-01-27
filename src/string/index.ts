@@ -23,6 +23,7 @@ import trimEnd from './trimEnd';
 import trimStart from './trimStart';
 import upperCase from './upperCase';
 import upperFirst from './upperFirst';
+import words from './_words';
 
 export {
 	camelCase,
@@ -50,4 +51,5 @@ export {
 	trimStart,
 	upperCase,
 	upperFirst,
+	words,
 };
