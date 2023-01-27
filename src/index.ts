@@ -279,6 +279,7 @@ import {
 	trimStart,
 	upperCase,
 	upperFirst,
+	words,
 } from './string';
 
 import {
@@ -607,6 +608,7 @@ export {
 	trimStart,
 	upperCase,
 	upperFirst,
+	words,
 	//	Util Methods
 	attempt,
 	cond,

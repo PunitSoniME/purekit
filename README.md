@@ -406,7 +406,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - unescape ( 🔜 - Work in progress - PRs most welcome ) [Issue - #65](https://github.com/PunitSoniME/alt-lodash/issues/65)
 - upperCase ✔️
 - upperFirst ✔️
-- words ( 🔜 - Work in progress - PRs most welcome ) [Issue - #66](https://github.com/PunitSoniME/alt-lodash/issues/66)
+- words ✔️
 
 -------------------------------
 <br />
