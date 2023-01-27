@@ -367,7 +367,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - transform ( 🔜 - Work in progress - PRs most welcome ) [Issue - #51](https://github.com/PunitSoniME/alt-lodash/issues/51)
 - unset ✔️
 - update ✔️
-- updateWith ( 🔜 - Work in progress - PRs most welcome ) [Issue - #52](https://github.com/PunitSoniME/alt-lodash/issues/52)
+- updateWith ✔️
 - values ✔️
 - valuesIn ✔️
 

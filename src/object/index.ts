@@ -36,6 +36,7 @@ import toPairs from './toPairs';
 import toPairsIn from './toPairsIn';
 import unset from './unset';
 import update from './update';
+import updateWith from './updateWith';
 import values from './values';
 import valuesIn from './valuesIn';
 
@@ -78,6 +79,7 @@ export {
 	toPairsIn,
 	unset,
 	update,
+	updateWith,
 	values,
 	valuesIn,
 };
