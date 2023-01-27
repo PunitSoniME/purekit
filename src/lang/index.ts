@@ -17,7 +17,9 @@ import isEmpty from './isEmpty';
 import isEqual from './isEqual';
 import isEqualWith from './isEqualWith';
 import isError from './isError';
+import isExtensible from './isExtensible';
 import isFinite from './isFinite';
+import isFrozen from './isFrozen';
 import isFunction from './isFunction';
 import isInteger from './isInteger';
 import isLength from './isLength';
@@ -34,6 +36,7 @@ import isObjectLike from './isObjectLike';
 import isPlainObject from './isPlainObject';
 import isRegExp from './isRegExp';
 import isSafeInteger from './isSafeInteger';
+import isSealed from './isSealed';
 import isSet from './isSet';
 import isString from './isString';
 import isSymbol from './isSymbol';
@@ -45,10 +48,10 @@ import lt from './lt';
 import lte from './lte';
 // import toLength from './_toLength';
 import toNumber from './toNumber';
-import toSafeInteger from './toSafeInteger';
 // import toArray from './toArray';
 // import toInteger from './toInteger';
 import toPlainObject from './toPlainObject';
+import toSafeInteger from './toSafeInteger';
 import toString from './toString';
 
 export {
@@ -71,7 +74,9 @@ export {
 	isEqual,
 	isEqualWith,
 	isError,
+	isExtensible,
 	isFinite,
+	isFrozen,
 	isFunction,
 	isInteger,
 	isLength,
@@ -88,6 +93,7 @@ export {
 	isPlainObject,
 	isRegExp,
 	isSafeInteger,
+	isSealed,
 	isSet,
 	isString,
 	isSymbol,
@@ -97,11 +103,11 @@ export {
 	isWeakSet,
 	lt,
 	lte,
+	// toLength,
+	toNumber,
 	// toArray,
 	// toInteger,
 	toPlainObject,
-	// toLength,
-	toNumber,
 	toSafeInteger,
 	toString,
 };

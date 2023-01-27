@@ -162,6 +162,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - flatMapDepth ✔️
 - forEach ✔️
 - forEachRight ✔️
+- freeze ✔️ **New**
 - groupBy ✔️
 - includes ✔️
 - invokeMap ( 🔜 - Work in progress - PRs most welcome ) [Issue - #15](https://github.com/PunitSoniME/alt-lodash/issues/15)
@@ -169,11 +170,13 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - map ✔️
 - orderBy ✔️
 - partition ✔️
+- preventExtensions ✔️ **New**
 - reduce ✔️
 - reduceRight ✔️
 - reject ✔️
 - sample ✔️
 - sampleSize ✔️
+- seal ✔️ **New**
 - shuffle ✔️
 - size ✔️
 - some ✔️
@@ -246,7 +249,9 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - isEqual ✔️
 - isEqualWith ✔️
 - isError ✔️
+- isExtensible ✔️ **New**
 - isFinite ✔️
+- isFrozen ✔️ **New**
 - isFunction ✔️
 - isInteger ✔️
 - isLength ✔️
@@ -264,6 +269,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - isPlainObject ✔️
 - isRegExp ✔️
 - isSafeInteger ✔️
+- isSealed ✔️ **New**
 - isSet ✔️
 - isString ✔️
 - isSymbol ✔️

@@ -9,9 +9,9 @@ import dropRight from './dropRight';
 import dropRightWhile from './dropRightWhile';
 import dropWhile from './dropWhile';
 import fill from './fill';
-import first from './first';
 import findIndex from './findIndex';
 import findLastIndex from './findLastIndex';
+import first from './first';
 import flatten from './flatten';
 import flattenDeep from './flattenDeep';
 import flattenDepth from './flattenDepth';
@@ -75,10 +75,10 @@ export {
 	dropRight,
 	dropRightWhile,
 	dropWhile,
-	first,
 	fill,
 	findIndex,
 	findLastIndex,
+	first,
 	flatten,
 	flattenDeep,
 	flattenDepth,
