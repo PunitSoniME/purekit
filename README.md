@@ -1,9 +1,13 @@
 # Alternate of Lodash Library
 
+[![CI](https://github.com/PunitSoniME/alt-lodash/actions/workflows/main.yml/badge.svg)](https://github.com/PunitSoniME/alt-lodash/actions/workflows/main.yml)
+[![Join the chat at https://gitter.im/alt-lodash/developers](https://badges.gitter.im/alt-lodash/developers.svg)](https://gitter.im/alt-lodash/developers?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![npm version](https://badge.fury.io/js/alt-lodash.svg)][npm_url]
 [![license](https://img.shields.io/npm/l/alt-lodash.svg)][npm_url]
 ![Types Included](https://badgen.net/npm/types/alt-lodash)
 
+![dependents](https://badgen.net/npm/dependents/alt-lodash)
 [![weekly downloads](https://badgen.net/npm/dw/alt-lodash)][npm_url]
 [![weekly downloads](https://badgen.net/npm/dm/alt-lodash)][npm_url]
 [![downloads](https://img.shields.io/npm/dt/alt-lodash.svg)][npm_url]
@@ -33,7 +37,7 @@ npm install alt-lodash
 
 <br />
 
-> <div style="font-size: 1.5rem; padding-top: 0.7rem; padding-bottom: 0.7rem; font-weight: bold">Supports Node version >= 12</div>
+> <div style="font-size: 1.5rem; padding-top: 0.7rem; padding-bottom: 0.7rem; font-weight: bold">Tested in Node version >= 14</div>
 
 <br />
 
@@ -136,7 +140,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - xorWith ✔️
 - zip ✔️
 - zipObject ✔️
-- zipObjectDeep ( 🔜 - Work in progress - PRs most welcome )
+- zipObjectDeep ( 🔜 - Work in progress - PRs most welcome ) [Issue - #13](https://github.com/PunitSoniME/alt-lodash/issues/13)
 - zipWith ✔️
 
 -------------------------------
@@ -158,18 +162,21 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - flatMapDepth ✔️
 - forEach ✔️
 - forEachRight ✔️
+- freeze ✔️ **New**
 - groupBy ✔️
 - includes ✔️
-- invokeMap ( 🔜 - Work in progress - PRs most welcome )
+- invokeMap ✔️
 - keyBy ✔️
 - map ✔️
 - orderBy ✔️
 - partition ✔️
+- preventExtensions ✔️ **New**
 - reduce ✔️
 - reduceRight ✔️
 - reject ✔️
 - sample ✔️
 - sampleSize ✔️
+- seal ✔️ **New**
 - shuffle ✔️
 - size ✔️
 - some ✔️
@@ -198,10 +205,10 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - curry ✔️
 - curryRight ✔️
 - debounce ✔️
-- defer ( 🔜 - Work in progress - PRs most welcome )
+- defer ( 🔜 - Work in progress - PRs most welcome ) [Issue - #17](https://github.com/PunitSoniME/alt-lodash/issues/17)
 - delay ✔️
 - flip ✔️
-- memoize ( 🔜 - Work in progress - PRs most welcome )
+- memoize ( 🔜 - Work in progress - PRs most welcome ) [Issue - #18](https://github.com/PunitSoniME/alt-lodash/issues/18)
 - negate ✔️
 - once ✔️
 - overArgs ✔️
@@ -210,7 +217,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - rearg ✔️
 - rest ✔️
 - spread ✔️
-- throttle ( 🔜 - Work in progress - PRs most welcome )
+- throttle ( 🔜 - Work in progress - PRs most welcome ) [Issue - #19](https://github.com/PunitSoniME/alt-lodash/issues/19)
 - unary ✔️
 - wrap ✔️
 
@@ -223,13 +230,13 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 
 - clone ✔️
 - cloneDeep ✔️
-- cloneDeepWith ( 🔜 - Work in progress - PRs most welcome )
-- cloneWith ( 🔜 - Work in progress - PRs most welcome )
+- cloneDeepWith ( 🔜 - Work in progress - PRs most welcome ) [Issue - #20](https://github.com/PunitSoniME/alt-lodash/issues/20)
+- cloneWith ( 🔜 - Work in progress - PRs most welcome ) [Issue - #21](https://github.com/PunitSoniME/alt-lodash/issues/21)
 - conformsTo ✔️
 - eq ✔️
 - gt ✔️
 - gte ✔️
-- isArguments ( 🔜 - Work in progress - PRs most welcome )
+- isArguments ✔️
 - isArray ✔️
 - isArrayBuffer ✔️
 - isArrayLike ✔️
@@ -240,15 +247,17 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - isElement ✔️
 - isEmpty ✔️
 - isEqual ✔️
-- isEqualWith ( 🔜 - Work in progress - PRs most welcome )
+- isEqualWith ✔️
 - isError ✔️
+- isExtensible ✔️ **New**
 - isFinite ✔️
+- isFrozen ✔️ **New**
 - isFunction ✔️
 - isInteger ✔️
 - isLength ✔️
 - isMap ✔️
-- isMatch ( 🔜 - Work in progress - PRs most welcome )
-- isMatchWith ( 🔜 - Work in progress - PRs most welcome )
+- isMatch ✔️
+- isMatchWith ✔️
 - isNaN ✔️
 - isNative ✔️
 - isNil ✔️
@@ -260,6 +269,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - isPlainObject ✔️
 - isRegExp ✔️
 - isSafeInteger ✔️
+- isSealed ✔️ **New**
 - isSet ✔️
 - isString ✔️
 - isSymbol ✔️
@@ -270,11 +280,11 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - lt ✔️
 - lte ✔️
 - toArray ✔️
-- toFinite ( 🔜 - Work in progress - PRs most welcome )
+- toFinite ( 🔜 - Work in progress - PRs most welcome ) [Issue - #27](https://github.com/PunitSoniME/alt-lodash/issues/27)
 - toInteger ✔️
-- toLength ( 🔜 - Work in progress - PRs most welcome )
+- toLength ( 🔜 - Work in progress - PRs most welcome ) [Issue - #28](https://github.com/PunitSoniME/alt-lodash/issues/28)
 - toNumber ✔️
-- toPlainObject ( 🔜 - Work in progress - PRs most welcome )
+- toPlainObject ✔️
 - toSafeInteger ✔️
 - toString ✔️
 
@@ -321,16 +331,16 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - assign ✔️
 
 - assignIn ✔️
-- assignInWith ( 🔜 - Work in progress - PRs most welcome )
-- assignWith ( 🔜 - Work in progress - PRs most welcome )
+- assignInWith ✔️
+- assignWith ✔️
 - at ✔️
 - create ✔️
 - defaults ✔️
-- defaultsDeep ( 🔜 - Work in progress - PRs most welcome )
+- defaultsDeep ( 🔜 - Work in progress - PRs most welcome ) [Issue - #42](https://github.com/PunitSoniME/alt-lodash/issues/42)
 - entries -> toPairs ✔️
 - entriesIn -> toPairsIn ✔️
 - extend -> assignIn ✔️
-- extendWith -> assignInWith ( 🔜 - Work in progress - PRs most welcome )
+- extendWith -> assignInWith ✔️
 - findKey ✔️
 - findLastKey ✔️
 - forIn ✔️
@@ -341,29 +351,29 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - functionsIn ✔️
 - get ✔️
 - has ✔️
-- hasIn ( 🔜 - Work in progress - PRs most welcome )
+- hasIn ✔️
 - invert ✔️
-- invertBy ( 🔜 - Work in progress - PRs most welcome )
-- invoke ( 🔜 - Work in progress - PRs most welcome )
+- invertBy ✔️
+- invoke ( 🔜 - Work in progress - PRs most welcome ) [Issue - #46](https://github.com/PunitSoniME/alt-lodash/issues/46)
 - keys ✔️
 - keysIn ✔️
 - mapKeys ✔️
-- mapValues ( 🔜 - Work in progress - PRs most welcome )
+- mapValues ✔️
 - merge ✔️
-- mergeWith ( 🔜 - Work in progress - PRs most welcome )
+- mergeWith ( 🔜 - Work in progress - PRs most welcome ) [Issue - #48](https://github.com/PunitSoniME/alt-lodash/issues/48)
 - omit ✔️
 - omitBy ✔️
 - pick ✔️
 - pickBy ✔️
-- result ( 🔜 - Work in progress - PRs most welcome )
+- result ( 🔜 - Work in progress - PRs most welcome ) [Issue - #49](https://github.com/PunitSoniME/alt-lodash/issues/49)
 - set ✔️
-- setWith ( 🔜 - Work in progress - PRs most welcome )
+- setWith ✔️
 - toPairs ✔️
 - toPairsIn ✔️
-- transform ( 🔜 - Work in progress - PRs most welcome )
+- transform ( 🔜 - Work in progress - PRs most welcome ) [Issue - #51](https://github.com/PunitSoniME/alt-lodash/issues/51)
 - unset ✔️
 - update ✔️
-- updateWith ( 🔜 - Work in progress - PRs most welcome )
+- updateWith ✔️
 - values ✔️
 - valuesIn ✔️
 
@@ -375,7 +385,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - camelCase ✔️
 
 - capitalize ✔️
-- deburr ( 🔜 - Work in progress - PRs most welcome )
+- deburr ( 🔜 - Work in progress - PRs most welcome ) [Issue - #63](https://github.com/PunitSoniME/alt-lodash/issues/63)
 - endsWith ✔️
 - escape ✔️
 - escapeRegExp ✔️
@@ -398,11 +408,11 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - trim ✔️
 - trimEnd ✔️
 - trimStart ✔️
-- truncate ( 🔜 - Work in progress - PRs most welcome )
-- unescape ( 🔜 - Work in progress - PRs most welcome )
+- truncate ( 🔜 - Work in progress - PRs most welcome ) [Issue - #64](https://github.com/PunitSoniME/alt-lodash/issues/64)
+- unescape ( 🔜 - Work in progress - PRs most welcome ) [Issue - #65](https://github.com/PunitSoniME/alt-lodash/issues/65)
 - upperCase ✔️
 - upperFirst ✔️
-- words ( 🔜 - Work in progress - PRs most welcome )
+- words ✔️
 
 -------------------------------
 <br />
@@ -411,8 +421,8 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 
 - attempt ✔️
 
-- bindAll ( 🔜 - Work in progress - PRs most welcome )
-- cond ( 🔜 - Work in progress - PRs most welcome )
+- bindAll ( 🔜 - Work in progress - PRs most welcome ) [Issue - #67](https://github.com/PunitSoniME/alt-lodash/issues/67)
+- cond ✔️
 - conforms ✔️
 - constant ✔️
 - defaultTo ✔️
@@ -420,22 +430,23 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - flowRight ✔️
 - identity ✔️
 - iteratee ✔️
-- matches ( 🔜 - Work in progress - PRs most welcome )
-- matchesProperty ( 🔜 - Work in progress - PRs most welcome )
-- method ( 🔜 - Work in progress - PRs most welcome )
-- methodOf ( 🔜 - Work in progress - PRs most welcome )
-- mixin ( 🔜 - Work in progress - PRs most welcome )
-- noConflict ( 🔜 - Work in progress - PRs most welcome )
+- matches ( 🔜 - Work in progress - PRs most welcome ) [Issue - #68](https://github.com/PunitSoniME/alt-lodash/issues/68)
+- matchesProperty ( 🔜 - Work in progress - PRs most welcome ) [Issue - #69](https://github.com/PunitSoniME/alt-lodash/issues/69)
+- method ( 🔜 - Work in progress - PRs most welcome ) [Issue - #70](https://github.com/PunitSoniME/alt-lodash/issues/70)
+- methodOf ( 🔜 - Work in progress - PRs most welcome ) [Issue - #71](https://github.com/PunitSoniME/alt-lodash/issues/71)
+- mixin ( 🔜 - Work in progress - PRs most welcome ) [Issue - #72](https://github.com/PunitSoniME/alt-lodash/issues/72)
+- noConflict ( 🔜 - Work in progress - PRs most welcome ) [Issue - #73](https://github.com/PunitSoniME/alt-lodash/issues/73)
 - noop ✔️
 - nthArg ✔️
 - over ✔️
 - overEvery ✔️
 - overSome ✔️
 - property ✔️
-- propertyOf ( 🔜 - Work in progress - PRs most welcome )
+- propertyOf ✔️
 - range ✔️
 - rangeRight ✔️
-- runInContext ( 🔜 - Work in progress - PRs most welcome )
+- runInContext ( 🔜 - Work in progress - PRs most welcome ) [Issue - #75](https://github.com/PunitSoniME/alt-lodash/issues/75)
+- sleep ✔️ **New**
 - stubArray ✔️
 - stubFalse ✔️
 - stubObject ✔️
@@ -444,6 +455,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - times ✔️
 - toPath ✔️
 - uniqueId ✔️
+- uniqueId2 ✔️ **New**
 
 -------------------------------
 <br />
@@ -495,7 +507,45 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
     ```
 
 
-- tap ( 🔜 - Work in progress - PRs most welcome )
+- ~~tap~~
+- tap2 ✔️ ( Alternate of tap method with minimal code )
+
+
+    ```ts
+    tap2(value, interceptor)
+    ```
+
+    ## Arguments
+    
+    ```bash
+    value (*): The value to provide to interceptor.
+    interceptor (Function): The function to invoke.
+    ```
+
+    ## Returns
+    
+    ```bash
+    (*): Returns value.
+    ```
+
+    ## Example
+    
+    ```typescript
+    import { tap2, concat } from 'alt-lodash';
+
+    const data = [1, 2, 3];
+
+    const tappedData = tap2(data, (array: number[]) => {
+        // Mutate input array.
+        array.push(100);
+    })
+        .fn(concat, [4])
+        .fn(concat, [5])
+        .value();
+
+    // => [1, 2, 3, 100, 4, 5]
+    ```
+
 - thru ( 🔜 - Work in progress - PRs most welcome )
 - prototype[Symbol.iterator] ( 🔜 - Work in progress - PRs most welcome )
 - prototype.at ( 🔜 - Work in progress - PRs most welcome )

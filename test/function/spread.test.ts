@@ -13,14 +13,14 @@ describe('Function', () => {
 			expect(say(['fred', 'hello'])).toEqual(_say(['fred', 'hello']));
 		});
 
-		it('spread((x: number, y: number) => x + y)', () => {
-			const value = numbers.then(
+		it('spread((x: number, y: number) => x + y)', async () => {
+			const value = await numbers.then(
 				spread(function (x: number, y: number) {
 					return x + y;
 				})
 			);
 
-			const _value = numbers.then(
+			const _value = await numbers.then(
 				_spread(function (x: number, y: number) {
 					return x + y;
 				})

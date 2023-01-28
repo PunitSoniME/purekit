@@ -13,8 +13,10 @@ import over from './over';
 import overEvery from './overEvery';
 import overSome from './overSome';
 import property from './property';
+import propertyOf from './propertyOf';
 import range from './range';
 import rangeRight from './rangeRight';
+import sleep from './sleep';
 import stubArray from './stubArray';
 import stubFalse from './stubFalse';
 import stubObject from './stubObject';
@@ -23,6 +25,7 @@ import stubTrue from './stubTrue';
 import times from './times';
 import toPath from './toPath';
 import uniqueId from './uniqueId';
+import uniqueId2 from './uniqueId2';
 
 export {
 	attempt,
@@ -40,8 +43,10 @@ export {
 	overEvery,
 	overSome,
 	property,
+	propertyOf,
 	range,
 	rangeRight,
+	sleep,
 	stubArray,
 	stubFalse,
 	stubObject,
@@ -50,4 +55,5 @@ export {
 	times,
 	toPath,
 	uniqueId,
+	uniqueId2,
 };

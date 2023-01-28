@@ -3,7 +3,7 @@
  * @param object
  * @param path
  */
-const unset = <T>(object: T, path: any): Boolean => {
+const unset = <T>(object: T, path: any): boolean => {
 	let isKeyRemoved = false;
 	const pathArray = Array.isArray(path) ? path : path.match(/([^[.\]])+/g);
 
