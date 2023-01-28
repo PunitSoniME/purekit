@@ -9,8 +9,8 @@ const get = (object: any, path: string | any[] | any, defaultValue?: any) => {
 	//	One Way
 	// return path
 	// 	.split(/[\.\[\]\'\"]/)
-	// 	.filter(p => p)
-	// 	.reduce((o, p) => o ? o[p] : defaultValue, object);
+	// 	.filter((p: any) => p)
+	// 	.reduce((o: any, p: any) => o ? o[p] : defaultValue, object);
 
 	// If path is not defined or it has false value
 	if (!path) return undefined;
@@ -27,7 +27,7 @@ const get = (object: any, path: string | any[] | any, defaultValue?: any) => {
 	// If found value is undefined return default value; otherwise return the value
 	return result === undefined ? defaultValue : result;
 
-	//	Faster Way
+	// //	Faster Way
 	// if (typeof object === 'undefined' || object === null) return;
 	// let newPath = path.split(/[\.\[\]\"\']{1,2}/);
 	// for (var i = 0, l = newPath.length; i < l; i++) {
