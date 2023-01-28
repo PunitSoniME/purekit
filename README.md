@@ -136,7 +136,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - xorWith ✔️
 - zip ✔️
 - zipObject ✔️
-- zipObjectDeep ( 🔜 - Code is available, however it needs some modifications, branch name - feature/array-xor-object-deep  )
+- zipObjectDeep ( 🔜 - Code is available, however it needs some modifications, branch name - `feature/zip-object-deep`  )
 - zipWith ✔️
 
 -------------------------------
