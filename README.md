@@ -432,8 +432,8 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - iteratee ✔️
 - matches ( 🔜 - Work in progress - PRs most welcome ) [Issue - #68](https://github.com/PunitSoniME/alt-lodash/issues/68)
 - matchesProperty ( 🔜 - Work in progress - PRs most welcome ) [Issue - #69](https://github.com/PunitSoniME/alt-lodash/issues/69)
-- method ( 🔜 - Work in progress - PRs most welcome ) [Issue - #70](https://github.com/PunitSoniME/alt-lodash/issues/70)
-- methodOf ( 🔜 - Work in progress - PRs most welcome ) [Issue - #71](https://github.com/PunitSoniME/alt-lodash/issues/71)
+- method ✔️
+- methodOf ✔️
 - mixin ( 🔜 - Work in progress - PRs most welcome ) [Issue - #72](https://github.com/PunitSoniME/alt-lodash/issues/72)
 - noConflict ( 🔜 - Work in progress - PRs most welcome ) [Issue - #73](https://github.com/PunitSoniME/alt-lodash/issues/73)
 - noop ✔️
