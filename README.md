@@ -442,7 +442,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - overEvery ✔️
 - overSome ✔️
 - property ✔️
-- propertyOf ( 🔜 - Work in progress - PRs most welcome ) [Issue - #74](https://github.com/PunitSoniME/alt-lodash/issues/74)
+- propertyOf ✔️
 - range ✔️
 - rangeRight ✔️
 - runInContext ( 🔜 - Work in progress - PRs most welcome ) [Issue - #75](https://github.com/PunitSoniME/alt-lodash/issues/75)
