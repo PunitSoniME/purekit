@@ -5,6 +5,7 @@ import conformsTo from './conformsTo';
 import eq from './eq';
 import gt from './gt';
 import gte from './gte';
+import isArguments from './isArguments';
 import isArray from './isArray';
 import isArrayBuffer from './isArrayBuffer';
 import isArrayLike from './isArrayLike';
@@ -62,6 +63,7 @@ export {
 	eq,
 	gt,
 	gte,
+	isArguments,
 	isArray,
 	isArrayBuffer,
 	isArrayLike,
