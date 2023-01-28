@@ -13,6 +13,7 @@ import over from './over';
 import overEvery from './overEvery';
 import overSome from './overSome';
 import property from './property';
+import propertyOf from './propertyOf';
 import range from './range';
 import rangeRight from './rangeRight';
 import sleep from './sleep';
@@ -42,6 +43,7 @@ export {
 	overEvery,
 	overSome,
 	property,
+	propertyOf,
 	range,
 	rangeRight,
 	sleep,
