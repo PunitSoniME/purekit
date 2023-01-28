@@ -13,6 +13,7 @@ import forEachRight from './forEachRight';
 import freeze from './freeze';
 import groupBy from './groupBy';
 import includes from './includes';
+import invokeMap from './invokeMap';
 import keyBy from './keyBy';
 import map from './map';
 import orderBy from './orderBy';
@@ -45,6 +46,7 @@ export {
 	freeze,
 	groupBy,
 	includes,
+	invokeMap,
 	keyBy,
 	map,
 	orderBy,

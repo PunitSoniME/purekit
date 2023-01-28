@@ -165,7 +165,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - freeze ✔️ **New**
 - groupBy ✔️
 - includes ✔️
-- invokeMap ( 🔜 - Work in progress - PRs most welcome ) [Issue - #15](https://github.com/PunitSoniME/alt-lodash/issues/15)
+- invokeMap ✔️
 - keyBy ✔️
 - map ✔️
 - orderBy ✔️
