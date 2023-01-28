@@ -236,7 +236,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - eq ✔️
 - gt ✔️
 - gte ✔️
-- isArguments ( 🔜 - Work in progress - PRs most welcome ) [Issue - #23](https://github.com/PunitSoniME/alt-lodash/issues/23)
+- isArguments ✔️
 - isArray ✔️
 - isArrayBuffer ✔️
 - isArrayLike ✔️
