@@ -5,7 +5,7 @@
  * @param object
  * @returns
  */
-const matches = (object: Object): any => {
+const matches = (source: Object): any => {
 	//	TODO: matches
 	return true;
 };
