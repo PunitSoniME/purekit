@@ -1,4 +1,3 @@
-//	@ts-nocheck
 /**
  *
  * @param func
@@ -7,9 +6,11 @@
  * @returns
  */
 const debounce = (func: Function, delay: number, { leading }: any = {}) => {
+	console.info('alt-lodash - debounce is still under work, it might not give 100% result as you expected');
+	
 	let timerId: any;
 
-	return (...args) => {
+	return (...args: any) => {
 		if (!timerId && leading) {
 			func(...args);
 		}

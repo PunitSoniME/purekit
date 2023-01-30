@@ -1,4 +1,3 @@
-//  @ts-nocheck
 /**
  *
  * @param value
@@ -7,7 +6,7 @@
  */
 const wrap =
 	(value: any, func: Function) =>
-	(...args) =>
+	(...args: any) =>
 		func(value, ...args);
 
 export default wrap;

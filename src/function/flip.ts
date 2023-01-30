@@ -1,4 +1,3 @@
-//  @ts-nocheck
 /**
  *
  * @param func
@@ -6,7 +5,7 @@
  */
 const flip =
 	(func: any) =>
-	(...args) =>
+	(...args: any) =>
 		func(...args.reverse());
 
 export default flip;
