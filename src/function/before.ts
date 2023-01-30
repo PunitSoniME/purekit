@@ -1,4 +1,3 @@
-// @ts-nocheck
 /**
  *
  * @param times
@@ -9,7 +8,7 @@ const before = (times: number, fn: Function) => {
 	let counter = 0;
 	let res: any;
 
-	return (...args) => {
+	return (...args: any) => {
 		counter++;
 
 		if (counter < times) {
