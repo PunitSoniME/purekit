@@ -3,7 +3,6 @@
 // import { throttle } from '../../src/function';
 // import { identity } from '../../src/util';
 
-
 // describe('Function', () => {
 // 	describe('throttle', () => {
 
@@ -33,7 +32,6 @@
 
 // 		// 		expect(results[0]).toEqual(_results[0]);	//	'a'
 // 		// 		expect(results[0]).toEqual(_results[0]);	//	'a'
-
 
 // 		// 		expect(results[1]).not.toEqual('d');
 // 		// 		expect(_results[1]).not.toEqual('d');
