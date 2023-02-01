@@ -38,24 +38,30 @@ With npm:
 npm install alt-lodash
 ```
 
-<br />
-
-> <div style="font-size: 1.5rem; padding-top: 0.7rem; padding-bottom: 0.7rem; font-weight: bold">Tested in Node version >= 14</div>
-<br />
+> ### Add `NODE_ENV === 'production'` in your environment variable to use production build of this library
 
 # Usage
 
 ```ts
 //  import all available the methods
-import _ from 'alt-lodash';
+
+import _ from 'alt-lodash';     //  ESM ( ECMA Script ) module
 
 or
 
-//  import methods which you need instead of all ( to reduce the bundle size )
-import { concat, chunk, forEach, filter } from 'alt-lodash';
+const _ = require('alt-lodash');    //  cjs ( common js ) module
 ```
 
-<br />
+
+```ts
+//  import specific methods instead of all
+
+import { concat, chunk, forEach, filter } from 'alt-lodash';     //  ESM ( ECMA Script ) module
+
+or
+
+const { concat, chunk, forEach, filter } = require('alt-lodash');    //  cjs ( common js ) module
+```
 
 # Available Methods
 
