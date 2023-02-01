@@ -63,9 +63,8 @@ or
 const { concat, chunk, forEach, filter } = require('alt-lodash');    //  cjs ( common js ) module
 ```
 
-# Available Methods
 
-## Array
+# Array
 
 - chunk ✔️
 
@@ -152,11 +151,9 @@ const { concat, chunk, forEach, filter } = require('alt-lodash');    //  cjs ( c
 - zipObjectDeep ( 🔜 - Work in progress - PRs most welcome ) [Issue - #13](https://github.com/PunitSoniME/alt-lodash/issues/13)
 - zipWith ✔️
 
--------------------------------
 <br />
 
 # Collection
-
 
 - countBy ✔️
 
@@ -191,16 +188,12 @@ const { concat, chunk, forEach, filter } = require('alt-lodash');    //  cjs ( c
 - some ✔️
 - sortBy ✔️
 
--------------------------------
 <br />
 
 # Dates
 
-
 - now ✔️
 
-
--------------------------------
 <br />
 
 # Function
@@ -230,7 +223,6 @@ const { concat, chunk, forEach, filter } = require('alt-lodash');    //  cjs ( c
 - unary ✔️
 - wrap ✔️
 
--------------------------------
 <br />
 
 # Lang
@@ -297,7 +289,6 @@ const { concat, chunk, forEach, filter } = require('alt-lodash');    //  cjs ( c
 - toSafeInteger ✔️
 - toString ✔️
 
--------------------------------
 <br />
 
 # Math
@@ -322,7 +313,6 @@ const { concat, chunk, forEach, filter } = require('alt-lodash');    //  cjs ( c
 - inRange ✔️
 - random ✔️
 
--------------------------------
 <br />
 
 # Number
@@ -332,7 +322,6 @@ const { concat, chunk, forEach, filter } = require('alt-lodash');    //  cjs ( c
 - inRange ✔️
 - random ✔️
 
--------------------------------
 <br />
 
 # Object
@@ -386,7 +375,6 @@ const { concat, chunk, forEach, filter } = require('alt-lodash');    //  cjs ( c
 - values ✔️
 - valuesIn ✔️
 
--------------------------------
 <br />
 
 # String
@@ -423,7 +411,6 @@ const { concat, chunk, forEach, filter } = require('alt-lodash');    //  cjs ( c
 - upperFirst ✔️
 - words ✔️
 
--------------------------------
 <br />
 
 # Util
@@ -466,7 +453,6 @@ const { concat, chunk, forEach, filter } = require('alt-lodash');    //  cjs ( c
 - uniqueId ✔️
 - uniqueId2 ✔️ **New**
 
--------------------------------
 <br />
 
 # Seq
