@@ -38,7 +38,7 @@ With npm:
 npm install alt-lodash
 ```
 
-> ### Add `NODE_ENV === 'production'` in your environment variable to use production build of this library
+### Add `NODE_ENV === 'production'` in your environment variable to use production build of this library
 
 # Usage
 
@@ -140,6 +140,7 @@ const { concat, chunk, forEach, filter } = require('alt-lodash');    //  cjs ( c
 - uniq ✔️
 - uniqBy ✔️
 - uniqWith ✔️
+- unshift ✔️ **New**
 - unzip ✔️
 - unzipWith ✔️
 - without ✔️
