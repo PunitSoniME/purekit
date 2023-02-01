@@ -2,6 +2,14 @@ import createPredicate from '../helpers/createPredicate';
 import predicateType from '../helpers/predicateType';
 import identity from '../util/identity';
 
+/**
+ *
+ * @param array
+ * @param predicate
+ * @param fromIndex
+ * @param toIndex
+ * @returns
+ */
 const findLastIndex = <T>(
 	array: T[],
 	predicate: predicateType<T> = identity,

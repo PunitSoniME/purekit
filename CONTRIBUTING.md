@@ -1,17 +1,11 @@
 ### main branch
 - `main` branch contains production code.
 
-### develop branch
-- `develop` branch is created from main.
-- This branch contains pre-production code.
-
 ### release branch
-- `release` branch is created from develop.
-- When the `release` branch is done it is merged into `develop` and `main`.
+- `release` branch should be created from `main`
 
 ### feature / fix branch
-- `feature or fix` branches are created from develop.
-- When a `feature or fix` is complete it is merged into the develop branch.
+- `feature or fix` branches should be created from `main`
 
 --------------------------
 ### Branch naming
@@ -20,9 +14,8 @@
 - For `release` - `release/version-number` ( For example `release/1.0.0` )
 - For `fix`     - `fix/branch-name`
 - For `hot Fix` - `hotfix/branch-name`
-- To push small things - create `feature` branch from `develop`
 
-> Note: All your pull request must be `YOUR_BRANCH` to `develop` branch
+### Note: All your pull request must be `YOUR_BRANCH` to `main` branch
 
 -------------------------
 
