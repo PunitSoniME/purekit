@@ -38,8 +38,6 @@ With npm:
 npm install alt-lodash
 ```
 
-### Add `NODE_ENV === 'production'` in your environment variable to use production build of this library
-
 # Usage
 
 ```ts
