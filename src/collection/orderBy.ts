@@ -1,5 +1,5 @@
+//	@ts-nocheck
 const sort = <T>(data: T, orderBy: any[]) => {
-	//	@ts-ignore
 	return (data as T[]).sort((a: any, b: any) => {
 		for (let i = 0, size = orderBy.length; i < size; i++) {
 			const key = Object.keys(orderBy[i])[0],

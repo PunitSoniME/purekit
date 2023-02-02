@@ -53,6 +53,7 @@ import unionWith from './unionWith';
 import uniq from './uniq';
 import uniqBy from './uniqBy';
 import uniqWith from './uniqWith';
+import unshift from './unshift';
 import unzip from './unzip';
 import unzipWith from './unzipWith';
 import without from './without';
@@ -120,6 +121,7 @@ export {
 	uniq,
 	uniqBy,
 	uniqWith,
+	unshift,
 	unzip,
 	unzipWith,
 	without,

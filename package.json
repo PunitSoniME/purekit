@@ -1,6 +1,6 @@
 {
   "name": "alt-lodash",
-  "version": "0.1.0-rc.24",
+  "version": "1.0.1",
   "description": "This library can be used as alternate of lodash",
   "author": "Punit Soni <punit.soni33@gmail.com> (https://punit-soni.web.app)",
   "license": "MIT",
@@ -40,7 +40,7 @@
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "engines": {
-    "node": ">=10"
+    "node": ">=14"
   },
   "keywords": [
     "lodash alternative",
@@ -105,6 +105,5 @@
     "size-limit": "^8.1.0",
     "tslib": "^2.4.1",
     "typescript": "^4.9.3"
-  },
-  "dependencies": {}
+  }
 }
