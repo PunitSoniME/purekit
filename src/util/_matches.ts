@@ -20,6 +20,6 @@ const matches = (source: Object): any => {
 			}
 		}
 		return true;
-	}
+	};
 };
 export default matches;
