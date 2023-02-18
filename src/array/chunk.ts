@@ -14,11 +14,6 @@ const chunk = <T>(
 	if (chunkSize <= 0) return cache;
 	while (tmp.length) cache.push(tmp.splice(0, chunkSize));
 	return cache;
-
-	// return Array(Math.ceil(collection.length / chunkSize))
-	// 	.fill(null)
-	// 	.map((_, index) => index * chunkSize)
-	// 	.map(begin => collection.slice(begin, begin + chunkSize));
 };
 
 export default chunk;

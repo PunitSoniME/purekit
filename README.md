@@ -67,13 +67,13 @@ const { concat, chunk, forEach, filter } = require('alt-lodash');    //  cjs ( c
 - chunk ✔️
 
     ```ts
-    chunk(collection: [], [chunkSize = 1])
+    chunk(array: [], [chunkSize = 1])
     ```
 
     ## Arguments
     
     ```bash
-    collection (Array): The array to process.
+    array (Array): The array to process.
     [chunkSize = 1] (number): The length of each chunk
     ```
 
@@ -404,7 +404,7 @@ const { concat, chunk, forEach, filter } = require('alt-lodash');    //  cjs ( c
 - trimEnd ✔️
 - trimStart ✔️
 - truncate ( 🔜 - Work in progress - PRs most welcome ) [Issue - #64](https://github.com/PunitSoniME/alt-lodash/issues/64)
-- unescape ( 🔜 - Work in progress - PRs most welcome ) [Issue - #65](https://github.com/PunitSoniME/alt-lodash/issues/65)
+- unescape ✔️
 - upperCase ✔️
 - upperFirst ✔️
 - words ✔️

@@ -10,6 +10,6 @@ describe('Lang', () => {
 			const _deep = _cloneDeep(objects);
 
 			expect(deep[0] === objects[0]).toEqual(_deep[0] === objects[0]);
-		});
+		});z
 	});
 });
