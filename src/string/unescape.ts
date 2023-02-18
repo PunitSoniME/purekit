@@ -1,7 +1,7 @@
 /**
- * 
- * @param str 
- * @returns 
+ *
+ * @param str
+ * @returns
  */
 const unescape = (str: string): string => {
 	const entities = {
@@ -14,7 +14,7 @@ const unescape = (str: string): string => {
 		'&#x2F;': '/',
 	};
 
-	return str.replace(/&(amp|lt|gt|quot|#(39|96|x2F));/g, (match) => {
+	return str.replace(/&(amp|lt|gt|quot|#(39|96|x2F));/g, match => {
 		return (entities as any)[match];
 	});
 };
