@@ -230,7 +230,7 @@ const { concat, chunk, forEach, filter } = require('alt-lodash');    //  cjs ( c
 - clone ✔️
 - cloneDeep ✔️
 - cloneDeepWith ( 🔜 - Work in progress - PRs most welcome ) [Issue - #20](https://github.com/PunitSoniME/alt-lodash/issues/20)
-- cloneWith ( 🔜 - Work in progress - PRs most welcome ) [Issue - #21](https://github.com/PunitSoniME/alt-lodash/issues/21)
+- cloneWith ✔️
 - conformsTo ✔️
 - eq ✔️
 - gt ✔️
