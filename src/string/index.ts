@@ -21,6 +21,7 @@ import toUpper from './toUpper';
 import trim from './trim';
 import trimEnd from './trimEnd';
 import trimStart from './trimStart';
+import unescape from './unescape';
 import upperCase from './upperCase';
 import upperFirst from './upperFirst';
 import words from './words';
@@ -49,6 +50,7 @@ export {
 	trim,
 	trimEnd,
 	trimStart,
+	unescape,
 	upperCase,
 	upperFirst,
 	words,
