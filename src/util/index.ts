@@ -7,6 +7,8 @@ import flow from './flow';
 import flowRight from './flowRight';
 import identity from './identity';
 import iteratee from './iteratee';
+import method from './method';
+import methodOf from './methodOf';
 import noop from './noop';
 import nthArg from './nthArg';
 import over from './over';
@@ -37,6 +39,8 @@ export {
 	flowRight,
 	identity,
 	iteratee,
+	method,
+	methodOf,
 	noop,
 	nthArg,
 	over,

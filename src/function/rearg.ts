@@ -1,4 +1,3 @@
-//	@ts-nocheck
 /**
  *
  * @param func
@@ -7,7 +6,7 @@
  */
 const rearg =
 	(func: Function, order: any) =>
-	(...args) => {
+	(...args: any) => {
 		const reargs = order.map((idx: any) => args[idx]);
 		return func(...reargs);
 	};

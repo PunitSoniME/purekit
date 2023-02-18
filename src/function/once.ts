@@ -1,13 +1,12 @@
-//	@ts-nocheck
 /**
  *
  * @param fn
  * @returns
  */
-const once = (fn: function) => {
+const once = (fn: Function) => {
 	let called = false;
 	let result: any;
-	return (...args) => {
+	return (...args: any) => {
 		if (!called) {
 			result = fn(...args);
 			called = true;

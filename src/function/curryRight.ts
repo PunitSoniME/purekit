@@ -1,4 +1,3 @@
-//	@ts-nocheck
 /**
  *
  * @param func
@@ -6,10 +5,10 @@
  */
 const curryRight = (func: any) => {
 	const expectedArgs = func.length;
-	const curried = (...args) => {
+	const curried = (...args: any) => {
 		return args.length >= expectedArgs
 			? func(...args)
-			: (...args2) => curried(...args2.concat(args));
+			: (...args2: any) => curried(...args2.concat(args));
 	};
 	return curried;
 };
