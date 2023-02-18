@@ -1,6 +1,7 @@
 import castArray from './castArray';
 import clone from './clone';
 import cloneDeep from './cloneDeep';
+import cloneWith from './_cloneWith';
 import conformsTo from './conformsTo';
 import eq from './eq';
 import gt from './gt';
@@ -59,6 +60,7 @@ export {
 	castArray,
 	clone,
 	cloneDeep,
+	cloneWith,
 	conformsTo,
 	eq,
 	gt,
