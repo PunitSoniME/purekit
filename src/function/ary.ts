@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 /**
  *
  * @param fn
@@ -7,8 +5,8 @@
  * @returns
  */
 const ary =
-	(fn: Function, arity: any) =>
-	(...args) =>
+	(fn: Function, arity?: number) =>
+	(...args: any) =>
 		fn(...args.slice(0, arity));
 
 export default ary;

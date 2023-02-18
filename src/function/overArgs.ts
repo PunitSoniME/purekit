@@ -1,4 +1,3 @@
-//	@ts-nocheck
 /**
  *
  * @param fn
@@ -7,8 +6,8 @@
  */
 const overArgs =
 	(fn: Function, transforms: any) =>
-	(...args) => {
-		const mappedArgs = args.map((arg, i) =>
+	(...args: any) => {
+		const mappedArgs = args.map((arg: any, i: number) =>
 			transforms[i] ? transforms[i](arg) : arg
 		);
 		return fn(...mappedArgs);

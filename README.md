@@ -1,11 +1,16 @@
 # Alternate of Lodash Library
 
 [![CI](https://github.com/PunitSoniME/alt-lodash/actions/workflows/main.yml/badge.svg)](https://github.com/PunitSoniME/alt-lodash/actions/workflows/main.yml)
+[![Rate this package](https://badges.openbase.com/js/rating/alt-lodash.svg?token=LsZ/SAF9sVVDLFYX3t2XIX5W6JEuM2OZBYIpJvm25wg=)](https://openbase.com/js/alt-lodash?utm_source=embedded&amp;utm_medium=badge&amp;utm_campaign=rate-badge)
 [![Join the chat at https://gitter.im/alt-lodash/developers](https://badges.gitter.im/alt-lodash/developers.svg)](https://gitter.im/alt-lodash/developers?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+![tree shaking](https://badgen.net/bundlephobia/tree-shaking/alt-lodash)
+![nodejs](https://badgen.net/npm/node/alt-lodash)
 
 [![npm version](https://badge.fury.io/js/alt-lodash.svg)][npm_url]
 [![license](https://img.shields.io/npm/l/alt-lodash.svg)][npm_url]
 ![Types Included](https://badgen.net/npm/types/alt-lodash)
+
 
 ![dependents](https://badgen.net/npm/dependents/alt-lodash)
 [![weekly downloads](https://badgen.net/npm/dw/alt-lodash)][npm_url]
@@ -13,10 +18,8 @@
 [![downloads](https://img.shields.io/npm/dt/alt-lodash.svg)][npm_url]
 ![jsDelivr](https://badgen.net/jsdelivr/hits/npm/alt-lodash)
 
-![Dependency Count](https://badgen.net/bundlephobia/dependency-count/alt-lodash)
-
-![minified](https://badgen.net/bundlephobia/min/alt-lodash)
 ![gzip](https://badgen.net/bundlephobia/minzip/alt-lodash)
+![minified](https://badgen.net/bundlephobia/min/alt-lodash)
 
 
 [npm_url]: https://www.npmjs.org/package/alt-lodash
@@ -35,40 +38,42 @@ With npm:
 npm install alt-lodash
 ```
 
-<br />
-
-> <div style="font-size: 1.5rem; padding-top: 0.7rem; padding-bottom: 0.7rem; font-weight: bold">Tested in Node version >= 14</div>
-
-<br />
-
 # Usage
 
 ```ts
 //  import all available the methods
-import _ from 'alt-lodash';
+
+import _ from 'alt-lodash';     //  ESM ( ECMA Script ) module
 
 or
 
-//  import methods which you need instead of all ( to reduce the bundle size )
-import { concat, chunk, forEach, filter } from 'alt-lodash';
+const _ = require('alt-lodash');    //  cjs ( common js ) module
 ```
 
-<br />
 
-# Available Methods
+```ts
+//  import specific methods instead of all
 
-## Array
+import { concat, chunk, forEach, filter } from 'alt-lodash';     //  ESM ( ECMA Script ) module
+
+or
+
+const { concat, chunk, forEach, filter } = require('alt-lodash');    //  cjs ( common js ) module
+```
+
+
+# Array
 
 - chunk ✔️
 
     ```ts
-    chunk(collection: [], [chunkSize = 1])
+    chunk(array: [], [chunkSize = 1])
     ```
 
     ## Arguments
     
     ```bash
-    collection (Array): The array to process.
+    array (Array): The array to process.
     [chunkSize = 1] (number): The length of each chunk
     ```
 
@@ -132,6 +137,7 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - uniq ✔️
 - uniqBy ✔️
 - uniqWith ✔️
+- unshift ✔️ **New**
 - unzip ✔️
 - unzipWith ✔️
 - without ✔️
@@ -143,11 +149,9 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - zipObjectDeep ( 🔜 - Work in progress - PRs most welcome ) [Issue - #13](https://github.com/PunitSoniME/alt-lodash/issues/13)
 - zipWith ✔️
 
--------------------------------
 <br />
 
 # Collection
-
 
 - countBy ✔️
 
@@ -182,16 +186,12 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - some ✔️
 - sortBy ✔️
 
--------------------------------
 <br />
 
 # Dates
 
-
 - now ✔️
 
-
--------------------------------
 <br />
 
 # Function
@@ -221,7 +221,6 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - unary ✔️
 - wrap ✔️
 
--------------------------------
 <br />
 
 # Lang
@@ -288,7 +287,6 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - toSafeInteger ✔️
 - toString ✔️
 
--------------------------------
 <br />
 
 # Math
@@ -313,7 +311,6 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - inRange ✔️
 - random ✔️
 
--------------------------------
 <br />
 
 # Number
@@ -323,7 +320,6 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - inRange ✔️
 - random ✔️
 
--------------------------------
 <br />
 
 # Object
@@ -377,7 +373,6 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - values ✔️
 - valuesIn ✔️
 
--------------------------------
 <br />
 
 # String
@@ -409,12 +404,11 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - trimEnd ✔️
 - trimStart ✔️
 - truncate ( 🔜 - Work in progress - PRs most welcome ) [Issue - #64](https://github.com/PunitSoniME/alt-lodash/issues/64)
-- unescape ( 🔜 - Work in progress - PRs most welcome ) [Issue - #65](https://github.com/PunitSoniME/alt-lodash/issues/65)
+- unescape ✔️
 - upperCase ✔️
 - upperFirst ✔️
 - words ✔️
 
--------------------------------
 <br />
 
 # Util
@@ -457,7 +451,6 @@ import { concat, chunk, forEach, filter } from 'alt-lodash';
 - uniqueId ✔️
 - uniqueId2 ✔️ **New**
 
--------------------------------
 <br />
 
 # Seq
