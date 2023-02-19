@@ -34,6 +34,7 @@ import set from './set';
 import setWith from './setWith';
 import toPairs from './toPairs';
 import toPairsIn from './toPairsIn';
+import transform from './transform';
 import unset from './unset';
 import update from './update';
 import updateWith from './updateWith';
@@ -77,6 +78,7 @@ export {
 	setWith,
 	toPairs,
 	toPairsIn,
+	transform,
 	unset,
 	update,
 	updateWith,
