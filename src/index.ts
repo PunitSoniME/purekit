@@ -262,7 +262,7 @@ import {
 	toString,
 } from './lang';
 
-import { chain2, tap2 } from './seq';
+import { chain2, tap2, thru } from './seq';
 
 import {
 	camelCase,
@@ -608,6 +608,7 @@ export {
 	//	Seq Methods
 	chain2,
 	tap2,
+	thru,
 	//	String Methods
 	camelCase,
 	capitalize,
