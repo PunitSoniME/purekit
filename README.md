@@ -366,7 +366,7 @@ const { concat, chunk, forEach, filter } = require('alt-lodash');    //  cjs ( c
 - setWith ✔️
 - toPairs ✔️
 - toPairsIn ✔️
-- transform ( 🔜 - Work in progress - PRs most welcome ) [Issue - #51](https://github.com/PunitSoniME/alt-lodash/issues/51)
+- transform ✔️
 - unset ✔️
 - update ✔️
 - updateWith ✔️
