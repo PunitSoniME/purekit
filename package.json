@@ -1,6 +1,6 @@
 {
   "name": "alt-lodash",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This library can be used as alternate of lodash",
   "author": "Punit Soni <punit.soni33@gmail.com> (https://punit-soni.web.app)",
   "license": "MIT",
@@ -27,8 +27,7 @@
     "lint-fix": "dts lint --fix",
     "prepare": "dts build",
     "size": "size-limit",
-    "analyze": "size-limit --why",
-    "prerelease": "yarn run lint && npm version prerelease && git push"
+    "analyze": "size-limit --why"
   },
   "repository": {
     "type": "git",
