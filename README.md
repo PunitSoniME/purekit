@@ -539,7 +539,7 @@ const { concat, chunk, forEach, filter } = require('alt-lodash');    //  cjs ( c
     // => [1, 2, 3, 100, 4, 5]
     ```
 
-- thru ( 🔜 - Work in progress - PRs most welcome )
+- thru ✔️
 - prototype[Symbol.iterator] ( 🔜 - Work in progress - PRs most welcome )
 - prototype.at ( 🔜 - Work in progress - PRs most welcome )
 - prototype.chain ( 🔜 - Work in progress - PRs most welcome )

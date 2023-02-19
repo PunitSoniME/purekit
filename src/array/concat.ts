@@ -5,10 +5,11 @@
 // }
 
 /**
+ * Concatenates multiple arrays into a single array.
  *
- * @param array
- * @param restArray
- * @returns
+ * @param {Array} array - The first array to concatenate.
+ * @param {...Array} restArray - Additional arrays to concatenate.
+ * @returns {Array} A new array that is the result of concatenating all of the input arrays.
  */
 const concat = <T>(array: T[], ...restArray: any[]): T[] => {
 	let newArray: T[] = [];
