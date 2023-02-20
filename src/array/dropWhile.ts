@@ -3,10 +3,12 @@ import predicateType from '../helpers/predicateType';
 import identity from '../util/identity';
 
 /**
+ * Creates a new array with elements dropped until predicate returns falsey.
  *
- * @param array
- * @param predicate
- * @returns
+ * @template T
+ * @param {T[]} array - The input array.
+ * @param {predicateType<T>} [predicate=identity] - The function invoked per iteration.
+ * @returns {T[]} - Returns the slice of `array`.
  */
 const dropWhile = <T>(
 	array: T[],

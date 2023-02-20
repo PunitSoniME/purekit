@@ -1,19 +1,19 @@
 import pullAt from './pullAt';
 
 /**
+ * Removes all given elements from the array using a custom comparator function.
  *
- * @param array
- * @param elementsToRemove
- * @param comparator
- * @returns
+ * @template T
+ * @param {T[]} array - The input array.
+ * @param {T[]} elementsToRemove - The elements to be removed from the array.
+ * @param {Function} comparator - The comparator function to be used for comparison.
+ * @returns {T[]} - The modified array.
  *
  * @example
  *
- * var array = [{ 'x': 1, 'y': 2 }, { 'x': 3, 'y': 4 }, { 'x': 5, 'y': 6 }];
- *
- * pullAllWith(array, [{ 'x': 3, 'y': 4 }], isEqual);
- * console.log(array);
- * // => [{ 'x': 1, 'y': 2 }, { 'x': 5, 'y': 6 }]
+ * const arr = [{ id: 1, name: 'John' }, { id: 2, name: 'Mary' }, { id: 3, name: 'Peter' }];
+ * const result = pullAllWith(arr, [{ id: 1, name: 'John' }, { id: 3, name: 'Peter' }], (a, b) => a.id === b.id);
+ * console.log(result); // [{ id: 2, name: 'Mary' }]
  */
 const pullAllWith = <T>(
 	array: T[],

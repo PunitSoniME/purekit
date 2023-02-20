@@ -1,10 +1,13 @@
 import identity from '../util/identity';
 
 /**
+ * Returns an array containing the elements that are present in all of the input arrays,
+ * using a specified iteratee function to determine the comparison key for each element.
  *
- * @param array
- * @param args
- * @returns
+ * @template T
+ * @param {T[]} array - The input array.
+ * @param {...any} args - The other input arrays and the iteratee function.
+ * @returns {T[]} An array containing the elements that are present in all of the input arrays.
  */
 const intersectionBy = <T>(array: T[], ...args: any[]): T[] => {
 	let iteratee = args ? args.pop() : [identity];

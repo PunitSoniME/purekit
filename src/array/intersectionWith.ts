@@ -1,10 +1,13 @@
 import IIntersectionWith from './interface/IIntersectionWith';
 
 /**
+ * Returns an array containing all the elements that are present in all input arrays.
+ * Uses a comparator function to determine equality between values.
  *
- * @param arrays
- * @param args
- * @returns
+ * @param {Array} array - The input array.
+ * @param {Array} args - Additional arrays to compare against.
+ * @param {Function} comparator - A comparator function used to determine equality between values.
+ * @returns {Array} - An array of values present in all input arrays.
  */
 const intersectionWith: IIntersectionWith = <T>(
 	array: T[],

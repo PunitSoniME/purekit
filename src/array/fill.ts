@@ -1,10 +1,12 @@
 /**
+ * Fills elements of `array` with `value` from `start` up to, but not including, `end`.
  *
- * @param array
- * @param value
- * @param start
- * @param end
- * @returns
+ * @template T
+ * @param {T[]} array - The array to modify.
+ * @param {any} value - The value to fill `array` with.
+ * @param {number} [start=0] - The start position.
+ * @param {number} [end=array.length] - The end position.
+ * @returns {T[]} Returns `array`.
  */
 const fill = <T>(
 	array: T[],

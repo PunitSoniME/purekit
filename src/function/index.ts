@@ -16,6 +16,7 @@ import partialRight from './partialRight';
 import rearg from './rearg';
 import rest from './rest';
 import spread from './spread';
+// import throttle from './_throttle';
 import unary from './unary';
 import wrap from './wrap';
 
@@ -38,6 +39,7 @@ export {
 	rearg,
 	rest,
 	spread,
+	// throttle,
 	unary,
 	wrap,
 };
