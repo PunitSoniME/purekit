@@ -4,7 +4,7 @@ import identity from '../util/identity';
 
 /**
  * This function is similar to `findIndex` except that it iterates over elements of the array from right to left.
- * 
+ *
  * @template T
  * @param {T[]} array - The array to iterate over.
  * @param {predicateType<T>} [predicate=identity] - The function invoked per iteration.

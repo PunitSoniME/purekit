@@ -1,6 +1,6 @@
 /**
  * Creates a new array with the last `n` elements of `array`.
- * 
+ *
  * @param {Array} array - The input array.
  * @param {number} [length=1] - The number of elements to take.
  * @returns {Array} Returns the new array.

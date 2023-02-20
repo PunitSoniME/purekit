@@ -6,7 +6,7 @@ import concat from './concat';
  * @param {T[]} array - The input array.
  * @param {...T[][]} restArray - The rest of the arrays to be compared.
  * @returns {T[]} - An array of unique values from the input arrays.
- * 
+ *
  * @example
  * xor([2, 1], [2, 3]) // returns [1, 3]
  * xor(['a', 'b', 'c'], ['b', 'd'], ['d', 'e']) // returns ['a', 'c', 'e']

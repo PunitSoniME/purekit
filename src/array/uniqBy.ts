@@ -3,12 +3,12 @@ import identity from '../util/identity';
 
 /**
  * Creates a new array of unique values, based on the result of the given iteratee function.
- * 
+ *
  * @template T
  * @param {T[]} array - The input array.
  * @param {predicateType<T>} [iteratee=identity] - The function used to get the unique value for each element.
  * @returns {T[]} - The new array of unique values.
- * 
+ *
  * @example
  * const array = [{ id: 1, name: 'John' }, { id: 2, name: 'Jane' }, { id: 1, name: 'Jim' }];
  * const result = uniqBy(array, 'id');

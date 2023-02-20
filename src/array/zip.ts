@@ -1,6 +1,6 @@
 /**
  * Zips together arrays into an array of arrays, with each array element at the same index.
- * 
+ *
  * @template T
  * @param {T[]} array - The first array to zip.
  * @param {...T[][]} args - The other arrays to zip.

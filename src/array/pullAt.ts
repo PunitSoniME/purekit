@@ -2,12 +2,12 @@ import nth from './nth';
 
 /**
  * Removes elements from an array corresponding to the specified indexes, and returns an array of removed elements.
- * 
+ *
  * @template T
  * @param {T[]} array - The array to modify.
  * @param {number|number[]} indexes - The indexes of the elements to remove from the array.
  * @returns {T[]} An array of removed elements.
- * 
+ *
  * @example
  * const arr = [1, 2, 3, 4, 5];
  * const removed = pullAt(arr, [1, 3]);

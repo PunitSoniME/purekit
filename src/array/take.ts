@@ -8,11 +8,10 @@
  *
  * @example
  * const numbers = [1, 2, 3, 4, 5];
- * 
+ *
  * take(numbers, 3); // => [1, 2, 3]
  * take(numbers, 1); // => [1]
  * take(numbers);    // => [1]
  */
-const take = <T>(array: T[], n: number = 1): T[] =>
-  array.slice(0, n);
+const take = <T>(array: T[], n: number = 1): T[] => array.slice(0, n);
 export default take;

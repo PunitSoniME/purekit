@@ -10,13 +10,13 @@ import concat from './concat';
  * @param {...any} args - The arrays to inspect.
  * @param {predicateType<T>} [iteratee=identity] - The iteratee invoked per element.
  * @returns {T[]} - Returns the new array of filtered values.
- * 
+ *
  * @example
- * 
+ *
  * const arr1 = [1, 2, 3, 4];
  * const arr2 = [2, 4, 6];
  * const arr3 = [1, 2, 5];
- * 
+ *
  * const result = xorBy(arr1, arr2, arr3, (n) => n % 2);
  * console.log(result); // Output: [3, 6]
  */
