@@ -1,10 +1,23 @@
 import IIntersectionWith from './interface/IIntersectionWith';
 
 /**
+ * This method is like `intersection` except that it accepts `comparator` which is invoked to compare elements of `array` to `values`.
+ * The order and references of result values are determined by the first array.
  *
- * @param arrays
- * @param args
- * @returns
+ * @since 1.0.0
+ *
+ * @param {T[]} array The array to inspect.
+ * @param {...any} args The arrays of values to inspect.
+ * @returns {T[]} Returns the new array of intersecting values.
+ *
+ * @example
+ *
+ * intersectionWith(
+ *   [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }],
+ *   [{ 'x': 1, 'y': 1 }, { 'x': 1, 'y': 2 }],
+ *   (a, b) => a.x === b.x && a.y === b.y
+ * );
+ * // => [{ 'x': 1, 'y': 2 }]
  */
 const intersectionWith: IIntersectionWith = <T>(
 	array: T[],

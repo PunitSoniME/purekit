@@ -1,10 +1,15 @@
 import concat from './concat';
 
 /**
+ * Returns an array of unique values that are included only in one of the given arrays.
+ * @template T
+ * @param {T[]} array - The input array.
+ * @param {...T[][]} restArray - The rest of the arrays to be compared.
+ * @returns {T[]} - An array of unique values from the input arrays.
  *
- * @param array
- * @param restArray
- * @returns
+ * @example
+ * xor([2, 1], [2, 3]) // returns [1, 3]
+ * xor(['a', 'b', 'c'], ['b', 'd'], ['d', 'e']) // returns ['a', 'c', 'e']
  */
 const xor = <T>(array: T[], ...restArray: T[][]): T[] => {
 	const flatArray = concat(array, ...restArray);

@@ -3,11 +3,25 @@ import predicateType from '../helpers/predicateType';
 import identity from '../util/identity';
 
 /**
+ * Creates a slice of the `array` with elements dropped from the end.
+ * Elements are dropped until `predicate` returns falsey.
  *
- * @param array
- * @param predicate
- * @returns
+ * @since 1.0.0
+ *
+ * @template T
+ * @param {T[]} array - The array to inspect.
+ * @param {predicateType<T>} [predicate=identity] - The function invoked per iteration.
+ * @returns {T[]} Returns the slice of `array`.
+ *
+ * @example
+ *
+ * dropRightWhile([1, 2, 3, 4], n => n > 2);
+ * // => [1, 2]
+ *
+ * dropRightWhile([{ 'user': 'barney', 'active': true }, { 'user': 'fred', 'active': false }, { 'user': 'pebbles', 'active': false }], o => !o.active);
+ * // => [{ 'user': 'barney', 'active': true }]
  */
+
 const dropRightWhile = <T>(
 	array: T[],
 	predicate: predicateType<T> = identity

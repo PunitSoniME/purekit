@@ -1,10 +1,16 @@
 import pullAll from './pullAll';
 
 /**
+ * Removes all occurrences of specified values from an array.
+ * @template T
+ * @param {T[]} array - The array to modify.
+ * @param {...T} elementsToRemove - The values to remove.
+ * @returns {T[]} - The modified array with values removed.
  *
- * @param array
- * @param elementsToRemove
- * @returns
+ * @example
+ * const arr = ['a', 'b', 'c', 'a', 'b', 'c'];
+ * const result = pull(arr, 'a', 'c');
+ * console.log(result); // Output: ['b', 'b']
  */
 const pull = <T>(array: T[], ...elementsToRemove: T[]): T[] =>
 	pullAll(array, elementsToRemove);

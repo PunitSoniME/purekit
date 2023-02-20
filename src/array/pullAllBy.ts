@@ -4,19 +4,20 @@ import identity from '../util/identity';
 import pullAt from './pullAt';
 
 /**
+ * Removes all given elements from the array using a custom iteratee function
  *
- * @param array
- * @param elementsToRemove
- * @param iteratee
- * @returns
+ * @template T
+ * @param {T[]} array - The source array
+ * @param {T[]} elementsToRemove - The array of elements to be removed
+ * @param {Function} [iteratee=identity] - The function invoked per iteration
+ * @returns {T[]} The new array with removed elements
  *
  * @example
  *
- * var array = [{ 'x': 1 }, { 'x': 2 }, { 'x': 3 }, { 'x': 1 }];
+ * const users = [{ name: 'John', age: 30 }, { name: 'Jane', age: 25 }, { name: 'Bob', age: 40 }];
+ * const removedUsers = pullAllBy(users, [{ name: 'John' }, { name: 'Jane' }], 'name');
  *
- * pullAllBy(array, [{ 'x': 1 }, { 'x': 3 }], 'x');
- * console.log(array);
- * // => [{ 'x': 2 }]
+ * console.log(removedUsers); // [{ name: 'Bob', age: 40 }]
  */
 const pullAllBy = <T>(
 	array: T[],

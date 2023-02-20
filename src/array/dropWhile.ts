@@ -3,10 +3,19 @@ import predicateType from '../helpers/predicateType';
 import identity from '../util/identity';
 
 /**
+ * Creates a new array with elements dropped until the predicate returns false.
  *
- * @param array
- * @param predicate
- * @returns
+ * @since 1.0.0
+ *
+ * @template T
+ * @param {T[]} array - The input array.
+ * @param {predicateType<T>} [predicate=identity] - The function invoked per iteration.
+ * @returns {T[]} Returns the slice of the array.
+ *
+ * @example
+ * dropWhile([1, 2, 3], n => n < 3); // Returns [3]
+ *
+ * dropWhile(['foo', 'bar', 'baz'], str => str.startsWith('f')); // Returns ['bar', 'baz']
  */
 const dropWhile = <T>(
 	array: T[],

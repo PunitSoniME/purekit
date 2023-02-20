@@ -1,12 +1,21 @@
 import applyArrayFn from '../helpers/applyArrayFn';
+import predicateType from '../helpers/predicateType';
+import identity from '../util/identity';
 
 /**
- * This method creates a shallow copy of a portion of a given array/object, filtered down to just the elements from the given array/object that pass the test implemented by the provided function.
- * @param collection An array/object to iterate.
- * @param iteratee A function to execute for each element in the array/object. It should return a truthy to keep the element in the resulting array/object, and a falsy value otherwise.
- * @returns A shallow copy of a portion of the given array/object, filtered down to just the elements from the given array/object that pass the test implemented by the provided function. If no elements pass the test, an empty array/object will be returned.
+ * Filters the elements of a collection based on the truth value of a provided function.
+ *
+ * @template T
+ * @param {T} collection - The collection to iterate over.
+ * @param {predicateType<T>} [iteratee=identity] - The function invoked per iteration.
+ * @returns {T} - The new filtered collection.
+ *
+ * @example
+ * const nums = [1, 2, 3, 4, 5];
+ * const isEven = (num) => num % 2 === 0;
+ * const filteredNums = filter(nums, isEven); // [2, 4]
  */
-const filter = <T>(collection: T, iteratee: any): T => {
+const filter = <T>(collection: T, iteratee: predicateType<T> = identity): T => {
 	return applyArrayFn({
 		collection: collection,
 		fnName: 'filter',

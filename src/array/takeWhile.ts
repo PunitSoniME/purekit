@@ -3,10 +3,20 @@ import predicateType from '../helpers/predicateType';
 import identity from '../util/identity';
 
 /**
+ * Creates a new array containing the elements of the input array, up until the predicate returns false.
  *
- * @param array
- * @param predicate
- * @returns
+ * @template T
+ * @param {T[]} array - The input array.
+ * @param {predicateType<T>} [predicate=identity] - The predicate function to be called on each element.
+ * @returns {T[]} - The new array of elements that passed the predicate, until the first that returned false.
+ *
+ * @example
+ *
+ * takeWhile([1, 2, 3, 4], n => n < 3);
+ * // Returns: [1, 2]
+ *
+ * takeWhile(['cat', 'dog', 'emu'], animal => animal.length <= 3);
+ * // Returns: ['cat', 'dog']
  */
 const takeWhile = <T>(
 	array: T[],

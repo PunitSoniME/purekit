@@ -4,10 +4,21 @@ import identity from '../util/identity';
 import unzip from './unzip';
 
 /**
+ * This method is like `unzip` except that it accepts `iteratee` to specify how regrouped values should be combined.
  *
- * @param array
- * @param predicate
- * @returns
+ * @template T
+ * @param {any[][]} array - The array of grouped elements to process.
+ * @param {predicateType<T>} [predicate=identity] - The iteratee to combine regrouped values.
+ * @returns {any[]} - Returns the new array of regrouped elements.
+ *
+ * @example
+ * const zipped = zip(['a', 'b'], [1, 2], [true, false]);
+ * // => [['a', 1, true], ['b', 2, false]]
+ *
+ * const unzipped = unzipWith(zipped, (str: string, num: number, bool: boolean) => {
+ *   return `${str}${num}${bool}`;
+ * });
+ * // => ['a1true', 'b2false']
  */
 const unzipWith = <T>(
 	array: any[][],
