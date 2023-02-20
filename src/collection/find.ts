@@ -29,7 +29,7 @@ import identity from '../util/identity';
  * // => { 'user': 'barney', 'age': 36, 'active': true }
  */
 const find = <T>(
-	collection: T,
+	collection: T[],
 	iteratee: predicateType<T> = identity,
 	fromIndex: number = 0
 ): Object => {

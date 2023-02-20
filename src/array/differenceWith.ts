@@ -1,14 +1,26 @@
 import IDifferenceWith from './interface/IDifferenceWith';
 
 /**
- * Creates an array of `array` values not included in the other given arrays using a comparator function.
+ * Returns the difference between the first array and all other arguments using a provided comparator function
  *
- * @template T The type of the elements of `array`.
+ * @since 1.0.0
  *
- * @param {T[]} array The array to inspect.
- * @param {...T[][]} restArray The values to exclude.
- * @param {Function} comparator The comparator invoked per element.
- * @returns {T[]} Returns the new array of filtered values.
+ * @template T
+ *
+ * @param {T[]} array - The array to process
+ * @param {...any[]} args - The arrays of values to exclude
+ * @param {Function} comparator - The function invoked per element to compare values
+ * @returns {T[]} Returns a new array of filtered values
+ *
+ * @example
+ *
+ * const a = [1, 2, 3, 4];
+ * const b = [3, 4];
+ *
+ * const result = differenceWith(a, b, (a, b) => a === b);
+ *
+ * console.log(result);
+ * // expected output: [1, 2]
  */
 const differenceWith: IDifferenceWith = <T>(array: T[], ...args: any): T[] => {
 	let comparator = args.pop();

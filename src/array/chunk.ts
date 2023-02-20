@@ -1,11 +1,24 @@
 /**
- * Creates an array of elements split into groups the length of `chunkSize`. If `array` can't be split evenly, the final chunk will be the remaining elements.
+ * Creates an array of elements split into groups the length of chunkSize.
  *
- * @template T The type of the elements in the array.
- * @param {T[]} array The array to process.
- * @param {number} [chunkSize=1] The size of each chunk.
- * @param {T[][]} [cache=[]] An array to store the resulting chunks.
- * @returns {T[][]} Returns the new array of chunks.
+ * @since 1.0.0
+ *
+ * @template T
+ * @param {T[]} array - The array to process.
+ * @param {number} [chunkSize=1] - The length of each chunk.
+ * @param {T[][]} [cache=[]] - The array to store the chunked elements.
+ * @returns {T[][]} - The new array of chunks.
+ *
+ * @example
+ *
+ * chunk([1, 2, 3, 4, 5], 2);
+ * // returns [[1, 2], [3, 4], [5]]
+ *
+ * chunk([1, 2, 3, 4, 5], 3);
+ * // returns [[1, 2, 3], [4, 5]]
+ *
+ * chunk([1, 2, 3, 4, 5], 0);
+ * // returns []
  */
 const chunk = <T>(
 	array: T[],

@@ -1,13 +1,23 @@
 import IIntersectionWith from './interface/IIntersectionWith';
 
 /**
- * Returns an array containing all the elements that are present in all input arrays.
- * Uses a comparator function to determine equality between values.
+ * This method is like `intersection` except that it accepts `comparator` which is invoked to compare elements of `array` to `values`.
+ * The order and references of result values are determined by the first array.
  *
- * @param {Array} array - The input array.
- * @param {Array} args - Additional arrays to compare against.
- * @param {Function} comparator - A comparator function used to determine equality between values.
- * @returns {Array} - An array of values present in all input arrays.
+ * @since 1.0.0
+ *
+ * @param {T[]} array The array to inspect.
+ * @param {...any} args The arrays of values to inspect.
+ * @returns {T[]} Returns the new array of intersecting values.
+ *
+ * @example
+ *
+ * intersectionWith(
+ *   [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }],
+ *   [{ 'x': 1, 'y': 1 }, { 'x': 1, 'y': 2 }],
+ *   (a, b) => a.x === b.x && a.y === b.y
+ * );
+ * // => [{ 'x': 1, 'y': 2 }]
  */
 const intersectionWith: IIntersectionWith = <T>(
 	array: T[],
