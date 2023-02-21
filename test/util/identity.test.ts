@@ -1,5 +1,5 @@
 import _identity from 'lodash/identity';
-import { identity } from '../../src/util';
+import identity from '../../src/util/identity';
 
 describe('Util', () => {
 	describe('identity', () => {

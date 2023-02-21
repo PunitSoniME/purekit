@@ -1,8 +1,18 @@
 /**
+ * Creates a function that invokes `fn` with its arguments transformed.
  *
- * @param times
- * @param fn
- * @returns
+ * @since 1.0.0
+ *
+ * @param {Function} fn - The function to wrap.
+ * @param {number} [arity=fn.length] - The arity of `fn`.
+ * @returns {Function} Returns the new wrapped function.
+ *
+ * @example
+ *
+ * const parseIntAry = ary(parseInt, 1);
+ *
+ * ['6', '8', '10'].map(parseIntAry);
+ * // => [6, 8, 10]
  */
 const before = (times: number, fn: Function) => {
 	let counter = 0;

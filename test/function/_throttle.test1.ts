@@ -1,7 +1,7 @@
 // import _throttle from 'lodash/throttle';
 // import _identity from 'lodash/identity';
 // import { throttle } from '../../src/function';
-// import { identity } from '../../src/util';
+// import identity from '../../src/util/identity';
 // import assert from 'assert';
 
 // describe('Function', () => {

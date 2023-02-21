@@ -1,4 +1,4 @@
-import { identity } from '../util';
+import identity from '../util/identity';
 
 /**
  * Transforms a collection by iterating over its elements and applying a transformation function.

@@ -1,9 +1,26 @@
 /**
+ * Creates a curried function from the original function.
  *
- * @param func
- * @returns
+ * @since 1.0.0
+ *
+ * @param {Function} func - The function to curry.
+ *
+ * @returns {Function} Returns the curried function.
+ *
+ * @example
+ *
+ * const sum = (a, b, c) => a + b + c;
+ *
+ * const curriedSum = curry(sum);
+ *
+ * curriedSum(1)(2)(3); // 6
+ *
+ * const curriedSum1 = curriedSum(1);
+ * const curriedSum12 = curriedSum1(2);
+ *
+ * curriedSum12(3); // 6
  */
-const curry = (func: any) => {
+const curry = (func: Function) => {
 	// define the number of expected arguments
 	const expectedArgs = func.length;
 	const curried = (...args: any) => {
