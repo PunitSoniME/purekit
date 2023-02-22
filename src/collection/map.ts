@@ -1,13 +1,30 @@
 import createPredicate from '../helpers/createPredicate';
+import predicateType from '../helpers/predicateType';
+import identity from '../util/identity';
 
 /**
- * Creates an array of values by running each element in collection thru iteratee. The iteratee is invoked with three arguments
-(value, index|key, collection).
- * @param collection Array | Object
- * @param iteratee 
- * @returns An array
+ * Creates an array or object of values by running each element in `collection` through `iteratee`.
+ *
+ * @since 1.0.0
+ *
+ * @template T
+ * @param {Array<T> | Object} collection - The collection to iterate over.
+ * @param {predicateType<T>} [iteratee=identity] - The function invoked per iteration.
+ *
+ * @returns {T} Returns the new mapped array or object.
+ *
+ * @example
+ *
+ * map([1, 2, 3], n => n * 2);
+ * // => [2, 4, 6]
+ *
+ * map({a: 1, b: 2, c: 3}, n => n * 2);
+ * // => {a: 2, b: 4, c: 6}
  */
-const map = <T>(collection: T, iteratee: any): T => {
+const map = <T>(
+	collection: Array<T> | Object,
+	iteratee: predicateType<T> = identity
+): T => {
 	const updatedIteratee: any = createPredicate(iteratee);
 
 	if (Array.isArray(collection)) {

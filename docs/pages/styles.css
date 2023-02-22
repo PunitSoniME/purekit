@@ -1,0 +1,52 @@
+/* Below is overriding of tailwindcss */
+
+pre[class*="language-"] {
+    border-radius: 0px !important;
+}
+
+.prose :where(hr):not(:where([class~="not-prose"] *)) {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Above is overriding of tailwindcss */
+
+.md-section>h3 {
+    margin-top: 0.6rem !important;
+}
+
+.scroll-top {
+    scroll-margin-top: 0.3rem;
+}
+
+.custom-grid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+.sidebar {
+    max-height: calc(100vh - 75px);
+    overflow-y: scroll;
+}
+
+.article-custom-scroll {
+    max-height: calc(100vh - 82px);
+    overflow-y: scroll;
+}
+
+@media screen and (max-width: 845px) {
+    .custom-grid {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+    }
+}
+
+@media screen and (max-width: 745px) {
+    .custom-grid {
+        display: block;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}

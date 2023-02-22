@@ -4,6 +4,8 @@ import identity from '../util/identity';
 /**
  * Applies an iteratee function to each element of an array-like object, starting from the end of the collection.
  *
+ * @since 1.0.0
+ *
  * @template T
  * @param {T} collection - The collection to iterate over.
  * @param {Function} [iteratee=identity] - The function invoked per iteration.

@@ -1,11 +1,29 @@
 import get from '../object/get';
 
 /**
+ * Invokes the method at `path` of each element in the `collection`.
+ * Returns an array of the results of each invoked method.
  *
- * @param collection
- * @param path
- * @param args
- * @returns
+ * @since 1.0.0
+ *
+ * @param {Array|Object} collection - The collection to iterate over.
+ * @param {Array|string|Function} path - The path of the method to invoke or a function that will be invoked for each element.
+ * @param {...*} [args] - The arguments to invoke the method with.
+ *
+ * @returns {Array} - Returns the array of results.
+ *
+ * @example
+ *
+ * const users = [
+ *   { 'user': 'barney', 'age': 36 },
+ *   { 'user': 'fred', 'age': 40 }
+ * ];
+ *
+ * invokeMap(users, 'user'); // => ['barney', 'fred']
+ *
+ * invokeMap(users, (o) => o.user + ' is ' + o.age); // => ['barney is 36', 'fred is 40']
+ *
+ * invokeMap(users, ['user', 'age']); // => [['barney', 36], ['fred', 40]]
  */
 const invokeMap = <T>(
 	collection: T,

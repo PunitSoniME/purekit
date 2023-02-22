@@ -28,12 +28,32 @@ const sort = <T>(data: T, orderBy: any[]) => {
 };
 
 /**
+ * Creates an array of elements, sorted in ascending or descending order by one or more properties.
  *
- * @param collection
- * @param iteratee
- * @param orders
- * @returns
+ * @since 1.0.0
+ *
+ * @template T
+ * @param {T} collection - The collection to iterate over.
+ * @param {string | string[]} iteratee - The iteratee to sort by.
+ * @param {string | string[]} [orders='asc'] - The sort orders for `iteratee`.
+ * @returns {T} - Returns the new sorted array.
+ *
+ * @example
+ *
+ * const users = [
+ *   { 'user': 'fred', 'age': 48 },
+ *   { 'user': 'barney', 'age': 34 },
+ *   { 'user': 'fred', 'age': 40 },
+ *   { 'user': 'barney', 'age': 36 }
+ * ];
+ *
+ * orderBy(users, 'user', 'asc');
+ * // => [{ 'user': 'barney', 'age': 34 }, { 'user': 'barney', 'age': 36 }, { 'user': 'fred', 'age': 48 }, { 'user': 'fred', 'age': 40 }]
+ *
+ * orderBy(users, ['user', 'age'], ['asc', 'desc']);
+ * // => [{ 'user': 'barney', 'age': 36 }, { 'user': 'barney', 'age': 34 }, { 'user': 'fred', 'age': 48 }, { 'user': 'fred', 'age': 40 }]
  */
+
 const orderBy = <T>(
 	collection: T,
 	iteratee: string | string[],

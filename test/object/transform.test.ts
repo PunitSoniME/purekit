@@ -6,7 +6,7 @@ describe('Object', () => {
 		it('transform([2, 3, 4], fn, [])', () => {
 			const fn = (result: number[], n: number) => {
 				result.push((n *= n));
-				return n % 2 == 0;
+				return n % 2 === 0;
 			};
 
 			const res = transform([2, 3, 4], fn, []);

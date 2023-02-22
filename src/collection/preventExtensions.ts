@@ -1,6 +1,8 @@
 /**
  * This method prevents new properties from ever being added to an object/array
+ *
  * @param collection The collection which should be made non-extensible.
+ *
  * @returns The collection being made non-extensible.
  *
  * @example

@@ -1,5 +1,8 @@
 /**
  * A frozen object can no longer be changed: new properties cannot be added, existing properties cannot be removed, their enumerability, configurability, writability, or value cannot be changed, and the object's prototype cannot be re-assigned.
+ *
+ * @since 1.0.0
+ *
  * @param collection The collection to freeze.
  * @returns The collection that was passed to the function.
  *
