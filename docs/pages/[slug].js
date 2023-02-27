@@ -30,13 +30,12 @@ export async function getStaticProps() {
   for await (let doc of allDocs) {
     const splittedData = doc.split('/');
     const methodDoc = getDocBySlug(splittedData[1], splittedData[0]);
-    console.log('methodDoc', methodDoc);
     // content.push(`<div class="px-2 pb-0 ${i % 2 === 0 ? 'bg-white' : 'bg-slate-100 border-b-2 border-slate-100'}">` + (splittedData[1] !== 'index' ? componentHeader(splittedData[1]) : ' ') + await markdownToHtml(methodDoc.content || '') + '</div>');
 
     content.push(splittedData[1] !== 'index' ? componentHeader(splittedData[1]) : ' ');
 
     if (methodDoc.meta.definition) {
-      content.push(`<div class='rounded-l-md border-violet-200 border-l-8 bg-violet-50 border-l-violet-400 p-2 md:p-4 text-violet-700'>${methodDoc.meta.definition}</div>`);
+      content.push(`<div class='rounded-l-md border-violet-200 border-l-8 bg-violet-50 border-l-violet-400 tracking-wide font-semibold p-4 text-violet-700'>${methodDoc.meta.definition}</div>`);
       content.push(await markdownToHtml("> <small>" + methodDoc.meta.description + "</small>" || ''));
     }
 
