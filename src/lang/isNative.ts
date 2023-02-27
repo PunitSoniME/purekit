@@ -1,8 +1,23 @@
 /**
- * Checks if value is a pristine native function.
- * @param value The value to check.
- * @returns Returns true if value is a native function, else false.
+ * Checks if a value is a native function.
+ *
+ * @since 1.0.0
+ *
+ * @param {*} value - The value to check.
+ * @returns {boolean} - Returns `true` if `value` is a native function, else `false`.
+ *
+ * @example
+ *
+ * isNative(alert);
+ * // => true
+ *
+ * isNative(Math.max);
+ * // => true
+ *
+ * isNative(debounce);
+ * // => false
  */
+
 const isNative = (value: any): boolean =>
 	!!value &&
 	(typeof value).toLowerCase() === 'function' &&

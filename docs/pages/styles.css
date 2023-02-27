@@ -34,6 +34,15 @@ pre[class*="language-"] {
     overflow-y: scroll;
 }
 
+.prose :where(blockquote):not(:where([class~="not-prose"] *)) {
+    font-style: normal;
+}
+
+.prose :where(blockquote p:first-of-type):not(:where([class~="not-prose"] *))::before,
+.prose :where(blockquote p:first-of-type):not(:where([class~="not-prose"] *))::after {
+    content: '';
+}
+
 @media screen and (max-width: 845px) {
     .custom-grid {
         display: grid;

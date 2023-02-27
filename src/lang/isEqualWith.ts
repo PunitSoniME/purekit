@@ -1,11 +1,35 @@
 /**
- * Performs a deep comparison with customizer between two values to determine if they are equivalent.
- * @param value The value to check
- * @param other The value to compare
- * @param customizer Custom function to compare values
- * @returns true if both arguments are true
+ * Performs a deep comparison between two values to determine if they are equivalent,
+ * using a custom function to compare values.
+ *
+ * @since 1.0.0
+ *
+ * @param {*} value The value to compare.
+ * @param {*} other The other value to compare.
+ * @param {Function} customizer The function to customize value comparisons.
+ * @returns {boolean} Returns `true` if the values are equivalent, else `false`.
+ * @example
+ *
+ * function compareFunc(objValue, othValue) {
+ *   if (Array.isArray(objValue) && Array.isArray(othValue)) {
+ *     return objValue.length === othValue.length;
+ *   }
+ * }
+ *
+ * const object = { 'a': [{ 'b': 2 }, { 'd': 4 }] };
+ * const other = { 'a': [{ 'b': 2 }, { 'd': 4 }] };
+ *
+ * isEqualWith(object, other, compareFunc);
+ * // => true
+ *
+ * isEqualWith(object, other, (objValue, othValue) => {
+ *   if (Array.isArray(objValue) && Array.isArray(othValue)) {
+ *     return objValue.length === othValue.length;
+ *   }
+ * });
+ * // => true
+ *
  */
-
 const isEqualWith = (value: any, other: any, customizer: Function): boolean => {
 	/* Checking if any arguments are null */
 	if (value === null || other === null) return false;

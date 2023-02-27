@@ -1,7 +1,16 @@
 /**
+ * Checks if a value is a Node object.
  *
- * @param value
- * @returns Returns true if passed value is a valid dom node
+ * @since 1.0.0
+ *
+ * @param {*} value - The value to check.
+ * @returns {boolean} - Returns `true` if the value is a Node object, else `false`.
+ *
+ * @example
+ *
+ * isNode(document.body); // true
+ * isNode(document.createTextNode('Hello')); // true
+ * isNode({}); // false
  */
 const isNode = (value: any): boolean =>
 	typeof Node === 'object'

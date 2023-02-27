@@ -1,7 +1,20 @@
 /**
- * Checks if value is a valid array-like length.
- * @param value The value to check
- * @returns Returns true if value is a valid length, else false.
+ * Checks if a value is a valid array-like length.
+ *
+ * @since 1.0.0
+ *
+ * @param {*} value - The value to check.
+ * @returns {boolean} Returns `true` if the value is a valid length, else `false`.
+ *
+ * @example
+ *
+ * isLength(3); // => true
+ *
+ * isLength(Number.MIN_VALUE); // => false
+ *
+ * isLength(Infinity); // => false
+ *
+ * isLength('3'); // => false
  */
 const isLength = (value: any): boolean =>
 	typeof value === 'number' &&
