@@ -1,7 +1,17 @@
 /**
+ * Determines whether the given value is a Node.js Buffer object.
  *
- * @param value The value to check
- * @returns true if passed value is a buffer typed value
+ * @since 1.0.0
+ *
+ * @param {*} value - The value to check.
+ * @returns {boolean} - `true` if the value is a Node.js Buffer object, `false` otherwise.
+ *
+ * @example
+ * const buf = Buffer.from('hello', 'utf8');
+ * isBuffer(buf); // returns true
+ *
+ * const arr = [1, 2, 3];
+ * isBuffer(arr); // returns false
  */
 const isBuffer = (value: any): boolean => Buffer.isBuffer(value);
 export default isBuffer;

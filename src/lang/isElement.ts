@@ -1,7 +1,14 @@
 /**
+ * Determines whether the given value is a DOM element.
  *
- * @param value The value to check
- * @returns true if passed value is a valid dom element
+ * @since 1.0.0
+ *
+ * @param {*} value - The value to check.
+ * @returns {boolean} - `true` if the value is a DOM element, `false` otherwise.
+ *
+ * @example
+ * isElement(document.createElement('div')); // returns true
+ * isElement(document.createTextNode('hello')); // returns false
  */
 const isElement = (value: any): boolean => {
 	return typeof HTMLElement === 'object'

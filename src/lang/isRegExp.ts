@@ -1,7 +1,13 @@
 /**
- * Checks if value is classified as a RegExp object.
- * @param value The value to check
- * @returns Returns true if value is a regexp, else false.
+ * Checks if a given value is a regular expression.
+ *
+ * @since 1.0.0
+ *
+ * @param {any} value - The value to check.
+ * @returns {boolean} Returns `true` if `value` is a regular expression, else `false`.
+ *
+ * @example
+ * isRegExp(/ab+c/i); // => true
  */
 const isRegExp = (value: any): boolean => value instanceof RegExp;
 export default isRegExp;

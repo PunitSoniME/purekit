@@ -1,7 +1,16 @@
 /**
+ * Checks if a value is an error object.
  *
- * @param value The value to check
- * @returns true if passed value is a is error or not
+ * @since 1.0.0
+ *
+ * @param {*} value - The value to check.
+ * @returns {boolean} - Returns `true` if the value is an error object, else `false`.
+ *
+ * @example
+ *
+ * isError(new Error('Something went wrong')) // => true
+ *
+ * isError('Error') // => false
  */
-const isNode = (value: any): boolean => value instanceof Error;
-export default isNode;
+const isError = (value: any): boolean => value instanceof Error;
+export default isError;

@@ -1,11 +1,8 @@
 ---
 title: 'difference'
-description: 'difference method'
+definition: 'difference(array, [values])'
+description: 'Creates an array of unique values that are included in the first given array and not included in the rest of the given arrays.'
 ---
-
-```ts
-difference(array, [values])
-```
 
 #### Arguments
 

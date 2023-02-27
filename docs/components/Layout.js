@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import { Dialog, Disclosure, Menu, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import { FunnelIcon, MinusIcon, PlusIcon } from '@heroicons/react/20/solid'
-import routes from './../utils/routes';
+import routes from '../utils/routes';
 
 export default function Layout({ children, meta: pageMeta }) {
   const router = useRouter();
@@ -229,7 +229,7 @@ export default function Layout({ children, meta: pageMeta }) {
                   {/* <div className="h-96 rounded-lg border-4 border-dashed border-gray-200 lg:h-full" /> */}
 
                   <article
-                    className="prose lg:prose-xl max-w-none article-custom-scroll px-2 py-2 scroll-smooth"
+                    className="prose lg:prose-xl max-w-none article-custom-scroll py-2 scroll-smooth"
                     dangerouslySetInnerHTML={{ __html: children }}
                   />
 

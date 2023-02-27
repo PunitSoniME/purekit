@@ -1,23 +1,20 @@
 ---
 title: 'concat'
-description: 'concat method'
+definition: 'concat(array, [values])'
+description: 'Concatenates two or more arrays into a new array'
 ---
-
-```ts
-concat(array, [values])
-```
 
 #### Arguments
 
 ```bash
-- array (Array): The array to process.
-- [values] (...*): The values to concatenate.
+array (Array): The array to process.
+[values] (...*): The values to concatenate.
 ```
 
 #### Returns
 
 ```bash
-- (Array): Returns the new concatenated array.
+(Array): Returns the new concatenated array.
 ```
 
 #### Example

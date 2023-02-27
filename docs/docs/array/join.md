@@ -1,13 +1,8 @@
 ---
 title: 'join'
-description: 'join method'
+definition: "join(array, [joiner] = ',')"
+description: 'Joins all elements of an array into a string separated by the specified separator.'
 ---
-
-```ts
-join(array, [joiner] = ',')
-```
-
-> Joins all elements of an array into a string separated by the specified separator.
 
 #### Arguments
 

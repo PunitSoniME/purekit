@@ -1,7 +1,18 @@
 /**
+ * Creates a deep clone of the input value.
  *
- * @param value
- * @returns
+ * @since 1.0.0
+ *
+ * @template T
+ * @param {T} value - The input value to clone.
+ * @returns {T} The cloned value.
+ *
+ * @example
+ *
+ * const obj = { a: 1, b: { c: 2 } };
+ * const clone = cloneDeep(obj);
+ * obj.b.c = 3;
+ * console.log(clone.b.c); // Output: 2
  */
 const cloneDeep = <T>(value: T): T => {
 	if (Array.isArray(value)) {

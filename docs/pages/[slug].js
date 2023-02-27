@@ -1,7 +1,7 @@
 import Layout from '~/components/Layout';
 import { getAllDocs, getDocBySlug } from '~/lib/docs';
 import markdownToHtml from '~/lib/markdown';
-import routes from './../utils/routes';
+import routes from '../utils/routes';
 
 let parent = '';
 let allDocs = [];
@@ -24,18 +24,30 @@ const componentHeader = (title) => `<div id=${title} class="invisible h-0">${tit
 
 export async function getStaticProps() {
   const mainIndexDoc = getDocBySlug('home');
-  let content = await markdownToHtml(mainIndexDoc.content || '');
+  let content = [await markdownToHtml(mainIndexDoc.content || '')];
 
+  let i = 0;
   for await (let doc of allDocs) {
     const splittedData = doc.split('/');
     const methodDoc = getDocBySlug(splittedData[1], splittedData[0]);
-    content = content + ' ' + (splittedData[1] !== 'index' ? componentHeader(splittedData[1]) : ' ') + await markdownToHtml(methodDoc.content || '');
+    console.log('methodDoc', methodDoc);
+    // content.push(`<div class="px-2 pb-0 ${i % 2 === 0 ? 'bg-white' : 'bg-slate-100 border-b-2 border-slate-100'}">` + (splittedData[1] !== 'index' ? componentHeader(splittedData[1]) : ' ') + await markdownToHtml(methodDoc.content || '') + '</div>');
+
+    content.push(splittedData[1] !== 'index' ? componentHeader(splittedData[1]) : ' ');
+
+    if (methodDoc.meta.definition) {
+      content.push(`<div class='rounded-l-md border-violet-200 border-l-8 bg-violet-50 border-l-violet-400 p-2 md:p-4 text-violet-700'>${methodDoc.meta.definition}</div>`);
+      content.push(await markdownToHtml("> <small>" + methodDoc.meta.description + "</small>" || ''));
+    }
+
+    content.push(await markdownToHtml(methodDoc.content || '') + "<hr/>");
+    ++i;
   }
 
   return {
     props: {
       ...mainIndexDoc,
-      content
+      content: content.join("")
     }
   };
 }
