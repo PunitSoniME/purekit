@@ -1,8 +1,19 @@
 /**
- * Converts value to an array.
- * @param value The value to convert
- * @returns Returns the converted array.
+ * Converts a given value to an array.
+ *
+ * @since 1.0.0
+ *
+ * @param {any} value - The value to convert to an array.
+ * @returns {any[]} The resulting array.
+ *
+ * @example
+ *
+ * toArray('hello') // => ['h', 'e', 'l', 'l', 'o']
+ * toArray([1, 2, 3]) // => [1, 2, 3]
+ * toArray(new Set([1, 2, 3])) // => [1, 2, 3]
+ * toArray({a: 1, b: 2}) // => [1, 2]
  */
+
 const toArray = (value: any): any[] => {
 	if (Array.isArray(value)) return value;
 	if (value instanceof Map || value instanceof Set || typeof value === 'object')
