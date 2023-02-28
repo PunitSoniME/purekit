@@ -1,7 +1,15 @@
 /**
- * Checks if value is classified as a weak map object.
- * @param value The value to check
- * @returns Returns true if value is a weak map, else false
+ * Checks if a value is a WeakMap object.
+ *
+ * @since 1.0.0
+ *
+ * @param {*} value - The value to check.
+ * @returns {boolean} - Returns `true` if the value is a WeakMap, else `false`.
+ *
+ * @example
+ *
+ * isWeakMap(new WeakMap()); // true
+ * isWeakMap(new Map()); // false
  */
 const isWeakMap = (value: any): boolean => value instanceof WeakMap;
 export default isWeakMap;

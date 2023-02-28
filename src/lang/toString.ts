@@ -1,7 +1,18 @@
 /**
- * Converts value to a string. An empty string is returned for null and undefined values. The sign of -0 is preserved.
- * @param value The value to convert.
- * @returns Returns the converted string.
+ * Converts a value to a string.
+ *
+ * @since 1.0.0
+ *
+ * @param {*} value - The value to convert to a string.
+ * @returns {string} The string representation of the given value.
+ *
+ * @example
+ * toString('Hello') // returns 'Hello'
+ * toString(123) // returns '123'
+ * toString(null) // returns ''
+ * toString(undefined) // returns ''
+ * toString(-0) // returns '-0'
+ * toString(0) // returns '0'
  */
 const toString = (value: any): string => {
 	if (typeof value === 'string') return value;

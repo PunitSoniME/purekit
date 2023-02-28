@@ -1,7 +1,16 @@
 /**
- * Converts value to a plain object flattening inherited enumerable string keyed properties of value to own properties of the plain object.
- * @param value The value to convert.
- * @returns Returns the converted plain object.
+ * Converts `value` to a plain object with its own enumerable properties.
+ *
+ * @since 1.0.0
+ *
+ * @param {*} value - The value to convert.
+ * @returns {Object} - The converted plain object.
+ *
+ * @example
+ *
+ * toPlainObject({ a: 1, b: 2 }) // { a: 1, b: 2 }
+ * toPlainObject(new Map([['a', 1], ['b', 2]])) // { a: 1, b: 2 }
+ * toPlainObject([1, 2, 3]) // { '0': 1, '1': 2, '2': 3 }
  */
 const toPlainObject = (value: any): object => {
 	value = Object(value);
