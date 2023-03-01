@@ -1,10 +1,26 @@
 /**
+ * Gets the value at path of object. If the resolved value is undefined, the defaultValue is returned.
  *
- * @param object
- * @param path
- * @param defaultValue
- * @returns
+ * @param {Object} object - The object to query.
+ * @param {(string|Array|*)} path - The path of the property to get.
+ * @param {*} [defaultValue] - The value returned for undefined resolved values.
+ * @returns {*} Returns the resolved value.
+ * @since 1.0.0
+ *
+ * @example
+ *
+ * const object = { 'a': [{ 'b': { 'c': 3 } }] };
+ *
+ * get(object, 'a[0].b.c');
+ * // => 3
+ *
+ * get(object, ['a', '0', 'b', 'c']);
+ * // => 3
+ *
+ * get(object, 'a.b.c', 'default');
+ * // => 'default'
  */
+
 const get = (object: any, path: string | any[] | any, defaultValue?: any) => {
 	//	One Way
 	// return path
