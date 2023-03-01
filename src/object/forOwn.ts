@@ -1,11 +1,26 @@
 import applyArrayFn from '../helpers/applyArrayFn';
 
 /**
+ * Iterates over an object's own enumerable string keyed properties, calling `iteratee` for each property.
+ * The `iteratee` is invoked with three arguments: (value, key, object). Iteratee functions may exit iteration
+ * early by explicitly returning `false`.
  *
- * @param object
- * @param iteratee
- * @returns
+ * @since 1.0.0
+ *
+ * @param {Object} object - The object to iterate over.
+ * @param {Function} iteratee - The function invoked per iteration.
+ * @returns {Object} Returns the object.
+ *
+ * @example
+ *
+ * const object = { 'a': 1, 'b': 2 };
+ *
+ * forOwn(object, (value, key) => {
+ *   console.log(key);
+ * });
+ * // => Logs 'a' then 'b'.
  */
+
 const forOwn = (object: Object, iteratee: any): Object => {
 	return applyArrayFn({
 		collection: object,

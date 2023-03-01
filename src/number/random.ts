@@ -11,10 +11,28 @@ const randomInt = (a = 1, b = 0) => {
 };
 
 /**
+ * Returns a random number within the specified range. If only one argument is provided, the number will be between 0 and the given number.
  *
- * @param lower
- * @param upper
- * @returns
+ * @since 1.0.0
+ *
+ * @param {number} [lower=0] - The lower bound of the range (inclusive if `upper` is defined).
+ * @param {number|boolean} [upper=1] - The upper bound of the range (exclusive if defined), or a boolean flag indicating whether to return a floating-point number.
+ *
+ * @returns {number} A random number within the specified range.
+ *
+ * @example
+ *
+ * // returns a random integer between 0 and 9
+ * random(10);
+ *
+ * // returns a random integer between 1 and 10
+ * random(1, 11);
+ *
+ * // returns a random floating-point number between 0 and 1
+ * random(true);
+ *
+ * // returns a random floating-point number between 2 and 3
+ * random(3, 2);
  */
 const random = (
 	lower: number = 0,
