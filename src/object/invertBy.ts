@@ -3,10 +3,23 @@ import predicateType from '../helpers/predicateType';
 import identity from '../util/identity';
 
 /**
+ * Creates an object composed of keys generated from the results of running each element of object thru `iteratee`.
+ * The corresponding value of each key is an array of original keys responsible for generating the key.
  *
- * @param object
- * @param iteratee
- * @returns
+ * @since 1.0.0
+ *
+ * @param object - The object to invert.
+ * @param iteratee - The function invoked per iteration.
+ * @returns The new inverted object.
+ *
+ * @example
+ * const object = { 'a': 1, 'b': 2, 'c': 1 };
+ *
+ * invertBy(object);
+ * // => { '1': ['a', 'c'], '2': ['b'] }
+ *
+ * invertBy(object, (value) => `group_${value}`);
+ * // => { 'group_1': ['a', 'c'], 'group_2': ['b'] }
  */
 const invertBy = <T>(
 	object: Object,

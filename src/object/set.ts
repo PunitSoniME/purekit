@@ -1,8 +1,20 @@
 /**
+ * Sets the value at path of object. If a portion of path doesn't exist, it's created.
  *
- * @param object
- * @param path
- * @param value
+ * @param {Object} object - The object to modify.
+ * @param {Array<string>|string} path - The path of the property to set.
+ * @param {*} value - The value to set.
+ * @returns {Object} - The modified object.
+ *
+ * @example
+ *
+ * const object = { a: { b: { c: 3 } } };
+ *
+ * set(object, 'a.b.c', 4);
+ * // => { a: { b: { c: 4 } } }
+ *
+ * set(object, ['x', '0', 'y', 'z'], 5);
+ * // => { a: { b: { c: 3 } }, x: [{ y: { z: 5 } }] }
  */
 const set = <T>(object: T, path: any[] | string, value: any): T => {
 	const pathArray =
