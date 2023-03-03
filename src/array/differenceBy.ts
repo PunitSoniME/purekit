@@ -28,7 +28,6 @@ import IDifferenceBy from './interface/IDifferenceBy';
  * const arr5 = [{ x: 1 }, { x: 2 }, { x: 3 }];
  * console.log(differenceBy(arr5, { x: 2 }, 'x')); // [{ x: 1 }, { x: 3 }]
  */
-
 const differenceBy: IDifferenceBy = <T>(array: T[], ...args: any): T[] => {
 	let predicate = args.pop() ?? identity;
 
