@@ -165,7 +165,7 @@ export default function Layout({ children, meta: pageMeta }) {
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 pt-4">alt-lodash</h1>
 
               <div className="flex items-center">
-                <button type="button" className="-m-2 ml-5 p-2 text-gray-400 hover:text-gray-500 sm:ml-7">
+                <button type="button" className="-m-2 ml-5 p-2 text-gray-700 hover:text-gray-900 sm:ml-7">
                   <span>Github</span>
                   {/* <Squares2X2Icon className="h-5 w-5" aria-hidden="true" /> */}
                 </button>

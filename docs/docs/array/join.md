@@ -7,8 +7,8 @@ description: 'Joins all elements of an array into a string separated by the spec
 #### Arguments
 
 ```bash
-array - The array to join.
-[joiner=','] - The separator to use when joining the elements.
+array (Array) - The array to join.
+[joiner=','] (string) - The separator to use when joining the elements.
 ```
 
 #### Returns
