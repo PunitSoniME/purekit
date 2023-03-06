@@ -36,7 +36,7 @@ export async function getStaticProps() {
 
     if (methodDoc.meta.definition) {
       content.push(`<div class='rounded-l-md border-violet-200 border-l-8 bg-violet-50 border-l-violet-400 tracking-wide font-semibold p-4 text-violet-700'>${methodDoc.meta.definition}</div>`);
-      content.push(await markdownToHtml("> <small>" + methodDoc.meta.description + "</small>" || ''));
+      content.push(await markdownToHtml("> <small class='custom-code'>" + methodDoc.meta.description + "</small>" || ''));
     }
 
     content.push(await markdownToHtml(methodDoc.content || '') + "<hr/>");

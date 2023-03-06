@@ -39,8 +39,17 @@ pre[class*="language-"] {
 }
 
 .prose :where(blockquote p:first-of-type):not(:where([class~="not-prose"] *))::before,
-.prose :where(blockquote p:first-of-type):not(:where([class~="not-prose"] *))::after {
+.prose :where(blockquote p:first-of-type):not(:where([class~="not-prose"] *))::after,
+.prose :where(code):not(:where([class~="not-prose"] *))::before,
+.prose :where(code):not(:where([class~="not-prose"] *))::after {
     content: '';
+}
+
+.custom-code code {
+    padding: 2px 5px;
+    background: hsl(0deg 0% 35% / 30%);
+    border-radius: 4px;
+    color: #000;
 }
 
 @media screen and (max-width: 845px) {
