@@ -24,7 +24,10 @@ const componentHeader = (title) => `<div id=${title} class="invisible h-0">${tit
 
 export async function getStaticProps() {
   const mainIndexDoc = getDocBySlug('home');
-  let content = [await markdownToHtml(mainIndexDoc.content || '')];
+  let content = [];
+  content.push("<div class='mx-2 bg-slate-50 rounded-t'>");
+  content.push(await markdownToHtml(mainIndexDoc.content || ''));
+  content.push("</div>");
 
   let i = 0;
   for await (let doc of allDocs) {

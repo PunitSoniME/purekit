@@ -53,7 +53,7 @@ export default function Layout({ children, meta: pageMeta }) {
       </Head>
 
 
-      <div className="bg-white">
+      <div className="bg-slate-200">
         <div>
           {/* Mobile filter dialog */}
 
@@ -161,7 +161,7 @@ export default function Layout({ children, meta: pageMeta }) {
           </Transition.Root>
 
           <main className="mx-auto">
-            <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 px-4">
+            <div className="flex items-baseline justify-between border-b border-gray-200 bg-slate-50 pb-6 px-4">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 pt-4">alt-lodash</h1>
 
               <div className="flex items-center">
@@ -181,16 +181,16 @@ export default function Layout({ children, meta: pageMeta }) {
             </div>
 
             <section aria-labelledby="products-heading">
-              <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4">
+              <div className="grid grid-cols-1 gap-y-10 lg:grid-cols-[250px_1fr]">
                 {/* Filters */}
-                <form className="hidden lg:block pl-4">
+                <form className="hidden lg:block px-4 bg-slate-50">
 
                   {routes.map((section) => (
                     <Disclosure as="div" defaultOpen={true} key={section.id} className="border-b border-gray-200 py-6">
                       {({ open }) => (
                         <>
                           <h3 className="-my-3 flow-root">
-                            <Disclosure.Button className="flex w-full items-center justify-between bg-white py-3 text-sm text-gray-400 hover:text-gray-500">
+                            <Disclosure.Button className="flex w-full items-center justify-between bg-slate-50 py-3 text-sm text-gray-400 hover:text-gray-500">
                               <span className="font-medium text-gray-900">{section.name}</span>
                               <span className="ml-6 flex items-center">
                                 {open ? (
@@ -224,7 +224,7 @@ export default function Layout({ children, meta: pageMeta }) {
                 </form>
 
                 {/* Product grid */}
-                <div className="lg:col-span-3">
+                <div>
                   {/* Replace with your content */}
                   {/* <div className="h-96 rounded-lg border-4 border-dashed border-gray-200 lg:h-full" /> */}
 
@@ -241,71 +241,6 @@ export default function Layout({ children, meta: pageMeta }) {
         </div>
       </div>
 
-      {/* <nav className='sticky top-0 bg-gray-200 z-50 shadow-lg'>
-        <div className="flex justify-between items-center py-5 px-2 md:px-8 mx-2">
-          <Link href="/">
-            <a className="no-underline font-bold text-2xl">
-              <h1>{meta.title}</h1>
-            </a>
-          </Link>
-
-          <ul className="flex justify-between items-center space-x-4">
-            <li>
-              <div className="inline-block relative w-32">
-
-                <select
-                  onChange={(e) => setTheme(e.target.value)}
-                  className="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline"
-                >
-                  <option value="okaidia">Okaidia</option>
-                  <option value="tomorrow">Tomorrow</option>
-                  <option value="coy">Coy</option>
-                  <option value="funky">Funky</option>
-                </select>
-              </div>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/punitsonime/alt-lodash"
-                className="no-underline font-semibold text-gray-700"
-              >
-                Source
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <div id="skip">
-        <div className="custom-grid">
-          <div className="sidebar bg-white">
-            <ul className='divide-y'>
-              {
-                routes.map((route, index) => (
-                  <li key={`route-${index}`}
-                    className={[
-                      'px-4 py-2 border-t-slate-300',
-                      route.redirect === false ? 'bg-gray-800 text-white font-semibold' :
-                        (activeMethod === `/${router.query.slug}#${route.title}` ? 'bg-indigo-100 border-l-indigo-600 border-l-4' : 'bg-gray-100 hover:bg-indigo-100 cursor-pointer')
-                    ].join(" ")}
-                    onClick={() => {
-                      if (route.redirect === true) {
-                        location.hash = route.title;
-                        setActiveMethod(`/${router.query.slug}#${route.title}`);
-                      }
-                    }}>{route.title}
-                  </li>
-                ))
-              }
-            </ul>
-          </div>
-          <article
-            className="prose lg:prose-xl max-w-none article-custom-scroll px-2 py-2 scroll-smooth"
-            dangerouslySetInnerHTML={{ __html: children }}
-          />
-        </div>
-      </div> */}
     </>
   );
 }
