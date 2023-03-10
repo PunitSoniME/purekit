@@ -3,7 +3,7 @@ title: 'alt-lodash'
 description: 'Alternate of lodash'
 ---
 
-# Alternate of Lodash Library
+# <div class="px-2 pt-2">Alternate of Lodash Library</div>
 
 <!-- [![CI](https://github.com/PunitSoniME/alt-lodash/actions/workflows/main.yml/badge.svg)](https://github.com/PunitSoniME/alt-lodash/actions/workflows/main.yml)
 [![Rate this package](https://badges.openbase.com/js/rating/alt-lodash.svg?token=LsZ/SAF9sVVDLFYX3t2XIX5W6JEuM2OZBYIpJvm25wg=)](https://openbase.com/js/alt-lodash?utm_source=embedded&amp;utm_medium=badge&amp;utm_campaign=rate-badge)
@@ -29,22 +29,23 @@ description: 'Alternate of lodash'
 
 [npm_url]: https://www.npmjs.org/package/alt-lodash -->
 
-## Installation
+## <div class="px-2">Installation</div>
 
-With Yarn:
+<div class="px-2">With Yarn:</div>
+
 
 ```bash
 yarn add alt-lodash
 ```
 
-With npm:
+<div class="px-2">With npm:</div>
 
 ```bash
 npm install alt-lodash
 ```
 
 
-## Usage
+## <div class="px-2">Usage</div>
 
 ```ts
 //  import all available the methods

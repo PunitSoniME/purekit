@@ -1,6 +1,4 @@
 ---
 title: 'collection'
-description: 'collection methods'
+description: 'Collection Methods'
 ---
-
-## <span id="collection">Collection</span> Methods
