@@ -4,20 +4,20 @@ definition: 'concat(array, [values])'
 description: 'Concatenates two or more arrays into a new array'
 ---
 
-#### Arguments
+<p class="pl-2 mb-2 text-violet-700 font-semibold">Arguments</p>
 
 ```bash
 array (Array): The array to process.
 [values] (...*): The values to concatenate.
 ```
 
-#### Returns
+<p class="pl-2 mb-2 text-violet-700 font-semibold">Returns</p>
 
 ```bash
 (Array): Returns the new concatenated array.
 ```
 
-#### Example
+<p class="pl-2 mb-2 text-violet-700 font-semibold">Example</p>
 
 ```ts
 import { concat } from 'alt-lodash';

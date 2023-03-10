@@ -1,6 +1,4 @@
 ---
 title: 'array'
-description: 'array methods'
+description: 'Array Methods'
 ---
-
-## <span id="array">Array</span> Methods

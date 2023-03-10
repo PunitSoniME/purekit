@@ -7,20 +7,20 @@ description: 'countBy method'
 countBy(collection, [iteratee = identity])
 ```
 
-#### Arguments
+<p class="pl-2 mb-2 text-violet-700 font-semibold">Arguments</p>
 
 ```bash
 collection (Array|Object): The collection to iterate over.
 [iteratee = identity] (Function): The iteratee to transform keys.
 ```
 
-#### Returns
+<p class="pl-2 mb-2 text-violet-700 font-semibold">Returns</p>
 
 ```bash
 (Object): Returns the composed aggregate object.
 ```
 
-#### Example
+<p class="pl-2 mb-2 text-violet-700 font-semibold">Example</p>
 
 ```ts
 import { countBy } from 'alt-lodash';
