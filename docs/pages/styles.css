@@ -45,16 +45,16 @@ pre[class*="language-"] {
     content: '';
 }
 
-p.custom-code {
-    @apply px-2 md:pl-4 text-base;
-}
-
 p small {
-    @apply pt-4 px-2 md:px-4 font-normal md:text-base;
+    @apply pt-4 md:px-2 text-base;
 }
 
 .custom-block {
     @apply mx-2 bg-slate-50 mb-4;
+}
+
+.custom-block p {
+    @apply px-2;
 }
 
 .content h4 {

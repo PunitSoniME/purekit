@@ -42,7 +42,7 @@ export async function getStaticProps() {
 
     if (methodDoc.meta.definition) {
       content.push(`<div class='definition'>${methodDoc.meta.definition}</div>`);
-      content.push(await markdownToHtml("<p class='custom-code'>" + methodDoc.meta.description + "</p>" || ''));
+      content.push(await markdownToHtml("<small class='custom-code'>" + methodDoc.meta.description + "</small>" || ''));
     }
 
     if (splittedData[1] === 'index') {
