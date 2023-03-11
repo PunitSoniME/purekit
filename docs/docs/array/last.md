@@ -4,19 +4,19 @@ definition: "last(array)"
 description: 'Returns the last element of an array.'
 ---
 
-<p class="pl-2 mb-2 text-violet-700 font-semibold">Arguments</p>
+#### Arguments
 
 ```bash
 array - The array to query.
 ```
 
-<p class="pl-2 mb-2 text-violet-700 font-semibold">Returns</p>
+#### Returns
 
 ```bash
 {*} - Returns the last element of the array.
 ```
 
-<p class="pl-2 mb-2 text-violet-700 font-semibold">Example</p>
+#### Example
 
 ```ts
 import { last } from 'alt-lodash';
