@@ -96,16 +96,6 @@ export default function Layout({ children, meta: pageMeta }) {
 
                     {/* Filters */}
                     <form className="mt-4 border-t border-gray-200">
-                      {/* <h3 className="sr-only">Categories</h3>
-                      <ul role="list" className="px-2 py-3 font-medium text-gray-900">
-                        {subCategories.map((category) => (
-                          <li key={category.name}>
-                            <a href={category.href} className="block px-2 py-3">
-                              {category.name}
-                            </a>
-                          </li>
-                        ))}
-                      </ul> */}
 
                       {routes.map((section) => (
                         <Disclosure as="div" defaultOpen={true} key={section.id} className="border-t border-gray-200 px-4 py-6">
@@ -136,16 +126,6 @@ export default function Layout({ children, meta: pageMeta }) {
                                         {option.label}
                                       </div>
                                     </div>
-
-                                    // <div key={option.value} className="flex items-center">
-
-                                    //   <label
-                                    //     htmlFor={`filter-mobile-${section.id}-${optionIdx}`}
-                                    //     className="ml-3 min-w-0 flex-1 text-gray-500"
-                                    //   >
-                                    //     {option.label}
-                                    //   </label>
-                                    // </div>
                                   ))}
                                 </div>
                               </Disclosure.Panel>
@@ -154,6 +134,7 @@ export default function Layout({ children, meta: pageMeta }) {
                         </Disclosure>
                       ))}
                     </form>
+                    
                   </Dialog.Panel>
                 </Transition.Child>
               </div>
@@ -161,12 +142,12 @@ export default function Layout({ children, meta: pageMeta }) {
           </Transition.Root>
 
           <main className="mx-auto">
-            <div className="flex items-baseline justify-between border-b border-gray-200 bg-slate-50 pb-6 px-4">
+            <div className="flex justify-between border-b border-gray-200 bg-slate-50 pb-6 px-4">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 pt-4">alt-lodash</h1>
 
-              <div className="flex items-center">
+              <div className="flex items-center justify-center pt-6">
                 <button type="button" className="-m-2 ml-5 p-2 text-gray-700 hover:text-gray-900 sm:ml-7">
-                  <span>Github</span>
+                  <a href="https://github.com/punitsonime/alt-lodash" target="_blank" className='text-blue-400 hover:underline'>Github</a>
                   {/* <Squares2X2Icon className="h-5 w-5" aria-hidden="true" /> */}
                 </button>
                 <button

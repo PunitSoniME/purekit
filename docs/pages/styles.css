@@ -5,8 +5,7 @@ pre[class*="language-"] {
 }
 
 .prose :where(hr):not(:where([class~="not-prose"] *)) {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    @apply my-2;
 }
 
 /* Above is overriding of tailwindcss */
@@ -57,9 +56,13 @@ p small {
     @apply px-2;
 }
 
+/* Arguments, Returns, Example */
 .content h4 {
-    margin-top: 1.5rem;
-    @apply text-violet-600 pl-2 md:pl-4;
+    @apply text-violet-600 pl-2 md:pl-4 mt-4;
+}
+
+.section-title {
+    @apply inline-block font-bold my-4 md:my-6 pb-1 rounded-b-md border-b-4 text-2xl md:text-4xl border-violet-600 text-violet-600;
 }
 
 .definition {
