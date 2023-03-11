@@ -1,4 +1,4 @@
 ---
 title: 'collection'
-description: 'Collection Methods'
+description: 'Collection'
 ---

@@ -1,26 +1,23 @@
 ---
 title: 'countBy'
-description: 'countBy method'
+definition: 'countBy(collection, [iteratee = identity])'
+description: 'Groups the elements in the array by a given criterion, and counts the number of elements in each group.'
 ---
 
-```ts
-countBy(collection, [iteratee = identity])
-```
-
-<p class="pl-2 mb-2 text-violet-700 font-semibold">Arguments</p>
+#### Arguments
 
 ```bash
 collection (Array|Object): The collection to iterate over.
 [iteratee = identity] (Function): The iteratee to transform keys.
 ```
 
-<p class="pl-2 mb-2 text-violet-700 font-semibold">Returns</p>
+#### Returns
 
 ```bash
-(Object): Returns the composed aggregate object.
+(Object): An object with keys representing the group and values representing the count of elements in that group.
 ```
 
-<p class="pl-2 mb-2 text-violet-700 font-semibold">Example</p>
+#### Example
 
 ```ts
 import { countBy } from 'alt-lodash';

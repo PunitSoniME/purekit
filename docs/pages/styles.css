@@ -45,6 +45,27 @@ pre[class*="language-"] {
     content: '';
 }
 
+p small {
+    @apply pt-4 md:px-2 text-base;
+}
+
+.custom-block {
+    @apply mx-2 bg-slate-50 mb-4;
+}
+
+.custom-block p {
+    @apply px-2;
+}
+
+.content h4 {
+    margin-top: 1.5rem;
+    @apply text-violet-600 pl-2 md:pl-4;
+}
+
+.definition {
+    @apply border-violet-200 border-l-8 bg-violet-500 border-l-violet-900 text-white tracking-wide font-semibold p-4;
+}
+
 .custom-code code {
     padding: 2px 5px;
     background: hsl(0deg 0% 35% / 30%);

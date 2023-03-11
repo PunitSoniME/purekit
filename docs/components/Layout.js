@@ -224,17 +224,15 @@ export default function Layout({ children, meta: pageMeta }) {
                 </form>
 
                 {/* Product grid */}
-                <div>
-                  {/* Replace with your content */}
-                  {/* <div className="h-96 rounded-lg border-4 border-dashed border-gray-200 lg:h-full" /> */}
+                {/* Replace with your content */}
+                {/* <div className="h-96 rounded-lg border-4 border-dashed border-gray-200 lg:h-full" /> */}
 
-                  <article
-                    className="prose lg:prose-xl max-w-none article-custom-scroll py-2 scroll-smooth"
-                    dangerouslySetInnerHTML={{ __html: children }}
-                  />
+                <article
+                  className="prose lg:prose-xl max-w-none article-custom-scroll py-2 scroll-smooth"
+                  dangerouslySetInnerHTML={{ __html: children }}
+                />
 
-                  {/* /End replace */}
-                </div>
+                {/* /End replace */}
               </div>
             </section>
           </main>

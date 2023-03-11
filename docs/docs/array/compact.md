@@ -4,19 +4,19 @@ definition: 'compact(array)'
 description: 'Creates a new array with all falsey values removed. The values `false`, `null`, `0`, `""`, `undefined`, and `NaN` are falsey.'
 ---
 
-<p class="pl-2 mb-2 text-violet-700 font-semibold">Arguments</p>
+#### Arguments
 
 ```bash
 array (Array): The array to compact.
 ```
 
-<p class="pl-2 mb-2 text-violet-700 font-semibold">Returns</p>
+#### Returns
 
 ```bash
 (Array): Returns the new array of filtered values.
 ```
 
-<p class="pl-2 mb-2 text-violet-700 font-semibold">Example</p>
+#### Example
 
 ```ts
 import { compact } from 'alt-lodash';
