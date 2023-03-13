@@ -5,7 +5,7 @@
  *
  * @template T
  * @param {T} value - The input value to clone.
- * @returns {T} The cloned value.
+ * @returns {T} - The cloned value.
  *
  * @example
  *

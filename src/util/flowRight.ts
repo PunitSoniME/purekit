@@ -19,7 +19,7 @@
  *
  * // returns 16
  * flowRight(square, double, square)(2);
- */  
+ */
 const flowRight =
 	(funcs: Function | Function[]): Function =>
 	(...args: any) =>

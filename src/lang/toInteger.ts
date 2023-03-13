@@ -4,10 +4,10 @@
  * @since 1.0.0
  *
  * @param {*} value - The value to convert.
- * @returns {number} The converted integer.
+ * @returns {number} - The converted integer.
  *
  * @example
- * 
+ *
  * toInteger(3.2); // 3
  * toInteger(-3.8); // -3
  * toInteger('3.2'); // 3

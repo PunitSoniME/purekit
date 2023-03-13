@@ -2,7 +2,7 @@
  * Returns a new array containing the elements of the original array starting from `start` up to, but not including, `end`.
  *
  * @since 1.0.0
- * 
+ *
  * @template T
  * @param {T[]} array - The original array.
  * @param {number} [start=0] - The start index (inclusive). Defaults to 0.

@@ -7,7 +7,7 @@ import baseMathPrecesion from '../helpers/baseMathPrecesion';
  *
  * @param {number} value - The number to be rounded.
  * @param {number} [precision=0] - The precision value to round the number to. Default is 0.
- * @returns {number} The rounded ceiling value.
+ * @returns {number} - The rounded ceiling value.
  *
  * @example
  *

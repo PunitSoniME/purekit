@@ -1,13 +1,13 @@
 /**
  * Returns the index of the last occurrence of the specified element in the array, searching backwards from the given index.
- * 
+ *
  * @since 1.0.0
- * 
+ *
  * @template T
  * @param {T[]} array - The input array to search in.
  * @param {T} element - The element to search for.
  * @param {number} [fromIndex=array.length - 1] - The index to start the search from.
- * 
+ *
  * @returns {number} - The index of the last occurrence of the element in the array, or -1 if not found.
  *
  * @example

@@ -6,7 +6,7 @@
  * @param {number|string} dividend The value to be divided.
  * @param {number|string} divisor The value to divide the `dividend` by.
  *
- * @returns {number|NaN} The quotient of the division. Returns `NaN` if the `dividend` or `divisor` is not a number.
+ * @returns {number|NaN} - The quotient of the division. Returns `NaN` if the `dividend` or `divisor` is not a number.
  *
  * @example
  *

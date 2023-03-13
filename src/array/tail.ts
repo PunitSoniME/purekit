@@ -3,7 +3,7 @@
  *
  * @template T
  * @param {T[]} array The input array.
- * @returns {T[]} A new array containing all elements of the input array except the first one.
+ * @returns {T[]} - A new array containing all elements of the input array except the first one.
  *
  * @example
  * const arr = [1, 2, 3, 4];

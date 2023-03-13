@@ -8,7 +8,7 @@ import get from '../object/get';
  * @param {string|Array} path - The path of the method to invoke.
  * @param {...*} args - The arguments to invoke the method with.
  *
- * @returns {Function} Returns the new method function.
+ * @returns {Function} - Returns the new method function.
  *
  * @example
  *

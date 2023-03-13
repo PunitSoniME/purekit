@@ -6,7 +6,7 @@
  * @param {Object} object - The object to bind the `method` to.
  * @param {string} method - The name of the method to bind.
  * @param {...*} [args] - The arguments to be partially applied.
- * @returns {Function} Returns the new bound function.
+ * @returns {Function} - Returns the new bound function.
  *
  * @example
  *

@@ -11,7 +11,7 @@ import identity from '../util/identity';
  * @param {Array<T> | Object} collection - The collection to iterate over.
  * @param {predicateType<T>} [iteratee=identity] - The function invoked per iteration.
  *
- * @returns {T} Returns the new mapped array or object.
+ * @returns {T} - Returns the new mapped array or object.
  *
  * @example
  *

@@ -4,7 +4,7 @@
  * @since 1.0.0
  *
  * @param {Function} fn - The function to wrap.
- * @returns {Function} A new function that accepts only one argument.
+ * @returns {Function} - A new function that accepts only one argument.
  *
  * @example
  *

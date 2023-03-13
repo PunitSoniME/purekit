@@ -2,10 +2,10 @@
  * Parses a string and returns an integer of the specified radix.
  *
  * @since 1.0.0
- * 
+ *
  * @param {string} str - The string to parse.
  * @param {number} [radix=10] - The radix used to parse the string. Must be between 2 and 36.
- * 
+ *
  * @returns {number} - An integer parsed from the input string.
  *
  * @example

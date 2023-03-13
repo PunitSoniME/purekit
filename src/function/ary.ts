@@ -7,7 +7,7 @@
  * @param {Function} fn - The function to wrap.
  * @param {number} [arity=fn.length] - The maximum number of arguments to accept.
  *
- * @returns {Function} Returns the new function.
+ * @returns {Function} - Returns the new function.
  *
  * @example
  *

@@ -6,7 +6,7 @@
  * @param {string} str - The string to modify.
  * @param {string|RegExp} pattern - The pattern to search for in the string.
  * @param {string|RegExp} replacement - The replacement string or RegExp.
- * @returns {string} The modified string.
+ * @returns {string} - The modified string.
  *
  * @example
  *

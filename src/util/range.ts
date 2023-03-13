@@ -18,7 +18,7 @@
  * range(0, 20, 5); // [0, 5, 10, 15]
  * range(0, -4, -1); // [0, -1, -2, -3]
  *
- * @returns {number[]} Returns the new array of numbers.
+ * @returns {number[]} - Returns the new array of numbers.
  */
 const range = (
 	start: number = 0,

@@ -7,7 +7,7 @@
  * @param {number} lower - The lower bound for the clamped value.
  * @param {number} upper - The upper bound for the clamped value.
  *
- * @returns {number} The clamped value.
+ * @returns {number} - The clamped value.
  *
  * @example
  *

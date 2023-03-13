@@ -4,7 +4,7 @@
  * @since 1.0.0
  *
  * @param {object} object - The object to retrieve the keys from.
- * @returns {Array} An array of the object's keys.
+ * @returns {Array} - An array of the object's keys.
  *
  * @example
  *

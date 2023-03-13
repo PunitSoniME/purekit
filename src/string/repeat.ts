@@ -2,7 +2,7 @@
  * Repeats a string `n` times.
  *
  * @since 1.0.0
- * 
+ *
  * @param {string} str - The string to repeat.
  * @param {number} [n=1] - The number of times to repeat the string.
  * @returns {string} - The repeated string.

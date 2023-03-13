@@ -19,7 +19,7 @@
  *
  * const obj2 = { a: { b: { c: 1 } } };
  * updateWith(obj2, 'a.b.d', (val) => 2); // { a: { b: { c: 1, d: 2 } } }
-*/
+ */
 const updateWith = <T>(
 	object: T,
 	path: string | any,

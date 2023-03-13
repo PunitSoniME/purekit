@@ -5,7 +5,7 @@
  *
  * @param {...number} numbers - The numbers to subtract from the first number.
  *
- * @returns {number} The result of subtracting all the numbers from the first number.
+ * @returns {number} - The result of subtracting all the numbers from the first number.
  *
  * @example
  *

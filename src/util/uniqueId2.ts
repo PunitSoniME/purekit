@@ -2,7 +2,7 @@
  * Generates a cryptographically secure unique ID.
  *
  * @since 1.0.0
- * 
+ *
  * @returns {string} - A unique ID string.
  *
  * @example

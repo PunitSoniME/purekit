@@ -5,7 +5,7 @@
  *
  * @param {Function} func - The function to curry.
  *
- * @returns {Function} Returns the new curried function.
+ * @returns {Function} - Returns the new curried function.
  *
  * @example
  *

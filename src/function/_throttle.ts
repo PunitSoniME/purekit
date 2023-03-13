@@ -6,7 +6,7 @@
  * @param {Object} options The options object.
  * @param {boolean} [options.leading=true] Specify invoking on the leading edge of the timeout.
  * @param {boolean} [options.trailing=true] Specify invoking on the trailing edge of the timeout.
- * @returns {Function} Returns the new throttled function.
+ * @returns {Function} - Returns the new throttled function.
  */
 const throttle = <T extends (...args: any[]) => any>(
 	func: T,

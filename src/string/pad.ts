@@ -7,7 +7,7 @@
  * @param {number} length - The length to pad the string to.
  * @param {string} [characters=' '] - The character to use for padding (default is space).
  *
- * @returns {string} The padded string.
+ * @returns {string} - The padded string.
  *
  * @example
  *

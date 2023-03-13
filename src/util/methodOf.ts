@@ -4,9 +4,9 @@ import get from '../object/get';
  * Creates a function that invokes the method at `path` of a given object.
  *
  * @since 1.0.0
- * 
+ *
  * @param {Object} object The object to query.
- * @returns {Function} Returns the new invoker function.
+ * @returns {Function} - Returns the new invoker function.
  *
  * @example
  *

@@ -5,7 +5,7 @@
  * @since 1.0.0
  *
  * @param {Array} array - The array of functions to iterate over.
- * @returns {Function} Returns the new function.
+ * @returns {Function} - Returns the new function.
  *
  * @example
  *

@@ -4,7 +4,7 @@
  * @since 1.0.0
  *
  * @param {...number} numbers - The numbers to multiply.
- * @returns {number} The product of all the numbers.
+ * @returns {number} - The product of all the numbers.
  *
  * @example
  *

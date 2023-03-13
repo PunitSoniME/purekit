@@ -9,7 +9,7 @@ import applyArrayFn from '../helpers/applyArrayFn';
  *
  * @param {Object} object - The object to iterate over.
  * @param {Function} iteratee - The function invoked per iteration.
- * @returns {Object} Returns the object.
+ * @returns {Object} - Returns the object.
  *
  * @example
  *

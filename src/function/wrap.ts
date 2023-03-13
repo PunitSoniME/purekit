@@ -6,7 +6,7 @@
  *
  * @param {any} value - The value to pass as the first argument to `func`.
  * @param {Function} func - The function to wrap.
- * @returns {Function} A new function that wraps `func`.
+ * @returns {Function} - A new function that wraps `func`.
  *
  * @example
  * const greet = name => `Hello, ${name}!`;

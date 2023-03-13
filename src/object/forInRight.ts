@@ -11,7 +11,7 @@ import assignIn from './assignIn';
  * @template T
  * @param {T} object - The object to iterate over.
  * @param {Function} iteratee - The function invoked per iteration.
- * @returns {T} Returns the object.
+ * @returns {T} - Returns the object.
  *
  * @example
  *

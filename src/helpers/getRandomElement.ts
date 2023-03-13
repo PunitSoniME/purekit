@@ -1,7 +1,7 @@
 /**
  * Returns the random elemen from passed Array or Object
  * @param collection Array | Object
- * @returns { element, restElements }
+ * @returns { element, restElements } -
  */
 const getRandomElementFromCollection = (collection: any): any => {
 	if (Array.isArray(collection)) {

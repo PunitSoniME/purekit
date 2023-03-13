@@ -4,7 +4,7 @@
  * @since 1.0.0
  *
  * @param {number[]} collection - The array of numbers to search for the minimum value.
- * @returns {number|undefined} The minimum value in the array, or undefined if the array is empty.
+ * @returns {number|undefined} - The minimum value in the array, or undefined if the array is empty.
  *
  * @example
  *

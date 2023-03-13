@@ -7,7 +7,7 @@
  * @param {*} value The value to compare.
  * @param {*} other The other value to compare.
  * @param {Function} customizer The function to customize value comparisons.
- * @returns {boolean} Returns `true` if the values are equivalent, else `false`.
+ * @returns {boolean} - Returns `true` if the values are equivalent, else `false`.
  * @example
  *
  * function compareFunc(objValue, othValue) {

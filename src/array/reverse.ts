@@ -2,7 +2,7 @@
  * Reverses an array in place.
  *
  * @since 1.0.0
- * 
+ *
  * @template T
  * @param {T[]} array - The input array.
  * @returns {T[]} - The reversed array.

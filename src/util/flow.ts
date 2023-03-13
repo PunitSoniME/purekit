@@ -19,7 +19,7 @@
  *
  * // returns 32
  * flow(square, double, square)(2);
- */  
+ */
 const flow =
 	(funcs: Function | Function[]): Function =>
 	(...args: any) =>

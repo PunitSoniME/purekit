@@ -4,7 +4,7 @@ import nth from './nth';
  * Removes elements from an array corresponding to the specified indexes, and returns an array of removed elements.
  *
  * @since 1.0.0
- * 
+ *
  * @template T
  * @param {T[]} array - The array to modify.
  * @param {number|number[]} indexes - The indexes of the elements to remove from the array.

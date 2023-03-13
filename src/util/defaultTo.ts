@@ -21,7 +21,7 @@
  *
  * // returns 'hello'
  * defaultTo('hello', 'default');
- */  
+ */
 const defaultTo = (value: any, defaultValue: any): any =>
 	value == null || Object.is(value, NaN) ? defaultValue : value;
 export default defaultTo;

@@ -6,7 +6,7 @@ import forEach from './forEach';
  * @template T
  * @param {T} collection - The collection to iterate over.
  * @param {Function} [iteratee=identity] - The function to apply to each element.
- * @returns {T} The original collection.
+ * @returns {T} - The original collection.
  *
  * @example
  * const arr = [1, 2, 3];

@@ -10,7 +10,7 @@ import identity from '../util/identity';
  * @param {Array} collection The collection to iterate over.
  * @param {Function} iteratee The function invoked per iteration.
  * @param {*} initialValue The initial value.
- * @returns {*} Returns the accumulated value.
+ * @returns {*} - Returns the accumulated value.
  *
  * @example
  * const numbers = [1, 2, 3, 4, 5];

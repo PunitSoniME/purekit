@@ -6,7 +6,7 @@ import get from '../object/get';
  * @since 1.0.0
  *
  * @param {string|any[]} path - The path of the property to get.
- * @returns {Function} Returns the new function.
+ * @returns {Function} - Returns the new function.
  *
  * @example
  *
@@ -16,5 +16,8 @@ import get from '../object/get';
  * getValue(object);
  * // => 3
  */
-const property = (path: string | any[]): Function => (obj: any) => get(obj, path);
+const property =
+	(path: string | any[]): Function =>
+	(obj: any) =>
+		get(obj, path);
 export default property;

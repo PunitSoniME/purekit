@@ -10,14 +10,14 @@ import identity from '../util/identity';
  * @param {T} value - The value to evaluate.
  * @param {Function} [iteratee=identity] - The iteratee invoked per element.
  * @returns {number} - Returns the index at which the value should be inserted into the array.
- * 
+ *
  * @example
- * 
+ *
  * var objects = [{ 'x': 4 }, { 'x': 5 }];
- * 
+ *
  * sortedIndexBy(objects, { 'x': 4 }, function(o) { return o.x; });
  * // => 0
- * 
+ *
  * sortedIndexBy(objects, { 'x': 4 }, 'x');
  * // => 0
  */

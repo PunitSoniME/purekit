@@ -8,7 +8,7 @@ import concat from './concat';
  * @param {T[]} array The array to inspect.
  * @param {...T[][]} args The arrays to exclude.
  * @param {function} comparator The function to determine the uniqueness of each element.
- * @returns {T[]} Returns the new array of filtered values.
+ * @returns {T[]} - Returns the new array of filtered values.
  *
  * @example
  *

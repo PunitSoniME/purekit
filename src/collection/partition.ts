@@ -12,7 +12,7 @@ import identity from '../util/identity';
  * @param {T[]} collection - The collection to partition.
  * @param {predicateType<T>} [predicate=identity] - The function invoked per iteration to determine if an element passes the predicate.
  *
- * @returns {Array} Returns the new array of two arrays, where the first array contains the elements that passed the predicate, and the second contains the elements that failed the predicate.
+ * @returns {Array} - Returns the new array of two arrays, where the first array contains the elements that passed the predicate, and the second contains the elements that failed the predicate.
  *
  * @example
  *

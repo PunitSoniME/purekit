@@ -9,7 +9,7 @@
  * @param {(any[] | string)} path The path of the property to set.
  * @param {*} value The value to set.
  * @param {Function} customizer The function to customize assigned values.
- * @returns {T} Returns the modified object.
+ * @returns {T} - Returns the modified object.
  *
  * @example
  *

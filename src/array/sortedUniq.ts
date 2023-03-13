@@ -3,7 +3,7 @@
  *
  * @template T
  * @param {T[]} array The input array to remove duplicates from.
- * @returns {T[]} Returns the new array of unique values.
+ * @returns {T[]} - Returns the new array of unique values.
  *
  * @example
  *

@@ -9,7 +9,7 @@ import identity from '../util/identity';
  *
  * @param {Array} array - The source array to query.
  * @param {Function} [predicate=identity] - The function invoked per iteration.
- * @returns {Array} Returns the new array of elements.
+ * @returns {Array} - Returns the new array of elements.
  *
  * @example
  * takeRightWhile([1, 2, 3, 4, 5], n => n > 3);

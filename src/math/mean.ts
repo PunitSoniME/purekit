@@ -4,7 +4,7 @@
  * @since 1.0.0
  *
  * @param {number[]} collection - The array of numbers to calculate the mean for.
- * @returns {number} The mean value of the array.
+ * @returns {number} - The mean value of the array.
  *
  * @example
  *

@@ -6,7 +6,7 @@
  * @template T
  * @param {T} value - The value to return.
  *
- * @returns {T} Returns the input value.
+ * @returns {T} - Returns the input value.
  *
  * @example
  *

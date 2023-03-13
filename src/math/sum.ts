@@ -5,7 +5,7 @@
  *
  * @param {number[]} numbers - The array of numbers to sum.
  *
- * @returns {number} The sum of all the numbers in the array.
+ * @returns {number} - The sum of all the numbers in the array.
  *
  * @example
  *

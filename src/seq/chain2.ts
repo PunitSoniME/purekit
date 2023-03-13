@@ -8,7 +8,7 @@
  * @returns {Object} - An object with a `fn` method to chain function calls and a `value` method to retrieve the wrapped value.
  *
  * @example
- * 
+ *
  * const users = [
  * { 'user': 'barney', 'age': 36 },
  * { 'user': 'fred', 'age': 40 },

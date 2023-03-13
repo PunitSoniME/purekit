@@ -6,7 +6,7 @@
  * @template T
  * @param {T[]} array - The input array to process.
  * @param {Function} iteratee - The function invoked per iteration.
- * @returns {T[]} A new array of unique values.
+ * @returns {T[]} - A new array of unique values.
  *
  * @example
  * const array = [{ x: 1 }, { x: 2 }, { x: 1 }];

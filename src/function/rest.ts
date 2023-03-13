@@ -4,7 +4,7 @@
  * @since 1.0.0
  *
  * @param {Function} func - The function to partially apply arguments to.
- * @returns {Function} Returns the new partially applied function.
+ * @returns {Function} - Returns the new partially applied function.
  *
  * @example
  *

@@ -4,7 +4,7 @@
  * @since 1.0.0
  *
  * @param {*} value - The value to check.
- * @returns {boolean} True if the value is a number, false otherwise.
+ * @returns {boolean} - True if the value is a number, false otherwise.
  *
  * @example
  *

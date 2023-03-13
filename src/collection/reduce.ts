@@ -11,7 +11,7 @@ import identity from '../util/identity';
  * @param {Array<T> | Object} collection The collection to iterate over.
  * @param {Function} [iteratee=identity] The function invoked per iteration.
  * @param {*} [initialValue] The initial value.
- * @returns {*} Returns the accumulated value.
+ * @returns {*} - Returns the accumulated value.
  *
  * @example
  * reduce([1, 2, 3], (acc, n) => acc + n); // Returns: 6

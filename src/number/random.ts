@@ -18,7 +18,7 @@ const randomInt = (a = 1, b = 0) => {
  * @param {number} [lower=0] - The lower bound of the range (inclusive if `upper` is defined).
  * @param {number|boolean} [upper=1] - The upper bound of the range (exclusive if defined), or a boolean flag indicating whether to return a floating-point number.
  *
- * @returns {number} A random number within the specified range.
+ * @returns {number} - A random number within the specified range.
  *
  * @example
  *

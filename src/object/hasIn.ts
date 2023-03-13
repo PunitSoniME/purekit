@@ -7,7 +7,7 @@ import toPlainObject from '../lang/toPlainObject';
  *
  * @param {*} object - The value to query.
  * @param {(string|Array|*)} path - The property path to check.
- * @returns {boolean} Returns `true` if the property exists, else `false`.
+ * @returns {boolean} - Returns `true` if the property exists, else `false`.
  * @since 1.0.0
  *
  * @example

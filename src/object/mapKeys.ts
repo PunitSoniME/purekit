@@ -9,7 +9,7 @@ import predicateType from '../helpers/predicateType';
  *
  * @param {Object} object - The object to map.
  * @param {Function} iteratee - The mapping function.
- * @returns {Object} The new object with mapped keys.
+ * @returns {Object} - The new object with mapped keys.
  *
  * @example
  *

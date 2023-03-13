@@ -2,9 +2,9 @@
  * Converts a string path to an array of path segments.
  *
  * @since 1.0.0
- * 
+ *
  * @param {any} path - The string path to convert.
- * 
+ *
  * @returns {Array} - An array of path segments.
  *
  * @example

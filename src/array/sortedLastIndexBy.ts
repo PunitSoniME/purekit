@@ -11,7 +11,7 @@ import identity from '../util/identity';
  * @param {T[]} array The sorted array to inspect.
  * @param {T} value The value to evaluate.
  * @param {predicateType<T>} [iteratee=identity] The iteratee invoked per element.
- * @returns {number} Returns the index at which value should be inserted into array.
+ * @returns {number} - Returns the index at which value should be inserted into array.
  *
  * @example
  * const users = [{ id: 1, name: 'Jane' }, { id: 2, name: 'John' }, { id: 3, name: 'Mary' }];

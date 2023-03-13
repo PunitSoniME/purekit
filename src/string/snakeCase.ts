@@ -2,10 +2,10 @@
  * Converts a string to snake case.
  *
  * @since 1.0.0
- * 
+ *
  * @param {string} [str=''] - The string to convert.
- * 
- * @returns {string} The snake case version of the input string.
+ *
+ * @returns {string} - The snake case version of the input string.
  *
  * @example
  * snakeCase('some text'); // 'some_text'
@@ -14,7 +14,7 @@
  *
  */
 const snakeCase = (str: string = ''): string =>
-	//	@ts-ignore	
+	//	@ts-ignore
 	str
 		.match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
 		.map(s => s.toLowerCase())

@@ -4,7 +4,7 @@
  * @since 1.0.0
  *
  * @param {*} value - The value to convert to a number.
- * @returns {number} The converted number.
+ * @returns {number} - The converted number.
  *
  * @example
  *

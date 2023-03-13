@@ -8,7 +8,7 @@ import range from './range';
  * @param {number} [start=0] The start value. If `end` is not specified, this value will be the end value and `start` will be set to 0.
  * @param {number} [end=start] The end value.
  * @param {number} [step=1] The value to increment or decrement by.
- * @returns {Array} Returns the new array of numbers.
+ * @returns {Array} - Returns the new array of numbers.
  *
  * @example
  *
@@ -33,6 +33,9 @@ import range from './range';
  * range(0);
  * // => []
  */
-const rangeRight = (start: number = 0, end?: number, step?: number): Array<any> =>
-	range(start, end, step, true);
+const rangeRight = (
+	start: number = 0,
+	end?: number,
+	step?: number
+): Array<any> => range(start, end, step, true);
 export default rangeRight;

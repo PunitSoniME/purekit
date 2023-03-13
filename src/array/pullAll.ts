@@ -4,7 +4,7 @@ import pullAt from './pullAt';
  * Removes all instances of specified elements from an array.
  *
  * @since 1.0.0
- * 
+ *
  * @template T
  * @param {T[]} array - The array to modify.
  * @param {T[]} elementsToRemove - The elements to remove from the array.

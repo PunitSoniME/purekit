@@ -5,7 +5,7 @@
  * @since 1.0.0
  *
  * @param {Function} fn - The function to be called once
- * @returns {Function} A function that can only be called once
+ * @returns {Function} - A function that can only be called once
  *
  * @example
  *

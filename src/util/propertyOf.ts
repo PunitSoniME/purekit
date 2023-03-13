@@ -6,7 +6,7 @@ import get from '../object/get';
  *
  * @param {Object} obj - The object to query.
  * @param {Array|string} path - The path of the property to get.
- * @returns {Function} Returns the new function.
+ * @returns {Function} - Returns the new function.
  *
  * @example
  *
@@ -14,5 +14,8 @@ import get from '../object/get';
  * const street = propertyOf(user)(['address', 'street']);
  * console.log(street); // output: '123 Main St.'
  */
-const propertyOf = (obj: any): Function => (path: string | any[]) => get(obj, path);
+const propertyOf =
+	(obj: any): Function =>
+	(path: string | any[]) =>
+		get(obj, path);
 export default propertyOf;
