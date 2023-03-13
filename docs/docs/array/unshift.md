@@ -18,7 +18,7 @@ description: Adds one or more elements to the beginning of an array and returns 
 
 
 ```bash
-
+{T[]} - The modified array with new elements added to the beginning.
 ```
 
 

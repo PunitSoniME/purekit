@@ -19,7 +19,7 @@ description: This method creates an array of unique values that are included in 
 
 
 ```bash
-
+{T[]} - Returns the new array of combined values.
 ```
 
 

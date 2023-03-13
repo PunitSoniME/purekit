@@ -9,7 +9,8 @@ description: Returns the index at which the specified value should be inserted i
 
 
 ```bash
-
+{T[]} array - The sorted array to search in.
+{T} value - The value to search for.
 ```
 
 
@@ -17,7 +18,7 @@ description: Returns the index at which the specified value should be inserted i
 
 
 ```bash
-
+{number} - The index at which the specified value should be inserted.
 ```
 
 

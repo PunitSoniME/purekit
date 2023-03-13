@@ -9,7 +9,9 @@ description: Creates an array of unique values that are included in the first gi
 
 
 ```bash
-
+{T[]} array - The array to inspect.
+{...T[][]} args - The arrays to exclude.
+{function} comparator - The function to determine the uniqueness of each element.
 ```
 
 
@@ -17,7 +19,7 @@ description: Creates an array of unique values that are included in the first gi
 
 
 ```bash
-
+{T[]} - Returns the new array of filtered values.
 ```
 
 

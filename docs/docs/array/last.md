@@ -7,7 +7,7 @@ description: 'Returns the last element of an array.'
 #### Arguments
 
 ```bash
-array - The array to query.
+{Array} array - The array to query.
 ```
 
 #### Returns

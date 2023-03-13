@@ -19,7 +19,7 @@ description: Uses a function to determine the sort order of the input array and 
 
 
 ```bash
-
+{number} - Returns the index at which the value should be inserted into the array.
 ```
 
 
@@ -27,5 +27,5 @@ description: Uses a function to determine the sort order of the input array and 
 
 
 ```ts
-var objects = [{ 'x': 4 }, { 'x': 5 }];sortedIndexBy(objects, { 'x': 4 }, function(o) { return o.x; });
+var objects = [{ 'x': 4 }, { 'x': 5 }];sortedIndexBy(objects, { 'x': 4 }, function(o) { return o.x; });
 ```

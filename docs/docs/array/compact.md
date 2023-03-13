@@ -7,13 +7,13 @@ description: 'Creates a new array with all falsey values removed. The values `fa
 #### Arguments
 
 ```bash
-array (Array): The array to compact.
+{T[]} array - The array to compact.
 ```
 
 #### Returns
 
 ```bash
-(Array): Returns the new array of filtered values.
+{T[]} - Returns the new array of filtered values.
 ```
 
 #### Example

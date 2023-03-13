@@ -9,7 +9,7 @@ description: Creates a new array with all duplicate values removed. Assumes the 
 
 
 ```bash
-
+{T[]} array - The input array to remove duplicates from.
 ```
 
 
@@ -17,7 +17,7 @@ description: Creates a new array with all duplicate values removed. Assumes the 
 
 
 ```bash
-
+{T[]} - Returns the new array of unique values.
 ```
 
 

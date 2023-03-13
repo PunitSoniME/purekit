@@ -8,9 +8,9 @@ import identity from '../util/identity';
  * @since 1.0.0
  *
  * @template T
- * @param {Array<T> | Object} collection The collection to iterate over.
- * @param {Function} [iteratee=identity] The function invoked per iteration.
- * @param {*} [initialValue] The initial value.
+ * @param {Array<T> | Object} collection - The collection to iterate over.
+ * @param {Function} [iteratee=identity] - The function invoked per iteration.
+ * @param {*} [initialValue] - The initial value.
  * @returns {*} - Returns the accumulated value.
  *
  * @example

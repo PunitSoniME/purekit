@@ -18,7 +18,7 @@ description: Removes all instances of specified elements from an array.
 
 
 ```bash
-
+{T[]} - The modified array with specified elements removed.
 ```
 
 

@@ -18,7 +18,7 @@ description: Returns the index of the first occurrence of the specified value in
 
 
 ```bash
-
+{number} - The index of the first occurrence of the value, or -1 if not found.
 ```
 
 

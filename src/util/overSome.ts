@@ -5,7 +5,7 @@ import identity from './identity';
  *
  * @since 1.0.0
  *
- * @param {Function[]} predicates An array of predicate functions to check the item against
+ * @param {Function[]} predicates - An array of predicate functions to check the item against
  * @returns {Function} - A function that returns true if the item satisfies at least one predicate, false otherwise
  *
  * @example

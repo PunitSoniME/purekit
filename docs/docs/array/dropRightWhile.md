@@ -18,7 +18,7 @@ description: Creates a slice of the `array` with elements dropped from the end.
 
 
 ```bash
-
+{T[]} - Returns the slice of `array`.
 ```
 
 

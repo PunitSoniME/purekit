@@ -18,7 +18,7 @@ description: This function creates a new array with unique values from the input
 
 
 ```bash
-
+{T[]} - A new array of unique values.
 ```
 
 

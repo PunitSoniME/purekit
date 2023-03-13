@@ -18,7 +18,7 @@ description: Creates a duplicate-free version of an array, using a comparator fu
 
 
 ```bash
-
+{T[]} - Returns the new duplicate free array.
 ```
 
 

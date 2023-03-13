@@ -7,14 +7,14 @@ description: 'Creates an array of unique values that are included in the first g
 #### Arguments
 
 ```bash
-- array (Array): The array to inspect.
-- [values] (...*): The values to exclude.
+{T[] | null | undefined} array - The array to inspect.
+{...T[][]} restArray - The values to exclude.
 ```
 
 #### Returns
 
 ```bash
-- (Array): Returns the new array of filtered values.
+{T[]} - Returns the new array of filtered values.
 ```
 
 #### Example

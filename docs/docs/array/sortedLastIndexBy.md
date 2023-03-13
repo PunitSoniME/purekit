@@ -9,7 +9,9 @@ description: Returns the highest index at which value should be inserted into ar
 
 
 ```bash
-
+{T[]} array - The sorted array to inspect.
+{T} value - The value to evaluate.
+{predicateType<T>} [iteratee=identity] - The iteratee invoked per element.
 ```
 
 
@@ -17,7 +19,7 @@ description: Returns the highest index at which value should be inserted into ar
 
 
 ```bash
-
+{number} - Returns the index at which value should be inserted into array.
 ```
 
 

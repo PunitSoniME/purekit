@@ -5,7 +5,7 @@ import getRandomElementFromCollection from '../helpers/getRandomElement';
  *
  * @since 1.0.0
  *
- * @param {Array|Object} collection The collection to sample from
+ * @param {Array|Object} collection - The collection to sample from
  * @returns {*} - Returns the random element
  *
  * @example

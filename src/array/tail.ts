@@ -2,7 +2,7 @@
  * Returns all the elements of an array except for the first one.
  *
  * @template T
- * @param {T[]} array The input array.
+ * @param {T[]} array - The input array.
  * @returns {T[]} - A new array containing all elements of the input array except the first one.
  *
  * @example

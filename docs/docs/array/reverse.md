@@ -17,7 +17,7 @@ description: Reverses an array in place.
 
 
 ```bash
-
+{T[]} - The reversed array.
 ```
 
 

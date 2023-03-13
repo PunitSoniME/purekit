@@ -19,7 +19,7 @@ description: Removes all given elements from the array using a custom iteratee f
 
 
 ```bash
-
+{T[]} - The new array with removed elements
 ```
 
 

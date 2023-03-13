@@ -9,7 +9,8 @@ description: This method is like `intersection` except that it accepts `comparat
 
 
 ```bash
-
+{T[]} array - The array to inspect.
+{...any} args - The arrays of values to inspect.
 ```
 
 
@@ -17,7 +18,7 @@ description: This method is like `intersection` except that it accepts `comparat
 
 
 ```bash
-
+{T[]} - Returns the new array of intersecting values.
 ```
 
 

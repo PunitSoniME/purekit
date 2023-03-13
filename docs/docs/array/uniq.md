@@ -17,7 +17,7 @@ description: Creates a new array with unique elements from the original array.
 
 
 ```bash
-
+{T[]} - Returns the new array of unique elements.
 ```
 
 

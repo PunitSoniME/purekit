@@ -18,7 +18,7 @@ description: Zips together arrays into an array of arrays, with each array eleme
 
 
 ```bash
-
+{T[][]} - An array of arrays, each containing one element from each input array at the same index.
 ```
 
 

@@ -19,7 +19,7 @@ description: Returns the index of the first element in the array that satisfies 
 
 
 ```bash
-
+{number} - Returns the index of the found element, else -1.
 ```
 
 

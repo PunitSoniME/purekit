@@ -18,7 +18,7 @@ description: Creates a new array with the elements from the end of the given arr
 
 
 ```bash
-
+{Array} - Returns the new array of elements.
 ```
 
 

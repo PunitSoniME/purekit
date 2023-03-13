@@ -19,7 +19,7 @@ description: Returns a new array containing the elements of the original array s
 
 
 ```bash
-
+{T[]} - A new array containing the elements from the original array between the specified start and end indexes.
 ```
 
 

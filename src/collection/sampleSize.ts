@@ -8,7 +8,7 @@ import getRandomElementFromCollection from '../helpers/getRandomElement';
  * @since 1.0.0
  *
  * @template T
- * @param {T} collection The collection to sample from.
+ * @param {T} collection - The collection to sample from.
  * @param {number} [length=1] The number of elements to randomly select from the `collection`.
  * @returns {T} - Returns the array of random elements.
  *

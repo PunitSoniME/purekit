@@ -17,7 +17,7 @@ description: Creates an object from an array of key-value pairs.
 
 
 ```bash
-
+{Object} - An object created from the key-value pairs in the input array.
 ```
 
 

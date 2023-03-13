@@ -18,7 +18,7 @@ description: Creates a new array with elements dropped until the predicate retur
 
 
 ```bash
-
+{T[]} - Returns the slice of the array.
 ```
 
 

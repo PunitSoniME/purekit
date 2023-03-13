@@ -5,9 +5,9 @@ import concat from './concat';
  * but not in any of the other given arrays, using a custom comparator function to determine uniqueness.
  *
  * @template T The type of elements in the arrays.
- * @param {T[]} array The array to inspect.
- * @param {...T[][]} args The arrays to exclude.
- * @param {function} comparator The function to determine the uniqueness of each element.
+ * @param {T[]} array - The array to inspect.
+ * @param {...T[][]} args - The arrays to exclude.
+ * @param {function} comparator - The function to determine the uniqueness of each element.
  * @returns {T[]} - Returns the new array of filtered values.
  *
  * @example

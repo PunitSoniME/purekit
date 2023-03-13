@@ -17,7 +17,7 @@ description: Flattens an array of nested arrays into a single flat array.
 
 
 ```bash
-
+{any[]} - Returns the new flattened array.
 ```
 
 

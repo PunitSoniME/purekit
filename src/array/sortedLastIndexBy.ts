@@ -8,9 +8,9 @@ import identity from '../util/identity';
  * in order to maintain its sorted order, based on a provided iteratee function.
  *
  * @template T
- * @param {T[]} array The sorted array to inspect.
- * @param {T} value The value to evaluate.
- * @param {predicateType<T>} [iteratee=identity] The iteratee invoked per element.
+ * @param {T[]} array - The sorted array to inspect.
+ * @param {T} value - The value to evaluate.
+ * @param {predicateType<T>} [iteratee=identity] - The iteratee invoked per element.
  * @returns {number} - Returns the index at which value should be inserted into array.
  *
  * @example

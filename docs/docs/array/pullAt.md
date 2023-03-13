@@ -18,7 +18,7 @@ description: Removes elements from an array corresponding to the specified index
 
 
 ```bash
-
+{T[]} - An array of removed elements.
 ```
 
 

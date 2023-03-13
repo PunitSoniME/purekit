@@ -19,7 +19,7 @@ description: Returns an array of unique values that are included in all given ar
 
 
 ```bash
-
+{Array} - Returns the new array of intersecting values.
 ```
 
 

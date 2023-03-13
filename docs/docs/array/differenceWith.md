@@ -19,7 +19,7 @@ description: Returns the difference between the first array and all other argume
 
 
 ```bash
-
+{T[]} - Returns a new array of filtered values
 ```
 
 

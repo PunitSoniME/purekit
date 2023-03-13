@@ -9,7 +9,7 @@ description: Returns all the elements of an array except for the first one.
 
 
 ```bash
-
+{T[]} array - The input array.
 ```
 
 
@@ -17,7 +17,7 @@ description: Returns all the elements of an array except for the first one.
 
 
 ```bash
-
+{T[]} - A new array containing all elements of the input array except the first one.
 ```
 
 

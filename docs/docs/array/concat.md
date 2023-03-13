@@ -7,14 +7,14 @@ description: 'Concatenates two or more arrays into a new array'
 #### Arguments
 
 ```bash
-array (Array): The array to process.
-[values] (...*): The values to concatenate.
+{T[]} array - The array to process.
+{...any[]} restArray - The values to concatenate.
 ```
 
 #### Returns
 
 ```bash
-(Array): Returns the new concatenated array.
+{T[]} - Returns the new concatenated array.
 ```
 
 #### Example

@@ -5,7 +5,7 @@ import get from '../object/get';
  *
  * @since 1.0.0
  *
- * @param {Object} object The object to query.
+ * @param {Object} object - The object to query.
  * @returns {Function} - Returns the new invoker function.
  *
  * @example
