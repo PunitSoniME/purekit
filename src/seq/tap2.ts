@@ -1,9 +1,13 @@
 import chain2 from './chain2';
 
 /**
+ * Invokes a function with the given value, then returns the value.
  *
+ * @since 1.0.0
+ * 
  * @param value (*): The value to provide to interceptor.
  * @param interceptor (Function): The function to invoke.
+ * 
  * @returns (*): Returns value.
  *
  * @example

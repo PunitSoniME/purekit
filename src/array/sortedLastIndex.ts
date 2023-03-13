@@ -5,6 +5,9 @@ import baseSortedLastIndex from '../helpers/baseSortedLastIndex';
  * @param {Array} array - The sorted array to inspect.
  * @param {*} value - The value to evaluate.
  * @returns {number} - Returns the index at which value should be inserted into array.
+ * 
+ * @example
+ * sortedLastIndex([4, 5, 5, 5, 6], 5);	// => 4
  */
 const sortedLastIndex = <T>(array: T[], value: T): number =>
 	baseSortedLastIndex(array, value);

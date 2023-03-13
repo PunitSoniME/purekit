@@ -1,6 +1,13 @@
 /**
+ * Generates a cryptographically secure unique ID.
  *
- * @returns Unique uuid
+ * @since 1.0.0
+ * 
+ * @returns {string} - A unique ID string.
+ *
+ * @example
+ * const id1 = uniqueId2(); // id1 is a unique ID string
+ * const id2 = uniqueId2(); // id2 is a different unique ID string
  */
 const uniqueId2 = () =>
 	//  @ts-ignore

@@ -164,7 +164,7 @@ export default function Layout({ children, meta: pageMeta }) {
             <section aria-labelledby="products-heading">
               <div className="grid grid-cols-1 gap-y-10 lg:grid-cols-[250px_1fr]">
                 {/* Filters */}
-                <form className="hidden lg:block px-4 bg-slate-50">
+                <form className="hidden lg:block px-4 bg-slate-50 custom-sidebar">
 
                   {routes.map((section) => (
                     <Disclosure as="div" defaultOpen={true} key={section.id} className="border-b border-gray-200 py-6">
@@ -185,7 +185,7 @@ export default function Layout({ children, meta: pageMeta }) {
                           <Disclosure.Panel className="pt-6">
                             <div className="space-y-4">
                               {section.options.map((option) => (
-                                <div key={option.value}>
+                                <div key={option.label}>
                                   <div
                                     className="ml-3 text-sm text-gray-600 hover:cursor-pointer hover:underline"
                                     onClick={() => {

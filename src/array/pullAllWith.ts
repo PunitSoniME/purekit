@@ -3,10 +3,13 @@ import pullAt from './pullAt';
 /**
  * Removes all given elements from the array using a custom comparator function.
  *
+ * @since 1.0.0
+ * 
  * @template T
  * @param {T[]} array - The input array.
  * @param {T[]} elementsToRemove - The elements to be removed from the array.
  * @param {Function} comparator - The comparator function to be used for comparison.
+ * 
  * @returns {T[]} - The modified array.
  *
  * @example

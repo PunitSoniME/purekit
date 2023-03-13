@@ -6,11 +6,13 @@ import pullAt from './pullAt';
 /**
  * Removes all given elements from the array using a custom iteratee function
  *
+ * @since 1.0.0
+ * 
  * @template T
  * @param {T[]} array - The source array
  * @param {T[]} elementsToRemove - The array of elements to be removed
  * @param {Function} [iteratee=identity] - The function invoked per iteration
- * @returns {T[]} The new array with removed elements
+ * @returns {T[]} - The new array with removed elements
  *
  * @example
  *

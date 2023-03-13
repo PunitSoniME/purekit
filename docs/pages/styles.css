@@ -44,6 +44,11 @@ pre[class*="language-"] {
     content: '';
 }
 
+.custom-sidebar {
+    max-height: calc(100vh - 82px);
+    overflow-y: scroll;
+}
+
 p small {
     @apply pt-4 md:px-2 text-base;
 }

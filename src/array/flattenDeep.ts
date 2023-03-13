@@ -4,8 +4,8 @@
  * @since 1.0.0
  *
  * @template T
- * @param {T[]} array The array to flatten.
- * @returns {any[]} Returns the new flattened array.
+ * @param {T[]} array - The array to flatten.
+ * @returns {any[]} - Returns the new flattened array.
  *
  * @example
  *

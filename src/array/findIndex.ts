@@ -10,7 +10,7 @@ import identity from '../util/identity';
  * @param {Array} array - The array to search.
  * @param {Function} [predicate=identity] - The function invoked per iteration.
  * @param {number} [fromIndex=0] - The index to search from.
- * @returns {number} Returns the index of the found element, else -1.
+ * @returns {number} - Returns the index of the found element, else -1.
  *
  * @example
  *

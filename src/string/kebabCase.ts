@@ -1,7 +1,16 @@
 /**
+ * Converts a string to kebab case.
  *
- * @param str
- * @returns
+ * @since 1.0.0
+ *
+ * @param {string} [str=''] - The string to convert.
+ *
+ * @returns {string} - The kebab case string.
+ *
+ * @example
+ * const str = 'This is a Test String';
+ *
+ * const kebabStr = kebabCase(str); // 'this-is-a-test-string'
  */
 const kebabCase = (str: string = ''): string => {
 	let out = str

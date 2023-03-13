@@ -7,7 +7,7 @@ description: 'Creates an array of elements split into groups the length of chunk
 #### Arguments
 
 ```bash
-array (Array): The array to process.
+{T[]} array: The array to process.
 [chunkSize = 1] (number): The length of each chunk
 ```
 

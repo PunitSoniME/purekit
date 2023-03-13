@@ -1,9 +1,11 @@
 /**
  * Reverses an array in place.
  *
- * @param {T[]} array - The input array.
- * @returns {T[]} The reversed array.
+ * @since 1.0.0
+ * 
  * @template T
+ * @param {T[]} array - The input array.
+ * @returns {T[]} - The reversed array.
  *
  * @example
  * const arr = [1, 2, 3, 4, 5];

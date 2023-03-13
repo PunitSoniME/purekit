@@ -3,6 +3,8 @@ import identity from '../util/identity';
 /**
  * Removes all elements from an array that satisfy the predicate and returns an array with the removed elements.
  *
+ * @since 1.0.0
+ * 
  * @template T
  * @param {T[]} array - The array to modify.
  * @param {Function} [predicate=identity] - The function invoked per iteration.

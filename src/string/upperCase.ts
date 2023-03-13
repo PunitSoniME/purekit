@@ -1,7 +1,19 @@
 /**
+ * Converts a string to title case and removes special characters.
  *
- * @param str
- * @returns
+ * @since 1.0.0
+ *
+ * @param {string} [str=''] - The string to convert to title case.
+ *
+ * @return {string} The string converted to title case.
+ *
+ * @example
+ *
+ * // returns 'HELLO WORLD'
+ * upperCase('Hello_world');
+ *
+ * // returns 'LIFE IS BEAUTIFUL'
+ * upperCase('life-is_beautiful');
  */
 const upperCase = (str: string = ''): string =>
 	str

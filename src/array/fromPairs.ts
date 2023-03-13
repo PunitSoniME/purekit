@@ -4,7 +4,7 @@
  * @since 1.0.0
  *
  * @param {T[][]} array - The array of key-value pairs to convert to an object.
- * @returns {Object} An object created from the key-value pairs in the input array.
+ * @returns {Object} - An object created from the key-value pairs in the input array.
  *
  * @example
  *

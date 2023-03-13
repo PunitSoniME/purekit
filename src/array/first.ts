@@ -7,7 +7,7 @@ import head from './head';
  *
  * @param {T[]} array - The array to query.
  *
- * @returns {T | undefined} The first element of the array, or undefined if the array is empty.
+ * @returns {T | undefined} - The first element of the array, or undefined if the array is empty.
  *
  * @example
  *
