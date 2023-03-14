@@ -10,7 +10,7 @@ import IDifferenceWith from './interface/IDifferenceWith';
  * @param {T[]} array - The array to process
  * @param {...any[]} args - The arrays of values to exclude
  * @param {Function} comparator - The function invoked per element to compare values
- * @returns {T[]} Returns a new array of filtered values
+ * @returns {T[]} - Returns a new array of filtered values
  *
  * @example
  *
@@ -19,8 +19,7 @@ import IDifferenceWith from './interface/IDifferenceWith';
  *
  * const result = differenceWith(a, b, (a, b) => a === b);
  *
- * console.log(result);
- * // expected output: [1, 2]
+ * console.log(result);	//	=>	[1, 2]
  */
 const differenceWith: IDifferenceWith = <T>(array: T[], ...args: any): T[] => {
 	let comparator = args.pop();

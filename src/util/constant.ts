@@ -1,10 +1,25 @@
 /**
+ * Creates a function that always returns the same value.
  *
- * @param arg
- * @returns
+ * @since 1.0.0
+ *
+ * @template T
+ * @param {T} arg - The value to return.
+ *
+ * @return {Function} The new function.
+ *
+ * @example
+ *
+ * const func = constant('Hello');
+ *
+ * // returns 'Hello'
+ * func();
+ *
+ * // returns 'Hello'
+ * func();
  */
 const constant =
-	<T>(arg: T) =>
+	<T>(arg: T): any =>
 	() =>
 		arg;
 export default constant;

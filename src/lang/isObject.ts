@@ -6,7 +6,7 @@ import isNil from './isNil';
  * @since 1.0.0
  *
  * @param {any} value - The value to check.
- * @returns {boolean} Returns `true` if the value is an object, else `false`.
+ * @returns {boolean} - Returns `true` if the value is an object, else `false`.
  *
  * @example
  *

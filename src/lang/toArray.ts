@@ -4,7 +4,7 @@
  * @since 1.0.0
  *
  * @param {any} value - The value to convert to an array.
- * @returns {any[]} The resulting array.
+ * @returns {any[]} - The resulting array.
  *
  * @example
  *

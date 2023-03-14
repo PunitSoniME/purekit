@@ -1,7 +1,14 @@
 /**
+ * Converts a string to start case (i.e., each word capitalized, with spaces between words).
  *
- * @param str
- * @returns
+ * @since 1.0.0
+ *
+ * @param {string} str - The string to convert.
+ *
+ * @returns {string} - The string in start case.
+ *
+ * @example
+ * startCase('foo_bar_baz'); // 'Foo Bar Baz'
  */
 const startCase = (str: string = ''): string => {
 	let out = str

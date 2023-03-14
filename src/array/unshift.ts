@@ -4,7 +4,7 @@
  * @template T
  * @param {T[]} array - The array to add elements to.
  * @param {...T[]} elements - The elements to add to the beginning of the array.
- * @returns {T[]} The modified array with new elements added to the beginning.
+ * @returns {T[]} - The modified array with new elements added to the beginning.
  *
  * @example
  *

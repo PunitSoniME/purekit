@@ -4,7 +4,7 @@
  * @param {Object} object - The object to query.
  * @param {(string|Array|*)} path - The path of the property to get.
  * @param {*} [defaultValue] - The value returned for undefined resolved values.
- * @returns {*} Returns the resolved value.
+ * @returns {*} - Returns the resolved value.
  * @since 1.0.0
  *
  * @example

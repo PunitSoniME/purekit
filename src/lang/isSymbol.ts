@@ -5,7 +5,7 @@
  *
  * @param {*} value - The value to check.
  *
- * @returns {boolean} Returns `true` if the value is a symbol, else `false`.
+ * @returns {boolean} - Returns `true` if the value is a symbol, else `false`.
  *
  * @example
  *

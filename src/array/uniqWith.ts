@@ -7,7 +7,7 @@ import identity from '../util/identity';
  * @template T
  * @param {T[]} array - The array to inspect.
  * @param {predicateType<T>} [comparator=identity] - The function invoked per iteration to compare elements.
- * @returns {T[]} Returns the new duplicate free array.
+ * @returns {T[]} - Returns the new duplicate free array.
  *
  * @example
  * const objects = [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }, { 'x': 1, 'y': 2 }];

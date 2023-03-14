@@ -5,11 +5,11 @@
  * @since 1.3.0
  *
  * @template T The type of the object.
- * @param {T} object The object to modify.
- * @param {(any[] | string)} path The path of the property to set.
- * @param {*} value The value to set.
- * @param {Function} customizer The function to customize assigned values.
- * @returns {T} Returns the modified object.
+ * @param {T} object - The object to modify.
+ * @param {(any[] | string)} path - The path of the property to set.
+ * @param {*} value - The value to set.
+ * @param {Function} customizer - The function to customize assigned values.
+ * @returns {T} - Returns the modified object.
  *
  * @example
  *

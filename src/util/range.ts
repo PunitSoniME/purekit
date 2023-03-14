@@ -1,17 +1,31 @@
 /**
+ * Creates an array of numbers (positive or negative) progressing from
+ * `start` up to, but not including, `end`.
  *
- * @param start
- * @param end
- * @param step
- * @param checkRangeFromRight
- * @returns
+ * @since 1.0.0
+ *
+ * @param {number} [start=0] The start of the range.
+ * @param {number} [end] The end of the range.
+ * @param {number} [step] The value to increment or decrement by.
+ * @param {boolean} [checkRangeFromRight=false] Determines if the range
+ * should be generated from right to left.
+ *
+ * @example
+ *
+ * range(4); // [0, 1, 2, 3]
+ * range(-4); // [0, -1, -2, -3]
+ * range(1, 5); // [1, 2, 3, 4]
+ * range(0, 20, 5); // [0, 5, 10, 15]
+ * range(0, -4, -1); // [0, -1, -2, -3]
+ *
+ * @returns {number[]} - Returns the new array of numbers.
  */
 const range = (
 	start: number = 0,
 	end?: number,
 	step?: number,
 	checkRangeFromRight: boolean = false
-) => {
+): number[] => {
 	// if the end is not defined...
 	const isEndDef = typeof end !== 'undefined';
 	// ...the first argument should be the end of the range...

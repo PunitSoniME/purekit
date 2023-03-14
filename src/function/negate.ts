@@ -4,7 +4,7 @@
  * @since 1.0.0
  *
  * @param {Function} func - The function to negate.
- * @returns {Function} A new function that returns the opposite boolean value of `func`.
+ * @returns {Function} - A new function that returns the opposite boolean value of `func`.
  *
  * @example
  *

@@ -7,7 +7,7 @@
  * @param {number} [start=0] - The start of the range (inclusive if `end` is defined).
  * @param {number} [end] - The end of the range (exclusive if defined).
  *
- * @returns {boolean} `true` if the number is in range, `false` otherwise.
+ * @returns {boolean} - `true` if the number is in range, `false` otherwise.
  *
  * @example
  *

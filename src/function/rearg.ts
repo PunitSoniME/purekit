@@ -7,7 +7,7 @@
  * @param {Function} func - The function to rearrange arguments for.
  * @param {Array} order - The specified order of argument positions.
  *
- * @returns {Function} The new function with rearranged arguments.
+ * @returns {Function} - The new function with rearranged arguments.
  *
  * @example
  * const originalFn = (a, b, c) => [a, b, c];

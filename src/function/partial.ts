@@ -5,7 +5,7 @@
  *
  * @param {Function} func - The function to partially apply arguments to.
  * @param {...any} args - The arguments to partially apply to the function.
- * @returns {Function} Returns the new partially applied function.
+ * @returns {Function} - Returns the new partially applied function.
  *
  * @example
  * const add = (x, y, z) => x + y + z;

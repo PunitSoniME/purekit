@@ -9,7 +9,7 @@ import predicateType from '../helpers/predicateType';
  * @template T
  * @param {Object} object - The source object.
  * @param {Function} predicate - The function invoked per iteration.
- * @returns {Object} Returns the new object.
+ * @returns {Object} - Returns the new object.
  *
  * @example
  *

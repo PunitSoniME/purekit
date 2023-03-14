@@ -1,7 +1,19 @@
 /**
- * The `unescape` function takes a string input and returns a new string with HTML entities replaced by their corresponding characters. It uses an object to map HTML entity strings to their corresponding characters, and a regular expression to match entity strings in the input string. The matched entity string is then replaced by its corresponding character from the object. The function assumes that all entity strings in the object are valid and the regular expression will only match those entity strings.
- * @param str The input string with HTML entities to be replaced by their corresponding characters.
- * @returns A new string with HTML entities replaced by their corresponding characters.
+ * Converts HTML entities to their corresponding characters.
+ *
+ * @since 1.0.0
+ *
+ * @param {string} str - The string containing HTML entities.
+ *
+ * @return {string} The string with HTML entities replaced by their corresponding characters.
+ *
+ * @example
+ *
+ * // returns '<h1>Hello, World!</h1>'
+ * unescape('&lt;h1&gt;Hello, World!&lt;/h1&gt;');
+ *
+ * // returns "It's a wonderful life."
+ * unescape("It&#39;s a wonderful life.");
  */
 const unescape = (str: string): string => {
 	const entities = {

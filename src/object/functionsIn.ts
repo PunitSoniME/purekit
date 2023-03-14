@@ -4,7 +4,7 @@ import assignIn from './assignIn';
  * Returns an array of all the function names in the given object, including inherited ones.
  *
  * @param {Object} object - The object to search for functions.
- * @returns {Array} An array of all the function names in the object, including inherited ones.
+ * @returns {Array} - An array of all the function names in the object, including inherited ones.
  * @since 1.0.0
  *
  * @example

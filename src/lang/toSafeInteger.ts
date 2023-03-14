@@ -4,7 +4,7 @@
  * @since 1.0.0
  *
  * @param {any} value - The value to convert.
- * @returns {number} Returns the converted safe integer.
+ * @returns {number} - Returns the converted safe integer.
  *
  * @example
  *

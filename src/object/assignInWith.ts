@@ -10,7 +10,7 @@
  * @param {T} object - The destination object.
  * @param {...any} args - The source objects.
  * @param {Function} customizer - The function to customize assigned values.
- * @returns {T} Returns `object`.
+ * @returns {T} - Returns `object`.
  *
  * @example
  *

@@ -10,7 +10,7 @@ import identity from '../util/identity';
  * @param {Function|string} [iteratee=identity] - The iteratee invoked per element.
  * If a string is provided, it will be used as a property name to create a function that returns the property of the elements.
  *
- * @returns {Array} Returns the new array of intersecting values.
+ * @returns {Array} - Returns the new array of intersecting values.
  *
  * @example
  *

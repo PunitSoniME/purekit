@@ -2,8 +2,8 @@
  * Creates a new array with all duplicate values removed. Assumes the input array is already sorted.
  *
  * @template T
- * @param {T[]} array The input array to remove duplicates from.
- * @returns {T[]} Returns the new array of unique values.
+ * @param {T[]} array - The input array to remove duplicates from.
+ * @returns {T[]} - Returns the new array of unique values.
  *
  * @example
  *

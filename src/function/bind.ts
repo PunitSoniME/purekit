@@ -5,8 +5,8 @@
  *
  * @param {Function} fn - The function to bind `this` to the provided context.
  * @param {Object} ctx - The context to bind `this` to.
- * @param  {...any} boundArgs - The sequence of arguments to be bound to the new function.
- * @returns {Function} The new function with the bound `this` keyword and arguments.
+ * @param {...any} boundArgs - The sequence of arguments to be bound to the new function.
+ * @returns {Function} - The new function with the bound `this` keyword and arguments.
  *
  * @example
  *

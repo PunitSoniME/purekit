@@ -5,7 +5,7 @@
  *
  * @param {*} value - The value to compare.
  * @param {*} other - The other value to compare.
- * @returns {boolean} Returns `true` if `value` is greater than or equal to `other`, else `false`.
+ * @returns {boolean} - Returns `true` if `value` is greater than or equal to `other`, else `false`.
  *
  * @example
  *

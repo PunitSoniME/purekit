@@ -2,7 +2,7 @@
  * Returns an array of all the function names in the given object.
  *
  * @param {Object} object - The object to search for functions.
- * @returns {Array} An array of all the function names in the object.
+ * @returns {Array} - An array of all the function names in the object.
  * @since 1.0.0
  *
  * @example

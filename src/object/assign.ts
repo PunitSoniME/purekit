@@ -6,7 +6,7 @@
  * @param {object} object - The object to which the properties of the other objects will be assigned.
  * @param {...object} sources - The objects whose properties will be assigned to the `object`.
  *
- * @returns {object} A new object that combines the properties of the specified objects.
+ * @returns {object} - A new object that combines the properties of the specified objects.
  *
  * @example
  *

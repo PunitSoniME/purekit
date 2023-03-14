@@ -3,9 +3,9 @@
  *
  * @since 1.0.0
  *
- * @param {*} value The value to compare.
- * @param {*} other The other value to compare.
- * @returns {boolean} Returns `true` if `value` is less than or equal to `other`, else `false`.
+ * @param {*} value - The value to compare.
+ * @param {*} other - The other value to compare.
+ * @returns {boolean} - Returns `true` if `value` is less than or equal to `other`, else `false`.
  *
  * @example
  *

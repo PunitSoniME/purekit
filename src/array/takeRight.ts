@@ -3,7 +3,7 @@
  *
  * @param {Array} array - The input array.
  * @param {number} [length=1] - The number of elements to take.
- * @returns {Array} Returns the new array.
+ * @returns {Array} - Returns the new array.
  *
  * @example
  * takeRight([1, 2, 3, 4, 5], 3);

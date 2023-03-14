@@ -8,7 +8,7 @@ import baseMathPrecesion from '../helpers/baseMathPrecesion';
  * @param {number} value - The number to round.
  * @param {number} [precision=0] - The number of decimal places to round to.
  *
- * @returns {number} The number rounded to the specified number of decimal places.
+ * @returns {number} - The number rounded to the specified number of decimal places.
  *
  * @example
  *

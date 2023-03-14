@@ -4,7 +4,7 @@
  * @since 1.0.0
  *
  * @param {Array|Object|string} collection - The collection to determine the size of.
- * @returns {number} The size of the collection.
+ * @returns {number} - The size of the collection.
  *
  * @example
  * size([1, 2, 3]); // returns 3

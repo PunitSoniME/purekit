@@ -7,7 +7,7 @@
  * @param {Function} fn - The function to apply the transforms to.
  * @param {Function[]} transforms - The transform functions to apply to the arguments of the function.
  *
- * @returns {Function} Returns the new function.
+ * @returns {Function} - Returns the new function.
  *
  * @example
  *

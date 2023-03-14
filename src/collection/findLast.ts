@@ -10,7 +10,7 @@ import identity from '../util/identity';
  * @param {Array|Object} collection - The collection to iterate over.
  * @param {Function} [iteratee=identity] - The iteratee invoked per element.
  * @param {number} [fromIndex=0] - The index to search from.
- * @returns {*} Returns the matched element, else `undefined`.
+ * @returns {*} - Returns the matched element, else `undefined`.
  *
  * @example
  *

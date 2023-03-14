@@ -6,7 +6,7 @@ import assignIn from './assignIn';
  * @since 1.0.0
  *
  * @param {object} object - The object to query.
- * @returns {Array} Returns the array of property names.
+ * @returns {Array} - Returns the array of property names.
  *
  * @example
  *

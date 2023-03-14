@@ -5,7 +5,7 @@
  *
  * @param {Function} fn - The function to wrap.
  * @param {number} [arity=fn.length] - The arity of `fn`.
- * @returns {Function} Returns the new wrapped function.
+ * @returns {Function} - Returns the new wrapped function.
  *
  * @example
  *

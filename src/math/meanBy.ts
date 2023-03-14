@@ -11,7 +11,7 @@ import sumBy from './sumBy';
  * @param {T[]} collection - The array of objects to calculate the mean for.
  * @param {predicateType<T>} iteratee - The iteratee to use for extracting the values to calculate the mean.
  *
- * @returns {number} The mean value of the array.
+ * @returns {number} - The mean value of the array.
  *
  * @example
  *

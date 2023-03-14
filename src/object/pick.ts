@@ -5,7 +5,7 @@
  *
  * @param {Object} object - The source object.
  * @param {string|string[]} paths - The property path(s) to pick.
- * @returns {Object} Returns the new object.
+ * @returns {Object} - Returns the new object.
  *
  * @example
  *

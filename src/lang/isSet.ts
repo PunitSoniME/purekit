@@ -4,7 +4,7 @@
  * @since 1.0.0
  *
  * @param {*} value - The value to check.
- * @returns {boolean} Returns `true` if the value is a Set, else `false`.
+ * @returns {boolean} - Returns `true` if the value is a Set, else `false`.
  *
  * @example
  *

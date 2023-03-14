@@ -7,14 +7,14 @@ description: 'Joins all elements of an array into a string separated by the spec
 #### Arguments
 
 ```bash
-array (Array) - The array to join.
-[joiner=','] (string) - The separator to use when joining the elements.
+{Array} array - The array to join.
+{string} [joiner=','] - The separator to use when joining the elements.
 ```
 
 #### Returns
 
 ```bash
-string - The string created by joining the array elements.
+{string} - The string created by joining the array elements.
 ```
 
 #### Example

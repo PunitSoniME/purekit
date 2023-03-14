@@ -10,7 +10,7 @@ import identity from '../util/identity';
  * @template T
  * @param {T[]} array - The input array.
  * @param {predicateType<T>} [predicate=identity] - The function invoked per iteration.
- * @returns {T[]} Returns the slice of the array.
+ * @returns {T[]} - Returns the slice of the array.
  *
  * @example
  * dropWhile([1, 2, 3], n => n < 3); // Returns [3]

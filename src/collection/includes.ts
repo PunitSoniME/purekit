@@ -8,10 +8,10 @@ import identity from '../util/identity';
  * @since 1.0.0
  *
  * @template T
- * @param {T} collection The collection to inspect.
- * @param {predicateType<T>} [iteratee=identity] The function invoked per iteration.
+ * @param {T} collection - The collection to inspect.
+ * @param {predicateType<T>} [iteratee=identity] - The function invoked per iteration.
  * @param {number} [fromIndex=0] The index to search from.
- * @returns {boolean} Returns `true` if `predicate` is found, else `false`.
+ * @returns {boolean} - Returns `true` if `predicate` is found, else `false`.
  *
  * @example
  *

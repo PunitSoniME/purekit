@@ -5,8 +5,8 @@
  * @since 1.0.0
  *
  * @param {Function} func - The function to partially apply arguments to.
- * @param  {...any} cachedArgs - The arguments to be partially applied to `func`.
- * @returns {Function} Returns the new partially applied function.
+ * @param {...any} cachedArgs - The arguments to be partially applied to `func`.
+ * @returns {Function} - Returns the new partially applied function.
  *
  * @example
  *

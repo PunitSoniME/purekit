@@ -2,6 +2,9 @@ import pullAll from './pullAll';
 
 /**
  * Removes all occurrences of specified values from an array.
+ *
+ * @since 1.0.0
+ *
  * @template T
  * @param {T[]} array - The array to modify.
  * @param {...T} elementsToRemove - The values to remove.

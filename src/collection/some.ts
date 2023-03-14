@@ -7,9 +7,9 @@ import identity from '../util/identity';
  *
  * @since 1.0.0
  *
- * @param {Array|Object} collection The collection to iterate over.
- * @param {Function} [iteratee=identity] The function invoked per iteration.
- * @returns {boolean} Returns `true` if any element passes the predicate check, else `false`.
+ * @param {Array|Object} collection - The collection to iterate over.
+ * @param {Function} [iteratee=identity] - The function invoked per iteration.
+ * @returns {boolean} - Returns `true` if any element passes the predicate check, else `false`.
  *
  * @example
  *

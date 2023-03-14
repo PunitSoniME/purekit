@@ -7,7 +7,7 @@ import identity from '../util/identity';
  * @param {T[]} array - The array to inspect.
  * @param {...T[][]} args - The arrays to check for the union.
  * @param {Function} [comparator=identity] - The function to compare values.
- * @returns {T[]} Returns the new array of combined values.
+ * @returns {T[]} - Returns the new array of combined values.
  * @example
  *
  * unionWith([{ x: 1, y: 2 }, { x: 2, y: 1 }], [{ x: 1, y: 2 }, { x: 2, y: 1 }], (a, b) => a.x === b.x);

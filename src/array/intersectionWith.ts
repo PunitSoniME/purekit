@@ -6,9 +6,9 @@ import IIntersectionWith from './interface/IIntersectionWith';
  *
  * @since 1.0.0
  *
- * @param {T[]} array The array to inspect.
- * @param {...any} args The arrays of values to inspect.
- * @returns {T[]} Returns the new array of intersecting values.
+ * @param {T[]} array - The array to inspect.
+ * @param {...any} args - The arrays of values to inspect.
+ * @returns {T[]} - Returns the new array of intersecting values.
  *
  * @example
  *

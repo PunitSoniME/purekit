@@ -1,13 +1,13 @@
 ---
 title: 'last'
-definition: "last(array)"
+definition: "last{Array}"
 description: 'Returns the last element of an array.'
 ---
 
 #### Arguments
 
 ```bash
-array - The array to query.
+{Array} array - The array to query.
 ```
 
 #### Returns

@@ -4,7 +4,7 @@
  * @since 1.0.0
  *
  * @param {*} value - The value to convert to a string.
- * @returns {string} The string representation of the given value.
+ * @returns {string} - The string representation of the given value.
  *
  * @example
  * toString('Hello') // returns 'Hello'

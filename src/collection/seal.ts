@@ -5,7 +5,7 @@
  *
  * @param {Object|any[]} collection - The collection to be sealed.
  *
- * @returns {Object|any[]} The sealed collection.
+ * @returns {Object|any[]} - The sealed collection.
  *
  * @example
  *

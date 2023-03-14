@@ -4,7 +4,7 @@
  * @template T
  * @param {T[]} array - The sorted input array to search.
  * @param {T} value - The value to search for.
- * @returns {number} The index of the first occurrence of the value, or -1 if not found.
+ * @returns {number} - The index of the first occurrence of the value, or -1 if not found.
  *
  * @example
  * const arr = [1, 2, 3, 4, 5];

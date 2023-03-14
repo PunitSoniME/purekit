@@ -1,5 +1,8 @@
 /**
  * Returns the last element of an array.
+ *
+ * @since 1.0.0
+ *
  * @param {Array} array - The array to query.
  * @returns {*} - Returns the last element of the array.
  *
