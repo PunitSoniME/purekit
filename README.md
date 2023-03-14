@@ -1,6 +1,6 @@
 # Alternate of Lodash Library
 
-## https://alt-lodash.verecel.app ( Under progress )
+## https://alt-lodash.vercel.app ( Under progress )
 
 <br />
 
