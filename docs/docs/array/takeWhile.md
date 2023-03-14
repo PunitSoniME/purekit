@@ -9,8 +9,8 @@ description: Creates a new array containing the elements of the input array, up 
 
 
 ```bash
-{T[]} array - The input array.
-{predicateType<T>} [predicate=identity] - The predicate function to be called on each element.
+{Array} array - The input array.
+{Function} [predicate = identity] - The predicate function to be called on each element.
 ```
 
 
@@ -18,7 +18,7 @@ description: Creates a new array containing the elements of the input array, up 
 
 
 ```bash
-{T[]} - The new array of elements that passed the predicate, until the first that returned false.
+{Array} - The new array of elements that passed the predicate, until the first that returned false.
 ```
 
 

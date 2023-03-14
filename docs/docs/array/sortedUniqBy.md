@@ -9,7 +9,7 @@ description: This function creates a new array with unique values from the input
 
 
 ```bash
-{T[]} array - The input array to process.
+{Array} array - The input array to process.
 {Function} iteratee - The function invoked per iteration.
 ```
 
@@ -18,7 +18,7 @@ description: This function creates a new array with unique values from the input
 
 
 ```bash
-{T[]} - A new array of unique values.
+{Array} - A new array of unique values.
 ```
 
 
@@ -26,5 +26,7 @@ description: This function creates a new array with unique values from the input
 
 
 ```ts
-const array = [{ x: 1 }, { x: 2 }, { x: 1 }];const result = sortedUniqBy(array, o => o.x);console.log(result); // Output: [{ x: 1 }, { x: 2 }]
+const array = [{ x: 1 }, { x: 2 }, { x: 1 }];
+const result = sortedUniqBy(array, o => o.x);
+console.log(result); // Output: [{ x: 1 }, { x: 2 }]
 ```

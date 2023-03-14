@@ -1,6 +1,6 @@
 ---
 title: 'last'
-definition: "last(array)"
+definition: "last{Array}"
 description: 'Returns the last element of an array.'
 ---
 

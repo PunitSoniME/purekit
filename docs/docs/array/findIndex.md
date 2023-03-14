@@ -1,6 +1,6 @@
 ---
 title: findIndex
-definition: 
+definition: findIndex(array, [predicate = identity], [fromIndex = 0])
 description: Returns the index of the first element in the array that satisfies the provided predicate function.
 ---
 
@@ -10,8 +10,8 @@ description: Returns the index of the first element in the array that satisfies 
 
 ```bash
 {Array} array - The array to search.
-{Function} [predicate=identity] - The function invoked per iteration.
-{number} [fromIndex=0] - The index to search from.
+{Function} [predicate = identity] - The function invoked per iteration.
+{number} [fromIndex = 0] - The index to search from.
 ```
 
 
@@ -27,5 +27,15 @@ description: Returns the index of the first element in the array that satisfies 
 
 
 ```ts
-const users = [  { id: 1, name: 'John' },  { id: 2, name: 'Jane' },  { id: 3, name: 'Bob' }];findIndex(users, ({ id }) => id === 2);
+const users = [
+  { id: 1, name: 'John' },
+  { id: 2, name: 'Jane' },
+  { id: 3, name: 'Bob' }
+];
+
+findIndex(users, ({ id }) => id === 2);
+// => 1
+
+findIndex(users, ({ name }) => name === 'Mary');
+// => -1
 ```

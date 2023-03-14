@@ -9,8 +9,8 @@ description: Creates a duplicate-free version of an array, using a comparator fu
 
 
 ```bash
-{T[]} array - The array to inspect.
-{predicateType<T>} [comparator=identity] - The function invoked per iteration to compare elements.
+{Array} array - The array to inspect.
+{Function} [comparator=identity] - The function invoked per iteration to compare elements.
 ```
 
 
@@ -18,7 +18,7 @@ description: Creates a duplicate-free version of an array, using a comparator fu
 
 
 ```bash
-{T[]} - Returns the new duplicate free array.
+{Array} - Returns the new duplicate free array.
 ```
 
 
@@ -26,5 +26,6 @@ description: Creates a duplicate-free version of an array, using a comparator fu
 
 
 ```ts
-const objects = [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }, { 'x': 1, 'y': 2 }];uniqWith(objects, isEqual); // => [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }]
+const objects = [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }, { 'x': 1, 'y': 2 }];
+uniqWith(objects, isEqual); // => [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }]
 ```

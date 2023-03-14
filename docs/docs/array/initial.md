@@ -1,6 +1,6 @@
 ---
 title: initial
-definition: 
+definition: initial(array)
 description: Returns all the elements of an array except the last one.
 ---
 
@@ -25,5 +25,5 @@ description: Returns all the elements of an array except the last one.
 
 
 ```ts
-initial([1, 2, 3]); // returns [1, 2]
+initial([1, 2, 3]); // => [1, 2]
 ```

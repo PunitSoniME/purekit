@@ -1,6 +1,6 @@
 ---
 title: flattenDepth
-definition: 
+definition: flattenDepth(array, [depth = 1])
 description: Flattens an array up to the specified depth.
 ---
 
@@ -10,7 +10,7 @@ description: Flattens an array up to the specified depth.
 
 ```bash
 {Array} array - The array to flatten.
-{number} [depth=1] - The maximum recursion depth.
+{number} [depth = 1] - The maximum recursion depth.
 ```
 
 
@@ -26,5 +26,5 @@ description: Flattens an array up to the specified depth.
 
 
 ```ts
-flattenDepth([1, [2, [3, [4]], 5]], 2);
+flattenDepth([1, [2, [3, [4]], 5]], 2); // => [1, 2, 3, [4], 5]
 ```

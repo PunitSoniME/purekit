@@ -9,7 +9,7 @@ description: Returns the index of the first occurrence of the specified value in
 
 
 ```bash
-{T[]} array - The sorted input array to search.
+{Array} array - The sorted input array to search.
 {T} value - The value to search for.
 ```
 
@@ -26,5 +26,7 @@ description: Returns the index of the first occurrence of the specified value in
 
 
 ```ts
-const arr = [1, 2, 3, 4, 5];console.log(sortedIndexOf(arr, 3)); // Output: 2console.log(sortedIndexOf(arr, 6)); // Output: -1
+const arr = [1, 2, 3, 4, 5];
+console.log(sortedIndexOf(arr, 3)); // Output: 2
+console.log(sortedIndexOf(arr, 6)); // Output: -1
 ```

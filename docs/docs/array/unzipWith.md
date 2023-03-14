@@ -10,7 +10,7 @@ description: This method is like `unzip` except that it accepts `iteratee` to sp
 
 ```bash
 {any[][]} array - The array of grouped elements to process.
-{predicateType<T>} [predicate=identity] - The iteratee to combine regrouped values.
+{Function} [predicate = identity] - The iteratee to combine regrouped values.
 ```
 
 

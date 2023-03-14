@@ -9,8 +9,8 @@ description: Removes all instances of specified elements from an array.
 
 
 ```bash
-{T[]} array - The array to modify.
-{T[]} elementsToRemove - The elements to remove from the array.
+{Array} array - The array to modify.
+{Array} elementsToRemove - The elements to remove from the array.
 ```
 
 
@@ -18,7 +18,7 @@ description: Removes all instances of specified elements from an array.
 
 
 ```bash
-{T[]} - The modified array with specified elements removed.
+{Array} - The modified array with specified elements removed.
 ```
 
 
@@ -26,5 +26,7 @@ description: Removes all instances of specified elements from an array.
 
 
 ```ts
-const arr = ['a', 'b', 'c', 'a', 'b', 'c'];pullAll(arr, ['a', 'c']);console.log(arr);
+const arr = ['a', 'b', 'c', 'a', 'b', 'c'];
+pullAll(arr, ['a', 'c']);
+console.log(arr);
 ```

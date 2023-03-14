@@ -9,9 +9,9 @@ description: Returns the highest index at which value should be inserted into ar
 
 
 ```bash
-{T[]} array - The sorted array to inspect.
+{Array} array - The sorted array to inspect.
 {T} value - The value to evaluate.
-{predicateType<T>} [iteratee=identity] - The iteratee invoked per element.
+{Function} [iteratee=identity] - The iteratee invoked per element.
 ```
 
 
@@ -27,5 +27,6 @@ description: Returns the highest index at which value should be inserted into ar
 
 
 ```ts
-const users = [{ id: 1, name: 'Jane' }, { id: 2, name: 'John' }, { id: 3, name: 'Mary' }];sortedLastIndexBy(users, { id: 2 }, ({ id }) => id); // 3
+const users = [{ id: 1, name: 'Jane' }, { id: 2, name: 'John' }, { id: 3, name: 'Mary' }];
+sortedLastIndexBy(users, { id: 2 }, ({ id }) => id); // 3
 ```

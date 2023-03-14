@@ -9,8 +9,8 @@ description: Returns an array of unique values that are included only in one of 
 
 
 ```bash
-{T[]} array - The input array.
-{...T[][]} restArray - The rest of the arrays to be compared.
+{Array} array - The input array.
+{...[]} restArray - The rest of the arrays to be compared.
 ```
 
 
@@ -18,7 +18,7 @@ description: Returns an array of unique values that are included only in one of 
 
 
 ```bash
-{T[]} - An array of unique values from the input arrays.
+{Array} - An array of unique values from the input arrays.
 ```
 
 
@@ -26,5 +26,6 @@ description: Returns an array of unique values that are included only in one of 
 
 
 ```ts
-xor([2, 1], [2, 3]) // returns [1, 3]xor(['a', 'b', 'c'], ['b', 'd'], ['d', 'e']) // returns ['a', 'c', 'e']
+xor([2, 1], [2, 3]) // returns [1, 3]
+xor(['a', 'b', 'c'], ['b', 'd'], ['d', 'e']) // returns ['a', 'c', 'e']
 ```

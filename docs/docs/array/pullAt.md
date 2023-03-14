@@ -9,7 +9,7 @@ description: Removes elements from an array corresponding to the specified index
 
 
 ```bash
-{T[]} array - The array to modify.
+{Array} array - The array to modify.
 {number|number[]} indexes - The indexes of the elements to remove from the array.
 ```
 
@@ -18,7 +18,7 @@ description: Removes elements from an array corresponding to the specified index
 
 
 ```bash
-{T[]} - An array of removed elements.
+{Array} - An array of removed elements.
 ```
 
 
@@ -26,5 +26,8 @@ description: Removes elements from an array corresponding to the specified index
 
 
 ```ts
-const arr = [1, 2, 3, 4, 5];const removed = pullAt(arr, [1, 3]);console.log(arr); // [1, 3, 5]console.log(removed); // [2, 4]
+const arr = [1, 2, 3, 4, 5];
+const removed = pullAt(arr, [1, 3]);
+console.log(arr); // [1, 3, 5]
+console.log(removed); // [2, 4]
 ```

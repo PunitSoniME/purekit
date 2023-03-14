@@ -9,8 +9,8 @@ description: Zips together arrays into an array of arrays, with each array eleme
 
 
 ```bash
-{T[]} array - The first array to zip.
-{...T[][]} args - The other arrays to zip.
+{Array} array - The first array to zip.
+{...[]} args - The other arrays to zip.
 ```
 
 
@@ -18,7 +18,7 @@ description: Zips together arrays into an array of arrays, with each array eleme
 
 
 ```bash
-{T[][]} - An array of arrays, each containing one element from each input array at the same index.
+{Array} - An array of arrays, each containing one element from each input array at the same index.
 ```
 
 

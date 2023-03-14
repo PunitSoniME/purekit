@@ -9,8 +9,8 @@ description: This method creates an array of unique values that are included in 
 
 
 ```bash
-{T[]} array - The array to inspect.
-{...T[][]} args - The arrays to check for the union.
+{Array} array - The array to inspect.
+{...[]} args - The arrays to check for the union.
 {Function} [comparator=identity] - The function to compare values.
 ```
 
@@ -19,7 +19,7 @@ description: This method creates an array of unique values that are included in 
 
 
 ```bash
-{T[]} - Returns the new array of combined values.
+{Array} - Returns the new array of combined values.
 ```
 
 

@@ -1,6 +1,6 @@
 ---
 title: flattenDeep
-definition: 
+definition: flattenDeep{Array}
 description: Recursively flattens `array`.
 ---
 
@@ -9,7 +9,7 @@ description: Recursively flattens `array`.
 
 
 ```bash
-{T[]} array - The array to flatten.
+{Array} array - The array to flatten.
 ```
 
 
@@ -17,7 +17,7 @@ description: Recursively flattens `array`.
 
 
 ```bash
-{any[]} - Returns the new flattened array.
+{Array} - Returns the new flattened array.
 ```
 
 

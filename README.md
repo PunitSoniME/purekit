@@ -1,5 +1,10 @@
 # Alternate of Lodash Library
 
+## https://alt-lodash.verecel.app ( Under progress )
+
+<br />
+
+
 [![CI](https://github.com/PunitSoniME/alt-lodash/actions/workflows/main.yml/badge.svg)](https://github.com/PunitSoniME/alt-lodash/actions/workflows/main.yml)
 [![Rate this package](https://badges.openbase.com/js/rating/alt-lodash.svg?token=LsZ/SAF9sVVDLFYX3t2XIX5W6JEuM2OZBYIpJvm25wg=)](https://openbase.com/js/alt-lodash?utm_source=embedded&amp;utm_medium=badge&amp;utm_campaign=rate-badge)
 [![Join the chat at https://gitter.im/alt-lodash/developers](https://badges.gitter.im/alt-lodash/developers.svg)](https://gitter.im/alt-lodash/developers?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
@@ -65,24 +70,6 @@ const { concat, chunk, forEach, filter } = require('alt-lodash');    //  cjs ( c
 # Array
 
 - chunk ✔️
-
-    ```ts
-    chunk(array: [], [chunkSize = 1])
-    ```
-
-    ## Arguments
-    
-    ```bash
-    array (Array): The array to process.
-    [chunkSize = 1] (number): The length of each chunk
-    ```
-
-    ## Returns
-    
-    ```bash
-    (Array): Returns the new array of chunks.
-    ```
-
 - compact ✔️
 - concat ✔️
 - difference ✔️

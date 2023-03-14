@@ -1,6 +1,6 @@
 ---
 title: fromPairs
-definition: 
+definition: fromPairs(pairs)
 description: Creates an object from an array of key-value pairs.
 ---
 
@@ -9,7 +9,7 @@ description: Creates an object from an array of key-value pairs.
 
 
 ```bash
-{T[][]} array - The array of key-value pairs to convert to an object.
+{Array} array - The array of key-value pairs to convert to an object.
 ```
 
 

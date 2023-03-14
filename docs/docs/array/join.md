@@ -7,7 +7,7 @@ description: 'Joins all elements of an array into a string separated by the spec
 #### Arguments
 
 ```bash
-{T[]} array - The array to join.
+{Array} array - The array to join.
 {string} [joiner=','] - The separator to use when joining the elements.
 ```
 

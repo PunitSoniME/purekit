@@ -9,7 +9,7 @@ description: Creates an array of grouped elements, the first element of the tupl
 
 
 ```bash
-{T[][]} arrays - The arrays to be grouped together.
+{Array} arrays - The arrays to be grouped together.
 {Function} [iteratee] - The function to combine the elements of the tuples in the resulting arrays.
 ```
 
@@ -18,7 +18,7 @@ description: Creates an array of grouped elements, the first element of the tupl
 
 
 ```bash
-{TResult[]} - Returns the new array of grouped elements.
+{TResul[]} - Returns the new array of grouped elements.
 ```
 
 

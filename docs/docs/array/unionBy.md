@@ -9,7 +9,7 @@ description: Creates an array of unique values, in order, by iterating over all 
 
 
 ```bash
-{T[]} array - The array to inspect.
+{Array} array - The array to inspect.
 {...any} args - The rest of the arrays to inspect.
 {string|Function} [iteratee=identity] - The iteratee invoked per element.
 ```
@@ -19,7 +19,7 @@ description: Creates an array of unique values, in order, by iterating over all 
 
 
 ```bash
-{T[]} - Returns the new array of combined values.
+{Array} - Returns the new array of combined values.
 ```
 
 

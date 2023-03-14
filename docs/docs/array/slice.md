@@ -9,7 +9,7 @@ description: Returns a new array containing the elements of the original array s
 
 
 ```bash
-{T[]} array - The original array.
+{Array} array - The original array.
 {number} [start=0] - The start index (inclusive). Defaults to 0.
 {number} [end=array.length] - The end index (exclusive). Defaults to the length of the array.
 ```
@@ -19,7 +19,7 @@ description: Returns a new array containing the elements of the original array s
 
 
 ```bash
-{T[]} - A new array containing the elements from the original array between the specified start and end indexes.
+{Array} - A new array containing the elements from the original array between the specified start and end indexes.
 ```
 
 
@@ -27,5 +27,8 @@ description: Returns a new array containing the elements of the original array s
 
 
 ```ts
-const arr = [1, 2, 3, 4, 5];slice(arr);         // [1, 2, 3, 4, 5]slice(arr, 2);      // [3, 4, 5]slice(arr, 2, 4);   // [3, 4]
+const arr = [1, 2, 3, 4, 5];
+slice(arr);         // [1, 2, 3, 4, 5]
+slice(arr, 2);      // [3, 4, 5]
+slice(arr, 2, 4);   // [3, 4]
 ```

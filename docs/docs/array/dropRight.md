@@ -1,6 +1,6 @@
 ---
 title: dropRight
-definition: 
+definition: dropRight(array, [n=1])
 description: Creates a slice of an array with `n` elements dropped from the end.
 ---
 
@@ -26,5 +26,7 @@ description: Creates a slice of an array with `n` elements dropped from the end.
 
 
 ```ts
-dropRight([1, 2, 3, 4, 5], 2);
+dropRight([1, 2, 3, 4, 5], 2);  // => [1, 2, 3]
+
+dropRight([1, 2, 3, 4, 5]);// => [1, 2, 3, 4]
 ```

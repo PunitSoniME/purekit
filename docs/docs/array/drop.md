@@ -1,6 +1,6 @@
 ---
 title: drop
-definition: 
+definition: drop(array, [n=1])
 description: Creates a slice of `array` with `n` elements dropped from the beginning.
 ---
 
@@ -9,7 +9,7 @@ description: Creates a slice of `array` with `n` elements dropped from the begin
 
 
 ```bash
-{T[]} array - The array to query.
+{Array} array - The array to query.
 {number} [n=1] - The number of elements to drop.
 ```
 
@@ -18,7 +18,7 @@ description: Creates a slice of `array` with `n` elements dropped from the begin
 
 
 ```bash
-{T[]} - Returns the slice of `array`.
+{Array} - Returns the slice of `array`.
 ```
 
 
@@ -26,5 +26,6 @@ description: Creates a slice of `array` with `n` elements dropped from the begin
 
 
 ```ts
-drop([1, 2, 3, 4]); // returns [2, 3, 4]drop([1, 2, 3, 4], 2); // returns [3, 4]
+drop([1, 2, 3, 4]); // => [2, 3, 4]
+drop([1, 2, 3, 4], 2); // => [3, 4]
 ```

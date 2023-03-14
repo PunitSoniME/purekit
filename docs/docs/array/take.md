@@ -9,7 +9,7 @@ description: Creates a slice of the `array` with `n` elements taken from the beg
 
 
 ```bash
-{T[]} array - The array to query.
+{Array} array - The array to query.
 {number} [n=1] - The number of elements to take.
 ```
 
@@ -18,7 +18,7 @@ description: Creates a slice of the `array` with `n` elements taken from the beg
 
 
 ```bash
-{T[]} - Returns the slice of `array`.
+{Array} - Returns the slice of `array`.
 ```
 
 
@@ -26,5 +26,8 @@ description: Creates a slice of the `array` with `n` elements taken from the beg
 
 
 ```ts
-const numbers = [1, 2, 3, 4, 5];take(numbers, 3); // => [1, 2, 3]take(numbers, 1); // => [1]take(numbers);    // => [1]
+const numbers = [1, 2, 3, 4, 5];
+take(numbers, 3); // => [1, 2, 3]
+take(numbers, 1); // => [1]
+take(numbers);    // => [1]
 ```

@@ -116,7 +116,7 @@ function generateDocFiles() {
 }
 
 export function getAllDocs() {
-  // generateDocFiles();
+  //  generateDocFiles();
 
   const slugs = fs.readdirSync(docsDirectory);
   const docs = slugs.filter(f => f.indexOf('.md') > -1).map((slug) => getDocBySlug(slug));

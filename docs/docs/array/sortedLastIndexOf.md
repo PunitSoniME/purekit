@@ -9,7 +9,7 @@ description: Returns the index of the last occurrence of a specified value in a 
 
 
 ```bash
-{T[]} array - The sorted array to search in.
+{Array} array - The sorted array to search in.
 {T} value - The value to search for.
 ```
 
@@ -26,5 +26,7 @@ description: Returns the index of the last occurrence of a specified value in a 
 
 
 ```ts
-const arr = [1, 2, 3, 4, 4, 4, 5, 6];sortedLastIndexOf(arr, 4); // returns 5sortedLastIndexOf(arr, 7); // returns -1
+const arr = [1, 2, 3, 4, 4, 4, 5, 6];
+sortedLastIndexOf(arr, 4); // returns 5
+sortedLastIndexOf(arr, 7); // returns -1
 ```

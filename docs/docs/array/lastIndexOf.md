@@ -9,7 +9,7 @@ description: Returns the index of the last occurrence of the specified element i
 
 
 ```bash
-{T[]} array - The input array to search in.
+{Array} array - The input array to search in.
 {T} element - The element to search for.
 {number} [fromIndex=array.length - 1] - The index to start the search from.
 ```
@@ -27,5 +27,7 @@ description: Returns the index of the last occurrence of the specified element i
 
 
 ```ts
-const fruits = ['apple', 'banana', 'orange', 'banana', 'orange'];const lastIndex1 = lastIndexOf(fruits, 'banana'); // returns 3const lastIndex2 = lastIndexOf(fruits, 'orange', 2); // returns 2
+const fruits = ['apple', 'banana', 'orange', 'banana', 'orange'];
+const lastIndex1 = lastIndexOf(fruits, 'banana'); // returns 3
+const lastIndex2 = lastIndexOf(fruits, 'orange', 2); // returns 2
 ```

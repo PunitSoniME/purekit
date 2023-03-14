@@ -1,6 +1,6 @@
 ---
 title: first
-definition: 
+definition: first(Array)
 description: Returns the first element of an array, or undefined if the array is empty.
 ---
 
@@ -9,7 +9,7 @@ description: Returns the first element of an array, or undefined if the array is
 
 
 ```bash
-{T[]} array - The array to query.
+{Array} array - The array to query.
 ```
 
 
@@ -17,7 +17,7 @@ description: Returns the first element of an array, or undefined if the array is
 
 
 ```bash
-
+{*}: Returns the first element of array.
 ```
 
 
@@ -25,5 +25,6 @@ description: Returns the first element of an array, or undefined if the array is
 
 
 ```ts
-first([1, 2, 3]); // => 1first([]); // => undefined
+first([1, 2, 3]); // => 1
+first([]); // => undefined
 ```

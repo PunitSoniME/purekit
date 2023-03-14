@@ -1,6 +1,6 @@
 ---
 title: intersection
-definition: 
+definition: intersection([arrays])
 description: Returns an array of unique values that are included in all given arrays, using `SameValueZero` for equality comparisons.
 ---
 
@@ -9,7 +9,7 @@ description: Returns an array of unique values that are included in all given ar
 
 
 ```bash
-{...Array<T>} array - The arrays to inspect.
+{...Array} array - The arrays to inspect.
 ```
 
 
@@ -17,7 +17,7 @@ description: Returns an array of unique values that are included in all given ar
 
 
 ```bash
-{Array<T>} - The array of common elements.
+{Array} - The array of common elements.
 ```
 
 
@@ -25,5 +25,9 @@ description: Returns an array of unique values that are included in all given ar
 
 
 ```ts
-intersection([1, 2, 3], [4, 3, 2])
+intersection([1, 2, 3], [4, 3, 2]);
+// => [2, 3]
+
+intersection(['apple', 'banana', 'orange'], ['pear', 'apple', 'orange']);
+// => ['apple', 'orange']
 ```

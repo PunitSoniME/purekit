@@ -9,7 +9,7 @@ description: Returns all the elements of an array except for the first one.
 
 
 ```bash
-{T[]} array - The input array.
+{Array} array - The input array.
 ```
 
 
@@ -17,7 +17,7 @@ description: Returns all the elements of an array except for the first one.
 
 
 ```bash
-{T[]} - A new array containing all elements of the input array except the first one.
+{Array} - A new array containing all elements of the input array except the first one.
 ```
 
 
@@ -25,5 +25,7 @@ description: Returns all the elements of an array except for the first one.
 
 
 ```ts
-const arr = [1, 2, 3, 4];const result = tail(arr);console.log(result); // [2, 3, 4]
+const arr = [1, 2, 3, 4];
+const result = tail(arr);
+console.log(result); // [2, 3, 4]
 ```

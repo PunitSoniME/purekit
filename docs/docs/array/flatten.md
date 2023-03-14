@@ -1,6 +1,6 @@
 ---
 title: flatten
-definition: 
+definition: flatten{Array}
 description: Flattens an array of nested arrays into a single flat array.
 ---
 
@@ -9,7 +9,7 @@ description: Flattens an array of nested arrays into a single flat array.
 
 
 ```bash
-{T[]} array - The array to flatten.
+{Array} array - The array to flatten.
 ```
 
 
@@ -17,7 +17,7 @@ description: Flattens an array of nested arrays into a single flat array.
 
 
 ```bash
-{any[]} - Returns the new flattened array.
+{Array} - Returns the new flattened array.
 ```
 
 
@@ -25,5 +25,6 @@ description: Flattens an array of nested arrays into a single flat array.
 
 
 ```ts
-flatten([1, [2, [3, [4]], 5]]); // Returns: [1, 2, 3, 4, 5]flatten(['a', ['b', ['c']]]); // Returns: ['a', 'b', 'c']
+flatten([1, [2, [3, [4]], 5]]); // Returns: [1, 2, 3, 4, 5]
+flatten(['a', ['b', ['c']]]); // Returns: ['a', 'b', 'c']
 ```

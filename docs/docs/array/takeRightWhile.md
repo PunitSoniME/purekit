@@ -10,7 +10,7 @@ description: Creates a new array with the elements from the end of the given arr
 
 ```bash
 {Array} array - The source array to query.
-{Function} [predicate=identity] - The function invoked per iteration.
+{Function} [predicate = identity] - The function invoked per iteration.
 ```
 
 

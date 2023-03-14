@@ -9,7 +9,7 @@ description: This method is like `intersection` except that it accepts `comparat
 
 
 ```bash
-{T[]} array - The array to inspect.
+{Array} array - The array to inspect.
 {...any} args - The arrays of values to inspect.
 ```
 
@@ -18,7 +18,7 @@ description: This method is like `intersection` except that it accepts `comparat
 
 
 ```bash
-{T[]} - Returns the new array of intersecting values.
+{Array} - Returns the new array of intersecting values.
 ```
 
 
@@ -26,5 +26,9 @@ description: This method is like `intersection` except that it accepts `comparat
 
 
 ```ts
-intersectionWith(  [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }],  [{ 'x': 1, 'y': 1 }, { 'x': 1, 'y': 2 }],  (a, b) => a.x === b.x && a.y === b.y);
+intersectionWith(
+  [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }],
+  [{ 'x': 1, 'y': 1 }, { 'x': 1, 'y': 2 }],
+  (a, b) => a.x === b.x && a.y === b.y
+);
 ```

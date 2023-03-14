@@ -9,7 +9,7 @@ description: Removes all occurrences of specified values from an array.
 
 
 ```bash
-{T[]} array - The array to modify.
+{Array} array - The array to modify.
 {...T} elementsToRemove - The values to remove.
 ```
 
@@ -18,7 +18,7 @@ description: Removes all occurrences of specified values from an array.
 
 
 ```bash
-{T[]} - The modified array with values removed.
+{Array} - The modified array with values removed.
 ```
 
 
@@ -26,5 +26,7 @@ description: Removes all occurrences of specified values from an array.
 
 
 ```ts
-const arr = ['a', 'b', 'c', 'a', 'b', 'c'];const result = pull(arr, 'a', 'c');console.log(result); // Output: ['b', 'b']
+const arr = ['a', 'b', 'c', 'a', 'b', 'c'];
+const result = pull(arr, 'a', 'c');
+console.log(result); // Output: ['b', 'b']
 ```

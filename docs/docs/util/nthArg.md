@@ -1,0 +1,29 @@
+---
+title: nthArg
+definition: 
+description: Returns a function which will return the nth argument passed to it
+---
+
+
+#### Arguments
+
+
+```bash
+{number} idx - The index of the argument to be returned
+```
+
+
+#### Returns
+
+
+```bash
+{Function} - A function which will return the nth argument passed to it
+```
+
+
+#### Example
+
+
+```ts
+const getSecondArg = nthArg(1);getSecondArg(1, 2, 3); // Returns 2const getThirdArg = nthArg(2);getThirdArg('a', 'b', 'c', 'd'); // Returns 'c'
+```

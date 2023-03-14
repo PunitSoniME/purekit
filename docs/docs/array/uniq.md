@@ -9,7 +9,7 @@ description: Creates a new array with unique elements from the original array.
 
 
 ```bash
-{T[]} array - The array to inspect.
+{Array} array - The array to inspect.
 ```
 
 
@@ -17,7 +17,7 @@ description: Creates a new array with unique elements from the original array.
 
 
 ```bash
-{T[]} - Returns the new array of unique elements.
+{Array} - Returns the new array of unique elements.
 ```
 
 

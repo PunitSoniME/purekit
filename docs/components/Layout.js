@@ -10,7 +10,6 @@ export default function Layout({ children, meta: pageMeta }) {
   const router = useRouter();
 
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
-  const [activeMethod, setActiveMethod] = useState(router.asPath);
 
   const meta = {
     title: 'alt-lodash',
@@ -102,7 +101,7 @@ export default function Layout({ children, meta: pageMeta }) {
                           {({ open }) => (
                             <>
                               <h3 className="-mx-2 -my-3 flow-root">
-                                <Disclosure.Button className="flex w-full items-center justify-between bg-white px-2 py-3 text-gray-400 hover:text-gray-500">
+                                <Disclosure.Button className="px-4 flex w-full items-center justify-between bg-white py-3 text-gray-400 hover:text-gray-500">
                                   <span className="font-medium text-gray-900">{section.name}</span>
                                   <span className="ml-6 flex items-center">
                                     {open ? (
@@ -114,18 +113,20 @@ export default function Layout({ children, meta: pageMeta }) {
                                 </Disclosure.Button>
                               </h3>
                               <Disclosure.Panel className="pt-6">
-                                <div className="space-y-6">
-                                  {section.options.map((option, optionIdx) => (
-                                    <div key={option.value}>
-                                      <div
-                                        className="ml-3 text-sm text-gray-600 hover:cursor-pointer hover:underline"
-                                        onClick={() => {
-                                          location.hash = option.label;
-                                        }}
-                                      >
-                                        {option.label}
-                                      </div>
-                                    </div>
+                                <div>
+                                  {section.options.map((option) => (
+                                    <a
+                                      key={option.label}
+                                      href={`/home#${option.label}`}
+                                      className={`block py-2 pl-6 text-sm ${router.asPath === `/home#${option.label}` ? "bg-violet-500 text-white" : "text-gray-600 hover:cursor-pointer hover:bg-violet-200"}`}
+                                      onClick={(e) => {
+                                        e.preventDefault();
+                                        router.push(`/home#${option.label}`);
+                                        setMobileFiltersOpen(false);
+                                      }}
+                                    >
+                                      {option.label}
+                                    </a>
                                   ))}
                                 </div>
                               </Disclosure.Panel>
@@ -134,7 +135,7 @@ export default function Layout({ children, meta: pageMeta }) {
                         </Disclosure>
                       ))}
                     </form>
-                    
+
                   </Dialog.Panel>
                 </Transition.Child>
               </div>
@@ -147,7 +148,7 @@ export default function Layout({ children, meta: pageMeta }) {
 
               <div className="flex items-center justify-center pt-6">
                 <button type="button" className="-m-2 ml-5 p-2 text-gray-700 hover:text-gray-900 sm:ml-7">
-                  <a href="https://github.com/punitsonime/alt-lodash" target="_blank" className='text-blue-400 hover:underline'>Github</a>
+                  <a href="https://github.com/punitsonime/alt-lodash" target="_blank" className='font-bold hover:underline'>Github</a>
                   {/* <Squares2X2Icon className="h-5 w-5" aria-hidden="true" /> */}
                 </button>
                 <button
@@ -164,14 +165,14 @@ export default function Layout({ children, meta: pageMeta }) {
             <section aria-labelledby="products-heading">
               <div className="grid grid-cols-1 gap-y-10 lg:grid-cols-[250px_1fr]">
                 {/* Filters */}
-                <form className="hidden lg:block px-4 bg-slate-50 custom-sidebar">
+                <form className="hidden lg:block bg-slate-50 custom-sidebar">
 
                   {routes.map((section) => (
                     <Disclosure as="div" defaultOpen={true} key={section.id} className="border-b border-gray-200 py-6">
                       {({ open }) => (
                         <>
                           <h3 className="-my-3 flow-root">
-                            <Disclosure.Button className="flex w-full items-center justify-between bg-slate-50 py-3 text-sm text-gray-400 hover:text-gray-500">
+                            <Disclosure.Button className="px-4 flex w-full items-center justify-between bg-slate-50 py-3 text-sm text-gray-400 hover:text-gray-500">
                               <span className="font-medium text-gray-900">{section.name}</span>
                               <span className="ml-6 flex items-center">
                                 {open ? (
@@ -183,18 +184,19 @@ export default function Layout({ children, meta: pageMeta }) {
                             </Disclosure.Button>
                           </h3>
                           <Disclosure.Panel className="pt-6">
-                            <div className="space-y-4">
+                            <div>
                               {section.options.map((option) => (
-                                <div key={option.label}>
-                                  <div
-                                    className="ml-3 text-sm text-gray-600 hover:cursor-pointer hover:underline"
-                                    onClick={() => {
-                                      location.hash = option.label;
-                                    }}
-                                  >
-                                    {option.label}
-                                  </div>
-                                </div>
+                                <a
+                                  key={option.label}
+                                  href={`/home#${option.label}`}
+                                  className={`block py-2 pl-6 text-sm ${router.asPath === `/home#${option.label}` ? "bg-violet-500 text-white" : "text-gray-600 hover:cursor-pointer hover:bg-violet-200"}`}
+                                  onClick={(e) => {
+                                    e.preventDefault();
+                                    router.push(`/home#${option.label}`);
+                                  }}
+                                >
+                                  {option.label}
+                                </a>
                               ))}
                             </div>
                           </Disclosure.Panel>

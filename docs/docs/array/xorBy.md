@@ -9,9 +9,9 @@ description: Creates an array of unique values that are included in exactly one 
 
 
 ```bash
-{T[]} array - The array to inspect.
+{Array} array - The array to inspect.
 {...any} args - The arrays to inspect.
-{predicateType<T>} [iteratee=identity] - The iteratee invoked per element.
+{Function} [iteratee=identity] - The iteratee invoked per element.
 ```
 
 
@@ -19,7 +19,7 @@ description: Creates an array of unique values that are included in exactly one 
 
 
 ```bash
-{T[]} - Returns the new array of filtered values.
+{Array} - Returns the new array of filtered values.
 ```
 
 
@@ -27,5 +27,9 @@ description: Creates an array of unique values that are included in exactly one 
 
 
 ```ts
-const arr1 = [1, 2, 3, 4];const arr2 = [2, 4, 6];const arr3 = [1, 2, 5];const result = xorBy(arr1, arr2, arr3, (n) => n % 2);console.log(result); // Output: [3, 6]
+const arr1 = [1, 2, 3, 4];
+const arr2 = [2, 4, 6];
+const arr3 = [1, 2, 5];
+const result = xorBy(arr1, arr2, arr3, (n) => n % 2);
+console.log(result); // Output: [3, 6]
 ```
