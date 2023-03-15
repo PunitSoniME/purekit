@@ -1,6 +1,6 @@
 ---
 title: takeWhile
-definition: 
+definition: takeWhile(array, [predicate = identity])
 description: Creates a new array containing the elements of the input array, up until the predicate returns false.
 ---
 
@@ -27,4 +27,8 @@ description: Creates a new array containing the elements of the input array, up 
 
 ```ts
 takeWhile([1, 2, 3, 4], n => n < 3);
+// => [1, 2]
+
+takeWhile(['cat', 'dog', 'emu'], animal => animal.length <= 3);
+// => ['cat', 'dog']
 ```

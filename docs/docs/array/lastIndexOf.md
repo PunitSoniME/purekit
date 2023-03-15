@@ -1,6 +1,6 @@
 ---
 title: lastIndexOf
-definition: 
+definition: lastIndexOf(array, value, [fromIndex = array.length - 1])
 description: Returns the index of the last occurrence of the specified element in the array, searching backwards from the given index.
 ---
 
@@ -10,8 +10,8 @@ description: Returns the index of the last occurrence of the specified element i
 
 ```bash
 {Array} array - The input array to search in.
-{T} element - The element to search for.
-{number} [fromIndex=array.length - 1] - The index to start the search from.
+{*} element - The element to search for.
+{number} [fromIndex = array.length - 1] - The index to start the search from.
 ```
 
 

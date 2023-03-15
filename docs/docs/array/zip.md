@@ -1,6 +1,6 @@
 ---
 title: zip
-definition: 
+definition: zip([arrays])
 description: Zips together arrays into an array of arrays, with each array element at the same index.
 ---
 
@@ -26,5 +26,5 @@ description: Zips together arrays into an array of arrays, with each array eleme
 
 
 ```ts
-zip([1, 2], [10, 20], [100, 200]); // returns [[1, 10, 100], [2, 20, 200]]
+zip([1, 2], [10, 20], [100, 200]); // => [[1, 10, 100], [2, 20, 200]]
 ```

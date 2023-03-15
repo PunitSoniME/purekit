@@ -1,6 +1,6 @@
 ---
 title: sortedLastIndexBy
-definition: 
+definition: sortedLastIndexBy(array, value, [iteratee = identity])
 description: Returns the highest index at which value should be inserted into array
 ---
 
@@ -10,8 +10,8 @@ description: Returns the highest index at which value should be inserted into ar
 
 ```bash
 {Array} array - The sorted array to inspect.
-{T} value - The value to evaluate.
-{Function} [iteratee=identity] - The iteratee invoked per element.
+{*} value - The value to evaluate.
+{Function} [iteratee = identity] - The iteratee invoked per element.
 ```
 
 

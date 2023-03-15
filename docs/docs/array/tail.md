@@ -1,6 +1,6 @@
 ---
 title: tail
-definition: 
+definition: tail(array)
 description: Returns all the elements of an array except for the first one.
 ---
 
@@ -26,6 +26,8 @@ description: Returns all the elements of an array except for the first one.
 
 ```ts
 const arr = [1, 2, 3, 4];
+
 const result = tail(arr);
-console.log(result); // [2, 3, 4]
+
+console.log(result); // =>  [2, 3, 4]
 ```

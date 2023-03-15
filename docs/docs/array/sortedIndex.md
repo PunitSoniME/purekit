@@ -1,6 +1,6 @@
 ---
 title: sortedIndex
-definition: 
+definition: sortedIndex(array, value)
 description: Returns the index at which the specified value should be inserted into the
 ---
 
@@ -10,7 +10,7 @@ description: Returns the index at which the specified value should be inserted i
 
 ```bash
 {Array} array - The sorted array to search in.
-{T} value - The value to search for.
+{*} value - The value to search for.
 ```
 
 
@@ -26,5 +26,5 @@ description: Returns the index at which the specified value should be inserted i
 
 
 ```ts
-sortedIndex([10, 20, 30, 40], 35); // Returns 3
+sortedIndex([10, 20, 30, 40], 35); //   =>  Returns 3
 ```

@@ -1,6 +1,6 @@
 ---
 title: unzip
-definition: 
+definition: unzip(array)
 description: This function takes an array of arrays and groups the elements of the inner arrays by their index
 ---
 
@@ -25,5 +25,5 @@ description: This function takes an array of arrays and groups the elements of t
 
 
 ```ts
-unzip([[1, 'a'], [2, 'b'], [3, 'c']]); // [[1, 2, 3], ['a', 'b', 'c']]
+unzip([[1, 'a'], [2, 'b'], [3, 'c']]); // =>  [[1, 2, 3], ['a', 'b', 'c']]
 ```

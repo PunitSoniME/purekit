@@ -1,6 +1,6 @@
 ---
 title: reverse
-definition: 
+definition: reverse(array)
 description: Reverses an array in place.
 ---
 

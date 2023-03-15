@@ -1,6 +1,6 @@
 ---
 title: pullAllBy
-definition: 
+definition: pullAllBy(array, values, [iteratee = identity])
 description: Removes all given elements from the array using a custom iteratee function
 ---
 
@@ -11,7 +11,7 @@ description: Removes all given elements from the array using a custom iteratee f
 ```bash
 {Array} array - The source array
 {Array} elementsToRemove - The array of elements to be removed
-{Function} [iteratee=identity] - The function invoked per iteration
+{Function} [iteratee = identity] - The function invoked per iteration
 ```
 
 
@@ -29,5 +29,5 @@ description: Removes all given elements from the array using a custom iteratee f
 ```ts
 const users = [{ name: 'John', age: 30 }, { name: 'Jane', age: 25 }, { name: 'Bob', age: 40 }];
 const removedUsers = pullAllBy(users, [{ name: 'John' }, { name: 'Jane' }], 'name');
-console.log(removedUsers); // [{ name: 'Bob', age: 40 }]
+console.log(removedUsers); //   =>  [{ name: 'Bob', age: 40 }]
 ```

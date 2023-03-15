@@ -1,6 +1,6 @@
 ---
 title: uniqBy
-definition: 
+definition: unionBy([arrays], [iteratee = identity])
 description: Creates a new array of unique values, based on the result of the given iteratee function.
 ---
 
@@ -10,7 +10,7 @@ description: Creates a new array of unique values, based on the result of the gi
 
 ```bash
 {Array} array - The input array.
-{Function} [iteratee=identity] - The function used to get the unique value for each element.
+{Function} [iteratee = identity] - The function used to get the unique value for each element.
 ```
 
 
@@ -28,5 +28,5 @@ description: Creates a new array of unique values, based on the result of the gi
 ```ts
 const array = [{ id: 1, name: 'John' }, { id: 2, name: 'Jane' }, { id: 1, name: 'Jim' }];
 const result = uniqBy(array, 'id');
-console.log(result); // Output: [{ id: 1, name: 'John' }, { id: 2, name: 'Jane' }]
+console.log(result); // => [{ id: 1, name: 'John' }, { id: 2, name: 'Jane' }]
 ```

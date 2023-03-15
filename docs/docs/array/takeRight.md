@@ -1,7 +1,7 @@
 ---
 title: takeRight
-definition: 
-description: Creates a new array with the last `n` elements of `array`.
+definition: takeRight(array, [length=1])
+description: Creates a new array with the last `length` elements of `array`.
 ---
 
 
@@ -26,5 +26,7 @@ description: Creates a new array with the last `n` elements of `array`.
 
 
 ```ts
-takeRight([1, 2, 3, 4, 5], 3);
+takeRight([1, 2, 3, 4, 5], 3);  // => [3, 4, 5]
+
+takeRight([1, 2, 3, 4, 5]); // => [5]
 ```

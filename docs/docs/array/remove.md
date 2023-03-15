@@ -1,6 +1,6 @@
 ---
 title: remove
-definition: 
+definition: remove(array, [predicate = identity])
 description: Removes all elements from an array that satisfy the predicate and returns an array with the removed elements.
 ---
 
@@ -28,6 +28,7 @@ description: Removes all elements from an array that satisfy the predicate and r
 ```ts
 const arr = [1, 2, 3, 4, 5];
 const removed = remove(arr, n => n % 2 === 0);
-console.log(arr); // [1, 3, 5]
-console.log(removed); // [2, 4]
+
+console.log(arr); //  =>  [1, 3, 5]
+console.log(removed); //  =>  [2, 4]
 ```

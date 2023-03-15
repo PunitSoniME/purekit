@@ -11,7 +11,7 @@ description: Returns an array of unique values that are included in all given ar
 ```bash
 {Array} array - The array to inspect.
 {...Array} args - The arrays to intersect with.
-{Function|string} [iteratee = identity] - The iteratee invoked per element.
+{Function | string} [iteratee = identity] - The iteratee invoked per element.
 ```
 
 
