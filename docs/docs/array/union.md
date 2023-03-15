@@ -1,6 +1,6 @@
 ---
 title: union
-definition: 
+definition: union([arrays])
 description: Creates an array of unique values, in order, from all given arrays using Set.
 ---
 
@@ -9,8 +9,7 @@ description: Creates an array of unique values, in order, from all given arrays 
 
 
 ```bash
- array - The first array.
- restArray - The rest of the arrays.
+{[]} ...array - The first array.
 ```
 
 
@@ -18,7 +17,7 @@ description: Creates an array of unique values, in order, from all given arrays 
 
 
 ```bash
-
+{[]} - The new array of combined unique values.
 ```
 
 
@@ -26,5 +25,7 @@ description: Creates an array of unique values, in order, from all given arrays 
 
 
 ```ts
-const result = union([2], [1, 2]);console.log(result);> [2, 1]
+const result = union([2], [1, 2]);
+
+console.log(result);    // => [2, 1]
 ```

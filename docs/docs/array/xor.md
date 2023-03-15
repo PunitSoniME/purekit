@@ -1,6 +1,6 @@
 ---
 title: xor
-definition: 
+definition: xor([arrays])
 description: Returns an array of unique values that are included only in one of the given arrays.
 ---
 
@@ -26,6 +26,6 @@ description: Returns an array of unique values that are included only in one of 
 
 
 ```ts
-xor([2, 1], [2, 3]) // returns [1, 3]
-xor(['a', 'b', 'c'], ['b', 'd'], ['d', 'e']) // returns ['a', 'c', 'e']
+xor([2, 1], [2, 3]) // => [1, 3]
+xor(['a', 'b', 'c'], ['b', 'd'], ['d', 'e']) // => ['a', 'c', 'e']
 ```

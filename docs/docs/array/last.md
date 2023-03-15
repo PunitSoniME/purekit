@@ -1,7 +1,7 @@
 ---
-title: 'last'
-definition: "last{Array}"
-description: 'Returns the last element of an array.'
+title: last
+definition: last(array)
+description: Returns the last element of an array.
 ---
 
 #### Arguments

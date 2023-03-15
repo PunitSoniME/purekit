@@ -14,6 +14,8 @@
  * // => [111, 222]
  */
 
+import identity from '../util/identity';
+
 const zipWith = (arrays: any[], ...args: any[]): any[] => {
 	const lastElement = args[args.length - 1];
 
@@ -25,7 +27,10 @@ const zipWith = (arrays: any[], ...args: any[]): any[] => {
 	}
 
 	//	Below is zip method
-	return arrays.map((value, idx) => [value, ...args.map(arr => arr[idx])]);
+	return arrays.map((value, idx) => [
+		identity(value),
+		...args.map(arr => arr[idx]),
+	]);
 };
 
 export default zipWith;

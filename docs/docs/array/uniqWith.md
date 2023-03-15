@@ -1,6 +1,6 @@
 ---
 title: uniqWith
-definition: 
+definition: uniqWith(array, [comparator])
 description: Creates a duplicate-free version of an array, using a comparator function to compare the elements.
 ---
 
@@ -10,7 +10,7 @@ description: Creates a duplicate-free version of an array, using a comparator fu
 
 ```bash
 {Array} array - The array to inspect.
-{Function} [comparator=identity] - The function invoked per iteration to compare elements.
+{Function} [comparator = identity] - The function invoked per iteration to compare elements.
 ```
 
 

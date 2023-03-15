@@ -1,6 +1,6 @@
 ---
 title: pullAll
-definition: 
+definition: pullAll(array, values)
 description: Removes all instances of specified elements from an array.
 ---
 
@@ -27,6 +27,6 @@ description: Removes all instances of specified elements from an array.
 
 ```ts
 const arr = ['a', 'b', 'c', 'a', 'b', 'c'];
-pullAll(arr, ['a', 'c']);
-console.log(arr);
+
+pullAll(arr, ['a', 'c']);   //  =>  ['b', 'b']
 ```

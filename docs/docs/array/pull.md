@@ -1,6 +1,6 @@
 ---
 title: pull
-definition: 
+definition: pull(array, [elementsToRemove])
 description: Removes all occurrences of specified values from an array.
 ---
 
@@ -10,7 +10,7 @@ description: Removes all occurrences of specified values from an array.
 
 ```bash
 {Array} array - The array to modify.
-{...T} elementsToRemove - The values to remove.
+{...*} elementsToRemove - The values to remove.
 ```
 
 
@@ -28,5 +28,6 @@ description: Removes all occurrences of specified values from an array.
 ```ts
 const arr = ['a', 'b', 'c', 'a', 'b', 'c'];
 const result = pull(arr, 'a', 'c');
-console.log(result); // Output: ['b', 'b']
+
+console.log(result); // => ['b', 'b']
 ```

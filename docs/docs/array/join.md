@@ -1,7 +1,7 @@
 ---
-title: 'join'
-definition: "join(array, [joiner] = ',')"
-description: 'Joins all elements of an array into a string separated by the specified separator.'
+title: join
+definition: join(array, [joiner] = ',')
+description: Joins all elements of an array into a string separated by the specified separator.
 ---
 
 #### Arguments
@@ -23,8 +23,8 @@ description: 'Joins all elements of an array into a string separated by the spec
 import { join } from 'alt-lodash';
 
 join([1, 2, 3], '-');
-// returns '1-2-3'
+// => '1-2-3'
 
 join(['a', 'b', 'c'], '');
-// returns 'abc'
+// => 'abc'
 ```

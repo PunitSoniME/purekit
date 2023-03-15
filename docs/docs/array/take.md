@@ -1,6 +1,6 @@
 ---
 title: take
-definition: 
+definition: take(array, [n=1])
 description: Creates a slice of the `array` with `n` elements taken from the beginning.
 ---
 

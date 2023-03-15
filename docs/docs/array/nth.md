@@ -1,7 +1,7 @@
 ---
 title: nth
-definition: 
-description: Gets the element at index `n` of `array`. If `n` is negative, the nth element from the end is returned.
+definition: nth(array, [index=0])
+description: Gets the element at index `index` of `array`. If `n` is negative, the nth element from the end is returned.
 ---
 
 
@@ -18,7 +18,7 @@ description: Gets the element at index `n` of `array`. If `n` is negative, the n
 
 
 ```bash
-
+{T | undefined} - Returns the nth element of `array`
 ```
 
 
@@ -27,7 +27,8 @@ description: Gets the element at index `n` of `array`. If `n` is negative, the n
 
 ```ts
 const arr = [1, 2, 3, 4, 5];
-console.log(nth(arr)); // Output: 1
-console.log(nth(arr, 2)); // Output: 3
-console.log(nth(arr, -1)); // Output: 5
+
+console.log(nth(arr)); // => 1
+console.log(nth(arr, 2)); // => 3
+console.log(nth(arr, -1)); // => 5
 ```

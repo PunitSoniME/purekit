@@ -1,6 +1,6 @@
 ---
 title: zipObject
-definition: 
+definition: zipObject([props=[]], [values=[]])
 description: Creates an object from arrays of property names and values, where property names become object keys and values become object values.
 ---
 
@@ -26,5 +26,6 @@ description: Creates an object from arrays of property names and values, where p
 
 
 ```ts
-zipObject(['a', 'b'], [1, 2]) // {a: 1, b: 2}zipObject(['a', 'b'], [1]) // {a: 1, b: undefined}
+zipObject(['a', 'b'], [1, 2]);   // => {a: 1, b: 2}
+zipObject(['a', 'b'], [1]);      // => {a: 1, b: undefined}
 ```

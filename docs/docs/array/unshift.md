@@ -1,6 +1,6 @@
 ---
 title: unshift
-definition: 
+definition: unshift(array, [elements])
 description: Adds one or more elements to the beginning of an array and returns the new length of the array.
 ---
 
@@ -10,7 +10,7 @@ description: Adds one or more elements to the beginning of an array and returns 
 
 ```bash
 {Array} array - The array to add elements to.
-{...[]} elements - The elements to add to the beginning of the array.
+{any | []} ...elements - The elements to add to the beginning of the array.
 ```
 
 
@@ -26,6 +26,7 @@ description: Adds one or more elements to the beginning of an array and returns 
 
 
 ```ts
-unshift([1, 2, 3], 4); // Returns [4, 1, 2, 3]
-unshift(['a', 'b'], 'c', 'd'); // Returns ['c', 'd', 'a', 'b']
+unshift([1, 2, 3], 4); // => [4, 1, 2, 3]
+
+unshift(['a', 'b'], 'c', 'd'); // => ['c', 'd', 'a', 'b']
 ```

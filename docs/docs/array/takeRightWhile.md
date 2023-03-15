@@ -1,6 +1,6 @@
 ---
 title: takeRightWhile
-definition: 
+definition: takeRightWhile(array, [predicate = identity])
 description: Creates a new array with the elements from the end of the given array
 ---
 
@@ -26,5 +26,8 @@ description: Creates a new array with the elements from the end of the given arr
 
 
 ```ts
-takeRightWhile([1, 2, 3, 4, 5], n => n > 3);
+takeRightWhile([1, 2, 3, 4, 5], n => n > 3);    // => [4, 5]
+
+takeRightWhile([{ name: 'John', active: false }, { name: 'Mary', active: true }], { active: true });
+// => [{ name: 'Mary', active: true }]
 ```

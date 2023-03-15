@@ -1,6 +1,6 @@
 ---
 title: uniq
-definition: 
+definition: uniq(array)
 description: Creates a new array with unique elements from the original array.
 ---
 
@@ -25,5 +25,5 @@ description: Creates a new array with unique elements from the original array.
 
 
 ```ts
-uniq([2, 1, 2]) // returns [2, 1]
+uniq([2, 1, 2]) // => [2, 1]
 ```

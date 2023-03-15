@@ -1,6 +1,6 @@
 ---
 title: sortedUniq
-definition: 
+definition: sortedUniq(array)
 description: Creates a new array with all duplicate values removed. Assumes the input array is already sorted.
 ---
 

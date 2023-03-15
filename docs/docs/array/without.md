@@ -1,6 +1,6 @@
 ---
 title: without
-definition: 
+definition: without(array, [values])
 description: Returns a new array with all instances of the provided values removed.
 ---
 
@@ -10,7 +10,7 @@ description: Returns a new array with all instances of the provided values remov
 
 ```bash
 {Array} array - The source array.
-{...T} exception - The values to exclude from the returned array.
+{...*} exception - The values to exclude from the returned array.
 ```
 
 
@@ -27,5 +27,5 @@ description: Returns a new array with all instances of the provided values remov
 
 ```ts
 const arr = [1, 2, 3, 4, 5];
-const result = without(arr, 2, 4); // result = [1, 3, 5]
+const result = without(arr, 2, 4); // => [1, 3, 5]
 ```
