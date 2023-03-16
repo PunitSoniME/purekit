@@ -1,6 +1,6 @@
 ---
 title: flattenDeep
-definition: flattenDeep{Array}
+definition: flattenDeep(array)
 description: Recursively flattens `array`.
 ---
 

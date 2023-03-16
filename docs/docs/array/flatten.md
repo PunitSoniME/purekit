@@ -1,6 +1,6 @@
 ---
 title: flatten
-definition: flatten{Array}
+definition: flatten(array)
 description: Flattens an array of nested arrays into a single flat array.
 ---
 
