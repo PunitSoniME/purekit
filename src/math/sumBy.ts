@@ -7,7 +7,7 @@ import predicateType from '../helpers/predicateType';
  * @since 1.0.0
  *
  * @param {T[]} numbers - The array of numbers to sum.
- * @param {predicateType<T>} iteratee - The function to apply to each element to get its value for summing.
+ * @param {Function} iteratee - The function to apply to each element to get its value for summing.
  *
  * @returns {number} - The sum of all the values obtained by applying the iteratee function to each element in the array.
  *

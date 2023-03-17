@@ -9,7 +9,7 @@ import identity from '../util/identity';
  *
  * @template T
  * @param {T[]} array - The input array.
- * @param {predicateType<T>} [predicate=identity] - The function invoked per iteration.
+ * @param {Function} [predicate=identity] - The function invoked per iteration.
  * @returns {T[]} - Returns the slice of the array.
  *
  * @example

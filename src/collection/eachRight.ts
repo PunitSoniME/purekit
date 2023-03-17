@@ -15,7 +15,6 @@ import forEachRight from './forEachRight';
  * eachRight(arr, (value, index) => {
  *   console.log(`Value: ${value} Index: ${index}`);
  * });
- * // Output:
  * // Value: 3 Index: 2
  * // Value: 2 Index: 1
  * // Value: 1 Index: 0
@@ -25,7 +24,6 @@ import forEachRight from './forEachRight';
  * eachRight(obj, (value, key) => {
  *   console.log(`Key: ${key} Value: ${value}`);
  * });
- * // Output:
  * // Key: c Value: 3
  * // Key: b Value: 2
  * // Key: a Value: 1

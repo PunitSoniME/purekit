@@ -7,14 +7,15 @@ import identity from '../util/identity';
  *
  * @template T
  * @param {T[]} collection - The array to iterate over.
- * @param {predicateType<T>} [predicate=identity] - The function invoked per iteration.
+ * @param {Function} [predicate = identity] - The function invoked per iteration.
+ *
  * @returns {Object} - An object with keys representing the group and values representing the count of elements in that group.
  *
  * @example
  *
- * countBy([6.1, 4.2, 6.3], Math.floor) // returns { '4': 1, '6': 2 }
- * countBy(['one', 'two', 'three'], 'length') // returns { '3': 2, '5': 1 }
- * countBy(['one', 'two', 'three'], word => word[0]) // returns { o: 2, t: 1 }
+ * countBy([6.1, 4.2, 6.3], Math.floor) // => { '4': 1, '6': 2 }
+ * countBy(['one', 'two', 'three'], 'length') // => { '3': 2, '5': 1 }
+ * countBy(['one', 'two', 'three'], word => word[0]) // => { o: 2, t: 1 }
  */
 
 const countBy = <T>(

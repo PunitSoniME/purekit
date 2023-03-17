@@ -8,7 +8,7 @@ import identity from './identity';
  * @since 1.0.0
  *
  * @template T
- * @param {predicateType<T>} [predicate=identity] - The predicate function to convert into an iteratee.
+ * @param {Function} [predicate=identity] - The predicate function to convert into an iteratee.
  *
  * @returns {Function} - Returns the new iteratee function.
  *

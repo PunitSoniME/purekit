@@ -1,6 +1,6 @@
 ---
 title: head
-definition: head(Array)
+definition: head(array)
 description: Returns the first element of an array, or undefined if the array is empty.
 ---
 

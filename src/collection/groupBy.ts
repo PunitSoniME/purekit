@@ -9,7 +9,7 @@ import identity from '../util/identity';
  *
  * @template T
  * @param {T[]} collection - The input collection.
- * @param {predicateType<T>} [predicate=identity] - The function invoked per iteration.
+ * @param {Function} [predicate=identity] - The function invoked per iteration.
  * @returns {Object} - Returns the composed aggregate object.
  *
  * @example

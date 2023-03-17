@@ -1,6 +1,6 @@
 ---
 title: first
-definition: first(Array)
+definition: first(array)
 description: Returns the first element of an array, or undefined if the array is empty.
 ---
 

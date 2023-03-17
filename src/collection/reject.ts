@@ -10,7 +10,7 @@ import identity from '../util/identity';
  *
  * @template T - The type of the input array elements
  * @param {T[]} collection - The input collection
- * @param {predicateType<T>} [predicate=identity] - The function invoked per iteration
+ * @param {Function} [predicate=identity] - The function invoked per iteration
  * @returns {any[]} - Returns the new filtered array
  *
  * @example

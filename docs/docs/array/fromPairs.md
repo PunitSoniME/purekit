@@ -1,6 +1,6 @@
 ---
 title: fromPairs
-definition: fromPairs(pairs)
+definition: fromPairs(array)
 description: Creates an object from an array of key-value pairs.
 ---
 

@@ -8,7 +8,7 @@ import concat from './concat';
  * @template T
  * @param {T[]} array - The array to inspect.
  * @param {...any} args - The arrays to inspect.
- * @param {predicateType<T>} [iteratee=identity] - The iteratee invoked per element.
+ * @param {Function} [iteratee=identity] - The iteratee invoked per element.
  * @returns {T[]} - Returns the new array of filtered values.
  *
  * @example
