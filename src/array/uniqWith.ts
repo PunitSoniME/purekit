@@ -6,7 +6,7 @@ import identity from '../util/identity';
  *
  * @template T
  * @param {T[]} array - The array to inspect.
- * @param {predicateType<T>} [comparator=identity] - The function invoked per iteration to compare elements.
+ * @param {Function} [comparator=identity] - The function invoked per iteration to compare elements.
  * @returns {T[]} - Returns the new duplicate free array.
  *
  * @example

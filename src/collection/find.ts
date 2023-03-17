@@ -7,7 +7,7 @@ import identity from '../util/identity';
  *
  * @template T
  * @param {T} collection - The collection to iterate over.
- * @param {predicateType<T>} [iteratee=identity] - The function invoked per iteration.
+ * @param {Function} [iteratee=identity] - The function invoked per iteration.
  * @param {number} [fromIndex=0] - The index to start searching from.
  * @returns {Object} - Returns the found element, else undefined.
  *

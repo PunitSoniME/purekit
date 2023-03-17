@@ -7,7 +7,7 @@ import identity from '../util/identity';
  *
  * @template T
  * @param {T[]} array - The input array.
- * @param {predicateType<T>} [predicate=identity] - The predicate function to be called on each element.
+ * @param {Function} [predicate=identity] - The predicate function to be called on each element.
  * @returns {T[]} - The new array of elements that passed the predicate, until the first that returned false.
  *
  * @example

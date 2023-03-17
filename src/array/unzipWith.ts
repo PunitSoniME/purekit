@@ -8,7 +8,7 @@ import unzip from './unzip';
  *
  * @template T
  * @param {any[][]} array - The array of grouped elements to process.
- * @param {predicateType<T>} [predicate=identity] - The iteratee to combine regrouped values.
+ * @param {Function} [predicate=identity] - The iteratee to combine regrouped values.
  * @returns {any[]} - Returns the new array of regrouped elements.
  *
  * @example

@@ -9,7 +9,7 @@ import predicateType from '../helpers/predicateType';
  * @template T
  *
  * @param {T[]} collection - The array of objects to search for the minimum value.
- * @param {predicateType<T>} iteratee - The iteratee to use for extracting the values to compare for the minimum.
+ * @param {Function} iteratee - The iteratee to use for extracting the values to compare for the minimum.
  *
  * @returns {T} - The object with the minimum value calculated using the iteratee.
  *

@@ -10,7 +10,7 @@ import predicateType from '../helpers/predicateType';
  *
  * @template T
  * @param {Array<T>} collection - The collection to iterate over.
- * @param {predicateType<T>} iteratee - The iteratee to determine the max value.
+ * @param {Function} iteratee - The iteratee to determine the max value.
  * @returns {T|undefined} - Returns the maximum value or undefined if the collection is empty.
  * @example
  *
