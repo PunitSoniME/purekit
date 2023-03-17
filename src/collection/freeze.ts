@@ -13,7 +13,7 @@
  *
  * obj.b = 3;
  * console.log(obj);
- * //	=> { a: 1, b: 2 }
+ * //  => { a: 1, b: 2 }
  */
 const freeze = (collection: Object | Array<any>): Object | Array<any> =>
 	Object.freeze(collection);

@@ -1,6 +1,6 @@
 ---
 title: bindKey
-definition: 
+definition: bindKey(object, key, [partials])
 description: Creates a function that invokes the method at `object[method]` with `args` and the `this` binding of `object`.
 ---
 
@@ -27,5 +27,12 @@ description: Creates a function that invokes the method at `object[method]` with
 
 
 ```ts
-const john = {  name: 'John Doe',  greet(greeting: string, punctuation: string) {    return `${greeting} ${this.name}${punctuation}`;  }};const sayHelloToJohn = bindKey(john, 'greet', 'Hello');sayHelloToJohn('!'); // => 'Hello John Doe!'
+const john = {
+  name: 'John Doe',
+  greet(greeting: string, punctuation: string) {
+    return `${greeting} ${this.name}${punctuation}`;
+  }
+};
+const sayHelloToJohn = bindKey(john, 'greet', 'Hello');
+sayHelloToJohn('!'); // => 'Hello John Doe!'
 ```

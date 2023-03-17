@@ -1,9 +1,11 @@
 /**
  * This method prevents new properties from ever being added to an object/array
  *
- * @param collection The collection which should be made non-extensible.
+ * @since 1.0.0
  *
- * @returns The collection being made non-extensible.
+ * @param {T[]} collection - The collection which should be made non-extensible.
+ *
+ * @returns {Array} - The collection being made non-extensible.
  *
  * @example
  *

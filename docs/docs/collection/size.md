@@ -1,6 +1,6 @@
 ---
 title: size
-definition: 
+definition: size(collection)
 description: Returns the size of the given collection.
 ---
 
@@ -9,7 +9,7 @@ description: Returns the size of the given collection.
 
 
 ```bash
-{Array|Object|string} collection - The collection to determine the size of.
+{Array | Object | string} collection - The collection to determine the size of.
 ```
 
 
@@ -25,5 +25,9 @@ description: Returns the size of the given collection.
 
 
 ```ts
-size([1, 2, 3]); // returns 3size({a: 1, b: 2, c: 3}); // returns 3size('hello'); // returns 5
+size([1, 2, 3]); // => 3
+
+size({a: 1, b: 2, c: 3}); // => 3
+
+size('hello'); // => 5
 ```

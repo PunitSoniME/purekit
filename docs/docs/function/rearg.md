@@ -1,6 +1,6 @@
 ---
 title: rearg
-definition: 
+definition: rearg(func, indexes)
 description: Creates a function that invokes `func` with arguments rearranged according to
 ---
 
@@ -26,5 +26,9 @@ description: Creates a function that invokes `func` with arguments rearranged ac
 
 
 ```ts
-const originalFn = (a, b, c) => [a, b, c];const reargFn = rearg(originalFn, [2, 0, 1]);originalFn(1, 2, 3); // [1, 2, 3]reargFn(1, 2, 3); // [3, 1, 2]
+const originalFn = (a, b, c) => [a, b, c];
+const reargFn = rearg(originalFn, [2, 0, 1]);
+
+originalFn(1, 2, 3); // => [1, 2, 3]
+reargFn(1, 2, 3); // => [3, 1, 2]
 ```

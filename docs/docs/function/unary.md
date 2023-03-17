@@ -1,6 +1,6 @@
 ---
 title: unary
-definition: 
+definition: unary(fn)
 description: Returns a function that accepts only one argument and passes it to the original function.
 ---
 
@@ -25,5 +25,9 @@ description: Returns a function that accepts only one argument and passes it to 
 
 
 ```ts
-const double = (x, y) => x * y;const doubleUnary = unary(double);console.log(doubleUnary(2, 3)); // Output: 2console.log(doubleUnary(5, 5)); // Output: 5
+const double = (x, y) => x * y;
+const doubleUnary = unary(double);
+
+console.log(doubleUnary(2, 3)); // => 2
+console.log(doubleUnary(5, 5)); // => 5
 ```

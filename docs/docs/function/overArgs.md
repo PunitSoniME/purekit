@@ -1,6 +1,6 @@
 ---
 title: overArgs
-definition: 
+definition: overArgs(func, [transforms = [identity]])
 description: Creates a function that applies the provided functions to the arguments of the created function.
 ---
 
@@ -26,5 +26,10 @@ description: Creates a function that applies the provided functions to the argum
 
 
 ```ts
-const double = (n) => n * 2;const square = (n) => n * n;const add = (a, b) => a + b;const addDoubleSquare = overArgs(add, [double, square]);console.log(addDoubleSquare(2, 3)); // Output: 13 ((2 * 2) + (3 * 3 * 2))
+const double = (n) => n * 2;
+const square = (n) => n * n;
+const add = (a, b) => a + b;
+const addDoubleSquare = overArgs(add, [double, square]);
+
+console.log(addDoubleSquare(2, 3)); // => 13 ((2 * 2) + (3 * 3 * 2))
 ```
