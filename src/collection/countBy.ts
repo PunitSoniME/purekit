@@ -8,7 +8,7 @@ import identity from '../util/identity';
  * @template T
  * @param {T[]} collection - The array to iterate over.
  * @param {Function} [predicate = identity] - The function invoked per iteration.
- * 
+ *
  * @returns {Object} - An object with keys representing the group and values representing the count of elements in that group.
  *
  * @example

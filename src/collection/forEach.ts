@@ -7,7 +7,7 @@ import identity from '../util/identity';
  * @template T
  * @param {T} collection - The collection to iterate over.
  * @param {Function} [iteratee = identity] - The function to apply to each element.
- * 
+ *
  * @returns {T} - The original collection.
  *
  * @example
