@@ -23,9 +23,8 @@
 [![downloads](https://img.shields.io/npm/dt/alt-lodash.svg)][npm_url]
 ![jsDelivr](https://badgen.net/jsdelivr/hits/npm/alt-lodash)
 
-![gzip](https://badgen.net/bundlephobia/minzip/alt-lodash)
 ![minified](https://badgen.net/bundlephobia/min/alt-lodash)
-
+![gzip](https://badgen.net/bundlephobia/minzip/alt-lodash)
 
 [npm_url]: https://www.npmjs.org/package/alt-lodash
 

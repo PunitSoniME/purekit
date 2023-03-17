@@ -7,5 +7,5 @@
  *
  * console.log(now()); // 1645442799491
  */
-const now = () => Date.now();
+const now = (): number => Date.now();
 export default now;
