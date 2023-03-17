@@ -1,20 +1,10 @@
 ---
 title: now
-definition: 
+definition: now()
 description: Returns the number of milliseconds elapsed since January 1, 1970 00:00:00 UTC.
 ---
 
-
-#### Arguments
-
-
-```bash
-
-```
-
-
 #### Returns
-
 
 ```bash
 {number} - The number of milliseconds elapsed since January 1, 1970 00:00:00 UTC.
@@ -25,5 +15,6 @@ description: Returns the number of milliseconds elapsed since January 1, 1970 00
 
 
 ```ts
-console.log(now()); // 1645442799491
+console.log(now());
+// => 1645442799491
 ```
