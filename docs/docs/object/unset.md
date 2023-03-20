@@ -10,7 +10,7 @@ description: Removes the specified property at the given path from the provided 
 
 ```bash
 {T} object - The input object from which the property needs to be removed.
-{any} path - The path to the property that needs to be removed. Can be an array or a string.
+{*} path - The path to the property that needs to be removed. Can be an array or a string.
 ```
 
 
@@ -26,5 +26,6 @@ description: Removes the specified property at the given path from the provided 
 
 
 ```ts
-const obj = { a: { b: { c: 1 } } };unset(obj, 'a.b.c'); // true
+const obj = { a: { b: { c: 1 } } };
+unset(obj, 'a.b.c'); // true
 ```

@@ -1,6 +1,6 @@
 ---
 title: isTypedArray
-definition: 
+definition: isTypedArray(value)
 description: Checks if a given value is a typed array.
 ---
 
@@ -25,5 +25,9 @@ description: Checks if a given value is a typed array.
 
 
 ```ts
-isTypedArray(new Int32Array([1, 2, 3])); // => trueisTypedArray([]); // => false
+isTypedArray(new Int32Array([1, 2, 3]));
+// => true
+
+isTypedArray([]);
+// => false
 ```

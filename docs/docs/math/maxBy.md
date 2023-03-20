@@ -1,6 +1,6 @@
 ---
 title: maxBy
-definition: 
+definition: maxBy(array, [iteratee = identity])
 description: Returns the maximum value of a collection based on an iteratee function. If multiple
 ---
 
@@ -9,7 +9,7 @@ description: Returns the maximum value of a collection based on an iteratee func
 
 
 ```bash
-{Array<T>} collection - The collection to iterate over.
+{Array} collection - The collection to iterate over.
 {Function} iteratee - The iteratee to determine the max value.
 ```
 
@@ -18,7 +18,7 @@ description: Returns the maximum value of a collection based on an iteratee func
 
 
 ```bash
-{T|undefined} - Returns the maximum value or undefined if the collection is empty.
+{* | undefined} - Returns the maximum value or undefined if the collection is empty.
 ```
 
 
@@ -32,5 +32,7 @@ const users = [
   { name: 'Charlie', age: 20 }
 ];
 const oldestUser = maxBy(users, (user) => user.age);
-console.log(oldestUser); // { name: 'Bob', age: 30 }
+
+console.log(oldestUser);
+// => { name: 'Bob', age: 30 }
 ```

@@ -1,6 +1,6 @@
 ---
 title: multiply
-definition: 
+definition: multiply(multiplier, multiplicand, ...args)
 description: Returns the product of all the numbers passed in as arguments.
 ---
 
@@ -9,7 +9,7 @@ description: Returns the product of all the numbers passed in as arguments.
 
 
 ```bash
-{...number} numbers - The numbers to multiply.
+{numbers} numbers - The numbers to multiply.
 ```
 
 
@@ -25,5 +25,9 @@ description: Returns the product of all the numbers passed in as arguments.
 
 
 ```ts
+multiply(1, 2, 3, 4, 5);
+// => 120
 
+multiply(3, -5);
+// => -15
 ```

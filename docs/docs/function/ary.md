@@ -1,6 +1,6 @@
 ---
 title: ary
-definition: ary(func, [arity = func.length])
+definition: ary(fn, [arity = fn.length])
 description: Creates a function that accepts up to a certain number of arguments,
 ---
 

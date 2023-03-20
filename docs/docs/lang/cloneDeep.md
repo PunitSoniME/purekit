@@ -1,6 +1,6 @@
 ---
 title: cloneDeep
-definition: 
+definition: cloneDeep(value)
 description: Creates a deep clone of the input value.
 ---
 
@@ -9,7 +9,7 @@ description: Creates a deep clone of the input value.
 
 
 ```bash
-{T} value - The input value to clone.
+{*} value - The input value to clone.
 ```
 
 
@@ -17,7 +17,7 @@ description: Creates a deep clone of the input value.
 
 
 ```bash
-{T} - The cloned value.
+{*} - The cloned value.
 ```
 
 
@@ -25,5 +25,10 @@ description: Creates a deep clone of the input value.
 
 
 ```ts
-const obj = { a: 1, b: { c: 2 } };const clone = cloneDeep(obj);obj.b.c = 3;console.log(clone.b.c); // Output: 2
+const obj = { a: 1, b: { c: 2 } };
+const clone = cloneDeep(obj);
+obj.b.c = 3;
+
+console.log(clone.b.c);
+// => 2
 ```

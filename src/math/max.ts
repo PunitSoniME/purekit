@@ -7,7 +7,8 @@
  * @returns The maximum number in the collection or undefined if the collection is empty.
  *
  * @example
- * max([1, 3, 2]); // returns 3
+ * max([1, 3, 2]);
+ * // => 3
  */
 const max = (collection: number[]): number | undefined => {
 	return collection.length === 0 ? undefined : Math.max(...collection);

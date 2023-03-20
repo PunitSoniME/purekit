@@ -17,7 +17,6 @@
  * isNative(debounce);
  * // => false
  */
-
 const isNative = (value: any): boolean =>
 	!!value &&
 	(typeof value).toLowerCase() === 'function' &&

@@ -1,6 +1,6 @@
 ---
 title: isSymbol
-definition: 
+definition: isSymbol(value)
 description: Checks if a given value is a symbol.
 ---
 
@@ -25,5 +25,9 @@ description: Checks if a given value is a symbol.
 
 
 ```ts
-isSymbol(Symbol.iterator); // => trueisSymbol('abc'); // => false
+isSymbol(Symbol.iterator);
+// => true
+
+isSymbol('abc');
+// => false
 ```

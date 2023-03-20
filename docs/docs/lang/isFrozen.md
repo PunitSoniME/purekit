@@ -1,6 +1,6 @@
 ---
 title: isFrozen
-definition: 
+definition: isFroze(collection)
 description: Checks if an object or array is frozen using the built-in `Object.isFrozen()` method.
 ---
 
@@ -9,7 +9,7 @@ description: Checks if an object or array is frozen using the built-in `Object.i
 
 
 ```bash
-{Object|Array} collection - The object or array to check if it's frozen.
+{Object | Array} collection - The object or array to check if it's frozen.
 ```
 
 
@@ -25,5 +25,17 @@ description: Checks if an object or array is frozen using the built-in `Object.i
 
 
 ```ts
-const obj = {a: 1, b: 2};Object.freeze(obj);console.log(isFrozen(obj)); // trueconst arr = [1, 2, 3];Object.freeze(arr);console.log(isFrozen(arr)); // trueconst obj2 = {a: {b: 1}};console.log(isFrozen(obj2)); // false
+const obj = {a: 1, b: 2};
+Object.freeze(obj);
+console.log(isFrozen(obj));
+// => true
+
+const arr = [1, 2, 3];
+Object.freeze(arr);
+console.log(isFrozen(arr));
+// => true
+
+const obj2 = {a: {b: 1}};
+console.log(isFrozen(obj2));
+// => false
 ```

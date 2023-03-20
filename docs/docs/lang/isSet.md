@@ -1,6 +1,6 @@
 ---
 title: isSet
-definition: 
+definition: isSet(value)
 description: Checks if a value is a Set.
 ---
 
@@ -25,5 +25,12 @@ description: Checks if a value is a Set.
 
 
 ```ts
-isSet(new Set()); // => trueisSet(new WeakSet()); // => falseisSet({ key: 'value' }); // => false
+isSet(new Set());
+// => true
+
+isSet(new WeakSet());
+// => false
+
+isSet({ key: 'value' });
+// => false
 ```

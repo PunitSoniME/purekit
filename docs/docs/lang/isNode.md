@@ -1,6 +1,6 @@
 ---
 title: isNode
-definition: 
+definition: isNode(value)
 description: Checks if a value is a Node object.
 ---
 
@@ -25,5 +25,12 @@ description: Checks if a value is a Node object.
 
 
 ```ts
-isNode(document.body); // trueisNode(document.createTextNode('Hello')); // trueisNode({}); // false
+isNode(document.body);
+// => true
+
+isNode(document.createTextNode('Hello'));
+// => true
+
+isNode({});
+// => false
 ```

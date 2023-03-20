@@ -1,6 +1,6 @@
 ---
 title: isNative
-definition: 
+definition: isNaN(value)
 description: Checks if a value is a native function.
 ---
 
@@ -26,4 +26,11 @@ description: Checks if a value is a native function.
 
 ```ts
 isNative(alert);
+// => true
+
+isNative(Math.max);
+// => true
+
+isNative(debounce);
+// => false
 ```

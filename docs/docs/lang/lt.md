@@ -1,6 +1,6 @@
 ---
 title: lt
-definition: 
+definition: lt(value, other)
 description: Checks if `value` is less than `other`.
 ---
 
@@ -26,5 +26,12 @@ description: Checks if `value` is less than `other`.
 
 
 ```ts
-lt(1, 3); // => truelt(3, 1); // => falselt('a', 'z'); // => true
+lt(1, 3);
+// => true
+
+lt(3, 1);
+// => false
+
+lt('a', 'z');
+// => true
 ```

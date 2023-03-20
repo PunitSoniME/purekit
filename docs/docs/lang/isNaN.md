@@ -1,6 +1,6 @@
 ---
 title: isNaN
-definition: 
+definition: isNaN(value)
 description: Determines whether a value is NaN (Not-A-Number).
 ---
 
@@ -25,5 +25,12 @@ description: Determines whether a value is NaN (Not-A-Number).
 
 
 ```ts
-isNaN(NaN); // trueisNaN('string'); // trueisNaN(1); // false
+isNaN(NaN);
+// => true
+
+isNaN('string');
+// => true
+
+isNaN(1);
+// => false
 ```

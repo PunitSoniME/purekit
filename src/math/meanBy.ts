@@ -15,11 +15,11 @@ import sumBy from './sumBy';
  *
  * @example
  *
- * // returns 2
  * meanBy([{ value: 1 }, { value: 2 }, { value: 3 }], (obj) => obj.value);
+ * // => 2
  *
- * // returns 5
  * meanBy([{ value: 5 }, { value: 5 }, { value: 5 }, { value: 5 }], (obj) => obj.value);
+ * // => 5
  */
 const meanBy = <T>(collection: T[], iteratee: predicateType<T>): number =>
 	sumBy(collection as any[], iteratee) / collection.length;

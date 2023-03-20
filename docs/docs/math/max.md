@@ -1,6 +1,6 @@
 ---
 title: max
-definition: 
+definition: max(array)
 description: Returns the maximum number in the given collection.
 ---
 
@@ -25,5 +25,6 @@ description: Returns the maximum number in the given collection.
 
 
 ```ts
-max([1, 3, 2]); // returns 3
+max([1, 3, 2]);
+// => 3
 ```

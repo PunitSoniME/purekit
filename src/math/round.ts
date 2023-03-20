@@ -12,11 +12,11 @@ import baseMathPrecesion from '../helpers/baseMathPrecesion';
  *
  * @example
  *
- * // returns 3.14
  * round(3.14159265359, 2);
+ * // => 3.14
  *
- * // returns 3
  * round(3.14159265359);
+ * // => 3
  */
 const round = (value: number, precision: number = 0): number => {
 	return baseMathPrecesion(value, precision, 'round');

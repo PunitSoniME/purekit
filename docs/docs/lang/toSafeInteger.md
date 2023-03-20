@@ -1,6 +1,6 @@
 ---
 title: toSafeInteger
-definition: 
+definition: toSafeInteger(value)
 description: Converts a value to a safe integer. Returns a safe integer that is at least -9007199254740991 and at most 9007199254740991.
 ---
 
@@ -9,7 +9,7 @@ description: Converts a value to a safe integer. Returns a safe integer that is 
 
 
 ```bash
-{any} value - The value to convert.
+{*} value - The value to convert.
 ```
 
 
@@ -25,5 +25,15 @@ description: Converts a value to a safe integer. Returns a safe integer that is 
 
 
 ```ts
-toSafeInteger(3.2) // => 3toSafeInteger(Infinity) // => 9007199254740991toSafeInteger('3.2') // => 3toSafeInteger(Number.MIN_VALUE) // => 0
+toSafeInteger(3.2);
+// => 3
+
+toSafeInteger(Infinity);
+// => 9007199254740991
+
+toSafeInteger('3.2');
+// => 3
+
+toSafeInteger(Number.MIN_VALUE);
+// => 0
 ```

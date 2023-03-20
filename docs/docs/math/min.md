@@ -1,6 +1,6 @@
 ---
 title: min
-definition: 
+definition: min(array)
 description: Returns the minimum value in an array of numbers.
 ---
 
@@ -17,7 +17,7 @@ description: Returns the minimum value in an array of numbers.
 
 
 ```bash
-{number|undefined} - The minimum value in the array, or undefined if the array is empty.
+{number | undefined} - The minimum value in the array, or undefined if the array is empty.
 ```
 
 
@@ -25,5 +25,9 @@ description: Returns the minimum value in an array of numbers.
 
 
 ```ts
+min([1, 2, 3]);
+// => 1
 
+min([]);
+// => undefined
 ```

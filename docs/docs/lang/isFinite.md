@@ -1,6 +1,6 @@
 ---
 title: isFinite
-definition: 
+definition: isFinite(value)
 description: Checks if a value is a finite number.
 ---
 
@@ -9,7 +9,7 @@ description: Checks if a value is a finite number.
 
 
 ```bash
-{any} value - The value to check.
+{*} value - The value to check.
 ```
 
 
@@ -25,5 +25,12 @@ description: Checks if a value is a finite number.
 
 
 ```ts
-isFinite(3); // trueisFinite(Number.POSITIVE_INFINITY); // falseisFinite('123'); // false
+isFinite(3);
+// => true
+
+isFinite(Number.POSITIVE_INFINITY);
+// => false
+
+isFinite('123');
+// => false
 ```

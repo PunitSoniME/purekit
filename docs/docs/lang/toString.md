@@ -1,6 +1,6 @@
 ---
 title: toString
-definition: 
+definition: toString(value)
 description: Converts a value to a string.
 ---
 
@@ -25,5 +25,21 @@ description: Converts a value to a string.
 
 
 ```ts
-toString('Hello') // returns 'Hello'toString(123) // returns '123'toString(null) // returns ''toString(undefined) // returns ''toString(-0) // returns '-0'toString(0) // returns '0'
+toString('Hello');
+// => 'Hello'
+
+toString(123);
+// => '123'
+
+toString(null);
+// => ''
+
+toString(undefined);
+// => ''
+
+toString(-0);
+// => '-0'
+
+toString(0);
+// => '0'
 ```

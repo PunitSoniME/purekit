@@ -18,7 +18,7 @@ description: Creates a function that invokes `fn` once it's called `times` times
 
 
 ```bash
-{any} - Returns the new debounced function.
+{*} - Returns the new debounced function.
 ```
 
 

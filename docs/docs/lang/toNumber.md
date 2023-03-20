@@ -1,6 +1,6 @@
 ---
 title: toNumber
-definition: 
+definition: toNumber(value)
 description: Converts a value to a number.
 ---
 
@@ -25,5 +25,18 @@ description: Converts a value to a number.
 
 
 ```ts
-toNumber('123') // 123toNumber('abc') // NaNtoNumber(null) // 0toNumber(undefined) // NaNtoNumber({}) // NaN
+toNumber('123');
+// => 123
+
+toNumber('abc');
+// => NaN
+
+toNumber(null);
+// => 0
+
+toNumber(undefined);
+// => NaN
+
+toNumber({});
+// => NaN
 ```

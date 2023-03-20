@@ -1,6 +1,6 @@
 ---
 title: isArrayLikeObject
-definition: 
+definition: isArrayLikeObject(value)
 description: Determines whether the given value is an object that has a length property and is not a function.
 ---
 
@@ -25,5 +25,21 @@ description: Determines whether the given value is an object that has a length p
 
 
 ```ts
-isArrayLikeObject({ length: 0 }); // returns trueisArrayLikeObject([1, 2, 3]); // returns trueisArrayLikeObject('hello'); // returns trueisArrayLikeObject(document.querySelectorAll('.example')); // returns trueisArrayLikeObject(() => {}); // returns falseisArrayLikeObject(null); // returns false
+isArrayLikeObject({ length: 0 });
+// => true
+
+isArrayLikeObject([1, 2, 3]);
+// => true
+
+isArrayLikeObject('hello');
+// => true
+
+isArrayLikeObject(document.querySelectorAll('.example'));
+// => true
+
+isArrayLikeObject(() => {});
+// => false
+
+isArrayLikeObject(null);
+// => false
 ```

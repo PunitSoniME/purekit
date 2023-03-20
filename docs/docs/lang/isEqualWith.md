@@ -1,6 +1,6 @@
 ---
 title: isEqualWith
-definition: 
+definition: isEqualWith(value, other, [customizer])
 description: Performs a deep comparison between two values to determine if they are equivalent,
 ---
 
@@ -27,5 +27,21 @@ description: Performs a deep comparison between two values to determine if they 
 
 
 ```ts
-function compareFunc(objValue, othValue) {  if (Array.isArray(objValue) && Array.isArray(othValue)) {    return objValue.length === othValue.length;  }}const object = { 'a': [{ 'b': 2 }, { 'd': 4 }] };const other = { 'a': [{ 'b': 2 }, { 'd': 4 }] };isEqualWith(object, other, compareFunc);
+function compareFunc(objValue, othValue) {
+  if (Array.isArray(objValue) && Array.isArray(othValue)) {
+    return objValue.length === othValue.length;
+  }
+}
+const object = { 'a': [{ 'b': 2 }, { 'd': 4 }] };
+const other = { 'a': [{ 'b': 2 }, { 'd': 4 }] };
+
+isEqualWith(object, other, compareFunc);
+// => true
+
+isEqualWith(object, other, (objValue, othValue) => {
+  if (Array.isArray(objValue) && Array.isArray(othValue)) {
+    return objValue.length === othValue.length;
+  }
+});
+// => true
 ```

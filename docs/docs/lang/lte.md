@@ -1,6 +1,6 @@
 ---
 title: lte
-definition: 
+definition: lte(value, other)
 description: Checks if `value` is less than or equal to `other`.
 ---
 
@@ -27,4 +27,11 @@ description: Checks if `value` is less than or equal to `other`.
 
 ```ts
 lte(1, 2)
+// => true
+
+lte(2, 1)
+// => false
+
+lte(2, 2)
+// => true
 ```

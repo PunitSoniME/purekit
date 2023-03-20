@@ -1,6 +1,6 @@
 ---
 title: isArray
-definition: 
+definition: isArray(value)
 description: Determines whether the given value is an array.
 ---
 
@@ -25,5 +25,15 @@ description: Determines whether the given value is an array.
 
 
 ```ts
-isArray([]); // returns trueisArray([1, 2, 3]); // returns trueisArray({}); // returns falseisArray(null); // returns false
+isArray([]);
+// => true
+
+isArray([1, 2, 3]);
+// => true
+
+isArray({}); 
+// => false
+
+isArray(null); 
+// => false
 ```

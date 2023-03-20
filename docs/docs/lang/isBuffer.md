@@ -1,6 +1,6 @@
 ---
 title: isBuffer
-definition: 
+definition: isBuffer(value)
 description: Determines whether the given value is a Node.js Buffer object.
 ---
 
@@ -25,5 +25,9 @@ description: Determines whether the given value is a Node.js Buffer object.
 
 
 ```ts
-const buf = Buffer.from('hello', 'utf8');isBuffer(buf); // returns trueconst arr = [1, 2, 3];isBuffer(arr); // returns false
+const buf = Buffer.from('hello', 'utf8');
+isBuffer(buf); // => true
+
+const arr = [1, 2, 3];
+isBuffer(arr); // => false
 ```

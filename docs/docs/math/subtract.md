@@ -1,6 +1,6 @@
 ---
 title: subtract
-definition: 
+definition: subtract(minuend, subtrahend)
 description: Subtracts all the numbers passed in as arguments from the first number passed in.
 ---
 
@@ -25,5 +25,9 @@ description: Subtracts all the numbers passed in as arguments from the first num
 
 
 ```ts
+subtract(20, 5, 3, 2);
+// => 10
 
+subtract(10, 5, 2, 3);
+// => 0
 ```

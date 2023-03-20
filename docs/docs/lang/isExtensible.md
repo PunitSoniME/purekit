@@ -1,6 +1,6 @@
 ---
 title: isExtensible
-definition: 
+definition: isExtensible(value)
 description: Checks if an object is extensible (whether it can have new properties added to it or not).
 ---
 
@@ -25,5 +25,13 @@ description: Checks if an object is extensible (whether it can have new properti
 
 
 ```ts
-const obj = { a: 1 };const arr = [1, 2, 3];Object.preventExtensions(obj);isExtensible(obj); // returns falseisExtensible(arr); // returns true
+const obj = { a: 1 };
+const arr = [1, 2, 3];
+Object.preventExtensions(obj);
+
+isExtensible(obj);
+// => false
+
+isExtensible(arr);
+// => true
 ```

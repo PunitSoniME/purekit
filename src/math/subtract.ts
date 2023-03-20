@@ -9,11 +9,11 @@
  *
  * @example
  *
- * // returns 10
  * subtract(20, 5, 3, 2);
+ * // => 10
  *
- * // returns 0
  * subtract(10, 5, 2, 3);
+ * // => 0
  */
 const subtract = (...numbers: number[]): number => {
 	return numbers.reduce(

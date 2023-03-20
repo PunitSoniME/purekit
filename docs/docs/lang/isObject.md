@@ -9,7 +9,7 @@ description: Checks if a given value is an object.
 
 
 ```bash
-{any} value - The value to check.
+{*} value - The value to check.
 ```
 
 
@@ -25,5 +25,7 @@ description: Checks if a given value is an object.
 
 
 ```ts
-isObject({}); // => trueisObject(null); // => falseisObject(42); // => false
+isObject({}); // => true
+isObject(null); // => false
+isObject(42); // => false
 ```

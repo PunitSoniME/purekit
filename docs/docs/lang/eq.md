@@ -1,6 +1,6 @@
 ---
 title: eq
-definition: 
+definition: eq(value, other)
 description: Checks if two values are equivalent, based on the `Object.is` method.
 ---
 
@@ -26,5 +26,9 @@ description: Checks if two values are equivalent, based on the `Object.is` metho
 
 
 ```ts
-eq(NaN, NaN); // => trueeq(1, 1); // => trueeq(1, '1'); // => falseeq({}, {}); // => falseeq([], []); // => false
+eq(NaN, NaN); // => true
+eq(1, 1); // => true
+eq(1, '1'); // => false
+eq({}, {}); // => false
+eq([], []); // => false
 ```

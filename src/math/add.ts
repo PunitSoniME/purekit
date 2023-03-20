@@ -5,8 +5,8 @@
  *
  * @param {number|string} augend - The first number or string to be added.
  * @param {number|string} addend - The second number or string to be added.
- * @param {...(number|string)} restNumbers - The rest of the numbers or strings to be added.
- * @returns {number} - The sum of all numbers or concatenated string.
+ * @param {...(number|string)} args - The rest of the numbers or strings to be added.
+ * @returns {number | string} - The sum of all numbers or concatenated string.
  *
  * @example
  * add(2, 3); // returns 5
@@ -16,11 +16,11 @@
 const add = (
 	augend: number | string,
 	addend: number | string,
-	...restNumbers: Array<number | string>
-): number => {
+	...args: Array<number | string>
+): number | string => {
 	const defaultValue: any =
 		typeof augend === 'string' || typeof addend === 'string' ? '' : 0;
-	const numbers = [augend, addend, ...restNumbers];
+	const numbers = [augend, addend, ...args];
 	return numbers.reduce(
 		(oldValue, nextValue) => oldValue + nextValue,
 		defaultValue

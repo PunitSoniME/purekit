@@ -1,6 +1,6 @@
 ---
 title: isMatchWith
-definition: 
+definition: isMatchWith(value)
 description: Checks if an object has a value matching the key-value pairs of another object using a customizer function.
 ---
 
@@ -27,5 +27,10 @@ description: Checks if an object has a value matching the key-value pairs of ano
 
 
 ```ts
-const object = { 'a': 1, 'b': 2, 'c': 3 };const source = { 'a': 1, 'b': 2 };function customizer(objValue, srcValue, key, object, source) {    return objValue === srcValue;}isMatchWith(object, source, customizer); // returns true
+const object = { 'a': 1, 'b': 2, 'c': 3 };
+const source = { 'a': 1, 'b': 2 };
+function customizer(objValue, srcValue, key, object, source) {
+    return objValue === srcValue;
+}
+isMatchWith(object, source, customizer); // => returns true
 ```

@@ -1,6 +1,6 @@
 ---
 title: isFunction
-definition: 
+definition: isFunction(value)
 description: Checks if a value is a function.
 ---
 
@@ -25,5 +25,12 @@ description: Checks if a value is a function.
 
 
 ```ts
-isFunction(function() {}) // trueisFunction(() => {}) // trueisFunction(1) // false
+isFunction(function() {});
+// => true
+
+isFunction(() => {});
+// => true
+
+isFunction(1);
+// => false
 ```

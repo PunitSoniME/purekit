@@ -1,6 +1,6 @@
 ---
 title: isBoolean
-definition: 
+definition: isBoolean(value)
 description: Determines whether the given value is a boolean.
 ---
 
@@ -25,5 +25,18 @@ description: Determines whether the given value is a boolean.
 
 
 ```ts
-isBoolean(true); // returns trueisBoolean(false); // returns trueisBoolean(0); // returns falseisBoolean('true'); // returns falseisBoolean(null); // returns false
+isBoolean(true);
+// => true
+
+isBoolean(false);
+// => true
+
+isBoolean(0);
+// => false
+
+isBoolean('true');
+// => false
+
+isBoolean(null);
+// => false
 ```

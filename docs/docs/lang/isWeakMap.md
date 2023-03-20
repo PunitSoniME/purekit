@@ -1,6 +1,6 @@
 ---
 title: isWeakMap
-definition: 
+definition: isWeakMap(value)
 description: Checks if a value is a WeakMap object.
 ---
 
@@ -25,5 +25,9 @@ description: Checks if a value is a WeakMap object.
 
 
 ```ts
-isWeakMap(new WeakMap()); // trueisWeakMap(new Map()); // false
+isWeakMap(new WeakMap());
+// => true
+
+isWeakMap(new Map());
+// => false
 ```
