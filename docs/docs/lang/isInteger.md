@@ -1,6 +1,6 @@
 ---
 title: isInteger
-definition: 
+definition: isInteger(value)
 description: Checks if a value is an integer.
 ---
 
@@ -25,5 +25,12 @@ description: Checks if a value is an integer.
 
 
 ```ts
-isInteger(5); // trueisInteger('5'); // falseisInteger(5.1); // false
+isInteger(5);
+// => true
+
+isInteger('5');
+// => false
+
+isInteger(5.1);
+// => false
 ```

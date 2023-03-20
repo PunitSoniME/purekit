@@ -1,6 +1,6 @@
 ---
 title: isArguments
-definition: 
+definition: isArguments(value)
 description: Determines whether the given item is an `arguments` object.
 ---
 
@@ -25,5 +25,11 @@ description: Determines whether the given item is an `arguments` object.
 
 
 ```ts
-const args = (function() { return arguments; })();isArguments(args); // returns trueconst arr = [1, 2, 3];isArguments(arr); // returns false
+const args = (function() { return arguments; })();
+isArguments(args);
+// => true
+
+const arr = [1, 2, 3];
+isArguments(arr);
+// => false
 ```

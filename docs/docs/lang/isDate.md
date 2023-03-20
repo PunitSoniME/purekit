@@ -1,6 +1,6 @@
 ---
 title: isDate
-definition: 
+definition: isDate(value)
 description: Determines whether the given value is a valid Date object.
 ---
 
@@ -25,5 +25,21 @@ description: Determines whether the given value is a valid Date object.
 
 
 ```ts
-isDate(new Date()); // returns trueisDate('2021-09-01T00:00:00.000Z'); // returns trueisDate(1630454400000); // returns trueisDate(null); // returns falseisDate(undefined); // returns falseisDate('hello'); // returns false
+isDate(new Date());
+// => true
+
+isDate('2021-09-01T00:00:00.000Z');
+// => true
+
+isDate(1630454400000);
+// => true
+
+isDate(null);
+// => false
+
+isDate(undefined);
+// => false
+
+isDate('hello');
+// => false
 ```

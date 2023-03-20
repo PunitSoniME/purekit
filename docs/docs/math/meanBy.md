@@ -1,6 +1,6 @@
 ---
 title: meanBy
-definition: 
+definition: meanBy(array, [iteratee = identity])
 description: Calculates the mean value of an array of objects using the given iteratee.
 ---
 
@@ -26,5 +26,9 @@ description: Calculates the mean value of an array of objects using the given it
 
 
 ```ts
+meanBy([{ value: 1 }, { value: 2 }, { value: 3 }], (obj) => obj.value);
+// => 2
 
+meanBy([{ value: 5 }, { value: 5 }, { value: 5 }, { value: 5 }], (obj) => obj.value);
+// => 5
 ```

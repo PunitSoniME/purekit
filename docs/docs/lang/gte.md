@@ -1,6 +1,6 @@
 ---
 title: gte
-definition: 
+definition: gte(value, other)
 description: Checks if `value` is greater than or equal to `other`.
 ---
 
@@ -27,4 +27,11 @@ description: Checks if `value` is greater than or equal to `other`.
 
 ```ts
 gte(3, 1);
+// => true
+
+gte(1, 3);
+// => false
+
+gte(2, 2);
+// => true
 ```

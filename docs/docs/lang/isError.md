@@ -1,6 +1,6 @@
 ---
 title: isError
-definition: 
+definition: isError(value)
 description: Checks if a value is an error object.
 ---
 
@@ -25,5 +25,9 @@ description: Checks if a value is an error object.
 
 
 ```ts
-isError(new Error('Something went wrong')) // => trueisError('Error') // => false
+isError(new Error('Something went wrong'));
+// => true
+
+isError('Error');
+// => false
 ```

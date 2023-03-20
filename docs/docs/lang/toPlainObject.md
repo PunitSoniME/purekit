@@ -1,6 +1,6 @@
 ---
 title: toPlainObject
-definition: 
+definition: toPlainObject(value)
 description: Converts `value` to a plain object with its own enumerable properties.
 ---
 
@@ -25,5 +25,12 @@ description: Converts `value` to a plain object with its own enumerable properti
 
 
 ```ts
-toPlainObject({ a: 1, b: 2 }) // { a: 1, b: 2 }toPlainObject(new Map([['a', 1], ['b', 2]])) // { a: 1, b: 2 }toPlainObject([1, 2, 3]) // { '0': 1, '1': 2, '2': 3 }
+toPlainObject({ a: 1, b: 2 });
+// => { a: 1, b: 2 }
+
+toPlainObject(new Map([['a', 1], ['b', 2]]));
+// => { a: 1, b: 2 }
+
+toPlainObject([1, 2, 3]);
+// => { '0': 1, '1': 2, '2': 3 }
 ```

@@ -22,17 +22,17 @@ const randomInt = (a = 1, b = 0) => {
  *
  * @example
  *
- * // returns a random integer between 0 and 9
  * random(10);
+ * // => a random integer between 0 and 9
  *
- * // returns a random integer between 1 and 10
  * random(1, 11);
+ * // => a random integer between 1 and 10
  *
- * // returns a random floating-point number between 0 and 1
  * random(true);
+ * // => a random floating-point number between 0 and 1
  *
- * // returns a random floating-point number between 2 and 3
  * random(3, 2);
+ * // => a random floating-point number between 2 and 3
  */
 const random = (
 	lower: number = 0,

@@ -13,11 +13,11 @@ import predicateType from '../helpers/predicateType';
  *
  * @example
  *
- * // returns 15
  * sumBy([1, 2, 3, 4, 5], (num) => num);
+ * // => 15
  *
- * // returns 3
  * sumBy([{ val: 1 }, { val: 2 }, { val: 0 }], (obj) => obj.val);
+ * // => 3
  */
 const sumBy = <T>(numbers: T[], iteratee: predicateType<T>): number => {
 	const fn = createPredicate(iteratee);

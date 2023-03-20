@@ -8,11 +8,11 @@
  *
  * @example
  *
- * // returns 1
  * min([1, 2, 3]);
+ * // => 1
  *
- * // returns undefined
  * min([]);
+ * // => undefined
  */
 const min = (collection: number[]): number | undefined => {
 	return collection.length === 0 ? undefined : Math.min(...collection);

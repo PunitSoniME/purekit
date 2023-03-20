@@ -18,7 +18,7 @@ description: Iterates over an object's own and inherited enumerable properties, 
 
 
 ```bash
-{any} - The key of the first element that satisfies the predicate function, otherwise undefined.
+{*} - The key of the first element that satisfies the predicate function, otherwise undefined.
 ```
 
 
@@ -26,5 +26,12 @@ description: Iterates over an object's own and inherited enumerable properties, 
 
 
 ```ts
-const users = {  'barney':  { 'age': 36, 'active': true },  'fred':    { 'age': 40, 'active': false },  'pebbles': { 'age': 1,  'active': true }};const isActive = (value) => value.active;const result = findKey(users, isActive);console.log(result); // 'barney'
+const users = {
+  'barney':  { 'age': 36, 'active': true },
+  'fred':    { 'age': 40, 'active': false },
+  'pebbles': { 'age': 1,  'active': true }
+};
+const isActive = (value) => value.active;
+const result = findKey(users, isActive);
+console.log(result); // 'barney'
 ```

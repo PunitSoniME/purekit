@@ -1,6 +1,6 @@
 ---
 title: isObjectLike
-definition: 
+definition: isObjectLike(value)
 description: Checks if `value` is object-like.
 ---
 
@@ -25,5 +25,15 @@ description: Checks if `value` is object-like.
 
 
 ```ts
-isObjectLike({}); // => trueisObjectLike([1, 2, 3]); // => trueisObjectLike(Function); // => falseisObjectLike(null); // => false
+isObjectLike({});
+// => true
+
+isObjectLike([1, 2, 3]);
+// => true
+
+isObjectLike(Function);
+// => false
+
+isObjectLike(null);
+// => false
 ```

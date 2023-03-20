@@ -11,17 +11,17 @@
  *
  * @example
  *
- * // returns true
  * inRange(2, 0, 5);
+ * // => true
  *
- * // returns true
  * inRange(2, 5, 0);
+ * // => true
  *
- * // returns true
  * inRange(2, 2, 5);
+ * // => true
  *
- * // returns false
  * inRange(5, 0, 5);
+ * // => false
  */
 const inRange = (
 	number: number,

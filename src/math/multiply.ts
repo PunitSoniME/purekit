@@ -8,11 +8,11 @@
  *
  * @example
  *
- * // returns 120
  * multiply(1, 2, 3, 4, 5);
+ * // => 120
  *
- * // returns -15
  * multiply(3, -5);
+ * // => -15
  */
 const multiply = (...numbers: number[]): number => {
 	return numbers.reduce((oldValue, newValue) => oldValue * newValue, 1);

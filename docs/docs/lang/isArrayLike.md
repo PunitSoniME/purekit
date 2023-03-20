@@ -1,6 +1,6 @@
 ---
 title: isArrayLike
-definition: 
+definition: isArrayLike(value)
 description: Determines whether the given value is an array-like object.
 ---
 
@@ -25,5 +25,18 @@ description: Determines whether the given value is an array-like object.
 
 
 ```ts
-isArrayLike('hello'); // returns trueisArrayLike([1, 2, 3]); // returns trueisArrayLike(document.querySelectorAll('.example')); // returns trueisArrayLike({}); // returns falseisArrayLike(null); // returns false
+isArrayLike('hello');
+// => true
+
+isArrayLike([1, 2, 3]);
+// => true
+
+isArrayLike(document.querySelectorAll('.example'));
+// => true
+
+isArrayLike({});
+// => false
+
+isArrayLike(null);
+// => false
 ```

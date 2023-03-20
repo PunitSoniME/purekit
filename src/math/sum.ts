@@ -9,11 +9,11 @@
  *
  * @example
  *
- * // returns 15
  * sum([1, 2, 3, 4, 5]);
+ * // => 15
  *
- * // returns -2
  * sum([-1, -2, 0, 1]);
+ * // => -2
  */
 const sum = (numbers: number[]): number =>
 	numbers.reduce((acc, num) => {

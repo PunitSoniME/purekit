@@ -8,11 +8,11 @@
  *
  * @example
  *
- * // returns 2
  * mean([1, 2, 3]);
+ * // returns 2
  *
- * // returns 5
  * mean([5, 5, 5, 5]);
+ * // returns 5
  */
 const mean = (collection: number[]): number => {
 	return collection.reduce((acc, num) => acc + num, 0) / collection.length;

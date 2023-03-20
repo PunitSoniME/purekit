@@ -1,6 +1,6 @@
 ---
 title: isArrayBuffer
-definition: 
+definition: isArrayBuffer(value)
 description: Determines whether the given value is an `ArrayBuffer` object.
 ---
 
@@ -25,5 +25,11 @@ description: Determines whether the given value is an `ArrayBuffer` object.
 
 
 ```ts
-const buffer = new ArrayBuffer(16);isArrayBuffer(buffer); // returns trueconst arr = [1, 2, 3];isArrayBuffer(arr); // returns false
+const buffer = new ArrayBuffer(16);
+isArrayBuffer(buffer);
+// => true
+
+const arr = [1, 2, 3];
+isArrayBuffer(arr);
+// => false
 ```

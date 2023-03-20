@@ -1,6 +1,6 @@
 ---
 title: isWeakSet
-definition: 
+definition: isWeakSet(value)
 description: Checks if a value is a WeakSet.
 ---
 
@@ -25,5 +25,12 @@ description: Checks if a value is a WeakSet.
 
 
 ```ts
-isWeakSet(new WeakSet()); // => trueisWeakSet(new Set()); // => falseisWeakSet({}); // => false
+isWeakSet(new WeakSet());
+// => true
+
+isWeakSet(new Set());
+// => false
+
+isWeakSet({});
+// => false
 ```

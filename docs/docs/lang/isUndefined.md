@@ -1,6 +1,6 @@
 ---
 title: isUndefined
-definition: 
+definition: isUndefined(value)
 description: Checks if a value is undefined.
 ---
 
@@ -9,7 +9,7 @@ description: Checks if a value is undefined.
 
 
 ```bash
-{any} value - The value to check.
+{*} value - The value to check.
 ```
 
 
@@ -25,5 +25,18 @@ description: Checks if a value is undefined.
 
 
 ```ts
-isUndefined(undefined); // trueisUndefined(null); // falseisUndefined(0); // falseisUndefined(''); // falseisUndefined(false); // false
+isUndefined(undefined);
+// => true
+
+isUndefined(null);
+// => false
+
+isUndefined(0);
+// => false
+
+isUndefined('');
+// => false
+
+isUndefined(false);
+// => false
 ```

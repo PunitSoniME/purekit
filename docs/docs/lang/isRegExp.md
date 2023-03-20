@@ -9,7 +9,7 @@ description: Checks if a given value is a regular expression.
 
 
 ```bash
-{any} value - The value to check.
+{*} value - The value to check.
 ```
 
 

@@ -1,6 +1,6 @@
 ---
 title: gt
-definition: 
+definition: v
 description: Checks if `value` is greater than `other`.
 ---
 
@@ -26,5 +26,6 @@ description: Checks if `value` is greater than `other`.
 
 
 ```ts
-gt(3, 1); // => truegt(1, 3); // => false
+gt(3, 1); // => true
+gt(1, 3); // => false
 ```

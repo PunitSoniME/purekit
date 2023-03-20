@@ -1,6 +1,6 @@
 ---
 title: isNull
-definition: 
+definition: isNull(value)
 description: Checks if a value is `null`.
 ---
 
@@ -25,5 +25,12 @@ description: Checks if a value is `null`.
 
 
 ```ts
-isNull(null); // trueisNull(undefined); // falseisNull(''); // false
+isNull(null);
+// => true
+
+isNull(undefined);
+// => false
+
+isNull('');
+// => false
 ```

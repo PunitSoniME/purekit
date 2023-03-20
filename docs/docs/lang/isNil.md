@@ -1,6 +1,6 @@
 ---
 title: isNil
-definition: 
+definition: isNil(value)
 description: Checks if a value is null or undefined.
 ---
 
@@ -25,5 +25,15 @@ description: Checks if a value is null or undefined.
 
 
 ```ts
-isNil(null); // trueisNil(undefined); // trueisNil(0); // falseisNil(''); // false
+isNil(null);
+// => true
+
+isNil(undefined);
+// => true
+
+isNil(0);
+// => false
+
+isNil('');
+// => false
 ```

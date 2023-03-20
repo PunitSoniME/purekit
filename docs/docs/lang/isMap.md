@@ -1,6 +1,6 @@
 ---
 title: isMap
-definition: 
+definition: isMap(value)
 description: Checks if a value is a Map object.
 ---
 
@@ -25,5 +25,12 @@ description: Checks if a value is a Map object.
 
 
 ```ts
-isMap(new Map()); // trueisMap(new Set()); // falseisMap({}); // false
+isMap(new Map());
+// => true
+
+isMap(new Set());
+// => false
+
+isMap({});
+// => false
 ```

@@ -1,6 +1,6 @@
 ---
 title: isNumber
-definition: 
+definition: isNumber(value)
 description: Checks if a value is a number.
 ---
 
@@ -25,5 +25,15 @@ description: Checks if a value is a number.
 
 
 ```ts
-isNumber(42); // trueisNumber(NaN); // trueisNumber('42'); // falseisNumber(null); // false
+isNumber(42);
+// => true
+
+isNumber(NaN);
+// => true
+
+isNumber('42');
+// => false
+
+isNumber(null);
+// => false
 ```

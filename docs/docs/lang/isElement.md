@@ -1,6 +1,6 @@
 ---
 title: isElement
-definition: 
+definition: isElement(value)
 description: Determines whether the given value is a DOM element.
 ---
 
@@ -25,5 +25,9 @@ description: Determines whether the given value is a DOM element.
 
 
 ```ts
-isElement(document.createElement('div')); // returns trueisElement(document.createTextNode('hello')); // returns false
+isElement(document.createElement('div'));
+// => true
+
+isElement(document.createTextNode('hello'));
+// => false
 ```

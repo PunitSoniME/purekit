@@ -1,6 +1,6 @@
 ---
 title: isMatch
-definition: 
+definition: isMatch(value)
 description: Checks if an object matches a source object, using a customizer function.
 ---
 
@@ -26,5 +26,10 @@ description: Checks if an object matches a source object, using a customizer fun
 
 
 ```ts
-const object = { 'a': 1, 'b': 2, 'c': 3 };isMatch(object, { 'b': 2 }); // trueisMatch(object, { 'b': 1 }); // false
+const object = { 'a': 1, 'b': 2, 'c': 3 };
+isMatch(object, { 'b': 2 });
+// => true
+
+isMatch(object, { 'b': 1 });
+// => false
 ```

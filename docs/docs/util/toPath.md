@@ -9,7 +9,7 @@ description: Converts a string path to an array of path segments.
 
 
 ```bash
-{any} path - The string path to convert.
+{*} path - The string path to convert.
 ```
 
 
