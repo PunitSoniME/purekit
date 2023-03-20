@@ -9,7 +9,7 @@ import identity from '../util/identity';
  *
  * @template T
  * @param {T[]} collection - The collection to iterate over.
- * @param {Function} [predicate=identity] The function invoked per iteration.
+ * @param {Function} [predicate = identity] The function invoked per iteration.
  * @returns {Object} - Returns the composed aggregate object.
  *
  * @example
@@ -24,7 +24,7 @@ import identity from '../util/identity';
  * // => { '1': { 'id': '1', 'name': 'Alice' }, '2': { 'id': '2', 'name': 'Bob' }, '3': { 'id': '3', 'name': 'Alice' } }
  *
  * keyBy(users, (user) => user.name);
- * // => { 'Alice': { 'id': '3', 'name': 'Alice' }, 'Bob': { 'id': '2', 'name': 'Bob'
+ * // => { 'Alice': { 'id': '3', 'name': 'Alice' }, 'Bob': { 'id': '2', 'name': 'Bob' } }
  */
 const keyBy = <T>(
 	collection: T[],

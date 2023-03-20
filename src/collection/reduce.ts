@@ -14,9 +14,8 @@ import identity from '../util/identity';
  * @returns {*} - Returns the accumulated value.
  *
  * @example
- * reduce([1, 2, 3], (acc, n) => acc + n); // Returns: 6
+ * reduce([1, 2, 3], (acc, n) => acc + n); // => 6
  *
- * @example
  * reduce(
  *  { a: 1, b: 2, c: 1 },
  *  (result, value, key) => {
@@ -25,7 +24,7 @@ import identity from '../util/identity';
  *  },
  *  {}
  * );
- * // Returns: { '1': ['a', 'c'], '2': ['b'] }
+ * // => { '1': ['a', 'c'], '2': ['b'] }
  */
 const reduce = <T>(
 	collection: Array<T> | Object,

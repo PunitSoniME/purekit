@@ -1,6 +1,6 @@
 ---
 title: reduceRight
-definition: 
+definition: reduceRight(collection, [iteratee = identity], [accumulator])
 description: This method is like `reduce`, except that it iterates over elements of a collection from right to left.
 ---
 
@@ -27,5 +27,11 @@ description: This method is like `reduce`, except that it iterates over elements
 
 
 ```ts
-const numbers = [1, 2, 3, 4, 5];const sum = reduceRight(numbers, (accumulator, value) => accumulator + value, 0);
+const numbers = [1, 2, 3, 4, 5];
+
+const sum = reduceRight(numbers, (accumulator, value) => accumulator + value, 0);
+// => 15
+
+const product = reduceRight(numbers, (accumulator, value) => accumulator * value, 1);
+// => 120
 ```

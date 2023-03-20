@@ -1,6 +1,6 @@
 ---
 title: partial
-definition: 
+definition: partial(func, [partials])
 description: Creates a partial function that is bound to the specified arguments.
 ---
 
@@ -26,5 +26,9 @@ description: Creates a partial function that is bound to the specified arguments
 
 
 ```ts
-const add = (x, y, z) => x + y + z;const add5 = partial(add, 2, 3);add5(4); // returns 9
+const add = (x, y, z) => x + y + z;
+const add5 = partial(add, 2, 3);
+
+add5(4);
+// => 9
 ```

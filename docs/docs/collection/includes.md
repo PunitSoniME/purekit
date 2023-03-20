@@ -1,6 +1,6 @@
 ---
 title: includes
-definition: 
+definition: includes(collection, value, [fromIndex=0])
 description: Checks if the provided value is in the collection. If the collection is an object, the values of the object will be searched.
 ---
 
@@ -9,8 +9,8 @@ description: Checks if the provided value is in the collection. If the collectio
 
 
 ```bash
-{T} collection - The collection to inspect.
-{Function} [iteratee=identity] - The function invoked per iteration.
+{Object | [] | string} collection - The collection to inspect.
+{Function} [iteratee = identity] - The function invoked per iteration.
 ```
 
 
@@ -27,4 +27,11 @@ description: Checks if the provided value is in the collection. If the collectio
 
 ```ts
 includes([1, 2, 3], 1);
+// => true
+
+includes({ 'a': 1, 'b': 2 }, 1);
+// => true
+
+includes('hello', 'e');
+// => true
 ```

@@ -1,6 +1,6 @@
 ---
 title: spread
-definition: 
+definition: spread(func, [start = 0])
 description: Returns a function that takes an array of arguments and applies it to the given function as separate arguments.
 ---
 
@@ -10,6 +10,7 @@ description: Returns a function that takes an array of arguments and applies it 
 
 ```bash
 {Function} func - The function to be called with the spread arguments.
+{number} [start = 0]: The start position of the spread.
 ```
 
 
@@ -17,7 +18,7 @@ description: Returns a function that takes an array of arguments and applies it 
 
 
 ```bash
-
+{Function} - The new function that takes an array of arguments and applies it to the given function as separate arguments.
 ```
 
 
@@ -25,5 +26,8 @@ description: Returns a function that takes an array of arguments and applies it 
 
 
 ```ts
-const sum = (x, y, z) => x + y + z;const spreadSum = spread(sum);spreadSum([1, 2, 3]); // Returns: 6
+const sum = (x, y, z) => x + y + z;
+const spreadSum = spread(sum);
+
+spreadSum([1, 2, 3]); // => 6
 ```

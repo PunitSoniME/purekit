@@ -1,7 +1,7 @@
 ---
 title: before
-definition: 
-description: Creates a function that invokes `fn` with its arguments transformed.
+definition: before(times, fn)
+description: Executes a function a specified number of times and returns the result of the last execution.
 ---
 
 
@@ -9,8 +9,8 @@ description: Creates a function that invokes `fn` with its arguments transformed
 
 
 ```bash
-{Function} fn - The function to wrap.
-{number} [arity=fn.length] - The arity of `fn`.
+{number} times - The number of times to execute the function.
+{Function} fn - The function to be executed.
 ```
 
 
@@ -18,7 +18,7 @@ description: Creates a function that invokes `fn` with its arguments transformed
 
 
 ```bash
-{Function} - Returns the new wrapped function.
+{Function} - A function that executes the input function the specified number of times.
 ```
 
 
@@ -26,5 +26,11 @@ description: Creates a function that invokes `fn` with its arguments transformed
 
 
 ```ts
-const parseIntAry = ary(parseInt, 1);['6', '8', '10'].map(parseIntAry);
+const multiplyByTwo = (x) => x * 2;
+const executeThreeTimes = before(3, multiplyByTwo);
+
+// Call the function multiple times:
+executeThreeTimes(3); // => 6
+executeThreeTimes(5); // => 6
+executeThreeTimes(2); // => 6
 ```

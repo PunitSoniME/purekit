@@ -1,6 +1,6 @@
 ---
 title: after
-definition: 
+definition: after(times, fn)
 description: Creates a function that invokes `fn` once it's called `times` times or more.
 ---
 
@@ -26,5 +26,11 @@ description: Creates a function that invokes `fn` once it's called `times` times
 
 
 ```ts
-function greet(name) {  console.log('Hello, ' + name + '!');}const greetAfterThree = after(3, greet);greetAfterThree('Alice'); // nothing happensgreetAfterThree('Bob');   // nothing happensgreetAfterThree('Cathy'); // logs 'Hello, Cathy!'
+function greet(name) {
+  console.log('Hello, ' + name + '!');
+}
+const greetAfterThree = after(3, greet);
+greetAfterThree('Alice'); // nothing happens
+greetAfterThree('Bob');   // nothing happens
+greetAfterThree('Cathy'); // logs 'Hello, Cathy!'
 ```

@@ -1,6 +1,6 @@
 ---
 title: negate
-definition: 
+definition: negate(predicate)
 description: Returns a function that negates the result of the given function.
 ---
 
@@ -25,5 +25,13 @@ description: Returns a function that negates the result of the given function.
 
 
 ```ts
-function isEven(num) {  return num % 2 === 0;}const isOdd = negate(isEven);isEven(2); // => trueisOdd(2);  // => falseisEven(3); // => falseisOdd(3);  // => true
+function isEven(num) {
+  return num % 2 === 0;
+}
+const isOdd = negate(isEven);
+
+isEven(2); // => true
+isOdd(2);  // => false
+isEven(3); // => false
+isOdd(3);  // => true
 ```

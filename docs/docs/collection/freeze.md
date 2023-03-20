@@ -1,7 +1,7 @@
 ---
 title: freeze
-definition: 
-description: A frozen object can no longer be changed: new properties cannot be added, existing properties cannot be removed, their enumerability, configurability, writability, or value cannot be changed, and the object's prototype cannot be re-assigned.
+definition: freeze(collection)
+description: A frozen object can no longer be changed. new properties cannot be added, existing properties cannot be removed, their enumerability, configurability, writability, or value cannot be changed, and the object's prototype cannot be re-assigned.
 ---
 
 
@@ -9,7 +9,7 @@ description: A frozen object can no longer be changed: new properties cannot be 
 
 
 ```bash
-
+{Object | Array} collection - The collection to iterate over.
 ```
 
 
@@ -17,7 +17,7 @@ description: A frozen object can no longer be changed: new properties cannot be 
 
 
 ```bash
-
+{Object | Array} - Returns The collection that was passed to the function.
 ```
 
 
@@ -25,5 +25,10 @@ description: A frozen object can no longer be changed: new properties cannot be 
 
 
 ```ts
-let obj = { a: 1, b: 2 };freeze(obj);obj.b = 3;console.log(obj);
+let obj = { a: 1, b: 2 };
+freeze(obj);
+
+obj.b = 3;
+console.log(obj);
+//  => { a: 1, b: 2 }
 ```
