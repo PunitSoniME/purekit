@@ -1,7 +1,6 @@
 ---
 title: random
 definition: random([lower=0], [upper = 1])
-)
 description: Returns a random number within the specified range. If only one argument is provided, the number will be between 0 and the given number.
 ---
 
