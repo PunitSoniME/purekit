@@ -18,7 +18,7 @@ description: The opposite of `filter`, this method returns an array of all eleme
 
 
 ```bash
-{[]} - Returns the new filtered array
+{Array} - Returns the new filtered array
 ```
 
 

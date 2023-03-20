@@ -9,7 +9,7 @@ description: Creates an array of unique values, in order, from all given arrays 
 
 
 ```bash
-{[]} ...array - The first array.
+{Array} ...array - The first array.
 ```
 
 
@@ -17,7 +17,7 @@ description: Creates an array of unique values, in order, from all given arrays 
 
 
 ```bash
-{[]} - The new array of combined unique values.
+{Array} - The new array of combined unique values.
 ```
 
 

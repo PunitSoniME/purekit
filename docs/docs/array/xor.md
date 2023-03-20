@@ -10,7 +10,7 @@ description: Returns an array of unique values that are included only in one of 
 
 ```bash
 {Array} array - The input array.
-{...[]} restArray - The rest of the arrays to be compared.
+{...Array} restArray - The rest of the arrays to be compared.
 ```
 
 

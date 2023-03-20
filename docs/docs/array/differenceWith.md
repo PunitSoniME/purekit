@@ -10,7 +10,7 @@ description: Returns the difference between the first array and all other argume
 
 ```bash
 {Array} array - The array to process
-{...[]} args - The arrays of values to exclude
+{...Array} args - The arrays of values to exclude
 {Function} comparator - The function invoked per element to compare values
 ```
 

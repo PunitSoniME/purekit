@@ -9,7 +9,7 @@ description: Seals an object or array, preventing new properties from being adde
 
 
 ```bash
-{Object|any[]} collection - The collection to be sealed.
+{Object | Array} collection - The collection to be sealed.
 ```
 
 
@@ -17,7 +17,7 @@ description: Seals an object or array, preventing new properties from being adde
 
 
 ```bash
-{Object|any[]} - The sealed collection.
+{Object | Array} - The sealed collection.
 ```
 
 

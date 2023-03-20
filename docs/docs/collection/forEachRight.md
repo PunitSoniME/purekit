@@ -7,14 +7,14 @@ description: Applies an iteratee function to each element of an array-like objec
 #### Arguments
 
 ```bash
-{[]} collection - The collection to iterate over.
+{Array} collection - The collection to iterate over.
 {Function} [iteratee = identity] - The function invoked per iteration.
 ```
 
 #### Returns
 
 ```bash
-{[]} - Returns the original collection.
+{Array} - Returns the original collection.
 ```
 
 #### Example

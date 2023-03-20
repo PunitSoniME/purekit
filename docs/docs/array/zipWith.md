@@ -18,7 +18,7 @@ description: Creates an array of grouped elements, the first element of the tupl
 
 
 ```bash
-{[]} - Returns the new array of grouped elements.
+{Array} - Returns the new array of grouped elements.
 ```
 
 

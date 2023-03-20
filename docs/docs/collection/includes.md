@@ -9,7 +9,7 @@ description: Checks if the provided value is in the collection. If the collectio
 
 
 ```bash
-{Object | [] | string} collection - The collection to inspect.
+{Object | Array | string} collection - The collection to inspect.
 {Function} [iteratee = identity] - The function invoked per iteration.
 ```
 

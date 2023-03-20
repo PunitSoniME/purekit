@@ -10,7 +10,7 @@ description: Adds one or more elements to the beginning of an array and returns 
 
 ```bash
 {Array} array - The array to add elements to.
-{any | []} ...elements - The elements to add to the beginning of the array.
+{any | Array} ...elements - The elements to add to the beginning of the array.
 ```
 
 

@@ -9,7 +9,7 @@ description: Returns an array of elements selected randomly from `collection`.
 
 
 ```bash
-{[]} collection - The collection to sample from.
+{Array} collection - The collection to sample from.
 {number} [length = 1] The number of elements to randomly select from the `collection`.
 ```
 
@@ -18,7 +18,7 @@ description: Returns an array of elements selected randomly from `collection`.
 
 
 ```bash
-{[]} - Returns the array of random elements.
+{Array} - Returns the array of random elements.
 ```
 
 

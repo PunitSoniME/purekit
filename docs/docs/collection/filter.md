@@ -7,14 +7,14 @@ description: Filters the elements of a collection based on the truth value of a 
 #### Arguments
 
 ```bash
-{[]} collection - The collection to iterate over.
+{Array} collection - The collection to iterate over.
 {Function} [iteratee = identity] - The function invoked per iteration.
 ```
 
 #### Returns
 
 ```bash
-{[]} - The new filtered collection.
+{Array} - The new filtered collection.
 ```
 
 #### Example
