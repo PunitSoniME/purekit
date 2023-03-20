@@ -1,6 +1,6 @@
 ---
 title: partialRight
-definition: 
+definition: partialRight(func, [partials])
 description: Creates a new function that invokes the given function with the `cachedArgs`
 ---
 
@@ -26,5 +26,11 @@ description: Creates a new function that invokes the given function with the `ca
 
 
 ```ts
-function greet(greeting, name) {  return `${greeting}, ${name}!`;}const sayHelloTo = partialRight(greet, 'Hello');console.log(sayHelloTo('John')); // logs: 'Hello, John!'
+function greet(greeting, name) {
+  return `${greeting}, ${name}!`;
+}
+const sayHelloTo = partialRight(greet, 'Hello');
+
+console.log(sayHelloTo('John'));
+// => 'Hello, John!'
 ```

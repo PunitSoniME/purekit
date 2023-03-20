@@ -1,6 +1,6 @@
 ---
 title: bind
-definition: 
+definition: bind(fufnnc, ctx, [boundArgs])
 description: Creates a new function that, when called, has its `this` keyword set to the provided context, with a given sequence of arguments preceding any provided when the new function was called.
 ---
 
@@ -27,5 +27,18 @@ description: Creates a new function that, when called, has its `this` keyword se
 
 
 ```ts
-const user = {  name: 'Alice',  sayHi(greeting) {    console.log(`${greeting}, my name is ${this.name}.`);  }};const sayHiToAlice = bind(user.sayHi, user, 'Hello');sayHiToAlice(); // logs "Hello, my name is Alice."const add = (x, y) => x + y;const addTen = bind(add, null, 10);console.log(addTen(5)); // logs 15
+const user = {
+  name: 'Alice',
+  sayHi(greeting) {
+    console.log(`${greeting}, my name is ${this.name}.`);
+  }
+};
+
+const sayHiToAlice = bind(user.sayHi, user, 'Hello');
+sayHiToAlice(); // logs "Hello, my name is Alice."
+
+const add = (x, y) => x + y;
+const addTen = bind(add, null, 10);
+
+console.log(addTen(5)); // logs 15
 ```

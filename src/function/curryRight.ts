@@ -24,7 +24,7 @@
  * greetGoodbyeJohn();
  * // => 'Goodbye John'
  */
-const curryRight = (func: Function) => {
+const curryRight = (func: Function): Function => {
 	const expectedArgs = func.length;
 	const curried = (...args: any) => {
 		return args.length >= expectedArgs

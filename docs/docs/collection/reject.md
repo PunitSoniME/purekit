@@ -1,6 +1,6 @@
 ---
 title: reject
-definition: 
+definition: reject(collection, [predicate = identity])
 description: The opposite of `filter`, this method returns an array of all elements for which
 ---
 
@@ -18,7 +18,7 @@ description: The opposite of `filter`, this method returns an array of all eleme
 
 
 ```bash
-{any[]} - Returns the new filtered array
+{Array} - Returns the new filtered array
 ```
 
 
@@ -31,4 +31,5 @@ const users = [
   { 'user': 'fred',   'active': false }
 ];
 reject(users, ({ active }) => active);
+// => [{ 'user': 'fred', 'active': false }]
 ```

@@ -9,7 +9,7 @@ description: Finds the first element in the given collection that satisfies the 
 
 
 ```bash
-{[]} collection - The collection to iterate over.
+{Array} collection - The collection to iterate over.
 {Function} [iteratee = identity] - The function invoked per iteration.
 {number} [fromIndex = 0] - The index to start searching from.
 ```

@@ -7,8 +7,8 @@ description: Creates an array of unique values that are included in the first gi
 #### Arguments
 
 ```bash
-{[] | null | undefined} array - The array to inspect.
-{...[]} restArray - The values to exclude.
+{Arrays | null | undefined} array - The array to inspect.
+{...Arrays} restArray - The values to exclude.
 ```
 
 #### Returns

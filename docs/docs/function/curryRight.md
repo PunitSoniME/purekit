@@ -1,6 +1,6 @@
 ---
 title: curryRight
-definition: 
+definition: curryRight(func, [arity = func.length])
 description: Creates a function that can be partially applied from the right.
 ---
 
@@ -25,5 +25,16 @@ description: Creates a function that can be partially applied from the right.
 
 
 ```ts
-const greet = (greeting, name) => `${greeting} ${name}`;const greetGoodbye = curryRight(greet)('Goodbye');greetGoodbye('John');
+const greet = (greeting, name) => `${greeting} ${name}`;
+const greetGoodbye = curryRight(greet)('Goodbye');
+greetGoodbye('John');
+// => 'Goodbye John'
+
+greetGoodbye('Sarah');
+// => 'Goodbye Sarah'
+
+const greetGoodbyeJohn = curryRight(greet)('Goodbye', 'John');
+
+greetGoodbyeJohn();
+// => 'Goodbye John'
 ```

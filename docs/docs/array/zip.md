@@ -10,7 +10,7 @@ description: Zips together arrays into an array of arrays, with each array eleme
 
 ```bash
 {Array} array - The first array to zip.
-{...[]} args - The other arrays to zip.
+{...Array} args - The other arrays to zip.
 ```
 
 

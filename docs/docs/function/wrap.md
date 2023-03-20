@@ -1,6 +1,6 @@
 ---
 title: wrap
-definition: 
+definition: wrap(value, [wrapper = func])
 description: Creates a new function that calls `func` with `value` as the first argument
 ---
 
@@ -9,7 +9,7 @@ description: Creates a new function that calls `func` with `value` as the first 
 
 
 ```bash
-{any} value - The value to pass as the first argument to `func`.
+{*} value - The value to pass as the first argument to `func`.
 {Function} func - The function to wrap.
 ```
 
@@ -26,5 +26,12 @@ description: Creates a new function that calls `func` with `value` as the first 
 
 
 ```ts
-const greet = name => `Hello, ${name}!`;const greetBob = wrap('Bob', greet);console.log(greetBob()); // logs "Hello, Bob!"console.log(greetBob('Alice')); // logs "Hello, Bob!"
+const greet = name => `Hello, ${name}!`;
+const greetBob = wrap('Bob', greet);
+
+console.log(greetBob());
+// => "Hello, Bob!"
+
+console.log(greetBob('Alice'));
+// => "Hello, Bob!"
 ```

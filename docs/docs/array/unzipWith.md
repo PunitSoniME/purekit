@@ -9,7 +9,7 @@ description: This method is like `unzip` except that it accepts `iteratee` to sp
 
 
 ```bash
-{[]} array - The array of grouped elements to process.
+{Array} array - The array of grouped elements to process.
 {Function} [predicate = identity] - The iteratee to combine regrouped values.
 ```
 
@@ -18,7 +18,7 @@ description: This method is like `unzip` except that it accepts `iteratee` to sp
 
 
 ```bash
-{[]} - Returns the new array of regrouped elements.
+{Array} - Returns the new array of regrouped elements.
 ```
 
 

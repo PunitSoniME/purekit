@@ -7,14 +7,14 @@ description: Applies a function to forEach element in a collection.
 #### Arguments
 
 ```bash
-{[]} collection - The collection to iterate over.
+{Array} collection - The collection to iterate over.
 {Function} [iteratee = identity] - The function to apply to each element.
 ```
 
 #### Returns
 
 ```bash
-{[]} - The original collection.
+{Array} - The original collection.
 ```
 
 #### Example

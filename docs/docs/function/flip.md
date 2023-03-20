@@ -1,6 +1,6 @@
 ---
 title: flip
-definition: 
+definition: flip(func)
 description: Creates a new function that takes the same arguments as the original function,
 ---
 
@@ -25,5 +25,11 @@ description: Creates a new function that takes the same arguments as the origina
 
 
 ```ts
-function foo(a, b, c) {  console.log(a, b, c);}const flippedFoo = flip(foo);foo(1, 2, 3); // Output: 1, 2, 3flippedFoo(1, 2, 3); // Output: 2, 1, 3
+function foo(a, b, c) {
+  console.log(a, b, c);
+}
+const flippedFoo = flip(foo);
+
+foo(1, 2, 3); // => 1, 2, 3
+flippedFoo(1, 2, 3); // => 2, 1, 3
 ```

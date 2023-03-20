@@ -7,7 +7,7 @@ description: Groups the elements in the array by a given criterion, and counts t
 #### Arguments
 
 ```bash
-{[]} collection - The array to iterate over.
+{Array} collection - The array to iterate over.
 {Function} [iteratee = identity] - The function invoked per iteration.
 ```
 
