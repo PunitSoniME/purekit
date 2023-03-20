@@ -153,7 +153,7 @@ const routes = [
             { label: 'clone' },
             { label: 'cloneDeep' },
             //   { label: 'cloneDeepWith' },
-            { label: 'cloneWith' },
+            //  { label: 'cloneWith' },
             { label: 'conformsTo' },
             { label: 'eq' },
             { label: 'gt' },
