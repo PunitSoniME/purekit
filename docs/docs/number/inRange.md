@@ -1,6 +1,6 @@
 ---
 title: inRange
-definition: 
+definition: inRange(number, [start = 0], end)
 description: Checks if the given number is within the specified range.
 ---
 
@@ -10,7 +10,7 @@ description: Checks if the given number is within the specified range.
 
 ```bash
 {number} number - The number to check.
-{number} [start=0] - The start of the range (inclusive if `end` is defined).
+{number} [start = 0] - The start of the range (inclusive if `end` is defined).
 {number} [end] - The end of the range (exclusive if defined).
 ```
 
@@ -27,5 +27,15 @@ description: Checks if the given number is within the specified range.
 
 
 ```ts
+inRange(2, 0, 5);
+// => true
 
+inRange(2, 5, 0);
+// => true
+
+inRange(2, 2, 5);
+// => true
+
+inRange(5, 0, 5);
+// => false
 ```

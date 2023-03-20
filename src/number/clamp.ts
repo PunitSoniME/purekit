@@ -11,17 +11,17 @@
  *
  * @example
  *
- * // returns 5
  * clamp(10, 0, 5);
+ * // => 5
  *
- * // returns 0
  * clamp(-10, 0, 5);
+ * // => 0
  *
- * // returns 3
  * clamp(3, 0, 5);
+ * // => 3
  *
- * // returns -5
  * clamp(-10, -5, undefined);
+ * // => -5
  */
 const clamp = (number: number, lower: number, upper: number): number =>
 	upper ? Math.min(Math.max(number, lower), upper) : Math.min(number, lower);
