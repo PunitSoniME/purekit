@@ -14,8 +14,8 @@
  * const add = (a, b, c) => a + b + c;
  * const addTwo = ary(add, 2);
  *
- * addTwo(1, 2, 3); // returns 3
- * addTwo(1, 2); // returns 3
+ * addTwo(1, 2, 3); // => 3
+ * addTwo(1, 2); // => 3
  */
 const ary =
 	(fn: Function, arity: number = fn.length) =>

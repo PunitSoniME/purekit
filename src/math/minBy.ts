@@ -16,10 +16,10 @@ import predicateType from '../helpers/predicateType';
  * @example
  *
  * minBy([{ name: 'alice', age: 25 }, { name: 'bob', age: 30 }, { name: 'charlie', age: 20 }], (obj) => obj.age);
- * // returns { name: 'alice', age: 25 }
+ * // => { name: 'alice', age: 25 }
  *
  * minBy([{ name: 'alice', age: 30 }, { name: 'brenda', age: 25 }, { name: 'charlie', age: 30 }], (obj) => obj.name.length);
- * // returns { name: 'brenda', age: 25 }
+ * // => { name: 'brenda', age: 25 }
  */
 const minBy = <T>(collection: T, iteratee: predicateType<T>): T => {
 	const fn = createPredicate(iteratee);

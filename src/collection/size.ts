@@ -7,9 +7,9 @@
  * @returns {number} - The size of the collection.
  *
  * @example
- * size([1, 2, 3]); // returns 3
- * size({a: 1, b: 2, c: 3}); // returns 3
- * size('hello'); // returns 5
+ * size([1, 2, 3]); // => 3
+ * size({a: 1, b: 2, c: 3}); // => 3
+ * size('hello'); // => 5
  */
 const size = (collection: any[] | Object | string): number => {
 	if (Array.isArray(collection)) return collection.length;

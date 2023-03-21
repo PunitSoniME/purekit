@@ -1,6 +1,6 @@
 ---
 title: constant
-definition: 
+definition: constant(arg)
 description: Creates a function that always returns the same value.
 ---
 
@@ -9,7 +9,7 @@ description: Creates a function that always returns the same value.
 
 
 ```bash
-{T} arg - The value to return.
+{*} arg - The value to return.
 ```
 
 
@@ -17,7 +17,7 @@ description: Creates a function that always returns the same value.
 
 
 ```bash
-
+{Function} - The new function.
 ```
 
 
@@ -26,4 +26,10 @@ description: Creates a function that always returns the same value.
 
 ```ts
 const func = constant('Hello');
+
+func();
+// => 'Hello'
+
+func();
+// => 'Hello'
 ```

@@ -5,7 +5,7 @@
  *
  * @param {Array<Array>} pairs - The predicate-function pairs.
  *
- * @return {Function} The new function.
+ * @return {Function} - The new function.
  *
  * @example
  *
@@ -15,14 +15,14 @@
  *   [x => x < 5, x => 'less than 5']
  * ]);
  *
- * // returns 'greater than 5'
  * func(10);
+ * // => 'greater than 5'
  *
- * // returns 'equals 5'
  * func(5);
+ * // => 'equals 5'
  *
- * // returns 'less than 5'
  * func(2);
+ * // => 'less than 5'
  */
 const cond =
 	(pairs: any[]) =>

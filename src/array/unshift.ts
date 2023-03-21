@@ -8,8 +8,8 @@
  *
  * @example
  *
- * unshift([1, 2, 3], 4); // Returns [4, 1, 2, 3]
- * unshift(['a', 'b'], 'c', 'd'); // Returns ['c', 'd', 'a', 'b']
+ * unshift([1, 2, 3], 4); // => [4, 1, 2, 3]
+ * unshift(['a', 'b'], 'c', 'd'); // => ['c', 'd', 'a', 'b']
  */
 
 const unshift = <T>(array: T[], ...elements: any): T[] => {

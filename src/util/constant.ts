@@ -6,17 +6,17 @@
  * @template T
  * @param {T} arg - The value to return.
  *
- * @return {Function} The new function.
+ * @return {Function} - The new function.
  *
  * @example
  *
  * const func = constant('Hello');
  *
- * // returns 'Hello'
  * func();
+ * // => 'Hello'
  *
- * // returns 'Hello'
  * func();
+ * // => 'Hello'
  */
 const constant =
 	<T>(arg: T): any =>

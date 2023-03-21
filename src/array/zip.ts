@@ -7,7 +7,7 @@
  * @returns {T[][]} - An array of arrays, each containing one element from each input array at the same index.
  * @example
  *
- * zip([1, 2], [10, 20], [100, 200]); // returns [[1, 10, 100], [2, 20, 200]]
+ * zip([1, 2], [10, 20], [100, 200]); // => [[1, 10, 100], [2, 20, 200]]
  */
 const zip = (array: any[], ...args: any[][]): any[][] =>
 	array.map((value, idx) => [value, ...args.map(arr => arr[idx])]);

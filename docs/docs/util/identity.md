@@ -1,6 +1,6 @@
 ---
 title: identity
-definition: 
+definition: identity(value)
 description: Returns the first argument it receives.
 ---
 
@@ -9,7 +9,7 @@ description: Returns the first argument it receives.
 
 
 ```bash
-{T} value - The value to return.
+{*} value - The value to return.
 ```
 
 
@@ -17,7 +17,7 @@ description: Returns the first argument it receives.
 
 
 ```bash
-{T} - Returns the input value.
+{*} - Returns the input value.
 ```
 
 
@@ -25,5 +25,9 @@ description: Returns the first argument it receives.
 
 
 ```ts
-identity('hello'); // returns 'hello'identity(42); // returns 42
+identity('hello');
+// => 'hello'
+
+identity(42);
+// => 42
 ```

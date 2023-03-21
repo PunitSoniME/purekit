@@ -1,6 +1,6 @@
 ---
 title: uniqueId
-definition: 
+definition: uniqueId([counter = 0], [str=''])
 description: Generates a unique ID.
 ---
 
@@ -9,8 +9,8 @@ description: Generates a unique ID.
 
 
 ```bash
-{number} counter - A counter used to generate the ID.
-{string} [str=''] - A string to prepend to the generated ID.
+{number} [counter = 0] - A counter used to generate the ID.
+{string} [str = ''] - A string to prepend to the generated ID.
 ```
 
 
@@ -26,5 +26,12 @@ description: Generates a unique ID.
 
 
 ```ts
-const id1 = uniqueId(); // '1'const id2 = uniqueId(); // '2'const id3 = uniqueId(100, 'id_'); // 'id_101'
+const id1 = uniqueId();
+// => '1'
+
+const id2 = uniqueId();
+// => '2'
+
+const id3 = uniqueId(100, 'id_');
+// => 'id_101'
 ```

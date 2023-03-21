@@ -8,7 +8,7 @@ import identity from './identity';
  * @since 1.0.0
  *
  * @template T
- * @param {Function} [predicate=identity] - The predicate function to convert into an iteratee.
+ * @param {Function} [predicate = identity] - The predicate function to convert into an iteratee.
  *
  * @returns {Function} - Returns the new iteratee function.
  *
@@ -16,7 +16,7 @@ import identity from './identity';
  *
  * const users = [{ name: 'Alice', age: 32 }, { name: 'Bob', age: 42 }];
  * const sortByAge = users.sort(iteratee(user => user.age));
- * // returns [{ name: 'Alice', age: 32 }, { name: 'Bob', age: 42 }]
+ * // => [{ name: 'Alice', age: 32 }, { name: 'Bob', age: 42 }]
  */
 const iteratee = <T>(predicate: predicateType<T> = identity): any =>
 	createPredicate(predicate);

@@ -10,8 +10,8 @@
  * @example
  * const arr = [1, 2, 3, 4, 4, 4, 5, 6];
  *
- * sortedLastIndexOf(arr, 4); // returns 5
- * sortedLastIndexOf(arr, 7); // returns -1
+ * sortedLastIndexOf(arr, 4); // => 5
+ * sortedLastIndexOf(arr, 7); // => -1
  */
 const sortedLastIndexOf = <T>(array: T[], value: T): number => {
 	const index = [...array].reverse().indexOf(value);

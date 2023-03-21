@@ -9,8 +9,8 @@
  * @example
  *
  * const logRest = rest(console.log);
- * logRest(1, 2, 3); // Output: 1, 2, 3
- * logRest(1); // Output: 1
+ * logRest(1, 2, 3); // => 1, 2, 3
+ * logRest(1); // => 1
  */
 const rest =
 	(func: Function) =>

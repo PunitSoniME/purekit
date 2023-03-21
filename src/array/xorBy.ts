@@ -18,7 +18,7 @@ import concat from './concat';
  * const arr3 = [1, 2, 5];
  *
  * const result = xorBy(arr1, arr2, arr3, (n) => n % 2);
- * console.log(result); // Output: [3, 6]
+ * console.log(result); // => [3, 6]
  */
 const xorBy = <T>(array: T[], ...args: any): T[] => {
 	let iteratee = args.pop() ?? identity;

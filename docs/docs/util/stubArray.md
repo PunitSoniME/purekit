@@ -1,20 +1,11 @@
 ---
 title: stubArray
-definition: 
+definition: stubArray()
 description: Creates an empty array.
 ---
 
 
-#### Arguments
-
-
-```bash
-
-```
-
-
 #### Returns
-
 
 ```bash
 {Array} - An empty array.
@@ -25,5 +16,6 @@ description: Creates an empty array.
 
 
 ```ts
-const result = stubArray(); // []
+const result = stubArray();
+// => []
 ```

@@ -12,8 +12,8 @@
  *
  * @example
  * const fruits = ['apple', 'banana', 'orange', 'banana', 'orange'];
- * const lastIndex1 = lastIndexOf(fruits, 'banana'); // returns 3
- * const lastIndex2 = lastIndexOf(fruits, 'orange', 2); // returns 2
+ * const lastIndex1 = lastIndexOf(fruits, 'banana'); // => 3
+ * const lastIndex2 = lastIndexOf(fruits, 'orange', 2); // => 2
  */
 const lastIndexOf = <T>(
 	array: T[],

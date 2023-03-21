@@ -1,7 +1,7 @@
 /**
  * Checks if the provided object conforms to the source object's properties and values.
  *
- * @since 1.1.0
+ * @since 1.0.0
  *
  * @param {Object} object - The object to check.
  * @param {Object} source - The object of property predicates to conform to.

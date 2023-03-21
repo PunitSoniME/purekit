@@ -1,6 +1,6 @@
 ---
 title: flow
-definition: 
+definition: flow([funcs])
 description: Creates a function that returns the result of calling the given functions in sequence, where each function consumes the return value of the function that precedes it.
 ---
 
@@ -17,7 +17,7 @@ description: Creates a function that returns the result of calling the given fun
 
 
 ```bash
-
+{Function} - Returns the new composite function.
 ```
 
 
@@ -25,5 +25,14 @@ description: Creates a function that returns the result of calling the given fun
 
 
 ```ts
-const square = x => x * x;const double = x => x * 2;const func = flow(square, double);
+const square = x => x * x;
+const double = x => x * 2;
+
+const func = flow(square, double);
+
+func(3);
+// => 18
+
+flow(square, double, square)(2);
+// => 32
 ```

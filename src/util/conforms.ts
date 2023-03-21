@@ -7,17 +7,17 @@ import conformsTo from '../lang/conformsTo';
  *
  * @param {Object} object - The object of property predicates.
  *
- * @return {Function} The new function.
+ * @return {Function} - The new function.
  *
  * @example
  *
  * const func = conforms({x: x => x > 5, y: y => y < 10});
  *
- * // returns true
  * func({x: 10, y: 5});
+ * // => true
  *
- * // returns false
  * func({x: 2, y: 15});
+ * // => false
  */
 const conforms =
 	(object: Object): any =>

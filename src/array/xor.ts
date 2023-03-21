@@ -8,8 +8,8 @@ import concat from './concat';
  * @returns {T[]} - An array of unique values from the input arrays.
  *
  * @example
- * xor([2, 1], [2, 3]) // returns [1, 3]
- * xor(['a', 'b', 'c'], ['b', 'd'], ['d', 'e']) // returns ['a', 'c', 'e']
+ * xor([2, 1], [2, 3]) // => [1, 3]
+ * xor(['a', 'b', 'c'], ['b', 'd'], ['d', 'e']) // => ['a', 'c', 'e']
  */
 const xor = <T>(array: T[], ...restArray: T[][]): T[] => {
 	const flatArray = concat(array, ...restArray);

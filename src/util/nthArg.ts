@@ -9,10 +9,10 @@
  *
  * @example
  * const getSecondArg = nthArg(1);
- * getSecondArg(1, 2, 3); // Returns 2
+ * getSecondArg(1, 2, 3); // => 2
  *
  * const getThirdArg = nthArg(2);
- * getThirdArg('a', 'b', 'c', 'd'); // Returns 'c'
+ * getThirdArg('a', 'b', 'c', 'd'); // => 'c'
  */
 const nthArg =
 	(idx: number = 0): Function =>

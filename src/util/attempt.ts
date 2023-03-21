@@ -6,15 +6,15 @@
  * @param {Function} func - The function to invoke.
  * @param {...*} args - The arguments to pass to the function.
  *
- * @return {*} The result of the function or the error object.
+ * @return {*} - The result of the function or the error object.
  *
  * @example
  *
- * // returns 6
  * attempt((a, b) => a + b, 2, 4);
+ * // => 6
  *
- * // returns TypeError: Cannot read property 'length' of null
  * attempt(str => str.length, null);
+ * // => TypeError: Cannot read property 'length' of null
  */
 const attempt = (func: Function, ...args: any): any => {
 	try {

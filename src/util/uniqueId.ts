@@ -4,8 +4,7 @@
  * @since 1.0.0
  *
  * @param {number} counter - A counter used to generate the ID.
- *
- * @param {string} [str=''] - A string to prepend to the generated ID.
+ * @param {string} [str = ''] - A string to prepend to the generated ID.
  *
  * @returns {string} - A unique ID string.
  *

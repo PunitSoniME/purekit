@@ -10,9 +10,9 @@
  *
  * @example
  * const arr = [1, 2, 3, 4, 5];
- * console.log(nth(arr)); // Output: 1
- * console.log(nth(arr, 2)); // Output: 3
- * console.log(nth(arr, -1)); // Output: 5
+ * console.log(nth(arr)); // => 1
+ * console.log(nth(arr, 2)); // => 3
+ * console.log(nth(arr, -1)); // => 5
  */
 const nth = <T>(array: T[], index: number = 0): T | undefined =>
 	index >= 0 ? array[index] : array[array.length + index];

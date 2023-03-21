@@ -1,6 +1,5 @@
 /**
- * Creates a function that invokes each function in `array` with the
- * arguments it receives and returns an array of the results.
+ * Creates a function that invokes each function in `array` with the arguments it receives and returns an array of the results.
  *
  * @since 1.0.0
  *

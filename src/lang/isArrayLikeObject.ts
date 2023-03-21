@@ -7,12 +7,12 @@
  * @returns {boolean} - `true` if the value is an array-like object, `false` otherwise.
  *
  * @example
- * isArrayLikeObject({ length: 0 }); // returns true
- * isArrayLikeObject([1, 2, 3]); // returns true
- * isArrayLikeObject('hello'); // returns true
- * isArrayLikeObject(document.querySelectorAll('.example')); // returns true
- * isArrayLikeObject(() => {}); // returns false
- * isArrayLikeObject(null); // returns false
+ * isArrayLikeObject({ length: 0 }); // => true
+ * isArrayLikeObject([1, 2, 3]); // => true
+ * isArrayLikeObject('hello'); // => true
+ * isArrayLikeObject(document.querySelectorAll('.example')); // => true
+ * isArrayLikeObject(() => {}); // => false
+ * isArrayLikeObject(null); // => false
  */
 const isArrayLikeObject = (value: any): boolean => typeof value === 'object';
 export default isArrayLikeObject;

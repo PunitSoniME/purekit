@@ -14,8 +14,8 @@
  *
  * Object.preventExtensions(obj);
  *
- * isExtensible(obj); // returns false
- * isExtensible(arr); // returns true
+ * isExtensible(obj); // => false
+ * isExtensible(arr); // => true
  */
 const isExtensible = (collection: Object | Array<any>): boolean =>
 	Object.isExtensible(collection);

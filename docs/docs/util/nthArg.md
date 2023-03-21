@@ -1,6 +1,6 @@
 ---
 title: nthArg
-definition: 
+definition: nthArg([idx = 0])
 description: Returns a function which will return the nth argument passed to it
 ---
 
@@ -25,5 +25,11 @@ description: Returns a function which will return the nth argument passed to it
 
 
 ```ts
-const getSecondArg = nthArg(1);getSecondArg(1, 2, 3); // Returns 2const getThirdArg = nthArg(2);getThirdArg('a', 'b', 'c', 'd'); // Returns 'c'
+const getSecondArg = nthArg(1);
+getSecondArg(1, 2, 3);
+// => 2
+
+const getThirdArg = nthArg(2);
+getThirdArg('a', 'b', 'c', 'd');
+// => 'c'
 ```

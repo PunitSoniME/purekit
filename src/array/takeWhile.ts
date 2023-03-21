@@ -13,10 +13,10 @@ import identity from '../util/identity';
  * @example
  *
  * takeWhile([1, 2, 3, 4], n => n < 3);
- * // Returns: [1, 2]
+ * // => [1, 2]
  *
  * takeWhile(['cat', 'dog', 'emu'], animal => animal.length <= 3);
- * // Returns: ['cat', 'dog']
+ * // => ['cat', 'dog']
  */
 const takeWhile = <T>(
 	array: T[],

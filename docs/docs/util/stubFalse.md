@@ -1,16 +1,8 @@
 ---
 title: stubFalse
-definition: 
+definition: stubFalse()
 description: Returns false.
 ---
-
-
-#### Arguments
-
-
-```bash
-
-```
 
 
 #### Returns
@@ -25,5 +17,6 @@ description: Returns false.
 
 
 ```ts
-const result = stubFalse(); // false
+const result = stubFalse();
+// => false
 ```

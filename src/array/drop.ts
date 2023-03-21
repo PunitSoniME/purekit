@@ -10,8 +10,8 @@
  * @returns {T[]} - Returns the slice of `array`.
  *
  * @example
- * drop([1, 2, 3, 4]); // returns [2, 3, 4]
- * drop([1, 2, 3, 4], 2); // returns [3, 4]
+ * drop([1, 2, 3, 4]); // => [2, 3, 4]
+ * drop([1, 2, 3, 4], 2); // => [3, 4]
  */
 const drop = <T>(array: T[], n: number = 1): T[] => array.slice(n);
 export default drop;

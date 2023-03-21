@@ -1,20 +1,11 @@
 ---
 title: uniqueId2
-definition: 
+definition: uniqueId2()
 description: Generates a cryptographically secure unique ID.
 ---
 
 
-#### Arguments
-
-
-```bash
-
-```
-
-
 #### Returns
-
 
 ```bash
 {string} - A unique ID string.
@@ -23,7 +14,10 @@ description: Generates a cryptographically secure unique ID.
 
 #### Example
 
-
 ```ts
-const id1 = uniqueId2(); // id1 is a unique ID stringconst id2 = uniqueId2(); // id2 is a different unique ID string
+const id1 = uniqueId2();
+// => id1 is a unique ID string
+
+const id2 = uniqueId2();
+// => id2 is a different unique ID string
 ```

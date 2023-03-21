@@ -17,7 +17,7 @@ import get from '../object/get';
  * };
  * const barMethod = methodOf(obj)(['foo', 'bar']);
  *
- * console.log(barMethod(1, 2)); // Output: 3
+ * console.log(barMethod(1, 2)); // => 3
  */
 const methodOf =
 	(object: any, ...args: any): any =>

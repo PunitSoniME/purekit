@@ -11,10 +11,10 @@ import baseMathPrecesion from '../helpers/baseMathPrecesion';
  *
  * @example
  *
- * floor(4.7); // returns 4
- * floor(-4.7); // returns -5
- * floor(4060, -2); // returns 4000
- * floor(0.046, 2); // returns 0.04
+ * floor(4.7); // => 4
+ * floor(-4.7); // => -5
+ * floor(4060, -2); // => 4000
+ * floor(0.046, 2); // => 0.04
  */
 const floor = (value: number, precision: number = 0): number => {
 	return baseMathPrecesion(value, precision, 'floor');

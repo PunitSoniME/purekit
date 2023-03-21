@@ -1,6 +1,6 @@
 ---
 title: methodOf
-definition: 
+definition: methodOf(object, [args])
 description: Creates a function that invokes the method at `path` of a given object.
 ---
 
@@ -25,5 +25,12 @@ description: Creates a function that invokes the method at `path` of a given obj
 
 
 ```ts
-const obj = {  foo: {    bar: (a, b) => a + b  }};const barMethod = methodOf(obj)(['foo', 'bar']);console.log(barMethod(1, 2)); // Output: 3
+const obj = {
+  foo: {
+    bar: (a, b) => a + b
+  }
+};
+const barMethod = methodOf(obj)(['foo', 'bar']);
+console.log(barMethod(1, 2));
+// => 3
 ```

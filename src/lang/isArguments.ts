@@ -8,10 +8,10 @@
  *
  * @example
  * const args = (function() { return arguments; })();
- * isArguments(args); // returns true
+ * isArguments(args); // => true
  *
  * const arr = [1, 2, 3];
- * isArguments(arr); // returns false
+ * isArguments(arr); // => false
  */
 const isArguments = (value: any): Boolean =>
 	Object.prototype.toString.call(value) === '[object Arguments]';

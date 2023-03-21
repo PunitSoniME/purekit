@@ -18,7 +18,7 @@
  *     return objValue === srcValue;
  * }
  *
- * isMatchWith(object, source, customizer); // returns true
+ * isMatchWith(object, source, customizer); // => true
  */
 const isMatchWith = (
 	object: Object,

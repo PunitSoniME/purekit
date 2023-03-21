@@ -2,6 +2,7 @@ import get from '../object/get';
 
 /**
  * The opposite of `property` function. This method creates a function that returns the value at a given path of an object.
+ *
  * @since 1.0.0
  *
  * @param {Object} obj - The object to query.
@@ -12,7 +13,7 @@ import get from '../object/get';
  *
  * const user = { name: 'John', address: { street: '123 Main St.' } };
  * const street = propertyOf(user)(['address', 'street']);
- * console.log(street); // output: '123 Main St.'
+ * console.log(street); // => '123 Main St.'
  */
 const propertyOf =
 	(obj: any): Function =>

@@ -10,9 +10,9 @@ import getRandomElementFromCollection from '../helpers/getRandomElement';
  *
  * @example
  *
- * sample([1, 2, 3, 4, 5]) // returns a random number from the array
+ * sample([1, 2, 3, 4, 5]) // => a random number from the array
  *
- * sample({ a: 1, b: 2, c: 3 }) // returns a random value from the object
+ * sample({ a: 1, b: 2, c: 3 }) // => a random value from the object
  *
  */
 const sample = <T>(collection: T): any => {

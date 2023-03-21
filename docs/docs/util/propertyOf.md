@@ -1,6 +1,6 @@
 ---
 title: propertyOf
-definition: 
+definition: propertyOf(object)
 description: The opposite of `property` function. This method creates a function that returns the value at a given path of an object.
 ---
 
@@ -10,7 +10,7 @@ description: The opposite of `property` function. This method creates a function
 
 ```bash
 {Object} obj - The object to query.
-{Array|string} path - The path of the property to get.
+{Array | string} path - The path of the property to get.
 ```
 
 
@@ -26,5 +26,9 @@ description: The opposite of `property` function. This method creates a function
 
 
 ```ts
-const user = { name: 'John', address: { street: '123 Main St.' } };const street = propertyOf(user)(['address', 'street']);console.log(street); // output: '123 Main St.'
+const user = { name: 'John', address: { street: '123 Main St.' } };// =>
+const street = propertyOf(user)(['address', 'street']);
+
+console.log(street);
+// => '123 Main St.'
 ```

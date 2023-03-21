@@ -15,7 +15,7 @@ import get from '../object/get';
  * const users = [{ name: 'Alice', age: 32 }, { name: 'Bob', age: 42 }];
  * const getNames = method('name');
  * const names = users.map(getNames);
- * // returns ['Alice', 'Bob']
+ * // => ['Alice', 'Bob']
  */
 const method =
 	(path: string | any[], ...args: any): any =>

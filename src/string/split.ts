@@ -10,7 +10,7 @@
  * @returns {string[]} - An array of substrings.
  *
  * @example
- * split('a,b,c,d', ',', 2); // returns ['a', 'b']
+ * split('a,b,c,d', ',', 2); // => ['a', 'b']
  */
 const split = (
 	str: string = '',
