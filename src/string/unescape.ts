@@ -5,15 +5,15 @@
  *
  * @param {string} str - The string containing HTML entities.
  *
- * @return {string} The string with HTML entities replaced by their corresponding characters.
+ * @return {string} - The string with HTML entities replaced by their corresponding characters.
  *
  * @example
  *
- * // returns '<h1>Hello, World!</h1>'
  * unescape('&lt;h1&gt;Hello, World!&lt;/h1&gt;');
+ * // => '<h1>Hello, World!</h1>'
  *
- * // returns "It's a wonderful life."
  * unescape("It&#39;s a wonderful life.");
+ * // => "It's a wonderful life."
  */
 const unescape = (str: string): string => {
 	const entities = {

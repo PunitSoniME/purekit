@@ -1,6 +1,6 @@
 ---
 title: assign
-definition: 
+definition: assign(object, [sources])
 description: Creates a new object that combines the properties of the specified objects.
 ---
 
@@ -26,5 +26,9 @@ description: Creates a new object that combines the properties of the specified 
 
 
 ```ts
+assign({ a: 1 }, { b: 2 }, { c: 3 });
+// => { a: 1, b: 2, c: 3 }
 
+assign({ a: 1, b: 2 }, { c: 3, d: 4 });
+// => { a: 1, b: 2, c: 3, d: 4 }
 ```

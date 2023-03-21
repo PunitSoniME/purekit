@@ -1,7 +1,7 @@
 ---
 title: forOwn
-definition: 
-description: Iterates over an object's own enumerable string keyed properties, calling `iteratee` for each property.
+definition: forOwn(object, [iteratee = identity])
+description: Iterates over an object's own enumerable string keyed properties, calling `iteratee` for each property. The `iteratee` is invoked with three arguments, (value, key, object). Iteratee functions may exit iteration early by explicitly returning `false`.
 ---
 
 
@@ -10,7 +10,7 @@ description: Iterates over an object's own enumerable string keyed properties, c
 
 ```bash
 {Object} object - The object to iterate over.
-{Function} iteratee - The function invoked per iteration.
+{Function} [iteratee = identity] - The function invoked per iteration.
 ```
 
 
@@ -26,5 +26,9 @@ description: Iterates over an object's own enumerable string keyed properties, c
 
 
 ```ts
-const object = { 'a': 1, 'b': 2 };forOwn(object, (value, key) => {  console.log(key);});
+const object = { 'a': 1, 'b': 2 };
+forOwn(object, (value, key) => {
+  console.log(key);
+});
+// => Logs 'a' then 'b'.
 ```

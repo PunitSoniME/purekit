@@ -1,6 +1,6 @@
 ---
 title: functionsIn
-definition: 
+definition: functionsIn(object)
 description: Returns an array of all the function names in the given object, including inherited ones.
 ---
 
@@ -25,5 +25,20 @@ description: Returns an array of all the function names in the given object, inc
 
 
 ```ts
-class Animal {  constructor(name) {    this.name = name;  }  speak() {    console.log(`${this.name} makes a noise.`);  }}class Dog extends Animal {  speak() {    console.log(`${this.name} barks.`);  }}const d = new Dog('Mitzie');const functionNames = functionsIn(d);
+class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+  speak() {
+    console.log(`${this.name} makes a noise.`);
+  }
+}
+class Dog extends Animal {
+  speak() {
+    console.log(`${this.name} barks.`);
+  }
+}
+const d = new Dog('Mitzie');
+const functionNames = functionsIn(d);
+// functionNames = ['speak']
 ```

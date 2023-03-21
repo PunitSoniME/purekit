@@ -1,6 +1,6 @@
 ---
 title: toLower
-definition: 
+definition: toLower([str = ''])
 description: Converts a string to lowercase.
 ---
 
@@ -25,5 +25,6 @@ description: Converts a string to lowercase.
 
 
 ```ts
-toLower('Hello World'); // 'hello world'
+toLower('Hello World');
+// => 'hello world'
 ```

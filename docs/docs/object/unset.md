@@ -1,6 +1,6 @@
 ---
 title: unset
-definition: 
+definition: unset(object, path)
 description: Removes the specified property at the given path from the provided object.
 ---
 
@@ -9,7 +9,7 @@ description: Removes the specified property at the given path from the provided 
 
 
 ```bash
-{T} object - The input object from which the property needs to be removed.
+{Object} object - The input object from which the property needs to be removed.
 {*} path - The path to the property that needs to be removed. Can be an array or a string.
 ```
 
@@ -27,5 +27,10 @@ description: Removes the specified property at the given path from the provided 
 
 ```ts
 const obj = { a: { b: { c: 1 } } };
-unset(obj, 'a.b.c'); // true
+unset(obj, 'a.b.c'); // => true
+// obj is now { a: { b: {} } }
+
+const obj2 = { a: { b: { c: 1 } } };
+unset(obj2, 'a.b.d'); // => false
+// obj2 remains { a: { b: { c: 1 } } }
 ```

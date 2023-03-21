@@ -1,5 +1,6 @@
 import findLastIndex from '../array/findLastIndex';
 import predicateType from '../helpers/predicateType';
+import identity from '../util/identity';
 
 /**
  * This method is like `findKey` except that it iterates over elements of a collection from right to left.
@@ -7,7 +8,7 @@ import predicateType from '../helpers/predicateType';
  * @since 1.0.0
  *
  * @param {object} object - The object to iterate over.
- * @param {predicateType} predicate - The function invoked per iteration.
+ * @param {Function} [predicate = identity] - The function invoked per iteration.
  * @returns {any} - The key of the last element that satisfies the predicate function, otherwise undefined.
  *
  * @example
@@ -21,7 +22,10 @@ import predicateType from '../helpers/predicateType';
  * const result = findLastKey(users, isActive);
  * console.log(result); // 'pebbles'
  */
-const findLastKey = <T>(object: T, predicate: predicateType<T>): any => {
+const findLastKey = <T>(
+	object: T,
+	predicate: predicateType<T> = identity
+): any => {
 	const dataInArray = Object.entries(object as object).map(m => {
 		return { __key__: m[0], ...m[1] };
 	});

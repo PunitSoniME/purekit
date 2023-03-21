@@ -8,8 +8,8 @@ import identity from '../util/identity';
  *
  * @since 1.0.0
  *
- * @param object - The object to invert.
- * @param iteratee - The function invoked per iteration.
+ * @param {Object} object - The object to invert.
+ * @param {Function} [iteratee = identity] - The function invoked per iteration.
  * @returns The new inverted object.
  *
  * @example

@@ -1,6 +1,6 @@
 ---
 title: chain2
-definition: 
+definition: chain2(value)
 description: Creates a chainable object that wraps the given value.
 ---
 
@@ -28,5 +28,17 @@ description: Creates a chainable object that wraps the given value.
 
 
 ```ts
-const users = [{ 'user': 'barney', 'age': 36 },{ 'user': 'fred', 'age': 40 },{ 'user': 'pebbles', 'age': 1 }];const youngest = chain2(users) .fn(sortBy, 'age') .fn(map, (function (o: any) {     return o.user + ' is ' + o.age; })) .fn(head) .value();=> 'pebbles is 1'
+const users = [
+{ 'user': 'barney', 'age': 36 },
+{ 'user': 'fred', 'age': 40 },
+{ 'user': 'pebbles', 'age': 1 }
+];
+const youngest = chain2(users)
+ .fn(sortBy, 'age')
+ .fn(map, (function (o: any) {
+     return o.user + ' is ' + o.age;
+ }))
+ .fn(head)
+ .value();
+//  => 'pebbles is 1'
 ```

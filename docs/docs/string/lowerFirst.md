@@ -1,7 +1,7 @@
 ---
 title: lowerFirst
-definition: 
-description: Returns a new object where the keys and values are swapped.
+definition: lowerFirst([str = ''])
+description: Returns a new string with first character of string to lower case.
 ---
 
 
@@ -9,7 +9,7 @@ description: Returns a new object where the keys and values are swapped.
 
 
 ```bash
- obj - The object to invert
+{string} [str = ''] - The string to convert.
 ```
 
 
@@ -17,7 +17,7 @@ description: Returns a new object where the keys and values are swapped.
 
 
 ```bash
-
+{string} - Returns a new string with first character of string to lower case.
 ```
 
 
@@ -25,5 +25,9 @@ description: Returns a new object where the keys and values are swapped.
 
 
 ```ts
-invert({ 'a': 1, 'b': 2, 'c': 1 });
+lowerFirst('Fred');
+// => 'fred'
+
+lowerFirst('FRED');
+// => 'fRED'
 ```

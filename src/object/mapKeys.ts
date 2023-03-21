@@ -1,5 +1,6 @@
 import createPredicate from '../helpers/createPredicate';
 import predicateType from '../helpers/predicateType';
+import identity from '../util/identity';
 
 /**
  * Creates an object with the same values as the original, but with new keys generated
@@ -8,7 +9,7 @@ import predicateType from '../helpers/predicateType';
  * @since 1.0.0
  *
  * @param {Object} object - The object to map.
- * @param {Function} iteratee - The mapping function.
+ * @param {Function} [iteratee = identity] - The mapping function.
  * @returns {Object} - The new object with mapped keys.
  *
  * @example
@@ -22,9 +23,12 @@ import predicateType from '../helpers/predicateType';
  * const uppercaseKeys = mapKeys(users, (value, key) => key.toUpperCase());
  *
  * console.log(uppercaseKeys);
- * // Output: { JOHN: { age: 23 }, JANE: { age: 31 }, JACK: { age: 27 } }
+ * // => { JOHN: { age: 23 }, JANE: { age: 31 }, JACK: { age: 27 } }
  */
-const mapKeys = <T>(object: any, iteratee: predicateType<T>): Object => {
+const mapKeys = <T>(
+	object: any,
+	iteratee: predicateType<T> = identity
+): Object => {
 	const fn = createPredicate(iteratee);
 
 	return Object.entries(object).reduce(

@@ -1,6 +1,6 @@
 ---
 title: omit
-definition: 
+definition: omit(object, [paths])
 description: Creates an object composed of the object properties that are not included in the given `paths`.
 ---
 
@@ -27,4 +27,5 @@ description: Creates an object composed of the object properties that are not in
 
 ```ts
 omit({a: 1, b: 2, c: 3}, ['a', 'c']);
+// => {b: 2}
 ```

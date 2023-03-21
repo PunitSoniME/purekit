@@ -1,6 +1,6 @@
 ---
 title: findLastKey
-definition: 
+definition: findLastKey(object, [predicate = identity])
 description: This method is like `findKey` except that it iterates over elements of a collection from right to left.
 ---
 
@@ -10,7 +10,7 @@ description: This method is like `findKey` except that it iterates over elements
 
 ```bash
 {object} object - The object to iterate over.
-{predicateType} predicate - The function invoked per iteration.
+{predicateType} [predicate = identity] - The function invoked per iteration.
 ```
 
 
@@ -33,5 +33,6 @@ const users = {
 };
 const isActive = (value) => value.active;
 const result = findLastKey(users, isActive);
-console.log(result); // 'pebbles'
+console.log(result);
+// => 'pebbles'
 ```

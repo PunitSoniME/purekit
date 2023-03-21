@@ -1,6 +1,6 @@
 ---
 title: unescape
-definition: 
+definition: unescape(str)
 description: Converts HTML entities to their corresponding characters.
 ---
 
@@ -17,7 +17,7 @@ description: Converts HTML entities to their corresponding characters.
 
 
 ```bash
-
+{string} - The string with HTML entities replaced by their corresponding characters.
 ```
 
 
@@ -25,5 +25,9 @@ description: Converts HTML entities to their corresponding characters.
 
 
 ```ts
+unescape('&lt;h1&gt;Hello, World!&lt;/h1&gt;');
+// => '<h1>Hello, World!</h1>'
 
+unescape("It&#39;s a wonderful life.");
+// => "It's a wonderful life."
 ```

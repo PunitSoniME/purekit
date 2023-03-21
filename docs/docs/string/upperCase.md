@@ -1,6 +1,6 @@
 ---
 title: upperCase
-definition: 
+definition: upperCase([str = ''])
 description: Converts a string to title case and removes special characters.
 ---
 
@@ -9,7 +9,7 @@ description: Converts a string to title case and removes special characters.
 
 
 ```bash
-{string} [str=''] - The string to convert to title case.
+{string} [str = ''] - The string to convert to title case.
 ```
 
 
@@ -17,7 +17,7 @@ description: Converts a string to title case and removes special characters.
 
 
 ```bash
-
+{string} - The string converted to title case.
 ```
 
 
@@ -25,5 +25,9 @@ description: Converts a string to title case and removes special characters.
 
 
 ```ts
+upperCase('Hello_world');
+// => 'HELLO WORLD'
 
+upperCase('life-is_beautiful');
+// => 'LIFE IS BEAUTIFUL'
 ```

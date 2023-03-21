@@ -15,7 +15,7 @@ import identity from '../util/identity';
  *
  * transform([2, 3, 4], function(result, n) {
  * result.push(n *= n);
- * return n % 2 == 0
+ * 	return n % 2 == 0
  * }, [])
  * // => [4, 9]
  *

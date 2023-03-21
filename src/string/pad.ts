@@ -14,7 +14,7 @@
  * pad('hello', 10); // '  hello   '
  * pad('hello', 10, '-'); // '--hello---'
  */
-const pad = (str: string, length: number, characters: string = ' ') => {
+const pad = (str: string, length: number, characters: string = ' '): string => {
 	const prePad = Math.floor((length - str.length) / 2) + str.length;
 	return str.padStart(prePad, characters).padEnd(length, characters);
 };

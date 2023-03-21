@@ -1,6 +1,6 @@
 ---
 title: replace
-definition: 
+definition: replace([str = ''], pattern, replacement)
 description: Replaces matches in a string with a replacement string or RegExp.
 ---
 
@@ -9,9 +9,9 @@ description: Replaces matches in a string with a replacement string or RegExp.
 
 
 ```bash
-{string} str - The string to modify.
-{string|RegExp} pattern - The pattern to search for in the string.
-{string|RegExp} replacement - The replacement string or RegExp.
+{string} [str = ''] - The string to modify.
+{string | RegExp} pattern - The pattern to search for in the string.
+{string | RegExp} replacement - The replacement string or RegExp.
 ```
 
 
@@ -27,5 +27,6 @@ description: Replaces matches in a string with a replacement string or RegExp.
 
 
 ```ts
-replace('Hello, world!', 'world', 'John'); // 'Hello, John!'
+replace('Hello, world!', 'world', 'John');
+// => 'Hello, John!'
 ```

@@ -1,6 +1,6 @@
 ---
 title: toUpper
-definition: 
+definition: toUpper([str = ''])
 description: Converts a string to uppercase.
 ---
 
@@ -25,5 +25,6 @@ description: Converts a string to uppercase.
 
 
 ```ts
-toUpper('hello world') // 'HELLO WORLD'
+toUpper('hello world');
+// => 'HELLO WORLD'
 ```

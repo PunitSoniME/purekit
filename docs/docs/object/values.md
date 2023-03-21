@@ -1,6 +1,6 @@
 ---
 title: values
-definition: 
+definition: values(object)
 description: Returns an array of the values of the own enumerable string-keyed properties of an object.
 ---
 
@@ -17,7 +17,7 @@ description: Returns an array of the values of the own enumerable string-keyed p
 
 
 ```bash
-{any[]} - An array of the object's values.
+{Array} - An array of the object's values.
 ```
 
 
@@ -25,5 +25,7 @@ description: Returns an array of the values of the own enumerable string-keyed p
 
 
 ```ts
-const obj = { a: 1, b: 2, c: 3 };values(obj); // [1, 2, 3]
+const obj = { a: 1, b: 2, c: 3 };
+values(obj);
+// => [1, 2, 3]
 ```

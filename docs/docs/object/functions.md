@@ -1,6 +1,6 @@
 ---
 title: functions
-definition: 
+definition: functions(object)
 description: Returns an array of all the function names in the given object.
 ---
 
@@ -25,5 +25,15 @@ description: Returns an array of all the function names in the given object.
 
 
 ```ts
-const obj = {  add: function(a, b) {    return a + b;  },  subtract: function(a, b) {    return a - b;  },  name: 'John Doe'};const functionNames = functions(obj);
+const obj = {
+  add: function(a, b) {
+    return a + b;
+  },
+  subtract: function(a, b) {
+    return a - b;
+  },
+  name: 'John Doe'
+};
+const functionNames = functions(obj);
+// functionNames = ['add', 'subtract']
 ```

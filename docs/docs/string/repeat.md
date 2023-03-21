@@ -1,6 +1,6 @@
 ---
 title: repeat
-definition: 
+definition: repeat([str = ''], [n = 1])
 description: Repeats a string `n` times.
 ---
 
@@ -9,8 +9,8 @@ description: Repeats a string `n` times.
 
 
 ```bash
-{string} str - The string to repeat.
-{number} [n=1] - The number of times to repeat the string.
+{string} [str = ''] - The string to repeat.
+{number} [n = 1] - The number of times to repeat the string.
 ```
 
 
@@ -26,5 +26,9 @@ description: Repeats a string `n` times.
 
 
 ```ts
-repeat('hello', 3); // returns 'hellohellohello'repeat('hey'); // returns 'hey'
+repeat('hello', 3);
+// => 'hellohellohello'
+
+repeat('hey');
+// => 'hey'
 ```

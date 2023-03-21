@@ -11,15 +11,13 @@
  * const inverted = invert(object);
  *
  * console.log(inverted);
- * // Output: { '1': 'c', '2': 'b' }
- *
- * @example
+ * // => { '1': 'c', '2': 'b' }
  *
  * const object = { a: 'x', b: 'y', c: 'z' };
  * const inverted = invert(object);
  *
  * console.log(inverted);
- * // Output: { 'x': 'a', 'y': 'b', 'z': 'c' }
+ * // => { 'x': 'a', 'y': 'b', 'z': 'c' }
  */
 const invert = (object: Object): Object =>
 	Object.entries(object as Object).reduce(

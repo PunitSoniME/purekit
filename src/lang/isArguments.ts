@@ -1,10 +1,10 @@
 /**
- * Determines whether the given item is an `arguments` object.
+ * Determines whether the given value is an `arguments` object.
  *
  * @since 1.0.0
  *
- * @param {*} item - The item to check.
- * @returns {boolean} - `true` if the item is an `arguments` object, `false` otherwise.
+ * @param {*} value - The value to check.
+ * @returns {boolean} - `true` if the value is an `arguments` object, `false` otherwise.
  *
  * @example
  * const args = (function() { return arguments; })();
@@ -13,6 +13,6 @@
  * const arr = [1, 2, 3];
  * isArguments(arr); // returns false
  */
-const isArguments = (item: any): Boolean =>
-	Object.prototype.toString.call(item) === '[object Arguments]';
+const isArguments = (value: any): Boolean =>
+	Object.prototype.toString.call(value) === '[object Arguments]';
 export default isArguments;

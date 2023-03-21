@@ -10,11 +10,11 @@
  *
  * @example
  *
- * // returns { a: 1, b: 2, c: 3 }
  * assign({ a: 1 }, { b: 2 }, { c: 3 });
+ * // => { a: 1, b: 2, c: 3 }
  *
- * // returns { a: 1, b: 2, c: 3, d: 4 }
  * assign({ a: 1, b: 2 }, { c: 3, d: 4 });
+ * // => { a: 1, b: 2, c: 3, d: 4 }
  */
 const assign = <T>(object: T, ...sources: any[]): T => {
 	let data = { ...object };

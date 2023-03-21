@@ -1,6 +1,6 @@
 ---
 title: startsWith
-definition: 
+definition: startsWith([str = ''], [target = ''], [position = 0])
 description: Checks if a string starts with a given target string.
 ---
 
@@ -9,9 +9,9 @@ description: Checks if a string starts with a given target string.
 
 
 ```bash
-{string} [str=''] - The string to search in.
-{string} [target=''] - The target string to search for.
-{number} [position=0] - The position in the string at which to begin searching.
+{string} [str = ''] - The string to search in.
+{string} [target = ''] - The target string to search for.
+{number} [position = 0] - The position in the string at which to begin searching.
 ```
 
 
@@ -27,5 +27,12 @@ description: Checks if a string starts with a given target string.
 
 
 ```ts
-startsWith('hello world', 'hello'); // truestartsWith('hello world', 'world'); // falsestartsWith('hello world', 'world', 6); // true
+startsWith('hello world', 'hello');
+// => true
+
+startsWith('hello world', 'world');
+// => false
+
+startsWith('hello world', 'world', 6);
+// => true
 ```

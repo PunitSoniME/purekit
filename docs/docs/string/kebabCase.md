@@ -1,6 +1,6 @@
 ---
 title: kebabCase
-definition: 
+definition: kebabCase([str = ''])
 description: Converts a string to kebab case.
 ---
 
@@ -9,7 +9,7 @@ description: Converts a string to kebab case.
 
 
 ```bash
-{string} [str=''] - The string to convert.
+{string} [str = ''] - The string to convert.
 ```
 
 
@@ -25,5 +25,7 @@ description: Converts a string to kebab case.
 
 
 ```ts
-const str = 'This is a Test String';const kebabStr = kebabCase(str); // 'this-is-a-test-string'
+const str = 'This is a Test String';
+const kebabStr = kebabCase(str);
+// => 'this-is-a-test-string'
 ```

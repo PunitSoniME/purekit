@@ -2,7 +2,7 @@
  * This method is like `set` except that it accepts `customizer` which is invoked to produce the
  * value to be set. If `customizer` returns `undefined` the value is not set.
  *
- * @since 1.3.0
+ * @since 1.0.0
  *
  * @template T The type of the object.
  * @param {T} object - The object to modify.

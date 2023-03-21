@@ -5,15 +5,15 @@
  *
  * @param {string} [str=''] - The string to convert to title case.
  *
- * @return {string} The string converted to title case.
+ * @return {string} - The string converted to title case.
  *
  * @example
  *
- * // returns 'HELLO WORLD'
  * upperCase('Hello_world');
+ * // => 'HELLO WORLD'
  *
- * // returns 'LIFE IS BEAUTIFUL'
  * upperCase('life-is_beautiful');
+ * // => 'LIFE IS BEAUTIFUL'
  */
 const upperCase = (str: string = ''): string =>
 	str
