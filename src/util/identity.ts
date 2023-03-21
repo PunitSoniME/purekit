@@ -10,8 +10,8 @@
  *
  * @example
  *
- * identity('hello'); // returns 'hello'
- * identity(42); // returns 42
+ * identity('hello'); // => 'hello'
+ * identity(42); // => 42
  */
 const identity = <T>(value: T): T => value;
 export default identity;

@@ -11,8 +11,8 @@
  *
  * @example
  *
- * padStart('hello', 10); // returns '     hello'
- * padStart('world', 10, '*'); // returns '*****world'
+ * padStart('hello', 10); // => '     hello'
+ * padStart('world', 10, '*'); // => '*****world'
  */
 const padStart = (str: string = '', length: number = 0, chars: string = ' ') =>
 	str.padStart(length, chars);

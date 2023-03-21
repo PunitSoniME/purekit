@@ -10,8 +10,8 @@
  *
  * @example
  *
- * join([1, 2, 3], '-'); // returns '1-2-3'
- * join(['a', 'b', 'c'], ''); // returns 'abc'
+ * join([1, 2, 3], '-'); // => '1-2-3'
+ * join(['a', 'b', 'c'], ''); // => 'abc'
  */
 const join = <T>(array: T[], joiner: string = ','): string =>
 	array.join(joiner);

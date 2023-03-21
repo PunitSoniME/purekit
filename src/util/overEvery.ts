@@ -5,8 +5,8 @@ import identity from './identity';
  *
  * @since 1.0.0
  *
- * @param {Function[]} [predicates=[identity]] The predicates to check.
- * @return {Function} Returns the new composite function.
+ * @param {Function[]} [predicates = [identity]] The predicates to check.
+ * @return {Function} - Returns the new composite function.
  *
  * @example
  *

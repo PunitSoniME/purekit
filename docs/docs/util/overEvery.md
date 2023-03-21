@@ -1,6 +1,6 @@
 ---
 title: overEvery
-definition: 
+definition: overEvery([predicates = [identity]])
 description: Checks if all of the given predicates return truthy values when invoked with the arguments provided.
 ---
 
@@ -9,7 +9,7 @@ description: Checks if all of the given predicates return truthy values when inv
 
 
 ```bash
-
+{Function[]} [predicates = [identity]] The predicates to check.
 ```
 
 
@@ -17,7 +17,7 @@ description: Checks if all of the given predicates return truthy values when inv
 
 
 ```bash
-
+{Function} - Returns the new composite function.
 ```
 
 
@@ -25,5 +25,12 @@ description: Checks if all of the given predicates return truthy values when inv
 
 
 ```ts
-const isEven = n => n % 2 === 0;const isPositive = n => n > 0;const isEvenAndPositive = overEvery([isEven, isPositive]);isEvenAndPositive(4); // trueisEvenAndPositive(5); // false
+const isEven = n => n % 2 === 0;
+const isPositive = n => n > 0;
+const isEvenAndPositive = overEvery([isEven, isPositive]);
+isEvenAndPositive(4);
+// => true
+
+isEvenAndPositive(5);
+// => false
 ```

@@ -1,6 +1,6 @@
 ---
 title: words
-definition: words([str = ''], [pattern = =/\w+/g])
+definition: words([str = ''], [pattern =/\w+/g])
 description: Splits a string into an array of words based on a given pattern.
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: defaultTo
-definition: 
+definition: defaultTo(value, defaultValue)
 description: Checks if a value is null, undefined or NaN and returns the default value if it is.
 ---
 
@@ -18,7 +18,7 @@ description: Checks if a value is null, undefined or NaN and returns the default
 
 
 ```bash
-
+{*} - Returns the `value` or the `defaultValue` if `value` is null, undefined or NaN.
 ```
 
 
@@ -26,5 +26,15 @@ description: Checks if a value is null, undefined or NaN and returns the default
 
 
 ```ts
+defaultTo(null, 'default');
+// => 'default'
 
+defaultTo(undefined, 'default');
+// => 'default'
+
+defaultTo(NaN, 'default');
+// => 'default'
+
+defaultTo('hello', 'default');
+// => 'hello'
 ```

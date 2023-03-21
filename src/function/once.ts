@@ -12,8 +12,8 @@
  * const add = (a, b) => a + b;
  * const addOnce = once(add);
  *
- * console.log(addOnce(2, 3)); // Output: 5
- * console.log(addOnce(4, 5)); // Output: 5
+ * console.log(addOnce(2, 3)); // => 5
+ * console.log(addOnce(4, 5)); // => 5
  */
 const once = (fn: Function): Function => {
 	let called = false;

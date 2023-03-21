@@ -21,7 +21,7 @@
  * const arr3 = [7, 8, 9];
  *
  * const result = concat(arr1, arr2, arr3);
- * console.log(result); // Output: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+ * console.log(result); // => [1, 2, 3, 4, 5, 6, 7, 8, 9]
  */
 const concat = <T>(array: T[], ...restArray: any[]): T[] => {
 	let newArray: T[] = [];

@@ -12,7 +12,7 @@
  * const sum = (x, y, z) => x + y + z;
  * const spreadSum = spread(sum);
  *
- * spreadSum([1, 2, 3]); // Returns: 6
+ * spreadSum([1, 2, 3]); // => 6
  *
  */
 const spread = (func: Function) => (args: any) => func(...args);

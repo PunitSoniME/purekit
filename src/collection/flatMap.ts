@@ -14,10 +14,10 @@ import identity from '../util/identity';
  *
  * @example
  * flatMap([1, 2, 3], (n) => [n, n * 2]);
- * // Returns [1, 2, 2, 4, 3, 6]
+ * // => [1, 2, 2, 4, 3, 6]
  *
  * flatMap(['hello', 'world'], (word) => word.split(''));
- * // Returns ['h', 'e', 'l', 'l', 'o', 'w', 'o', 'r', 'l', 'd']
+ * // => ['h', 'e', 'l', 'l', 'o', 'w', 'o', 'r', 'l', 'd']
  */
 const flatMap = <T>(
 	collection: T,

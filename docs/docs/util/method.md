@@ -1,6 +1,6 @@
 ---
 title: method
-definition: 
+definition: method(path, [args])
 description: Creates a function that invokes the method at `path` of a given object.
 ---
 
@@ -9,7 +9,7 @@ description: Creates a function that invokes the method at `path` of a given obj
 
 
 ```bash
-{string|Array} path - The path of the method to invoke.
+{string | Array} path - The path of the method to invoke.
 {...*} args - The arguments to invoke the method with.
 ```
 
@@ -26,5 +26,8 @@ description: Creates a function that invokes the method at `path` of a given obj
 
 
 ```ts
-const users = [{ name: 'Alice', age: 32 }, { name: 'Bob', age: 42 }];const getNames = method('name');const names = users.map(getNames);
+const users = [{ name: 'Alice', age: 32 }, { name: 'Bob', age: 42 }];
+const getNames = method('name');
+const names = users.map(getNames);
+// => ['Alice', 'Bob']
 ```

@@ -1,6 +1,6 @@
 ---
 title: conforms
-definition: 
+definition: conforms(source)
 description: Creates a function that checks if an object conforms to the specified object properties and values.
 ---
 
@@ -17,7 +17,7 @@ description: Creates a function that checks if an object conforms to the specifi
 
 
 ```bash
-
+{Function} - The new function.
 ```
 
 
@@ -26,4 +26,10 @@ description: Creates a function that checks if an object conforms to the specifi
 
 ```ts
 const func = conforms({x: x => x > 5, y: y => y < 10});
+
+func({x: 10, y: 5});
+// => true
+
+func({x: 2, y: 15});
+// => false
 ```

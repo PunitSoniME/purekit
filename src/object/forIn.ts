@@ -17,8 +17,8 @@ import assignIn from './assignIn';
  * forIn(object, function(value, key) {
  *   console.log(key);
  * });
- * // Output: 'a' (iteration order is not guaranteed)
- * // Output: 'b' (iteration order is not guaranteed)
+ * // => 'a' (iteration order is not guaranteed)
+ * // => 'b' (iteration order is not guaranteed)
  *
  * forIn(object, function(value, key) {
  *   object[key] = value * 2;

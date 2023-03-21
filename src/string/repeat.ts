@@ -9,8 +9,8 @@
  *
  * @example
  *
- * repeat('hello', 3); // returns 'hellohellohello'
- * repeat('hey'); // returns 'hey'
+ * repeat('hello', 3); // => 'hellohellohello'
+ * repeat('hey'); // => 'hey'
  */
 const repeat = (str: string = '', n: number = 1): string => str.repeat(n);
 export default repeat;

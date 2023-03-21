@@ -7,19 +7,19 @@
  * @returns {boolean} - `true` if the value is empty, `false` otherwise.
  *
  * @example
- * isEmpty(null); // returns true
- * isEmpty(undefined); // returns true
- * isEmpty(0); // returns true
- * isEmpty(''); // returns true
- * isEmpty([]); // returns true
- * isEmpty({}); // returns true
- * isEmpty(new Set()); // returns true
- * isEmpty(new Map()); // returns true
- * isEmpty({ a: 1 }); // returns false
- * isEmpty('hello'); // returns false
- * isEmpty([1, 2, 3]); // returns false
- * isEmpty(new Set([1, 2, 3])); // returns false
- * isEmpty(new Map([['a', 1]])); // returns false
+ * isEmpty(null); // => true
+ * isEmpty(undefined); // => true
+ * isEmpty(0); // => true
+ * isEmpty(''); // => true
+ * isEmpty([]); // => true
+ * isEmpty({}); // => true
+ * isEmpty(new Set()); // => true
+ * isEmpty(new Map()); // => true
+ * isEmpty({ a: 1 }); // => false
+ * isEmpty('hello'); // => false
+ * isEmpty([1, 2, 3]); // => false
+ * isEmpty(new Set([1, 2, 3])); // => false
+ * isEmpty(new Map([['a', 1]])); // => false
  */
 const isEmpty = (value: any): boolean => {
 	if (

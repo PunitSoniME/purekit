@@ -5,7 +5,7 @@
  *
  * @param {Function | Function[]} funcs - The functions to compose.
  *
- * @return {Function} Returns the new composite function.
+ * @return {Function} - Returns the new composite function.
  *
  * @example
  *
@@ -14,11 +14,11 @@
  *
  * const func = flowRight(square, double);
  *
- * // returns 18
  * func(3);
+ * // => 18
  *
- * // returns 16
  * flowRight(square, double, square)(2);
+ * // => 16
  */
 const flowRight =
 	(funcs: Function | Function[]): Function =>

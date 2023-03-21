@@ -1,16 +1,8 @@
 ---
 title: stubObject
-definition: 
+definition: stubObject();
 description: Creates an empty object.
 ---
-
-
-#### Arguments
-
-
-```bash
-
-```
 
 
 #### Returns
@@ -23,7 +15,7 @@ description: Creates an empty object.
 
 #### Example
 
-
 ```ts
-const result = stubObject(); // {}
+const result = stubObject();
+// => {}
 ```

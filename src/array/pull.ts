@@ -13,7 +13,7 @@ import pullAll from './pullAll';
  * @example
  * const arr = ['a', 'b', 'c', 'a', 'b', 'c'];
  * const result = pull(arr, 'a', 'c');
- * console.log(result); // Output: ['b', 'b']
+ * console.log(result); // => ['b', 'b']
  */
 const pull = <T>(array: T[], ...elementsToRemove: T[]): T[] =>
 	pullAll(array, elementsToRemove);

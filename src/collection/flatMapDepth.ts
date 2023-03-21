@@ -15,10 +15,10 @@ import identity from '../util/identity';
  *
  * @example
  * flatMapDepth([1, 2, 3], (n) => [n, n], 2);
- * // Returns: [1, 1, 2, 2, 3, 3]
+ * // => [1, 1, 2, 2, 3, 3]
  *
  * flatMapDepth([1, [2, [3, [4]], 5]], identity, 2);
- * // Returns: [1, 2, [3, [4]], 5]
+ * // => [1, 2, [3, [4]], 5]
  */
 const flatMapDepth = <T>(
 	collection: T,

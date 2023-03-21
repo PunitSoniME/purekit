@@ -8,7 +8,7 @@
  *
  * @example
  *
- * initial([1, 2, 3]); // returns [1, 2]
+ * initial([1, 2, 3]); // => [1, 2]
  */
 const initial = <T>(array: T[]): T[] => array.slice(0, -1);
 export default initial;

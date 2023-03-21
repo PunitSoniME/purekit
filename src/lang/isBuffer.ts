@@ -8,10 +8,10 @@
  *
  * @example
  * const buf = Buffer.from('hello', 'utf8');
- * isBuffer(buf); // returns true
+ * isBuffer(buf); // => true
  *
  * const arr = [1, 2, 3];
- * isBuffer(arr); // returns false
+ * isBuffer(arr); // => false
  */
 const isBuffer = (value: any): boolean => Buffer.isBuffer(value);
 export default isBuffer;

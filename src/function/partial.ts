@@ -10,7 +10,7 @@
  * @example
  * const add = (x, y, z) => x + y + z;
  * const add5 = partial(add, 2, 3);
- * add5(4); // returns 9
+ * add5(4); // => 9
  */
 const partial =
 	(func: Function, ...args: any) =>

@@ -1,6 +1,6 @@
 ---
 title: toPath
-definition: 
+definition: toPath(value)
 description: Converts a string path to an array of path segments.
 ---
 
@@ -25,5 +25,6 @@ description: Converts a string path to an array of path segments.
 
 
 ```ts
-const result = toPath('a.b[0].c'); // ['a', 'b', '0', 'c']
+const result = toPath('a.b[0].c');
+// => ['a', 'b', '0', 'c']
 ```

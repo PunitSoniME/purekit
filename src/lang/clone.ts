@@ -10,12 +10,12 @@
  *
  * @example
  *
- * clone([1, 2, 3]); // Returns [1, 2, 3]
- * clone({ x: 1, y: 2 }); // Returns { x: 1, y: 2 }
- * clone(new Map([['x', 1], ['y', 2]])); // Returns a new map containing [['x', 1], ['y', 2]]
- * clone(new Set([1, 2, 3])); // Returns a new set containing [1, 2, 3]
- * clone(new RegExp('ab+c', 'i')); // Returns a new RegExp with the same pattern and flags.
- * clone(new Date()); // Returns a new date with the same value.
+ * clone([1, 2, 3]); // => [1, 2, 3]
+ * clone({ x: 1, y: 2 }); // => { x: 1, y: 2 }
+ * clone(new Map([['x', 1], ['y', 2]])); // => a new map containing [['x', 1], ['y', 2]]
+ * clone(new Set([1, 2, 3])); // => a new set containing [1, 2, 3]
+ * clone(new RegExp('ab+c', 'i')); // => a new RegExp with the same pattern and flags.
+ * clone(new Date()); // => a new date with the same value.
  */
 
 const clone = <T>(value: T): T => {

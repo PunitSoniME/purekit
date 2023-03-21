@@ -14,7 +14,7 @@ import identity from '../util/identity';
  * @example
  *
  * unionBy([2.1], [1.2, 2.3], Math.floor);
- * // returns [2.1, 1.2]
+ * // => [2.1, 1.2]
  */
 
 const unionBy = <T>(array: T[], ...args: any): T[] => {

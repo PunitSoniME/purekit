@@ -7,7 +7,7 @@
  *
  * @example
  *
- * sortedUniq([1, 1, 2, 2, 3, 4, 4, 5]); // Returns: [1, 2, 3, 4, 5]
+ * sortedUniq([1, 1, 2, 2, 3, 4, 4, 5]); // => [1, 2, 3, 4, 5]
  */
 const sortedUniq = <T>(array: T[]): T[] => Array.from(new Set([...array]));
 export default sortedUniq;

@@ -6,21 +6,21 @@
  * @param {*} value - The value to check.
  * @param {*} defaultValue - The default value to return if `value` is null, undefined or NaN.
  *
- * @return {*} Returns the `value` or the `defaultValue` if `value` is null, undefined or NaN.
+ * @return {*} - Returns the `value` or the `defaultValue` if `value` is null, undefined or NaN.
  *
  * @example
  *
- * // returns 'default'
  * defaultTo(null, 'default');
+ * // => 'default'
  *
- * // returns 'default'
  * defaultTo(undefined, 'default');
+ * // => 'default'
  *
- * // returns 'default'
  * defaultTo(NaN, 'default');
+ * // => 'default'
  *
- * // returns 'hello'
  * defaultTo('hello', 'default');
+ * // => 'hello'
  */
 const defaultTo = (value: any, defaultValue: any): any =>
 	value == null || Object.is(value, NaN) ? defaultValue : value;

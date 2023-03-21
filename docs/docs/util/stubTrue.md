@@ -1,20 +1,11 @@
 ---
 title: stubTrue
-definition: 
+definition: stubTrue()
 description: Returns true.
 ---
 
 
-#### Arguments
-
-
-```bash
-
-```
-
-
 #### Returns
-
 
 ```bash
 {boolean} - The boolean value true.
@@ -23,7 +14,7 @@ description: Returns true.
 
 #### Example
 
-
 ```ts
-const result = stubTrue(); // true
+const result = stubTrue();
+// => true
 ```

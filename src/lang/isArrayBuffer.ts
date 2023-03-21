@@ -8,10 +8,10 @@
  *
  * @example
  * const buffer = new ArrayBuffer(16);
- * isArrayBuffer(buffer); // returns true
+ * isArrayBuffer(buffer); // => true
  *
  * const arr = [1, 2, 3];
- * isArrayBuffer(arr); // returns false
+ * isArrayBuffer(arr); // => false
  */
 const isArrayBuffer = (value: any): boolean => value instanceof ArrayBuffer;
 export default isArrayBuffer;

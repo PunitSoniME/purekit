@@ -12,7 +12,7 @@ import identity from '../util/identity';
  * @example
  * const array = [{ id: 1, name: 'John' }, { id: 2, name: 'Jane' }, { id: 1, name: 'Jim' }];
  * const result = uniqBy(array, 'id');
- * console.log(result); // Output: [{ id: 1, name: 'John' }, { id: 2, name: 'Jane' }]
+ * console.log(result); // => [{ id: 1, name: 'John' }, { id: 2, name: 'Jane' }]
  */
 
 const uniqBy = <T>(array: T[], iteratee: predicateType<T> = identity): T[] => {

@@ -7,8 +7,8 @@
  * @returns {boolean} - `true` if the value is a DOM element, `false` otherwise.
  *
  * @example
- * isElement(document.createElement('div')); // returns true
- * isElement(document.createTextNode('hello')); // returns false
+ * isElement(document.createElement('div')); // => true
+ * isElement(document.createTextNode('hello')); // => false
  */
 const isElement = (value: any): boolean => {
 	return typeof HTMLElement === 'object'

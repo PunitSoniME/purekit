@@ -1,29 +1,13 @@
 ---
 title: noop
-definition: 
+definition: noop()
 description: A no-operation function that does nothing.
 ---
-
-
-#### Arguments
-
-
-```bash
-
-```
-
-
-#### Returns
-
-
-```bash
-{void} - *
-```
-
 
 #### Example
 
 
 ```ts
-noop(); // does nothing
+noop();
+// => does nothing
 ```

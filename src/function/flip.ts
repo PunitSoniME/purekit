@@ -15,8 +15,8 @@
  *
  * const flippedFoo = flip(foo);
  *
- * foo(1, 2, 3); // Output: 1, 2, 3
- * flippedFoo(1, 2, 3); // Output: 2, 1, 3
+ * foo(1, 2, 3); // => 1, 2, 3
+ * flippedFoo(1, 2, 3); // => 2, 1, 3
  */
 const flip =
 	(func: Function) =>

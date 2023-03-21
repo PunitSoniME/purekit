@@ -8,8 +8,8 @@
  *
  * @example
  * const arr = [1, 2, 3, 4, 5];
- * console.log(sortedIndexOf(arr, 3)); // Output: 2
- * console.log(sortedIndexOf(arr, 6)); // Output: -1
+ * console.log(sortedIndexOf(arr, 3)); // => 2
+ * console.log(sortedIndexOf(arr, 6)); // => -1
  */
 const sortedIndexOf = <T>(array: T[], value: T): number =>
 	[...array].sort().indexOf(value);

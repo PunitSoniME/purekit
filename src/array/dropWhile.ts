@@ -13,9 +13,9 @@ import identity from '../util/identity';
  * @returns {T[]} - Returns the slice of the array.
  *
  * @example
- * dropWhile([1, 2, 3], n => n < 3); // Returns [3]
+ * dropWhile([1, 2, 3], n => n < 3); // => [3]
  *
- * dropWhile(['foo', 'bar', 'baz'], str => str.startsWith('f')); // Returns ['bar', 'baz']
+ * dropWhile(['foo', 'bar', 'baz'], str => str.startsWith('f')); // => ['bar', 'baz']
  */
 const dropWhile = <T>(
 	array: T[],

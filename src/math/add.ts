@@ -9,9 +9,9 @@
  * @returns {number | string} - The sum of all numbers or concatenated string.
  *
  * @example
- * add(2, 3); // returns 5
- * add('Hello', 'World'); // returns 'HelloWorld'
- * add(1, 2, 3, 4); // returns 10
+ * add(2, 3); // => 5
+ * add('Hello', 'World'); // => 'HelloWorld'
+ * add(1, 2, 3, 4); // => 10
  */
 const add = (
 	augend: number | string,

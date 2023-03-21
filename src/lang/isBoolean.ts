@@ -7,11 +7,11 @@
  * @returns {boolean} - `true` if the value is a boolean, `false` otherwise.
  *
  * @example
- * isBoolean(true); // returns true
- * isBoolean(false); // returns true
- * isBoolean(0); // returns false
- * isBoolean('true'); // returns false
- * isBoolean(null); // returns false
+ * isBoolean(true); // => true
+ * isBoolean(false); // => true
+ * isBoolean(0); // => false
+ * isBoolean('true'); // => false
+ * isBoolean(null); // => false
  */
 const isBoolean = (value: any): boolean => value === true || value === false;
 export default isBoolean;

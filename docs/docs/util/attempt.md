@@ -1,6 +1,6 @@
 ---
 title: attempt
-definition: 
+definition: attempt(func, [args])
 description: Attempts to invoke a function with the given arguments and returns either the result or the error object.
 ---
 
@@ -18,7 +18,7 @@ description: Attempts to invoke a function with the given arguments and returns 
 
 
 ```bash
-
+{*} - The result of the function or the error object.
 ```
 
 
@@ -26,5 +26,9 @@ description: Attempts to invoke a function with the given arguments and returns 
 
 
 ```ts
+attempt((a, b) => a + b, 2, 4);
+// => 6
 
+attempt(str => str.length, null);
+// => TypeError: Cannot read property 'length' of null
 ```
