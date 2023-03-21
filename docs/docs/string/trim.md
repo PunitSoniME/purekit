@@ -1,6 +1,6 @@
 ---
 title: trim
-definition: 
+definition: trim([str = ''], [characters =  ''])
 description: Removes specified characters from the beginning and end of a string.
 ---
 
@@ -9,8 +9,8 @@ description: Removes specified characters from the beginning and end of a string
 
 
 ```bash
-{string} [str=''] - The string to trim.
-{string} [characters=''] - The characters to remove from the string.
+{string} [str = ''] - The string to trim.
+{string} [characters = ''] - The characters to remove from the string.
 ```
 
 
@@ -18,7 +18,7 @@ description: Removes specified characters from the beginning and end of a string
 
 
 ```bash
-
+{string} - The trimmed string.
 ```
 
 
@@ -26,5 +26,9 @@ description: Removes specified characters from the beginning and end of a string
 
 
 ```ts
+trim('  Hello, World!   ');
+// => 'Hello, World!'
 
+trim('JavaScript is awesome', 'weojsacm');
+// => 'JavaScript is awesome'
 ```

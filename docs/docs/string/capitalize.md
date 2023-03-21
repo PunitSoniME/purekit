@@ -1,6 +1,6 @@
 ---
 title: capitalize
-definition: 
+definition: capitalize([str = ''])
 description: Capitalizes the first letter of a string.
 ---
 
@@ -25,5 +25,16 @@ description: Capitalizes the first letter of a string.
 
 
 ```ts
-const str1 = 'foo';const str2 = 'BAR';const str3 = 'hElLo WoRlD';const result1 = capitalize(str1); // 'Foo'const result2 = capitalize(str2); // 'Bar'const result3 = capitalize(str3); // 'Hello world'
+const str1 = 'foo';
+const str2 = 'BAR';
+const str3 = 'hElLo WoRlD';
+
+const result1 = capitalize(str1);
+// => 'Foo'
+
+const result2 = capitalize(str2);
+// => 'Bar'
+
+const result3 = capitalize(str3);
+// => 'Hello world'
 ```

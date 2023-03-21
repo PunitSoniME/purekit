@@ -1,6 +1,6 @@
 ---
 title: keys
-definition: 
+definition: keys(object)
 description: Returns an array of the own enumerable property names of the given object.
 ---
 
@@ -9,7 +9,7 @@ description: Returns an array of the own enumerable property names of the given 
 
 
 ```bash
-{object} object - The object to retrieve the keys from.
+{Object} object - The object to retrieve the keys from.
 ```
 
 
@@ -25,5 +25,7 @@ description: Returns an array of the own enumerable property names of the given 
 
 
 ```ts
-const object = { a: 1, b: 2, c: 3 };keys(object);
+const object = { a: 1, b: 2, c: 3 };
+keys(object);
+// => ['a', 'b', 'c']
 ```

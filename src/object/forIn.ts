@@ -1,4 +1,5 @@
 import applyArrayFn from '../helpers/applyArrayFn';
+import identity from '../util/identity';
 import assignIn from './assignIn';
 
 /**
@@ -7,7 +8,7 @@ import assignIn from './assignIn';
  * @since 1.0.0
  *
  * @param {Object} object - The object to iterate over.
- * @param {Function} iteratee - The function to invoke per iteration.
+ * @param {Function} [iteratee = identity] - The function to invoke per iteration.
  * @returns {Object} - Returns object.
  *
  * @example
@@ -23,9 +24,9 @@ import assignIn from './assignIn';
  *   object[key] = value * 2;
  * });
  * console.log(object);
- * // Output: { 'a': 2, 'b': 4 }
+ * // => { 'a': 2, 'b': 4 }
  */
-const forIn = (object: Object, iteratee: any): Object => {
+const forIn = (object: Object, iteratee: Function = identity): Object => {
 	const collection = assignIn({}, object);
 
 	return applyArrayFn({

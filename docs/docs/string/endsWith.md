@@ -1,6 +1,6 @@
 ---
 title: endsWith
-definition: 
+definition: endsWith([str = ''], [target], [position = str.length])
 description: Checks if a string ends with a specified target string.
 ---
 
@@ -27,5 +27,16 @@ description: Checks if a string ends with a specified target string.
 
 
 ```ts
-const str1 = 'Hello, world!';const str2 = 'Hello, world';const str3 = 'hello, world!';const result1 = endsWith(str1, '!'); // trueconst result2 = endsWith(str2, '!'); // falseconst result3 = endsWith(str3, 'world', 7); // true
+const str1 = 'Hello, world!';
+const str2 = 'Hello, world';
+const str3 = 'hello, world!';
+
+const result1 = endsWith(str1, '!');
+// =>  true
+
+const result2 = endsWith(str2, '!');
+// =>  false
+
+const result3 = endsWith(str3, 'world', 7);
+// =>  true
 ```

@@ -1,6 +1,6 @@
 ---
 title: snakeCase
-definition: 
+definition: snakeCase([str = ''])
 description: Converts a string to snake case.
 ---
 
@@ -9,7 +9,7 @@ description: Converts a string to snake case.
 
 
 ```bash
-{string} [str=''] - The string to convert.
+{string} [str = ''] - The string to convert.
 ```
 
 
@@ -25,5 +25,12 @@ description: Converts a string to snake case.
 
 
 ```ts
-snakeCase('some text'); // 'some_text'snakeCase('some-mixed_string With spaces_underscores-and-hyphens'); // 'some_mixed_string_with_spaces_underscores_and_hyphens'snakeCase('AllThe-small Things'); // 'all_the_small_things'
+snakeCase('some text');
+// => 'some_text'
+
+snakeCase('some-mixed_string With spaces_underscores-and-hyphens');
+// => 'some_mixed_string_with_spaces_underscores_and_hyphens'
+
+snakeCase('AllThe-small Things');
+// => 'all_the_small_things'
 ```

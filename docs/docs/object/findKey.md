@@ -1,6 +1,6 @@
 ---
 title: findKey
-definition: 
+definition: findKey(object, [predicate = identity])
 description: Iterates over an object's own and inherited enumerable properties, returning the first key that the predicate function returns truthy for.
 ---
 
@@ -9,8 +9,8 @@ description: Iterates over an object's own and inherited enumerable properties, 
 
 
 ```bash
-{object} object - The object to iterate over.
-{predicateType} predicate - The function invoked per iteration.
+{Object} object - The object to iterate over.
+{predicateType} [predicate = identity] - The function invoked per iteration.
 ```
 
 
@@ -33,5 +33,6 @@ const users = {
 };
 const isActive = (value) => value.active;
 const result = findKey(users, isActive);
-console.log(result); // 'barney'
+console.log(result);
+// => 'barney'
 ```

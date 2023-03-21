@@ -1,6 +1,6 @@
 ---
 title: assignIn
-definition: 
+definition: assignIn(object, [sources])
 description: Assigns own enumerable string keyed properties of source objects to the destination object.
 ---
 
@@ -9,8 +9,8 @@ description: Assigns own enumerable string keyed properties of source objects to
 
 
 ```bash
-{T} object - The destination object.
-{...any[]} sources - The source objects.
+{Object} object - The destination object.
+{...Object} sources - The source objects.
 ```
 
 
@@ -18,7 +18,7 @@ description: Assigns own enumerable string keyed properties of source objects to
 
 
 ```bash
-{T} - The modified object.
+{Object} - The modified object.
 ```
 
 
@@ -26,5 +26,9 @@ description: Assigns own enumerable string keyed properties of source objects to
 
 
 ```ts
-const object = { a: 1 };const other = { b: 2 };assignIn(object, other);
+const object = { a: 1 };
+const other = { b: 2 };
+
+assignIn(object, other);
+// => { 'a': 1, 'b': 2 }
 ```

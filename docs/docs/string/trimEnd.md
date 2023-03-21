@@ -1,6 +1,6 @@
 ---
 title: trimEnd
-definition: 
+definition: trimEnd([str = ''], [characters = ''])
 description: Removes specified characters from the end of a string.
 ---
 
@@ -9,8 +9,8 @@ description: Removes specified characters from the end of a string.
 
 
 ```bash
-{string} [str=''] - The string to trim.
-{string} [characters=''] - The characters to remove from the end of the string.
+{string} [str = ''] - The string to trim.
+{string} [characters = ''] - The characters to remove from the end of the string.
 ```
 
 
@@ -18,7 +18,7 @@ description: Removes specified characters from the end of a string.
 
 
 ```bash
-
+{string} - The trimmed string.
 ```
 
 
@@ -26,5 +26,9 @@ description: Removes specified characters from the end of a string.
 
 
 ```ts
+trimEnd('Hello, World   ');
+// => 'Hello, World'
 
+trimEnd('Hello, World!!!', '!');
+// => 'Hello, World'
 ```

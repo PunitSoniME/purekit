@@ -1,7 +1,7 @@
 ---
 title: forInRight
-definition: 
-description: Iterates over an object's own and inherited enumerable string keyed properties in reverse order,
+definition: forInRight(object, [iteratee = identity])
+description: Iterates over an object's own and inherited enumerable string keyed properties in reverse order, calling `iteratee` for each property. The `iteratee` is invoked with three arguments, (value, key, object). Iteratee functions may exit iteration early by explicitly returning `false`.
 ---
 
 
@@ -9,8 +9,8 @@ description: Iterates over an object's own and inherited enumerable string keyed
 
 
 ```bash
-{T} object - The object to iterate over.
-{Function} iteratee - The function invoked per iteration.
+{Object} object - The object to iterate over.
+{Function} [iteratee = identity] - The function invoked per iteration.
 ```
 
 
@@ -18,7 +18,7 @@ description: Iterates over an object's own and inherited enumerable string keyed
 
 
 ```bash
-{T} - Returns the object.
+{Object} - Returns the object.
 ```
 
 
@@ -26,5 +26,8 @@ description: Iterates over an object's own and inherited enumerable string keyed
 
 
 ```ts
-const object = { 'a': 1, 'b': 2 };forInRight(object, (value, key) => {  console.log(key);});
+const object = { 'a': 1, 'b': 2 };
+forInRight(object, (value, key) => {
+  console.log(key);
+});
 ```

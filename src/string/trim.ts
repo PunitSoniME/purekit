@@ -9,15 +9,15 @@ import trimStart from './trimStart';
  * @param {string} [str=''] - The string to trim.
  * @param {string} [characters=''] - The characters to remove from the string.
  *
- * @return {string} The trimmed string.
+ * @return {string} - The trimmed string.
  *
  * @example
  *
- * // returns 'Hello, World!'
  * trim('  Hello, World!   ');
+ * // => 'Hello, World!'
  *
- * // returns 'JavaScript is awesome'
  * trim('JavaScript is awesome', 'weojsacm');
+ * // => 'JavaScript is awesome'
  */
 const trim = (str: string = '', characters: string = ''): string => {
 	const startedTrimmed = trimStart(str, characters);

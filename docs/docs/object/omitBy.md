@@ -1,7 +1,7 @@
 ---
 title: omitBy
-definition: 
-description: Creates an object composed of the object properties predicate does not return truthy for. The predicate is invoked with two arguments: (value, key).
+definition: omitBy(object, [predicate = identity])
+description: Creates an object composed of the object properties predicate does not return truthy for. The predicate is invoked with two arguments (value, key).
 ---
 
 
@@ -10,7 +10,7 @@ description: Creates an object composed of the object properties predicate does 
 
 ```bash
 {Object} object - The source object.
-{Function} predicate - The function invoked per iteration.
+{Function} [predicate = identity] - The function invoked per iteration.
 ```
 
 
@@ -26,5 +26,7 @@ description: Creates an object composed of the object properties predicate does 
 
 
 ```ts
-const object = { 'a': 1, 'b': '2', 'c': 3 };omitBy(object, (value) => typeof value === 'number');
+const object = { 'a': 1, 'b': '2', 'c': 3 };
+omitBy(object, (value) => typeof value === 'number');
+// => { 'b': '2' }
 ```

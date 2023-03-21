@@ -8,7 +8,7 @@ import identity from '../util/identity';
  *
  * @since 1.0.0
  * @param {Object} object - The object to iterate over.
- * @param {Function} [iteratee=identity] - The function invoked per iteration.
+ * @param {Function} [iteratee = identity] - The function invoked per iteration.
  * @returns {Object} - Returns the new mapped object.
  *
  * @example

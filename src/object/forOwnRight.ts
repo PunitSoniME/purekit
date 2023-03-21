@@ -1,4 +1,5 @@
 import reverseCollection from '../helpers/reverseCollection';
+import identity from '../util/identity';
 
 /**
  * Iterates over own enumerable string keyed properties of an object in reverse order
@@ -8,7 +9,7 @@ import reverseCollection from '../helpers/reverseCollection';
  * @since 1.0.0
  *
  * @param {Object} object - The object to iterate over.
- * @param {Function} iteratee - The function invoked per iteration.
+ * @param {Function} [iteratee = identity] - The function invoked per iteration.
  * @returns {Object} - Returns `object`.
  *
  * @example
@@ -20,7 +21,7 @@ import reverseCollection from '../helpers/reverseCollection';
  * });
  * // => Logs 'b 2' then 'a 1'.
  */
-const forOwnRight = <T>(object: T, iteratee: any): T => {
+const forOwnRight = <T>(object: T, iteratee: Function = identity): T => {
 	const reverseData = reverseCollection(object);
 
 	return (reverseData as any).forEach((value: any, key: any, index: number) => {

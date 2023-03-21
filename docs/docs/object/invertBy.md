@@ -1,6 +1,6 @@
 ---
 title: invertBy
-definition: 
+definition: invertBy(object, [iteratee = identity])
 description: Creates an object composed of keys generated from the results of running each element of object thru `iteratee`.
 ---
 
@@ -9,8 +9,8 @@ description: Creates an object composed of keys generated from the results of ru
 
 
 ```bash
- object - The object to invert.
- iteratee - The function invoked per iteration.
+{Object} object - The object to invert.
+{Function} [iteratee = identity] - The function invoked per iteration.
 ```
 
 
@@ -18,7 +18,7 @@ description: Creates an object composed of keys generated from the results of ru
 
 
 ```bash
-
+{Object} - The new inverted object.
 ```
 
 
@@ -26,5 +26,10 @@ description: Creates an object composed of keys generated from the results of ru
 
 
 ```ts
-const object = { 'a': 1, 'b': 2, 'c': 1 };invertBy(object);
+const object = { 'a': 1, 'b': 2, 'c': 1 };
+invertBy(object);
+// => { '1': ['a', 'c'], '2': ['b'] }
+
+invertBy(object, (value) => `group_${value}`);
+// => { 'group_1': ['a', 'c'], 'group_2': ['b'] }
 ```

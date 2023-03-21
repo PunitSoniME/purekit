@@ -1,6 +1,6 @@
 ---
 title: startCase
-definition: 
+definition: startCase([str = ''])
 description: Converts a string to start case (i.e., each word capitalized, with spaces between words).
 ---
 
@@ -25,5 +25,6 @@ description: Converts a string to start case (i.e., each word capitalized, with 
 
 
 ```ts
-startCase('foo_bar_baz'); // 'Foo Bar Baz'
+startCase('foo_bar_baz');
+// => 'Foo Bar Baz'
 ```

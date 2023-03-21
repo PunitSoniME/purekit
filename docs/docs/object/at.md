@@ -1,6 +1,6 @@
 ---
 title: at
-definition: 
+definition: at(object, [paths])
 description: Creates an array of values corresponding to the specified paths of an object.
 ---
 
@@ -9,8 +9,8 @@ description: Creates an array of values corresponding to the specified paths of 
 
 
 ```bash
-{T} object - The object to retrieve the values from.
-{any[]} paths - The property paths to retrieve the values from.
+{Object} object - The object to retrieve the values from.
+{...(string | string[])} paths - The property paths to retrieve the values from.
 ```
 
 
@@ -18,7 +18,7 @@ description: Creates an array of values corresponding to the specified paths of 
 
 
 ```bash
-{any[]} - An array of values corresponding to the specified paths of the object.
+{Array} - An array of values corresponding to the specified paths of the object.
 ```
 
 
@@ -26,5 +26,9 @@ description: Creates an array of values corresponding to the specified paths of 
 
 
 ```ts
-const object = { a: [{ b: { c: 3 } }, 4] };const result = at(object, ['a[0].b.c', 'a[1]']);console.log(result); // [3, 4]
+const object = { a: [{ b: { c: 3 } }, 4] };
+const result = at(object, ['a[0].b.c', 'a[1]']);
+
+console.log(result);
+// => [3, 4]
 ```

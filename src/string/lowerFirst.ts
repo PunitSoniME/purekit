@@ -1,14 +1,18 @@
 /**
- * Returns a new object where the keys and values are swapped.
+ * Returns a new string with first character of string to lower case.
  *
  * @since 1.0.0
  *
- * @param obj - The object to invert
+ * @param {string} [str = ''] - The string to convert.
+ * @returns {string} - Returns a new string with first character of string to lower case.
  *
  * @example
  *
- * invert({ 'a': 1, 'b': 2, 'c': 1 });
- * // => { '1': 'c', '2': 'b' }
+ * lowerFirst('Fred');
+ * // => 'fred'
+ *
+ * lowerFirst('FRED');
+ * // => 'fRED'
  */
 const lowerFirst = (str: string = ''): string =>
 	str.charAt(0).toLowerCase() + str.slice(1);

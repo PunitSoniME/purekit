@@ -1,6 +1,6 @@
 ---
 title: trimStart
-definition: 
+definition: trimStart([str = ''], [characters = ''])
 description: Removes specified characters from the beginning of a string.
 ---
 
@@ -9,8 +9,8 @@ description: Removes specified characters from the beginning of a string.
 
 
 ```bash
-{string} [str=''] - The string to trim.
-{string} [characters=''] - The characters to remove from the beginning of the string.
+{string} [str = ''] - The string to trim.
+{string} [characters = ''] - The characters to remove from the beginning of the string.
 ```
 
 
@@ -18,7 +18,7 @@ description: Removes specified characters from the beginning of a string.
 
 
 ```bash
-
+{string} - The trimmed string.
 ```
 
 
@@ -26,5 +26,9 @@ description: Removes specified characters from the beginning of a string.
 
 
 ```ts
+trimStart('   Hello, World   ');
+// => 'Hello, World   '
 
+trimStart('!!!Hello, World', '!');
+// => 'Hello, World'
 ```

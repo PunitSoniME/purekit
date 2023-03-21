@@ -1,6 +1,6 @@
 ---
 title: pick
-definition: 
+definition: pick(object, [paths])
 description: Creates an object composed of the picked object properties.
 ---
 
@@ -10,7 +10,7 @@ description: Creates an object composed of the picked object properties.
 
 ```bash
 {Object} object - The source object.
-{string|string[]} paths - The property path(s) to pick.
+{string | string[]} paths - The property path(s) to pick.
 ```
 
 
@@ -26,5 +26,10 @@ description: Creates an object composed of the picked object properties.
 
 
 ```ts
-const object = { 'a': 1, 'b': '2', 'c': 3 };pick(object, ['a', 'c']);
+const object = { 'a': 1, 'b': '2', 'c': 3 };
+pick(object, ['a', 'c']);
+// => { 'a': 1, 'c': 3 }
+
+pick(object, 'a', 'c');
+// => { 'a': 1, 'c': 3 }
 ```

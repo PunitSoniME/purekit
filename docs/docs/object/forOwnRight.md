@@ -1,7 +1,7 @@
 ---
 title: forOwnRight
-definition: 
-description: Iterates over own enumerable string keyed properties of an object in reverse order
+definition: forOwnRight(object, [iteratee = identity])
+description: Iterates over own enumerable string keyed properties of an object in reverse order, invoking `iteratee` for each property. The iteratee is invoked with three arguments (value, key, object).
 ---
 
 
@@ -10,7 +10,7 @@ description: Iterates over own enumerable string keyed properties of an object i
 
 ```bash
 {Object} object - The object to iterate over.
-{Function} iteratee - The function invoked per iteration.
+{Function} [iteratee = identity] - The function invoked per iteration.
 ```
 
 
@@ -26,5 +26,9 @@ description: Iterates over own enumerable string keyed properties of an object i
 
 
 ```ts
-const object = { 'a': 1, 'b': 2 };forOwnRight(object, (value, key) => {  console.log(key, value);});
+const object = { 'a': 1, 'b': 2 };
+forOwnRight(object, (value, key) => {
+  console.log(key, value);
+});
+// => Logs 'b 2' then 'a 1'.
 ```

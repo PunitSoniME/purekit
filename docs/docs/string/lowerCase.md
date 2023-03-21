@@ -1,6 +1,6 @@
 ---
 title: lowerCase
-definition: 
+definition: lowerCase([str = ''])
 description: Converts a string to lowercase with spaces between words.
 ---
 
@@ -9,7 +9,7 @@ description: Converts a string to lowercase with spaces between words.
 
 
 ```bash
-{string} [str=''] - The string to convert.
+{string} [str = ''] - The string to convert.
 ```
 
 
@@ -25,5 +25,9 @@ description: Converts a string to lowercase with spaces between words.
 
 
 ```ts
-lowerCase('fooBar123') // 'foo bar 123'lowerCase('FOO-BAR.BAZ') // 'foo bar baz'
+lowerCase('fooBar123');
+// => 'foo bar 123'
+
+lowerCase('FOO-BAR.BAZ');
+// => 'foo bar baz'
 ```

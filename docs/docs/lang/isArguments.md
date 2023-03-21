@@ -1,7 +1,7 @@
 ---
 title: isArguments
 definition: isArguments(value)
-description: Determines whether the given item is an `arguments` object.
+description: Determines whether the given value is an `arguments` object.
 ---
 
 
@@ -9,7 +9,7 @@ description: Determines whether the given item is an `arguments` object.
 
 
 ```bash
-{*} item - The item to check.
+{*} value - The item to check.
 ```
 
 

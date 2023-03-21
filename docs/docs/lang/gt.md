@@ -1,6 +1,6 @@
 ---
 title: gt
-definition: v
+definition: gt(value, other)
 description: Checks if `value` is greater than `other`.
 ---
 

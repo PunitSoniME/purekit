@@ -1,6 +1,6 @@
 ---
 title: toPairsIn
-definition: 
+definition: toPairsIn(object)
 description: Creates an array of key-value pairs for the given object, including inherited properties.
 ---
 
@@ -9,7 +9,7 @@ description: Creates an array of key-value pairs for the given object, including
 
 
 ```bash
-{object} object - The object to convert to pairs.
+{Object} object - The object to convert to pairs.
 ```
 
 
@@ -17,7 +17,7 @@ description: Creates an array of key-value pairs for the given object, including
 
 
 ```bash
-
+{Array} - An array of key-value pairs for the given object.
 ```
 
 
@@ -25,5 +25,12 @@ description: Creates an array of key-value pairs for the given object, including
 
 
 ```ts
-const proto = { a: 1 };const obj = Object.create(proto, {  b: { value: 2 }});const result = toPairsIn(obj);console.log(result); // [['b', 2], ['a', 1]]
+const proto = { a: 1 };
+const obj = Object.create(proto, {
+  b: { value: 2 }
+});
+
+const result = toPairsIn(obj);
+console.log(result);
+// => [['b', 2], ['a', 1]]
 ```

@@ -1,6 +1,6 @@
 ---
 title: forIn
-definition: 
+definition: forIn(object, [iteratee = identity])
 description: Iterates over own and inherited enumerable string keyed properties of an object and invokes iteratee for each property.
 ---
 
@@ -10,7 +10,7 @@ description: Iterates over own and inherited enumerable string keyed properties 
 
 ```bash
 {Object} object - The object to iterate over.
-{Function} iteratee - The function to invoke per iteration.
+{Function} [iteratee = identity] - The function to invoke per iteration.
 ```
 
 
@@ -26,5 +26,16 @@ description: Iterates over own and inherited enumerable string keyed properties 
 
 
 ```ts
-const object = { 'a': 1, 'b': 2 };forIn(object, function(value, key) {  console.log(key);});
+const object = { 'a': 1, 'b': 2 };
+forIn(object, function(value, key) {
+  console.log(key);
+});
+// => 'a' (iteration order is not guaranteed)
+// => 'b' (iteration order is not guaranteed)
+
+forIn(object, function(value, key) {
+  object[key] = value * 2;
+});
+console.log(object);
+// => { 'a': 2, 'b': 4 }
 ```

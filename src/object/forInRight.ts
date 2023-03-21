@@ -1,4 +1,5 @@
 import reverseCollection from '../helpers/reverseCollection';
+import identity from '../util/identity';
 import assignIn from './assignIn';
 
 /**
@@ -10,7 +11,7 @@ import assignIn from './assignIn';
  *
  * @template T
  * @param {T} object - The object to iterate over.
- * @param {Function} iteratee - The function invoked per iteration.
+ * @param {Function} [iteratee = identity] - The function invoked per iteration.
  * @returns {T} - Returns the object.
  *
  * @example
@@ -22,7 +23,7 @@ import assignIn from './assignIn';
  * });
  * // => Logs 'b' then 'a'.
  */
-const forInRight = <T>(object: T, iteratee: any): T => {
+const forInRight = <T>(object: T, iteratee: Function = identity): T => {
 	const collection = assignIn({}, object);
 	const reverseData = reverseCollection(collection);
 

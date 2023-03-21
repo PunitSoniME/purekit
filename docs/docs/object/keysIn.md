@@ -1,6 +1,6 @@
 ---
 title: keysIn
-definition: 
+definition: keysIn(object)
 description: This method returns all the own and inherited enumerable property names of an object.
 ---
 
@@ -9,7 +9,7 @@ description: This method returns all the own and inherited enumerable property n
 
 
 ```bash
-{object} object - The object to query.
+{Object} object - The object to query.
 ```
 
 
@@ -25,5 +25,6 @@ description: This method returns all the own and inherited enumerable property n
 
 
 ```ts
-keysIn({a: 1, b: 2})  // => ['a', 'b']
+keysIn({a: 1, b: 2});
+// => ['a', 'b']
 ```

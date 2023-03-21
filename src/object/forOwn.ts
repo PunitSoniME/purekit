@@ -1,4 +1,5 @@
 import applyArrayFn from '../helpers/applyArrayFn';
+import identity from '../util/identity';
 
 /**
  * Iterates over an object's own enumerable string keyed properties, calling `iteratee` for each property.
@@ -8,7 +9,7 @@ import applyArrayFn from '../helpers/applyArrayFn';
  * @since 1.0.0
  *
  * @param {Object} object - The object to iterate over.
- * @param {Function} iteratee - The function invoked per iteration.
+ * @param {Function} [iteratee = identity] - The function invoked per iteration.
  * @returns {Object} - Returns the object.
  *
  * @example
@@ -21,7 +22,7 @@ import applyArrayFn from '../helpers/applyArrayFn';
  * // => Logs 'a' then 'b'.
  */
 
-const forOwn = (object: Object, iteratee: any): Object => {
+const forOwn = (object: Object, iteratee: Function = identity): Object => {
 	return applyArrayFn({
 		collection: object,
 		fnName: 'forEach',

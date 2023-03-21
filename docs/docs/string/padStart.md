@@ -1,6 +1,6 @@
 ---
 title: padStart
-definition: 
+definition: padStart([str = ''], [length = 0], [chars = ' '])
 description: Pads the start of a string with the given characters until it reaches the specified length.
 ---
 
@@ -9,8 +9,9 @@ description: Pads the start of a string with the given characters until it reach
 
 
 ```bash
-{string} [str=''] - The input string to pad.
-{number} [length=0] - The length to pad the string to.
+{string} [str = ''] - The input string to pad.
+{number} [length = 0] - The length to pad the string to.
+{string} [chars = ' '] - The characters to use for padding.
 ```
 
 
@@ -26,5 +27,9 @@ description: Pads the start of a string with the given characters until it reach
 
 
 ```ts
-padStart('hello', 10); // returns '     hello'padStart('world', 10, '*'); // returns '*****world'
+padStart('hello', 10);
+// => '     hello'
+
+padStart('world', 10, '*');
+// => '*****world'
 ```

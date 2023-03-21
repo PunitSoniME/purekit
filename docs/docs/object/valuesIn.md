@@ -1,6 +1,6 @@
 ---
 title: valuesIn
-definition: 
+definition: valuesIn(object)
 description: Returns an array of the values of all enumerable properties, including inherited properties, of an object.
 ---
 
@@ -17,7 +17,7 @@ description: Returns an array of the values of all enumerable properties, includ
 
 
 ```bash
-{any[]} - An array of the object's values, including inherited properties.
+{Array} - An array of the object's values, including inherited properties.
 ```
 
 
@@ -25,5 +25,9 @@ description: Returns an array of the values of all enumerable properties, includ
 
 
 ```ts
-const obj = { a: 1 };const child = Object.create(obj);child.b = 2;valuesIn(child); // [1, 2]
+const obj = { a: 1 };
+const child = Object.create(obj);
+child.b = 2;
+valuesIn(child);
+// => [1, 2]
 ```

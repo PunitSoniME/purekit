@@ -1,6 +1,6 @@
 ---
 title: pad
-definition: 
+definition: pad([str = ''], [length=0], [chars = ' '])
 description: Pads a string with a specified character to a specified length.
 ---
 
@@ -9,8 +9,9 @@ description: Pads a string with a specified character to a specified length.
 
 
 ```bash
-{string} str - The string to pad.
+{string} [str = ''] - The string to pad.
 {number} length - The length to pad the string to.
+{string} [chars = ' '] - The character to use for padding (default is space).
 ```
 
 
@@ -26,5 +27,9 @@ description: Pads a string with a specified character to a specified length.
 
 
 ```ts
-pad('hello', 10); // '  hello   'pad('hello', 10, '-'); // '--hello---'
+pad('hello', 10);
+// => '  hello   '
+
+pad('hello', 10, '-');
+// => '--hello---'
 ```

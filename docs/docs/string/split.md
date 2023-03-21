@@ -1,6 +1,6 @@
 ---
 title: split
-definition: 
+definition: split([str = ''], separator, [limit])
 description: Splits a string into an array of substrings based on a specified separator.
 ---
 
@@ -9,9 +9,9 @@ description: Splits a string into an array of substrings based on a specified se
 
 
 ```bash
-{string} [str=''] - The string to be split.
+{string} [str = ''] - The string to be split.
 {string | RegExp} separator - Specifies the character(s) to use for separating the string.
-{number} limit - A non-negative integer specifying the number of splits.
+{number} [limit] - A non-negative integer specifying the number of splits.
 ```
 
 
@@ -27,5 +27,6 @@ description: Splits a string into an array of substrings based on a specified se
 
 
 ```ts
-split('a,b,c,d', ',', 2); // returns ['a', 'b']
+split('a,b,c,d', ',', 2);
+// => ['a', 'b']
 ```

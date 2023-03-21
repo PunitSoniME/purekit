@@ -1,6 +1,6 @@
 ---
 title: parseInt
-definition: 
+definition: parseInt(str, [radix = 10])
 description: Parses a string and returns an integer of the specified radix.
 ---
 
@@ -10,7 +10,7 @@ description: Parses a string and returns an integer of the specified radix.
 
 ```bash
 {string} str - The string to parse.
-{number} [radix=10] - The radix used to parse the string. Must be between 2 and 36.
+{number} [radix = 10] - The radix used to parse the string. Must be between 2 and 36.
 ```
 
 
@@ -26,5 +26,9 @@ description: Parses a string and returns an integer of the specified radix.
 
 
 ```ts
-parseInt('42'); // 42parseInt('101010', 2); // 42
+parseInt('42');
+// => 42
+
+parseInt('101010', 2);
+// => 42
 ```

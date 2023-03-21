@@ -1,6 +1,6 @@
 ---
 title: escapeRegExp
-definition: 
+definition: escapeRegExp([str=''])
 description: Escapes any special characters in a string to be used as a regular expression.
 ---
 
@@ -25,5 +25,7 @@ description: Escapes any special characters in a string to be used as a regular 
 
 
 ```ts
-const str = 'Hello, world. (can you escape me?)';const escapedStr = escapeRegExp(str); // 'Hello, world\\. \\(can you escape me\\?\\)'
+const str = 'Hello, world. (can you escape me?)';
+const escapedStr = escapeRegExp(str);
+// => 'Hello, world\\. \\(can you escape me\\?\\)'
 ```

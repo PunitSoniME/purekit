@@ -1,6 +1,6 @@
 ---
 title: upperFirst
-definition: 
+definition: upperFirst([str = ''])
 description: Converts the first character of a string to uppercase.
 ---
 
@@ -9,7 +9,7 @@ description: Converts the first character of a string to uppercase.
 
 
 ```bash
-{string} [str=''] - The string to convert.
+{string} [str = ''] - The string to convert.
 ```
 
 
@@ -17,7 +17,7 @@ description: Converts the first character of a string to uppercase.
 
 
 ```bash
-
+{string} - The string with the first character converted to uppercase.
 ```
 
 
@@ -25,5 +25,9 @@ description: Converts the first character of a string to uppercase.
 
 
 ```ts
+upperFirst('hello, World!');
+// => 'Hello, World!'
 
+upperFirst('the quick brown fox jumps over the lazy dog.');
+// => 'The quick brown fox jumps over the lazy dog.'
 ```

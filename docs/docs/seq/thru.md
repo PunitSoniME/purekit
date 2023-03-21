@@ -1,6 +1,6 @@
 ---
 title: thru
-definition: 
+definition: thru(value, fn)
 description: Passes the given value to a function and returns the result.
 ---
 
@@ -26,5 +26,7 @@ description: Passes the given value to a function and returns the result.
 
 
 ```ts
-const result = thru([1, 2, 3], (arr) => arr.map((x) => x * 2)).filter((x) => x > 3);console.log(result); // [4, 6]
+const result = thru([1, 2, 3], (arr) => arr.map((x) => x * 2)).filter((x) => x > 3);
+console.log(result);
+// => [4, 6]
 ```

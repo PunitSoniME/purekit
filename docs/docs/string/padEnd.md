@@ -1,6 +1,6 @@
 ---
 title: padEnd
-definition: 
+definition: padEnd([str = ''], [length = 0], [chars = ' '])
 description: Pads a string with additional characters at the end to reach a specified length.
 ---
 
@@ -9,9 +9,9 @@ description: Pads a string with additional characters at the end to reach a spec
 
 
 ```bash
-{string} str - The string to pad.
-{number} length - The target length of the string.
-{string} chars - The characters to use for padding. Defaults to a space.
+{string} [str = ''] - The string to pad.
+{number} [length = 0] - The target length of the string.
+{string} [chars = ' '] - The characters to use for padding. Defaults to a space.
 ```
 
 
@@ -27,5 +27,9 @@ description: Pads a string with additional characters at the end to reach a spec
 
 
 ```ts
-padEnd('hello', 8); // 'hello   'padEnd('hello', 8, '-'); // 'hello---'
+padEnd('hello', 8);
+// => 'hello   '
+
+padEnd('hello', 8, '-');
+// => 'hello---'
 ```
