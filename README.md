@@ -1,4 +1,4 @@
-# Alternate of Lodash Library
+# The Simple and Efficient Utility Library
 
 ## https://purekit.vercel.app
 
@@ -6,8 +6,6 @@
 
 
 [![CI](https://github.com/PunitSoniME/purekit/actions/workflows/main.yml/badge.svg)](https://github.com/PunitSoniME/purekit/actions/workflows/main.yml)
-[![Rate this package](https://badges.openbase.com/js/rating/purekit.svg?token=LsZ/SAF9sVVDLFYX3t2XIX5W6JEuM2OZBYIpJvm25wg=)](https://openbase.com/js/purekit?utm_source=embedded&amp;utm_medium=badge&amp;utm_campaign=rate-badge)
-[![Join the chat at https://gitter.im/purekit/developers](https://badges.gitter.im/purekit/developers.svg)](https://gitter.im/purekit/developers?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ![tree shaking](https://badgen.net/bundlephobia/tree-shaking/purekit)
 ![nodejs](https://badgen.net/npm/node/purekit)
@@ -15,7 +13,6 @@
 [![npm version](https://badge.fury.io/js/purekit.svg)][npm_url]
 [![license](https://img.shields.io/npm/l/purekit.svg)][npm_url]
 ![Types Included](https://badgen.net/npm/types/purekit)
-
 
 ![dependents](https://badgen.net/npm/dependents/purekit)
 [![weekly downloads](https://badgen.net/npm/dw/purekit)][npm_url]

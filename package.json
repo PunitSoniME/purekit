@@ -1,7 +1,7 @@
 {
   "name": "purekit",
   "version": "1.0.0",
-  "description": "This library can be used as alternate of lodash",
+  "description": "The Simple and Efficient Utility Library",
   "author": "Punit Soni <punit.soni33@gmail.com> (https://punit-soni.web.app)",
   "license": "MIT",
   "scripts": {

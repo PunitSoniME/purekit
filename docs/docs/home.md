@@ -1,13 +1,11 @@
 ---
 title: 'purekit'
-description: 'Alternate of lodash'
+description: 'The Simple and Efficient Utility Library'
 ---
 
-# <div class="px-2 pt-2">Alternate of Lodash Library</div>
+# <div class="px-2 pt-2">The Simple and Efficient Utility Library</div>
 
 <!-- [![CI](https://github.com/PunitSoniME/purekit/actions/workflows/main.yml/badge.svg)](https://github.com/PunitSoniME/purekit/actions/workflows/main.yml)
-[![Rate this package](https://badges.openbase.com/js/rating/purekit.svg?token=LsZ/SAF9sVVDLFYX3t2XIX5W6JEuM2OZBYIpJvm25wg=)](https://openbase.com/js/purekit?utm_source=embedded&amp;utm_medium=badge&amp;utm_campaign=rate-badge)
-[![Join the chat at https://gitter.im/purekit/developers](https://badges.gitter.im/purekit/developers.svg)](https://gitter.im/purekit/developers?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ![tree shaking](https://badgen.net/bundlephobia/tree-shaking/purekit)
 ![nodejs](https://badgen.net/npm/node/purekit)
