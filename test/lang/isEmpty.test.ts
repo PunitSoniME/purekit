@@ -1,5 +1,5 @@
 import _isEmpty from 'lodash/isEmpty';
-import { isEmpty } from '../../src/lang';
+import { isEmpty } from '../../';
 
 describe('Lang', () => {
 	describe('isEmpty', () => {

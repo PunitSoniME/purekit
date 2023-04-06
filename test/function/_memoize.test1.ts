@@ -5,7 +5,7 @@
 
 // var object = { 'a': 1, 'b': 2 };
 // var other = { 'c': 3, 'd': 4 };
-// var altLodashValues = memoize(values);
+// var values = memoize(values);
 
 // var _object = { 'a': 1, 'b': 2 };
 // var _other = { 'c': 3, 'd': 4 };
@@ -13,24 +13,24 @@
 
 // describe('Function', () => {
 // 	describe('memoize', () => {
-// 		it('memoize - altLodashValues(object)', () => {
-// 			expect(altLodashValues(object)).toEqual(lodashValues(_object));
+// 		it('memoize - values(object)', () => {
+// 			expect(values(object)).toEqual(lodashValues(_object));
 // 		});
 
-// 		it('memoize - altLodashValues(other)', () => {
-// 			expect(altLodashValues(other)).toEqual(lodashValues(_other));
+// 		it('memoize - values(other)', () => {
+// 			expect(values(other)).toEqual(lodashValues(_other));
 // 		});
 
 // 		it('memoize - modify object.a', () => {
 // 			object.a = 2;
 // 			_object.a = 2;
-// 			expect(altLodashValues(object)).toEqual(lodashValues(_object));
+// 			expect(values(object)).toEqual(lodashValues(_object));
 // 		});
 
 // 		// it('memoize - modify object.a', () => {
 // 		// 	object.a = 2;
 // 		// 	_object.a = 2;
-// 		// 	expect(altLodashValues(object)).toEqual(lodashValues(_object));
+// 		// 	expect(values(object)).toEqual(lodashValues(_object));
 // 		// });
 // 	});
 // });
