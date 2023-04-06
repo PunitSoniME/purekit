@@ -1,6 +1,6 @@
 {
-  "name": "alt-lodash",
-  "version": "1.0.5",
+  "name": "purekit",
+  "version": "1.0.0",
   "description": "This library can be used as alternate of lodash",
   "author": "Punit Soni <punit.soni33@gmail.com> (https://punit-soni.web.app)",
   "license": "MIT",
@@ -31,10 +31,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/PunitSoniME/alt-lodash.git"
+    "url": "https://github.com/PunitSoniME/purekit.git"
   },
   "bugs": {
-    "url": "https://github.com/PunitSoniME/alt-lodash/issues"
+    "url": "https://github.com/PunitSoniME/purekit/issues"
   },
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -87,11 +87,11 @@
   },
   "size-limit": [
     {
-      "path": "dist/alt-lodash.cjs.production.min.js",
+      "path": "dist/purekit.cjs.production.min.js",
       "limit": "15 KB"
     },
     {
-      "path": "dist/alt-lodash.esm.js",
+      "path": "dist/purekit.esm.js",
       "limit": "15 KB"
     }
   ],

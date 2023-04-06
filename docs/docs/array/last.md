@@ -19,7 +19,7 @@ description: Returns the last element of an array.
 #### Example
 
 ```ts
-import { last } from 'alt-lodash';
+import { last } from 'purekit';
 
 last([1, 2, 3])
 // => 3

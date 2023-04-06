@@ -12,7 +12,7 @@ export default function Layout({ children, meta: pageMeta }) {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
 
   const meta = {
-    title: 'alt-lodash',
+    title: 'purekit',
     description:
       'Example using Prism / Markdown with Next.js including switching syntax highlighting themes.',
     cardImage:
@@ -144,11 +144,11 @@ export default function Layout({ children, meta: pageMeta }) {
 
           <main className="mx-auto">
             <div className="flex justify-between border-b border-gray-200 bg-slate-50 pb-6 px-4">
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 pt-4">alt-lodash</h1>
+              <h1 className="text-4xl font-bold tracking-tight text-gray-900 pt-4">purekit</h1>
 
               <div className="flex items-center justify-center pt-6">
                 <button type="button" className="-m-2 ml-5 p-2 text-gray-700 hover:text-gray-900 sm:ml-7">
-                  <a href="https://github.com/punitsonime/alt-lodash" target="_blank" className='font-bold hover:underline'>Github</a>
+                  <a href="https://github.com/punitsonime/purekit" target="_blank" className='font-bold hover:underline'>Github</a>
                   {/* <Squares2X2Icon className="h-5 w-5" aria-hidden="true" /> */}
                 </button>
                 <button

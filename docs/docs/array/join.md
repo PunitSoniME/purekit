@@ -20,7 +20,7 @@ description: Joins all elements of an array into a string separated by the speci
 #### Example
 
 ```ts
-import { join } from 'alt-lodash';
+import { join } from 'purekit';
 
 join([1, 2, 3], '-');
 // => '1-2-3'

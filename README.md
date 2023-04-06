@@ -1,32 +1,32 @@
 # Alternate of Lodash Library
 
-## https://alt-lodash.vercel.app
+## https://purekit.vercel.app
 
 <br />
 
 
-[![CI](https://github.com/PunitSoniME/alt-lodash/actions/workflows/main.yml/badge.svg)](https://github.com/PunitSoniME/alt-lodash/actions/workflows/main.yml)
-[![Rate this package](https://badges.openbase.com/js/rating/alt-lodash.svg?token=LsZ/SAF9sVVDLFYX3t2XIX5W6JEuM2OZBYIpJvm25wg=)](https://openbase.com/js/alt-lodash?utm_source=embedded&amp;utm_medium=badge&amp;utm_campaign=rate-badge)
-[![Join the chat at https://gitter.im/alt-lodash/developers](https://badges.gitter.im/alt-lodash/developers.svg)](https://gitter.im/alt-lodash/developers?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![CI](https://github.com/PunitSoniME/purekit/actions/workflows/main.yml/badge.svg)](https://github.com/PunitSoniME/purekit/actions/workflows/main.yml)
+[![Rate this package](https://badges.openbase.com/js/rating/purekit.svg?token=LsZ/SAF9sVVDLFYX3t2XIX5W6JEuM2OZBYIpJvm25wg=)](https://openbase.com/js/purekit?utm_source=embedded&amp;utm_medium=badge&amp;utm_campaign=rate-badge)
+[![Join the chat at https://gitter.im/purekit/developers](https://badges.gitter.im/purekit/developers.svg)](https://gitter.im/purekit/developers?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-![tree shaking](https://badgen.net/bundlephobia/tree-shaking/alt-lodash)
-![nodejs](https://badgen.net/npm/node/alt-lodash)
+![tree shaking](https://badgen.net/bundlephobia/tree-shaking/purekit)
+![nodejs](https://badgen.net/npm/node/purekit)
 
-[![npm version](https://badge.fury.io/js/alt-lodash.svg)][npm_url]
-[![license](https://img.shields.io/npm/l/alt-lodash.svg)][npm_url]
-![Types Included](https://badgen.net/npm/types/alt-lodash)
+[![npm version](https://badge.fury.io/js/purekit.svg)][npm_url]
+[![license](https://img.shields.io/npm/l/purekit.svg)][npm_url]
+![Types Included](https://badgen.net/npm/types/purekit)
 
 
-![dependents](https://badgen.net/npm/dependents/alt-lodash)
-[![weekly downloads](https://badgen.net/npm/dw/alt-lodash)][npm_url]
-[![weekly downloads](https://badgen.net/npm/dm/alt-lodash)][npm_url]
-[![downloads](https://img.shields.io/npm/dt/alt-lodash.svg)][npm_url]
-![jsDelivr](https://badgen.net/jsdelivr/hits/npm/alt-lodash)
+![dependents](https://badgen.net/npm/dependents/purekit)
+[![weekly downloads](https://badgen.net/npm/dw/purekit)][npm_url]
+[![weekly downloads](https://badgen.net/npm/dm/purekit)][npm_url]
+[![downloads](https://img.shields.io/npm/dt/purekit.svg)][npm_url]
+![jsDelivr](https://badgen.net/jsdelivr/hits/npm/purekit)
 
-![minified](https://badgen.net/bundlephobia/min/alt-lodash)
-![gzip](https://badgen.net/bundlephobia/minzip/alt-lodash)
+![minified](https://badgen.net/bundlephobia/min/purekit)
+![gzip](https://badgen.net/bundlephobia/minzip/purekit)
 
-[npm_url]: https://www.npmjs.org/package/alt-lodash
+[npm_url]: https://www.npmjs.org/package/purekit
 
 
 # Installation
@@ -34,13 +34,13 @@
 With Yarn:
 
 ```bash
-yarn add alt-lodash
+yarn add purekit
 ```
 
 With npm:
 
 ```bash
-npm install alt-lodash
+npm install purekit
 ```
 
 # Usage
@@ -48,396 +48,396 @@ npm install alt-lodash
 ```ts
 //  import all available the methods
 
-import _ from 'alt-lodash';     //  ESM ( ECMA Script ) module
+import _ from 'purekit';     //  ESM ( ECMA Script ) module
 
 or
 
-const _ = require('alt-lodash');    //  cjs ( common js ) module
+const _ = require('purekit');    //  cjs ( common js ) module
 ```
 
 
 ```ts
 //  import specific methods instead of all
 
-import { concat, chunk, forEach, filter } from 'alt-lodash';     //  ESM ( ECMA Script ) module
+import { concat, chunk, forEach, filter } from 'purekit';     //  ESM ( ECMA Script ) module
 
 or
 
-const { concat, chunk, forEach, filter } = require('alt-lodash');    //  cjs ( common js ) module
+const { concat, chunk, forEach, filter } = require('purekit');    //  cjs ( common js ) module
 ```
 
 
 # Array
 
-- [chunk ✔️](https://alt-lodash.vercel.app/home#chunk)
+- [chunk ✔️](https://purekit.vercel.app/home#chunk)
 
-- [compact ✔️](https://alt-lodash.vercel.app/home#compact)
-- [concat ✔️](https://alt-lodash.vercel.app/home#concat)
-- [difference ✔️](https://alt-lodash.vercel.app/home#difference)
-- [differenceBy ✔️](https://alt-lodash.vercel.app/home#differenceBy)
-- [differenceWith ✔️](https://alt-lodash.vercel.app/home#differenceWith)
-- [drop ✔️](https://alt-lodash.vercel.app/home#drop)
-- [dropRight ✔️](https://alt-lodash.vercel.app/home#dropRight)
-- [dropRightWhile ✔️](https://alt-lodash.vercel.app/home#dropRightWhile)
-- [dropWhile ✔️](https://alt-lodash.vercel.app/home#dropWhile)
-- [fill ✔️](https://alt-lodash.vercel.app/home#fill)
-- [findIndex ✔️](https://alt-lodash.vercel.app/home#findIndex)
-- [findLastIndex ✔️](https://alt-lodash.vercel.app/home#findLastIndex)
-- [first -> head ✔️](https://alt-lodash.vercel.app/home#first)
-- [flatten ✔️](https://alt-lodash.vercel.app/home#flatten)
-- [flattenDeep ✔️](https://alt-lodash.vercel.app/home#flattenDeep)
-- [flattenDepth ✔️](https://alt-lodash.vercel.app/home#flattenDepth)
-- [fromPairs ✔️](https://alt-lodash.vercel.app/home#fromPairs)
-- [head ✔️](https://alt-lodash.vercel.app/home#head)
-- [indexOf ✔️](https://alt-lodash.vercel.app/home#indexOf)
-- [initial ✔️](https://alt-lodash.vercel.app/home#initial)
-- [intersection ✔️](https://alt-lodash.vercel.app/home#intersection)
-- [intersectionBy ✔️](https://alt-lodash.vercel.app/home#intersectionBy)
-- [intersectionWith ✔️](https://alt-lodash.vercel.app/home#intersectionWith)
-- [join ✔️](https://alt-lodash.vercel.app/home#join)
-- [last ✔️](https://alt-lodash.vercel.app/home#last)
-- [lastIndexOf ✔️](https://alt-lodash.vercel.app/home#lastIndexOf)
-- [nth ✔️](https://alt-lodash.vercel.app/home#nth)
-- [pull ✔️](https://alt-lodash.vercel.app/home#pull)
-- [pullAll ✔️](https://alt-lodash.vercel.app/home#pullAll)
-- [pullAllBy ✔️](https://alt-lodash.vercel.app/home#pullAllBy)
-- [pullAllWith ✔️](https://alt-lodash.vercel.app/home#pullAllWith)
-- [pullAt ✔️](https://alt-lodash.vercel.app/home#pullAt)
-- [remove ✔️](https://alt-lodash.vercel.app/home#remove)
-- [reverse ✔️](https://alt-lodash.vercel.app/home#reverse)
-- [slice ✔️](https://alt-lodash.vercel.app/home#slice)
-- [sortedIndex ✔️](https://alt-lodash.vercel.app/home#sortedIndex)
-- [sortedIndexBy ✔️](https://alt-lodash.vercel.app/home#sortedIndexBy)
-- [sortedIndexOf ✔️](https://alt-lodash.vercel.app/home#sortedIndexOf)
-- [sortedLastIndex ✔️](https://alt-lodash.vercel.app/home#sortedLastIndex)
-- [sortedLastIndexBy ✔️](https://alt-lodash.vercel.app/home#sortedLastIndexBy)
-- [sortedLastIndexOf ✔️](https://alt-lodash.vercel.app/home#sortedLastIndexOf)
-- [sortedUniq ✔️](https://alt-lodash.vercel.app/home#sortedUniq)
-- [sortedUniqBy ✔️](https://alt-lodash.vercel.app/home#sortedUniqBy)
-- [tail ✔️](https://alt-lodash.vercel.app/home#tail)
-- [take ✔️](https://alt-lodash.vercel.app/home#take)
-- [takeRight ✔️](https://alt-lodash.vercel.app/home#takeRight)
-- [takeRightWhile ✔️](https://alt-lodash.vercel.app/home#takeRightWhile)
-- [takeWhile ✔️](https://alt-lodash.vercel.app/home#takeWhile)
-- [union ✔️](https://alt-lodash.vercel.app/home#union)
-- [unionBy ✔️](https://alt-lodash.vercel.app/home#unionBy)
-- [unionWith ✔️](https://alt-lodash.vercel.app/home#unionWith)
-- [uniq ✔️](https://alt-lodash.vercel.app/home#uniq)
-- [uniqBy ✔️](https://alt-lodash.vercel.app/home#uniqBy)
-- [uniqWith ✔️](https://alt-lodash.vercel.app/home#uniqWith)
-- [unshift ✔️ **New**](https://alt-lodash.vercel.app/home#unshift)
-- [unzip ✔️](https://alt-lodash.vercel.app/home#unzip)
-- [unzipWith ✔️](https://alt-lodash.vercel.app/home#unzipWith)
-- [without ✔️](https://alt-lodash.vercel.app/home#without)
-- [xor ✔️](https://alt-lodash.vercel.app/home#xor)
-- [xorBy ✔️](https://alt-lodash.vercel.app/home#xorBy)
-- [xorWith ✔️](https://alt-lodash.vercel.app/home#xorWith)
-- [zip ✔️](https://alt-lodash.vercel.app/home#zip)
-- [zipObject ✔️](https://alt-lodash.vercel.app/home#zipObject)
-- zipObjectDeep ( 🔜 - Work in progress - PRs most welcome ) [Issue - #13](https://github.com/PunitSoniME/alt-lodash/issues/13)
-- [zipWith ✔️](https://alt-lodash.vercel.app/home#zipWith)
+- [compact ✔️](https://purekit.vercel.app/home#compact)
+- [concat ✔️](https://purekit.vercel.app/home#concat)
+- [difference ✔️](https://purekit.vercel.app/home#difference)
+- [differenceBy ✔️](https://purekit.vercel.app/home#differenceBy)
+- [differenceWith ✔️](https://purekit.vercel.app/home#differenceWith)
+- [drop ✔️](https://purekit.vercel.app/home#drop)
+- [dropRight ✔️](https://purekit.vercel.app/home#dropRight)
+- [dropRightWhile ✔️](https://purekit.vercel.app/home#dropRightWhile)
+- [dropWhile ✔️](https://purekit.vercel.app/home#dropWhile)
+- [fill ✔️](https://purekit.vercel.app/home#fill)
+- [findIndex ✔️](https://purekit.vercel.app/home#findIndex)
+- [findLastIndex ✔️](https://purekit.vercel.app/home#findLastIndex)
+- [first -> head ✔️](https://purekit.vercel.app/home#first)
+- [flatten ✔️](https://purekit.vercel.app/home#flatten)
+- [flattenDeep ✔️](https://purekit.vercel.app/home#flattenDeep)
+- [flattenDepth ✔️](https://purekit.vercel.app/home#flattenDepth)
+- [fromPairs ✔️](https://purekit.vercel.app/home#fromPairs)
+- [head ✔️](https://purekit.vercel.app/home#head)
+- [indexOf ✔️](https://purekit.vercel.app/home#indexOf)
+- [initial ✔️](https://purekit.vercel.app/home#initial)
+- [intersection ✔️](https://purekit.vercel.app/home#intersection)
+- [intersectionBy ✔️](https://purekit.vercel.app/home#intersectionBy)
+- [intersectionWith ✔️](https://purekit.vercel.app/home#intersectionWith)
+- [join ✔️](https://purekit.vercel.app/home#join)
+- [last ✔️](https://purekit.vercel.app/home#last)
+- [lastIndexOf ✔️](https://purekit.vercel.app/home#lastIndexOf)
+- [nth ✔️](https://purekit.vercel.app/home#nth)
+- [pull ✔️](https://purekit.vercel.app/home#pull)
+- [pullAll ✔️](https://purekit.vercel.app/home#pullAll)
+- [pullAllBy ✔️](https://purekit.vercel.app/home#pullAllBy)
+- [pullAllWith ✔️](https://purekit.vercel.app/home#pullAllWith)
+- [pullAt ✔️](https://purekit.vercel.app/home#pullAt)
+- [remove ✔️](https://purekit.vercel.app/home#remove)
+- [reverse ✔️](https://purekit.vercel.app/home#reverse)
+- [slice ✔️](https://purekit.vercel.app/home#slice)
+- [sortedIndex ✔️](https://purekit.vercel.app/home#sortedIndex)
+- [sortedIndexBy ✔️](https://purekit.vercel.app/home#sortedIndexBy)
+- [sortedIndexOf ✔️](https://purekit.vercel.app/home#sortedIndexOf)
+- [sortedLastIndex ✔️](https://purekit.vercel.app/home#sortedLastIndex)
+- [sortedLastIndexBy ✔️](https://purekit.vercel.app/home#sortedLastIndexBy)
+- [sortedLastIndexOf ✔️](https://purekit.vercel.app/home#sortedLastIndexOf)
+- [sortedUniq ✔️](https://purekit.vercel.app/home#sortedUniq)
+- [sortedUniqBy ✔️](https://purekit.vercel.app/home#sortedUniqBy)
+- [tail ✔️](https://purekit.vercel.app/home#tail)
+- [take ✔️](https://purekit.vercel.app/home#take)
+- [takeRight ✔️](https://purekit.vercel.app/home#takeRight)
+- [takeRightWhile ✔️](https://purekit.vercel.app/home#takeRightWhile)
+- [takeWhile ✔️](https://purekit.vercel.app/home#takeWhile)
+- [union ✔️](https://purekit.vercel.app/home#union)
+- [unionBy ✔️](https://purekit.vercel.app/home#unionBy)
+- [unionWith ✔️](https://purekit.vercel.app/home#unionWith)
+- [uniq ✔️](https://purekit.vercel.app/home#uniq)
+- [uniqBy ✔️](https://purekit.vercel.app/home#uniqBy)
+- [uniqWith ✔️](https://purekit.vercel.app/home#uniqWith)
+- [unshift ✔️ **New**](https://purekit.vercel.app/home#unshift)
+- [unzip ✔️](https://purekit.vercel.app/home#unzip)
+- [unzipWith ✔️](https://purekit.vercel.app/home#unzipWith)
+- [without ✔️](https://purekit.vercel.app/home#without)
+- [xor ✔️](https://purekit.vercel.app/home#xor)
+- [xorBy ✔️](https://purekit.vercel.app/home#xorBy)
+- [xorWith ✔️](https://purekit.vercel.app/home#xorWith)
+- [zip ✔️](https://purekit.vercel.app/home#zip)
+- [zipObject ✔️](https://purekit.vercel.app/home#zipObject)
+- zipObjectDeep ( 🔜 - Work in progress - PRs most welcome ) [Issue - #13](https://github.com/PunitSoniME/purekit/issues/13)
+- [zipWith ✔️](https://purekit.vercel.app/home#zipWith)
 
 <br />
 
 # Collection
 
-- [countBy ✔️](https://alt-lodash.vercel.app/home#countBy)
+- [countBy ✔️](https://purekit.vercel.app/home#countBy)
 
-- [each -> forEach ✔️](https://alt-lodash.vercel.app/home#each)
-- [eachRight -> forEachRight ✔️](https://alt-lodash.vercel.app/home#eachRight)
-- [every ✔️](https://alt-lodash.vercel.app/home#every)
-- [filter ✔️](https://alt-lodash.vercel.app/home#filter)
-- [find ✔️](https://alt-lodash.vercel.app/home#find)
-- [findLast ✔️](https://alt-lodash.vercel.app/home#findLast)
-- [flatMap ✔️](https://alt-lodash.vercel.app/home#flatMap)
-- [flatMapDeep ✔️](https://alt-lodash.vercel.app/home#flatMapDeep)
-- [flatMapDepth ✔️](https://alt-lodash.vercel.app/home#flatMapDepth)
-- [forEach ✔️](https://alt-lodash.vercel.app/home#forEach)
-- [forEachRight ✔️](https://alt-lodash.vercel.app/home#forEachRight)
-- [freeze ✔️ **New**](https://alt-lodash.vercel.app/home#freeze)
-- [groupBy ✔️](https://alt-lodash.vercel.app/home#groupBy)
-- [includes ✔️](https://alt-lodash.vercel.app/home#includes)
-- [invokeMap ✔️](https://alt-lodash.vercel.app/home#invokeMap)
-- [keyBy ✔️](https://alt-lodash.vercel.app/home#keyBy)
-- [map ✔️](https://alt-lodash.vercel.app/home#map)
-- [orderBy ✔️](https://alt-lodash.vercel.app/home#orderBy)
-- [partition ✔️](https://alt-lodash.vercel.app/home#partition)
-- [preventExtensions ✔️ **New**](https://alt-lodash.vercel.app/home#preventExtensions)
-- [reduce ✔️](https://alt-lodash.vercel.app/home#reduce)
-- [reduceRight ✔️](https://alt-lodash.vercel.app/home#reduceRight)
-- [reject ✔️](https://alt-lodash.vercel.app/home#reject)
-- [sample ✔️](https://alt-lodash.vercel.app/home#sample)
-- [sampleSize ✔️](https://alt-lodash.vercel.app/home#sampleSize)
-- [seal ✔️ **New**](https://alt-lodash.vercel.app/home#seal)
-- [shuffle ✔️](https://alt-lodash.vercel.app/home#shuffle)
-- [size ✔️](https://alt-lodash.vercel.app/home#size)
-- [some ✔️](https://alt-lodash.vercel.app/home#some)
-- [sortBy ✔️](https://alt-lodash.vercel.app/home#sortBy)
+- [each -> forEach ✔️](https://purekit.vercel.app/home#each)
+- [eachRight -> forEachRight ✔️](https://purekit.vercel.app/home#eachRight)
+- [every ✔️](https://purekit.vercel.app/home#every)
+- [filter ✔️](https://purekit.vercel.app/home#filter)
+- [find ✔️](https://purekit.vercel.app/home#find)
+- [findLast ✔️](https://purekit.vercel.app/home#findLast)
+- [flatMap ✔️](https://purekit.vercel.app/home#flatMap)
+- [flatMapDeep ✔️](https://purekit.vercel.app/home#flatMapDeep)
+- [flatMapDepth ✔️](https://purekit.vercel.app/home#flatMapDepth)
+- [forEach ✔️](https://purekit.vercel.app/home#forEach)
+- [forEachRight ✔️](https://purekit.vercel.app/home#forEachRight)
+- [freeze ✔️ **New**](https://purekit.vercel.app/home#freeze)
+- [groupBy ✔️](https://purekit.vercel.app/home#groupBy)
+- [includes ✔️](https://purekit.vercel.app/home#includes)
+- [invokeMap ✔️](https://purekit.vercel.app/home#invokeMap)
+- [keyBy ✔️](https://purekit.vercel.app/home#keyBy)
+- [map ✔️](https://purekit.vercel.app/home#map)
+- [orderBy ✔️](https://purekit.vercel.app/home#orderBy)
+- [partition ✔️](https://purekit.vercel.app/home#partition)
+- [preventExtensions ✔️ **New**](https://purekit.vercel.app/home#preventExtensions)
+- [reduce ✔️](https://purekit.vercel.app/home#reduce)
+- [reduceRight ✔️](https://purekit.vercel.app/home#reduceRight)
+- [reject ✔️](https://purekit.vercel.app/home#reject)
+- [sample ✔️](https://purekit.vercel.app/home#sample)
+- [sampleSize ✔️](https://purekit.vercel.app/home#sampleSize)
+- [seal ✔️ **New**](https://purekit.vercel.app/home#seal)
+- [shuffle ✔️](https://purekit.vercel.app/home#shuffle)
+- [size ✔️](https://purekit.vercel.app/home#size)
+- [some ✔️](https://purekit.vercel.app/home#some)
+- [sortBy ✔️](https://purekit.vercel.app/home#sortBy)
 
 <br />
 
 # Dates
 
-- [now ✔️](https://alt-lodash.vercel.app/home#now)
+- [now ✔️](https://purekit.vercel.app/home#now)
 
 <br />
 
 # Function
 
-- [after ✔️](https://alt-lodash.vercel.app/home#after]
+- [after ✔️](https://purekit.vercel.app/home#after]
 
-- [ary ✔️](https://alt-lodash.vercel.app/home#ary)
-- [before ✔️](https://alt-lodash.vercel.app/home#before)
-- [bind ✔️](https://alt-lodash.vercel.app/home#bind)
-- [bindKey ✔️](https://alt-lodash.vercel.app/home#bindKey)
-- [curry ✔️](https://alt-lodash.vercel.app/home#curry)
-- [curryRight ✔️](https://alt-lodash.vercel.app/home#curryRight)
-- [debounce ✔️](https://alt-lodash.vercel.app/home#debounce)
-- defer ( 🔜 - Work in progress - PRs most welcome ) [Issue - #17](https://github.com/PunitSoniME/alt-lodash/issues/17)
-- [delay ✔️](https://alt-lodash.vercel.app/home#delay)
-- [flip ✔️](https://alt-lodash.vercel.app/home#flip)
-- memoize ( 🔜 - Work in progress - PRs most welcome ) [Issue - #18](https://github.com/PunitSoniME/alt-lodash/issues/18)
-- [negate ✔️](https://alt-lodash.vercel.app/home#negate)
-- [once ✔️](https://alt-lodash.vercel.app/home#once)
-- [overArgs ✔️](https://alt-lodash.vercel.app/home#overArgs)
-- [partial ✔️](https://alt-lodash.vercel.app/home#partial)
-- [partialRight ✔️](https://alt-lodash.vercel.app/home#partialRight)
-- [rearg ✔️](https://alt-lodash.vercel.app/home#rearg)
-- [rest ✔️](https://alt-lodash.vercel.app/home#rest)
-- [spread ✔️](https://alt-lodash.vercel.app/home#spread)
-- throttle ( 🔜 - Work in progress - PRs most welcome ) [Issue - #19](https://github.com/PunitSoniME/alt-lodash/issues/19)
-- [unary ✔️](https://alt-lodash.vercel.app/home#unary)
-- [wrap ✔️](https://alt-lodash.vercel.app/home#wrap)
+- [ary ✔️](https://purekit.vercel.app/home#ary)
+- [before ✔️](https://purekit.vercel.app/home#before)
+- [bind ✔️](https://purekit.vercel.app/home#bind)
+- [bindKey ✔️](https://purekit.vercel.app/home#bindKey)
+- [curry ✔️](https://purekit.vercel.app/home#curry)
+- [curryRight ✔️](https://purekit.vercel.app/home#curryRight)
+- [debounce ✔️](https://purekit.vercel.app/home#debounce)
+- defer ( 🔜 - Work in progress - PRs most welcome ) [Issue - #17](https://github.com/PunitSoniME/purekit/issues/17)
+- [delay ✔️](https://purekit.vercel.app/home#delay)
+- [flip ✔️](https://purekit.vercel.app/home#flip)
+- memoize ( 🔜 - Work in progress - PRs most welcome ) [Issue - #18](https://github.com/PunitSoniME/purekit/issues/18)
+- [negate ✔️](https://purekit.vercel.app/home#negate)
+- [once ✔️](https://purekit.vercel.app/home#once)
+- [overArgs ✔️](https://purekit.vercel.app/home#overArgs)
+- [partial ✔️](https://purekit.vercel.app/home#partial)
+- [partialRight ✔️](https://purekit.vercel.app/home#partialRight)
+- [rearg ✔️](https://purekit.vercel.app/home#rearg)
+- [rest ✔️](https://purekit.vercel.app/home#rest)
+- [spread ✔️](https://purekit.vercel.app/home#spread)
+- throttle ( 🔜 - Work in progress - PRs most welcome ) [Issue - #19](https://github.com/PunitSoniME/purekit/issues/19)
+- [unary ✔️](https://purekit.vercel.app/home#unary)
+- [wrap ✔️](https://purekit.vercel.app/home#wrap)
 
 <br />
 
 # Lang
 
-- [castArray ✔️](https://alt-lodash.vercel.app/home#castArray)
+- [castArray ✔️](https://purekit.vercel.app/home#castArray)
 
-- [clone ✔️](https://alt-lodash.vercel.app/home#clone)
-- [cloneDeep ✔️](https://alt-lodash.vercel.app/home#cloneDeep)
-- cloneDeepWith ( 🔜 - Work in progress - PRs most welcome ) [Issue - #20](https://github.com/PunitSoniME/alt-lodash/issues/20)
-- [cloneWith ✔️](https://alt-lodash.vercel.app/home#cloneWith)
-- [conformsTo ✔️](https://alt-lodash.vercel.app/home#conformsTo)
-- [eq ✔️](https://alt-lodash.vercel.app/home#eq)
-- [gt ✔️](https://alt-lodash.vercel.app/home#gt)
-- [gte ✔️](https://alt-lodash.vercel.app/home#gte)
-- [isArguments ✔️](https://alt-lodash.vercel.app/home#isArguments)
-- [isArray ✔️](https://alt-lodash.vercel.app/home#isArray)
-- [isArrayBuffer ✔️](https://alt-lodash.vercel.app/home#isArrayBuffer)
-- [isArrayLike ✔️](https://alt-lodash.vercel.app/home#isArrayLike)
-- [isArrayLikeObject ✔️](https://alt-lodash.vercel.app/home#isArrayLikeObject)
-- [isBoolean ✔️](https://alt-lodash.vercel.app/home#isBoolean)
-- [isBuffer ✔️](https://alt-lodash.vercel.app/home#isBuffer)
-- [isDate ✔️](https://alt-lodash.vercel.app/home#isDate)
-- [isElement ✔️](https://alt-lodash.vercel.app/home#isElement)
-- [isEmpty ✔️](https://alt-lodash.vercel.app/home#isEmpty)
-- [isEqual ✔️](https://alt-lodash.vercel.app/home#isEqual)
-- [isEqualWith ✔️](https://alt-lodash.vercel.app/home#isEqualWith)
-- [isError ✔️](https://alt-lodash.vercel.app/home#isError)
-- [isExtensible ✔️ **New**](https://alt-lodash.vercel.app/home#isExtensible)
-- [isFinite ✔️](https://alt-lodash.vercel.app/home#isFinite)
-- [isFrozen ✔️ **New**](https://alt-lodash.vercel.app/home#isFrozen)
-- [isFunction ✔️](https://alt-lodash.vercel.app/home#isFunction)
-- [isInteger ✔️](https://alt-lodash.vercel.app/home#isInteger)
-- [isLength ✔️](https://alt-lodash.vercel.app/home#isLength)
-- [isMap ✔️](https://alt-lodash.vercel.app/home#isMap)
-- [isMatch ✔️](https://alt-lodash.vercel.app/home#isMatch)
-- [isMatchWith ✔️](https://alt-lodash.vercel.app/home#isMatchWith)
-- [isNaN ✔️](https://alt-lodash.vercel.app/home#isNaN)
-- [isNative ✔️](https://alt-lodash.vercel.app/home#isNative)
-- [isNil ✔️](https://alt-lodash.vercel.app/home#isNil)
-- [isNode ✔️ **New**](https://alt-lodash.vercel.app/home#isNode)
-- [isNull ✔️](https://alt-lodash.vercel.app/home#isNull)
-- [isNumber ✔️](https://alt-lodash.vercel.app/home#isNumber)
-- [isObject ✔️](https://alt-lodash.vercel.app/home#isObject)
-- [isObjectLike ✔️](https://alt-lodash.vercel.app/home#isObjectLike)
-- [isPlainObject ✔️](https://alt-lodash.vercel.app/home#isPlainObject)
-- [isRegExp ✔️](https://alt-lodash.vercel.app/home#isRegExp)
-- [isSafeInteger ✔️](https://alt-lodash.vercel.app/home#isSafeInteger)
-- [isSealed ✔️ **New**](https://alt-lodash.vercel.app/home#isSealed)
-- [isSet ✔️](https://alt-lodash.vercel.app/home#isSet)
-- [isString ✔️](https://alt-lodash.vercel.app/home#isString)
-- [isSymbol ✔️](https://alt-lodash.vercel.app/home#isSymbol)
-- [isTypedArray ✔️](https://alt-lodash.vercel.app/home#isTypedArray)
-- [isUndefined ✔️](https://alt-lodash.vercel.app/home#isUndefined)
-- [isWeakMap ✔️](https://alt-lodash.vercel.app/home#isWeakMap)
-- [isWeakSet ✔️](https://alt-lodash.vercel.app/home#isWeakSet)
-- [lt ✔️](https://alt-lodash.vercel.app/home#lt)
-- [lte ✔️](https://alt-lodash.vercel.app/home#lte)
-- [toArray ✔️](https://alt-lodash.vercel.app/home#toArray)
-- toFinite ( 🔜 - Work in progress - PRs most welcome ) [Issue - #27](https://github.com/PunitSoniME/alt-lodash/issues/27)
-- [toInteger ✔️](https://alt-lodash.vercel.app/home#toInteger)
-- toLength ( 🔜 - Work in progress - PRs most welcome ) [Issue - #28](https://github.com/PunitSoniME/alt-lodash/issues/28)
-- [toNumber ✔️](https://alt-lodash.vercel.app/home#toNumber)
-- [toPlainObject ✔️](https://alt-lodash.vercel.app/home#toPlainObject)
-- [toSafeInteger ✔️](https://alt-lodash.vercel.app/home#toSafeInteger)
-- [toString ✔️](https://alt-lodash.vercel.app/home#toString)
+- [clone ✔️](https://purekit.vercel.app/home#clone)
+- [cloneDeep ✔️](https://purekit.vercel.app/home#cloneDeep)
+- cloneDeepWith ( 🔜 - Work in progress - PRs most welcome ) [Issue - #20](https://github.com/PunitSoniME/purekit/issues/20)
+- [cloneWith ✔️](https://purekit.vercel.app/home#cloneWith)
+- [conformsTo ✔️](https://purekit.vercel.app/home#conformsTo)
+- [eq ✔️](https://purekit.vercel.app/home#eq)
+- [gt ✔️](https://purekit.vercel.app/home#gt)
+- [gte ✔️](https://purekit.vercel.app/home#gte)
+- [isArguments ✔️](https://purekit.vercel.app/home#isArguments)
+- [isArray ✔️](https://purekit.vercel.app/home#isArray)
+- [isArrayBuffer ✔️](https://purekit.vercel.app/home#isArrayBuffer)
+- [isArrayLike ✔️](https://purekit.vercel.app/home#isArrayLike)
+- [isArrayLikeObject ✔️](https://purekit.vercel.app/home#isArrayLikeObject)
+- [isBoolean ✔️](https://purekit.vercel.app/home#isBoolean)
+- [isBuffer ✔️](https://purekit.vercel.app/home#isBuffer)
+- [isDate ✔️](https://purekit.vercel.app/home#isDate)
+- [isElement ✔️](https://purekit.vercel.app/home#isElement)
+- [isEmpty ✔️](https://purekit.vercel.app/home#isEmpty)
+- [isEqual ✔️](https://purekit.vercel.app/home#isEqual)
+- [isEqualWith ✔️](https://purekit.vercel.app/home#isEqualWith)
+- [isError ✔️](https://purekit.vercel.app/home#isError)
+- [isExtensible ✔️ **New**](https://purekit.vercel.app/home#isExtensible)
+- [isFinite ✔️](https://purekit.vercel.app/home#isFinite)
+- [isFrozen ✔️ **New**](https://purekit.vercel.app/home#isFrozen)
+- [isFunction ✔️](https://purekit.vercel.app/home#isFunction)
+- [isInteger ✔️](https://purekit.vercel.app/home#isInteger)
+- [isLength ✔️](https://purekit.vercel.app/home#isLength)
+- [isMap ✔️](https://purekit.vercel.app/home#isMap)
+- [isMatch ✔️](https://purekit.vercel.app/home#isMatch)
+- [isMatchWith ✔️](https://purekit.vercel.app/home#isMatchWith)
+- [isNaN ✔️](https://purekit.vercel.app/home#isNaN)
+- [isNative ✔️](https://purekit.vercel.app/home#isNative)
+- [isNil ✔️](https://purekit.vercel.app/home#isNil)
+- [isNode ✔️ **New**](https://purekit.vercel.app/home#isNode)
+- [isNull ✔️](https://purekit.vercel.app/home#isNull)
+- [isNumber ✔️](https://purekit.vercel.app/home#isNumber)
+- [isObject ✔️](https://purekit.vercel.app/home#isObject)
+- [isObjectLike ✔️](https://purekit.vercel.app/home#isObjectLike)
+- [isPlainObject ✔️](https://purekit.vercel.app/home#isPlainObject)
+- [isRegExp ✔️](https://purekit.vercel.app/home#isRegExp)
+- [isSafeInteger ✔️](https://purekit.vercel.app/home#isSafeInteger)
+- [isSealed ✔️ **New**](https://purekit.vercel.app/home#isSealed)
+- [isSet ✔️](https://purekit.vercel.app/home#isSet)
+- [isString ✔️](https://purekit.vercel.app/home#isString)
+- [isSymbol ✔️](https://purekit.vercel.app/home#isSymbol)
+- [isTypedArray ✔️](https://purekit.vercel.app/home#isTypedArray)
+- [isUndefined ✔️](https://purekit.vercel.app/home#isUndefined)
+- [isWeakMap ✔️](https://purekit.vercel.app/home#isWeakMap)
+- [isWeakSet ✔️](https://purekit.vercel.app/home#isWeakSet)
+- [lt ✔️](https://purekit.vercel.app/home#lt)
+- [lte ✔️](https://purekit.vercel.app/home#lte)
+- [toArray ✔️](https://purekit.vercel.app/home#toArray)
+- toFinite ( 🔜 - Work in progress - PRs most welcome ) [Issue - #27](https://github.com/PunitSoniME/purekit/issues/27)
+- [toInteger ✔️](https://purekit.vercel.app/home#toInteger)
+- toLength ( 🔜 - Work in progress - PRs most welcome ) [Issue - #28](https://github.com/PunitSoniME/purekit/issues/28)
+- [toNumber ✔️](https://purekit.vercel.app/home#toNumber)
+- [toPlainObject ✔️](https://purekit.vercel.app/home#toPlainObject)
+- [toSafeInteger ✔️](https://purekit.vercel.app/home#toSafeInteger)
+- [toString ✔️](https://purekit.vercel.app/home#toString)
 
 <br />
 
 # Math
 
-- [add ✔️](https://alt-lodash.vercel.app/home#add)
+- [add ✔️](https://purekit.vercel.app/home#add)
 
-- [ceil ✔️](https://alt-lodash.vercel.app/home#ceil)
-- [divide ✔️](https://alt-lodash.vercel.app/home#divide)
-- [floor ✔️](https://alt-lodash.vercel.app/home#floor)
-- [max ✔️](https://alt-lodash.vercel.app/home#max)
-- [maxBy ✔️](https://alt-lodash.vercel.app/home#maxBy)
-- [mean ✔️](https://alt-lodash.vercel.app/home#mean)
-- [meanBy ✔️](https://alt-lodash.vercel.app/home#meanBy)
-- [min ✔️](https://alt-lodash.vercel.app/home#min)
-- [minBy ✔️](https://alt-lodash.vercel.app/home#minBy)
-- [multiply ✔️](https://alt-lodash.vercel.app/home#multiply)
-- [round ✔️](https://alt-lodash.vercel.app/home#round)
-- [subtract ✔️](https://alt-lodash.vercel.app/home#subtract)
-- [sum ✔️](https://alt-lodash.vercel.app/home#sum)
-- [sumBy ✔️](https://alt-lodash.vercel.app/home#sumBy)
-- [clamp ✔️](https://alt-lodash.vercel.app/home#clamp)
-- [inRange ✔️](https://alt-lodash.vercel.app/home#inRange)
-- [random ✔️](https://alt-lodash.vercel.app/home#random)
+- [ceil ✔️](https://purekit.vercel.app/home#ceil)
+- [divide ✔️](https://purekit.vercel.app/home#divide)
+- [floor ✔️](https://purekit.vercel.app/home#floor)
+- [max ✔️](https://purekit.vercel.app/home#max)
+- [maxBy ✔️](https://purekit.vercel.app/home#maxBy)
+- [mean ✔️](https://purekit.vercel.app/home#mean)
+- [meanBy ✔️](https://purekit.vercel.app/home#meanBy)
+- [min ✔️](https://purekit.vercel.app/home#min)
+- [minBy ✔️](https://purekit.vercel.app/home#minBy)
+- [multiply ✔️](https://purekit.vercel.app/home#multiply)
+- [round ✔️](https://purekit.vercel.app/home#round)
+- [subtract ✔️](https://purekit.vercel.app/home#subtract)
+- [sum ✔️](https://purekit.vercel.app/home#sum)
+- [sumBy ✔️](https://purekit.vercel.app/home#sumBy)
+- [clamp ✔️](https://purekit.vercel.app/home#clamp)
+- [inRange ✔️](https://purekit.vercel.app/home#inRange)
+- [random ✔️](https://purekit.vercel.app/home#random)
 
 <br />
 
 # Number
 
-- [clamp ✔️](https://alt-lodash.vercel.app/home#clamp)
+- [clamp ✔️](https://purekit.vercel.app/home#clamp)
 
-- [inRange ✔️](https://alt-lodash.vercel.app/home#inRange)
-- [random ✔️](https://alt-lodash.vercel.app/home#random)
+- [inRange ✔️](https://purekit.vercel.app/home#inRange)
+- [random ✔️](https://purekit.vercel.app/home#random)
 
 <br />
 
 # Object
 
-- [assign ✔️](https://alt-lodash.vercel.app/home#assign)
+- [assign ✔️](https://purekit.vercel.app/home#assign)
 
-- [assignIn ✔️](https://alt-lodash.vercel.app/home#assignIn)
-- [assignInWith ✔️](https://alt-lodash.vercel.app/home#assignInWith)
-- [assignWith ✔️](https://alt-lodash.vercel.app/home#assignWith)
-- [at ✔️](https://alt-lodash.vercel.app/home#at)
-- [create ✔️](https://alt-lodash.vercel.app/home#create)
-- [defaults ✔️](https://alt-lodash.vercel.app/home#defaults)
-- defaultsDeep ( 🔜 - Work in progress - PRs most welcome ) [Issue - #42](https://github.com/PunitSoniME/alt-lodash/issues/42)
-- [entries -> toPairs ✔️](https://alt-lodash.vercel.app/home#entries)
-- [entriesIn -> toPairsIn ✔️](https://alt-lodash.vercel.app/home#entriesIn)
-- [extend -> assignIn ✔️](https://alt-lodash.vercel.app/home#extend)
-- [extendWith -> assignInWith ✔️](https://alt-lodash.vercel.app/home#extendWith)
-- [findKey ✔️](https://alt-lodash.vercel.app/home#findKey)
-- [findLastKey ✔️](https://alt-lodash.vercel.app/home#findLastKey)
-- [forIn ✔️](https://alt-lodash.vercel.app/home#forIn)
-- [forInRight ✔️](https://alt-lodash.vercel.app/home#forInRight)
-- [forOwn ✔️](https://alt-lodash.vercel.app/home#forOwn)
-- [forOwnRight ✔️](https://alt-lodash.vercel.app/home#forOwnRight)
-- [functions ✔️](https://alt-lodash.vercel.app/home#functions)
-- [functionsIn ✔️](https://alt-lodash.vercel.app/home#functionsIn)
-- [get ✔️](https://alt-lodash.vercel.app/home#get)
-- [has ✔️](https://alt-lodash.vercel.app/home#has)
-- [hasIn ✔️](https://alt-lodash.vercel.app/home#hasIn)
-- [invert ✔️](https://alt-lodash.vercel.app/home#invert)
-- [invertBy ✔️](https://alt-lodash.vercel.app/home#invertBy)
-- invoke ( 🔜 - Work in progress - PRs most welcome ) [Issue - #46](https://github.com/PunitSoniME/alt-lodash/issues/46)
-- [keys ✔️](https://alt-lodash.vercel.app/home#keys)
-- [keysIn ✔️](https://alt-lodash.vercel.app/home#keysIn)
-- [mapKeys ✔️](https://alt-lodash.vercel.app/home#mapKeys)
-- [mapValues ✔️](https://alt-lodash.vercel.app/home#mapValues)
-- [merge ✔️](https://alt-lodash.vercel.app/home#merge)
-- mergeWith ( 🔜 - Work in progress - PRs most welcome ) [Issue - #48](https://github.com/PunitSoniME/alt-lodash/issues/48)
-- [omit ✔️](https://alt-lodash.vercel.app/home#omit)
-- [omitBy ✔️](https://alt-lodash.vercel.app/home#omitBy)
-- [pick ✔️](https://alt-lodash.vercel.app/home#pick)
-- [pickBy ✔️](https://alt-lodash.vercel.app/home#pickBy)
-- result ( 🔜 - Work in progress - PRs most welcome ) [Issue - #49](https://github.com/PunitSoniME/alt-lodash/issues/49)
-- [set ✔️](https://alt-lodash.vercel.app/home#set)
-- [setWith ✔️](https://alt-lodash.vercel.app/home#setWith)
-- [toPairs ✔️](https://alt-lodash.vercel.app/home#toPairs)
-- [toPairsIn ✔️](https://alt-lodash.vercel.app/home#toPairsIn)
-- [transform ✔️](https://alt-lodash.vercel.app/home#transform)
-- [unset ✔️](https://alt-lodash.vercel.app/home#unset)
-- [update ✔️](https://alt-lodash.vercel.app/home#update)
-- [updateWith ✔️](https://alt-lodash.vercel.app/home#updateWith)
-- [values ✔️](https://alt-lodash.vercel.app/home#values)
-- [valuesIn ✔️](https://alt-lodash.vercel.app/home#valuesIn)
+- [assignIn ✔️](https://purekit.vercel.app/home#assignIn)
+- [assignInWith ✔️](https://purekit.vercel.app/home#assignInWith)
+- [assignWith ✔️](https://purekit.vercel.app/home#assignWith)
+- [at ✔️](https://purekit.vercel.app/home#at)
+- [create ✔️](https://purekit.vercel.app/home#create)
+- [defaults ✔️](https://purekit.vercel.app/home#defaults)
+- defaultsDeep ( 🔜 - Work in progress - PRs most welcome ) [Issue - #42](https://github.com/PunitSoniME/purekit/issues/42)
+- [entries -> toPairs ✔️](https://purekit.vercel.app/home#entries)
+- [entriesIn -> toPairsIn ✔️](https://purekit.vercel.app/home#entriesIn)
+- [extend -> assignIn ✔️](https://purekit.vercel.app/home#extend)
+- [extendWith -> assignInWith ✔️](https://purekit.vercel.app/home#extendWith)
+- [findKey ✔️](https://purekit.vercel.app/home#findKey)
+- [findLastKey ✔️](https://purekit.vercel.app/home#findLastKey)
+- [forIn ✔️](https://purekit.vercel.app/home#forIn)
+- [forInRight ✔️](https://purekit.vercel.app/home#forInRight)
+- [forOwn ✔️](https://purekit.vercel.app/home#forOwn)
+- [forOwnRight ✔️](https://purekit.vercel.app/home#forOwnRight)
+- [functions ✔️](https://purekit.vercel.app/home#functions)
+- [functionsIn ✔️](https://purekit.vercel.app/home#functionsIn)
+- [get ✔️](https://purekit.vercel.app/home#get)
+- [has ✔️](https://purekit.vercel.app/home#has)
+- [hasIn ✔️](https://purekit.vercel.app/home#hasIn)
+- [invert ✔️](https://purekit.vercel.app/home#invert)
+- [invertBy ✔️](https://purekit.vercel.app/home#invertBy)
+- invoke ( 🔜 - Work in progress - PRs most welcome ) [Issue - #46](https://github.com/PunitSoniME/purekit/issues/46)
+- [keys ✔️](https://purekit.vercel.app/home#keys)
+- [keysIn ✔️](https://purekit.vercel.app/home#keysIn)
+- [mapKeys ✔️](https://purekit.vercel.app/home#mapKeys)
+- [mapValues ✔️](https://purekit.vercel.app/home#mapValues)
+- [merge ✔️](https://purekit.vercel.app/home#merge)
+- mergeWith ( 🔜 - Work in progress - PRs most welcome ) [Issue - #48](https://github.com/PunitSoniME/purekit/issues/48)
+- [omit ✔️](https://purekit.vercel.app/home#omit)
+- [omitBy ✔️](https://purekit.vercel.app/home#omitBy)
+- [pick ✔️](https://purekit.vercel.app/home#pick)
+- [pickBy ✔️](https://purekit.vercel.app/home#pickBy)
+- result ( 🔜 - Work in progress - PRs most welcome ) [Issue - #49](https://github.com/PunitSoniME/purekit/issues/49)
+- [set ✔️](https://purekit.vercel.app/home#set)
+- [setWith ✔️](https://purekit.vercel.app/home#setWith)
+- [toPairs ✔️](https://purekit.vercel.app/home#toPairs)
+- [toPairsIn ✔️](https://purekit.vercel.app/home#toPairsIn)
+- [transform ✔️](https://purekit.vercel.app/home#transform)
+- [unset ✔️](https://purekit.vercel.app/home#unset)
+- [update ✔️](https://purekit.vercel.app/home#update)
+- [updateWith ✔️](https://purekit.vercel.app/home#updateWith)
+- [values ✔️](https://purekit.vercel.app/home#values)
+- [valuesIn ✔️](https://purekit.vercel.app/home#valuesIn)
 
 <br />
 
 # String
 
-- [camelCase ✔️](https://alt-lodash.vercel.app/home#camelCase)
+- [camelCase ✔️](https://purekit.vercel.app/home#camelCase)
 
-- [capitalize ✔️](https://alt-lodash.vercel.app/home#capitalize)
-- deburr ( 🔜 - Work in progress - PRs most welcome ) [Issue - #63](https://github.com/PunitSoniME/alt-lodash/issues/63)
-- [endsWith ✔️](https://alt-lodash.vercel.app/home#endsWith)
-- [escape ✔️](https://alt-lodash.vercel.app/home#escape)
-- [escapeRegExp ✔️](https://alt-lodash.vercel.app/home#escapeRegExp)
-- [kebabCase ✔️](https://alt-lodash.vercel.app/home#kebabCase)
-- [lowerCase ✔️](https://alt-lodash.vercel.app/home#lowerCase)
-- [lowerFirst ✔️](https://alt-lodash.vercel.app/home#lowerFirst)
-- [pad ✔️](https://alt-lodash.vercel.app/home#pad)
-- [padEnd ✔️](https://alt-lodash.vercel.app/home#padEnd)
-- [padStart ✔️](https://alt-lodash.vercel.app/home#padStart)
-- [parseInt ✔️](https://alt-lodash.vercel.app/home#parseInt)
-- [repeat ✔️](https://alt-lodash.vercel.app/home#repeat)
-- [replace ✔️](https://alt-lodash.vercel.app/home#replace)
-- [snakeCase ✔️](https://alt-lodash.vercel.app/home#snakeCase)
-- [split ✔️](https://alt-lodash.vercel.app/home#split)
-- [startCase ✔️](https://alt-lodash.vercel.app/home#startCase)
-- [startsWith ✔️](https://alt-lodash.vercel.app/home#startsWith)
+- [capitalize ✔️](https://purekit.vercel.app/home#capitalize)
+- deburr ( 🔜 - Work in progress - PRs most welcome ) [Issue - #63](https://github.com/PunitSoniME/purekit/issues/63)
+- [endsWith ✔️](https://purekit.vercel.app/home#endsWith)
+- [escape ✔️](https://purekit.vercel.app/home#escape)
+- [escapeRegExp ✔️](https://purekit.vercel.app/home#escapeRegExp)
+- [kebabCase ✔️](https://purekit.vercel.app/home#kebabCase)
+- [lowerCase ✔️](https://purekit.vercel.app/home#lowerCase)
+- [lowerFirst ✔️](https://purekit.vercel.app/home#lowerFirst)
+- [pad ✔️](https://purekit.vercel.app/home#pad)
+- [padEnd ✔️](https://purekit.vercel.app/home#padEnd)
+- [padStart ✔️](https://purekit.vercel.app/home#padStart)
+- [parseInt ✔️](https://purekit.vercel.app/home#parseInt)
+- [repeat ✔️](https://purekit.vercel.app/home#repeat)
+- [replace ✔️](https://purekit.vercel.app/home#replace)
+- [snakeCase ✔️](https://purekit.vercel.app/home#snakeCase)
+- [split ✔️](https://purekit.vercel.app/home#split)
+- [startCase ✔️](https://purekit.vercel.app/home#startCase)
+- [startsWith ✔️](https://purekit.vercel.app/home#startsWith)
 - template ( 🔜 - Work in progress - PRs most welcome )
-- [toLower ✔️](https://alt-lodash.vercel.app/home#toLower)
-- [toUpper ✔️](https://alt-lodash.vercel.app/home#toUpper)
-- [trim ✔️](https://alt-lodash.vercel.app/home#trim)
-- [trimEnd ✔️](https://alt-lodash.vercel.app/home#trimEnd)
-- [trimStart ✔️](https://alt-lodash.vercel.app/home#trimStart)
-- truncate ( 🔜 - Work in progress - PRs most welcome ) [Issue - #64](https://github.com/PunitSoniME/alt-lodash/issues/64)
-- [unescape ✔️](https://alt-lodash.vercel.app/home#unescape)
-- [upperCase ✔️](https://alt-lodash.vercel.app/home#upperCase)
-- [upperFirst ✔️](https://alt-lodash.vercel.app/home#upperFirst)
-- [words ✔️](https://alt-lodash.vercel.app/home#words)
+- [toLower ✔️](https://purekit.vercel.app/home#toLower)
+- [toUpper ✔️](https://purekit.vercel.app/home#toUpper)
+- [trim ✔️](https://purekit.vercel.app/home#trim)
+- [trimEnd ✔️](https://purekit.vercel.app/home#trimEnd)
+- [trimStart ✔️](https://purekit.vercel.app/home#trimStart)
+- truncate ( 🔜 - Work in progress - PRs most welcome ) [Issue - #64](https://github.com/PunitSoniME/purekit/issues/64)
+- [unescape ✔️](https://purekit.vercel.app/home#unescape)
+- [upperCase ✔️](https://purekit.vercel.app/home#upperCase)
+- [upperFirst ✔️](https://purekit.vercel.app/home#upperFirst)
+- [words ✔️](https://purekit.vercel.app/home#words)
 
 <br />
 
 # Util
 
-- [attempt ✔️](https://alt-lodash.vercel.app/home#attempt)
+- [attempt ✔️](https://purekit.vercel.app/home#attempt)
 
-- bindAll ( 🔜 - Work in progress - PRs most welcome ) [Issue - #67](https://github.com/PunitSoniME/alt-lodash/issues/67)
-- [cond ✔️](https://alt-lodash.vercel.app/home#cond)
-- [conforms ✔️](https://alt-lodash.vercel.app/home#conforms)
-- [constant ✔️](https://alt-lodash.vercel.app/home#constant)
-- [defaultTo ✔️](https://alt-lodash.vercel.app/home#defaultTo)
-- [flow ✔️](https://alt-lodash.vercel.app/home#flow)
-- [flowRight ✔️](https://alt-lodash.vercel.app/home#flowRight)
-- [identity ✔️](https://alt-lodash.vercel.app/home#identity)
-- [iteratee ✔️](https://alt-lodash.vercel.app/home#iteratee)
-- matches ( 🔜 - Work in progress - PRs most welcome ) [Issue - #68](https://github.com/PunitSoniME/alt-lodash/issues/68)
-- matchesProperty ( 🔜 - Work in progress - PRs most welcome ) [Issue - #69](https://github.com/PunitSoniME/alt-lodash/issues/69)
-- [method ✔️](https://alt-lodash.vercel.app/home#method)
-- [methodOf ✔️](https://alt-lodash.vercel.app/home#methodOf)
-- mixin ( 🔜 - Work in progress - PRs most welcome ) [Issue - #72](https://github.com/PunitSoniME/alt-lodash/issues/72)
-- noConflict ( 🔜 - Work in progress - PRs most welcome ) [Issue - #73](https://github.com/PunitSoniME/alt-lodash/issues/73)
-- [noop ✔️](https://alt-lodash.vercel.app/home#noop)
-- [nthArg ✔️](https://alt-lodash.vercel.app/home#nthArg)
-- [over ✔️](https://alt-lodash.vercel.app/home#over)
-- [overEvery ✔️](https://alt-lodash.vercel.app/home#overEvery)
-- [overSome ✔️](https://alt-lodash.vercel.app/home#overSome)
-- [property ✔️](https://alt-lodash.vercel.app/home#property)
-- [propertyOf ✔️](https://alt-lodash.vercel.app/home#propertyOf)
-- [range ✔️](https://alt-lodash.vercel.app/home#range)
-- [rangeRight ✔️](https://alt-lodash.vercel.app/home#rangeRight)
-- runInContext ( 🔜 - Work in progress - PRs most welcome ) [Issue - #75](https://github.com/PunitSoniME/alt-lodash/issues/75)
-- [sleep ✔️ **New**](https://alt-lodash.vercel.app/home#sleep)
-- [stubArray ✔️](https://alt-lodash.vercel.app/home#stubArray)
-- [stubFalse ✔️](https://alt-lodash.vercel.app/home#stubFalse)
-- [stubObject ✔️](https://alt-lodash.vercel.app/home#stubObject)
-- [stubString ✔️](https://alt-lodash.vercel.app/home#stubString)
-- [stubTrue ✔️](https://alt-lodash.vercel.app/home#stubTrue)
-- [times ✔️](https://alt-lodash.vercel.app/home#times)
-- [toPath ✔️](https://alt-lodash.vercel.app/home#toPath)
-- [uniqueId ✔️](https://alt-lodash.vercel.app/home#uniqueId)
-- [uniqueId2 ✔️ **New**](https://alt-lodash.vercel.app/home#uniqueId2)
+- bindAll ( 🔜 - Work in progress - PRs most welcome ) [Issue - #67](https://github.com/PunitSoniME/purekit/issues/67)
+- [cond ✔️](https://purekit.vercel.app/home#cond)
+- [conforms ✔️](https://purekit.vercel.app/home#conforms)
+- [constant ✔️](https://purekit.vercel.app/home#constant)
+- [defaultTo ✔️](https://purekit.vercel.app/home#defaultTo)
+- [flow ✔️](https://purekit.vercel.app/home#flow)
+- [flowRight ✔️](https://purekit.vercel.app/home#flowRight)
+- [identity ✔️](https://purekit.vercel.app/home#identity)
+- [iteratee ✔️](https://purekit.vercel.app/home#iteratee)
+- matches ( 🔜 - Work in progress - PRs most welcome ) [Issue - #68](https://github.com/PunitSoniME/purekit/issues/68)
+- matchesProperty ( 🔜 - Work in progress - PRs most welcome ) [Issue - #69](https://github.com/PunitSoniME/purekit/issues/69)
+- [method ✔️](https://purekit.vercel.app/home#method)
+- [methodOf ✔️](https://purekit.vercel.app/home#methodOf)
+- mixin ( 🔜 - Work in progress - PRs most welcome ) [Issue - #72](https://github.com/PunitSoniME/purekit/issues/72)
+- noConflict ( 🔜 - Work in progress - PRs most welcome ) [Issue - #73](https://github.com/PunitSoniME/purekit/issues/73)
+- [noop ✔️](https://purekit.vercel.app/home#noop)
+- [nthArg ✔️](https://purekit.vercel.app/home#nthArg)
+- [over ✔️](https://purekit.vercel.app/home#over)
+- [overEvery ✔️](https://purekit.vercel.app/home#overEvery)
+- [overSome ✔️](https://purekit.vercel.app/home#overSome)
+- [property ✔️](https://purekit.vercel.app/home#property)
+- [propertyOf ✔️](https://purekit.vercel.app/home#propertyOf)
+- [range ✔️](https://purekit.vercel.app/home#range)
+- [rangeRight ✔️](https://purekit.vercel.app/home#rangeRight)
+- runInContext ( 🔜 - Work in progress - PRs most welcome ) [Issue - #75](https://github.com/PunitSoniME/purekit/issues/75)
+- [sleep ✔️ **New**](https://purekit.vercel.app/home#sleep)
+- [stubArray ✔️](https://purekit.vercel.app/home#stubArray)
+- [stubFalse ✔️](https://purekit.vercel.app/home#stubFalse)
+- [stubObject ✔️](https://purekit.vercel.app/home#stubObject)
+- [stubString ✔️](https://purekit.vercel.app/home#stubString)
+- [stubTrue ✔️](https://purekit.vercel.app/home#stubTrue)
+- [times ✔️](https://purekit.vercel.app/home#times)
+- [toPath ✔️](https://purekit.vercel.app/home#toPath)
+- [uniqueId ✔️](https://purekit.vercel.app/home#uniqueId)
+- [uniqueId2 ✔️ **New**](https://purekit.vercel.app/home#uniqueId2)
 
 <br />
 
@@ -446,7 +446,7 @@ const { concat, chunk, forEach, filter } = require('alt-lodash');    //  cjs ( c
 - _ ( 🔜 - Work in progress - PRs most welcome )
 
 - ~~chain~~
-- [chain2 ✔️ ( Alternate of chain method with minimal code )](https://alt-lodash.vercel.app/home#chain2)
+- [chain2 ✔️ ( Alternate of chain method with minimal code )](https://purekit.vercel.app/home#chain2)
 
 
     ```ts
@@ -468,7 +468,7 @@ const { concat, chunk, forEach, filter } = require('alt-lodash');    //  cjs ( c
     ## Example
     
     ```typescript
-    import { chain2, map, sortBy, head } from 'alt-lodash';
+    import { chain2, map, sortBy, head } from 'purekit';
 
     const users = [
         { 'user': 'barney', 'age': 36 },
@@ -489,7 +489,7 @@ const { concat, chunk, forEach, filter } = require('alt-lodash');    //  cjs ( c
 
 
 - ~~tap~~
-- [tap2 ✔️ ( Alternate of tap method with minimal code )](https://alt-lodash.vercel.app/home#tap2)
+- [tap2 ✔️ ( Alternate of tap method with minimal code )](https://purekit.vercel.app/home#tap2)
 
 
     ```ts
@@ -512,7 +512,7 @@ const { concat, chunk, forEach, filter } = require('alt-lodash');    //  cjs ( c
     ## Example
     
     ```typescript
-    import { tap2, concat } from 'alt-lodash';
+    import { tap2, concat } from 'purekit';
 
     const data = [1, 2, 3];
 
@@ -527,7 +527,7 @@ const { concat, chunk, forEach, filter } = require('alt-lodash');    //  cjs ( c
     // => [1, 2, 3, 100, 4, 5]
     ```
 
-- [thru ✔️](https://alt-lodash.vercel.app/home#thru)
+- [thru ✔️](https://purekit.vercel.app/home#thru)
 - prototype[Symbol.iterator] ( 🔜 - Work in progress - PRs most welcome )
 - prototype.at ( 🔜 - Work in progress - PRs most welcome )
 - prototype.chain ( 🔜 - Work in progress - PRs most welcome )

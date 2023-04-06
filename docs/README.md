@@ -1,1 +1,1 @@
-## Demo - https://alt-lodash.vercel.app/
+## Demo - https://purekit.vercel.app/
