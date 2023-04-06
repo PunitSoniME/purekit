@@ -1,9 +1,9 @@
 ---
 title: 'purekit'
-description: 'Alternate of lodash'
+description: 'The Simple and Efficient Utility Library'
 ---
 
-# <div class="px-2 pt-2">Alternate of Lodash Library</div>
+# <div class="px-2 pt-2">The Simple and Efficient Utility Library</div>
 
 <!-- [![CI](https://github.com/PunitSoniME/purekit/actions/workflows/main.yml/badge.svg)](https://github.com/PunitSoniME/purekit/actions/workflows/main.yml)
 

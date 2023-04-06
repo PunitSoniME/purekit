@@ -1,4 +1,4 @@
-# Alternate of Lodash Library
+# The Simple and Efficient Utility Library
 
 ## https://purekit.vercel.app
 
