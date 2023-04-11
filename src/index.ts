@@ -260,6 +260,7 @@ import {
 	toNumber,
 	toSafeInteger,
 	toString,
+	toFinite,
 } from './lang';
 
 import { chain2, tap2, thru } from './seq';
@@ -542,6 +543,7 @@ export {
 	toNumber,
 	toSafeInteger,
 	toString,
+	toFinite,
 	// Math Methods
 	add,
 	ceil,

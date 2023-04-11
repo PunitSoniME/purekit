@@ -55,6 +55,7 @@ import toNumber from './toNumber';
 import toPlainObject from './toPlainObject';
 import toSafeInteger from './toSafeInteger';
 import toString from './toString';
+import toFinite from './toFinite';
 
 export {
 	castArray,
@@ -114,4 +115,5 @@ export {
 	toPlainObject,
 	toSafeInteger,
 	toString,
+	toFinite,
 };
