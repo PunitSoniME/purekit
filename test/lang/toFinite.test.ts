@@ -1,5 +1,5 @@
 import _toFinite from 'lodash/toFinite';
-import toFinite from '../../src/lang/_toFinite';
+import toFinite from '../../src/lang/toFinite';
 
 describe('Lang', () => {
 	describe('toFinite', () => {
