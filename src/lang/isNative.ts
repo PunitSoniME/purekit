@@ -22,6 +22,6 @@ const isNative = (value: any): boolean =>
 	(typeof value).toLowerCase() === 'function' &&
 	(value === Function.prototype ||
 		/^\s*function\s*(\b[a-z$_][a-z0-9$_]*\b)*\s*\((|([a-z$_][a-z0-9$_]*)(\s*,[a-z$_][a-z0-9$_]*)*)\)\s*{\s*\[native code\]\s*}\s*$/i.test(
-			String(value)
+			Function.prototype.toString.call(value)
 		));
 export default isNative;
