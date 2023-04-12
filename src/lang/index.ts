@@ -48,14 +48,14 @@ import isWeakMap from './isWeakMap';
 import isWeakSet from './isWeakSet';
 import lt from './lt';
 import lte from './lte';
-// import toLength from './_toLength';
+import toArray from './toArray';
+import toFinite from './toFinite';
+import toInteger from './toInteger';
+import toLength from './toLength';
 import toNumber from './toNumber';
-// import toArray from './toArray';
-// import toInteger from './toInteger';
 import toPlainObject from './toPlainObject';
 import toSafeInteger from './toSafeInteger';
 import toString from './toString';
-import toFinite from './toFinite';
 
 export {
 	castArray,
@@ -108,12 +108,12 @@ export {
 	isWeakSet,
 	lt,
 	lte,
-	// toLength,
+	toArray,
+	toFinite,
+	toInteger,
+	toLength,
 	toNumber,
-	// toArray,
-	// toInteger,
 	toPlainObject,
 	toSafeInteger,
 	toString,
-	toFinite,
 };

@@ -36,4 +36,7 @@ toArray(new Set([1, 2, 3]))
 
 toArray({a: 1, b: 2})
 // => [1, 2]
+
+toArray(null)
+// => []
 ```

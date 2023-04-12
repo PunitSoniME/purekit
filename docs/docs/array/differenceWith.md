@@ -1,7 +1,7 @@
 ---
 title: differenceWith
 definition: differenceWith(array, [values], [comparator])
-description: Returns the difference between the first array and all other arguments using a provided comparator function
+description: Returns the difference between the first array and all other arguments using a provided comparator function.
 ---
 
 

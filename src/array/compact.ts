@@ -14,5 +14,5 @@
  * // expected output: [1, 2, 3]
  */
 
-const compact = <T>(array: T[]): T[] => array.filter(x => !!x);
+const compact = <T>(array: T[]): T[] => array.filter(Boolean);
 export default compact;

@@ -1,20 +1,24 @@
-import _once from 'lodash/once';
 import { once } from '../../src/function';
 
 describe('Function', () => {
 	describe('once', () => {
-		it('once(numbers)', () => {
-			const fn = () => {
-				return 2;
-			};
+		it('once(func)', () => {
+			// Create a spy function
+			const spyCallback = jest.spyOn(console, 'log');
 
-			const initialize = once(fn);
-			initialize();
+			// Call the `callOnce` function with the spy function
+			//	@ts-ignore
+			const myFunc = once(spyCallback);
 
-			const _initialize = _once(fn);
-			_initialize();
+			// Call the returned function twice
+			myFunc('Testing function > once method - First call');
+			myFunc('Testing function > once method - Second call');
 
-			expect(initialize()).toEqual(_initialize());
+			// Check that the spy function was only called once
+			expect(spyCallback).toHaveBeenCalledTimes(1);
+
+			// Restore the original console.log function
+			spyCallback.mockRestore();
 		});
 	});
 });

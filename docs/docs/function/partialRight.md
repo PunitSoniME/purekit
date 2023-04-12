@@ -1,7 +1,7 @@
 ---
 title: partialRight
 definition: partialRight(func, [partials])
-description: Creates a new function that invokes the given function with the `cachedArgs`
+description: Creates a new function that invokes the given function with the `cachedArgs` and the additional arguments provided when the new function is called.
 ---
 
 

@@ -1,7 +1,7 @@
 import IDifferenceWith from './interface/IDifferenceWith';
 
 /**
- * Returns the difference between the first array and all other arguments using a provided comparator function
+ * Returns the difference between the first array and all other arguments using a provided comparator function.
  *
  * @since 1.0.0
  *

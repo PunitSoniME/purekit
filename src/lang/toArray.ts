@@ -12,12 +12,14 @@
  * toArray([1, 2, 3]) // => [1, 2, 3]
  * toArray(new Set([1, 2, 3])) // => [1, 2, 3]
  * toArray({a: 1, b: 2}) // => [1, 2]
+ * toArray(null) // => []
  */
 
 const toArray = (value: any): any[] => {
 	if (Array.isArray(value)) return value;
-	if (value instanceof Map || value instanceof Set || typeof value === 'object')
+	if (value instanceof Map || value instanceof Set)
 		return (value as any).values();
+	if (value instanceof Object) return Object.values(value);
 	if (typeof value === 'string') return value.split('');
 	return [];
 };

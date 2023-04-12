@@ -1,7 +1,7 @@
 ---
 title: once
 definition: once(fn)
-description: Creates a new function that can only be called once. Subsequent calls to the
+description: Creates a new function that can only be called once. Subsequent calls to the returned function will always return the same result as the first call.
 ---
 
 
@@ -29,5 +29,5 @@ const add = (a, b) => a + b;
 const addOnce = once(add);
 
 console.log(addOnce(2, 3)); // => 5
-console.log(addOnce(4, 5)); // => 5
+console.log(addOnce(2, 3)); // => undefined
 ```
