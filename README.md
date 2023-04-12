@@ -181,7 +181,7 @@ const { concat, chunk, forEach, filter } = require('purekit');    //  cjs ( comm
 
 # Function
 
-- [after ✔️](https://purekit.vercel.app/home#after]
+- [after ✔️](https://purekit.vercel.app/home#after)
 
 - [ary ✔️](https://purekit.vercel.app/home#ary)
 - [before ✔️](https://purekit.vercel.app/home#before)
@@ -264,7 +264,7 @@ const { concat, chunk, forEach, filter } = require('purekit');    //  cjs ( comm
 - [lt ✔️](https://purekit.vercel.app/home#lt)
 - [lte ✔️](https://purekit.vercel.app/home#lte)
 - [toArray ✔️](https://purekit.vercel.app/home#toArray)
-- toFinite ( 🔜 - Work in progress - PRs most welcome ) [Issue - #27](https://github.com/PunitSoniME/purekit/issues/27)
+- [toFinite ✔️](https://purekit.vercel.app/toFinite#toArray)
 - [toInteger ✔️](https://purekit.vercel.app/home#toInteger)
 - toLength ( 🔜 - Work in progress - PRs most welcome ) [Issue - #28](https://github.com/PunitSoniME/purekit/issues/28)
 - [toNumber ✔️](https://purekit.vercel.app/home#toNumber)
