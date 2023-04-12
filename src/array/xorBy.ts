@@ -21,7 +21,7 @@ import concat from './concat';
  * console.log(result); // => [3, 6]
  */
 const xorBy = <T>(array: T[], ...args: any): T[] => {
-	let iteratee = args.pop() ?? identity;
+	let iteratee = args.length > 1 ? args.pop() : identity;
 	const fn = createPredicate(iteratee);
 
 	const flatArray = concat(array, ...args);

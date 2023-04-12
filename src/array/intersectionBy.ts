@@ -24,7 +24,7 @@ import identity from '../util/identity';
  * // => [{'x': 1, 'y': 2}]
  */
 const intersectionBy = <T>(array: T[], ...args: any[]): T[] => {
-	let iteratee = args ? args.pop() : [identity];
+	let iteratee = args.length > 1 ? args.pop() : [identity];
 
 	if (typeof iteratee === 'string') {
 		const prop = iteratee;

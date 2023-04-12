@@ -4,11 +4,15 @@ import { stringMockData } from '../mockData';
 
 describe('Array', () => {
 	describe('nth', () => {
-		it('[Array Of string] It should return the nth element from an array of given positive index', () => {
+		it('nth([])', () => {
+			expect(nth([])).toEqual(_nth([]));
+		});
+
+		it('nth(stringMockData, 1)', () => {
 			expect(nth(stringMockData, 1)).toEqual(_nth(stringMockData, 1));
 		});
 
-		it('[Array Of string] It should return the nth element from an array of given negative index', () => {
+		it('nth(stringMockData, -2)', () => {
 			expect(nth(stringMockData, -2)).toEqual(_nth(stringMockData, -2));
 		});
 	});

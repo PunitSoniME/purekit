@@ -29,7 +29,7 @@ const dropRightWhile = <T>(
 	const fn = createPredicate(predicate);
 
 	for (let i = array.length - 1; i >= 0; i--) {
-		if (!(fn as any)(array[i])) {
+		if (!(fn as Function)(array[i])) {
 			return array.slice(0, i + 1);
 		}
 	}

@@ -18,7 +18,7 @@ import identity from '../util/identity';
  */
 
 const unionBy = <T>(array: T[], ...args: any): T[] => {
-	let iteratee = args.pop() ?? identity;
+	let iteratee = args.length > 1 ? args.pop() : identity;
 	if (typeof iteratee === 'string') {
 		const prop = iteratee;
 		iteratee = (item: any) => item[prop];

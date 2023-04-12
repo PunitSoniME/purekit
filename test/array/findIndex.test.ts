@@ -4,6 +4,10 @@ import { numberMockData, usersMockData, stringMockData } from '../mockData';
 
 describe('Array', () => {
 	describe('findIndex', () => {
+		it('findIndex([])', () => {
+			expect(findIndex([])).toEqual(_findIndex([]));
+		});
+
 		it("findIndex(usersMockData, (o: any) => { return o.user === 'barney'; })", () => {
 			const predicate = (o: any) => {
 				return o.user === 'barney';

@@ -14,7 +14,7 @@ import identity from '../util/identity';
  * // => [{ x: 1, y: 2 }, { x: 2, y: 1 }]
  */
 const unionWith = <T>(array: T[], ...args: any): T[] => {
-	let comparator = args.pop() ?? identity;
+	let comparator = args.length > 1 ? args.pop() : identity;
 
 	return array
 		.concat(...args)
