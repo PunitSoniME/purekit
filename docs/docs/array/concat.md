@@ -1,7 +1,7 @@
 ---
 title: concat
 definition: concat(array, [values])
-description: Concatenates two or more arrays into a new array
+description: Concatenates two or more arrays into a new array.
 ---
 
 #### Arguments

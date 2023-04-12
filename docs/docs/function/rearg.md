@@ -1,7 +1,7 @@
 ---
 title: rearg
 definition: rearg(func, indexes)
-description: Creates a function that invokes `func` with arguments rearranged according to
+description: Creates a function that invokes `func` with arguments rearranged according to the specified `order`.
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: wrap
 definition: wrap(value, [wrapper = func])
-description: Creates a new function that calls `func` with `value` as the first argument
+description: Creates a new function that calls `func` with `value` as the first argument and passes any additional arguments to `func` after that.
 ---
 
 

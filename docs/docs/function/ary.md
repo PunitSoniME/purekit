@@ -1,7 +1,7 @@
 ---
 title: ary
 definition: ary(fn, [arity = fn.length])
-description: Creates a function that accepts up to a certain number of arguments,
+description: Creates a function that accepts up to a certain number of arguments, ignoring any additional arguments passed beyond that point.
 ---
 
 

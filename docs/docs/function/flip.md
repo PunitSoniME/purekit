@@ -1,7 +1,7 @@
 ---
 title: flip
 definition: flip(func)
-description: Creates a new function that takes the same arguments as the original function,
+description: Creates a new function that takes the same arguments as the original function, but with the first and second arguments reversed.
 ---
 
 

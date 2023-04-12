@@ -13,17 +13,15 @@
  * const addOnce = once(add);
  *
  * console.log(addOnce(2, 3)); // => 5
- * console.log(addOnce(4, 5)); // => 5
+ * console.log(addOnce(2, 3)); // => undefined
  */
 const once = (fn: Function): Function => {
 	let called = false;
-	let result: any;
 	return (...args: any) => {
 		if (!called) {
-			result = fn(...args);
 			called = true;
+			return fn(...args);
 		}
-		return result;
 	};
 };
 

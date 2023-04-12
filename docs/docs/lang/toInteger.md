@@ -27,28 +27,13 @@ description: Converts a value to an integer.
 ```ts
 toInteger(3.2);
 // => 3
-
-toInteger(-3.8); 
-// => -3
-
+ 
+toInteger(Number.MIN_VALUE);
+// => 0
+ 
+toInteger(Infinity);
+// => 1.7976931348623157e+308
+ 
 toInteger('3.2');
 // => 3
-
-toInteger('-3.8'); 
-// => -3
-
-toInteger('abc');
-// => 0
-
-toInteger(true);
-// => 1
-
-toInteger(false);
-// => 0
-
-toInteger(null);
-// => 0
-
-toInteger(undefined);
-// => 0
 ```
