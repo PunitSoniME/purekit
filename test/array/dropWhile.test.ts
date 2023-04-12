@@ -9,6 +9,10 @@ const users = [
 
 describe('Array', () => {
 	describe('dropWhile', () => {
+		it('dropWhile([])', () => {
+			expect(dropWhile([])).toEqual(_dropWhile([]));
+		});
+
 		it('dropWhile(users, (o: any) => !o.active)', () => {
 			const predicate = (o: any) => !o.active;
 			expect(dropWhile(users, predicate)).toEqual(_dropWhile(users, predicate));

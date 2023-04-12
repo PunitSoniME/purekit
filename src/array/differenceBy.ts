@@ -1,5 +1,4 @@
 import identity from '../util/identity';
-import IDifferenceBy from './interface/IDifferenceBy';
 
 /**
  * Returns the difference between the first array and other arrays or values, using a comparator function to compare values.
@@ -10,7 +9,7 @@ import IDifferenceBy from './interface/IDifferenceBy';
  * @param {...Array|Function|string} args - The values or arrays to exclude.
  * If a string is provided as the last argument, it is used as a property name to extract from each element of the array.
  * If a function is provided as the last argument, it is used to extract a comparison value from each element in the arrays to exclude.
- * @param {Function|string} [iteratee=identity] - The iteratee invoked per element to generate the criterion by which uniqueness is computed.
+ * @param {Function|string} [iteratee = identity] - The iteratee invoked per element to generate the criterion by which uniqueness is computed.
  * If a string is provided instead, it will be used to create a property accessor function.
  * If iteratee is not provided, it defaults to identity.
  *
@@ -28,8 +27,8 @@ import IDifferenceBy from './interface/IDifferenceBy';
  * const arr5 = [{ x: 1 }, { x: 2 }, { x: 3 }];
  * console.log(differenceBy(arr5, { x: 2 }, 'x')); // [{ x: 1 }, { x: 3 }]
  */
-const differenceBy: IDifferenceBy = <T>(array: T[], ...args: any): T[] => {
-	let predicate = args.pop() ?? identity;
+const differenceBy = <T>(array: T[], ...args: any): T[] => {
+	let predicate = args.length > 1 ? args.pop() : identity;
 
 	if (typeof predicate === 'string') {
 		const prop = predicate;

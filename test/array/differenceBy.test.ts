@@ -3,6 +3,10 @@ import { differenceBy } from '../../src/array';
 
 describe('Array', () => {
 	describe('differenceBy', () => {
+		it('differenceBy([])', () => {
+			expect(differenceBy([], [])).toEqual(_differenceBy([], []));
+		});
+
 		it("differenceBy([{ x: 2 }, { x: 1 }], [{ x: 1 }], 'x')", () => {
 			const data1 = [{ x: 2 }, { x: 1 }];
 			const data2 = [{ x: 1 }];

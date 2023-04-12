@@ -12,7 +12,6 @@ description: Returns the index of the last element in the array that satisfies t
 {Array} array - The array to search in.
 {Function} [predicate = identity] - The function invoked per iteration.
 {number} [fromIndex = 0] - The index to start searching from.
-{number} [toIndex = array.length-1] - The index to stop searching at.
 ```
 
 

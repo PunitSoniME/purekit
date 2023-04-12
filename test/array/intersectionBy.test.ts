@@ -3,6 +3,10 @@ import { intersectionBy } from '../../src/array';
 
 describe('Array', () => {
 	describe('intersectionBy', () => {
+		it('intersectionBy([], [])', () => {
+			expect(intersectionBy([], [])).toEqual(_intersectionBy([], []));
+		});
+
 		it('intersectionBy([2.1, 1.2], [2.3, 3.4], Math.floor)', () => {
 			expect(intersectionBy([2.1, 1.2], [2.3, 3.4], Math.floor)).toEqual(
 				_intersectionBy([2.1, 1.2], [2.3, 3.4], Math.floor)
