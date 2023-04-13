@@ -16,6 +16,7 @@ import snakeCase from './snakeCase';
 import split from './split';
 import startCase from './startCase';
 import startsWith from './startsWith';
+import template from './template';
 import toLower from './toLower';
 import toUpper from './toUpper';
 import trim from './trim';
@@ -45,6 +46,7 @@ export {
 	split,
 	startCase,
 	startsWith,
+	template,
 	toLower,
 	toUpper,
 	trim,

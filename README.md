@@ -382,7 +382,7 @@ const { concat, chunk, forEach, filter } = require('purekit');    //  cjs ( comm
 - [split ✔️](https://purekit.vercel.app/home#split)
 - [startCase ✔️](https://purekit.vercel.app/home#startCase)
 - [startsWith ✔️](https://purekit.vercel.app/home#startsWith)
-- template ( 🔜 - Work in progress - PRs most welcome )
+- template ( 🔜 - Work in progress - PRs most welcome ) [Issue - #139](https://github.com/PunitSoniME/purekit/issues/139)
 - [toLower ✔️](https://purekit.vercel.app/home#toLower)
 - [toUpper ✔️](https://purekit.vercel.app/home#toUpper)
 - [trim ✔️](https://purekit.vercel.app/home#trim)
