@@ -25,10 +25,7 @@ import identity from '../util/identity';
  * console.log(uppercaseKeys);
  * // => { JOHN: { age: 23 }, JANE: { age: 31 }, JACK: { age: 27 } }
  */
-const mapKeys = <T>(
-	object: any,
-	iteratee: predicateType<T> = identity
-): Object => {
+const mapKeys = (object: any, iteratee: predicateType = identity): Object => {
 	const fn = createPredicate(iteratee);
 
 	return Object.entries(object).reduce(

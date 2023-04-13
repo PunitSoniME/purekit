@@ -26,7 +26,7 @@ import identity from '../util/identity';
  */
 const includes = <T>(
 	collection: T,
-	iteratee: predicateType<T> = identity,
+	iteratee: predicateType = identity,
 	fromIndex: number = 0
 ): boolean => {
 	if (typeof collection === 'object') {

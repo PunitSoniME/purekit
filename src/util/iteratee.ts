@@ -18,6 +18,6 @@ import identity from './identity';
  * const sortByAge = users.sort(iteratee(user => user.age));
  * // => [{ name: 'Alice', age: 32 }, { name: 'Bob', age: 42 }]
  */
-const iteratee = <T>(predicate: predicateType<T> = identity): any =>
+const iteratee = (predicate: predicateType = identity): any =>
 	createPredicate(predicate);
 export default iteratee;

@@ -4,7 +4,7 @@ import identity from '../util/identity';
 
 const baseLast = <T>(
 	array: T[],
-	predicate: predicateType<T> = identity,
+	predicate: predicateType = identity,
 	fromIndex: number = 0,
 	toIndex: number = array.length - 1
 ): number => {

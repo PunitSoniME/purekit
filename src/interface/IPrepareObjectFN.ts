@@ -2,7 +2,7 @@ import predicateType from '../helpers/predicateType';
 
 interface IPrepareObjectFN<T> {
 	collection: T[];
-	predicate: predicateType<T>;
+	predicate: predicateType;
 	operation?: string;
 	includeConditionFailRecord?: boolean;
 }

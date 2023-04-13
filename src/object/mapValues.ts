@@ -19,10 +19,7 @@ import identity from '../util/identity';
  * console.log(mapped);
  * // => { a: 2, b: 4, c: 6 }
  */
-const mapValues = <T>(
-	object: any,
-	iteratee: predicateType<T> = identity
-): Object => {
+const mapValues = (object: any, iteratee: predicateType = identity): Object => {
 	const fn = createPredicate(iteratee);
 
 	return Object.entries(object).reduce(

@@ -28,7 +28,7 @@ import identity from '../util/identity';
  */
 const keyBy = <T>(
 	collection: T[],
-	predicate: predicateType<T> = identity
+	predicate: predicateType = identity
 ): Object => {
 	const { result } = prepareObject({
 		collection: collection,

@@ -25,7 +25,7 @@ import identity from '../util/identity';
  */
 const reject = <T>(
 	collection: T[],
-	predicate: predicateType<T> = identity
+	predicate: predicateType = identity
 ): any[] => {
 	const { conditionFailedRecords } = prepareObject({
 		collection: collection,

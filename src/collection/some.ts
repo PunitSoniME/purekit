@@ -26,7 +26,7 @@ import identity from '../util/identity';
  */
 const some = <T>(
 	collection: T,
-	iteratee: predicateType<T> = identity
+	iteratee: predicateType = identity
 ): boolean => {
 	return applyArrayFn({
 		collection: collection,

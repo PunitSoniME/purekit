@@ -24,7 +24,7 @@ import identity from '../util/identity';
  */
 const findLastKey = <T>(
 	object: T,
-	predicate: predicateType<T> = identity
+	predicate: predicateType = identity
 ): any => {
 	const dataInArray = Object.entries(object as object).map(m => {
 		return { __key__: m[0], ...m[1] };

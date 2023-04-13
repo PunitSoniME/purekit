@@ -14,10 +14,7 @@ import identity from '../util/identity';
  *
  * uniqWith(objects, isEqual); // => [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }]
  */
-const uniqWith = <T>(
-	array: T[],
-	comparator: predicateType<T> = identity
-): T[] => {
+const uniqWith = <T>(array: T[], comparator: predicateType = identity): T[] => {
 	return array.filter(
 		(x, i, self) => i === self.findIndex(y => (comparator as Function)(x, y))
 	);

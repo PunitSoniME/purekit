@@ -23,7 +23,7 @@ import identity from '../util/identity';
  */
 const reduceRight = <T>(
 	collection: T,
-	iteratee: predicateType<T> = identity,
+	iteratee: predicateType = identity,
 	initialValue: any
 ): T => {
 	return applyArrayFn({

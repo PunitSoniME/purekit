@@ -20,7 +20,7 @@ import identity from '../util/identity';
 
 const countBy = <T>(
 	collection: T[],
-	predicate: predicateType<T> = identity
+	predicate: predicateType = identity
 ): Object => {
 	const { result } = prepareObject({
 		collection: collection,

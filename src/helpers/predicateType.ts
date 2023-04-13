@@ -1,7 +1,7 @@
-type predicateType<T> =
+type predicateType =
 	| string
 	| number
 	| Record<string, any>
-	| ((item: T) => boolean);
+	| ((item: any) => boolean);
 
 export default predicateType;

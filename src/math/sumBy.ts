@@ -19,7 +19,7 @@ import predicateType from '../helpers/predicateType';
  * sumBy([{ val: 1 }, { val: 2 }, { val: 0 }], (obj) => obj.val);
  * // => 3
  */
-const sumBy = <T>(numbers: T[], iteratee: predicateType<T>): number => {
+const sumBy = <T>(numbers: T[], iteratee: predicateType): number => {
 	const fn = createPredicate(iteratee);
 	return numbers.reduce(
 		(oldValue, nextValue) => oldValue + (fn as any)(nextValue),

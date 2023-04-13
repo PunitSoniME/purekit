@@ -15,7 +15,7 @@ import identity from '../util/identity';
  * console.log(result); // => [{ id: 1, name: 'John' }, { id: 2, name: 'Jane' }]
  */
 
-const uniqBy = <T>(array: T[], iteratee: predicateType<T> = identity): T[] => {
+const uniqBy = <T>(array: T[], iteratee: predicateType = identity): T[] => {
 	if (typeof iteratee === 'string') {
 		const prop = iteratee;
 		iteratee = (item: any) => item[prop];

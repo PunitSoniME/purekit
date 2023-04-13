@@ -30,7 +30,7 @@ import identity from '../util/identity';
  */
 const find = <T>(
 	collection: T[],
-	iteratee: predicateType<T> = identity,
+	iteratee: predicateType = identity,
 	fromIndex: number = 0
 ): Object => {
 	return applyArrayFn({

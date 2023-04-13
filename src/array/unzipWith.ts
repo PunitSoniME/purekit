@@ -18,9 +18,9 @@ import unzip from './unzip';
  * const unzipped = unzipWith(zipped, (str: string, num: number, bool: boolean) => `${str}${num}${bool}`; );
  * // => ['a1true', 'b2false']
  */
-const unzipWith = <T>(
+const unzipWith = (
 	array: any[][],
-	predicate: predicateType<T> = identity
+	predicate: predicateType = identity
 ): any[] => {
 	const fn = createPredicate(predicate);
 	const unzipped = unzip(array);

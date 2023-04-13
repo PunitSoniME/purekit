@@ -24,7 +24,7 @@ import pullAt from './pullAt';
 const pullAllBy = <T>(
 	array: T[],
 	elementsToRemove: T[],
-	iteratee: predicateType<T> = identity
+	iteratee: predicateType = identity
 ): T[] => {
 	const fn = createPredicate(iteratee);
 	let indexesToRemove: number[] = [];

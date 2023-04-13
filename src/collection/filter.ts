@@ -15,7 +15,7 @@ import identity from '../util/identity';
  * const isEven = (num) => num % 2 === 0;
  * const filteredNums = filter(nums, isEven); // [2, 4]
  */
-const filter = <T>(collection: T, iteratee: predicateType<T> = identity): T => {
+const filter = <T>(collection: T, iteratee: predicateType = identity): T => {
 	return applyArrayFn({
 		collection: collection,
 		fnName: 'filter',
