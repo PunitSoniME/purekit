@@ -19,10 +19,7 @@ import identity from '../util/identity';
  * omitBy(object, (value) => typeof value === 'number');
  * // => { 'b': '2' }
  */
-const omitBy = <T>(
-	object: Object,
-	predicate: predicateType<T> = identity
-): any => {
+const omitBy = (object: Object, predicate: predicateType = identity): any => {
 	const fn = createPredicate(predicate);
 	Object.entries(object).forEach(
 		([key, value]) => (fn as any)(value) && delete (object as any)[key]

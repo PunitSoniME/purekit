@@ -21,9 +21,9 @@ import identity from '../util/identity';
  * invertBy(object, (value) => `group_${value}`);
  * // => { 'group_1': ['a', 'c'], 'group_2': ['b'] }
  */
-const invertBy = <T>(
+const invertBy = (
 	object: Object,
-	iteratee: predicateType<T> = identity
+	iteratee: predicateType = identity
 ): Object => {
 	const fn = createPredicate(iteratee);
 	return Object.entries(object as Object).reduce((acc, [key, value]) => {

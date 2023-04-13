@@ -23,7 +23,7 @@ import identity from '../util/identity';
  */
 const map = <T>(
 	collection: Array<T> | Object,
-	iteratee: predicateType<T> = identity
+	iteratee: predicateType = identity
 ): T => {
 	const updatedIteratee: any = createPredicate(iteratee);
 

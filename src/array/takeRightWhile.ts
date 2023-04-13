@@ -20,7 +20,7 @@ import identity from '../util/identity';
  */
 const takeRightWhile = <T>(
 	array: T[],
-	predicate: predicateType<T> = identity
+	predicate: predicateType = identity
 ): T[] => {
 	if (array.length === 0) return array;
 

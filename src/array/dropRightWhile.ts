@@ -24,7 +24,7 @@ import identity from '../util/identity';
 
 const dropRightWhile = <T>(
 	array: T[],
-	predicate: predicateType<T> = identity
+	predicate: predicateType = identity
 ): T[] => {
 	const fn = createPredicate(predicate);
 

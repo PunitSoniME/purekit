@@ -23,7 +23,7 @@ import predicateType from '../helpers/predicateType';
  * const oldestUser = maxBy(users, (user) => user.age);
  * console.log(oldestUser); // { name: 'Bob', age: 30 }
  */
-const maxBy = <T>(collection: T[], iteratee: predicateType<T>): {} => {
+const maxBy = <T>(collection: T[], iteratee: predicateType): {} => {
 	const fn = createPredicate(iteratee);
 	return collection.reduce((a: any, b: any) => {
 		return (fn as any)(a) >= (fn as any)(b) ? a : b;

@@ -34,7 +34,7 @@ import identity from '../util/identity';
  */
 const partition = <T>(
 	collection: T[],
-	predicate: predicateType<T> = identity
+	predicate: predicateType = identity
 ): any[] => {
 	const { result, conditionFailedRecords } = prepareObject({
 		collection: collection,

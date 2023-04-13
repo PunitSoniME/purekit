@@ -28,7 +28,7 @@ import identity from '../util/identity';
  */
 const reduce = <T>(
 	collection: Array<T> | Object,
-	iteratee: predicateType<T> = identity,
+	iteratee: predicateType = identity,
 	initialValue: any
 ): T => {
 	return applyArrayFn({

@@ -2,7 +2,7 @@ import get from '../object/get';
 import predicateType from './predicateType';
 
 const createPredicate = <T>(
-	iteratee: predicateType<T>,
+	iteratee: predicateType,
 	equalyCompare: boolean = true
 ) => {
 	//	Specially for .includes

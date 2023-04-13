@@ -37,7 +37,7 @@ import identity from '../util/identity';
  */
 const groupBy = <T>(
 	collection: T[],
-	predicate: predicateType<T> = identity
+	predicate: predicateType = identity
 ): Object => {
 	const { result } = prepareObject({
 		collection: collection,

@@ -24,7 +24,7 @@ import identity from '../util/identity';
 const sortedIndexBy = <T>(
 	array: T[],
 	value: T,
-	iteratee: predicateType<T> = identity
+	iteratee: predicateType = identity
 ): number => {
 	const fn = createPredicate(iteratee);
 	return baseSortedIndex(array, value, fn);

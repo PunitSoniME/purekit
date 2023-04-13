@@ -18,10 +18,7 @@ import identity from '../util/identity';
  * takeWhile(['cat', 'dog', 'emu'], animal => animal.length <= 3);
  * // => ['cat', 'dog']
  */
-const takeWhile = <T>(
-	array: T[],
-	predicate: predicateType<T> = identity
-): T[] => {
+const takeWhile = <T>(array: T[], predicate: predicateType = identity): T[] => {
 	if (array.length === 0) return array;
 
 	const fn = createPredicate(predicate);

@@ -7,10 +7,10 @@ import identity from '../util/identity';
  *
  * @since 1.0.0
  *
- * @param {Array|Object} collection - The array to iterate over.
+ * @param {Array | Object} collection - The array to iterate over.
  * @param {Function} iteratee - The function to apply to each element of the array.
  *
- * @returns {Array} - A new flattened array.
+ * @returns {any[]} - A new flattened array.
  *
  * @example
  * flatMap([1, 2, 3], (n) => [n, n * 2]);
@@ -21,8 +21,8 @@ import identity from '../util/identity';
  */
 const flatMap = <T>(
 	collection: T,
-	iteratee: predicateType<T> = identity
-): T => {
+	iteratee: predicateType = identity
+): any[] => {
 	return applyArrayFn({
 		collection: collection,
 		fnName: 'map',

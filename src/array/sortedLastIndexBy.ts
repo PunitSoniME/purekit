@@ -20,7 +20,7 @@ import identity from '../util/identity';
 const sortedLastIndexBy = <T>(
 	array: T[],
 	value: T,
-	iteratee: predicateType<T> = identity
+	iteratee: predicateType = identity
 ): number => {
 	const fn = createPredicate(iteratee);
 	return baseSortedLastIndex(array, value, fn);

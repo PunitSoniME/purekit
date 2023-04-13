@@ -21,7 +21,7 @@ import identity from '../util/identity';
  * every(arr, isGreaterThanZero); // true
  * every(arr, isEven); // false
  */
-const every = <T>(collection: T, iteratee: predicateType<T> = identity): T => {
+const every = <T>(collection: T, iteratee: predicateType = identity): T => {
 	return applyArrayFn({
 		collection: collection,
 		fnName: 'every',

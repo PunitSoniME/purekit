@@ -21,7 +21,7 @@ import sumBy from './sumBy';
  * meanBy([{ value: 5 }, { value: 5 }, { value: 5 }, { value: 5 }], (obj) => obj.value);
  * // => 5
  */
-const meanBy = <T>(collection: T[], iteratee: predicateType<T>): number =>
+const meanBy = <T>(collection: T[], iteratee: predicateType): number =>
 	sumBy(collection as any[], iteratee) / collection.length;
 
 export default meanBy;

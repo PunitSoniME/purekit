@@ -27,7 +27,7 @@ import identity from '../util/identity';
  */
 const findLastIndex = <T>(
 	array: T[],
-	predicate: predicateType<T> = identity,
+	predicate: predicateType = identity,
 	fromIndex: number = 0
 ): number => baseLast(array, predicate, fromIndex);
 

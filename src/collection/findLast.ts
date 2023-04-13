@@ -25,7 +25,7 @@ import identity from '../util/identity';
  */
 const findLast = <T>(
 	collection: T,
-	iteratee: predicateType<T> = identity,
+	iteratee: predicateType = identity,
 	fromIndex: number = Array.isArray(collection) ? collection.length - 1 : 0
 ): T | undefined => {
 	const lastIndexOfRecord = baseLast(collection as T[], iteratee, 0, fromIndex);

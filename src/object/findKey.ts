@@ -22,7 +22,7 @@ import identity from '../util/identity';
  * const result = findKey(users, isActive);
  * console.log(result); // 'barney'
  */
-const findKey = <T>(object: T, predicate: predicateType<T> = identity): any => {
+const findKey = <T>(object: T, predicate: predicateType = identity): any => {
 	const dataInArray = Object.entries(object as object).map(m => {
 		return { __key__: m[0], ...m[1] };
 	});

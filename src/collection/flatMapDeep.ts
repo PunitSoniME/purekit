@@ -18,7 +18,7 @@ import identity from '../util/identity';
  */
 const flatMapDeep = <T>(
 	collection: T,
-	iteratee: predicateType<T> = identity
+	iteratee: predicateType = identity
 ): T => {
 	return applyArrayFn({
 		collection: collection,

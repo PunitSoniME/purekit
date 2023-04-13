@@ -21,7 +21,7 @@ import predicateType from '../helpers/predicateType';
  * minBy([{ name: 'alice', age: 30 }, { name: 'brenda', age: 25 }, { name: 'charlie', age: 30 }], (obj) => obj.name.length);
  * // => { name: 'brenda', age: 25 }
  */
-const minBy = <T>(collection: T, iteratee: predicateType<T>): T => {
+const minBy = <T>(collection: T, iteratee: predicateType): T => {
 	const fn = createPredicate(iteratee);
 	return (collection as any[]).reduce((a, b) => {
 		return (fn as any)(a) <= (fn as any)(b) ? a : b;

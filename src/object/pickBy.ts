@@ -18,9 +18,9 @@ import identity from '../util/identity';
  * pickBy(object, (value) => typeof value === 'number');
  * // => { 'a': 1, 'c': 3 }
  */
-const pickBy = <T>(
+const pickBy = (
 	object: Object,
-	predicate: predicateType<T> = identity
+	predicate: predicateType = identity
 ): Object => {
 	const fn = createPredicate(predicate);
 	let newObject: Object = {};

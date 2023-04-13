@@ -28,7 +28,7 @@ import identity from '../util/identity';
  */
 const findIndex = <T>(
 	array: T,
-	predicate: predicateType<T> = identity,
+	predicate: predicateType = identity,
 	fromIndex: number = 0
 ): number => {
 	return applyArrayFn({

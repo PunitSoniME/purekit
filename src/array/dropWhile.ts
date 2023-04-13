@@ -17,10 +17,7 @@ import identity from '../util/identity';
  *
  * dropWhile(['foo', 'bar', 'baz'], str => str.startsWith('f')); // => ['bar', 'baz']
  */
-const dropWhile = <T>(
-	array: T[],
-	predicate: predicateType<T> = identity
-): T[] => {
+const dropWhile = <T>(array: T[], predicate: predicateType = identity): T[] => {
 	const fn = createPredicate(predicate);
 
 	for (let i = 0; i < array.length; i++) {

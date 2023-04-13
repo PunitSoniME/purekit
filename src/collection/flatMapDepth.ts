@@ -22,7 +22,7 @@ import identity from '../util/identity';
  */
 const flatMapDepth = <T>(
 	collection: T,
-	iteratee: predicateType<T> = identity,
+	iteratee: predicateType = identity,
 	depth: number = 1
 ): T => {
 	return applyArrayFn({
