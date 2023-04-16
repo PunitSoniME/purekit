@@ -10,7 +10,7 @@ description: Merges the own and inherited enumerable string keyed properties of 
 
 ```bash
 {Object} destination - The object to merge properties into.
-{...Object[]} sources - The source objects to merge properties from.
+{...Object} sources - The source objects to merge properties from.
 ```
 
 
