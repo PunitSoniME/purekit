@@ -317,7 +317,7 @@ const { concat, chunk, forEach, filter } = require('purekit');    //  cjs ( comm
 - [at ✔️](https://purekit.vercel.app/home#at)
 - [create ✔️](https://purekit.vercel.app/home#create)
 - [defaults ✔️](https://purekit.vercel.app/home#defaults)
-- defaultsDeep ( 🔜 - Work in progress - PRs most welcome ) [Issue - #42](https://github.com/PunitSoniME/purekit/issues/42)
+- [defaultsDeep ✔️](https://purekit.vercel.app/home#defaultsDeep)
 - [entries -> toPairs ✔️](https://purekit.vercel.app/home#entries)
 - [entriesIn -> toPairsIn ✔️](https://purekit.vercel.app/home#entriesIn)
 - [extend -> assignIn ✔️](https://purekit.vercel.app/home#extend)

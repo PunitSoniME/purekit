@@ -1,6 +1,8 @@
 /**
  * Sets the value at path of object. If a portion of path doesn't exist, it's created.
  *
+ * @since 1.0.0
+ *
  * @param {Object} object - The object to modify.
  * @param {Array<string>|string} path - The path of the property to set.
  * @param {*} value - The value to set.

@@ -1,7 +1,7 @@
 import _set from 'lodash/set';
 import { set } from '../../src/object';
 
-let object: any;
+let object: Object;
 
 describe('Object', () => {
 	describe('set', () => {

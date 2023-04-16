@@ -252,7 +252,7 @@ const routes = [
             { label: 'at' },
             { label: 'create' },
             { label: 'defaults' },
-            //   { label: 'defaultsDeep' },
+            { label: 'defaultsDeep' },
             { label: 'entries' },
             { label: 'entriesIn' },
             { label: 'extend' },

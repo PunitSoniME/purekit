@@ -5,6 +5,7 @@ import assignWith from './assignWith';
 import at from './at';
 import create from './create';
 import defaults from './defaults';
+import defaultsDeep from './defaultsDeep';
 import entries from './entries';
 import extend from './extend';
 import extendWith from './extendWith';
@@ -49,6 +50,7 @@ export {
 	at,
 	create,
 	defaults,
+	defaultsDeep,
 	entries,
 	extend,
 	extendWith,
