@@ -5,32 +5,39 @@
  *
  * @since 1.0.0
  *
- * @param {T} destination - The object to merge properties into.
+ * @param {Object} destination - The object to merge properties into.
  * @param {...Object} sources - The source objects to merge properties from.
  *
- * @returns {T} - A new object with the merged properties.
+ * @returns {Object} - A new object with the merged properties.
  *
  * @example
  *
  * const result = defaultsDeep({ 'a': { 'b': 2 } }, { 'a': { 'b': 1, 'c': 3 } });
  * // Returns { 'a': { 'b': 2, 'c': 3 } }
  */
-function defaultsDeep<T>(destination: T, ...sources: T[]): T {
+function defaultsDeep(destination: any, ...sources: any[]): Object {
+	const merged =
+		destination instanceof RegExp
+			? destination
+			: Object.assign({}, destination); // create a new object to merge into
 	sources.forEach(source => {
 		if (source === null || typeof source !== 'object') {
 			return;
 		}
 		Object.keys(source).forEach(key => {
-			const _key = key as keyof T;
-			const sourceValue = source[_key];
-			if (destination[_key] === undefined) {
-				destination[_key] = sourceValue;
-			} else if (typeof sourceValue === 'object') {
-				destination[_key] = defaultsDeep(destination[_key], sourceValue);
+			const sourceValue = source[key];
+			// check for prototype pollution
+			if (Object.prototype.hasOwnProperty.call(source, key)) {
+				const destinationValue = merged[key];
+				if (destinationValue === undefined) {
+					merged[key] = sourceValue;
+				} else if (typeof sourceValue === 'object') {
+					merged[key] = defaultsDeep(destinationValue, sourceValue);
+				}
 			}
 		});
 	});
-	return destination;
+	return merged;
 }
 
 export default defaultsDeep;

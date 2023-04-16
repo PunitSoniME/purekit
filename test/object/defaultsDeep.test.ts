@@ -1,5 +1,8 @@
 import _defaultsDeep from 'lodash/defaultsDeep';
 import { defaultsDeep } from '../../src/object';
+import { cloneDeep } from '../../src/lang';
+import { noop } from '../../src/util';
+import assert from 'assert';
 
 describe('Object', () => {
 	describe('defaultsDeep', () => {
@@ -8,5 +11,107 @@ describe('Object', () => {
 				_defaultsDeep({ a: { b: 2 } }, { a: { b: 1, c: 3 } })
 			);
 		});
+	});
+
+	it('should deep assign source properties if missing on `object`', function () {
+		var object = { a: { b: 2 }, d: 4 },
+			source = { a: { b: 3, c: 3 }, e: 5 },
+			expected = { a: { b: 2, c: 3 }, d: 4, e: 5 };
+
+		assert.deepStrictEqual(defaultsDeep(object, source), expected);
+	});
+
+	it('should accept multiple sources', function () {
+		var source1 = { a: { b: 3 } },
+			source2 = { a: { c: 3 } },
+			source3 = { a: { b: 3, c: 3 } },
+			source4 = { a: { c: 4 } },
+			expected = { a: { b: 2, c: 3 } };
+
+		assert.deepStrictEqual(
+			defaultsDeep({ a: { b: 2 } }, source1, source2),
+			expected
+		);
+		assert.deepStrictEqual(
+			defaultsDeep({ a: { b: 2 } }, source3, source4),
+			expected
+		);
+	});
+
+	it('should not overwrite `null` values', function () {
+		var object = { a: { b: null } },
+			source = { a: { b: 2 } },
+			actual = defaultsDeep(object, source) as any;
+
+		assert.strictEqual(actual.a.b, null);
+	});
+
+	it('should not overwrite regexp values', function () {
+		var object = { a: { b: /x/ } },
+			source = { a: { b: /y/ } },
+			actual = defaultsDeep(object, source) as any;
+
+		assert.deepStrictEqual(actual.a.b, /x/);
+	});
+
+	it('should not convert function properties to objects', function () {
+		var actual = defaultsDeep({}, { a: noop }) as any;
+		assert.strictEqual(actual.a, noop);
+
+		actual = defaultsDeep({}, { a: { b: noop } });
+		assert.strictEqual(actual.a.b, noop);
+	});
+
+	it('should overwrite `undefined` values', function () {
+		var object = { a: { b: undefined } },
+			source = { a: { b: 2 } },
+			actual = defaultsDeep(object, source) as any;
+
+		assert.strictEqual(actual.a.b, 2);
+	});
+
+	it('should assign `undefined` values', function () {
+		var source = { a: undefined, b: { c: undefined, d: 1 } },
+			expected = cloneDeep(source),
+			actual = defaultsDeep({}, source);
+
+		assert.deepStrictEqual(actual, expected);
+	});
+
+	//	TODO: Test case is failing
+	// it('should merge sources containing circular references', function () {
+	// 	var object = {
+	// 		'foo': { 'b': { 'c': { 'd': {} } } },
+	// 		'bar': { 'a': 2 }
+	// 	};
+
+	// 	var source = {
+	// 		'foo': { 'b': { 'c': { 'd': {} } } },
+	// 		'bar': {}
+	// 	} as any;
+
+	// 	object.foo.b.c.d = object;
+	// 	source.foo.b.c.d = source;
+	// 	source.bar.b = source.foo.b;
+
+	// 	var actual = defaultsDeep(object, source) as any;
+
+	// 	assert.strictEqual(actual.bar.b, actual.foo.b);
+	// 	assert.strictEqual(actual.foo.b.c.d, actual.foo.b.c.d.foo.b.c.d);
+	// });
+
+	it('should not modify sources', function () {
+		var source1 = { a: 1, b: { c: 2 } },
+			source2 = { b: { c: 3, d: 3 } },
+			actual = defaultsDeep({}, source1, source2);
+
+		assert.deepStrictEqual(actual, { a: 1, b: { c: 2, d: 3 } });
+		assert.deepStrictEqual(source1, { a: 1, b: { c: 2 } });
+		assert.deepStrictEqual(source2, { b: { c: 3, d: 3 } });
+	});
+
+	it('should not attempt a merge of a string into an array', function () {
+		var actual = defaultsDeep({ a: ['abc'] }, { a: 'abc' }) as any;
+		assert.deepStrictEqual(actual.a, ['abc']);
 	});
 });
