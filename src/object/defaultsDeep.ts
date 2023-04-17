@@ -25,10 +25,12 @@ function defaultsDeep(destination: any, ...sources: any[]): Object {
 			return;
 		}
 		Object.keys(source).forEach(key => {
+			if (!source.hasOwnProperty(key)) return;
+
 			const sourceValue = source[key];
-			// check for prototype pollution
 			if (Object.prototype.hasOwnProperty.call(source, key)) {
 				const destinationValue = merged[key];
+				// check for prototype pollution
 				if (destinationValue === undefined) {
 					merged[key] = sourceValue;
 				} else if (typeof sourceValue === 'object') {
