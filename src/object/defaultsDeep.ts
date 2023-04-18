@@ -26,6 +26,7 @@ function defaultsDeep(destination: any, ...sources: any[]): Object {
 		}
 		Object.keys(source).forEach(key => {
 			if (!source.hasOwnProperty(key)) return;
+			if (key === '__proto__' || key === 'constructor') return;
 
 			const sourceValue = source[key];
 			if (Object.prototype.hasOwnProperty.call(source, key)) {
