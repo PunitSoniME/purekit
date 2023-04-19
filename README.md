@@ -341,7 +341,7 @@ const { concat, chunk, forEach, filter } = require('purekit');    //  cjs ( comm
 - [mapKeys ✔️](https://purekit.vercel.app/home#mapKeys)
 - [mapValues ✔️](https://purekit.vercel.app/home#mapValues)
 - [merge ✔️](https://purekit.vercel.app/home#merge)
-- mergeWith ( 🔜 - Work in progress - PRs most welcome ) [Issue - #48](https://github.com/PunitSoniME/purekit/issues/48)
+- [mergeWith ✔️](https://purekit.vercel.app/home#mergeWith)
 - [omit ✔️](https://purekit.vercel.app/home#omit)
 - [omitBy ✔️](https://purekit.vercel.app/home#omitBy)
 - [pick ✔️](https://purekit.vercel.app/home#pick)
