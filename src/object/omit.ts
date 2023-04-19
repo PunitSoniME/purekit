@@ -4,7 +4,7 @@
  * @since 1.0.0
  *
  * @param {Object} object - The source object.
- * @param {Array} paths - The property paths to omit.
+ * @param {string | string[]} paths - The property paths to omit.
  * @returns {Object} - Returns the new object.
  *
  * @example
@@ -12,8 +12,12 @@
  * omit({a: 1, b: 2, c: 3}, ['a', 'c']);
  * // => {b: 2}
  */
-const omit = (object: Object, paths: any[]): Object =>
-	Object.fromEntries(
+const omit = (object: Object, paths: string | string[]): Object => {
+	if (!Array.isArray(paths)) {
+		paths = [paths];
+	}
+	return Object.fromEntries(
 		Object.entries(object as Object).filter(([key]) => !paths.includes(key))
 	);
+};
 export default omit;

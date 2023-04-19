@@ -276,7 +276,7 @@ const routes = [
             { label: 'mapKeys' },
             { label: 'mapValues' },
             { label: 'merge' },
-            //   { label: 'mergeWith' },
+            { label: 'mergeWith' },
             { label: 'omit' },
             { label: 'omitBy' },
             { label: 'pick' },

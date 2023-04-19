@@ -27,6 +27,7 @@ import keysIn from './keysIn';
 import mapKeys from './mapKeys';
 import mapValues from './mapValues';
 import merge from './merge';
+import mergeWith from './mergeWith';
 import omit from './omit';
 import omitBy from './omitBy';
 import pick from './pick';
@@ -72,6 +73,7 @@ export {
 	mapKeys,
 	mapValues,
 	merge,
+	mergeWith,
 	omit,
 	omitBy,
 	pick,
