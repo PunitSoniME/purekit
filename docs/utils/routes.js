@@ -128,7 +128,7 @@ const routes = [
             { label: 'curry' },
             { label: 'curryRight' },
             //   { label: 'debounce' },
-            //   { label: 'defer' },
+            { label: 'defer' },
             { label: 'delay' },
             { label: 'flip' },
             //   { label: 'memoize' },

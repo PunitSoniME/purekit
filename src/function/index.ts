@@ -6,6 +6,7 @@ import bindKey from './bindKey';
 import curry from './curry';
 import curryRight from './curryRight';
 import debounce from './debounce';
+import defer from './defer';
 import delay from './delay';
 import flip from './flip';
 import negate from './negate';
@@ -29,6 +30,7 @@ export {
 	curry,
 	curryRight,
 	debounce,
+	defer,
 	delay,
 	flip,
 	negate,
