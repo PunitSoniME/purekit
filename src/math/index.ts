@@ -1,5 +1,8 @@
 import add from './add';
+import average from './average';
+import averageBy from './averageBy';
 import ceil from './ceil';
+import degreesToRads from './degreesToRads';
 import divide from './divide';
 import floor from './floor';
 import max from './max';
@@ -16,7 +19,10 @@ import sumBy from './sumBy';
 
 export {
 	add,
+	average,
+	averageBy,
 	ceil,
+	degreesToRads,
 	divide,
 	floor,
 	max,

@@ -12,7 +12,8 @@
  * const obj = { a: 1, b: { c: 2 } };
  * const clone = cloneDeep(obj);
  * obj.b.c = 3;
- * console.log(clone.b.c); // => 2
+ * console.log(clone.b.c);
+ * // => 2
  */
 const cloneDeep = <T>(value: T): T => {
 	if (Array.isArray(value)) {

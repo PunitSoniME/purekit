@@ -3,10 +3,18 @@ import html from 'remark-html';
 import prism from 'remark-prism';
 
 export default async function markdownToHtml(markdown) {
+  if (process.env.NODE_ENV === 'production') {
+    const result = await remark()
+      // https://github.com/sergioramos/remark-prism/issues/265
+      .use(html, { sanitize: false })
+      .use(prism)
+      .process(markdown);
+    return result.toString();
+  }
+
   const result = await remark()
     // https://github.com/sergioramos/remark-prism/issues/265
     .use(html, { sanitize: false })
-    .use(prism)
     .process(markdown);
   return result.toString();
 }

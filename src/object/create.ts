@@ -13,13 +13,16 @@
  * const prototype = { a: 1 };
  *
  * const obj1 = create(prototype);
- * console.log(obj1); // {}
+ * console.log(obj1);
+ * // => {}
 
  * const obj2 = create(prototype, { b: 2 });
- * console.log(obj2); // { b: 2 }
+ * console.log(obj2);
+ * // => { b: 2 }
  *
  * const obj3 = create(prototype, { a: 3, b: 4 });
- * console.log(obj3); // { a: 3, b: 4 }
+ * console.log(obj3);
+ * // => { a: 3, b: 4 }
  */
 const create = <T>(prototype: T, properties: T | null = null): T => {
 	if (properties === null)

@@ -29,5 +29,6 @@ description: Removes all occurrences of specified values from an array.
 const arr = ['a', 'b', 'c', 'a', 'b', 'c'];
 const result = pull(arr, 'a', 'c');
 
-console.log(result); // => ['b', 'b']
+console.log(result);
+// => ['b', 'b']
 ```

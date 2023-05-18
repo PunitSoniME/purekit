@@ -1,3 +1,4 @@
+// import byteSize from './byteSize';
 import castArray from './castArray';
 import clone from './clone';
 import cloneDeep from './cloneDeep';
@@ -58,6 +59,7 @@ import toSafeInteger from './toSafeInteger';
 import toString from './toString';
 
 export {
+	// byteSize,
 	castArray,
 	clone,
 	cloneDeep,

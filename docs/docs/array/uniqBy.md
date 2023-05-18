@@ -28,5 +28,6 @@ description: Creates a new array of unique values, based on the result of the gi
 ```ts
 const array = [{ id: 1, name: 'John' }, { id: 2, name: 'Jane' }, { id: 1, name: 'Jim' }];
 const result = uniqBy(array, 'id');
-console.log(result); // => [{ id: 1, name: 'John' }, { id: 2, name: 'Jane' }]
+console.log(result);
+// => [{ id: 1, name: 'John' }, { id: 2, name: 'Jane' }]
 ```

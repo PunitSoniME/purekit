@@ -28,6 +28,9 @@ description: Returns the index of the first occurrence of the specified value in
 ```ts
 const arr = [1, 2, 3, 4, 5];
 
-console.log(sortedIndexOf(arr, 3)); // => 2
-console.log(sortedIndexOf(arr, 6)); // => -1
+console.log(sortedIndexOf(arr, 3));
+// => 2
+
+console.log(sortedIndexOf(arr, 6));
+// => -1
 ```

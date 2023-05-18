@@ -66,7 +66,7 @@ const orderBy = <T>(
 		: [{ [iteratee]: Array.isArray(orders) ? orders[0] : orders }];
 
 	//	@ts-ignore
-	return sort(collection, prepareSortConfig);
+	return sort([...collection], prepareSortConfig);
 };
 
 export default orderBy;

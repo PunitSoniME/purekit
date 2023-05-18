@@ -6,8 +6,31 @@ import { XMarkIcon } from '@heroicons/react/24/outline'
 import { FunnelIcon, MinusIcon, PlusIcon } from '@heroicons/react/20/solid'
 import routes from '../utils/routes';
 
+let timeout;
+const SearchComponent = ({ onChange }) => {
+
+  return <div className="rounded-md shadow-sm w-full sticky top-0">
+    <input
+      type="search"
+      name="search"
+      id="search"
+      placeholder='Search'
+      onChange={(e) => {
+        if (timeout)
+          clearTimeout(timeout);
+
+        timeout = setTimeout(() => {
+          onChange(e.target.value);
+        }, 500)
+      }}
+      className="w-full rounded-none border-0 px-3 py-2 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 focus-visible:outline-none"
+    />
+  </div>
+}
+
 export default function Layout({ children, meta: pageMeta }) {
   const router = useRouter();
+  const [clonedRoutes, setClonedRoutes] = useState([...routes]);
 
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
 
@@ -80,8 +103,8 @@ export default function Layout({ children, meta: pageMeta }) {
                   leaveFrom="translate-x-0"
                   leaveTo="translate-x-full"
                 >
-                  <Dialog.Panel className="relative ml-auto flex h-full w-full max-w-xs flex-col overflow-y-auto bg-white py-4 pb-12 shadow-xl">
-                    <div className="flex items-center justify-between px-4">
+                  <Dialog.Panel className="relative ml-auto flex h-full w-full max-w-xs flex-col overflow-y-auto bg-white pb-12 shadow-xl">
+                    <div className="flex items-center justify-between px-4 py-4">
                       <h2 className="text-lg font-medium text-gray-900">Methods</h2>
                       <button
                         type="button"
@@ -94,9 +117,23 @@ export default function Layout({ children, meta: pageMeta }) {
                     </div>
 
                     {/* Filters */}
-                    <form className="mt-4 border-t border-gray-200">
+                    <form className="border-t border-gray-200">
 
-                      {routes.map((section) => (
+                      <SearchComponent onChange={(value) => {
+                        let tempClonedRoutes = [];
+
+                        routes.forEach(f => {
+                          const filteredRoutes = f.options.filter(f => f.label.startsWith(value));
+                          if (filteredRoutes.length > 0) {
+                            tempClonedRoutes.push({ ...f, options: [...filteredRoutes] });
+                          }
+                        })
+
+                        setClonedRoutes([...tempClonedRoutes]);
+
+                      }} />
+
+                      {clonedRoutes.map((section) => (
                         <Disclosure as="div" defaultOpen={true} key={section.id} className="border-t border-gray-200 px-4 py-6">
                           {({ open }) => (
                             <>
@@ -113,12 +150,12 @@ export default function Layout({ children, meta: pageMeta }) {
                                 </Disclosure.Button>
                               </h3>
                               <Disclosure.Panel className="pt-6">
-                                <div>
+                                <div className='divide-y'>
                                   {section.options.map((option) => (
                                     <a
                                       key={option.label}
                                       href={`/home#${option.label}`}
-                                      className={`block py-2 pl-6 text-sm ${router.asPath === `/home#${option.label}` ? "bg-violet-500 text-white" : "text-gray-600 hover:cursor-pointer hover:bg-violet-200"}`}
+                                      className={`block py-3 pl-6 text-sm ${router.asPath === `/home#${option.label}` ? "bg-violet-500 text-white font-semibold" : "text-gray-600 hover:cursor-pointer hover:bg-violet-200"}`}
                                       onClick={(e) => {
                                         e.preventDefault();
                                         router.push(`/home#${option.label}`);
@@ -167,8 +204,22 @@ export default function Layout({ children, meta: pageMeta }) {
                 {/* Filters */}
                 <form className="hidden lg:block bg-slate-50 custom-sidebar">
 
-                  {routes.map((section) => (
-                    <Disclosure as="div" defaultOpen={true} key={section.id} className="border-b border-gray-200 py-6">
+                  <SearchComponent onChange={(value) => {
+                    let tempClonedRoutes = [];
+
+                    routes.forEach(f => {
+                      const filteredRoutes = f.options.filter(f => f.label.startsWith(value));
+                      if (filteredRoutes.length > 0) {
+                        tempClonedRoutes.push({ ...f, options: [...filteredRoutes] });
+                      }
+                    })
+
+                    setClonedRoutes([...tempClonedRoutes]);
+
+                  }} />
+
+                  {clonedRoutes.map((section, index) => (
+                    <Disclosure as="div" defaultOpen={true} key={section.id} className={`divide-slate-400/25 border-gray-200 py-6 ${index > 0 ? 'border-t-2' : ''}`}>
                       {({ open }) => (
                         <>
                           <h3 className="-my-3 flow-root">
@@ -184,12 +235,12 @@ export default function Layout({ children, meta: pageMeta }) {
                             </Disclosure.Button>
                           </h3>
                           <Disclosure.Panel className="pt-6">
-                            <div>
+                            <div className='divide-y'>
                               {section.options.map((option) => (
                                 <a
                                   key={option.label}
                                   href={`/home#${option.label}`}
-                                  className={`block py-2 pl-6 text-sm ${router.asPath === `/home#${option.label}` ? "bg-violet-500 text-white" : "text-gray-600 hover:cursor-pointer hover:bg-violet-200"}`}
+                                  className={`block py-3 pl-6 text-sm ${router.asPath === `/home#${option.label}` ? "bg-violet-500 text-white font-semibold" : "text-gray-600 hover:cursor-pointer hover:bg-violet-200"}`}
                                   onClick={(e) => {
                                     e.preventDefault();
                                     router.push(`/home#${option.label}`);

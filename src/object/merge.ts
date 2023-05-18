@@ -40,12 +40,14 @@ function mergeValue(objectValue: any, value: any) {
  * const object1 = { a: [{ b: 2 }, { d: 4 }] };
  * const object2 = { a: [{ c: 3 }, { e: 5 }] };
  * const result = merge(object1, object2);
- * console.log(result); // { a: [{ b: 2, c: 3 }, { d: 4, e: 5 }] }
+ * console.log(result);
+ * // => { a: [{ b: 2, c: 3 }, { d: 4, e: 5 }] }
  *
  * const object3 = { a: 1, b: 2 };
  * const object4 = { b: 3, c: 4 };
  * const result2 = merge(object3, object4);
- * console.log(result2); // { a: 1, b: 3, c: 4 }
+ * console.log(result2);
+ * // => { a: 1, b: 3, c: 4 }
  */
 const merge = <T>(object: T, ...sources: any): T => {
 	for (let source of sources) {

@@ -29,6 +29,9 @@ description: Removes elements from an array corresponding to the specified index
 const arr = [1, 2, 3, 4, 5];
 const removed = pullAt(arr, [1, 3]);
 
-console.log(arr); //    =>  [1, 3, 5]
-console.log(removed); //    =>  [2, 4]
+console.log(arr);
+// => [1, 3, 5]
+
+console.log(removed);
+// => [2, 4]
 ```

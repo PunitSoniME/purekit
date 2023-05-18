@@ -24,7 +24,8 @@ import identity from '../util/identity';
  *
  * const [activeUsers, inactiveUsers] = partition(users, ({ active }) => active);
  *
- * console.log(activeUsers); // [{ user: 'fred', age: 40, active: true }]
+ * console.log(activeUsers);
+ * // => [{ user: 'fred', age: 40, active: true }]
  *
  * console.log(inactiveUsers);
  * // [

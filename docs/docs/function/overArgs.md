@@ -31,5 +31,6 @@ const square = (n) => n * n;
 const add = (a, b) => a + b;
 const addDoubleSquare = overArgs(add, [double, square]);
 
-console.log(addDoubleSquare(2, 3)); // => 13 ((2 * 2) + (3 * 3 * 2))
+console.log(addDoubleSquare(2, 3));
+// => 13 // ((2 * 2) + (3 * 3 * 2))
 ```

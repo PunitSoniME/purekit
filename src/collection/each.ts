@@ -10,10 +10,12 @@ import forEach from './forEach';
  *
  * @example
  * const arr = [1, 2, 3];
- * each(arr, n => console.log(n)); // => 1, 2, 3
+ * each(arr, n => console.log(n));
+ * // => 1, 2, 3
  *
  * const obj = { a: 1, b: 2, c: 3 };
- * each(obj, (value, key) => console.log(key, value)); // => "a 1", "b 2", "c 3"
+ * each(obj, (value, key) => console.log(key, value));
+ * // => "a 1", "b 2", "c 3"
  */
 const each = forEach;
 export default each;

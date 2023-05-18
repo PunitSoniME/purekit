@@ -11,6 +11,8 @@ import * as seq from './seq';
 import * as util from './util';
 
 import {
+	bifurcate,
+	bifurcateBy,
 	chunk,
 	compact,
 	concat,
@@ -140,7 +142,9 @@ import {
 
 import {
 	add,
+	average,
 	ceil,
+	degreesToRads,
 	divide,
 	floor,
 	max,
@@ -206,6 +210,7 @@ import {
 } from './object';
 
 import {
+	// byteSize,
 	castArray,
 	clone,
 	cloneDeep,
@@ -368,6 +373,8 @@ const _ = {
 
 export {
 	//	Array Methods
+	bifurcate,
+	bifurcateBy,
 	chunk,
 	compact,
 	concat,
@@ -490,6 +497,7 @@ export {
 	unary,
 	wrap,
 	//	Lang Methods
+	// byteSize,
 	castArray,
 	clone,
 	cloneDeep,
@@ -550,7 +558,9 @@ export {
 	toString,
 	// Math Methods
 	add,
+	average,
 	ceil,
+	degreesToRads,
 	divide,
 	floor,
 	max,

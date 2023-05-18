@@ -31,5 +31,6 @@ const a = [1, 2, 3, 4];
 const b = [3, 4];
 const result = differenceWith(a, b, (a, b) => a === b);
 
-console.log(result);    //	=>	[1, 2]
+console.log(result);
+// => [1, 2]
 ```

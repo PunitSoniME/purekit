@@ -14,10 +14,12 @@ import getRandomElementFromCollection from '../helpers/getRandomElement';
  *
  * @example
  * const result = sampleSize([1, 2, 3, 4], 2);
- * console.log(result); // => [2, 4]
+ * console.log(result);
+ * // => [2, 4]
  *
  * const result = sampleSize({ a: 1, b: 2, c: 3, d: 4 }, 3);
- * console.log(result); // => [2, 4, 1]
+ * console.log(result);
+ * // => [2, 4, 1]
  */
 const sampleSize = <T>(collection: T, length: number = 1): T => {
 	let count = 0;

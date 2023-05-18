@@ -12,8 +12,11 @@
  * const greet = name => `Hello, ${name}!`;
  * const greetBob = wrap('Bob', greet);
  *
- * console.log(greetBob()); // logs "Hello, Bob!"
- * console.log(greetBob('Alice')); // logs "Hello, Bob!"
+ * console.log(greetBob());
+ * // => "Hello, Bob!"
+ *
+ * console.log(greetBob('Alice'));
+ * // => "Hello, Bob!"
  */
 
 const wrap =

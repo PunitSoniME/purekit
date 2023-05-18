@@ -15,7 +15,8 @@ import assignIn from './assignIn';
  * });
  *
  * const result = toPairsIn(obj);
- * console.log(result); // [['b', 2], ['a', 1]]
+ * console.log(result);
+ * // => [['b', 2], ['a', 1]]
  */
 const toPairsIn = (object: object): Array<[string, any]> => {
 	const newObject = assignIn({}, object);

@@ -1,3 +1,5 @@
+import bifurcate from './bifurcate';
+import bifurcateBy from './bifurcateBy';
 import chunk from './chunk';
 import compact from './compact';
 import concat from './concat';
@@ -66,6 +68,8 @@ import zipObject from './zipObject';
 import zipWith from './zipWith';
 
 export {
+	bifurcate,
+	bifurcateBy,
 	chunk,
 	compact,
 	concat,
