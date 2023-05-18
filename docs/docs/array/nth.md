@@ -28,7 +28,12 @@ description: Gets the element at index `index` of `array`. If `n` is negative, t
 ```ts
 const arr = [1, 2, 3, 4, 5];
 
-console.log(nth(arr)); // => 1
-console.log(nth(arr, 2)); // => 3
-console.log(nth(arr, -1)); // => 5
+console.log(nth(arr));
+// => 1
+
+console.log(nth(arr, 2));
+// => 3
+
+console.log(nth(arr, -1));
+// => 5
 ```

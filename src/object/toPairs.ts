@@ -10,7 +10,8 @@
  * const obj = { a: 1, b: 2, c: 3 };
  *
  * const result = toPairs(obj);
- * console.log(result); // [['a', 1], ['b', 2], ['c', 3]]
+ * console.log(result);
+ * // => [['a', 1], ['b', 2], ['c', 3]]
  */
 const toPairs = (object: object): Array<[string, any]> =>
 	Object.entries(object);

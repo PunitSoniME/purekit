@@ -29,5 +29,6 @@ description: Removes all given elements from the array using a custom comparator
 ```ts
 const arr = [{ id: 1, name: 'John' }, { id: 2, name: 'Mary' }, { id: 3, name: 'Peter' }];
 const result = pullAllWith(arr, [{ id: 1, name: 'John' }, { id: 3, name: 'Peter' }], (a, b) => a.id === b.id);
-console.log(result); // =>  [{ id: 2, name: 'Mary' }]
+console.log(result);
+// => [{ id: 2, name: 'Mary' }]
 ```

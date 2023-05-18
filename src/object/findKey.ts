@@ -20,7 +20,8 @@ import identity from '../util/identity';
  *
  * const isActive = (value) => value.active;
  * const result = findKey(users, isActive);
- * console.log(result); // 'barney'
+ * console.log(result);
+ * // => 'barney'
  */
 const findKey = <T>(object: T, predicate: predicateType = identity): any => {
 	const dataInArray = Object.entries(object as object).map(m => {

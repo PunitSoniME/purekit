@@ -14,7 +14,8 @@ import get from './get';
  * const object = { a: [{ b: { c: 3 } }, 4] };
  * const result = at(object, ['a[0].b.c', 'a[1]']);
  *
- * console.log(result); // [3, 4]
+ * console.log(result);
+ * // => [3, 4]
  */
 const at = <T>(object: T, paths: any[]): any[] => {
 	let data: any[] = [];

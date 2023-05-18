@@ -20,7 +20,7 @@ const attempt = (func: Function, ...args: any): any => {
 	try {
 		return func(...args);
 	} catch (e) {
-		return e;
+		return e instanceof Error ? e : new Error(e as string);
 	}
 };
 export default attempt;

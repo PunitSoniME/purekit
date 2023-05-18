@@ -48,7 +48,7 @@ export async function getStaticProps() {
     if (splittedData[1] === 'index') {
       content.push("<div class='not-prose bg-slate-200 capitalize'>");
       content.push(`<h2 id=${methodDoc.meta.title} class="section-title">`);
-      content.push(await markdownToHtml(methodDoc.meta.title || ''))
+      content.push(await markdownToHtml(methodDoc.meta.title || ''));
       content.push("</h2>");
       content.push("</div>");
     } else {
@@ -58,7 +58,6 @@ export async function getStaticProps() {
     }
 
     content.push("</div>");
-
 
     ++i;
   }

@@ -12,10 +12,12 @@ import identity from '../util/identity';
  *
  * @example
  * const arr = [1, 2, 3];
- * forEach(arr, n => console.log(n)); // => 1, 2, 3
+ * forEach(arr, n => console.log(n));
+ * // => 1, 2, 3
  *
  * const obj = { a: 1, b: 2, c: 3 };
- * forEach(obj, (value, key) => console.log(key, value)); // => "a 1", "b 2", "c 3"
+ * forEach(obj, (value, key) => console.log(key, value));
+ * // => "a 1", "b 2", "c 3"
  */
 const forEach = <T>(collection: T, iteratee: Function = identity): T => {
 	applyArrayFn({

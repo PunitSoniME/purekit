@@ -13,8 +13,11 @@ import identity from '../util/identity';
  * @example
  * const arr = [1, 2, 3, 4, 5];
  * const removed = remove(arr, n => n % 2 === 0);
- * console.log(arr); // [1, 3, 5]
- * console.log(removed); // [2, 4]
+ * console.log(arr);
+ * // => [1, 3, 5]
+ *
+ * console.log(removed);
+ * // => [2, 4]
  */
 const remove = <T>(array: T[], predicate: Function = identity): T[] => {
 	// in order to not mutate the original array until the very end

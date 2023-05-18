@@ -20,7 +20,8 @@ import identity from '../util/identity';
  *
  * const isActive = (value) => value.active;
  * const result = findLastKey(users, isActive);
- * console.log(result); // 'pebbles'
+ * console.log(result);
+ * // => 'pebbles'
  */
 const findLastKey = <T>(
 	object: T,

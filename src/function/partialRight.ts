@@ -16,7 +16,8 @@
  *
  * const sayHelloTo = partialRight(greet, 'Hello');
  *
- * console.log(sayHelloTo('John')); // logs: 'Hello, John!'
+ * console.log(sayHelloTo('John'));
+ * // => 'Hello, John!'
  */
 
 const partialRight =

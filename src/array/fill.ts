@@ -14,11 +14,13 @@
  *
  * const arr = [1, 2, 3, 4, 5];
  * const filledArr = fill(arr, 0, 2, 4);
- * console.log(filledArr); // => [1, 2, 0, 0, 5]
+ * console.log(filledArr);
+ * // => [1, 2, 0, 0, 5]
  *
  * const arr2 = [1, 2, 3, 4, 5];
  * const filledArr2 = fill(arr2, '*', 1);
- * console.log(filledArr2); // => [1, '*', '*', '*', '*', '*']
+ * console.log(filledArr2);
+ * // => [1, '*', '*', '*', '*', '*']
  */
 
 const fill = <T>(

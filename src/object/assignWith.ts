@@ -19,7 +19,8 @@
  *
  * const result = assignWith(target, source1, source2, (objValue, srcValue) => objValue === undefined ? srcValue : objValue);
  *
- * console.log(result); // { a: 1, b: 2, c: 3 }
+ * console.log(result);
+ * // => { a: 1, b: 2, c: 3 }
  */
 const assignWith = <T>(object: T, ...args: any): T => {
 	const lastElement = args[args.length - 1];

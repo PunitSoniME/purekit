@@ -100,11 +100,11 @@
   "size-limit": [
     {
       "path": "dist/purekit.cjs.production.min.js",
-      "limit": "15 KB"
+      "limit": "20 KB"
     },
     {
       "path": "dist/purekit.esm.js",
-      "limit": "15 KB"
+      "limit": "20 KB"
     }
   ],
   "devDependencies": {

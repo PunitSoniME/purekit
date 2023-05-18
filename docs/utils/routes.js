@@ -3,6 +3,8 @@ const routes = [
         id: 'array',
         name: 'Array',
         options: [
+            { label: 'bifurcate', isNew: true },
+            { label: 'bifurcateBy', isNew: true },
             { label: 'chunk' },
             { label: 'compact' },
             { label: 'concat' },
@@ -149,6 +151,7 @@ const routes = [
         id: 'lang',
         name: 'Lang',
         options: [
+            // { label: 'byteSize', isNew: true },
             { label: 'castArray' },
             { label: 'clone' },
             { label: 'cloneDeep' },
@@ -216,7 +219,10 @@ const routes = [
         name: 'Math',
         options: [
             { label: 'add' },
+            { label: 'average', isNew: true },
+            { label: 'averageBy', isNew: true },
             { label: 'ceil' },
+            { label: 'degreesToRads', isNew: true },
             { label: 'divide' },
             { label: 'floor' },
             { label: 'max' },

@@ -28,6 +28,9 @@ description: Creates a new function that can only be called once. Subsequent cal
 const add = (a, b) => a + b;
 const addOnce = once(add);
 
-console.log(addOnce(2, 3)); // => 5
-console.log(addOnce(2, 3)); // => undefined
+console.log(addOnce(2, 3));
+// => 5
+
+console.log(addOnce(2, 3));
+// => undefined
 ```

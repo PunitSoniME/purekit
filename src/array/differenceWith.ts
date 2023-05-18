@@ -19,7 +19,8 @@ import IDifferenceWith from './interface/IDifferenceWith';
  *
  * const result = differenceWith(a, b, (a, b) => a === b);
  *
- * console.log(result);	//	=>	[1, 2]
+ * console.log(result);
+ * // => [1, 2]
  */
 const differenceWith: IDifferenceWith = <T>(array: T[], ...args: any): T[] => {
 	let comparator = args.pop();

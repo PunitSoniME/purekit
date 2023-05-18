@@ -12,7 +12,8 @@ import toPairs from './toPairs';
  * const obj = { a: 1, b: 2, c: 3 };
  *
  * const result = entries(obj);
- * console.log(result); // [['a', 1], ['b', 2], ['c', 3]]
+ * console.log(result);
+ * // => [['a', 1], ['b', 2], ['c', 3]]
  */
 const entries = toPairs;
 export default entries;

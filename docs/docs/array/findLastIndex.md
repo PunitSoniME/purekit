@@ -35,5 +35,6 @@ const users = [
 
 const result = findLastIndex(users, user => user.user === 'fred');
 
-console.log(result);  // => 1
+console.log(result);
+// => 1
 ```

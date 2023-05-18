@@ -11,7 +11,9 @@
  * @example
  * const array = [{ x: 1 }, { x: 2 }, { x: 1 }];
  * const result = sortedUniqBy(array, o => o.x);
- * console.log(result); // => [{ x: 1 }, { x: 2 }]
+ *
+ * console.log(result);
+ * // => [{ x: 1 }, { x: 2 }]
  */
 const sortedUniqBy = <T>(array: T[], iteratee: Function): T[] => {
 	let mappedValues = new Map();

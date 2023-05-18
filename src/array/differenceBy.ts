@@ -18,14 +18,17 @@ import identity from '../util/identity';
  * @example
  * const arr1 = [2.1, 1.2, 3.3];
  * const arr2 = [3.4, 2.5];
- * console.log(differenceBy(arr1, arr2, Math.floor)); // [1.2]
+ * console.log(differenceBy(arr1, arr2, Math.floor));
+ * // => [1.2]
  *
  * const arr3 = [ { 'x': 2 }, { 'x': 1 } ];
  * const arr4 = [ { 'x': 1 } ];
- * console.log(differenceBy(arr3, arr4, 'x')); // [ { x: 2 } ]
+ * console.log(differenceBy(arr3, arr4, 'x'));
+ * // => [ { x: 2 } ]
  *
  * const arr5 = [{ x: 1 }, { x: 2 }, { x: 3 }];
- * console.log(differenceBy(arr5, { x: 2 }, 'x')); // [{ x: 1 }, { x: 3 }]
+ * console.log(differenceBy(arr5, { x: 2 }, 'x'));
+ * // => [{ x: 1 }, { x: 3 }]
  */
 const differenceBy = <T>(array: T[], ...args: any): T[] => {
 	let predicate = args.length > 1 ? args.pop() : identity;

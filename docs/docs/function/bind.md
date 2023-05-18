@@ -35,10 +35,12 @@ const user = {
 };
 
 const sayHiToAlice = bind(user.sayHi, user, 'Hello');
-sayHiToAlice(); // logs "Hello, my name is Alice."
+sayHiToAlice();
+// => "Hello, my name is Alice."
 
 const add = (x, y) => x + y;
 const addTen = bind(add, null, 10);
 
-console.log(addTen(5)); // logs 15
+console.log(addTen(5));
+// => 15
 ```

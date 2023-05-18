@@ -11,16 +11,19 @@
  * const obj = {a: 1, b: 2};
  * Object.freeze(obj);
  *
- * console.log(isFrozen(obj)); // true
+ * console.log(isFrozen(obj));
+ * // => true
  *
  * const arr = [1, 2, 3];
  * Object.freeze(arr);
  *
- * console.log(isFrozen(arr)); // true
+ * console.log(isFrozen(arr));
+ * // => true
  *
  * const obj2 = {a: {b: 1}};
  *
- * console.log(isFrozen(obj2)); // false
+ * console.log(isFrozen(obj2));
+ * // => false
  */
 
 const isFrozen = (collection: Object | Array<any>): boolean =>

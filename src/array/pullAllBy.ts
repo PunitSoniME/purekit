@@ -19,7 +19,8 @@ import pullAt from './pullAt';
  * const users = [{ name: 'John', age: 30 }, { name: 'Jane', age: 25 }, { name: 'Bob', age: 40 }];
  * const removedUsers = pullAllBy(users, [{ name: 'John' }, { name: 'Jane' }], 'name');
  *
- * console.log(removedUsers); // [{ name: 'Bob', age: 40 }]
+ * console.log(removedUsers);
+ * // => [{ name: 'Bob', age: 40 }]
  */
 const pullAllBy = <T>(
 	array: T[],

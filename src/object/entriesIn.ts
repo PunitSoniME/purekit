@@ -15,7 +15,8 @@ import toPairsIn from './toPairsIn';
  * });
  *
  * const result = entriesIn(obj);
- * console.log(result); // [['b', 2], ['a', 1]]
+ * console.log(result);
+ * // => [['b', 2], ['a', 1]]
  */
 const entriesIn = toPairsIn;
 export default entriesIn;

@@ -29,5 +29,6 @@ const arr = [1, 2, 3, 4];
 
 const result = tail(arr);
 
-console.log(result); // =>  [2, 3, 4]
+console.log(result);
+// => [2, 3, 4]
 ```

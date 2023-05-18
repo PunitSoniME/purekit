@@ -13,8 +13,12 @@ import nth from './nth';
  * @example
  * const arr = [1, 2, 3, 4, 5];
  * const removed = pullAt(arr, [1, 3]);
- * console.log(arr); // [1, 3, 5]
- * console.log(removed); // [2, 4]
+ *
+ * console.log(arr);
+ * // => [1, 3, 5]
+ *
+ * console.log(removed);
+ * // => [2, 4]
  */
 const pullAt = <T>(array: T[], indexes: number | number[]): T[] => {
 	if (Array.isArray(indexes)) {

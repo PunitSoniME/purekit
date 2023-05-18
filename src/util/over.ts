@@ -15,7 +15,8 @@
  * const funcs = [func1, func2, func3];
  * const overFunc = over(funcs);
  *
- * console.log(overFunc(5)); // [10, 7, 3]
+ * console.log(overFunc(5));
+ * // => [10, 7, 3]
  */
 const over =
 	(array: any[]): Function =>
