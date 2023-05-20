@@ -155,8 +155,8 @@ const routes = [
             { label: 'castArray' },
             { label: 'clone' },
             { label: 'cloneDeep' },
-            //   { label: 'cloneDeepWith' },
-            //  { label: 'cloneWith' },
+            //  { label: 'cloneDeepWith' },
+            { label: 'cloneWith' },
             { label: 'conformsTo' },
             { label: 'eq' },
             { label: 'gt' },
@@ -389,4 +389,14 @@ const routes = [
     },
 ];
 
-export default routes;
+export default routes.map(m => {
+    return {
+        ...m,
+        options: m.options.map(m => {
+            return {
+                ...m,
+                labelInLowercase: m.label
+            }
+        })
+    }
+});

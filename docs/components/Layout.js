@@ -5,32 +5,14 @@ import { Dialog, Disclosure, Menu, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import { FunnelIcon, MinusIcon, PlusIcon } from '@heroicons/react/20/solid'
 import routes from '../utils/routes';
-
-let timeout;
-const SearchComponent = ({ onChange }) => {
-
-  return <div className="rounded-md shadow-sm w-full sticky top-0">
-    <input
-      type="search"
-      name="search"
-      id="search"
-      placeholder='Search'
-      onChange={(e) => {
-        if (timeout)
-          clearTimeout(timeout);
-
-        timeout = setTimeout(() => {
-          onChange(e.target.value);
-        }, 500)
-      }}
-      className="w-full rounded-none border-0 px-3 py-2 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 focus-visible:outline-none"
-    />
-  </div>
-}
+import SearchComponent from './SearchComponent';
 
 export default function Layout({ children, meta: pageMeta }) {
   const router = useRouter();
-  const [clonedRoutes, setClonedRoutes] = useState([...routes]);
+  const [clonedRoutes, setClonedRoutes] = useState({
+    filter: '',
+    routes: [...routes]
+  });
 
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
 
@@ -119,21 +101,25 @@ export default function Layout({ children, meta: pageMeta }) {
                     {/* Filters */}
                     <form className="border-t border-gray-200">
 
-                      <SearchComponent onChange={(value) => {
-                        let tempClonedRoutes = [];
+                      <SearchComponent
+                        value={clonedRoutes.filter}
+                        onChange={(value) => {
+                          let tempClonedRoutes = [];
 
-                        routes.forEach(f => {
-                          const filteredRoutes = f.options.filter(f => f.label.startsWith(value));
-                          if (filteredRoutes.length > 0) {
-                            tempClonedRoutes.push({ ...f, options: [...filteredRoutes] });
-                          }
-                        })
+                          routes.forEach(f => {
+                            const filteredRoutes = f.options.filter(f => f.labelInLowercase.startsWith(value));
+                            if (filteredRoutes.length > 0) {
+                              tempClonedRoutes.push({ ...f, options: [...filteredRoutes] });
+                            }
+                          })
 
-                        setClonedRoutes([...tempClonedRoutes]);
+                          setClonedRoutes({
+                            filter: value,
+                            routes: [...tempClonedRoutes]
+                          });
+                        }} />
 
-                      }} />
-
-                      {clonedRoutes.map((section) => (
+                      {clonedRoutes.routes.map((section) => (
                         <Disclosure as="div" defaultOpen={true} key={section.id} className="border-t border-gray-200 px-4 py-6">
                           {({ open }) => (
                             <>
@@ -204,21 +190,26 @@ export default function Layout({ children, meta: pageMeta }) {
                 {/* Filters */}
                 <form className="hidden lg:block bg-slate-50 custom-sidebar">
 
-                  <SearchComponent onChange={(value) => {
-                    let tempClonedRoutes = [];
+                  <SearchComponent
+                    value={clonedRoutes.filter}
+                    onChange={(value) => {
+                      let tempClonedRoutes = [];
 
-                    routes.forEach(f => {
-                      const filteredRoutes = f.options.filter(f => f.label.startsWith(value));
-                      if (filteredRoutes.length > 0) {
-                        tempClonedRoutes.push({ ...f, options: [...filteredRoutes] });
-                      }
-                    })
+                      routes.forEach(f => {
+                        const filteredRoutes = f.options.filter(f => f.labelInLowercase.startsWith(value));
+                        if (filteredRoutes.length > 0) {
+                          tempClonedRoutes.push({ ...f, options: [...filteredRoutes] });
+                        }
+                      })
 
-                    setClonedRoutes([...tempClonedRoutes]);
+                      setClonedRoutes({
+                        filter: value,
+                        routes: [...tempClonedRoutes]
+                      });
 
-                  }} />
+                    }} />
 
-                  {clonedRoutes.map((section, index) => (
+                  {clonedRoutes.routes.map((section, index) => (
                     <Disclosure as="div" defaultOpen={true} key={section.id} className={`divide-slate-400/25 border-gray-200 py-6 ${index > 0 ? 'border-t-2' : ''}`}>
                       {({ open }) => (
                         <>

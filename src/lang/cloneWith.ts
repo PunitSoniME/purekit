@@ -5,12 +5,14 @@ type Customizer<T> = (value: T) => T | undefined;
  * If the input value is an HTML DOM element, it is cloned using the `cloneNode` method and
  * passed to the customizer function.
  *
+ * @since 1.0.0
+ *
  * @param value - The input value to clone.
  * @param customizer - A function that takes a value and returns a new value, or `undefined` to use
  * the default cloning behavior.
- * @returns A deep copy of the input value with the customizer function applied to each property.
+ *
+ * @returns {*} - A deep copy of the input value with the customizer function applied to each property.
  */
-
 function cloneWith<T>(value: T, customizer: Customizer<T>): T {
 	if (typeof customizer !== 'function') {
 		return value;

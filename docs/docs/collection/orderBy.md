@@ -33,11 +33,13 @@ const users = [
   { 'user': 'fred', 'age': 40 },
   { 'user': 'barney', 'age': 36 }
 ];
-orderBy(users, 'user', 'asc');
 
-orderBy(users, 'user', 'asc');
+const orderBySingle = orderBy(users, 'user', 'asc');
+console.log(orderBySingle);
 // => [{ 'user': 'barney', 'age': 34 }, { 'user': 'barney', 'age': 36 }, { 'user': 'fred', 'age': 48 }, { 'user': 'fred', 'age': 40 }]
 
-orderBy(users, ['user', 'age'], ['asc', 'desc']);
+
+const orderByMultiple = orderBy(users, ['user', 'age'], ['asc', 'desc']);
+console.log(orderByMultiple);
 // => [{ 'user': 'barney', 'age': 36 }, { 'user': 'barney', 'age': 34 }, { 'user': 'fred', 'age': 48 }, { 'user': 'fred', 'age': 40 }]
 ```

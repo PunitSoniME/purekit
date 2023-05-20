@@ -1,3 +1,4 @@
+import dayOfYear from './dayOfYear';
 import now from './now';
 
-export { now };
+export { dayOfYear, now };
