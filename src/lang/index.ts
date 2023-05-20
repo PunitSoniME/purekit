@@ -1,8 +1,9 @@
+import arrayToCSV from './arrayToCSV';
 // import byteSize from './byteSize';
 import castArray from './castArray';
 import clone from './clone';
 import cloneDeep from './cloneDeep';
-import cloneWith from './_cloneWith';
+import cloneWith from './cloneWith';
 import conformsTo from './conformsTo';
 import eq from './eq';
 import gt from './gt';
@@ -59,6 +60,7 @@ import toSafeInteger from './toSafeInteger';
 import toString from './toString';
 
 export {
+	arrayToCSV,
 	// byteSize,
 	castArray,
 	clone,

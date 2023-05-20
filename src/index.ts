@@ -114,7 +114,7 @@ import {
 	sortBy,
 } from './collection';
 
-import { now } from './date';
+import { dayOfYear, now } from './date';
 
 import {
 	after,
@@ -210,6 +210,7 @@ import {
 } from './object';
 
 import {
+	arrayToCSV,
 	// byteSize,
 	castArray,
 	clone,
@@ -473,6 +474,7 @@ export {
 	some,
 	sortBy,
 	//	Date Methods
+	dayOfYear,
 	now,
 	//	Function Methods
 	after,
@@ -497,6 +499,7 @@ export {
 	unary,
 	wrap,
 	//	Lang Methods
+	arrayToCSV,
 	// byteSize,
 	castArray,
 	clone,
