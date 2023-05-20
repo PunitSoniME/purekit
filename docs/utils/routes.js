@@ -116,6 +116,7 @@ const routes = [
         name: 'Date',
         options: [
             { label: 'now' },
+            { label: 'dayOfYear', isNew: true },
         ]
     },
     {
@@ -151,6 +152,7 @@ const routes = [
         id: 'lang',
         name: 'Lang',
         options: [
+            { label: 'arrayToCSV', isNew: true },
             // { label: 'byteSize', isNew: true },
             { label: 'castArray' },
             { label: 'clone' },
