@@ -115,8 +115,8 @@ const routes = [
         id: 'date',
         name: 'Date',
         options: [
-            { label: 'now' },
             { label: 'dayOfYear', isNew: true },
+            { label: 'now' },
         ]
     },
     {
@@ -397,7 +397,7 @@ export default routes.map(m => {
         options: m.options.map(m => {
             return {
                 ...m,
-                labelInLowercase: m.label
+                labelInLowercase: m.label.toLowerCase()
             }
         })
     }
