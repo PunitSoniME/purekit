@@ -1,5 +1,5 @@
 /**
- * Converts the elements to strings with comma-separated values.
+ * Converts the elements to strings with comma-separated ( default delimiter ) values.
  *
  * @since 1.0.4
  *
