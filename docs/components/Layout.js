@@ -7,6 +7,12 @@ import { FunnelIcon, MinusIcon, PlusIcon } from '@heroicons/react/20/solid'
 import routes from '../utils/routes';
 import SearchComponent from './SearchComponent';
 
+const NoMethodsFound = () => {
+  return <div className='block font-semibold text-center py-4 text-md text-gray-600'>
+    No method(s) found !
+  </div>
+}
+
 export default function Layout({ children, meta: pageMeta }) {
   const router = useRouter();
   const [clonedRoutes, setClonedRoutes] = useState({
@@ -119,44 +125,48 @@ export default function Layout({ children, meta: pageMeta }) {
                           });
                         }} />
 
-                      {clonedRoutes.routes.map((section) => (
-                        <Disclosure as="div" defaultOpen={true} key={section.id} className="border-t border-gray-200 px-4 py-6">
-                          {({ open }) => (
-                            <>
-                              <h3 className="-mx-2 -my-3 flow-root">
-                                <Disclosure.Button className="px-4 flex w-full items-center justify-between bg-white py-3 text-gray-400 hover:text-gray-500">
-                                  <span className="font-medium text-gray-900">{section.name}</span>
-                                  <span className="ml-6 flex items-center">
-                                    {open ? (
-                                      <MinusIcon className="h-5 w-5" aria-hidden="true" />
-                                    ) : (
-                                      <PlusIcon className="h-5 w-5" aria-hidden="true" />
-                                    )}
-                                  </span>
-                                </Disclosure.Button>
-                              </h3>
-                              <Disclosure.Panel className="pt-6">
-                                <div className='divide-y'>
-                                  {section.options.map((option) => (
-                                    <a
-                                      key={option.label}
-                                      href={`/home#${option.label}`}
-                                      className={`block py-3 pl-6 text-sm ${router.asPath === `/home#${option.label}` ? "bg-violet-500 text-white font-semibold" : "text-gray-600 hover:cursor-pointer hover:bg-violet-200"}`}
-                                      onClick={(e) => {
-                                        e.preventDefault();
-                                        router.push(`/home#${option.label}`);
-                                        setMobileFiltersOpen(false);
-                                      }}
-                                    >
-                                      {option.label}
-                                    </a>
-                                  ))}
-                                </div>
-                              </Disclosure.Panel>
-                            </>
-                          )}
-                        </Disclosure>
-                      ))}
+                      {
+                        clonedRoutes.routes.length > 0 ?
+                          clonedRoutes.routes.map((section) => (
+                            <Disclosure as="div" defaultOpen={true} key={section.id} className="border-t border-gray-200 px-4 py-6">
+                              {({ open }) => (
+                                <>
+                                  <h3 className="-mx-2 -my-3 flow-root">
+                                    <Disclosure.Button className="px-4 flex w-full items-center justify-between bg-white py-3 text-gray-400 hover:text-gray-500">
+                                      <span className="font-medium text-gray-900">{section.name}</span>
+                                      <span className="ml-6 flex items-center">
+                                        {open ? (
+                                          <MinusIcon className="h-5 w-5" aria-hidden="true" />
+                                        ) : (
+                                          <PlusIcon className="h-5 w-5" aria-hidden="true" />
+                                        )}
+                                      </span>
+                                    </Disclosure.Button>
+                                  </h3>
+                                  <Disclosure.Panel className="pt-6">
+                                    <div className='divide-y'>
+                                      {section.options.map((option) => (
+                                        <a
+                                          key={option.label}
+                                          href={`/home#${option.label}`}
+                                          className={`block py-3 pl-6 text-sm ${router.asPath === `/home#${option.label}` ? "bg-violet-500 text-white font-semibold" : "text-gray-600 hover:cursor-pointer hover:bg-violet-200"}`}
+                                          onClick={(e) => {
+                                            e.preventDefault();
+                                            router.push(`/home#${option.label}`);
+                                            setMobileFiltersOpen(false);
+                                          }}
+                                        >
+                                          {option.label}
+                                        </a>
+                                      ))}
+                                    </div>
+                                  </Disclosure.Panel>
+                                </>
+                              )}
+                            </Disclosure>
+                          ))
+                          : <NoMethodsFound />
+                      }
                     </form>
 
                   </Dialog.Panel>
@@ -209,43 +219,47 @@ export default function Layout({ children, meta: pageMeta }) {
 
                     }} />
 
-                  {clonedRoutes.routes.map((section, index) => (
-                    <Disclosure as="div" defaultOpen={true} key={section.id} className={`divide-slate-400/25 border-gray-200 py-6 ${index > 0 ? 'border-t-2' : ''}`}>
-                      {({ open }) => (
-                        <>
-                          <h3 className="-my-3 flow-root">
-                            <Disclosure.Button className="px-4 flex w-full items-center justify-between bg-slate-50 py-3 text-sm text-gray-400 hover:text-gray-500">
-                              <span className="font-medium text-gray-900">{section.name}</span>
-                              <span className="ml-6 flex items-center">
-                                {open ? (
-                                  <MinusIcon className="h-5 w-5" aria-hidden="true" />
-                                ) : (
-                                  <PlusIcon className="h-5 w-5" aria-hidden="true" />
-                                )}
-                              </span>
-                            </Disclosure.Button>
-                          </h3>
-                          <Disclosure.Panel className="pt-6">
-                            <div className='divide-y'>
-                              {section.options.map((option) => (
-                                <a
-                                  key={option.label}
-                                  href={`/home#${option.label}`}
-                                  className={`block py-3 pl-6 text-sm ${router.asPath === `/home#${option.label}` ? "bg-violet-500 text-white font-semibold" : "text-gray-600 hover:cursor-pointer hover:bg-violet-200"}`}
-                                  onClick={(e) => {
-                                    e.preventDefault();
-                                    router.push(`/home#${option.label}`);
-                                  }}
-                                >
-                                  {option.label}
-                                </a>
-                              ))}
-                            </div>
-                          </Disclosure.Panel>
-                        </>
-                      )}
-                    </Disclosure>
-                  ))}
+                  {
+                    clonedRoutes.routes.length > 0 ?
+                      clonedRoutes.routes.map((section, index) => (
+                        <Disclosure as="div" defaultOpen={true} key={section.id} className={`divide-slate-400/25 border-gray-200 py-6 ${index > 0 ? 'border-t-2' : ''}`}>
+                          {({ open }) => (
+                            <>
+                              <h3 className="-my-3 flow-root">
+                                <Disclosure.Button className="px-4 flex w-full items-center justify-between bg-slate-50 py-3 text-sm text-gray-400 hover:text-gray-500">
+                                  <span className="font-medium text-gray-900">{section.name}</span>
+                                  <span className="ml-6 flex items-center">
+                                    {open ? (
+                                      <MinusIcon className="h-5 w-5" aria-hidden="true" />
+                                    ) : (
+                                      <PlusIcon className="h-5 w-5" aria-hidden="true" />
+                                    )}
+                                  </span>
+                                </Disclosure.Button>
+                              </h3>
+                              <Disclosure.Panel className="pt-6">
+                                <div className='divide-y'>
+                                  {section.options.map((option) => (
+                                    <a
+                                      key={option.label}
+                                      href={`/home#${option.label}`}
+                                      className={`block py-3 pl-6 text-sm ${router.asPath === `/home#${option.label}` ? "bg-violet-500 text-white font-semibold" : "text-gray-600 hover:cursor-pointer hover:bg-violet-200"}`}
+                                      onClick={(e) => {
+                                        e.preventDefault();
+                                        router.push(`/home#${option.label}`);
+                                      }}
+                                    >
+                                      {option.label}
+                                    </a>
+                                  ))}
+                                </div>
+                              </Disclosure.Panel>
+                            </>
+                          )}
+                        </Disclosure>
+                      ))
+                      : <NoMethodsFound />
+                  }
                 </form>
 
                 {/* Product grid */}
