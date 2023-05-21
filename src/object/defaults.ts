@@ -25,7 +25,7 @@ import IDefaults from './interface/IObject';
  * console.log(result2);
  * // => { a: 5, d: 4, b: 20 }
  */
-const defaults: IDefaults = (...args: any[]) =>
+const defaults: IDefaults = (...args: any[]): object =>
 	args.reverse().reduce((acc: any, object: any) => ({ ...acc, ...object }), {});
 
 export default defaults;
