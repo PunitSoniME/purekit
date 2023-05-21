@@ -23,6 +23,7 @@ export default function Doc({ meta, content }) {
 const componentHeader = (title) => `<div id=${title} class="invisible h-0">${title}</div>`;  // `<div id=${title} class="border-l-8 bg-violet-100 border-l-violet-500 w-full px-6 mb-6 py-4 rounded text-md md:text-lg font-bold scroll-top">${title}</div>`;
 
 export async function getStaticProps() {
+
   const mainIndexDoc = getDocBySlug('home');
   let content = [];
   content.push("<div class='mx-2 bg-slate-50 rounded-t'>");

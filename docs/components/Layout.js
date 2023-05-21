@@ -111,9 +111,10 @@ export default function Layout({ children, meta: pageMeta }) {
                         value={clonedRoutes.filter}
                         onChange={(value) => {
                           let tempClonedRoutes = [];
+                          const valueInLowercase = value.toLowerCase();
 
                           routes.forEach(f => {
-                            const filteredRoutes = f.options.filter(f => f.labelInLowercase.startsWith(value));
+                            const filteredRoutes = f.options.filter(f => f.labelInLowercase.startsWith(valueInLowercase));
                             if (filteredRoutes.length > 0) {
                               tempClonedRoutes.push({ ...f, options: [...filteredRoutes] });
                             }
@@ -204,9 +205,10 @@ export default function Layout({ children, meta: pageMeta }) {
                     value={clonedRoutes.filter}
                     onChange={(value) => {
                       let tempClonedRoutes = [];
+                      const valueInLowercase = value.toLowerCase();
 
                       routes.forEach(f => {
-                        const filteredRoutes = f.options.filter(f => f.labelInLowercase.startsWith(value));
+                        const filteredRoutes = f.options.filter(f => f.labelInLowercase.startsWith(valueInLowercase));
                         if (filteredRoutes.length > 0) {
                           tempClonedRoutes.push({ ...f, options: [...filteredRoutes] });
                         }

@@ -24,7 +24,7 @@
  * console.log(result);
  * // => [1, 2, 3, 4, 5, 6, 7, 8, 9]
  */
-const concat = <T>(array: T[], ...restArray: any[]): T[] => {
+const concat = <T>(array: T[], ...restArray: Array<any>): T[] => {
 	let newArray: T[] = [];
 	newArray = newArray.concat(array);
 
