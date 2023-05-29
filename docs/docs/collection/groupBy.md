@@ -33,8 +33,7 @@ const users = [
   { name: 'David', age: 25 },
   { name: 'Eva', age: 21 }
 ];
-groupBy(users, user => user.age);
-
+_.groupBy(users, user => user.age);
 /*
 {
   '21': [

@@ -30,9 +30,10 @@ const users = [
   { 'id': '2', 'name': 'Bob' },
   { 'id': '3', 'name': 'Alice' }
 ];
-keyBy(users, 'id');
+
+_.keyBy(users, 'id');
 // => { '1': { 'id': '1', 'name': 'Alice' }, '2': { 'id': '2', 'name': 'Bob' }, '3': { 'id': '3', 'name': 'Alice' } }
 
-keyBy(users, (user) => user.name);
+_.keyBy(users, (user) => user.name);
 // => { 'Alice': { 'id': '3', 'name': 'Alice' }, 'Bob': { 'id': '2', 'name': 'Bob' } }
 ```

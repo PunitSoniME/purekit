@@ -26,7 +26,7 @@ description: Seals an object or array, preventing new properties from being adde
 
 ```ts
 const obj = { a: 1, b: 2 };
-const sealedObj = seal(obj);
+const sealedObj = _.seal(obj);
 
 sealedObj.a = 3; // Cannot modify property 'a' of a sealed object.
 sealedObj.c = 4; // Cannot add new property 'c' to a sealed object.
@@ -34,7 +34,7 @@ console.log(sealedObj);
 // => { a: 1, b: 2 }
 
 const arr = [1, 2, 3];
-const sealedArr = seal(arr);
+const sealedArr = _.seal(arr);
 
 sealedArr.push(4); // Cannot add new elements to a sealed array.
 console.log(sealedArr);

@@ -25,7 +25,9 @@ description: Returns a random element from a collection
 
 
 ```ts
-sample([1, 2, 3, 4, 5]) // returns a random number from the array
+_.sample([1, 2, 3, 4, 5]);
+// => a random number from the array
 
-sample({ a: 1, b: 2, c: 3 }) // returns a random value from the object
+_.sample({ a: 1, b: 2, c: 3 });
+// => a random value from the object
 ```

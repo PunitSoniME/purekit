@@ -34,12 +34,12 @@ const users = [
   { 'user': 'barney', 'age': 36 }
 ];
 
-const orderBySingle = orderBy(users, 'user', 'asc');
+const orderBySingle = _.orderBy(users, 'user', 'asc');
 console.log(orderBySingle);
 // => [{ 'user': 'barney', 'age': 34 }, { 'user': 'barney', 'age': 36 }, { 'user': 'fred', 'age': 48 }, { 'user': 'fred', 'age': 40 }]
 
 
-const orderByMultiple = orderBy(users, ['user', 'age'], ['asc', 'desc']);
+const orderByMultiple = _.orderBy(users, ['user', 'age'], ['asc', 'desc']);
 console.log(orderByMultiple);
 // => [{ 'user': 'barney', 'age': 36 }, { 'user': 'barney', 'age': 34 }, { 'user': 'fred', 'age': 48 }, { 'user': 'fred', 'age': 40 }]
 ```

@@ -26,9 +26,9 @@ description: A frozen object can no longer be changed. new properties cannot be 
 
 ```ts
 let obj = { a: 1, b: 2 };
-freeze(obj);
+_.freeze(obj);
 
 obj.b = 3;
 console.log(obj);
-//  => { a: 1, b: 2 }
+// => { a: 1, b: 2 }
 ```

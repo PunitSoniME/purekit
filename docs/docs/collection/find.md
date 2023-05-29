@@ -32,12 +32,12 @@ const users = [
   { 'user': 'pebbles', 'age': 1, 'active': true }
 ];
 
-find(users, o => o.age < 40);
+_.find(users, o => o.age < 40);
 // => { 'user': 'barney', 'age': 36, 'active': true }
 
-find(users, { 'age': 1, 'active': true });
+_.find(users, { 'age': 1, 'active': true });
 // => { 'user': 'pebbles', 'age': 1, 'active': true }
 
-find(users, 'active');
+_.find(users, 'active');
 // => { 'user': 'barney', 'age': 36, 'active': true }
 ```

@@ -27,5 +27,6 @@ description: Applies a function to each element of a collection and then flatten
 
 
 ```ts
-flatMapDepth([1, 2, 3], (n) => [n, n], 2);
+_.flatMapDepth([1, 2, 3], (n) => [n, n], 2);
+// => [1, 1, 2, 2, 3, 3]
 ```

@@ -26,12 +26,12 @@ description: Checks if the provided value is in the collection. If the collectio
 
 
 ```ts
-includes([1, 2, 3], 1);
+_.includes([1, 2, 3], 1);
 // => true
 
-includes({ 'a': 1, 'b': 2 }, 1);
+_.includes({ 'a': 1, 'b': 2 }, 1);
 // => true
 
-includes('hello', 'e');
+_.includes('hello', 'e');
 // => true
 ```

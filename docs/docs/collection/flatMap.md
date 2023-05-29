@@ -26,5 +26,6 @@ description: Applies the provided function to each element of an array and then 
 
 
 ```ts
-flatMap([1, 2, 3], (n) => [n, n * 2]);
+_.flatMap([1, 2, 3], (n) => [n, n * 2]);
+// => [1, 2, 2, 4, 3, 6]
 ```

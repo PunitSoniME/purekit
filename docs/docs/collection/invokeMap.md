@@ -31,7 +31,13 @@ const users = [
   { 'user': 'barney', 'age': 36 },
   { 'user': 'fred', 'age': 40 }
 ];
-invokeMap(users, 'user'); // => ['barney', 'fred']
-invokeMap(users, (o) => o.user + ' is ' + o.age); // => ['barney is 36', 'fred is 40']
-invokeMap(users, ['user', 'age']); // => [['barney', 36], ['fred', 40]]
+_.invokeMap(users, 'user');
+// => ['barney', 'fred']
+
+_.invokeMap(users, (o) => o.user + ' is ' + o.age);
+// => ['barney is 36', 'fred is 40']
+
+_.invokeMap(users, ['user', 'age']);
+// => [['barney', 36], ['fred', 40]]
+
 ```

@@ -27,5 +27,6 @@ description: Returns the last element in the `collection` that satisfies the `it
 
 
 ```ts
-findLast([1, 2, 3, 4], (n) => n % 2 === 1);
+_.findLast([1, 2, 3, 4], (n) => n % 2 === 1);
+// => 3
 ```

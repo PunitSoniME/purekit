@@ -32,12 +32,12 @@ const users = [
   { 'user': 'fred',   'age': 40 },
   { 'user': 'barney', 'age': 34 },
 ];
-sortBy(users, [user => user.user, user => user.age]);
+_.sortBy(users, [user => user.user, user => user.age]);
 // => [{user: "barney", age: 34}, {user: "barney", age: 36}, {user: "fred", age: 40}, {user: "fred", age: 48}]
 
-sortBy(users, 'user');
+_.sortBy(users, 'user');
 // => [{user: "barney", age: 36}, {user: "barney", age: 34}, {user: "fred", age: 48}, {user: "fred", age: 40}]
 
-sortBy(users, user => user.age);
+_.sortBy(users, user => user.age);
 // => [{user: "barney", age: 34}, {user: "barney", age: 36}, {user: "fred", age: 40}, {user: "fred", age: 48}]
 ```
