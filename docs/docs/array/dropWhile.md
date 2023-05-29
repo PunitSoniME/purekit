@@ -26,6 +26,9 @@ description: Creates a new array with elements dropped until the predicate retur
 
 
 ```ts
-dropWhile([1, 2, 3], n => n < 3); // Returns [3]
-dropWhile(['foo', 'bar', 'baz'], str => str.startsWith('f')); // Returns ['bar', 'baz']
+_.dropWhile([1, 2, 3], n => n < 3);
+// => [3]
+
+_.dropWhile(['foo', 'bar', 'baz'], str => str.startsWith('f'));
+// => ['bar', 'baz']
 ```

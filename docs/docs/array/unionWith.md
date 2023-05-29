@@ -26,6 +26,6 @@ description: This method creates an array of unique values that are included in 
 
 
 ```ts
-unionWith([{ x: 1, y: 2 }, { x: 2, y: 1 }], [{ x: 1, y: 2 }, { x: 2, y: 1 }], (a, b) => a.x === b.x);
+_.unionWith([{ x: 1, y: 2 }, { x: 2, y: 1 }], [{ x: 1, y: 2 }, { x: 2, y: 1 }], (a, b) => a.x === b.x);
 // => [{ x: 1, y: 2 }, { x: 2, y: 1 }]
 ```

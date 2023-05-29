@@ -26,5 +26,6 @@ description: Creates an array of unique values, in order, by iterating over all 
 
 
 ```ts
-unionBy([2.1], [1.2, 2.3], Math.floor); //  =>  [2.1, 1.2]
+_.unionBy([2.1], [1.2, 2.3], Math.floor);
+// => [2.1, 1.2]
 ```

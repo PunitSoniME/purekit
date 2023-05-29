@@ -27,7 +27,13 @@ description: Creates a slice of the `array` with `n` elements taken from the beg
 
 ```ts
 const numbers = [1, 2, 3, 4, 5];
-take(numbers, 3); // => [1, 2, 3]
-take(numbers, 1); // => [1]
-take(numbers);    // => [1]
+
+_.take(numbers, 3);
+// => [1, 2, 3]
+
+_.take(numbers, 1);
+// => [1]
+
+_.take(numbers);
+// => [1]
 ```

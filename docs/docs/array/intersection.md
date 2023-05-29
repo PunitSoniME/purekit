@@ -25,9 +25,9 @@ description: Returns an array of unique values that are included in all given ar
 
 
 ```ts
-intersection([1, 2, 3], [4, 3, 2]);
+_.intersection([1, 2, 3], [4, 3, 2]);
 // => [2, 3]
 
-intersection(['apple', 'banana', 'orange'], ['pear', 'apple', 'orange']);
+_.intersection(['apple', 'banana', 'orange'], ['pear', 'apple', 'orange']);
 // => ['apple', 'orange']
 ```

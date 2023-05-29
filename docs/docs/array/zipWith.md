@@ -26,6 +26,6 @@ description: Creates an array of grouped elements, the first element of the tupl
 
 
 ```ts
-zipWith([1, 2], [10, 20], [100, 200], (a, b, c) => a + b + c);
+_.zipWith([1, 2], [10, 20], [100, 200], (a, b, c) => a + b + c);
 // => [111, 222]
 ```

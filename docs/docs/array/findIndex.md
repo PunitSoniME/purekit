@@ -33,9 +33,9 @@ const users = [
   { id: 3, name: 'Bob' }
 ];
 
-findIndex(users, ({ id }) => id === 2);
+_.findIndex(users, ({ id }) => id === 2);
 // => 1
 
-findIndex(users, ({ name }) => name === 'Mary');
+_.findIndex(users, ({ name }) => name === 'Mary');
 // => -1
 ```

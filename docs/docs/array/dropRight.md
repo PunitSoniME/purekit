@@ -26,7 +26,9 @@ description: Creates a slice of an array with `n` elements dropped from the end.
 
 
 ```ts
-dropRight([1, 2, 3, 4, 5], 2);  // => [1, 2, 3]
+_.dropRight([1, 2, 3, 4, 5], 2);
+// => [1, 2, 3]
 
-dropRight([1, 2, 3, 4, 5]);// => [1, 2, 3, 4]
+_.dropRight([1, 2, 3, 4, 5]);
+// => [1, 2, 3, 4]
 ```

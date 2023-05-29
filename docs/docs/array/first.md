@@ -25,6 +25,9 @@ description: Returns the first element of an array, or undefined if the array is
 
 
 ```ts
-first([1, 2, 3]); // => 1
-first([]); // => undefined
+_.first([1, 2, 3]);
+// => 1
+
+_.first([]);
+// => undefined
 ```

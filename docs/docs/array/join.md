@@ -20,11 +20,9 @@ description: Joins all elements of an array into a string separated by the speci
 #### Example
 
 ```ts
-import { join } from 'purekit';
-
-join([1, 2, 3], '-');
+_.join([1, 2, 3], '-');
 // => '1-2-3'
 
-join(['a', 'b', 'c'], '');
+_.join(['a', 'b', 'c'], '');
 // => 'abc'
 ```

@@ -25,5 +25,6 @@ description: Creates a new array with all duplicate values removed. Assumes the 
 
 
 ```ts
-sortedUniq([1, 1, 2, 2, 3, 4, 4, 5]); // Returns: [1, 2, 3, 4, 5]
+_.sortedUniq([1, 1, 2, 2, 3, 4, 4, 5]);
+// => [1, 2, 3, 4, 5]
 ```

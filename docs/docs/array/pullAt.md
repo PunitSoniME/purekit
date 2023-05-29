@@ -27,7 +27,7 @@ description: Removes elements from an array corresponding to the specified index
 
 ```ts
 const arr = [1, 2, 3, 4, 5];
-const removed = pullAt(arr, [1, 3]);
+const removed = _.pullAt(arr, [1, 3]);
 
 console.log(arr);
 // => [1, 3, 5]

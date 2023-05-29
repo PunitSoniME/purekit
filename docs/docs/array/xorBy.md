@@ -30,7 +30,7 @@ const arr1 = [1, 2, 3, 4];
 const arr2 = [2, 4, 6];
 const arr3 = [1, 2, 5];
 
-const result = xorBy(arr1, arr2, arr3, (n) => n % 2);
+const result = _.xorBy(arr1, arr2, arr3, (n) => n % 2);
 console.log(result);
 // => [3, 6]
 ```

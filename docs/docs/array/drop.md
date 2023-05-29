@@ -26,6 +26,9 @@ description: Creates a slice of `array` with `n` elements dropped from the begin
 
 
 ```ts
-drop([1, 2, 3, 4]); // => [2, 3, 4]
-drop([1, 2, 3, 4], 2); // => [3, 4]
+_.drop([1, 2, 3, 4]);
+// => [2, 3, 4]
+
+_.drop([1, 2, 3, 4], 2);
+// => [3, 4]
 ```

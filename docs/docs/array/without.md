@@ -27,5 +27,7 @@ description: Returns a new array with all instances of the provided values remov
 
 ```ts
 const arr = [1, 2, 3, 4, 5];
-const result = without(arr, 2, 4); // => [1, 3, 5]
+
+_.without(arr, 2, 4);
+// => [1, 3, 5]
 ```

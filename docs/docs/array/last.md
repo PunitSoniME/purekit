@@ -19,11 +19,9 @@ description: Returns the last element of an array.
 #### Example
 
 ```ts
-import { last } from 'purekit';
-
-last([1, 2, 3])
+_.last([1, 2, 3])
 // => 3
 
-last([])
+_.last([])
 // => undefined
 ```

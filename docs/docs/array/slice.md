@@ -29,7 +29,12 @@ description: Returns a new array containing the elements of the original array s
 ```ts
 const arr = [1, 2, 3, 4, 5];
 
-slice(arr);         // [1, 2, 3, 4, 5]
-slice(arr, 2);      // [3, 4, 5]
-slice(arr, 2, 4);   // [3, 4]
+_.slice(arr);
+// [1, 2, 3, 4, 5]
+
+_.slice(arr, 2);
+// [3, 4, 5]
+
+_.slice(arr, 2, 4);
+// [3, 4]
 ```

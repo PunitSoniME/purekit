@@ -28,6 +28,9 @@ description: Returns the index of the first occurrence of a value in an array, o
 
 ```ts
 const fruits = ['apple', 'banana', 'mango', 'orange'];
-const index1 = indexOf(fruits, 'banana'); // 1
-const index2 = indexOf(fruits, 'papaya'); // -1
+const index1 = _.indexOf(fruits, 'banana');
+// => 1
+
+const index2 = _.indexOf(fruits, 'papaya');
+// => -1
 ```

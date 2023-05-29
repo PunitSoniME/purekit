@@ -25,6 +25,9 @@ description: Flattens an array of nested arrays into a single flat array.
 
 
 ```ts
-flatten([1, [2, [3, [4]], 5]]); // Returns: [1, 2, 3, 4, 5]
-flatten(['a', ['b', ['c']]]); // Returns: ['a', 'b', 'c']
+_.flatten([1, [2, [3, [4]], 5]]);
+// => [1, 2, 3, 4, 5]
+
+_.flatten(['a', ['b', ['c']]]);
+// => ['a', 'b', 'c']
 ```

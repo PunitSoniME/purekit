@@ -26,5 +26,7 @@ description: Reverses an array in place.
 
 ```ts
 const arr = [1, 2, 3, 4, 5];
-reverse(arr); // [5, 4, 3, 2, 1]
+
+_.reverse(arr);
+// => [5, 4, 3, 2, 1]
 ```

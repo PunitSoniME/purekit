@@ -26,5 +26,6 @@ description: Flattens an array up to the specified depth.
 
 
 ```ts
-flattenDepth([1, [2, [3, [4]], 5]], 2); // => [1, 2, 3, [4], 5]
+_.flattenDepth([1, [2, [3, [4]], 5]], 2);
+// => [1, 2, 3, [4], 5]
 ```

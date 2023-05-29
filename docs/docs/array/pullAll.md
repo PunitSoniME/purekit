@@ -28,5 +28,6 @@ description: Removes all instances of specified elements from an array.
 ```ts
 const arr = ['a', 'b', 'c', 'a', 'b', 'c'];
 
-pullAll(arr, ['a', 'c']);   //  =>  ['b', 'b']
+_.pullAll(arr, ['a', 'c']);
+// => ['b', 'b']
 ```

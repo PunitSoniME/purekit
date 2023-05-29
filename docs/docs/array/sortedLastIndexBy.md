@@ -28,5 +28,7 @@ description: Returns the highest index at which value should be inserted into ar
 
 ```ts
 const users = [{ id: 1, name: 'Jane' }, { id: 2, name: 'John' }, { id: 3, name: 'Mary' }];
-sortedLastIndexBy(users, { id: 2 }, ({ id }) => id); // 3
+
+_.sortedLastIndexBy(users, { id: 2 }, ({ id }) => id);
+// => 3
 ```
