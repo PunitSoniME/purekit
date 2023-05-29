@@ -27,8 +27,7 @@ description: Removes all occurrences of specified values from an array.
 
 ```ts
 const arr = ['a', 'b', 'c', 'a', 'b', 'c'];
-const result = pull(arr, 'a', 'c');
 
-console.log(result);
+_.pull(arr, 'a', 'c');
 // => ['b', 'b']
 ```

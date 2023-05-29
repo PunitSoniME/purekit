@@ -26,6 +26,9 @@ description: Creates an object from arrays of property names and values, where p
 
 
 ```ts
-zipObject(['a', 'b'], [1, 2]);   // => {a: 1, b: 2}
-zipObject(['a', 'b'], [1]);      // => {a: 1, b: undefined}
+_.zipObject(['a', 'b'], [1, 2]);
+// => {a: 1, b: 2}
+
+_.zipObject(['a', 'b'], [1]);
+// => {a: 1, b: undefined}
 ```

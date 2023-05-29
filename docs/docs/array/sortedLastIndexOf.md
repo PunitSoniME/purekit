@@ -28,6 +28,9 @@ description: Returns the index of the last occurrence of a specified value in a 
 ```ts
 const arr = [1, 2, 3, 4, 4, 4, 5, 6];
 
-sortedLastIndexOf(arr, 4); // => 5
-sortedLastIndexOf(arr, 7); // => -1
+_.sortedLastIndexOf(arr, 4);
+// => 5
+
+_.sortedLastIndexOf(arr, 7);
+// => -1
 ```

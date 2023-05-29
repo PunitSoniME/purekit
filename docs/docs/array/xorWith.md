@@ -28,7 +28,7 @@ description: Creates an array of unique values that are included in the first gi
 ```ts
 const array1 = [{ x: 1, y: 2 }, { x: 2, y: 1 }];
 const array2 = [{ x: 1, y: 1 }, { x: 1, y: 2 }];
-const result = xorWith(array1, array2, (a, b) => a.x === b.x && a.y === b.y);
+const result = _.xorWith(array1, array2, (a, b) => a.x === b.x && a.y === b.y);
 
 console.log(result);
 // => [{x: 2, y: 1}, {x: 1, y: 1}]

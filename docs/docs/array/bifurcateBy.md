@@ -22,13 +22,13 @@ description: Splits values into two groups, based on a predicate function. If th
 ```ts
 const array = [1, 2, 3, 4, 5];
 const isEven = (num: number) => num % 2 === 0;
-const result = bifurcateBy(array, isEven);
+const result = _.bifurcateBy(array, isEven);
 console.log(result);
 // => [[2, 4], [1, 3, 5]]
 
 const words = ['apple', 'banana', 'cherry', 'date'];
 const startsWithB = (word: string) => word.startsWith('b');
-const result = bifurcateBy(words, startsWithB);
+const result = _.bifurcateBy(words, startsWithB);
 console.log(result);
 // => [['banana'], ['apple', 'cherry', 'date']]
 ```

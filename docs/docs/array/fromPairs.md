@@ -25,5 +25,6 @@ description: Creates an object from an array of key-value pairs.
 
 
 ```ts
-fromPairs([['a', 1], ['b', 2], ['c', 3]]); // {a: 1, b: 2, c: 3}
+_.fromPairs([['a', 1], ['b', 2], ['c', 3]]);
+// => {a: 1, b: 2, c: 3}
 ```

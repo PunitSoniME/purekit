@@ -27,5 +27,7 @@ description: Creates a duplicate-free version of an array, using a comparator fu
 
 ```ts
 const objects = [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }, { 'x': 1, 'y': 2 }];
-uniqWith(objects, isEqual); // => [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }]
+
+_.uniqWith(objects, isEqual);
+// => [{ 'x': 1, 'y': 2 }, { 'x': 2, 'y': 1 }]
 ```

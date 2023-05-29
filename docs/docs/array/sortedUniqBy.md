@@ -28,8 +28,6 @@ description: This function creates a new array with unique values from the input
 ```ts
 const array = [{ x: 1 }, { x: 2 }, { x: 1 }];
 
-const result = sortedUniqBy(array, o => o.x);
-
-console.log(result);
+_.sortedUniqBy(array, o => o.x);
 // => [{ x: 1 }, { x: 2 }]
 ```

@@ -27,7 +27,7 @@ description: Removes all elements from an array that satisfy the predicate and r
 
 ```ts
 const arr = [1, 2, 3, 4, 5];
-const removed = remove(arr, n => n % 2 === 0);
+const removed = _.remove(arr, n => n % 2 === 0);
 
 console.log(arr);
 // => [1, 3, 5]

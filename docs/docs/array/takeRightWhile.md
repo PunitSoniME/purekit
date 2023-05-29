@@ -26,8 +26,9 @@ description: Creates a new array with the elements from the end of the given arr
 
 
 ```ts
-takeRightWhile([1, 2, 3, 4, 5], n => n > 3);    // => [4, 5]
+_.takeRightWhile([1, 2, 3, 4, 5], n => n > 3);
+// => [4, 5]
 
-takeRightWhile([{ name: 'John', active: false }, { name: 'Mary', active: true }], { active: true });
+_.takeRightWhile([{ name: 'John', active: false }, { name: 'Mary', active: true }], { active: true });
 // => [{ name: 'Mary', active: true }]
 ```

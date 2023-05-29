@@ -25,5 +25,6 @@ description: Recursively flattens `array`.
 
 
 ```ts
-flattenDeep([1, [2, [3, [4]], 5]]); // [1, 2, 3, 4, 5]
+_.flattenDeep([1, [2, [3, [4]], 5]]);
+// => [1, 2, 3, 4, 5]
 ```

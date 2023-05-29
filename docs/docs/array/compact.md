@@ -19,6 +19,6 @@ description: Creates a new array with all falsey values removed. The values `fal
 #### Example
 
 ```ts
-compact([0, 1, false, 2, '', 3]);
+_.compact([0, 1, false, 2, '', 3]);
 // => [1, 2, 3]
 ```

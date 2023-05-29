@@ -22,13 +22,13 @@ description: Splits values into two groups and then puts a truthy element of fil
 ```ts
 const array = [1, 2, 3, 4, 5];
 const filter = [true, false, true, false, true];
-const result = bifurcate(array, filter);
+const result = _.bifurcate(array, filter);
 console.log(result);
 // => [[1, 3, 5], [2, 4]]
 
 const words = ['apple', 'banana', 'cherry', 'date'];
 const filter = [false, true, true, false];
-const result = bifurcate(words, filter);
+const result = _.bifurcate(words, filter);
 console.log(result);
 // => [['banana', 'cherry'], ['apple', 'date']]
 ```

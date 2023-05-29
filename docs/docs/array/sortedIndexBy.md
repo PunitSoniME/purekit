@@ -29,6 +29,9 @@ description: Uses a function to determine the sort order of the input array and 
 ```ts
 var objects = [{ 'x': 4 }, { 'x': 5 }];
 
-sortedIndexBy(objects, { 'x': 4 }, function(o) { return o.x; });    // => 0
-sortedIndexBy(objects, { 'x': 4 }, 'x');    // => 0
+_.sortedIndexBy(objects, { 'x': 4 }, function(o) { return o.x; });
+// => 0
+
+_.sortedIndexBy(objects, { 'x': 4 }, 'x');
+// => 0
 ```

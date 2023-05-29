@@ -24,9 +24,10 @@ description: Adds one or more elements to the beginning of an array and returns 
 
 #### Example
 
-
 ```ts
-unshift([1, 2, 3], 4); // => [4, 1, 2, 3]
+_.unshift([1, 2, 3], 4);
+// => [4, 1, 2, 3]
 
-unshift(['a', 'b'], 'c', 'd'); // => ['c', 'd', 'a', 'b']
+_.unshift(['a', 'b'], 'c', 'd');
+// => ['c', 'd', 'a', 'b']
 ```

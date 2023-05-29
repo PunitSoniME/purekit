@@ -25,5 +25,6 @@ description: Creates a new array with unique elements from the original array.
 
 
 ```ts
-uniq([2, 1, 2]) // => [2, 1]
+_.uniq([2, 1, 2]);
+// => [2, 1]
 ```

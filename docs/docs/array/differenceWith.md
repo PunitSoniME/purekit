@@ -29,7 +29,7 @@ description: Returns the difference between the first array and all other argume
 ```ts
 const a = [1, 2, 3, 4];
 const b = [3, 4];
-const result = differenceWith(a, b, (a, b) => a === b);
+const result = _.differenceWith(a, b, (a, b) => a === b);
 
 console.log(result);
 // => [1, 2]

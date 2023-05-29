@@ -27,12 +27,12 @@ description: Returns an array of unique values that are included in all given ar
 
 
 ```ts
-intersectionBy([2.1, 1.2], [4.3, 2.4], [1.2, 2.4]);
+_.intersectionBy([2.1, 1.2], [4.3, 2.4], [1.2, 2.4]);
 // => [2.1]
 
-intersectionBy([{ 'x': 1 }], [{ 'x': 2 }, { 'x': 1 }], 'x');
+_.intersectionBy([{ 'x': 1 }], [{ 'x': 2 }, { 'x': 1 }], 'x');
 // => [{ 'x': 1 }]
 
-intersectionBy([{'x': 1, 'y': 2}, {'x': 2, 'y': 1}], [{'x': 1, 'y': 2}], (o) => o.x);
+_.intersectionBy([{'x': 1, 'y': 2}, {'x': 2, 'y': 1}], [{'x': 1, 'y': 2}], (o) => o.x);
 // => [{'x': 1, 'y': 2}]
 ```

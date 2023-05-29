@@ -20,6 +20,6 @@ description: Creates an array of unique values that are included in the first gi
 #### Example
 
 ```ts
-difference([2, 1], [2, 3]);
+_.difference([2, 1], [2, 3]);
 // => [1]
 ```

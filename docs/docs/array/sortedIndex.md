@@ -26,5 +26,6 @@ description: Returns the index at which the specified value should be inserted i
 
 
 ```ts
-sortedIndex([10, 20, 30, 40], 35); //   =>  Returns 3
+_.sortedIndex([10, 20, 30, 40], 35);
+// => 3
 ```

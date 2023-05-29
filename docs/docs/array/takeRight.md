@@ -26,7 +26,9 @@ description: Creates a new array with the last `length` elements of `array`.
 
 
 ```ts
-takeRight([1, 2, 3, 4, 5], 3);  // => [3, 4, 5]
+_.takeRight([1, 2, 3, 4, 5], 3); 
+// => [3, 4, 5]
 
-takeRight([1, 2, 3, 4, 5]); // => [5]
+_.takeRight([1, 2, 3, 4, 5]);
+// => [5]
 ```

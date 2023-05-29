@@ -26,6 +26,9 @@ description: Returns an array of unique values that are included only in one of 
 
 
 ```ts
-xor([2, 1], [2, 3]) // => [1, 3]
-xor(['a', 'b', 'c'], ['b', 'd'], ['d', 'e']) // => ['a', 'c', 'e']
+_.xor([2, 1], [2, 3]);
+// => [1, 3]
+
+_.xor(['a', 'b', 'c'], ['b', 'd'], ['d', 'e']);
+// => ['a', 'c', 'e']
 ```

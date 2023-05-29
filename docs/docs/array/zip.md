@@ -26,5 +26,6 @@ description: Zips together arrays into an array of arrays, with each array eleme
 
 
 ```ts
-zip([1, 2], [10, 20], [100, 200]); // => [[1, 10, 100], [2, 20, 200]]
+_.zip([1, 2], [10, 20], [100, 200]);
+// => [[1, 10, 100], [2, 20, 200]]
 ```

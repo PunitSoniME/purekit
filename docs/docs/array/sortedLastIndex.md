@@ -26,5 +26,6 @@ description: This method is like `sortedIndex` except that it returns the highes
 
 
 ```ts
-sortedLastIndex([4, 5, 5, 5, 6], 5);	// => 4
+_.sortedLastIndex([4, 5, 5, 5, 6], 5);
+// => 4
 ```

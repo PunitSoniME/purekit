@@ -25,5 +25,6 @@ description: Returns all the elements of an array except the last one.
 
 
 ```ts
-initial([1, 2, 3]); // => [1, 2]
+_.initial([1, 2, 3]);
+// => [1, 2]
 ```

@@ -28,6 +28,9 @@ description: Returns the index of the last occurrence of the specified element i
 
 ```ts
 const fruits = ['apple', 'banana', 'orange', 'banana', 'orange'];
-const lastIndex1 = lastIndexOf(fruits, 'banana'); // returns 3
-const lastIndex2 = lastIndexOf(fruits, 'orange', 2); // returns 2
+const lastIndex1 = _.lastIndexOf(fruits, 'banana');
+// => 3
+
+const lastIndex2 = _.lastIndexOf(fruits, 'orange', 2);
+// => 2
 ```
