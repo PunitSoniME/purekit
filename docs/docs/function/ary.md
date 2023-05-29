@@ -27,8 +27,11 @@ description: Creates a function that accepts up to a certain number of arguments
 
 ```ts
 const add = (a, b, c) => a + b + c;
-const addTwo = ary(add, 2);
+const addTwo = _.ary(add, 2);
 
-addTwo(1, 2, 3); // => 3
-addTwo(1, 2); // => 3
+addTwo(1, 2, 3);
+// => 3
+
+addTwo(1, 2);
+// => 3
 ```

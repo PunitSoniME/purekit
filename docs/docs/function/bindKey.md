@@ -33,6 +33,7 @@ const john = {
     return `${greeting} ${this.name}${punctuation}`;
   }
 };
-const sayHelloToJohn = bindKey(john, 'greet', 'Hello');
-sayHelloToJohn('!'); // => 'Hello John Doe!'
+const sayHelloToJohn = _.bindKey(john, 'greet', 'Hello');
+sayHelloToJohn('!');
+// => 'Hello John Doe!'
 ```

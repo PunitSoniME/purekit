@@ -33,8 +33,6 @@ const users = [
   { 'user': 'pebbles', 'active': true }
 ];
 
-const result = _.findLastIndex(users, user => user.user === 'fred');
-
-console.log(result);
+_.findLastIndex(users, user => user.user === 'fred');
 // => 1
 ```

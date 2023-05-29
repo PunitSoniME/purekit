@@ -26,14 +26,14 @@ description: Creates a function that can be partially applied from the right.
 
 ```ts
 const greet = (greeting, name) => `${greeting} ${name}`;
-const greetGoodbye = curryRight(greet)('Goodbye');
+const greetGoodbye = _.curryRight(greet)('Goodbye');
 greetGoodbye('John');
 // => 'Goodbye John'
 
 greetGoodbye('Sarah');
 // => 'Goodbye Sarah'
 
-const greetGoodbyeJohn = curryRight(greet)('Goodbye', 'John');
+const greetGoodbyeJohn = _.curryRight(greet)('Goodbye', 'John');
 
 greetGoodbyeJohn();
 // => 'Goodbye John'

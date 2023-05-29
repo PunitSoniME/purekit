@@ -25,8 +25,11 @@ description: Creates a function that invokes the provided function with all but 
 
 
 ```ts
-const logRest = rest(console.log);
+const logRest = _.rest(console.log);
 
-logRest(1, 2, 3); // => 1, 2, 3
-logRest(1); // => 1
+logRest(1, 2, 3);
+// => 1, 2, 3
+
+logRest(1);
+// => 1
 ```

@@ -27,11 +27,11 @@ description: Creates a new function that calls `func` with `value` as the first 
 
 ```ts
 const greet = name => `Hello, ${name}!`;
-const greetBob = wrap('Bob', greet);
+const greetBob = _.wrap('Bob', greet);
 
-console.log(greetBob());
+greetBob();
 // => "Hello, Bob!"
 
-console.log(greetBob('Alice'));
+greetBob('Alice');
 // => "Hello, Bob!"
 ```

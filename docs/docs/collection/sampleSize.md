@@ -26,11 +26,9 @@ description: Returns an array of elements selected randomly from `collection`.
 
 
 ```ts
-const result = _.sampleSize([1, 2, 3, 4], 2);
-console.log(result);
+_.sampleSize([1, 2, 3, 4], 2);
 // => [2, 4]
 
-const result = _.sampleSize({ a: 1, b: 2, c: 3, d: 4 }, 3);
-console.log(result);
+_.sampleSize({ a: 1, b: 2, c: 3, d: 4 }, 3);
 // => [2, 4, 1]
 ```

@@ -28,8 +28,11 @@ description: Creates a new function that takes the same arguments as the origina
 function foo(a, b, c) {
   console.log(a, b, c);
 }
-const flippedFoo = flip(foo);
+const flippedFoo = _.flip(foo);
 
-foo(1, 2, 3); // => 1, 2, 3
-flippedFoo(1, 2, 3); // => 2, 1, 3
+foo(1, 2, 3);
+// => 1, 2, 3
+
+flippedFoo(1, 2, 3);
+// => 2, 1, 3
 ```

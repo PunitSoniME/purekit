@@ -29,8 +29,13 @@ description: Creates a function that invokes `fn` once it's called `times` times
 function greet(name) {
   console.log('Hello, ' + name + '!');
 }
-const greetAfterThree = after(3, greet);
-greetAfterThree('Alice'); // nothing happens
-greetAfterThree('Bob');   // nothing happens
-greetAfterThree('Cathy'); // logs 'Hello, Cathy!'
+const greetAfterThree = _.after(3, greet);
+greetAfterThree('Alice');
+// => nothing happens
+
+greetAfterThree('Bob');
+// => nothing happens
+
+greetAfterThree('Cathy');
+// => logs 'Hello, Cathy!'
 ```
