@@ -22,12 +22,12 @@ description: This method prevents new properties from ever being added to an obj
 
 ```ts
 let obj = { a: 1, b: 2 };
-preventExtensions(obj);
+_.preventExtensions(obj);
 
 obj.b = 3;
 console.log(obj);
-//	=> { a: 1, b: 3 }
+//=> { a: 1, b: 3 }
 
 obj.c = 100;
-//	=> { a: 1, b: 3 }
+//=> { a: 1, b: 3 }
 ```

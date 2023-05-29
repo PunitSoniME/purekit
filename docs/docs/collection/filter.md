@@ -23,5 +23,6 @@ description: Filters the elements of a collection based on the truth value of a 
 const nums = [1, 2, 3, 4, 5];
 const isEven = (num) => num % 2 === 0;
 
-filter(nums, isEven); //  =>   [2, 4]
+_.filter(nums, isEven);
+// => [2, 4]
 ```

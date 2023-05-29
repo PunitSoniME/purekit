@@ -24,6 +24,9 @@ const arr = [1, 2, 3, 4, 5];
 const isGreaterThanZero = (num) => num > 0;
 const isEven = (num) => num % 2 === 0;
 
-every(arr, isGreaterThanZero); //  => true
-every(arr, isEven); //  => false
+_.every(arr, isGreaterThanZero);
+// => true
+
+_.every(arr, isEven);
+// => false
 ```

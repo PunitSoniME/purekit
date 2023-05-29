@@ -25,9 +25,12 @@ description: Returns the size of the given collection.
 
 
 ```ts
-size([1, 2, 3]); // => 3
+_.size([1, 2, 3]);
+// => 3
 
-size({a: 1, b: 2, c: 3}); // => 3
+_.size({a: 1, b: 2, c: 3});
+// => 3
 
-size('hello'); // => 5
+_.size('hello');
+// => 5
 ```

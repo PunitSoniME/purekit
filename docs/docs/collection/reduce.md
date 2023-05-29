@@ -26,10 +26,10 @@ description: Reduces a collection to a single value by iterating over the elemen
 
 
 ```ts
-reduce([1, 2, 3], (acc, n) => acc + n);
+_.reduce([1, 2, 3], (acc, n) => acc + n);
 // => 6
 
-reduce(
+_.reduce(
  { a: 1, b: 2, c: 1 },
  (result, value, key) => {
    (result[value] || (result[value] = [])).push(key);

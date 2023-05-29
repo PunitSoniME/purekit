@@ -31,7 +31,7 @@ const users = [
   { user: 'fred', age: 40, active: true },
   { user: 'pebbles', age: 1, active: false }
 ];
-const [activeUsers, inactiveUsers] = partition(users, ({ active }) => active);
+const [activeUsers, inactiveUsers] = _.partition(users, ({ active }) => active);
 console.log(activeUsers);
 // => [{ user: 'fred', age: 40, active: true }]
 

@@ -30,6 +30,7 @@ const users = [
   { 'user': 'barney', 'active': true },
   { 'user': 'fred',   'active': false }
 ];
-reject(users, ({ active }) => active);
+
+_.reject(users, ({ active }) => active);
 // => [{ 'user': 'fred', 'active': false }]
 ```

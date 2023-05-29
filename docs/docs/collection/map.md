@@ -25,9 +25,9 @@ description: Creates an array or object of values by running each element in `co
 
 
 ```ts
-map([1, 2, 3], n => n * 2);
+_.map([1, 2, 3], n => n * 2);
 // => [2, 4, 6]
 
-map({a: 1, b: 2, c: 3}, n => n * 2);
+_.map({a: 1, b: 2, c: 3}, n => n * 2);
 // => { a: 2, b: 4, c: 6 }
 ```

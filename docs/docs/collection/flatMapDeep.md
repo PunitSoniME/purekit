@@ -25,5 +25,6 @@ description: Creates a flattened array of values by running each element of a co
 
 
 ```ts
-flatMapDeep([1, 2, 3], num => [[num * 2]])
+_.flatMapDeep([1, 2, 3], num => [[num * 2]]);
+// => [2, 4, 6]
 ```

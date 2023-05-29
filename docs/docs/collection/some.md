@@ -30,9 +30,12 @@ const users = [
   { 'user': 'barney', 'active': true },
   { 'user': 'fred',   'active': false }
 ]
-some(users, ({ active }) => active) // => true
+_.some(users, ({ active }) => active);
+// => true
 
-some(users, { 'user': 'barney', 'active': false }) // => false
+_.some(users, { 'user': 'barney', 'active': false });
+// => false
 
-some(users, 'active') // => true
+_.some(users, 'active');
+// => true
 ```
