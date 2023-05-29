@@ -3,25 +3,15 @@
  *
  * @since 1.0.0
  *
- * @param {Function} fn - The function to debounce.
+ * @param {Function} fn - The function to delay.
  * @param {number} timer - The number of milliseconds to wait before invoking the function.
  * @param {...any} args - Additional arguments to pass to the function.
- * @returns {number} - A timer ID that can be used to cancel the debounce with `clearTimeout`.
+ * @returns {number} - A timer ID that can be used to cancel the delay with `clearTimeout`.
  *
  * @example
- * const searchInput = document.getElementById('search-input');
- * const searchResults = document.getElementById('search-results');
- *
- * const fetchResults = async (query) => {
- *   const results = await searchAPI(query);
- *   searchResults.innerHTML = results;
- * };
- *
- * const debounceFetchResults = debounce(fetchResults, 500);
- * searchInput.addEventListener('input', (event) => {
- *   debounceFetchResults(event.target.value);
- * });
+ * _.defer(console.log, 'a'), console.log('b');
+ * // => logs 'b' then 'a'
  */
-const debounce = (fn: Function, timer: number, ...args: any) =>
+const delay = (fn: Function, timer: number, ...args: any) =>
 	setTimeout(() => fn(...args), timer);
-export default debounce;
+export default delay;

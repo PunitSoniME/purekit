@@ -29,12 +29,10 @@ description: Fill an array with a specified value from a start index to an end i
 
 ```ts
 const arr = [1, 2, 3, 4, 5];
-const filledArr = _.fill(arr, 0, 2, 4);
-console.log(filledArr);
+_.fill(arr, 0, 2, 4);
 // => [1, 2, 0, 0, 5]
 
 const arr2 = [1, 2, 3, 4, 5];
-const filledArr2 = _.fill(arr2, '*', 1);
-console.log(filledArr2);
+_.fill(arr2, '*', 1);
 // => [1, '*', '*', '*', '*', '*']
 ```

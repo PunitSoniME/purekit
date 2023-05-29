@@ -27,10 +27,15 @@ description: Executes a function a specified number of times and returns the res
 
 ```ts
 const multiplyByTwo = (x) => x * 2;
-const executeThreeTimes = before(3, multiplyByTwo);
+const executeThreeTimes = _.before(3, multiplyByTwo);
 
 // Call the function multiple times:
-executeThreeTimes(3); // => 6
-executeThreeTimes(5); // => 6
-executeThreeTimes(2); // => 6
+executeThreeTimes(3);
+// => 6
+
+executeThreeTimes(5);
+// => 6
+
+executeThreeTimes(2);
+// => 6
 ```

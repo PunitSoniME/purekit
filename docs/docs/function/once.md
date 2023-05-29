@@ -26,11 +26,11 @@ description: Creates a new function that can only be called once. Subsequent cal
 
 ```ts
 const add = (a, b) => a + b;
-const addOnce = once(add);
+const addOnce = _.once(add);
 
-console.log(addOnce(2, 3));
+addOnce(2, 3);
 // => 5
 
-console.log(addOnce(2, 3));
+addOnce(2, 3);
 // => undefined
 ```

@@ -27,7 +27,8 @@ description: Returns a function that takes an array of arguments and applies it 
 
 ```ts
 const sum = (x, y, z) => x + y + z;
-const spreadSum = spread(sum);
+const spreadSum = _.spread(sum);
 
-spreadSum([1, 2, 3]); // => 6
+spreadSum([1, 2, 3]);
+// => 6
 ```

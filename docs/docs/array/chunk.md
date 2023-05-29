@@ -20,7 +20,7 @@ description: Creates an array of elements split into groups the length of chunkS
 #### Example
 
 ```ts
-_.chunk([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);_.z
+_.chunk([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 //  => [[1], [2], [3], [4], [5], [6], [7], [8], [9], [10]]
 
 _.chunk([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3);

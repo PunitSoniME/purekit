@@ -29,15 +29,15 @@ description: Returns the difference between the first array and other arrays or 
 ```ts
 const arr1 = [2.1, 1.2, 3.3];
 const arr2 = [3.4, 2.5];
-console.log(_.differenceBy(arr1, arr2, Math.floor));
+_.differenceBy(arr1, arr2, Math.floor);
 // => [1.2]
 
 const arr3 = [ { 'x': 2 }, { 'x': 1 } ];
 const arr4 = [ { 'x': 1 } ];
-console.log(_.differenceBy(arr3, arr4, 'x'));
+_.differenceBy(arr3, arr4, 'x');
 // => [ { x: 2 } ]
 
 const arr5 = [{ x: 1 }, { x: 2 }, { x: 3 }];
-console.log(_.differenceBy(arr5, { x: 2 }, 'x'));
+_.differenceBy(arr5, { x: 2 }, 'x');
 // => [{ x: 1 }, { x: 3 }]
 ```

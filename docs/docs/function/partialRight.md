@@ -29,8 +29,8 @@ description: Creates a new function that invokes the given function with the `ca
 function greet(greeting, name) {
   return `${greeting}, ${name}!`;
 }
-const sayHelloTo = partialRight(greet, 'Hello');
+const sayHelloTo = _.partialRight(greet, 'Hello');
 
-console.log(sayHelloTo('John'));
+sayHelloTo('John');
 // => 'Hello, John!'
 ```

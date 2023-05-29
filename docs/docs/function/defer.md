@@ -26,7 +26,7 @@ description: Defers the execution of a function by scheduling it to run after a 
 
 
 ```ts
-defer(function(text) {
+_.defer(function(text) {
   console.log(text);
 }, 'deferred');
 // => Logs 'deferred' after one millisecond.
