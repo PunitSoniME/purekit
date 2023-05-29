@@ -22,12 +22,12 @@ description: Calculates the day of the year for a given date.
 
 
 ```ts
-dayOfYear(new Date('1/1/2023'))
-//  =>  1
+_.dayOfYear(new Date('1/1/2023'))
+// => 1
 
-dayOfYear(new Date('1/31/2023'))
-//  =>  31
+_.dayOfYear(new Date('1/31/2023'))
+// => 31
 
-dayOfYear(new Date('2/5/2023'))
-//  =>  36
+_.dayOfYear(new Date('2/5/2023'))
+// => 36
 ```
