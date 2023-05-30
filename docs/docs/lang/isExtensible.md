@@ -29,9 +29,9 @@ const obj = { a: 1 };
 const arr = [1, 2, 3];
 Object.preventExtensions(obj);
 
-isExtensible(obj);
+_.isExtensible(obj);
 // => false
 
-isExtensible(arr);
+_.isExtensible(arr);
 // => true
 ```

@@ -25,12 +25,12 @@ description: Checks if a value is `null`.
 
 
 ```ts
-isNull(null);
+_.isNull(null);
 // => true
 
-isNull(undefined);
+_.isNull(undefined);
 // => false
 
-isNull('');
+_.isNull('');
 // => false
 ```

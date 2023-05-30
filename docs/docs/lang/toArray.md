@@ -25,18 +25,18 @@ description: Converts a given value to an array.
 
 
 ```ts
-toArray('hello')
+_.toArray('hello');
 // => ['h', 'e', 'l', 'l', 'o']
 
-toArray([1, 2, 3])
+_.toArray([1, 2, 3]);
 // => [1, 2, 3]
 
-toArray(new Set([1, 2, 3]))
+_.toArray(new Set([1, 2, 3]));
 // => [1, 2, 3]
 
-toArray({a: 1, b: 2})
+_.toArray({a: 1, b: 2});
 // => [1, 2]
 
-toArray(null)
+_.toArray(null);
 // => []
 ```

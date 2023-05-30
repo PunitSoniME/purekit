@@ -28,6 +28,9 @@ description: Checks if the provided object conforms to the source object's prope
 ```ts
 const object = { 'a': 1, 'b': 2 };
 
-conformsTo(object, { 'b': (n) => n > 1 }); // => true
-conformsTo(object, { 'a': (n) => n > 1 }); // => false
+_.conformsTo(object, { 'b': (n) => n > 1 });
+// => true
+
+_.conformsTo(object, { 'a': (n) => n > 1 });
+// => false
 ```

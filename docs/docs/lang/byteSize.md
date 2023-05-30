@@ -25,12 +25,12 @@ description: Calculates the byte size of a string.
 
 
 ```ts
-byteSize('😀');
+_.byteSize('😀');
 // => 4
 
-byteSize('Hello World');
+_.byteSize('Hello World');
 // => 11
 
-byteSize("Hello, world!");
+_.byteSize("Hello, world!");
 // => 13
 ```

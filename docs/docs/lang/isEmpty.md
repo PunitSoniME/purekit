@@ -25,42 +25,42 @@ description: Determines whether the given value is empty or not.
 
 
 ```ts
-isEmpty(null);
+_.isEmpty(null);
 // => true
 
-isEmpty(undefined);
+_.isEmpty(undefined);
 // => true
 
-isEmpty(0);
+_.isEmpty(0);
 // => true
 
-isEmpty('');
+_.isEmpty('');
 // => true
 
-isEmpty([]);
+_.isEmpty([]);
 // => true
 
-isEmpty({});
+_.isEmpty({});
 // => true
 
-isEmpty(new Set());
+_.isEmpty(new Set());
 // => true
 
-isEmpty(new Map());
+_.isEmpty(new Map());
 // => true
 
-isEmpty({ a: 1 });
+_.isEmpty({ a: 1 });
 // => false
 
-isEmpty('hello');
+_.isEmpty('hello');
 // => false
 
-isEmpty([1, 2, 3]);
+_.isEmpty([1, 2, 3]);
 // => false
 
-isEmpty(new Set([1, 2, 3]));
+_.isEmpty(new Set([1, 2, 3]));
 // => false
 
-isEmpty(new Map([['a', 1]]));
+_.isEmpty(new Map([['a', 1]]));
 // => false
 ```

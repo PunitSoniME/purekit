@@ -25,12 +25,12 @@ description: Checks if a value is a Node object.
 
 
 ```ts
-isNode(document.body);
+_.isNode(document.body);
 // => true
 
-isNode(document.createTextNode('Hello'));
+_.isNode(document.createTextNode('Hello'));
 // => true
 
-isNode({});
+_.isNode({});
 // => false
 ```

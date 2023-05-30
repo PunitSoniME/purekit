@@ -26,9 +26,18 @@ description: Checks if two values are equivalent, based on the `Object.is` metho
 
 
 ```ts
-eq(NaN, NaN); // => true
-eq(1, 1); // => true
-eq(1, '1'); // => false
-eq({}, {}); // => false
-eq([], []); // => false
+_.eq(NaN, NaN);
+// => true
+
+_.eq(1, 1);
+// => true
+
+_.eq(1, '1');
+// => false
+
+_.eq({}, {});
+// => false
+
+_.eq([], []);
+// => false
 ```

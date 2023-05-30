@@ -26,10 +26,10 @@ description: Determines whether the given value is an `arguments` object.
 
 ```ts
 const args = (function() { return arguments; })();
-isArguments(args);
+_.isArguments(args);
 // => true
 
 const arr = [1, 2, 3];
-isArguments(arr);
+_.isArguments(arr);
 // => false
 ```

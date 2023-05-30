@@ -25,18 +25,18 @@ description: Determines whether the given value is a boolean.
 
 
 ```ts
-isBoolean(true);
+_.isBoolean(true);
 // => true
 
-isBoolean(false);
+_.isBoolean(false);
 // => true
 
-isBoolean(0);
+_.isBoolean(0);
 // => false
 
-isBoolean('true');
+_.isBoolean('true');
 // => false
 
-isBoolean(null);
+_.isBoolean(null);
 // => false
 ```

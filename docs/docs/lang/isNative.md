@@ -25,12 +25,12 @@ description: Checks if a value is a native function.
 
 
 ```ts
-isNative(alert);
+_.isNative(alert);
 // => true
 
-isNative(Math.max);
+_.isNative(Math.max);
 // => true
 
-isNative(debounce);
+_.isNative(debounce);
 // => false
 ```

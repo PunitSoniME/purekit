@@ -25,15 +25,15 @@ description: Checks if a value is a valid array-like length.
 
 
 ```ts
-isLength(3);
+_.isLength(3);
 // => true
 
-isLength(Number.MIN_VALUE);
+_.isLength(Number.MIN_VALUE);
 // => false
 
-isLength(Infinity);
+_.isLength(Infinity);
 // => false
 
-isLength('3');
+_.isLength('3');
 // => false
 ```

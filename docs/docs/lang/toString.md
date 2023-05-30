@@ -25,21 +25,21 @@ description: Converts a value to a string.
 
 
 ```ts
-toString('Hello');
+_.toString('Hello');
 // => 'Hello'
 
-toString(123);
+_.toString(123);
 // => '123'
 
-toString(null);
+_.toString(null);
 // => ''
 
-toString(undefined);
+_.toString(undefined);
 // => ''
 
-toString(-0);
+_.toString(-0);
 // => '-0'
 
-toString(0);
+_.toString(0);
 // => '0'
 ```

@@ -25,12 +25,12 @@ description: Casts the given value as an array if it's not already an array.
 
 
 ```ts
-castArray('hello');
+_.castArray('hello');
 // => ['hello']
 
-castArray([1, 2, 3]);
+_.castArray([1, 2, 3]);
 // => [1, 2, 3]
 
-castArray({ a: 1 });
+_.castArray({ a: 1 });
 // => [{ a: 1 }]
 ```

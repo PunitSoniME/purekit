@@ -25,5 +25,6 @@ description: Checks if a given value is a regular expression.
 
 
 ```ts
-isRegExp(/ab+c/i); // => true
+_.isRegExp(/ab+c/i);
+// => true
 ```

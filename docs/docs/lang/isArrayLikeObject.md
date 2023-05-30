@@ -25,21 +25,21 @@ description: Determines whether the given value is an object that has a length p
 
 
 ```ts
-isArrayLikeObject({ length: 0 });
+_.isArrayLikeObject({ length: 0 });
 // => true
 
-isArrayLikeObject([1, 2, 3]);
+_.isArrayLikeObject([1, 2, 3]);
 // => true
 
-isArrayLikeObject('hello');
+_.isArrayLikeObject('hello');
 // => true
 
-isArrayLikeObject(document.querySelectorAll('.example'));
+_.isArrayLikeObject(document.querySelectorAll('.example'));
 // => true
 
-isArrayLikeObject(() => {});
+_.isArrayLikeObject(() => {});
 // => false
 
-isArrayLikeObject(null);
+_.isArrayLikeObject(null);
 // => false
 ```

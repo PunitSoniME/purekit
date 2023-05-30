@@ -25,9 +25,9 @@ description: Determines whether the given value is a DOM element.
 
 
 ```ts
-isElement(document.createElement('div'));
+_.isElement(document.createElement('div'));
 // => true
 
-isElement(document.createTextNode('hello'));
+_.isElement(document.createTextNode('hello'));
 // => false
 ```

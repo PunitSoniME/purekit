@@ -25,12 +25,12 @@ description: Checks if a value is an integer.
 
 
 ```ts
-isInteger(5);
+_.isInteger(5);
 // => true
 
-isInteger('5');
+_.isInteger('5');
 // => false
 
-isInteger(5.1);
+_.isInteger(5.1);
 // => false
 ```

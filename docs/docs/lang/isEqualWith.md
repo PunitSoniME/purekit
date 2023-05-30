@@ -35,10 +35,10 @@ function compareFunc(objValue, othValue) {
 const object = { 'a': [{ 'b': 2 }, { 'd': 4 }] };
 const other = { 'a': [{ 'b': 2 }, { 'd': 4 }] };
 
-isEqualWith(object, other, compareFunc);
+_.isEqualWith(object, other, compareFunc);
 // => true
 
-isEqualWith(object, other, (objValue, othValue) => {
+_.isEqualWith(object, other, (objValue, othValue) => {
   if (Array.isArray(objValue) && Array.isArray(othValue)) {
     return objValue.length === othValue.length;
   }

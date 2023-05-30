@@ -32,5 +32,7 @@ const source = { 'a': 1, 'b': 2 };
 function customizer(objValue, srcValue, key, object, source) {
     return objValue === srcValue;
 }
-isMatchWith(object, source, customizer); // => returns true
+
+_.isMatchWith(object, source, customizer);
+// => returns true
 ```

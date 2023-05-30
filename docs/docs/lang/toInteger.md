@@ -25,15 +25,15 @@ description: Converts a value to an integer.
 
 
 ```ts
-toInteger(3.2);
+_.toInteger(3.2);
 // => 3
  
-toInteger(Number.MIN_VALUE);
+_.toInteger(Number.MIN_VALUE);
 // => 0
  
-toInteger(Infinity);
+_.toInteger(Infinity);
 // => 1.7976931348623157e+308
  
-toInteger('3.2');
+_.toInteger('3.2');
 // => 3
 ```

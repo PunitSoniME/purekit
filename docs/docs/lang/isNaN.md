@@ -25,12 +25,12 @@ description: Determines whether a value is NaN (Not-A-Number).
 
 
 ```ts
-isNaN(NaN);
+_.isNaN(NaN);
 // => true
 
-isNaN('string');
+_.isNaN('string');
 // => true
 
-isNaN(1);
+_.isNaN(1);
 // => false
 ```

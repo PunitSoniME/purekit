@@ -25,9 +25,9 @@ description: Checks if a given value is a typed array.
 
 
 ```ts
-isTypedArray(new Int32Array([1, 2, 3]));
+_.isTypedArray(new Int32Array([1, 2, 3]));
 // => true
 
-isTypedArray([]);
+_.isTypedArray([]);
 // => false
 ```

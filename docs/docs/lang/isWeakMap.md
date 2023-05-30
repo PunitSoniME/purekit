@@ -25,9 +25,9 @@ description: Checks if a value is a WeakMap object.
 
 
 ```ts
-isWeakMap(new WeakMap());
+_.isWeakMap(new WeakMap());
 // => true
 
-isWeakMap(new Map());
+_.isWeakMap(new Map());
 // => false
 ```

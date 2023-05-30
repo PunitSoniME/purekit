@@ -25,7 +25,12 @@ description: Checks if a given value is an object.
 
 
 ```ts
-isObject({}); // => true
-isObject(null); // => false
-isObject(42); // => false
+_.isObject({});
+// => true
+
+_.isObject(null);
+// => false
+
+_.isObject(42);
+// => false
 ```

@@ -26,6 +26,9 @@ description: Checks if `value` is greater than `other`.
 
 
 ```ts
-gt(3, 1); // => true
-gt(1, 3); // => false
+_.gt(3, 1);
+// => true
+
+_.gt(1, 3);
+// => false
 ```

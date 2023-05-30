@@ -25,39 +25,39 @@ description: Checks if a value is a plain object, i.e., an object created by the
 
 
 ```ts
-isPlainObject({});
+_.isPlainObject({});
 // => true
 
-isPlainObject({ foo: 'bar' });
+_.isPlainObject({ foo: 'bar' });
 // => true
 
-isPlainObject(Object.create(null));
+_.isPlainObject(Object.create(null));
 // => true
 
-isPlainObject(new Object());
+_.isPlainObject(new Object());
 // => true
 
-isPlainObject(new Date());
+_.isPlainObject(new Date());
 // => false
 
-isPlainObject(Math);
+_.isPlainObject(Math);
 // => false
 
-isPlainObject(/regexp/);
+_.isPlainObject(/regexp/);
 // => false
 
-isPlainObject(null);
+_.isPlainObject(null);
 // => false
 
-isPlainObject(123);
+_.isPlainObject(123);
 // => false
 
-isPlainObject('abc');
+_.isPlainObject('abc');
 // => false
 
-isPlainObject(['a', 'b', 'c']);
+_.isPlainObject(['a', 'b', 'c']);
 // => false
 
-isPlainObject(function() {});
+_.isPlainObject(function() {});
 // => false
 ```

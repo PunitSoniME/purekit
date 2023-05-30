@@ -25,18 +25,18 @@ description: Determines whether the given value is an array-like object.
 
 
 ```ts
-isArrayLike('hello');
+_.isArrayLike('hello');
 // => true
 
-isArrayLike([1, 2, 3]);
+_.isArrayLike([1, 2, 3]);
 // => true
 
-isArrayLike(document.querySelectorAll('.example'));
+_.isArrayLike(document.querySelectorAll('.example'));
 // => true
 
-isArrayLike({});
+_.isArrayLike({});
 // => false
 
-isArrayLike(null);
+_.isArrayLike(null);
 // => false
 ```
