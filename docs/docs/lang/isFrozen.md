@@ -27,15 +27,15 @@ description: Checks if an object or array is frozen using the built-in `Object.i
 ```ts
 const obj = {a: 1, b: 2};
 Object.freeze(obj);
-console.log(isFrozen(obj));
+_.isFrozen(obj);
 // => true
 
 const arr = [1, 2, 3];
 Object.freeze(arr);
-console.log(isFrozen(arr));
+_.isFrozen(arr);
 // => true
 
 const obj2 = {a: {b: 1}};
-console.log(isFrozen(obj2));
+_.isFrozen(obj2);
 // => false
 ```

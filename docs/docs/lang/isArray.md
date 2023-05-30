@@ -25,15 +25,15 @@ description: Determines whether the given value is an array.
 
 
 ```ts
-isArray([]);
+_.isArray([]);
 // => true
 
-isArray([1, 2, 3]);
+_.isArray([1, 2, 3]);
 // => true
 
-isArray({}); 
+_.isArray({}); 
 // => false
 
-isArray(null); 
+_.isArray(null); 
 // => false
 ```

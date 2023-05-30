@@ -25,12 +25,12 @@ description: Checks if a value is a function.
 
 
 ```ts
-isFunction(function() {});
+_.isFunction(function() {});
 // => true
 
-isFunction(() => {});
+_.isFunction(() => {});
 // => true
 
-isFunction(1);
+_.isFunction(1);
 // => false
 ```

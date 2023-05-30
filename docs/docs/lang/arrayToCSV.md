@@ -26,9 +26,9 @@ description: Converts the elements to strings with comma-separated ( default del
 
 
 ```ts
-arrayToCSV([['a', 'b'], ['c', 'd']]);
+_.arrayToCSV([['a', 'b'], ['c', 'd']]);
 // => '"a","b"\n"c","d"'
 
-arrayToCSV([['a', 'b'], ['c', 'd']], ';');
+_.arrayToCSV([['a', 'b'], ['c', 'd']], ';');
 // => '"a";"b"\n"c";"d"'
 ```

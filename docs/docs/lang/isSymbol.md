@@ -25,9 +25,9 @@ description: Checks if a given value is a symbol.
 
 
 ```ts
-isSymbol(Symbol.iterator);
+_.isSymbol(Symbol.iterator);
 // => true
 
-isSymbol('abc');
+_.isSymbol('abc');
 // => false
 ```

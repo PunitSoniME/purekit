@@ -27,9 +27,9 @@ description: Checks if an object matches a source object, using a customizer fun
 
 ```ts
 const object = { 'a': 1, 'b': 2, 'c': 3 };
-isMatch(object, { 'b': 2 });
+_.isMatch(object, { 'b': 2 });
 // => true
 
-isMatch(object, { 'b': 1 });
+_.isMatch(object, { 'b': 1 });
 // => false
 ```

@@ -25,12 +25,12 @@ description: Checks if a value is a WeakSet.
 
 
 ```ts
-isWeakSet(new WeakSet());
+_.isWeakSet(new WeakSet());
 // => true
 
-isWeakSet(new Set());
+_.isWeakSet(new Set());
 // => false
 
-isWeakSet({});
+_.isWeakSet({});
 // => false
 ```

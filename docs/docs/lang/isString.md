@@ -25,9 +25,9 @@ description: Checks if a value is a string.
 
 
 ```ts
-isString('hello');
+_.isString('hello');
 // => true
 
-isString(123);
+_.isString(123);
 // => false
 ```

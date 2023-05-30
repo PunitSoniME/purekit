@@ -25,9 +25,9 @@ description: Checks if a value is an error object.
 
 
 ```ts
-isError(new Error('Something went wrong'));
+_.isError(new Error('Something went wrong'));
 // => true
 
-isError('Error');
+_.isError('Error');
 // => false
 ```

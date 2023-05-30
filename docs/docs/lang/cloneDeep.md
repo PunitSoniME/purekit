@@ -26,7 +26,7 @@ description: Creates a deep clone of the input value.
 
 ```ts
 const obj = { a: 1, b: { c: 2 } };
-const clone = cloneDeep(obj);
+const clone = _.cloneDeep(obj);
 obj.b.c = 3;
 
 console.log(clone.b.c);

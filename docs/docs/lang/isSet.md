@@ -25,12 +25,12 @@ description: Checks if a value is a Set.
 
 
 ```ts
-isSet(new Set());
+_.isSet(new Set());
 // => true
 
-isSet(new WeakSet());
+_.isSet(new WeakSet());
 // => false
 
-isSet({ key: 'value' });
+_.isSet({ key: 'value' });
 // => false
 ```

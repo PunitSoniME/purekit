@@ -32,7 +32,7 @@ function customizer(value) {
   }
 }
  
-var el = cloneWith(document.body, customizer);
+var el = _.cloneWith(document.body, customizer);
  
 console.log(el === document.body);
 // => false

@@ -25,12 +25,12 @@ description: Checks if a value is a Map object.
 
 
 ```ts
-isMap(new Map());
+_.isMap(new Map());
 // => true
 
-isMap(new Set());
+_.isMap(new Set());
 // => false
 
-isMap({});
+_.isMap({});
 // => false
 ```

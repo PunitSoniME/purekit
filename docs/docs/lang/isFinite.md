@@ -25,12 +25,12 @@ description: Checks if a value is a finite number.
 
 
 ```ts
-isFinite(3);
+_.isFinite(3);
 // => true
 
-isFinite(Number.POSITIVE_INFINITY);
+_.isFinite(Number.POSITIVE_INFINITY);
 // => false
 
-isFinite('123');
+_.isFinite('123');
 // => false
 ```

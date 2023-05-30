@@ -26,8 +26,8 @@ description: Determines whether the given value is a Node.js Buffer object.
 
 ```ts
 const buf = Buffer.from('hello', 'utf8');
-isBuffer(buf); // => true
+_.isBuffer(buf); // => true
 
 const arr = [1, 2, 3];
-isBuffer(arr); // => false
+_.isBuffer(arr); // => false
 ```

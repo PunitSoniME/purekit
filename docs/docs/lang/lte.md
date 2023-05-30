@@ -26,12 +26,12 @@ description: Checks if `value` is less than or equal to `other`.
 
 
 ```ts
-lte(1, 2)
+_.lte(1, 2);
 // => true
 
-lte(2, 1)
+_.lte(2, 1);
 // => false
 
-lte(2, 2)
+_.lte(2, 2);
 // => true
 ```

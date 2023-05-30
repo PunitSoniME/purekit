@@ -25,21 +25,21 @@ description: Determines whether the given value is a valid Date object.
 
 
 ```ts
-isDate(new Date());
+_.isDate(new Date());
 // => true
 
-isDate('2021-09-01T00:00:00.000Z');
+_.isDate('2021-09-01T00:00:00.000Z');
 // => true
 
-isDate(1630454400000);
+_.isDate(1630454400000);
 // => true
 
-isDate(null);
+_.isDate(null);
 // => false
 
-isDate(undefined);
+_.isDate(undefined);
 // => false
 
-isDate('hello');
+_.isDate('hello');
 // => false
 ```

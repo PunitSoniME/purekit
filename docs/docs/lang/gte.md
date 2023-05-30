@@ -26,12 +26,12 @@ description: Checks if `value` is greater than or equal to `other`.
 
 
 ```ts
-gte(3, 1);
+_.gte(3, 1);
 // => true
 
-gte(1, 3);
+_.gte(1, 3);
 // => false
 
-gte(2, 2);
+_.gte(2, 2);
 // => true
 ```

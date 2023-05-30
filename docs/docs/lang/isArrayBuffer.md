@@ -26,10 +26,10 @@ description: Determines whether the given value is an `ArrayBuffer` object.
 
 ```ts
 const buffer = new ArrayBuffer(16);
-isArrayBuffer(buffer);
+_.isArrayBuffer(buffer);
 // => true
 
 const arr = [1, 2, 3];
-isArrayBuffer(arr);
+_.isArrayBuffer(arr);
 // => false
 ```

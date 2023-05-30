@@ -25,18 +25,18 @@ description: Converts a value to a number.
 
 
 ```ts
-toNumber('123');
+_.toNumber('123');
 // => 123
 
-toNumber('abc');
+_.toNumber('abc');
 // => NaN
 
-toNumber(null);
+_.toNumber(null);
 // => 0
 
-toNumber(undefined);
+_.toNumber(undefined);
 // => NaN
 
-toNumber({});
+_.toNumber({});
 // => NaN
 ```

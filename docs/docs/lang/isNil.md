@@ -25,15 +25,15 @@ description: Checks if a value is null or undefined.
 
 
 ```ts
-isNil(null);
+_.isNil(null);
 // => true
 
-isNil(undefined);
+_.isNil(undefined);
 // => true
 
-isNil(0);
+_.isNil(0);
 // => false
 
-isNil('');
+_.isNil('');
 // => false
 ```

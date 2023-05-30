@@ -25,15 +25,15 @@ description: Checks if `value` is object-like.
 
 
 ```ts
-isObjectLike({});
+_.isObjectLike({});
 // => true
 
-isObjectLike([1, 2, 3]);
+_.isObjectLike([1, 2, 3]);
 // => true
 
-isObjectLike(Function);
+_.isObjectLike(Function);
 // => false
 
-isObjectLike(null);
+_.isObjectLike(null);
 // => false
 ```

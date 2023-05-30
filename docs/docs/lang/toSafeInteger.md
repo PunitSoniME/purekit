@@ -25,15 +25,15 @@ description: Converts a value to a safe integer. Returns a safe integer that is 
 
 
 ```ts
-toSafeInteger(3.2);
+_.toSafeInteger(3.2);
 // => 3
 
-toSafeInteger(Infinity);
+_.toSafeInteger(Infinity);
 // => 9007199254740991
 
-toSafeInteger('3.2');
+_.toSafeInteger('3.2');
 // => 3
 
-toSafeInteger(Number.MIN_VALUE);
+_.toSafeInteger(Number.MIN_VALUE);
 // => 0
 ```

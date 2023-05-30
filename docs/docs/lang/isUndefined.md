@@ -25,18 +25,18 @@ description: Checks if a value is undefined.
 
 
 ```ts
-isUndefined(undefined);
+_.isUndefined(undefined);
 // => true
 
-isUndefined(null);
+_.isUndefined(null);
 // => false
 
-isUndefined(0);
+_.isUndefined(0);
 // => false
 
-isUndefined('');
+_.isUndefined('');
 // => false
 
-isUndefined(false);
+_.isUndefined(false);
 // => false
 ```
