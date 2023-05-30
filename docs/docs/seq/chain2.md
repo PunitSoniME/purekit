@@ -33,7 +33,7 @@ const users = [
 { 'user': 'fred', 'age': 40 },
 { 'user': 'pebbles', 'age': 1 }
 ];
-const youngest = chain2(users)
+const youngest = _.chain2(users)
  .fn(sortBy, 'age')
  .fn(map, (function (o: any) {
      return o.user + ' is ' + o.age;

@@ -27,7 +27,7 @@ description: Invokes a function with the given value, then returns the value.
 
 ```ts
 const data = [1, 2, 3];
-const tappedData = tap2(data, (array: number[]) => {
+const tappedData = _.tap2(data, (array: number[]) => {
     // Mutate input array.
     array.push(100);
 })
