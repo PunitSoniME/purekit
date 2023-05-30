@@ -26,9 +26,9 @@ description: Parses a string and returns an integer of the specified radix.
 
 
 ```ts
-parseInt('42');
+_.parseInt('42');
 // => 42
 
-parseInt('101010', 2);
+_.parseInt('101010', 2);
 // => 42
 ```

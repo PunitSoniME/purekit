@@ -25,9 +25,9 @@ description: Converts the first character of a string to uppercase.
 
 
 ```ts
-upperFirst('hello, World!');
+_.upperFirst('hello, World!');
 // => 'Hello, World!'
 
-upperFirst('the quick brown fox jumps over the lazy dog.');
+_.upperFirst('the quick brown fox jumps over the lazy dog.');
 // => 'The quick brown fox jumps over the lazy dog.'
 ```

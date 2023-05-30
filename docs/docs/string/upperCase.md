@@ -25,9 +25,9 @@ description: Converts a string to title case and removes special characters.
 
 
 ```ts
-upperCase('Hello_world');
+_.upperCase('Hello_world');
 // => 'HELLO WORLD'
 
-upperCase('life-is_beautiful');
+_.upperCase('life-is_beautiful');
 // => 'LIFE IS BEAUTIFUL'
 ```

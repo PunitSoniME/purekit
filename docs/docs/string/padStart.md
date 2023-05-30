@@ -27,9 +27,9 @@ description: Pads the start of a string with the given characters until it reach
 
 
 ```ts
-padStart('hello', 10);
+_.padStart('hello', 10);
 // => '     hello'
 
-padStart('world', 10, '*');
+_.padStart('world', 10, '*');
 // => '*****world'
 ```

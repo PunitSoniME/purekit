@@ -26,6 +26,6 @@ description: Escapes any special characters in a string to be used as a regular 
 
 ```ts
 const str = 'Hello, world. (can you escape me?)';
-const escapedStr = escapeRegExp(str);
+_.escapeRegExp(str);
 // => 'Hello, world\\. \\(can you escape me\\?\\)'
 ```

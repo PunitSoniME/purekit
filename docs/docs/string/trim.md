@@ -26,9 +26,9 @@ description: Removes specified characters from the beginning and end of a string
 
 
 ```ts
-trim('  Hello, World!   ');
+_.trim('  Hello, World!   ');
 // => 'Hello, World!'
 
-trim('JavaScript is awesome', 'weojsacm');
+_.trim('JavaScript is awesome', 'weojsacm');
 // => 'JavaScript is awesome'
 ```

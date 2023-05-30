@@ -25,6 +25,6 @@ description: Converts a string to uppercase.
 
 
 ```ts
-toUpper('hello world');
+_.toUpper('hello world');
 // => 'HELLO WORLD'
 ```

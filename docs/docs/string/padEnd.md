@@ -27,9 +27,9 @@ description: Pads a string with additional characters at the end to reach a spec
 
 
 ```ts
-padEnd('hello', 8);
+_.padEnd('hello', 8);
 // => 'hello   '
 
-padEnd('hello', 8, '-');
+_.padEnd('hello', 8, '-');
 // => 'hello---'
 ```

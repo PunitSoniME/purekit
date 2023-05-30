@@ -26,9 +26,9 @@ description: Removes specified characters from the end of a string.
 
 
 ```ts
-trimEnd('Hello, World   ');
+_.trimEnd('Hello, World   ');
 // => 'Hello, World'
 
-trimEnd('Hello, World!!!', '!');
+_.trimEnd('Hello, World!!!', '!');
 // => 'Hello, World'
 ```
