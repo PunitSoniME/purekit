@@ -30,7 +30,7 @@ const obj = {
     bar: (a, b) => a + b
   }
 };
-const barMethod = methodOf(obj)(['foo', 'bar']);
-console.log(barMethod(1, 2));
+const barMethod = _.methodOf(obj)(['foo', 'bar']);
+barMethod(1, 2);
 // => 3
 ```

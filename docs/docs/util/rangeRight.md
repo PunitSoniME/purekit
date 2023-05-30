@@ -27,21 +27,21 @@ description: Creates an array of numbers (positive or negative) progressing from
 
 
 ```ts
-rangeRight(4);
+_.rangeRight(4);
 // => [3, 2, 1, 0]
 
-rangeRight(-4);
+_.rangeRight(-4);
 // => [-3, -2, -1, 0]
 
-rangeRight(1, 5);
+_.rangeRight(1, 5);
 // => [4, 3, 2, 1]
 
-rangeRight(0, 20, 5);
+_.rangeRight(0, 20, 5);
 // => [15, 10, 5, 0]
 
-rangeRight(0, -4, -1);
+_.rangeRight(0, -4, -1);
 // => [-3, -2, -1, 0]
 
-rangeRight(1, 4, 0);
+_.rangeRight(1, 4, 0);
 // => [1, 1, 1]
 ```

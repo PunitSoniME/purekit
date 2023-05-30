@@ -14,6 +14,6 @@ description: Returns an empty string.
 #### Example
 
 ```ts
-const result = stubString();
+_.stubString();
 // => ''
 ```

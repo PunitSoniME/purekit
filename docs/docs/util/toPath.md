@@ -25,6 +25,6 @@ description: Converts a string path to an array of path segments.
 
 
 ```ts
-const result = toPath('a.b[0].c');
+_.toPath('a.b[0].c');
 // => ['a', 'b', '0', 'c']
 ```

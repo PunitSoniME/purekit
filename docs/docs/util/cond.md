@@ -25,7 +25,7 @@ description: Creates a function that iterates over pairs of predicates and funct
 
 
 ```ts
-const func = cond([
+const func = _.cond([
   [x => x > 5, x => 'greater than 5'],
   [x => x === 5, x => 'equals 5'],
   [x => x < 5, x => 'less than 5']

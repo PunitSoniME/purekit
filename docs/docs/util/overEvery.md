@@ -27,7 +27,7 @@ description: Checks if all of the given predicates return truthy values when inv
 ```ts
 const isEven = n => n % 2 === 0;
 const isPositive = n => n > 0;
-const isEvenAndPositive = overEvery([isEven, isPositive]);
+const isEvenAndPositive = _.overEvery([isEven, isPositive]);
 isEvenAndPositive(4);
 // => true
 

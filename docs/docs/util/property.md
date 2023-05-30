@@ -26,7 +26,7 @@ description: Creates a function that returns the value at the specified path of 
 
 ```ts
 const object = { 'a': [{ 'b': { 'c': 3 } }] };
-const getValue = property('a[0].b.c');
+const getValue = _.property('a[0].b.c');
 
 getValue(object);
 // => 3

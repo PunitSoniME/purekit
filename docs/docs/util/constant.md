@@ -25,7 +25,7 @@ description: Creates a function that always returns the same value.
 
 
 ```ts
-const func = constant('Hello');
+const func = _.constant('Hello');
 
 func();
 // => 'Hello'

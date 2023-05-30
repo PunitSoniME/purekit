@@ -27,7 +27,7 @@ description: Creates a function that invokes the method at `path` of a given obj
 
 ```ts
 const users = [{ name: 'Alice', age: 32 }, { name: 'Bob', age: 42 }];
-const getNames = method('name');
+const getNames = _.method('name');
 const names = users.map(getNames);
 // => ['Alice', 'Bob']
 ```

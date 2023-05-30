@@ -28,7 +28,7 @@ description: Checks if the given item satisfies at least one predicate function 
 const isString = val => typeof val === 'string';
 const isNumber = val => typeof val === 'number';
 const isTruthy = val => !!val;
-const check = overSome([isString, isNumber, isTruthy]);
+const check = _.overSome([isString, isNumber, isTruthy]);
 check('hello');
 // => true
 

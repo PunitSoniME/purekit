@@ -16,6 +16,6 @@ description: Creates an empty array.
 
 
 ```ts
-const result = stubArray();
+_.stubArray();
 // => []
 ```

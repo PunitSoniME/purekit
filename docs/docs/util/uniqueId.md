@@ -26,12 +26,12 @@ description: Generates a unique ID.
 
 
 ```ts
-const id1 = uniqueId();
+_.uniqueId();
 // => '1'
 
-const id2 = uniqueId();
+_.uniqueId();
 // => '2'
 
-const id3 = uniqueId(100, 'id_');
+_.uniqueId(100, 'id_');
 // => 'id_101'
 ```

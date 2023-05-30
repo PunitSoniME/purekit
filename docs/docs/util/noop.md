@@ -8,6 +8,6 @@ description: A no-operation function that does nothing.
 
 
 ```ts
-noop();
+_.noop();
 // => does nothing
 ```

@@ -16,6 +16,6 @@ description: Creates an empty object.
 #### Example
 
 ```ts
-const result = stubObject();
+_.stubObject();
 // => {}
 ```
