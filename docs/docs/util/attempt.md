@@ -26,9 +26,9 @@ description: Attempts to invoke a function with the given arguments and returns 
 
 
 ```ts
-attempt((a, b) => a + b, 2, 4);
+_.attempt((a, b) => a + b, 2, 4);
 // => 6
 
-attempt(str => str.length, null);
+_.attempt(str => str.length, null);
 // => TypeError: Cannot read property 'length' of null
 ```

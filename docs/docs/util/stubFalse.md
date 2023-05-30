@@ -17,6 +17,6 @@ description: Returns false.
 
 
 ```ts
-const result = stubFalse();
+_.stubFalse();
 // => false
 ```

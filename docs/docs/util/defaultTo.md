@@ -26,15 +26,15 @@ description: Checks if a value is null, undefined or NaN and returns the default
 
 
 ```ts
-defaultTo(null, 'default');
+_.defaultTo(null, 'default');
 // => 'default'
 
-defaultTo(undefined, 'default');
+_.defaultTo(undefined, 'default');
 // => 'default'
 
-defaultTo(NaN, 'default');
+_.defaultTo(NaN, 'default');
 // => 'default'
 
-defaultTo('hello', 'default');
+_.defaultTo('hello', 'default');
 // => 'hello'
 ```

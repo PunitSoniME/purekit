@@ -26,6 +26,6 @@ description: Calls a function n times and returns an array of the results.
 
 
 ```ts
-const result = times(3, i => i + 1);
+_.times(3, i => i + 1);
 // => [1, 2, 3]
 ```

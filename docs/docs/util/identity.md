@@ -25,9 +25,9 @@ description: Returns the first argument it receives.
 
 
 ```ts
-identity('hello');
+_.identity('hello');
 // => 'hello'
 
-identity(42);
+_.identity(42);
 // => 42
 ```

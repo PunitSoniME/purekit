@@ -25,11 +25,11 @@ description: Returns a function which will return the nth argument passed to it
 
 
 ```ts
-const getSecondArg = nthArg(1);
+const getSecondArg = _.nthArg(1);
 getSecondArg(1, 2, 3);
 // => 2
 
-const getThirdArg = nthArg(2);
+const getThirdArg = _.nthArg(2);
 getThirdArg('a', 'b', 'c', 'd');
 // => 'c'
 ```

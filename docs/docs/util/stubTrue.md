@@ -15,6 +15,6 @@ description: Returns true.
 #### Example
 
 ```ts
-const result = stubTrue();
+_.stubTrue();
 // => true
 ```

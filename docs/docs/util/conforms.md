@@ -25,7 +25,7 @@ description: Creates a function that checks if an object conforms to the specifi
 
 
 ```ts
-const func = conforms({x: x => x > 5, y: y => y < 10});
+const func = _.conforms({x: x => x > 5, y: y => y < 10});
 
 func({x: 10, y: 5});
 // => true

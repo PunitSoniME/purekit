@@ -28,11 +28,11 @@ description: Creates a function that returns the result of calling the given fun
 const square = x => x * x;
 const double = x => x * 2;
 
-const func = flowRight(square, double);
+const func = _.flowRight(square, double);
 
 func(3);
 // => 18
 
-flowRight(square, double, square)(2);
+_.flowRight(square, double, square)(2);
 // => 16
 ```

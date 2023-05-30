@@ -27,8 +27,7 @@ description: The opposite of `property` function. This method creates a function
 
 ```ts
 const user = { name: 'John', address: { street: '123 Main St.' } };// =>
-const street = propertyOf(user)(['address', 'street']);
 
-console.log(street);
+_.propertyOf(user)(['address', 'street']);
 // => '123 Main St.'
 ```

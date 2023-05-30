@@ -26,6 +26,6 @@ description: Creates a function that can be used to iterate over a collection.
 
 ```ts
 const users = [{ name: 'Alice', age: 32 }, { name: 'Bob', age: 42 }];
-const sortByAge = users.sort(iteratee(user => user.age));
+const sortByAge = users.sort(_.iteratee(user => user.age));
 // => [{ name: 'Alice', age: 32 }, { name: 'Bob', age: 42 }]
 ```

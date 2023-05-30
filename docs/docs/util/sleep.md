@@ -25,9 +25,9 @@ description: Pauses the execution for a specified number of milliseconds.
 
 
 ```ts
-await sleep();
+await _.sleep();
 // waits for 1000 milliseconds before continuing execution
 
-await sleep(5000);
+await _.sleep(5000);
 // waits for 5000 milliseconds before continuing execution
 ```

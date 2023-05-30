@@ -15,9 +15,9 @@ description: Generates a cryptographically secure unique ID.
 #### Example
 
 ```ts
-const id1 = uniqueId2();
+const id1 = _.uniqueId2();
 // => id1 is a unique ID string
 
-const id2 = uniqueId2();
+const id2 = _.uniqueId2();
 // => id2 is a different unique ID string
 ```
