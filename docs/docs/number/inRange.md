@@ -27,15 +27,15 @@ description: Checks if the given number is within the specified range.
 
 
 ```ts
-inRange(2, 0, 5);
+_.inRange(2, 0, 5);
 // => true
 
-inRange(2, 5, 0);
+_.inRange(2, 5, 0);
 // => true
 
-inRange(2, 2, 5);
+_.inRange(2, 2, 5);
 // => true
 
-inRange(5, 0, 5);
+_.inRange(5, 0, 5);
 // => false
 ```

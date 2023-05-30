@@ -26,15 +26,15 @@ description: Returns a random number within the specified range. If only one arg
 
 
 ```ts
-random(10);
+_.random(10);
 // => a random integer between 0 and 9
 
-random(1, 11);
+_.random(1, 11);
 // => a random integer between 1 and 10
 
-random(true);
+_.random(true);
 // => a random floating-point number between 0 and 1
 
-random(3, 2);
+_.random(3, 2);
 // => a random floating-point number between 2 and 3
 ```
