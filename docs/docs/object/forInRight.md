@@ -27,7 +27,7 @@ description: Iterates over an object's own and inherited enumerable string keyed
 
 ```ts
 const object = { 'a': 1, 'b': 2 };
-forInRight(object, (value, key) => {
+_.forInRight(object, (value, key) => {
   console.log(key);
 });
 ```

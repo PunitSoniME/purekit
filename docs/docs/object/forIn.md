@@ -27,13 +27,13 @@ description: Iterates over own and inherited enumerable string keyed properties 
 
 ```ts
 const object = { 'a': 1, 'b': 2 };
-forIn(object, function(value, key) {
+_.forIn(object, function(value, key) {
   console.log(key);
 });
 // => 'a' (iteration order is not guaranteed)
 // => 'b' (iteration order is not guaranteed)
 
-forIn(object, function(value, key) {
+_.forIn(object, function(value, key) {
   object[key] = value * 2;
 });
 console.log(object);

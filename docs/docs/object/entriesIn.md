@@ -30,7 +30,6 @@ const obj = Object.create(proto, {
   b: { value: 2 }
 });
 
-const result = entriesIn(obj);
-console.log(result);
+_.entriesIn(obj);
 // => [['b', 2], ['a', 1]]
 ```

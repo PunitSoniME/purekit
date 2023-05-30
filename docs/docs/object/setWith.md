@@ -29,6 +29,7 @@ description: This method is like `set` except that it accepts `customizer` which
 
 ```ts
 const object = { 'a': [{ 'b': { 'c': 3 } }] };
-setWith(object, '[0].a.b.c', 4, (value) => value === 3 ? 1 : value);
+
+_.setWith(object, '[0].a.b.c', 4, (value) => value === 3 ? 1 : value);
 // => { 'a': [{ 'b': { 'c': 1 } }] }
 ```

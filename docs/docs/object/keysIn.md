@@ -25,6 +25,6 @@ description: This method returns all the own and inherited enumerable property n
 
 
 ```ts
-keysIn({a: 1, b: 2});
+_.keysIn({a: 1, b: 2});
 // => ['a', 'b']
 ```

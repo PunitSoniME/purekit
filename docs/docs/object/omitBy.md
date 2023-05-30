@@ -27,6 +27,7 @@ description: Creates an object composed of the object properties predicate does 
 
 ```ts
 const object = { 'a': 1, 'b': '2', 'c': 3 };
-omitBy(object, (value) => typeof value === 'number');
+
+_.omitBy(object, (value) => typeof value === 'number');
 // => { 'b': '2' }
 ```

@@ -36,7 +36,6 @@ function customizer(objValue, srcValue) {
   }
 }
 
-const result = extendWith(object, other, customizer);
-console.log(result);
+_.extendWith(object, other, customizer);
 // => { 'a': [{ 'b': 2, 'c': 3 }, { 'd': 4, 'e': 5 }] }
 ```

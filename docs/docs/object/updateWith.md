@@ -29,10 +29,10 @@ description: Updates the value of a property at the specified path in the provid
 
 ```ts
 const obj = { a: { b: { c: 1 } } };
-updateWith(obj, 'a.b.c', (val) => val + 1);
+_.updateWith(obj, 'a.b.c', (val) => val + 1);
 // => { a: { b: { c: 2 } } }
 
 const obj2 = { a: { b: { c: 1 } } };
-updateWith(obj2, 'a.b.d', (val) => 2);
+_.updateWith(obj2, 'a.b.d', (val) => 2);
 // => { a: { b: { c: 1, d: 2 } } }
 ```

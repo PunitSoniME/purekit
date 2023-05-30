@@ -32,7 +32,6 @@ const users = {
   'pebbles': { 'age': 1,  'active': true }
 };
 const isActive = (value) => value.active;
-const result = findLastKey(users, isActive);
-console.log(result);
+_.findLastKey(users, isActive);
 // => 'pebbles'
 ```

@@ -39,6 +39,6 @@ class Dog extends Animal {
   }
 }
 const d = new Dog('Mitzie');
-const functionNames = functionsIn(d);
-// functionNames = ['speak']
+_.functionsIn(d);
+// => ['speak']
 ```

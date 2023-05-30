@@ -27,8 +27,6 @@ description: Creates an array of values corresponding to the specified paths of 
 
 ```ts
 const object = { a: [{ b: { c: 3 } }, 4] };
-const result = at(object, ['a[0].b.c', 'a[1]']);
-
-console.log(result);
+_.at(object, ['a[0].b.c', 'a[1]']);
 // => [3, 4]
 ```

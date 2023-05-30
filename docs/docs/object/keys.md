@@ -26,6 +26,6 @@ description: Returns an array of the own enumerable property names of the given 
 
 ```ts
 const object = { a: 1, b: 2, c: 3 };
-keys(object);
+_.keys(object);
 // => ['a', 'b', 'c']
 ```

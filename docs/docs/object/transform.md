@@ -27,13 +27,13 @@ description: Transforms a collection by iterating over its elements and applying
 
 
 ```ts
-transform([2, 3, 4], function(result, n) {
+_.transform([2, 3, 4], function(result, n) {
     result.push(n *= n);
 return n % 2 == 0
 }, []);
 // => [4, 9]
 
-transform({ 'a': 1, 'b': 2, 'c': 1 }, function(result, value, key) {
+_.transform({ 'a': 1, 'b': 2, 'c': 1 }, function(result, value, key) {
   (result[value] || (result[value] = [])).push(key)
 }, {});
 // => { '1': ['a', 'c'], '2': ['b'] }

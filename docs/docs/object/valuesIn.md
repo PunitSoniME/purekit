@@ -28,6 +28,6 @@ description: Returns an array of the values of all enumerable properties, includ
 const obj = { a: 1 };
 const child = Object.create(obj);
 child.b = 2;
-valuesIn(child);
+_.valuesIn(child);
 // => [1, 2]
 ```

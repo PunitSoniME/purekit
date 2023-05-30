@@ -30,7 +30,6 @@ const obj = Object.create(proto, {
   b: { value: 2 }
 });
 
-const result = toPairsIn(obj);
-console.log(result);
+_.toPairsIn(obj);
 // => [['b', 2], ['a', 1]]
 ```

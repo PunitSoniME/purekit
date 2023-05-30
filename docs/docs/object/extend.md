@@ -29,6 +29,6 @@ description: Assigns own enumerable string keyed properties of source objects to
 const object = { a: 1 };
 const other = { b: 2 };
 
-extend(object, other);
+_.extend(object, other);
 // => { 'a': 1, 'b': 2 }
 ```

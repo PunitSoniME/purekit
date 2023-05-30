@@ -26,6 +26,6 @@ description: Returns an array of the values of the own enumerable string-keyed p
 
 ```ts
 const obj = { a: 1, b: 2, c: 3 };
-values(obj);
+_.values(obj);
 // => [1, 2, 3]
 ```
