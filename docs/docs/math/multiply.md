@@ -25,9 +25,9 @@ description: Returns the product of all the numbers passed in as arguments.
 
 
 ```ts
-multiply(1, 2, 3, 4, 5);
+_.multiply(1, 2, 3, 4, 5);
 // => 120
 
-multiply(3, -5);
+_.multiply(3, -5);
 // => -15
 ```

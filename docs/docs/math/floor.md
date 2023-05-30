@@ -26,15 +26,15 @@ description: Calculates the floor value of a given number up to a specified prec
 
 
 ```ts
-floor(4.7);
+_.floor(4.7);
 // => 4
 
-floor(-4.7);
+_.floor(-4.7);
 // => -5
 
-floor(4060, -2);
+_.floor(4060, -2);
 // => 4000
 
-floor(0.046, 2);
+_.floor(0.046, 2);
 // => 0.04
 ```

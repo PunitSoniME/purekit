@@ -26,12 +26,12 @@ description: Calculates the ceiling value of a given number to the nearest preci
 
 
 ```ts
-ceil(4.006);
+_.ceil(4.006);
 // => 5
 
-ceil(6.004, 2);
+_.ceil(6.004, 2);
 // => 6.01
 
-ceil(6040, -2);
+_.ceil(6040, -2);
 // => 6100
 ```

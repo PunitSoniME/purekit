@@ -26,9 +26,9 @@ description: Returns the number rounded to the specified number of decimal place
 
 
 ```ts
-round(3.14159265359, 2);
+_.round(3.14159265359, 2);
 // => 3.14
 
-round(3.14159265359);
+_.round(3.14159265359);
 // => 3
 ```

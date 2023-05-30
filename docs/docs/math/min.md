@@ -25,9 +25,9 @@ description: Returns the minimum value in an array of numbers.
 
 
 ```ts
-min([1, 2, 3]);
+_.min([1, 2, 3]);
 // => 1
 
-min([]);
+_.min([]);
 // => undefined
 ```

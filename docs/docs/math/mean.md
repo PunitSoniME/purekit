@@ -25,9 +25,9 @@ description: Calculates the mean of an array of numbers.
 
 
 ```ts
-mean([1, 2, 3]);
+_.mean([1, 2, 3]);
 // => 2
 
-mean([5, 5, 5, 5]);
+_.mean([5, 5, 5, 5]);
 // => 5
 ```

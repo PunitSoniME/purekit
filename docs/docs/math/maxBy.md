@@ -31,8 +31,6 @@ const users = [
   { name: 'Bob', age: 30 },
   { name: 'Charlie', age: 20 }
 ];
-const oldestUser = maxBy(users, (user) => user.age);
-
-console.log(oldestUser);
+_.maxBy(users, (user) => user.age);
 // => { name: 'Bob', age: 30 }
 ```
