@@ -28,9 +28,10 @@ description: Sets the value at path of object. If a portion of path doesn't exis
 
 ```ts
 const object = { a: { b: { c: 3 } } };
-set(object, 'a.b.c', 4);
+
+_.set(object, 'a.b.c', 4);
 // => { a: { b: { c: 4 } } }
 
-set(object, ['x', '0', 'y', 'z'], 5);
+_.set(object, ['x', '0', 'y', 'z'], 5);
 // => { a: { b: { c: 3 } }, x: [{ y: { z: 5 } }] }
 ```

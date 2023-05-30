@@ -31,7 +31,7 @@ const users = {
   jane: { age: 31 },
   jack: { age: 27 }
 };
-const uppercaseKeys = mapKeys(users, (value, key) => key.toUpperCase());
-console.log(uppercaseKeys);
+
+_.mapKeys(users, (value, key) => key.toUpperCase());
 // => { JOHN: { age: 23 }, JANE: { age: 31 }, JACK: { age: 27 } }
 ```

@@ -28,15 +28,12 @@ description: Creates a new object with the specified prototype and properties. I
 ```ts
 const prototype = { a: 1 };
 
-const obj1 = create(prototype);
-console.log(obj1);
+_.create(prototype);
 // => {}
 
-const obj2 = create(prototype, { b: 2 });
-console.log(obj2);
+_.create(prototype, { b: 2 });
 // => { b: 2 }
 
-const obj3 = create(prototype, { a: 3, b: 4 });
-console.log(obj3);
+_.create(prototype, { a: 3, b: 4 });
 // => { a: 3, b: 4 }
 ```

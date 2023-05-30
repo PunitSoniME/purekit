@@ -26,12 +26,10 @@ description: Inverts the keys and values of an object. If multiple keys have the
 
 ```ts
 const object = { a: 1, b: 2, c: 1 };
-const inverted = invert(object);
-console.log(inverted);
+_.invert(object);
 // => { '1': 'c', '2': 'b' }
 
 const object = { a: 'x', b: 'y', c: 'z' };
-const inverted = invert(object);
-console.log(inverted);
+_.invert(object);
 // => { 'x': 'a', 'y': 'b', 'z': 'c' }
 ```

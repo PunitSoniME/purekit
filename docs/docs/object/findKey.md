@@ -32,7 +32,6 @@ const users = {
   'pebbles': { 'age': 1,  'active': true }
 };
 const isActive = (value) => value.active;
-const result = findKey(users, isActive);
-console.log(result);
+_.findKey(users, isActive);
 // => 'barney'
 ```

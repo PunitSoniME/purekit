@@ -27,7 +27,7 @@ description: Iterates over own enumerable string keyed properties of an object i
 
 ```ts
 const object = { 'a': 1, 'b': 2 };
-forOwnRight(object, (value, key) => {
+_.forOwnRight(object, (value, key) => {
   console.log(key, value);
 });
 // => Logs 'b 2' then 'a 1'.

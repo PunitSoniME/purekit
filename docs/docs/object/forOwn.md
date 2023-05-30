@@ -27,7 +27,7 @@ description: Iterates over an object's own enumerable string keyed properties, c
 
 ```ts
 const object = { 'a': 1, 'b': 2 };
-forOwn(object, (value, key) => {
+_.forOwn(object, (value, key) => {
   console.log(key);
 });
 // => Logs 'a' then 'b'.

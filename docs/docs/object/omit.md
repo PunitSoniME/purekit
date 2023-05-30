@@ -26,6 +26,6 @@ description: Creates an object composed of the object properties that are not in
 
 
 ```ts
-omit({a: 1, b: 2, c: 3}, ['a', 'c']);
+_.omit({a: 1, b: 2, c: 3}, ['a', 'c']);
 // => {b: 2}
 ```

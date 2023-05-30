@@ -36,8 +36,7 @@ function customizer(objValue, srcValue) {
  
 const object = { 'a': [1], 'b': [2] };
 const other = { 'a': [3], 'b': [4] };
-const merged = mergeWith(object, other, customizer);
-console.log(merged);
+_.mergeWith(object, other, customizer);
 // =>	{ 'a': [1, 3], 'b': [2, 4] }
 
 
@@ -50,7 +49,6 @@ function customizer(objValue, srcValue) {
  
 const object = { 'a': { 'x': 1 }, 'b': { 'y': 2 } };
 const other = { 'a': { 'y': 3 }, 'b': { 'z': 4 } };
-const merged = mergeWith(object, other, customizer);
-console.log(merged);
+_.mergeWith(object, other, customizer);
 // =>	{ 'a': { 'x': 1, 'y': 3 }, 'b': { 'y': 2, 'z': 4 } }
 ```

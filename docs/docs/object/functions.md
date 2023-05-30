@@ -34,6 +34,6 @@ const obj = {
   },
   name: 'John Doe'
 };
-const functionNames = functions(obj);
-// functionNames = ['add', 'subtract']
+_.functions(obj);
+// => ['add', 'subtract']
 ```

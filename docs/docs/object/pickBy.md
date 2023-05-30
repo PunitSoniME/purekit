@@ -27,6 +27,7 @@ description: Creates an object composed of the object properties predicate retur
 
 ```ts
 const object = { 'a': 1, 'b': '2', 'c': 3 };
-pickBy(object, (value) => typeof value === 'number');
+
+_.pickBy(object, (value) => typeof value === 'number');
 // => { 'a': 1, 'c': 3 }
 ```

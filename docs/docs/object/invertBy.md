@@ -27,9 +27,9 @@ description: Creates an object composed of keys generated from the results of ru
 
 ```ts
 const object = { 'a': 1, 'b': 2, 'c': 1 };
-invertBy(object);
+_.invertBy(object);
 // => { '1': ['a', 'c'], '2': ['b'] }
 
-invertBy(object, (value) => `group_${value}`);
+_.invertBy(object, (value) => `group_${value}`);
 // => { 'group_1': ['a', 'c'], 'group_2': ['b'] }
 ```

@@ -26,7 +26,6 @@ description: Creates an array of key-value pairs for the given object.
 
 ```ts
 const obj = { a: 1, b: 2, c: 3 };
-const result = entries(obj);
-console.log(result);
+_.entries(obj);
 // => [['a', 1], ['b', 2], ['c', 3]]
 ```

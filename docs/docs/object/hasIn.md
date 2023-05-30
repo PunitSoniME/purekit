@@ -27,12 +27,12 @@ description: Checks if the given object has the specified property path. Propert
 
 ```ts
 const object = { 'a': [{ 'b': { 'c': 3 } }] };
-hasIn(object, 'a[0].b.c');
+_.hasIn(object, 'a[0].b.c');
 // => true
 
-hasIn(object, ['a', '0', 'b', 'c']);
+_.hasIn(object, ['a', '0', 'b', 'c']);
 // => true
 
-hasIn(object, 'a.b.c');
+_.hasIn(object, 'a.b.c');
 // => false
 ```

@@ -27,10 +27,12 @@ description: Removes the specified property at the given path from the provided 
 
 ```ts
 const obj = { a: { b: { c: 1 } } };
-unset(obj, 'a.b.c'); // => true
+_.unset(obj, 'a.b.c');
+// => true
 // obj is now { a: { b: {} } }
 
 const obj2 = { a: { b: { c: 1 } } };
-unset(obj2, 'a.b.d'); // => false
+_.unset(obj2, 'a.b.d');
+// => false
 // obj2 remains { a: { b: { c: 1 } } }
 ```

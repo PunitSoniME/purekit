@@ -27,7 +27,7 @@ description: Creates an object with the same keys as the original object and val
 
 ```ts
 const obj = { a: 1, b: 2, c: 3 };
-const mapped = mapValues(obj, (value, key) => value * 2);
-console.log(mapped);
+
+_.mapValues(obj, (value, key) => value * 2);
 // => { a: 2, b: 4, c: 6 }
 ```

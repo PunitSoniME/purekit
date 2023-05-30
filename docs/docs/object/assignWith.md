@@ -31,7 +31,6 @@ const target = { a: 1 };
 const source1 = { b: 2 };
 const source2 = { c: 3 };
 
-const result = assignWith(target, source1, source2, (objValue, srcValue) => objValue === undefined ? srcValue : objValue);
-console.log(result);
+_.assignWith(target, source1, source2, (objValue, srcValue) => objValue === undefined ? srcValue : objValue);
 // => { a: 1, b: 2, c: 3 }
 ```

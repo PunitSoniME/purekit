@@ -28,12 +28,12 @@ description: Gets the value at path of object. If the resolved value is undefine
 
 ```ts
 const object = { 'a': [{ 'b': { 'c': 3 } }] };
-get(object, 'a[0].b.c');
+_.get(object, 'a[0].b.c');
 // => 3
 
-get(object, ['a', '0', 'b', 'c']);
+_.get(object, ['a', '0', 'b', 'c']);
 // => 3
 
-get(object, 'a.b.c', 'default');
+_.get(object, 'a.b.c', 'default');
 // => 'default'
 ```

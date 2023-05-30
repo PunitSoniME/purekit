@@ -26,6 +26,6 @@ description: Merges the own and inherited enumerable string keyed properties of 
 
 
 ```ts
-const result = defaultsDeep({ 'a': { 'b': 2 } }, { 'a': { 'b': 1, 'c': 3 } });
+_.defaultsDeep({ 'a': { 'b': 2 } }, { 'a': { 'b': 1, 'c': 3 } });
 // => { 'a': { 'b': 2, 'c': 3 } }
 ```
