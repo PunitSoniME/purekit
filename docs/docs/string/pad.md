@@ -27,9 +27,9 @@ description: Pads a string with a specified character to a specified length.
 
 
 ```ts
-pad('hello', 10);
+_.pad('hello', 10);
 // => '  hello   '
 
-pad('hello', 10, '-');
+_.pad('hello', 10, '-');
 // => '--hello---'
 ```

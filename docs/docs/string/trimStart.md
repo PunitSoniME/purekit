@@ -26,9 +26,9 @@ description: Removes specified characters from the beginning of a string.
 
 
 ```ts
-trimStart('   Hello, World   ');
+_.trimStart('   Hello, World   ');
 // => 'Hello, World   '
 
-trimStart('!!!Hello, World', '!');
+_.trimStart('!!!Hello, World', '!');
 // => 'Hello, World'
 ```

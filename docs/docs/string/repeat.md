@@ -26,9 +26,9 @@ description: Repeats a string `n` times.
 
 
 ```ts
-repeat('hello', 3);
+_.repeat('hello', 3);
 // => 'hellohellohello'
 
-repeat('hey');
+_.repeat('hey');
 // => 'hey'
 ```

@@ -25,6 +25,6 @@ description: Converts a string to start case (i.e., each word capitalized, with 
 
 
 ```ts
-startCase('foo_bar_baz');
+_.startCase('foo_bar_baz');
 // => 'Foo Bar Baz'
 ```

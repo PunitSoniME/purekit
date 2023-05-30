@@ -25,9 +25,9 @@ description: Converts a string to lowercase with spaces between words.
 
 
 ```ts
-lowerCase('fooBar123');
+_.lowerCase('fooBar123');
 // => 'foo bar 123'
 
-lowerCase('FOO-BAR.BAZ');
+_.lowerCase('FOO-BAR.BAZ');
 // => 'foo bar baz'
 ```

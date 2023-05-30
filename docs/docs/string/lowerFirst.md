@@ -25,9 +25,9 @@ description: Returns a new string with first character of string to lower case.
 
 
 ```ts
-lowerFirst('Fred');
+_.lowerFirst('Fred');
 // => 'fred'
 
-lowerFirst('FRED');
+_.lowerFirst('FRED');
 // => 'fRED'
 ```

@@ -26,6 +26,6 @@ description: Converts a string to kebab case.
 
 ```ts
 const str = 'This is a Test String';
-const kebabStr = kebabCase(str);
+_.kebabCase(str);
 // => 'this-is-a-test-string'
 ```

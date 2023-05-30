@@ -26,9 +26,9 @@ description: Splits a string into an array of words based on a given pattern.
 
 
 ```ts
-words('The quick brown fox jumps over the lazy dog');
+_.words('The quick brown fox jumps over the lazy dog');
 // => ['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog']
 
-words('apple, banana, cherry', /[^, ]+/g);
+_.words('apple, banana, cherry', /[^, ]+/g);
 // => ['apple', 'banana', 'cherry']
 ```

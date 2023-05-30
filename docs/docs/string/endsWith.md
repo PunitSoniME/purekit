@@ -31,12 +31,12 @@ const str1 = 'Hello, world!';
 const str2 = 'Hello, world';
 const str3 = 'hello, world!';
 
-const result1 = endsWith(str1, '!');
+_.endsWith(str1, '!');
 // =>  true
 
-const result2 = endsWith(str2, '!');
+_.endsWith(str2, '!');
 // =>  false
 
-const result3 = endsWith(str3, 'world', 7);
+_.endsWith(str3, 'world', 7);
 // =>  true
 ```

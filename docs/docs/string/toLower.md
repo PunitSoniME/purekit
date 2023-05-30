@@ -25,6 +25,6 @@ description: Converts a string to lowercase.
 
 
 ```ts
-toLower('Hello World');
+_.toLower('Hello World');
 // => 'hello world'
 ```

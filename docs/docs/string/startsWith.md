@@ -27,12 +27,12 @@ description: Checks if a string starts with a given target string.
 
 
 ```ts
-startsWith('hello world', 'hello');
+_.startsWith('hello world', 'hello');
 // => true
 
-startsWith('hello world', 'world');
+_.startsWith('hello world', 'world');
 // => false
 
-startsWith('hello world', 'world', 6);
+_.startsWith('hello world', 'world', 6);
 // => true
 ```

@@ -27,6 +27,6 @@ description: Replaces matches in a string with a replacement string or RegExp.
 
 
 ```ts
-replace('Hello, world!', 'world', 'John');
+_.replace('Hello, world!', 'world', 'John');
 // => 'Hello, John!'
 ```

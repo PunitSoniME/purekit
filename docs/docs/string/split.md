@@ -27,6 +27,6 @@ description: Splits a string into an array of substrings based on a specified se
 
 
 ```ts
-split('a,b,c,d', ',', 2);
+_.split('a,b,c,d', ',', 2);
 // => ['a', 'b']
 ```
