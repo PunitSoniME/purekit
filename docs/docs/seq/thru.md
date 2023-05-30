@@ -26,7 +26,7 @@ description: Passes the given value to a function and returns the result.
 
 
 ```ts
-const result = thru([1, 2, 3], (arr) => arr.map((x) => x * 2)).filter((x) => x > 3);
+const result = _.thru([1, 2, 3], (arr) => arr.map((x) => x * 2)).filter((x) => x > 3);
 console.log(result);
 // => [4, 6]
 ```
