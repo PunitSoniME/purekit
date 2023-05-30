@@ -25,9 +25,9 @@ description: Subtracts all the numbers passed in as arguments from the first num
 
 
 ```ts
-subtract(20, 5, 3, 2);
+_.subtract(20, 5, 3, 2);
 // => 10
 
-subtract(10, 5, 2, 3);
+_.subtract(10, 5, 2, 3);
 // => 0
 ```

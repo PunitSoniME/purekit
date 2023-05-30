@@ -25,15 +25,15 @@ description: Calculates the average of a given array of numbers.
 
 
 ```ts
-average(...[1, 2, 3]);
+_.average(...[1, 2, 3]);
 // => 2
 
-average(1, 2, 3);
+_.average(1, 2, 3);
 // => 2
 
-average(4, 6, 2, 8);
+_.average(4, 6, 2, 8);
 // => 5
 
-average();
+_.average();
 // => 'NaN'
 ```

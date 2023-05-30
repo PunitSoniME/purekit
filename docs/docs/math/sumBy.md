@@ -26,9 +26,9 @@ description: Returns the sum of all the values obtained by applying the iteratee
 
 
 ```ts
-sumBy([1, 2, 3, 4, 5], (num) => num);
+_.sumBy([1, 2, 3, 4, 5], (num) => num);
 // => 15
 
-sumBy([{ val: 1 }, { val: 2 }, { val: 0 }], (obj) => obj.val);
+_.sumBy([{ val: 1 }, { val: 2 }, { val: 0 }], (obj) => obj.val);
 // => 3
 ```

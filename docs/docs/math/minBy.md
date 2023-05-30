@@ -26,9 +26,9 @@ description: Returns the object in an array of objects with the minimum value ca
 
 
 ```ts
-minBy([{ name: 'alice', age: 25 }, { name: 'bob', age: 30 }, { name: 'charlie', age: 20 }], (obj) => obj.age);
+_.minBy([{ name: 'alice', age: 25 }, { name: 'bob', age: 30 }, { name: 'charlie', age: 20 }], (obj) => obj.age);
 // => { name: 'alice', age: 25 }
 
-minBy([{ name: 'alice', age: 30 }, { name: 'brenda', age: 25 }, { name: 'charlie', age: 30 }], (obj) => obj.name.length);
+_.minBy([{ name: 'alice', age: 30 }, { name: 'brenda', age: 25 }, { name: 'charlie', age: 30 }], (obj) => obj.name.length);
 // => { name: 'brenda', age: 25 }
 ```

@@ -26,15 +26,15 @@ description: Returns the result of dividing the `dividend` by the `divisor`.
 
 
 ```ts
-divide(8, 2);
+_.divide(8, 2);
 // => 4
 
-divide('8', '2');
+_.divide('8', '2');
 // => 4
 
-divide(1, 0);
+_.divide(1, 0);
 // => NaN
 
-divide('foo', 2);
+_.divide('foo', 2);
 // => NaN
 ```

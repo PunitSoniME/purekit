@@ -27,7 +27,7 @@ description: Calculates the average value of an array by applying a transformati
 
 ```ts
 const numbers = [1, 2, 3];
-averageBy(numbers, x => x * 2);
+_.averageBy(numbers, x => x * 2);
 // => 4
 
 const students = [
@@ -35,6 +35,6 @@ const students = [
   { name: 'Bob', score: 90 },
   { name: 'Charlie', score: 75 }
 ];
-averageBy(students, 'score');
+_.averageBy(students, 'score');
 // => 81.66666666666667
 ```

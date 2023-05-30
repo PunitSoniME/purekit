@@ -25,6 +25,6 @@ description: Returns the maximum number in the given collection.
 
 
 ```ts
-max([1, 3, 2]);
+_.max([1, 3, 2]);
 // => 3
 ```
