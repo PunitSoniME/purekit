@@ -24,7 +24,7 @@ export default function SearchComponent({ value, onChange }) {
                         onChange(e.target.value);
                     }, 500)
                 }}
-                className="w-full rounded-none border-0 pl-9 pr-3 py-2 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 focus-visible:outline-none"
+                className="w-full rounded-md border-0 pl-9 pr-3 py-2 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 focus-visible:outline-none"
             />
         </div>
     )

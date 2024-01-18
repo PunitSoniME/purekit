@@ -9,6 +9,7 @@ import * as obj from './object';
 import * as str from './string';
 import * as seq from './seq';
 import * as util from './util';
+import * as linkedList from './linked-list';
 
 import {
 	bifurcate,
@@ -337,6 +338,14 @@ import {
 	uniqueId2,
 } from './util';
 
+import {
+	ListNode,
+	getSizeOfLinkedList,
+	createLinkedList,
+	reversedLinkedList,
+	lastElementOfLinkedList,
+} from './linked-list';
+
 const _ = {
 	//	Array Methods
 	...array,
@@ -370,6 +379,9 @@ const _ = {
 
 	//	Util Methods
 	...util,
+
+	//	Data Structure
+	...linkedList,
 };
 
 export {
@@ -689,6 +701,12 @@ export {
 	toPath,
 	uniqueId,
 	uniqueId2,
+	//	Data Structure
+	ListNode,
+	getSizeOfLinkedList,
+	createLinkedList,
+	reversedLinkedList,
+	lastElementOfLinkedList,
 };
 
 export default _;
