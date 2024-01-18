@@ -217,6 +217,16 @@ const routes = [
         ]
     },
     {
+        id: 'linked-list',
+        name: 'Linked List',
+        options: [
+            { label: 'createLinkedList', isNew: true },
+            { label: 'getSizeOfLinkedList', isNew: true },
+            { label: 'lastElementOfLinkedList', isNew: true },
+            { label: 'reversedLinkedList', isNew: true },
+        ]
+    },
+    {
         id: 'math',
         name: 'Math',
         options: [

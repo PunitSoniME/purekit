@@ -32,6 +32,8 @@
     "test:string:coverage": "dts test ./test/string/*.* --coverage && yarn run serve:coverage",
     "test:util": "dts test ./test/util/*.*",
     "test:util:coverage": "dts test ./test/util/*.* --coverage && yarn run serve:coverage",
+    "test:linked-list": "dts test ./test/linked-list/*.*",
+    "test:linked-list:coverage": "dts test ./test/linked-list/*.* --coverage && yarn run serve:coverage",
     "test:watch": "dts test --watch",
     "test:coverage": "dts test --coverage",
     "test:coverage:run": "yarn run test:coverage && yarn run serve:coverage",

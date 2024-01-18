@@ -1,5 +1,5 @@
 /**
- * Splits values into two groups and then puts a truthy element of filterin the first group, and in the second group otherwise.
+ * Splits values into two groups and then puts a truthy element of filtering the first group, and in the second group otherwise.
  *
  * @since 1.0.3
  *
