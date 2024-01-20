@@ -2,8 +2,8 @@ import { Fragment, useState } from 'react';
 import Head from 'next/head';
 import { useRouter } from "next/router";
 import { Dialog, Disclosure, Menu, Transition } from '@headlessui/react'
-import { XMarkIcon } from '@heroicons/react/24/outline'
-import { FunnelIcon, MinusIcon, PlusIcon } from '@heroicons/react/20/solid'
+import { XMarkIcon, Bars3Icon } from '@heroicons/react/24/outline'
+import { MinusIcon, PlusIcon } from '@heroicons/react/20/solid'
 import routes from '../utils/routes';
 import SearchComponent from './SearchComponent';
 
@@ -104,7 +104,7 @@ export default function Layout({ children, meta: pageMeta }) {
                       </button>
                     </div>
 
-                    {/* Filters */}
+                    {/* For Mobile View Filters */}
                     <form className="border-t border-gray-200">
 
                       <SearchComponent
@@ -144,23 +144,21 @@ export default function Layout({ children, meta: pageMeta }) {
                                       </span>
                                     </Disclosure.Button>
                                   </h3>
-                                  <Disclosure.Panel className="pt-6">
-                                    <div className='divide-y'>
-                                      {section.options.map((option) => (
-                                        <a
-                                          key={option.label}
-                                          href={`/home#${option.label}`}
-                                          className={`block py-3 pl-6 text-sm ${router.asPath === `/home#${option.label}` ? "bg-violet-500 text-white font-semibold" : "text-gray-600 hover:cursor-pointer hover:bg-violet-200"}`}
-                                          onClick={(e) => {
-                                            e.preventDefault();
-                                            router.push(`/home#${option.label}`);
-                                            setMobileFiltersOpen(false);
-                                          }}
-                                        >
-                                          {option.label}
-                                        </a>
-                                      ))}
-                                    </div>
+                                  <Disclosure.Panel className="pt-4 space-y-1">
+                                    {section.options.map((option) => (
+                                      <a
+                                        key={option.label}
+                                        href={`/home#${option.label}`}
+                                        className={`block py-3 rounded-md pl-4 text-sm ${router.asPath === `/home#${option.label}` ? "bg-violet-500 text-white font-semibold" : "text-gray-600 hover:cursor-pointer hover:bg-violet-200"}`}
+                                        onClick={(e) => {
+                                          e.preventDefault();
+                                          router.push(`/home#${option.label}`);
+                                          setMobileFiltersOpen(false);
+                                        }}
+                                      >
+                                        {option.label}
+                                      </a>
+                                    ))}
                                   </Disclosure.Panel>
                                 </>
                               )}
@@ -191,7 +189,7 @@ export default function Layout({ children, meta: pageMeta }) {
                   onClick={() => setMobileFiltersOpen(true)}
                 >
                   <span className="sr-only">Methods</span>
-                  <FunnelIcon className="h-5 w-5" aria-hidden="true" />
+                  <Bars3Icon className="h-5 w-5 text-slate-600" strokeWidth={2.2} aria-hidden="true" />
                 </button>
               </div>
             </div>
@@ -239,22 +237,20 @@ export default function Layout({ children, meta: pageMeta }) {
                                   </span>
                                 </Disclosure.Button>
                               </h3>
-                              <Disclosure.Panel className="pt-6">
-                                <div className='divide-y'>
-                                  {section.options.map((option) => (
-                                    <a
-                                      key={option.label}
-                                      href={`/home#${option.label}`}
-                                      className={`block py-3 pl-6 text-sm ${router.asPath === `/home#${option.label}` ? "bg-violet-500 text-white font-semibold" : "text-gray-600 hover:cursor-pointer hover:bg-violet-200"}`}
-                                      onClick={(e) => {
-                                        e.preventDefault();
-                                        router.push(`/home#${option.label}`);
-                                      }}
-                                    >
-                                      {option.label}
-                                    </a>
-                                  ))}
-                                </div>
+                              <Disclosure.Panel className="pt-4 space-y-1">
+                                {section.options.map((option) => (
+                                  <a
+                                    key={option.label}
+                                    href={`/home#${option.label}`}
+                                    className={`block mx-2 py-3 rounded-md pl-4 text-sm ${router.asPath === `/home#${option.label}` ? "bg-violet-500 text-white font-semibold" : "text-gray-600 hover:cursor-pointer hover:bg-violet-200"}`}
+                                    onClick={(e) => {
+                                      e.preventDefault();
+                                      router.push(`/home#${option.label}`);
+                                    }}
+                                  >
+                                    {option.label}
+                                  </a>
+                                ))}
                               </Disclosure.Panel>
                             </>
                           )}

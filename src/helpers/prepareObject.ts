@@ -1,4 +1,5 @@
 import IPrepareObjectFN from '../interface/IPrepareObjectFN';
+import isObject from '../lang/isObject';
 import createPredicate from './createPredicate';
 
 const prepareObjectTypes = {
@@ -19,8 +20,8 @@ const prepareObject = <T>({
 	const fn = createPredicate(predicate);
 	const conditionFailedRecords: any = {};
 
-	const result = collection.reduce((group: any, item: T) => {
-		const converted = (fn as any)(item);
+	const result = collection.reduce((group: any, item: T, index: number) => {
+		const converted = (fn as any)(item, index);
 
 		//	@ts-ignore
 		const key = item[predicate] ?? converted;
@@ -55,7 +56,7 @@ const prepareObject = <T>({
 				break;
 
 			case prepareObjectTypes.replace:
-				if (converted) {
+				if (converted && isObject(item)) {
 					group[key] = group.hasOwnProperty(key) ? group[key] : {};
 					group[key] = { ...item };
 				} else if (includeConditionFailRecord) {
@@ -65,6 +66,8 @@ const prepareObject = <T>({
 						? conditionFailedRecords[key]
 						: {};
 					conditionFailedRecords[key] = { ...item };
+				} else {
+					group[key] = item;
 				}
 				break;
 		}

@@ -18,5 +18,12 @@ describe('Collection', () => {
 		it("keyBy(data, 'dir')", () => {
 			expect(keyBy(data, 'dir')).toEqual(_keyBy(data, 'dir'));
 		});
+
+		it("keyBy(['a', 'b'], (_, index) => index)", () => {
+			expect(keyBy(['a', 'b'], (_: any, index: number) => index)).toEqual({
+				0: 'a',
+				1: 'b',
+			});
+		});
 	});
 });
