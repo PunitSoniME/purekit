@@ -1,4 +1,4 @@
 ---
-title: 'seq'
-description: 'Seq'
+title: 'linked list'
+description: 'Linked List'
 ---
