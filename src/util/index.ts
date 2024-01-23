@@ -7,6 +7,7 @@ import flow from './flow';
 import flowRight from './flowRight';
 import identity from './identity';
 import iteratee from './iteratee';
+// import matches from './_matches';
 import method from './method';
 import methodOf from './methodOf';
 import noop from './noop';
@@ -39,6 +40,7 @@ export {
 	flowRight,
 	identity,
 	iteratee,
+	// matches,
 	method,
 	methodOf,
 	noop,
